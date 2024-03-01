@@ -3025,7 +3025,7 @@ Array.prototype.find || Object.defineProperty(Array.prototype, "find", {
         }, this._renderErrorMessage = function (e, t) {
             0 === this.$element.find('[data-form-error="global"]').length && this.$element.prepend('<div data-form-error="global"></div>');
             var n, r = this.$element.find('[data-form-error="' + e + '"]');
-            r && "global" !== e ? (n = App.Utils.template("alert", {modifiers: ["error"]}, t), r.addClass("padded-top-s1-1x").html(n)) : r && "global" === e && t ? (n = App.Utils.template("alert", {modifiers: ["error"]}, t), r.addClass("spaced-bottom-s1-1x").html(n)) : (n = App.Utils.template("alert", {modifiers: ["warning"]}, "Ooops! There was an unexpected error. Please check your connectivity and try again by reloading this page. If you run into this error frequently please contact us."), this.$element.html(n))
+            r && "global" !== e ? (n = App.Utils.template("alert", {modifiers: ["error"]}, t), r.addClass("padded-top-s1-1x").html(n)) : r && "global" === e && t ? (n = App.Utils.template("alert", {modifiers: ["error"]}, t), r.addClass("spaced-bottom-s1-1x").html(n)) : (n = App.Utils.template("alert", {modifiers: ["warning"]}, "Stay tuned! We are working on JPY support currently."), this.$element.html(n))
         }, this._clearErrors = function () {
             e.find('[data-form-error="global"]').removeClass().empty().remove(), e.find("[data-form-error]").removeClass().empty()
         }, this._buildSuccessMessage = function (e) {
@@ -3258,7 +3258,7 @@ Array.prototype.find || Object.defineProperty(Array.prototype, "find", {
                         case 404:
                         case 500:
                         default:
-                            var r = s.Utils.template("alert", {modifiers: ["warning"]}, "Ooops! There was an unexpected error while trying to prepare your quote or checkout. Please check your connectivity and try again. If you run into this error frequently please contact us.");
+                            var r = s.Utils.template("alert", {modifiers: ["warning"]}, "Stay tuned! We are working on JPY support currently.");
                             t.$element.html(r)
                     }
                 })
@@ -3300,7 +3300,7 @@ Array.prototype.find || Object.defineProperty(Array.prototype, "find", {
                             }
                         case 500:
                         default:
-                            var o = s.Utils.template("alert", {modifiers: ["warning"]}, "Ooops! There was an unexpected error while trying to update your purchase configuration. Please check your connectivity and try again. If you run into this error frequently please contact us.");
+                            var o = s.Utils.template("alert", {modifiers: ["warning"]}, "Stay tuned! We are working on JPY support currently.");
                             t.$element.html(o)
                     }
                     t._invokeEventCallbacks("did-update")
