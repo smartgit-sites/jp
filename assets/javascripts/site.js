@@ -3207,7 +3207,7 @@ Array.prototype.find || Object.defineProperty(Array.prototype, "find", {
                     var r = [t, n].filter(function (e) {
                         return !!e
                     }).join(" / ");
-                    return ["<span>" + s.Utils.formatCurrency(e, 2) + "</span>", "<span>" + r + "</span>"].join("")
+                    return ["<span>" + s.Utils.formatCurrency(e, 0, "") + "</span>", "<span>" + r + "</span>"].join("")
                 };
                 e.price ? t.html(r(e.price, e.currency, u)) : t.empty(), e.regularPrice && e.regularPrice !== e.price ? (0 === n.length && (n = t.clone().empty().removeAttr("data-price-tag").addClass("is-striked").insertAfter(t)), n.html(r(e.regularPrice, e.currency, u))) : 0 !== n.length && n.remove()
             })
