@@ -1,0 +1,801 @@
+---
+layout: layouts/base.njk
+title: SmartGit を購入
+description: Git クライアント、商用
+permalink: purchase.html
+---
+    <section class="page-section padded-top-s1-8x padded-top-s3-6x padded-bottom-s1-4x padded-bottom-s3-3x">
+        <div class="default-grid">
+            <div class="default-column-s1-12 default-column-s4-11">
+                <div class="content-box content-box--prefixed-11 content-box--prefixed-lvl-1 content-box--prefixed-smart-git">
+                    <div class="content-box__content"><h1 class="headline headline--lvl-1">SmartGitを購入する</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section padded-bottom-s1-6x padded-top-s4-3x">
+        <div class="default-grid">
+            <div class="no-script default-column-s1-12 default-column-s4-10 default-column-s4-push-1">
+                <div class="alert alert--error">
+                    <p>
+                        SmartGit の購入を構成するには、 <strong>JavaScript を有効にする</strong> 必要があります。
+                    </p>
+                    <p>
+                        Mozilla <strong>Firefox</strong> の場合、以下を使用してページを <em>強制</em> 的に更新する必要がある場合もあります。
+                    </p>
+                    <ul>
+                        <li><tt>Ctrl + F5</tt> (Windows)、</li>
+                        <li><tt>⌘ + ⇧ + R</tt> (Mac) または</li>
+                        <li><tt>Shift + [</tt><em>リロード</em>]ボタンをクリックします。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="script-required default-column-s1-12 default-column-s4-10 default-column-s4-push-1"
+                data-module="tabs">
+                <nav class="tab-navigation tab-navigation--stacked tab-navigation--fixed-size">
+                    <a class="tab-navigation__tab is-active" data-role="tab"
+                    href="https://www.smartgit.jp/purchase#subscription">サブスクリプション</a> <a
+                        class="tab-navigation__tab" data-role="tab"
+                        href="https://www.smartgit.jp/purchase#single-payment">永続ライセンス</a><a
+                        class="tab-navigation__tab" data-role="tab"
+                        href="https://www.smartgit.jp/purchase#upgrade">アップグレード/更新</a>
+                </nav>
+
+                <div class="tab-content tab-content--spread padded-top-s1-2x padded-top-s4-4x padded-bottom-s1-2x padded-bottom-s4-4x"
+                    data-role="tab-content" id="single-payment">
+                    <div class="default-grid default-grid--nested">
+                        <form accept-charset="UTF-8" action=""
+                            class="purchase-form script-required default-column-s1-10-of-10 default-column-s5-8-of-10 default-column-s5-push-1-of-10 padded-x-s2-2x padded-x-s4-4x padded-x-s5-0x"
+                            data-checkout-type="one-off" data-module="purchase-form" data-product-id="smartgit"
+                            method="get">
+                            <div class="form-section padded-top-s1-2x padded-bottom-s1-2x" data-role="form-section">
+                                <input data-label="JPY" id="purchase_one_off_currency" name="purchase_one_off[currency]"
+                                    type="hidden" value="JPY">
+
+                                <div class="default-grid default-grid--nested spaced-bottom-s1-2x">
+                                    <div class="default-column-s1-2 default-column-s3-1-of-8 align-right-s3">
+                                        <input class="input-field input-field--small input-field--short input-field--padded-minimal align-center-s1"
+                                            data-max="10000" data-min="1" data-update-on="change"
+                                            id="purchase_one_off_quantity" name="purchase_one_off[quantity]"
+                                            type="text" value="1"/>
+                                    </div>
+
+                                    <div class="default-column-s1-10 default-column-s3-6-of-8">
+                                        <div class="flex-grid flex-grid--nowrap flex-grid--nested padded-y-s1-small-baseline">
+                                            <div class="flex-column-fill">
+                                                <strong>SmartGit ライセンス</strong>
+                                            </div>
+
+                                            <div class="flex-column-dynamic align-right-s1">
+                                                <strong class="price-tag" data-price-tag="main"></strong>
+                                            </div>
+                                        </div>
+                                        <div class="form-notification" data-notification="license-count"></div>
+                                    </div>
+                                </div>
+
+                                <div class="default-grid default-grid--nested">
+                                    <div class="default-column-s1-12 default-column-s2-10 default-column-s2-push-2 default-column-s3-6-of-8 default-column-s3-push-1-of-8">
+                                        <div class="table-layout">
+                                            <div class="table-layout__row">
+                                                <div class="table-layout__cell font-bold">更新</div>
+                                                <div class="table-layout__cell">
+                                                    <div class="radio-switch radio-switch--small">
+                                                        <input checked="checked" class="radio-switch__input"
+                                                            data-update-on="change" id="purchase_one_off_updates_1y"
+                                                            name="purchase_one_off[updates]" type="radio"
+                                                            value="1y"/>
+                                                        <label class="radio-switch__label radio-switch__label--fixed-width"
+                                                            for="purchase_one_off_updates_1y">1 year</label> <input
+                                                            class="radio-switch__input" data-update-on="change"
+                                                            id="purchase_one_off_updates_2y"
+                                                            name="purchase_one_off[updates]" type="radio" value="2y"/>
+                                                        <label class="radio-switch__label radio-switch__label--fixed-width"
+                                                            for="purchase_one_off_updates_2y">2 years</label> <input
+                                                            class="radio-switch__input" data-update-on="change"
+                                                            id="purchase_one_off_updates_3y"
+                                                            name="purchase_one_off[updates]" type="radio" value="3y"/>
+                                                        <label class="radio-switch__label radio-switch__label--fixed-width"
+                                                            for="purchase_one_off_updates_3y">3 years</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="table-layout__row">
+                                                <div class="table-layout__cell font-bold">サポート</div>
+                                                <div class="table-layout__cell">
+                                                    <div class="radio-switch radio-switch--small">
+                                                        <input class="radio-switch__input" data-update-on="change"
+                                                            id="purchase_one_off_support_90d"
+                                                            name="purchase_one_off[support]" type="radio"
+                                                            value="90d"/>
+                                                        <label class="radio-switch__label radio-switch__label--fixed-width"
+                                                            for="purchase_one_off_support_90d">90 days</label> <input
+                                                            checked="checked" class="radio-switch__input"
+                                                            data-update-on="change" id="purchase_one_off_support_1y"
+                                                            name="purchase_one_off[support]" type="radio" value="1y"/>
+                                                        <label class="radio-switch__label radio-switch__label--fixed-width"
+                                                            for="purchase_one_off_support_1y">1 year</label> <input
+                                                            class="radio-switch__input" data-update-on="change"
+                                                            id="purchase_one_off_support_2y"
+                                                            name="purchase_one_off[support]" type="radio" value="2y"/>
+                                                        <label class="radio-switch__label radio-switch__label--fixed-width"
+                                                            for="purchase_one_off_support_2y">2 years</label> <input
+                                                            class="radio-switch__input" data-update-on="change"
+                                                            id="purchase_one_off_support_3y"
+                                                            name="purchase_one_off[support]" type="radio" value="3y"/>
+                                                        <label class="radio-switch__label radio-switch__label--fixed-width"
+                                                            for="purchase_one_off_support_3y">3 years</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section padded-top-s1-2x padded-bottom-s1-2x" data-role="form-section">
+                                <div class="default-grid default-grid--nested spaced-bottom-s1-2x">
+                                    <div class="default-column-s1-1 default-column-s3-1-of-8 align-right-s3">
+                                        <input name="purchase_one_off[distributed_reviews_addon]" type="hidden"
+                                            value="0"/><input checked="checked" data-update-on="change"
+                                                                id="purchase_one_off_distributed_reviews_addon"
+                                                                name="purchase_one_off[distributed_reviews_addon]"
+                                                                type="checkbox" value="1"/>
+                                    </div>
+
+                                    <div class="default-column-s1-11 default-column-s3-6-of-8">
+                                        <div class="flex-grid flex-grid--nowrap flex-grid--nested">
+                                            <div class="flex-column-fill">
+                                                <label for="purchase_one_off_distributed_reviews_addon"> <strong><a
+                                                        href="https://www.syntevo.com/smartgit/distributed-reviews/"
+                                                        target="_blank">分散レビューアドオン</a></strong><br>
+                                                    ローカル、オフライン、高速コードレビュー
+                                                </label>
+                                                <div class="form-notification"
+                                                    data-notification="distributed_reviews_addon"></div>
+                                            </div>
+
+                                            <div class="flex-column-dynamic align-right-s1">
+                                                <strong class="price-tag"
+                                                        data-price-tag="distributed_reviews_addon"></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="default-grid default-grid--nested">
+                                    <div class="default-column-s1-1 default-column-s3-1-of-8 align-right-s3">
+                                        <input name="purchase_one_off[smart_synchronize]" type="hidden"
+                                            value="0"/><input checked="checked" data-update-on="change"
+                                                                id="purchase_one_off_smart_synchronize"
+                                                                name="purchase_one_off[smart_synchronize]"
+                                                                type="checkbox" value="1"/>
+                                    </div>
+
+                                    <div class="default-column-s1-11 default-column-s3-6-of-8">
+                                        <div class="flex-grid flex-grid--nowrap flex-grid--nested">
+                                            <div class="flex-column-fill">
+                                                <label for="purchase_one_off_smart_synchronize"> <strong><a
+                                                        href="https://www.syntevo.com/smartsynchronize/"
+                                                        target="_blank">SmartSynchronize</a> ライセンス</strong><br>
+                                                    SmartGitのファイル(およびディレクトリ)を比較するスタンドアロンツール
+                                                </label>
+                                                <div class="form-notification"
+                                                    data-notification="smart_synchronize"></div>
+                                            </div>
+
+                                            <div class="flex-column-dynamic align-right-s1">
+                                                <strong class="price-tag" data-price-tag="smart_synchronize"></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section padded-top-s1-2x padded-bottom-s1-2x hidden"
+                                data-role="form-section">
+                                <div class="default-grid default-grid--nested">
+                                    <div class="default-column-s1-11 default-column-s1-push-1 default-column-s3-6-of-8 default-column-s3-push-1-of-8">
+                                        <div class="flex-grid flex-grid--nowrap flex-grid--nested">
+                                            <div class="flex-column-fill">
+                                                <input id="purchase_one_off_coupon_type"
+                                                    name="purchase_one_off[coupon_type]" type="hidden" value="code"/>
+                                                <input id="purchase_one_off_partner" name="purchase_one_off[partner]"
+                                                    type="hidden" value="smartgit.jp"/>
+                                                <strong data-dynamic-label="coupon-type" data-label-code="Coupon Code"
+                                                        data-label-reseller="Reseller-ID">
+                                                    Coupon Code
+                                                </strong>
+                                                <div class="form-notification" data-notification="coupon_code"></div>
+                                            </div>
+
+                                            <div class="flex-column-dynamic align-right-s1">
+                                                <strong class="price-tag" data-price-tag="coupon_code"></strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="padded-top-s1-1x">
+                                            <div class="coupon-code" data-module="coupon-code">
+                                                <input class="input-field input-field--small input-field--mid-size align-center-s1"
+                                                    id="purchase_one_off_coupon_code"
+                                                    name="purchase_one_off[coupon_code]"
+                                                    placeholder="Enter Code/Reseller-ID" type="text" value=""/>
+                                                <button class="button button--primary button--filled button--small coupon-code__check-button"
+                                                        data-action="check-coupon-code" disabled="" type="button">Check
+                                                </button>
+                                                <button class="button button--primary button--filled button--small coupon-code__reset-button"
+                                                        data-action="reset-coupon-code" disabled="" type="button">Reset
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section padded-top-s1-2x padded-bottom-s1-2x">
+                                <div class="default-grid default-grid--nested spaced-bottom-s1-4x">
+                                    <div class="default-column-s1-12 default-column-s3-6-of-8 default-column-s3-push-1-of-8">
+                                        <div class="flex-grid flex-grid--nowrap flex-grid--nested">
+                                            <div class="flex-column-fill">
+                                                <strong>注文合計(税抜き)</strong><br> 永続ライセンス、一括払い
+                                            </div>
+
+                                            <div class="flex-column-dynamic align-right-s1">
+                                                <strong class="price-tag" data-price-tag="total"></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="default-grid default-grid--nested">
+                                    <div class="default-column-s1-12 default-column-s3-6-of-8 default-column-s3-push-1-of-8">
+                                        <div class="flex-grid flex-grid--nested flex-grid--s1-reverse flex-grid--s5-normal">
+                                            <div class="flex-column-s1-12 flex-column-s5-6">
+                                                <button class="button button--primary button--outlined button--large button--fixed-width spread-x-s1"
+                                                        data-action="request-quote">
+                                                    見積もりをリクエスト
+                                                </button>
+                                            </div>
+                                            <div class="flex-column-s1-12 flex-column-s5-6 spaced-bottom-s1-1x spaced-bottom-s5-0x">
+                                                <button class="button button--primary button--filled button--large button--fixed-width spread-x-s1"
+                                                        data-action="request-purchase">
+                                                    Cleverbridge経由で購入
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="tab-content tab-content--spread padded-top-s1-2x padded-top-s4-4x padded-bottom-s1-2x padded-bottom-s4-4x is-active"
+                    data-role="tab-content" id="subscription">
+                    <div class="default-grid default-grid--nested">
+                        <form accept-charset="UTF-8" action=""
+                            class="purchase-form script-required default-column-s1-10-of-10 default-column-s5-8-of-10 default-column-s5-push-1-of-10 padded-x-s2-2x padded-x-s4-4x padded-x-s5-0x"
+                            data-checkout-type="subscription" data-module="purchase-form" data-product-id="smartgit"
+                            method="get">
+                            <div class="form-section padded-top-s1-2x padded-bottom-s1-2x" data-role="form-section">
+                                <input data-label="JPY" id="purchase_one_off_currency" name="purchase_one_off[currency]"
+                                    type="hidden" value="JPY">
+
+                                <div class="default-grid default-grid--nested spaced-bottom-s1-2x">
+                                    <div class="default-column-s1-2 default-column-s3-1-of-8 align-right-s3">
+                                        <input class="input-field input-field--small input-field--short input-field--padded-minimal align-center-s1"
+                                            data-max="10000" data-min="1" data-update-on="change"
+                                            id="purchase_subscription_quantity"
+                                            name="purchase_subscription[quantity]" type="text" value="1"/>
+                                    </div>
+
+                                    <div class="default-column-s1-10 default-column-s3-6-of-8">
+                                        <div class="flex-grid flex-grid--nowrap flex-grid--nested padded-y-s1-small-baseline">
+                                            <div class="flex-column-fill">
+                                                <strong>SmartGit ライセンス</strong>
+                                            </div>
+
+                                            <div class="flex-column-dynamic align-right-s1">
+                                                <strong class="price-tag price-tag--block"
+                                                        data-price-tag="main"></strong>
+                                            </div>
+                                        </div>
+                                        <div class="form-notification" data-notification="license-count"></div>
+                                    </div>
+                                </div>
+
+                                <div class="default-grid default-grid--nested">
+                                    <div class="default-column-s1-12 default-column-s2-10 default-column-s2-push-2 default-column-s3-6-of-8 default-column-s3-push-1-of-8">
+                                        <div class="table-layout">
+                                            <div class="table-layout__row">
+                                                <div class="table-layout__cell font-bold">請求処理</div>
+                                                <div class="table-layout__cell">
+                                                    <div class="radio-switch radio-switch--small">
+                                                        <input class="radio-switch__input" data-update-on="change"
+                                                            id="purchase_subscription_billing_interval_monthly"
+                                                            name="purchase_subscription[billing_interval]"
+                                                            type="radio" value="毎月"/>
+                                                        <label class="radio-switch__label radio-switch__label--fixed-width"
+                                                            for="purchase_subscription_billing_interval_monthly">monthly</label>
+                                                        <input checked="checked" class="radio-switch__input"
+                                                            data-update-on="change"
+                                                            id="purchase_subscription_billing_interval_yearly"
+                                                            name="purchase_subscription[billing_interval]"
+                                                            type="radio" value="yearly"/> <label
+                                                            class="radio-switch__label radio-switch__label--fixed-width"
+                                                            for="purchase_subscription_billing_interval_yearly">yearly</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section padded-top-s1-2x padded-bottom-s1-2x" data-role="form-section">
+                                <div class="default-grid default-grid--nested spaced-bottom-s1-2x">
+                                    <div class="default-column-s1-1 default-column-s3-1-of-8 align-right-s3">
+                                        <input name="purchase_subscription[distributed_reviews_addon]" type="hidden"
+                                            value="0"/><input checked="checked" data-update-on="change"
+                                                                id="purchase_subscription_distributed_reviews_addon"
+                                                                name="purchase_subscription[distributed_reviews_addon]"
+                                                                type="checkbox" value="1"/>
+                                    </div>
+
+                                    <div class="default-column-s1-11 default-column-s3-6-of-8">
+                                        <div class="flex-grid flex-grid--nowrap flex-grid--nested">
+                                            <div class="flex-column-fill">
+                                                <label for="purchase_subscription_distributed_reviews_addon"> <strong>分散レビューアドオン</strong><br>
+                                                    ローカル、オフライン、高速コードレビュー
+                                                </label></div>
+
+                                            <div class="flex-column-dynamic align-right-s1">
+                                                <strong class="price-tag price-tag--block"
+                                                        data-price-tag="distributed_reviews_addon"></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="default-grid default-grid--nested">
+                                    <div class="default-column-s1-1 default-column-s3-1-of-8 align-right-s3">
+                                        <input name="purchase_subscription[smart_synchronize]" type="hidden" value="0"/><input
+                                            checked="checked" data-update-on="change"
+                                            id="purchase_subscription_smart_synchronize"
+                                            name="purchase_subscription[smart_synchronize]" type="checkbox" value="1"/>
+                                    </div>
+
+                                    <div class="default-column-s1-11 default-column-s3-6-of-8">
+                                        <div class="flex-grid flex-grid--nowrap flex-grid--nested">
+                                            <div class="flex-column-fill">
+                                                <label for="purchase_subscription_smart_synchronize"> <strong><a
+                                                        href="https://www.syntevo.com/smartsynchronize/"
+                                                        target="_blank">SmartSynchronize</a> ライセンス</strong><br>
+                                                    SmartGitのファイル(およびディレクトリ)を比較するスタンドアロンツール
+                                                </label></div>
+
+                                            <div class="flex-column-dynamic align-right-s1">
+                                                <strong class="price-tag price-tag--block"
+                                                        data-price-tag="smart_synchronize"></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section padded-top-s1-2x padded-bottom-s1-2x hidden"
+                                data-role="form-section">
+                                <div class="default-grid default-grid--nested">
+                                    <div class="default-column-s1-11 default-column-s1-push-1 default-column-s3-6-of-8 default-column-s3-push-1-of-8">
+                                        <div class="flex-grid flex-grid--nowrap flex-grid--nested">
+                                            <div class="flex-column-fill">
+                                                <input id="purchase_subscription_coupon_type"
+                                                    name="purchase_subscription[coupon_type]" type="hidden"
+                                                    value="code"/>
+                                                <input id="purchase_subscription_partner"
+                                                    name="purchase_subscription[partner]" type="hidden"
+                                                    value="smartgit.jp"/>
+                                                <strong data-dynamic-label="coupon-type" data-label-code="Coupon Code"
+                                                        data-label-reseller="Reseller-ID">Coupon Code</strong>
+                                                <div class="form-notification" data-notification="coupon_code"></div>
+                                            </div>
+
+                                            <div class="flex-column-dynamic align-right-s1">
+                                                <strong class="price-tag" data-price-tag="coupon_code"></strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="padded-top-s1-1x">
+                                            <div class="coupon-code" data-module="coupon-code">
+                                                <input class="input-field input-field--small input-field--mid-size align-center-s1"
+                                                    id="purchase_subscription_coupon_code"
+                                                    name="purchase_subscription[coupon_code]"
+                                                    placeholder="Enter Code/Reseller-ID" type="text" value=""/>
+                                                <button class="button button--primary button--filled button--small coupon-code__check-button"
+                                                        data-action="check-coupon-code" disabled="" type="button">Check
+                                                </button>
+                                                <button class="button button--primary button--filled button--small coupon-code__reset-button"
+                                                        data-action="reset-coupon-code" disabled="" type="button">Reset
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section padded-top-s1-2x padded-bottom-s1-2x">
+                                <div class="default-grid default-grid--nested spaced-bottom-s1-4x">
+                                    <div class="default-column-s1-12 default-column-s3-6-of-8 default-column-s3-push-1-of-8">
+                                        <div class="flex-grid flex-grid--nowrap flex-grid--nested">
+                                            <div class="flex-column-fill">
+                                                <strong>サブスクリプション (税抜き)</strong>
+                                            </div>
+
+                                            <div class="flex-column-dynamic align-right-s1">
+                                                <strong class="price-tag price-tag--block"
+                                                        data-price-tag="total"></strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-notification" data-notification="subscription-discount"></div>
+                                    </div>
+                                </div>
+
+                                <div class="default-grid default-grid--nested">
+                                    <div class="default-column-s1-12 default-column-s3-6-of-8 default-column-s3-push-1-of-8">
+                                        <div class="flex-grid flex-grid--nested flex-grid--s1-reverse flex-grid--s5-normal">
+                                            <div class="flex-column-s1-12 flex-column-s5-6">
+                                            </div>
+                                            <div class="flex-column-s1-12 flex-column-s5-6 spaced-bottom-s1-1x spaced-bottom-s5-0x">
+                                                <button class="button button--primary button--filled button--large button--fixed-width spread-x-s1"
+                                                        data-action="request-purchase">
+                                                    Cleverbridge経由で購読する
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="tab-content tab-content--spread padded-top-s1-2x padded-top-s4-4x padded-bottom-s1-2x padded-bottom-s4-4x"
+                    data-role="tab-content" id="upgrade">
+                    <div class="default-grid default-grid--nested">
+                        <form accept-charset="UTF-8" action=""
+                            class="purchase-form script-required default-column-s1-10-of-10 default-column-s5-8-of-10 default-column-s5-push-1-of-10 padded-x-s2-2x padded-x-s4-4x padded-x-s5-0x"
+                            data-checkout-type="one-off.upgrade" data-module="purchase-form"
+                            data-product-id="smartgit" enctype="multipart/form-data" method="get">
+                            <div class="form-section collapsible padded-top-s1-2x padded-bottom-s1-2x"
+                                data-role="form-section">
+                                <input data-label="JPY" id="purchase_one_off_currency" name="purchase_one_off[currency]"
+                                    type="hidden" value="JPY">
+
+                                <div class="default-grid default-grid--nested">
+                                    <div class="default-column-s1-11 default-column-s1-push-1 default-column-s3-6-of-8 default-column-s3-push-1-of-8">
+                                        <div class="flex-grid flex-grid--nowrap flex-grid--nested">
+                                            <div class="flex-column-fill collapsible__trigger"
+                                                data-action="toggle-collapsible">
+                                                <strong>1. ライセンス ファイルをアップロードする</strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="collapsible__content padded-top-s1-1x">
+                                            <div class="dropzone" data-module="license-dropzone">
+                                                <input id="purchase_one_off.upgrade_license"
+                                                    name="purchase_one_off.upgrade[license]" type="hidden" value=""/>
+                                                <input class="dropzone__input"
+                                                    id="purchase_one_off.upgrade_license_file"
+                                                    name="purchase_one_off.upgrade[license_file]" type="file"/>
+                                                <label class="dropzone__label"
+                                                    for="purchase_one_off.upgrade_license_file"> <span
+                                                        class="alert alert--text-only">Drag your license file here or</span>
+                                                    <span class="button button--primary button--filled button--small">choose file</span>
+                                                </label> <span class="dropzone__message dropzone__message--processing"> <span
+                                                    class="alert alert--text-only">Your license file is being uploaded …</span> </span>
+                                                <span class="dropzone__message dropzone__message--success"> <span
+                                                        class="alert alert--success alert--text-only">Your license file has been uploaded.</span> <span
+                                                        class="button button--primary button--filled button--small"
+                                                        data-action="reset-dropzone">Reset</span> </span> <span
+                                                    class="dropzone__message dropzone__message--error"> <span
+                                                    class="alert alert--error alert--text-only">Something went wrong.</span> <span
+                                                    class="button button--primary button--filled button--small"
+                                                    data-action="reset-dropzone">Try again</span> </span>
+                                                <div class="fullscreen-dropzone" data-role="fullscreen-ghost">
+                                                    ここにライセンスをドロップします
+                                                </div>
+                                            </div>
+
+                                            <div class="padded-top-s1-1x">購入オプションは、アップロード後にライセンスに基づいて更新されます。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section collapsible collapsible--collapsed padded-top-s1-2x padded-bottom-s1-2x"
+                                data-role="form-section">
+                                <div class="default-grid default-grid--nested">
+                                    <div class="default-column-s1-11 default-column-s1-push-1 default-column-s3-6-of-8 default-column-s3-push-1-of-8">
+                                        <div class="flex-grid flex-grid--nowrap flex-grid--nested">
+                                            <div class="flex-column-fill collapsible__trigger"
+                                                data-action="toggle-collapsible">
+                                                <strong>2. ライセンス構成を見直す</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="collapsible__content padded-top-s1-2x">
+                                    <div class="default-grid default-grid--nested spaced-top-s1-2x spaced-bottom-s1-2x">
+                                        <div class="default-column-s1-2 default-column-s3-1-of-8 align-right-s3">
+                                            <input class="input-field input-field--small input-field--short input-field--padded-minimal align-center-s1"
+                                                data-max="10000" data-min="1" data-update-on="change"
+                                                id="purchase_one_off.upgrade_quantity"
+                                                name="purchase_one_off.upgrade[quantity]" type="text" value="1"/>
+                                        </div>
+
+                                        <div class="default-column-s1-10 default-column-s3-6-of-8">
+                                            <div class="flex-grid flex-grid--nowrap flex-grid--nested padded-y-s1-small-baseline">
+                                                <div class="flex-column-fill">
+                                                    <strong>SmartGit ライセンス</strong>
+                                                </div>
+
+                                                <div class="flex-column-dynamic align-right-s1">
+                                                    <strong class="price-tag" data-price-tag="main"></strong>
+                                                </div>
+                                            </div>
+                                            <div class="form-notification" data-notification="license-count"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="default-grid default-grid--nested">
+                                        <div class="default-column-s1-12 default-column-s2-10 default-column-s2-push-2 default-column-s3-6-of-8 default-column-s3-push-1-of-8">
+                                            <div class="table-layout">
+                                                <div class="table-layout__row">
+                                                    <div class="table-layout__cell font-bold">更新</div>
+                                                    <div class="table-layout__cell">
+                                                        <div class="radio-switch radio-switch--small">
+                                                            <input checked="checked" class="radio-switch__input"
+                                                                data-update-on="change"
+                                                                id="purchase_one_off.upgrade_updates_1y"
+                                                                name="purchase_one_off.upgrade[updates]" type="radio"
+                                                                value="1y"/>
+                                                            <label class="radio-switch__label radio-switch__label--fixed-width"
+                                                                for="purchase_one_off.upgrade_updates_1y">1
+                                                                year</label> <input class="radio-switch__input"
+                                                                                    data-update-on="change"
+                                                                                    id="purchase_one_off.upgrade_updates_2y"
+                                                                                    name="purchase_one_off.upgrade[updates]"
+                                                                                    type="radio" value="2y"/> <label
+                                                                class="radio-switch__label radio-switch__label--fixed-width"
+                                                                for="purchase_one_off.upgrade_updates_2y">2
+                                                            years</label> <input class="radio-switch__input"
+                                                                                data-update-on="change"
+                                                                                id="purchase_one_off.upgrade_updates_3y"
+                                                                                name="purchase_one_off.upgrade[updates]"
+                                                                                type="radio" value="3y"/> <label
+                                                                class="radio-switch__label radio-switch__label--fixed-width"
+                                                                for="purchase_one_off.upgrade_updates_3y">3
+                                                            years</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="table-layout__row">
+                                                    <div class="table-layout__cell font-bold">サポート</div>
+                                                    <div class="table-layout__cell">
+                                                        <div class="radio-switch radio-switch--small">
+                                                            <input class="radio-switch__input" data-update-on="change"
+                                                                id="purchase_one_off.upgrade_support_90d"
+                                                                name="purchase_one_off.upgrade[support]" type="radio"
+                                                                value="90d"/>
+                                                            <label class="radio-switch__label radio-switch__label--fixed-width"
+                                                                for="purchase_one_off.upgrade_support_90d">90
+                                                                days</label> <input checked="checked"
+                                                                                    class="radio-switch__input"
+                                                                                    data-update-on="change"
+                                                                                    id="purchase_one_off.upgrade_support_1y"
+                                                                                    name="purchase_one_off.upgrade[support]"
+                                                                                    type="radio" value="1y"/> <label
+                                                                class="radio-switch__label radio-switch__label--fixed-width"
+                                                                for="purchase_one_off.upgrade_support_1y">1 year</label>
+                                                            <input class="radio-switch__input" data-update-on="change"
+                                                                id="purchase_one_off.upgrade_support_2y"
+                                                                name="purchase_one_off.upgrade[support]" type="radio"
+                                                                value="2y"/> <label
+                                                                class="radio-switch__label radio-switch__label--fixed-width"
+                                                                for="purchase_one_off.upgrade_support_2y">2
+                                                            years</label> <input class="radio-switch__input"
+                                                                                data-update-on="change"
+                                                                                id="purchase_one_off.upgrade_support_3y"
+                                                                                name="purchase_one_off.upgrade[support]"
+                                                                                type="radio" value="3y"/> <label
+                                                                class="radio-switch__label radio-switch__label--fixed-width"
+                                                                for="purchase_one_off.upgrade_support_3y">3
+                                                            years</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="padded-top-s1-2x padded-bottom-s1-2x">
+                                        <div class="default-grid default-grid--nested spaced-bottom-s1-2x">
+                                            <div class="default-column-s1-1 default-column-s3-1-of-8 align-right-s3">
+                                                <input name="purchase_one_off.upgrade[distributed_reviews_addon]"
+                                                    type="hidden" value="0"/><input checked="checked"
+                                                                                    data-update-on="change"
+                                                                                    id="purchase_one_off.upgrade_distributed_reviews_addon"
+                                                                                    name="purchase_one_off.upgrade[distributed_reviews_addon]"
+                                                                                    type="checkbox" value="1"/>
+                                            </div>
+
+                                            <div class="default-column-s1-11 default-column-s3-6-of-8">
+                                                <div class="flex-grid flex-grid--nowrap flex-grid--nested">
+                                                    <div class="flex-column-fill">
+                                                        <label for="purchase_one_off.upgrade_distributed_reviews_addon">
+                                                            <strong><a
+                                                                    href="https://www.syntevo.com/smartgit/distributed-reviews/"
+                                                                    target="_blank">分散レビューアドオン</a></strong><br>
+                                                            ローカル、オフライン、高速コードレビュー
+                                                        </label>
+                                                        <div class="form-notification"
+                                                            data-notification="distributed_reviews_addon"></div>
+                                                    </div>
+
+                                                    <div class="flex-column-dynamic align-right-s1">
+                                                        <strong class="price-tag"
+                                                                data-price-tag="distributed_reviews_addon"></strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="default-grid default-grid--nested">
+                                            <div class="default-column-s1-1 default-column-s3-1-of-8 align-right-s3">
+                                                <input name="purchase_one_off.upgrade[smart_synchronize]" type="hidden"
+                                                    value="0"><input checked="checked" data-update-on="change"
+                                                                        id="purchase_one_off.upgrade_smart_synchronize"
+                                                                        name="purchase_one_off.upgrade[smart_synchronize]"
+                                                                        type="checkbox" value="1"/>
+                                            </div>
+
+                                            <div class="default-column-s1-11 default-column-s3-6-of-8">
+                                                <div class="flex-grid flex-grid--nowrap flex-grid--nested">
+                                                    <div class="flex-column-fill">
+                                                        <label for="purchase_one_off.upgrade_smart_synchronize">
+                                                            <strong><a href="https://www.syntevo.com/smartsynchronize/"
+                                                                    target="_blank">SmartSynchronize</a>
+                                                                ライセンス</strong><br>
+                                                            SmartGitのファイル(およびディレクトリ)を比較するスタンドアロンツール
+                                                        </label>
+                                                        <div class="form-notification"
+                                                            data-notification="smart_synchronize"></div>
+                                                    </div>
+
+                                                    <div class="flex-column-dynamic align-right-s1">
+                                                        <strong class="price-tag"
+                                                                data-price-tag="smart_synchronize"></strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="padded-top-s1-2x">
+                                        <div class="default-grid default-grid--nested">
+                                            <div class="default-column-s1-12 default-column-s3-6-of-8 default-column-s3-push-1-of-8">
+                                                <div class="flex-grid flex-grid--nowrap flex-grid--nested">
+                                                    <div class="flex-column-fill">
+                                                        <strong>更新の割引</strong><br>
+                                                        <div class="form-notification"
+                                                            data-notification="upgrade"></div>
+                                                        <div class="form-notification"
+                                                            data-notification="still-valid-until"></div>
+                                                    </div>
+
+                                                    <div class="flex-column-dynamic align-right-s1">
+                                                        <strong class="price-tag" data-price-tag="upgrade"></strong>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section padded-top-s1-2x padded-bottom-s1-2x hidden"
+                                data-role="form-section">
+                                <div class="default-grid default-grid--nested">
+                                    <div class="default-column-s1-11 default-column-s1-push-1 default-column-s3-6-of-8 default-column-s3-push-1-of-8">
+                                        <div class="flex-grid flex-grid--nowrap flex-grid--nested">
+                                            <div class="flex-column-fill">
+                                                <input id="purchase_one_off.upgrade_coupon_type"
+                                                    name="purchase_one_off.upgrade[coupon_type]" type="hidden"
+                                                    value="code"/>
+                                                <input id="purchase_one_off.upgrade_partner"
+                                                    name="purchase_one_off.upgrade[partner]" type="hidden"
+                                                    value="smartgit.jp"/>
+                                                <strong data-dynamic-label="coupon-type" data-label-code="Coupon Code"
+                                                        data-label-reseller="Reseller-ID">
+                                                    Coupon Code
+                                                </strong>
+                                                <div class="form-notification" data-notification="coupon_code"></div>
+                                            </div>
+
+                                            <div class="flex-column-dynamic align-right-s1">
+                                                <strong class="price-tag" data-price-tag="coupon_code"></strong>
+                                            </div>
+                                        </div>
+
+                                        <div class="padded-top-s1-1x">
+                                            <div class="coupon-code" data-module="coupon-code">
+                                                <input class="input-field input-field--small input-field--mid-size align-center-s1"
+                                                    id="purchase_one_off.upgrade_coupon_code"
+                                                    name="purchase_one_off.upgrade[coupon_code]"
+                                                    placeholder="Enter Code/Reseller-ID" type="text" value=""/>
+                                                <button class="button button--primary button--filled button--small coupon-code__check-button"
+                                                        data-action="check-coupon-code" disabled="" type="button">Check
+                                                </button>
+                                                <button class="button button--primary button--filled button--small coupon-code__reset-button"
+                                                        data-action="reset-coupon-code" disabled="" type="button">Reset
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section padded-top-s1-2x padded-bottom-s1-2x">
+                                <div class="default-grid default-grid--nested spaced-bottom-s1-4x">
+                                    <div class="default-column-s1-12 default-column-s3-6-of-8 default-column-s3-push-1-of-8">
+                                        <div class="flex-grid flex-grid--nowrap flex-grid--nested">
+                                            <div class="flex-column-fill">
+                                                <strong>注文合計(税抜き)</strong><br> 永久ライセンス、一括払い
+                                            </div>
+
+                                            <div class="flex-column-dynamic align-right-s1">
+                                                <strong class="price-tag" data-price-tag="total"></strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="default-grid default-grid--nested">
+                                    <div class="default-column-s1-12 default-column-s3-6-of-8 default-column-s3-push-1-of-8">
+                                        <div class="flex-grid flex-grid--nested flex-grid--s1-reverse flex-grid--s5-normal">
+                                            <div class="flex-column-s1-12 flex-column-s5-6">
+                                                <button class="button button--primary button--outlined button--large button--fixed-width spread-x-s1"
+                                                        data-action="request-quote">
+                                                    見積もりをリクエスト
+                                                </button>
+                                            </div>
+                                            <div class="flex-column-s1-12 flex-column-s5-6 spaced-bottom-s1-1x spaced-bottom-s5-0x">
+                                                <button class="button button--primary button--filled button--large button--fixed-width spread-x-s1"
+                                                        data-action="request-purchase">
+                                                    Cleverbridge経由で購入
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window.PURCHASE_FORM_ENV = window.PURCHASE_FORM_ENV || {};
+        window.PURCHASE_FORM_ENV.API_HOST = 'https://api.syntevo.com';
+        window.PURCHASE_FORM_ENV.API_NAMESPACE = '/api/v1/';
+    </script>

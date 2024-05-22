@@ -1,0 +1,13 @@
+# Eleventy's output directory
+_site/
+
+# Node.js dependencies
+node_modules/
+
+# Eleventy's cache directory
+.cache/
+
+# Temporary files and IDE configuration files
+.DS_Store
+.vscode/
+.idea/

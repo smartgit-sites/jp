@@ -1,0 +1,15 @@
+{
+  "name": "smartgit_jp_eleventy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

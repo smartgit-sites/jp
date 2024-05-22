@@ -1,0 +1,28 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="{{ description | safe }}"
+          name="description">
+
+    <title>{{ title | safe }}</title>
+
+    <script type="text/javascript">
+        window.document.getElementsByTagName('html')[0].classList.remove('no-js');
+    </script>
+
+    <link href="assets/stylesheets/site.css" rel="stylesheet"/>
+</head>
+
+<body class="page-layout">
+<main class="page-layout__body page-body">
+
+    {% include "header.njk" %}
+
+    {{ content | safe }}
+</main>
+{% include "footer.njk" %}
+</body>
+</html>
