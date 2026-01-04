@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div id="company_list"></div>
+<h1>{{ .Data.Term }}</h1>
+<ul>
+    {{ range .Paginator.Pages }}
+    <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <p>{{ .Summary }}</p>
+    </li>
+    {{ end }}
+</ul>
+{{ partial "pagination" . }}
+{{ end }}

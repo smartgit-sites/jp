@@ -1,0 +1,19 @@
+#success-stories-featured-blog .card:hover,
+#success-stories-featured-blog .card:focus{
+  border-color: $sg-border-accent;
+}
+
+//gallery
+.gallery-items{
+  cursor:pointer;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#galleryModalCarousel .carousel-control-prev {
+  left: calc((100vw - var(--bs-modal-width)) / 2 * -1);
+  background:none !important;
+}
+#galleryModalCarousel .carousel-control-next {
+  right: calc((100vw - var(--bs-modal-width)) / 2 * -1);
+  background:none !important;
+}

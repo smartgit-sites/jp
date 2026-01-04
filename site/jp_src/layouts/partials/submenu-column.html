@@ -1,0 +1,18 @@
+{{ $page := .Page | default . }}
+{{ $params := .Params | default $page.Params }}
+
+{{ $buttonText := default nil $params.sideButtonText }}
+{{ $buttonLink := default nil $params.sideButtonLink }}
+{{ $menu := default "main" $params.menu }}
+{{ $overviewTitle := .overviewTitle | default $params.overviewTitle }}
+<div class="col-12 col-md-3 col-lg-2 mt-n5 mb-4 mb-md-0 ps-md-0">
+    <div class="sticky-sidebar">
+        {{ with $buttonText }}
+            {{ with $buttonLink }}
+                <a href="{{ $buttonLink }}" title="{{ $buttonText }}"{{ if in $buttonLink "//" }} target="_blank"{{ end }} class="btn btn-sg-orange w-100 mb-4"><span>{{ $buttonText }}</span></a>
+            {{ end }}
+        {{ end }}
+        {{ partial "submenu" (dict "context" $page "menu" $menu "overviewTitle" $overviewTitle) }}
+    </div>
+</div>
+

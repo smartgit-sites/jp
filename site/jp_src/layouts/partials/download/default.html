@@ -1,0 +1,28 @@
+{{ $partial := .Params.partial | default "" }}
+{{ $h1 := .Title }}
+{{ $h2 := .Params.h2 }}
+{{ if eq $partial "current-version" }}
+    {{ $rel := site.Data.latest_release }}
+    {{ $h1 = printf "Download SmartGit %.1f" $rel.major_version }}
+    {{ $h2 = printf "Version %s" $rel.version }}
+{{ else if eq $partial "preview-version" }}
+    {{ $rel := site.Data.preview_release }}
+    {{ if $rel }}
+        {{ $h2 = printf "Version %s" $rel.version }}
+    {{ end }}
+{{ end }}
+{{ partial "header.html" (dict "h1" $h1 "h2" $h2 "Page" .) }}
+<main>
+    <div class="container">
+        <div class="row">
+            {{ partial "submenu-column" (dict "Page" . "Params" (merge .Params (dict "menu" "meta" "overviewTitle" "Current Version"))) }}
+            <div class="col-12 col-md-9 col-lg-10 mt-md-n5">
+                {{ if $partial }}
+                    {{ partial (printf "download/%s" $partial) . }}
+                {{ else }}
+                    {{ .Content }}
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</main>

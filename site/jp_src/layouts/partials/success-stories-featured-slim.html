@@ -1,0 +1,16 @@
+{{ $resource := .Site.GetPage "company/success-stories/featured.md" }}
+{{ $files := .Site.Data.success_stories_featured.list }}
+{{ with $resource }}
+<h2 class="fs-6 fw-bold sg-indigo-500 mb-4">{{ .Title }}</h2>
+{{ end }}
+<ul class="list-group list-group-flush fw-bold">
+    {{ range  $key, $value := $files }}
+        {{ $page := site.GetPage .filename }}
+        {{ if $page }}
+            {{ $params := $page.Params }}
+
+        <li class="list-group-item border-sg-indigo-500 sg-gray-500 hstack align-items-stretch"><div>{{ $params.title }}</div><div class="ps-4 me-n3 ms-auto"><a href="{{ $page.RelPermalink }}" class="btn bg-sg-indigo-200-rgb bg-opacity-25 stretched-link"><span class="fa-light fa-arrow-up-right-from-square sg-indigo-500 mt-n1"></span></a></div></li>
+
+        {{ end }}
+    {{ end }}
+</ul>

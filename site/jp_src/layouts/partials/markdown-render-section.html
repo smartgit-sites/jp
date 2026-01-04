@@ -1,0 +1,44 @@
+{{/* markdown-render-section.html
+  Usage example:
+  {{ partial "markdown-render-section" (slice . "testimonial" `
+      <div class="col">
+          <blockquote class="lead">
+              $content
+              <footer class="blockquote-footer">{{ .Params.user }}</footer>
+          </blockquote>
+      </div>
+  `) }}
+
+  Parameters:
+  1. Page context (.)
+  2. Section name (string)
+  3. HTML template (string) - Can contain $content placeholder and Hugo template expressions
+*/}}
+
+{{- $page := index . 0 -}}
+{{- $section := index . 1 -}}
+{{- $template := index . 2 -}}
+{{- $content := $page.RawContent -}}
+{{- $content = $content | replaceRE "\r\n" "\n" -}}
+{{- $sections := split $content "\n# " -}}
+{{- $desiredSection := "" -}}
+
+{{- range $sections -}}
+  {{- if hasPrefix . (printf "%s\n" $section) -}}
+    {{- $desiredSection = . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- with $desiredSection -}}
+  {{- $cleaned := replaceRE (printf "^%s\n" $section) "" . -}}
+  {{- $contentHtml := markdownify $cleaned | safeHTML -}}
+  {{- $tpl := replace $template "$content" $contentHtml -}}
+  {{- $processedTpl := $tpl -}}
+  {{- range $key, $value := $page.Params -}}
+    {{- $type := (printf "%T" $value) -}}
+    {{- if eq $type "string" -}}
+        {{- $processedTpl = replace $processedTpl (printf "{{ .Params.%s }}" $key) $value -}}
+    {{- end -}}
+  {{- end -}}
+  {{ $processedTpl | safeHTML }}
+{{- end -}}

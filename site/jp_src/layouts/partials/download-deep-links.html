@@ -1,0 +1,24 @@
+<section class="px-md-5" id="download-deep-links">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="card border-2 box-dark border-sg-indigo-300">
+                    <div class="card-body p-5">
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            {{ with .Site.GetPage "section" "download/deep-links" }}
+                                {{ $pl := .Pages | len }}
+                                {{ $hl := math.Floor (div $pl 2) }}
+                                {{ range $idx, $pgs := .Pages }}
+                                <div class="col position-relative">
+                                    <h5 class="mb-4">{{ .Title }}</h5>
+                                    {{ .Content }}
+                                </div>
+                                {{ end }}
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

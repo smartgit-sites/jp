@@ -1,0 +1,34 @@
+{{ $sectionClasses := .Get "sectionClasses" }}
+{{ $columnClasses := .Get "columnClasses" }}
+{{ $isSectionFluid := .Get "isSectionFluid" | default "false" }}
+{{ $splitCC := slice }}
+{{ $splitCC = split $columnClasses "|" }}
+{{ $inner := .Inner }}
+{{ $contentParts := split $inner "---" }}
+{{ $idx := 0 }}
+{{ if eq $isSectionFluid "true" }}
+</div>
+</section>
+<section class="{{ $sectionClasses }} container-fluid"><div class="container">
+{{else }}
+<section class="{{ $sectionClasses }} container">
+{{ end }}
+<div class="row align-items-stretch">
+{{ range $contentParts }}
+{{ if eq (len $splitCC) (len $contentParts) }}
+<div class="{{ index $splitCC $idx }}">
+{{ $idx = add $idx 1 }}
+{{ else }}
+<div class="{{ $columnClasses }}">
+{{ end }}
+{{ . | safeHTML }}
+</div>
+{{ end }}
+</div>
+{{ if eq $isSectionFluid "true" }}
+</div>
+</section>
+<section class="container"><div class="row">
+{{else }}
+</section>
+{{ end }}

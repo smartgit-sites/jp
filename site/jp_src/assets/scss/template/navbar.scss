@@ -1,0 +1,71 @@
+#main-nav{
+  background-color: $sg-nav-background;
+  border-bottom: 1px solid $sg-nav-border;
+}
+
+.navbar-brand{
+  width:clamp(150px, 15vw, 270px); //adjust to orig. size and nav width
+  max-height:40px;
+}
+.navbar-brand img {
+  max-height: 40px;
+  width: auto;
+}
+/*.home .navbar-brand{
+  max-height:48px;
+}*/
+
+.navbar-nav .nav-item{
+  position: relative;
+}
+.navbar-nav .nav-item .nav-link{
+  color: $sg-text-primary;
+  font-weight: 500;
+}
+
+.navbar-nav .nav-item .nav-link:focus,
+.navbar-nav .nav-item .nav-link:hover,
+.navbar-nav .nav-item .nav-link.active,
+.navbar-nav .nav-item .nav-link:focus > [class*="sg sg-"],
+.navbar-nav .nav-item .nav-link:hover > [class*="sg sg-"]{
+  color: $sg-text-link;
+  text-decoration: underline;
+}
+.navbar-nav .nav-item .nav-link > [class*="sg sg-"]{
+  color: $sg-text-primary;
+  height:.8em;
+  width:.8em;
+}
+
+// Dropdown menu styling
+.navbar-nav .dropdown-menu{
+  background-color: $sg-nav-dropdown;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  visibility: hidden;
+}
+
+// Show dropdown on hover for desktop
+@media (min-width: map-get($grid-breakpoints, "lg")) {
+  .navbar-nav .nav-item.deeper.parent:hover > .dropdown-menu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.navbar-nav .dropdown-menu .nav-item .nav-link{
+  color: map-get($colors, "white");
+}
+.navbar-nav .dropdown-menu .nav-item .nav-link:focus,
+.navbar-nav .dropdown-menu .nav-item .nav-link:hover,
+.navbar-nav .dropdown-menu .nav-item .nav-link.active{
+  text-decoration: underline;
+}
+
+@media (min-width: map-get($grid-breakpoints, "xs")) {
+  .navbar-nav .dropdown-menu .nav-item .nav-link{
+    padding-left: $nav-link-padding-x;
+  }
+}

@@ -1,0 +1,46 @@
+{{ define "main" }}
+{{ partial "header.html" (merge (dict "Page" .) .Params) }}
+<section id="team-members" class="container mt-n5 px-lg-5">
+    <div class="row">
+    <div class="col-12 offset-lg-1 col-lg-10 sg-gray-400 pb-4 lead">
+        {{ .Content }}
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-12 offset-lg-1 col-lg-10 my-5">
+            <div class="row row-cols-1 row-cols-md-3 gx-4 gy-5">
+{{ range .Pages }}
+{{ $words := split .Title " " }}
+{{ $initials := apply $words "substr" "." 0 1 }}
+{{ $initialsString := delimit $initials "" }}
+<div class="col">
+    <div class="card h-100">
+        <div class="card-body text-center p-4 d-md-flex flex-md-column">
+            <div class="col-4 offset-4 col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+                <div class="ratio ratio-1x1">
+                        {{ with .Params.portrait }}
+                    <div class="rounded-circle d-flex justify-content-center align-items-center overflow-hidden">
+                        {{ $image := . }}
+                        {{ with $.Resources.Get $image }}
+                        <img src="{{ .RelPermalink }}" alt="{{ .Title }}">
+                        {{ end }}
+                        {{ else }}
+                        <div class="rounded-circle d-flex justify-content-center align-items-center bg-sg-indigo-300 overflow-hidden">
+                        <span class="fs-1 p-3 sg-indigo-100">{{ $initialsString | upper }}</span>
+                        {{ end }}
+                    </div>
+                </div>
+            </div>
+            <h3 class="fs-5 card-title sg-indigo-500 fw-bold pt-4">{{ .Title }}</h3>
+            <p>{{ .Params.position }}</p>
+                {{ .Content }}
+        </div>
+    </div>
+</div>
+{{ end }}
+
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,65 @@
+@use 'sass:math';
+
+$iconBaseWidth: 1.2;
+$iconBaseHeight: 1.2;
+
+[class*="sg sg-"],
+[class*="sgb sg-"]{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+[class*="sg sg-"]:not([class*="sgb"]){
+  width: #{$iconBaseWidth}em;
+  height: #{$iconBaseHeight}em;
+}
+[class*="sg sg-"] svg,
+[class*="sgb sg-"] svg{
+  width: 100%;
+  height: auto;
+}
+[class*="sg sg-"]:not([class*="sgb"]) svg{
+  aspect-ratio: 1 / 1;
+}
+[class*="sg sg-"] .svg-path,
+[class*="sgb sg-"] .svg-path{
+  fill: currentColor;
+}
+[class*="sg sg-"] .svg-stroke,
+[class*="sgb sg-"] .svg-stroke{
+  stroke: var( attr(stroke) );
+}
+.sg-credit-card2{
+  width: 1.4em !important;
+}
+.sg-credit-card2 svg{
+  aspect-ratio: 1.2 / 1 !important;
+}
+@for $i from 2 through 10 {
+  [class*="sg sg-"].sg-#{$i}x{
+    width: #{($iconBaseHeight * $i)}em;
+    height: #{($iconBaseHeight * $i)}em;
+  }
+  [class*="sgb sg-"].sg-#{$i}x{
+    width: percentage($i);
+  }
+}
+@for $i from 2 through 9 {
+  [class*="sg sg-"].sg-n#{$i}x{
+    width: #{($iconBaseHeight * ((10 - $i) / 10))}em;
+    height: #{($iconBaseHeight * ((10 - $i) / 10))}em;
+  }
+  [class*="sgb sg-"].sg-n#{$i}x {
+    width: percentage((10 - $i) / 10);
+  }
+}
+[class*="sg sg-"].sg-rotate-90{
+  transform: rotate(90deg);
+}
+[class*="sg sg-"].sg-rotate-180{
+  transform: rotate(180deg);
+}
+[class*="sg sg-"].sg-rotate-270{
+  transform: rotate(270deg);
+}

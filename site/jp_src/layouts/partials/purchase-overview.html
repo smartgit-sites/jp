@@ -1,0 +1,47 @@
+{{- $bundlePage := .context -}}
+{{- $accordionId := printf "accordion%s" (delimit (shuffle (seq 1 9)) "") -}}
+{{- $counter := 0 }}
+<div class="accordion accordion-flush pb-4" id="{{ $accordionId }}">
+{{ range $bundlePage.Resources.Match "*.md" }}
+    {{ $counter = add $counter 1 }}
+    <div class="accordion-item">
+        <h5 class="accordion-header">
+            <button class="accordion-button fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#{{ $accordionId }}_{{ $counter }}" aria-expanded="{{ if eq $counter 1 }}true{{ else }}false{{ end }}" aria-controls="{{ $accordionId }}_{{ $counter }}">
+                {{ .Title }}
+            </button>
+        </h5>
+        <div id="{{ $accordionId }}_{{ $counter }}" class="accordion-collapse collapse{{ if eq $counter 1 }} show{{ end }}" data-bs-parent="#{{ $accordionId }}">
+            <div class="accordion-body row align-items-stretch g-4">
+        {{ $content := .Content }}
+        {{ $srcPattern := `<img[^>]*src=['"]([^'"]+)['"]` }}
+        {{ $srcMatches := findRE $srcPattern $content }}
+        {{ $altPattern := `<img[^>]*alt=['"]([^'"]+)['"]` }}
+        {{ if $srcMatches }}
+                <div class="col-12 col-md-6">
+                {{ range $index, $elem :=$srcMatches }}
+                    {{ $path := replaceRE `.*src=['"]([^'"]+)['"].*` `$1` . }}
+                    {{ $altMatches := findRE $altPattern $content }}
+                    {{ $altMatch := index $altMatches $index}}
+                    {{ $alt := replaceRE `.*alt=['"]([^'"]+)['"].*` `$1` $altMatch }}
+                    {{ range $bundlePage.Page.Resources }}
+                        {{ if strings.Contains .Name $path }}
+                        <img src="{{ .RelPermalink }}" alt="{{ $alt | safeHTML }}">
+                        {{end }}
+                    {{ end }}
+                {{ end }}
+                </div>
+                <div class="col-12 col-md-5 bg-sg-indigo-100-rgb bg-opacity-50 rounded p-5">
+                            {{ $txt := .RawContent | replaceRE `!\[.*?\]\(.*?\)` "" }}
+                            {{ $txt | markdownify }}
+                </div>
+        {{ else }}
+                <div class="col-12 bg-sg-indigo-100-rgb bg-opacity-50 rounded p-5">
+                    {{ $txt := .RawContent | replaceRE `!\[.*?\]\(.*?\)` "" }}
+                    {{ $txt | markdownify }}
+                </div>
+        {{ end }}
+            </div>
+        </div>
+    </div>
+{{ end }}
+</div>

@@ -1,0 +1,51 @@
+{{ define "main" }}
+{{ partial "header.html" (merge (dict "Page" . "message" .Params.description "headerH2" "Free 30 days evaluation") .Params) }}
+<main>
+  <noscript>
+    <section class="container pt-0 pb-0 mt-n5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <div class="alert alert-warning">
+            JavaScript is required to request the evaluation license on this page. Please enable JavaScript and reload.
+            Alternatively, you can download SmartGit and follow the Setup wizard — it will request your evaluation license automatically.
+          </div>
+        </div>
+      </div>
+    </section>
+  </noscript>
+  <section class="container pt-0 pb-4 mt-n5">
+    <div class="row justify-content-center">
+      <div class="col-lg-10 col-xl-8">
+
+        <div id="eval-alert" class="alert d-none" role="alert"></div>
+
+        <form id="evaluation-form" class="needs-validation" novalidate>
+          <input type="hidden" name="product" id="evaluation_product" value="smartgit">
+          <input type="hidden" name="evaluation[input]" id="evaluation_input" value="">
+          <input type="hidden" name="source_url" id="evaluation_source_url" value="">
+          <input type="hidden" name="query_params" id="evaluation_query_params" value="">
+
+          <div class="mb-3 visually-hidden">
+            <div id="turnstile-container"></div>
+          </div>
+        </form>
+
+        <div id="eval-success" class="mt-0 d-none">
+          <div id="eval-success-row" style="display:grid; grid-template-columns: 1fr auto; grid-template-rows: auto auto; gap: .75rem; align-items:start;">
+            <p class="mb-0" style="grid-column:1; grid-row:1;">To start the SmartGit evaluation, please copy/paste the following text into the corresponding input field in SmartGit:</p>
+            <pre class="p-3 bg-light border rounded small mb-2" id="activation-certificate" style="grid-column:1; grid-row:2; white-space:pre-wrap; overflow-wrap:anywhere; word-break:break-word;"></pre>
+            <div style="grid-column:2; grid-row:2;">
+              <button type="button" class="btn btn-sm btn-outline-secondary" id="btn-copy-certificate">Copy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
+  {{ $src := resources.Get "javascripts/smartgit-evaluation-form.js" }}
+  {{ $js := $src | resources.ExecuteAsTemplate "javascripts/smartgit-evaluation-form.js" . | resources.Fingerprint }}
+  <script src="{{ $js.RelPermalink }}"></script>
+</main>
+{{ end }}

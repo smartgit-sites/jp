@@ -1,0 +1,417 @@
+@use 'sass:math';
+@import "vendor/bootstrap/functions";
+@import "vendor/bootstrap/variables";
+
+@import "template/smartgit-colors";
+
+@import "vendor/bootstrap/bootstrap";
+@import "overrides";
+
+@import "vendor/fontawesome/fontawesome";
+@import "vendor/fontawesome/regular";
+@import "vendor/fontawesome/light";
+@import "vendor/fontawesome/duotone-light";
+@import "vendor/fontawesome/duotone-regular";
+@import "vendor/fontawesome/brands";
+
+@import "template/smartgit-buttons";
+@import "template/instrument-sans";
+@import "template/meta-nav.scss";
+@import "template/navbar.scss";
+@import "template/smartgit-carousel.scss";
+@import "template/smartgit-accordion-tabbed.scss";
+@import "template/smartgit-accordion.scss";
+@import "template/smartgit-footer.scss";
+@import "template/smartgit-icon.scss";
+@import "template/smartgit-how-it-works.scss";
+@import "template/smartgit-integrations.scss";
+@import "template/smartgit-success-stories.scss";
+@import "template/smartgit-form.scss";
+@import "template/smartgit-subnav.scss";
+
+body{
+  font-family: "Instrument Sans", var(--bs-font-sans-serif);
+  color: $sg-text-primary;
+}
+
+a, a *{
+  transition: 0.8s ease !important;
+  -webkit-transition: 0.8s ease !important;
+}
+
+a:not(.nav-link):not(.btn):not(.text-footer-top){
+  color: $sg-text-primary;
+  /*text-decoration: none;*/
+}
+a:not(.nav-link):not(.btn):not(.text-footer-top):hover,
+a:not(.nav-link):not(.btn):not(.text-footer-top):focus{
+  color: $sg-text-link;
+  text-decoration: underline;
+}
+a[class*="fa-"][target="_blank"]{
+  color:inherit;
+  padding-right: map-get($spacers, 3);
+  position: relative;
+}
+a[class*="fa-"][target="_blank"]::before{
+  font-size: small;
+  position: absolute;
+  right: 0;
+}
+a[class*="fa-"][target="_blank"] > span{
+  font-family: 'Instrument Sans', var(--bs-font-sans-serif);
+
+}
+
+img:not([src*=".svg"]){
+  width:100%;
+  height:auto;
+}
+
+body.home header .container{
+  background-image: url(./static/images/sg-construct-header-home.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.header-construct {
+  position: absolute;
+  left: 3rem;
+  right: 0;
+  z-index: 1;
+  overflow: hidden;
+  max-height: 107px;
+  bottom: -16px;
+  height: 10vw;
+  min-height: 41px;
+}
+.header-construct .icon{
+  width:100%;
+  height:100%;
+}
+
+/* CSS-based SVG background for consistent display across all modes */
+.sg-construct-header {
+  background-image: url('/images/sg-construct-header.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+@include media-breakpoint-only(sm) { .header-construct {bottom:-16px} }
+@include media-breakpoint-only(md) { .header-construct {bottom:-22px} }
+@include media-breakpoint-only(lg) { .header-construct {bottom:-25px} }
+@include media-breakpoint-only(xl) { .header-construct {bottom:-23px} }
+@include media-breakpoint-only(xxl) { .header-construct {max-height: 105px;} }
+
+table{
+  @extend .table;
+}
+
+#static-gitty{
+    width: clamp(40px, 5vw, 400px);
+    height: clamp(40px, 5vw, 400px);
+    position: fixed;
+    z-index: 10000;
+    bottom: map-get($spacers, 3);
+    left: map-get($spacers, 3);
+}
+
+main h1, main h2{
+  color: $sg-text-secondary;
+}
+
+.text-white h1,
+.text-white h2 {
+  color: $white;
+}
+
+body.company {
+  h3[id]{
+    color: $sg-text-link;
+    font-size: map-get($font-sizes, 4);
+    margin-top: map-get($spacers, 5);
+  }
+  h3[id]:not(:first-child){
+    margin-bottom:map-get($spacers, 3);
+  }
+}
+
+body.privacy-policy{
+  h4, h5{
+    font-size:map-get($font-sizes, 6);
+    margin-top:map-get($spacers, 4);
+  }
+}
+body.terms-of-sale{
+  h2[id], h3[id]{
+    color: $sg-text-secondary;
+    font-size:map-get($font-sizes, 6);
+    margin-top:map-get($spacers, 4);
+  }
+  h4, h5{
+    font-size:map-get($font-sizes, 6);
+    margin-top:map-get($spacers, 4);
+  }
+}
+@include media-breakpoint-up(lg) {
+  .chevron-right::after,
+  .chevron-right::before {
+    content: '';
+    background-color: var(--sg-indigo-100) !important;
+    position: absolute;
+    right: -15%;
+    width: 4px;
+    height: 57%;
+    rotate: -40deg;
+  }
+  .chevron-right::after {
+    top: 0;
+    rotate: 40deg;
+  }
+  .chevron-right::before {
+    bottom: 0;
+  }
+}
+
+.dropzone__message{
+  display: none;
+}
+[data-module="license-dropzone"].is-success .dropzone__message--success{
+  display: block;
+}
+[data-module="license-dropzone"].is-error .dropzone__message--error{
+  display: block;
+}
+[data-module="license-dropzone"].is-processing .dropzone__message--processing{
+  display: block;
+}
+.fullscreen-dropzone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: $sg-surface-overlay;
+  outline: 4px dashed $sg-dropzone-border;
+  outline-offset: -16px;
+  font-size: 2em;
+  -webkit-transition: opacity 150ms ease-in;
+  transition: opacity 150ms ease-in;
+}
+.fullscreen-dropzone:not(.is-dragover) {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+}
+
+[data-price-tag="total"] > span:nth-child(2),
+[data-price-tag="upgrade"] > span:nth-child(2),
+[data-price-tag="smart_synchronize"] > span:nth-child(2),
+[data-price-tag="distributed_reviews_addon"] > span:nth-child(2){
+  padding-left: 5px;
+}
+
+.dropzone__message{
+  display: none;
+}
+[data-module="license-dropzone"].is-success .dropzone__message--success{
+  display: block;
+}
+[data-module="license-dropzone"].is-error .dropzone__message--error{
+  display: block;
+}
+[data-module="license-dropzone"].is-processing .dropzone__message--processing{
+  display: block;
+}
+.fullscreen-dropzone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: $sg-surface-overlay;
+  outline: 4px dashed $sg-dropzone-border;
+  outline-offset: -16px;
+  font-size: 2em;
+  -webkit-transition: opacity 150ms ease-in;
+  transition: opacity 150ms ease-in;
+}
+.fullscreen-dropzone:not(.is-dragover) {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+}
+
+[data-price-tag="total"] > span:nth-child(2),
+[data-price-tag="upgrade"] > span:nth-child(2){
+  padding-left: 5px;
+}
+
+.box-dark{
+  background-color: $sg-surface-primary;
+  color: $white;
+}
+@for $i from 1 through 6 {
+  .box-dark h#{$i}{
+    color: $white;
+  }
+}
+.box-dark-gray{
+  background-color: $sg-surface-medium-gray;
+  color: $sg-text-on-dark-gray;
+}
+@for $i from 1 through 6 {
+  .box-dark-gray h#{$i}{
+    color: $sg-text-on-dark-gray;
+  }
+}
+
+.box-light-gray{
+  background-color: $sg-surface-lightest-gray;
+  color: $sg-text-link;
+}
+@for $i from 1 through 6 {
+  .box-light-gray h#{$i}{
+    color: $sg-text-link;
+  }
+}
+
+.box-light{
+  background-color: $sg-surface-light;
+  color: $sg-text-primary;
+}
+
+// =============================================================================
+// TEASER COMPONENT STYLES
+// =============================================================================
+
+.teaser-container {
+  border: 1px solid $sg-subtle-border;
+  border-radius: $border-radius;
+  overflow: hidden;
+}
+
+.teaser-upper {
+  background-color: $sg-surface-lightest-gray;
+  color: $sg-text-link;
+  padding: map-get($spacers, 5);
+}
+
+.teaser-upper h1,
+.teaser-upper h2,
+.teaser-upper h3,
+.teaser-upper h4,
+.teaser-upper h5,
+.teaser-upper h6 {
+  color: $sg-text-link;
+}
+
+.teaser-lower {
+  background-color: $sg-surface-light;
+  color: $sg-text-primary;
+  padding: map-get($spacers, 3) map-get($spacers, 5);
+}
+
+.teaser-lower h1,
+.teaser-lower h2,
+.teaser-lower h3,
+.teaser-lower h4,
+.teaser-lower h5,
+.teaser-lower h6 {
+  color: $sg-text-primary;
+}
+
+// =============================================================================
+// INFO BOX
+// =============================================================================
+
+.info-box {
+  @extend .p-3;
+  @extend .text-info-emphasis;
+  @extend .bg-info-subtle;
+  @extend .border;
+  @extend .border-info-subtle;
+  @extend .rounded-3;
+  > :first-child {
+    margin-top: 0;
+  }
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+// =============================================================================
+// FEATURE IMAGE BACKGROUND
+// =============================================================================
+
+.bg-feature-image {
+  background-color: $sg-surface-lightest-gray;
+}
+
+// =============================================================================
+// FOOTER BACKGROUNDS
+// =============================================================================
+
+.bg-footer-top {
+  background-color: $sg-footer-top;
+}
+
+.bg-footer-bottom {
+  background-color: $sg-footer-bottom;
+}
+
+.bg-download-teaser {
+  background-color: $sg-surface-lightest-gray;
+}
+
+.bg-light-box {
+  background-color: $sg-surface-light-box;
+}
+
+// =============================================================================
+// SEMANTIC TEXT COLORS
+// =============================================================================
+
+.text-download-teaser {
+  color: $sg-text-download-teaser;
+}
+
+.text-footer-top {
+  color: $sg-text-footer-top;
+}
+
+.text-footer-bottom {
+  color: $sg-text-primary;
+}
+
+.border-download-teaser {
+  border-color: $sg-border-download-teaser;
+}
+
+.border-footer-separator {
+  border-color: $sg-border-footer-separator;
+}

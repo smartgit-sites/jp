@@ -1,0 +1,9 @@
+list:
+  - filename: "company/success-stories/streamlining-multi-project-workflows"
+  - filename: "company/success-stories/from-chaos-to-clarity-using-smartgit"
+  - filename: "company/success-stories/bridging-technical-divides-using-smartgit"
+
+listColors:
+  - color: "indigo"
+  - color: "blue"
+  - color: "green"

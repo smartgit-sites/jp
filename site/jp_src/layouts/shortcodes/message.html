@@ -1,0 +1,3 @@
+{{ $type := .Get "type" | default "info" }}
+{{ $message := .Get "message" | default "-" }}
+<p class="p-3 text-{{ $type }}-emphasis bg-{{ $type }}-subtle border border-{{ $type }}-subtle rounded-3">{{ $message | markdownify }}</p>

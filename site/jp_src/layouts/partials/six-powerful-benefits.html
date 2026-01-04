@@ -1,0 +1,42 @@
+{{ $benefitPage := site.GetPage "home/benefits.md" }}
+{{ $items := $benefitPage.Params.benefit }}
+<section id="features" class="container my-5">
+  <div class="row">
+    <div class="col-12">
+      <div class="card border border-1 border-sg-indigo-500 rounded-2 bg-transparent">
+        <div class="card-header bg-transparent border-0 text-center sg-gray-400 pt-4 py-4">
+          <h2>{{ $benefitPage.Params.title }}</h2>
+        </div>
+        <div class="card-body p-5">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
+            {{ range $item := $items }}
+            <div class="col">
+              <div class="card border-0">
+                <div class="card-body">
+                  <div class="ratio ratio-1x1 w-25 mb-3">
+                    <div class="rounded-circle bg-sg-indigo-100 d-flex justify-content-center align-items-center">
+                      <i class="{{ $item.icon }}" style="--fa-primary-color: var(--sg-indigo-500); --fa-secondary-color:var(--sg-orange-500);--fa-secondary-opacity: 1.0" data-sg="sg-indigo-500,sg-orange-500"></i>
+                    </div>
+                  </div>
+                  <h5 class="card-title sg-indigo-500">{{ $item.title }}</h5>
+                  <hr class="w-25 sg-indigo-400 border-2">
+                  <p class="card-text">{{ $item.desc |markdownify }}</p>
+                  {{ with $item.link }}
+                  <p class="text-end"><a href="{{ $item.link }}" title="{{ $item.linkText }}: {{ $item.title }}" class="stretched-link">{{ $item.linkText }}</a></p>
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+          <div class="row">
+            <div class="col-12 px-4 text-center">
+              <!-- TODO: get content from $benefitPage -->
+              {{ .Content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

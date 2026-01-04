@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="refresh" content="0; URL={{ .Site.BaseURL }}" />
+{{ partial "head.html" . }}
+<body>
+{{ partial "header.html" (dict "headerH1" "This is an obsolete link.") . }}
+<main>
+  <section class="container">
+    <div class="row">
+      <div class="col">
+        <p>If you are not redirected to "{{ .Site.BaseURL }}" immediately, please <a href="{{ .Site.BaseURL }}">click here</a>.</p>
+        <p>If you are lookink for our Success Stories, please <a href="/company/success-stories">click here</a>.</p>
+      </div>
+    </div>
+  </section>
+</main>
+{{ partial "footer.html" . }}
+</body>
+</html>

@@ -1,0 +1,414 @@
+SmartGit 1.5.7 (2010-11-01)
+===========================
+Improved
+--------
+- startup: when passing not yet known working tree path as argument, a new
+  project is silently created
+- refresh: severe problems are now reported using a dialog instead of using
+  the "present but defect" state
+- project window:
+  - added menu item to reset layout
+  - to not expand the working tree roots automatically, set
+    the VM property smartgit.workingTree.expandFirstLevel to false
+- Branch chooser: to disable possible expensive evaluation of diverged
+  commits, set the VM option smartgit.branch.evaluate-diverged-commits
+  to false
+
+Fixed Bugs
+----------
+- Conflict Solver: when scrolling horizontally after having scrolled
+  vertically, it scrolled back to the vertical position of the caret
+- Refresh: fixed possible internal error
+- Push: tracking branch name different from local branch name has not
+  been honoured
+- OS X: updated Quaqua to version 7.1.1 to solve a crash in the file chooser
+
+
+SmartGit 1.5.6 (2010-09-02)
+===========================
+Fixed Bugs
+----------
+- Cherry-pick: even if failed with conflict, the output node is shown
+  green
+- OS X: VM crash when selecting something in the File chooser and an
+  accessibility tool, e.g. Voice Over, is active
+- Log: 
+  - after opening the "Changes" view and file table showed details from
+    wrong commit
+  - internal error if branch name does not match the exact-case of the
+    file name
+- Refresh (Windows): performance improvement
+- Refresh: internal error after having added a submodule outside of
+  SmartGit
+- Branch Manager: was available for non-local branches, too
+- Delete tag/branch: error "dst refspec ... matches more than one"
+- Stage: did not work for ignored files
+
+
+SmartGit 1.5.5 (2010-08-10)
+===========================
+Fixed Bugs
+----------
+- internal error, because main frame is locked two times without unlocking
+- Ignores: relative path for core.excludesfile in user's .gitconfig was not
+  used relative to the repository root
+- Sync: failed with "Could not resolve commit 'refs/remotes/origin/master'
+  if remote repository was empty
+- Commit: in case of merged submodule, no repository selection dialog was
+  shown
+- Compare components: after a very expensive file compare, subsequent
+  compares did not work any more
+- Refresh: 'git update-index --really-refresh' caused files set with
+  --assume-unchanged to be reset; replaced with 'git update-index --refresh'
+- Log: "All Branches" option was available for files and subdirectories
+- OS X: removed work-around for Apple Java bug 8102825, because too much
+  side-effects
+- OS X: unselected radio buttons were focusable
+- OS X: Work-around for critical Java Virtual Machine bug 6875866,
+  affecting Intel Nehalem CPUs, e.g. Core i7, and possibly resulting
+  in various strange internal errors
+
+
+SmartGit 1.5.4 (2010-06-23)
+===========================
+Fixed Bugs
+----------
+- Refresh:
+  - if all merge conflicts had been resolved but not committed, the
+    working tree did not show the merging state any more
+  - fixed possible internal error
+- Git-SVN: all operations hung after completion
+- Rebase, Options page: under certain conditions no radio button was
+  selected initially
+- Clone: wrong local path suggestion when cloning using SCP-like "URL"s
+- Cherry-pick: when cherry-picking from multiple commits and one fails, no
+  warning was shown about not having cherry-picked all selected commits
+- Revert: failed if file had index state "Conflicted (deleted by us)"
+- Pull dialog: did not preselect the option "And initialized new submodules"
+- Show Changes: does not ask any more what to compare if the file is in
+  conflict state after a merge, becaus ein this case no Index state is
+  available
+- OS X: symlinks pointing to targets containing non-US-ASCII-characters
+  were detected as modified
+- OS X: because of a Apple Java bug 8102825 a File Compare opened from the
+  Commit dialog will be shown behind the Commit dialog; added a work-around
+- Windows-bundle with JRE: problems on non-western systems
+
+
+SmartGit 1.5.3 (2010-06-08)
+===========================
+Improved
+--------
+- updated Quickstart guide to better describe core Git features
+- Clone or Add Submodule: if the repository location ends with .git, the
+  local directory name is suggested without .git
+
+Fixed Bugs
+----------
+- Github integration: did not show private repositories
+- Refresh:
+  - internal error
+  - wrong "As HEAD" state
+  - on Windows files which are marked as executable in the Index were
+    not displayed even when core.fileMode=true
+  - Index modifications of "mode" bits were not detected
+- Rebase: internal error switching back and forth between "Target"
+  and "Source" page
+- if ~/.ssh/known_hosts contained invalid entries, SmartGit did not start
+- Add Submodule: added module definition in .gitmodules with \\ instead of
+  / on Windows which caused pull to fail
+- Clone: could not clone a local bare repository, e.g. /foo/bar.git
+- Submodule: initializing of single submodule did not honor relative URLs
+- Commit, Select from Log: when having selected the virtual commit "merging
+  not yet committed", a misleading error message was shown
+
+
+SmartGit 1.5.2 (2010-05-21)
+===========================
+Improved
+--------
+- Log: straighter layout of branch starts
+
+Fixed Bugs
+----------
+- Conflict Solver: temp files were tried to create with colons in the name
+- directory tree popup menu did not match the selected directory when
+  right-clicking a previously unselected directory
+- Refresh:
+  - internal error when having different file name case in index and
+    working tree
+  - certain modifications were not detected if timestamps were near
+    the index' timestamp ("racily clean" files were not detected)
+  - internal error related to project state calculation
+- Edit|Customize: did not apply changes immediately after clicking OK
+- Submodules: empty submodules (initialized, but not yet pulled) were
+  not displayed
+- SmartGit-SSH: fails (at least on Windows) if the temp directory path
+  contains spaces; an according warning message is now shown with the
+  msysgit bug causing this problem
+- Remove: if invoked on a directory and nothing was found, no information
+  dialog was shown
+- Relative Directory table column: incorrect working tree was displayed
+  for files in a multi-working-tree project if the (project) root node
+  had been selected
+- generic bundle: contained .png files with incorrect name
+
+
+SmartGit 1.5.1 (2010-04-22)
+===========================
+Improved
+--------
+- Clone: a not-yet-existing target directory will be tried to create
+  automatically
+- Log, Branch Chooser dialog:
+  - is now sorted by type
+  - added speed-search (search as you type)
+- Checkout command (and others): output progress is shown in progress bar
+
+Fixed Bugs
+----------
+- memory leaks
+- used new JIDE docking library to fix an internal error
+- compare preview: fixed internal error when clicking on the change stripe
+- Log:
+  - fixed performance problem for large repositories
+  - internal error for corrupt/missing commit objects
+- Refresh: internal error related to project state calculation
+- Refresh (and other commands):
+  - possible UI freeze for large projects and many changes
+  - improved performance in case of many changes
+- Refresh (Windows/OS X): avoiding redundant full refresh after initial
+  scanning
+- Stage Lines: failed with error about HEAD not available for added files
+- Windows look and feel, tree: for multiple selected nodes repaint did
+  not work correctly
+
+
+SmartGit 1.5 (2010-04-07)
+=========================
+Fixed Bugs
+----------
+- internal error setting the working tree text file encoding to system
+  encoding
+
+
+SmartGit 1.5 rc 3 (2010-04-01)
+==============================
+Improved
+--------
+- Rebase: added third wizard page to configure further rebase options,
+  e.g. how branches should be handled (moved or kept)
+
+Fixed Bugs
+----------
+- Log:
+  - containing branches on the Details tab were not displayed when log
+    is extended
+  - no File has been shown if only files in the root directory had been
+    changed by the selected commit
+- Refresh (OS X, Unix): fixed performance problem for working trees
+  located at a symlink or containing symlinks
+- Refresh: when resuming after a command invocation, phantom changes
+  were reported
+- Cherry Pick dialog:
+  - multi-threading related internal error
+  - sometimes all revisions were marked as available
+- Rebase:
+  - showed warning about losing commits even when they actually would not
+    be lost
+  - under certain conditions on Source page the Branch option could not
+    be selected
+
+
+SmartGit 1.5 rc 2 (2010-03-30)
+==============================
+Improved
+--------
+- built-in Compare, Editor, Conflict Solver: UTF-8 encoded text files with
+  BOM are detected automatically (like UTF-16 files with BOM before)
+
+Fixed Bugs
+----------
+- Refresh: fixed possible internal error when changing submodules while
+  refresh is processing
+- Remove Working Tree: fixed possible internal error when invoked during
+  a refresh
+- Git-SVN integration:
+  - pushing hang under certain conditions
+  - status bar did not show the ahead/behind commit numbers
+  
+
+Other Important Changes
+-----------------------
+- Commit messages are now stored using UTF-8 to avoid git warnings. To use
+  the previous behaviour, set the Java VM property
+  "commit.message.useSystemEncoding" to "true".
+
+
+SmartGit 1.5 rc (2010-03-26)
+============================
+Improved
+--------
+- Log: SVN revision columns is now only present for git-svn repositories
+
+Fixed Bugs
+----------
+- Switch, Push dialog: active branch was not shown any more
+- Push dialog: internal error after showing warning
+- Refresh: internal error for a file with name '\'
+- Refresh (OS X, Linux):
+  - possible internal error if symlink resolution failed
+  - unversioned directory-symlink or broken symlink were not displayed
+  - fixed performance bottleneck on 64-bit OS
+- Commit/Stage: did not work for broken symlinks
+- Delete: empty error message when trying to delete locked file
+- Output: execution of commands is reported as error, although there have
+  been just warnings
+
+
+
+SmartGit 1.5 beta 4 (2010-03-23)
+================================
+Fixed Bugs
+----------
+- Commit dialog, Select from Log: always added trailing line separator
+- Log (and others): internal error for invalid author/committer
+  information
+- Log: internal error in case of corrupt commits
+- Check Out: internal error when invoking the branch selector on a
+  repository which is not at a branch
+- Check Out (and others): internal error when invoking on a merging
+  repository
+- Check Out (and others): internal error when pressing OK button without
+  having a (valid) commit selected
+- Add Submodule: internal error when trying to add submodule to
+  repository which itself has no origin
+- Switch dialog: OK button was enabled even during initial loading
+
+
+SmartGit 1.5 beta 3 (2010-03-16)
+================================
+New Features
+------------
+- project with multiple working trees: ability to arrange the working
+  trees with drag and drop
+
+Improved
+--------
+- Log (and dialogs showing the commit history): reworked the branch
+  selector
+- Log: reduced UI noise after opening a graph showing all branches
+- improved dialog texts, incoming and outgoing changes arrows
+- Push: allows to push tags
+- project file list: display different conflict types
+- project directory structure, working tree roots:
+  - while rebasing show a blue exclamation mark
+  - don't show full paths any more, but only short ones (the full path is
+    displayed in the tooltip)
+- tray icon popup: now uses a better font
+
+Fixed Bugs
+----------
+- Log: certain dialogs were displayed on project window (instead of the
+  Log window)
+- Windows: the binary quick compare before opening a compare tool did not
+  detect files differing only in line separators
+- Log, Compare with Working Tree: save did not trigger refresh in project
+  window
+- Rebase: asked for branch selection on target page although irrelevant
+- Refresh:
+  - fixed possible dead-lock
+  - certain kinds of staged files were not detected
+- Add Submodule: did not trigger refresh of added submodule
+- Push: fixed possible internal error
+- Undo Commit: if invoked for the first commit in the repository, the
+  error message was misleading
+- certain commands must not be available on nested modules
+- Compare Preview: did not refresh if the file was modified
+
+
+SmartGit 1.5 beta 2 (2010-03-11)
+================================
+New Features
+------------
+- Branch Manager: configure and reset tracking
+- status bar: the selected file or directory count is shown
+
+Improved
+--------
+- improved refresh performance (e.g. refresh after saving in built-in
+  File Compare)
+- git-svn integration: now also remembers path for SVN client certificates
+- directory structure: the working tree root now shows the name or
+  relative path to a common root (in case of multiple working trees) to
+  make the current branch better visible
+- Log: moved root (branch) combobox to graph header to save screen space
+- Log: indicate HEAD
+- Log: optional table column showing the SVN revision (git-svn)
+- Revert on a modified submodule: optionally resets to registered commit
+- Pull: option to initialize submodules
+- Conflict Solver: shows file name in title
+
+Fixed Bugs
+----------
+- when cloning and a new project window opens, the progress was shown in
+  the wrong window
+- Conflict Solver: now prevents to be opened on binary files
+- different commands: internal error if invoked for an empty repository
+- Revert to Head on ignored files resulted in staged changes
+- Refresh: internal errors, e.g. for invalid submodule
+- Push: now also allows to push, if "behind" tracking branch (using force)
+- Pull/Sync: submodule update did not consider SSH settings
+- Log: incorrect commits were displayed if invoked on a file during a
+  merge
+- Compare preview: was not correctly refreshed after having changed the
+  font size
+
+
+SmartGit 1.5 beta 1 (2010-03-04)
+================================
+New Features
+------------
+- Remote|Sync: to perform a push and pull
+- basic git-svn integration
+- Local|Stage Lines: opens a 3-pane-compare (Head, Index, Working tree)
+  to individually modify them
+- quick stash using the popup menu in the tray
+- Commit and Revert dialog: double click to open a file compare
+- Local|Reset: to reset to an earlier commit and then be able to squash-
+  merge intermediate commits
+- OS X: on window activation changes to the project structure will be 
+  automatically refreshed
+- Project|Edit Working Tree:
+  - ability to change the working tree path
+  - configure text file encoding used for built-in file compare, conflict
+    solver, editor
+  - ability to define default sync and pull operations (rebase vs. merge)
+- Log: refresh
+- OS X, Help menu: ability to open the quick start pdf
+
+Improved
+--------
+- submodule support (Remote|Submodule)
+- built-in File Compare, Conflict Solver, Editor: ability to use non-fixed
+  fonts allowing far-east characters to be displayed correctly
+- Pull: option to use Rebase (Project|Edit Working Tree)
+- Pull (Fetch): a warning is shown if no merging is possible because of no
+  tracking branch
+- Switch, create local branch: option to configure tracking
+- Pull and Switch dialog: information about number of commits ahead or
+  behind tracking branch is shown
+- Rebase: option to rebase onto tracking branch
+- Clone: remembers last cloned URL
+- Clone (OS X): if the target directory only contains a .DS_Store file,
+  it will be deleted before cloning, so the clone will be performed in
+  this directory, not a subdirectory
+- Rebase: warning is shown to prevent loosing commits accidently
+- Local|Save Stash: new option to add untracked files
+- detection of bare repositories
+- Log: refresh
+- Log: remembers whether all branches were shown
+- Log: when in merging state for a file, show virtual merge sources branch
+- option to prevent tray icon
+- option to always open project in current or new window
+- for files, file size and last modified time are displayed

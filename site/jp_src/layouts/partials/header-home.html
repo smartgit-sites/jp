@@ -1,0 +1,18 @@
+{{ $resource := .Site.GetPage "/home" }}
+{{ $scDnldSG := "{{< btn-download-smartgit >}}" }}
+{{ with $resource }}
+<header>
+    <div class="container py-5 mb-5">
+        <div class="row">
+            <div class="col-12 col-lg-5 pe-5 align-content-center">
+                {{ partial "markdown-render-section" (slice . "headline" `<h1 class="display-1 sg-indigo-500 lh-1">$content</h1>`) }}
+                {{ partial "markdown-render-section" (slice . "subline" `<p class="fs-5 pb-4">$content</p>`) }}
+                <p>{{ .Page.RenderString $scDnldSG }}</p>
+            </div>
+            <div class="col-12 col-lg-6 p-4 d-none d-lg-block">
+                {{ partial "markdown-render-section" (slice . "image" `<div class="card rounded-4 border-5 overflow-hidden">$content</div>`) }}
+            </div>
+        </div>
+    </div>
+</header>
+{{end }}

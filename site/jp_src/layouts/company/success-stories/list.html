@@ -1,0 +1,231 @@
+{{ define "main" }}
+{{ partial "header.html" (merge (dict "Page" .) .Params) }}
+{{ partial "success-stories-why-who-how" . }}
+<main id="success-stories_list">
+    <div id="wait-for-promise"><i class="fa-light fa-sync fa-spin fa-2xl"></i></div>
+    <div id="drop_zone">DROP HERE <i class="fa-light fa-arrow-right-to-bracket fa-rotate-90"></i></div>
+    <section id="success-stories-featured-blog" class="container my-5">
+        <div class="row">
+            <div class="col-12 text-center sg-gray-400 pb-4">
+                {{ .Content }}
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-4 gy-5">
+            {{ range .Paginator.Pages }}
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body p-4 d-md-flex flex-md-column">
+                        <h4 class="fs-5 card-title">{{ .Title }}</h4>
+                        <p>{{ .Summary }}</p>
+                        <a href="{{ .Permalink }}" class="btn btn-sg-orange w-50 position-absolute end-0 bottom-0 me-3 mb-n4 border-5 rounded-4 border-white">Read more <i class="fa-light fa-arrow-up-right-from-square ms-2"></i></a>
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+        {{ partial "pagination" . }}
+    </section>
+    <section id="success-stories-form" class="mb-5">
+        <div class="container-fluid border-bottom border-top border-sg-indigo-100 bg-sg-gray-500-rgb bg-opacity-10 py-5">
+            <div class="container">
+                <div id="response"></div>
+                <form id="success-story-form" action="/worker/success-story/submit" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+                    <div id="page_0" class="page">
+                        <div class=" row g-3">
+                            <div class="col-md-4">
+                                <input type="hidden" name="se" value="page_0" id="se">
+                                <div class="form-floating mb-3">
+                                    <input  type="text" class="form-control" id="name" name="testimonial_user" placeholder="First and last name" required>
+                                    <label for="name" class="form-label">First and last name</label>
+                                    <div class="invalid-feedback">
+                                        Please provide your first and last name.
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" rows="10" id="challange" name="challenge" placeholder="What was the Git challenge to overcome?" style="min-height:100px;" required></textarea>
+                                    <label for="challange" class="form-label">What was the Git challenge to overcome?</label>
+                                    <div class="invalid-feedback">
+                                        Please tell us about the Git challenge you were facing.
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" rows="10" id="testimonial" name="testimonial" placeholder="Testimonial" style="min-height:100px;"></textarea>
+                                    <label for="testimonial" class="form-label">Testimonial</label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-floating mb-3">
+                                    <input  type="email" class="form-control" id="email" name="email" placeholder="Email address" required>
+                                    <label for="email" class="form-label">Email address</label>
+                                    <div class="invalid-feedback">
+                                        Please provide your email address.
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" rows="10" id="solution" name="solution" placeholder="What was the SmartGit solution?" style="min-height:100px;" required></textarea>
+                                    <label for="solution" class="form-label">What was the SmartGit solution?</label>
+                                    <div class="invalid-feedback">
+                                        Please tell us about your solution using SmartGit.
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input  type="text" class="form-control" id="testimonial-link" name="testimonial_link" placeholder="Name of company">
+                                    <label for="testimonial-link" class="form-label">URL (Company/Project/Your Website)</label>
+                                    <div id="testimonialHelp" class="form-text">
+                                        Please provide a short testimonial which we can display together with your story.
+                                        The URL will serve as the link for your testimonial.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-floating mb-3">
+                                    <input  type="text" class="form-control" id="company" name="testimonial_company" placeholder="Name of company">
+                                    <label for="company" class="form-label">Name of company</label>
+                                </div>
+                                <div class="mb-3 position-relative">
+                                    <label for="images" class="btn btn-outline-sg-indigo w-100"><i class="fa-light fa-images"></i> Attach up to 3 images</label>
+                                    <input type="file" id="images" name="images" accept="image/jpeg,image/png" class="visually-hidden" multiple aria-describedby="fileHelp"/>
+                                    <a href="#" id="remove_images" class="btn btn-sg-indigo position-absolute top-0 end-0 z-1"><i class="fa-light fa-trash"></i> <span class="visually-hidden">Delete files</span></a>
+                                    <div id="fileHelp" class="form-text">
+                                        <p><i class="fa-light fa-circle-info sg-orange-500"></i> <strong>Click or drag and drop</strong></p>
+                                        <p>These could be SmartGit screenshots or other types of illustrations that we should use to present your story.</p>
+                                        <p class="fw-bold">Format: JPEG/PNG only<br>Size: Under 3 MBs</p>
+                                    </div>
+                                </div>
+                                <div class="my-3">
+                                    <p id="file_name"></p>
+                                </div>
+                                <div class="mb-3 d-flex justify-content-end">
+                                    <button type="button" class="btn btn-sg-indigo w-100 btn-page" data-id="1">Submit your story <i class="fa-light fa-paper-plane"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="page_1" class="page">
+                        <div class=" row g-3">
+                            <div class="col-md-4">
+                                <div class="my-3">
+                                    <p class="fs-4">Thank you for the core story!</p>
+                                    <p class="mb-0">Please check your inbox for an email from <strong>noreply@smartgit.dev</strong> and confirm.</p>
+                                    <p>Would you mind telling us more about?</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" rows="10" id="impact" name="impact" placeholder="What impact has SmartGit created in your organization?" style="min-height:100px;"></textarea>
+                                    <label for="impact" class="form-label">What impact has SmartGit created in your organization?</label>
+                                    <div class="invalid-feedback">
+                                        What impact does SmartGit have?
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" rows="10" id="benefits" name="benefits" placeholder=" According to you, what are the benefits of using SmartGit?" style="min-height:100px;"></textarea>
+                                    <label for="benefits" class="form-label"> According to you, what are the benefits of using SmartGit?</label>
+                                    <div class="invalid-feedback">
+                                        What are the benefits of SmartGit?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" rows="10" id="features" name="features" placeholder="Which SmartGit features, do you think, are most useful?" style="min-height:100px;"></textarea>
+                                    <label for="features" class="form-label">Which SmartGit features, do you think, are most useful?</label>
+                                    <div class="invalid-feedback">
+                                        Which features of SmartGit did you utilize for your solution?
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" rows="10" id="conclusion" name="conclusion" placeholder="Would you recommend SmartGit to others?" style="min-height:100px;"></textarea>
+                                    <label for="conclusion" class="form-label">Would you recommend SmartGit to others?</label>
+                                    <div class="invalid-feedback">
+                                        What is the conclusion of your story?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex justify-content-between">
+                            <button type="button" class="btn btn-light btn-page" data-id="0"><i class="fa-light fa-chevron-left"></i></button>
+                            <button type="button" class="btn btn-sg-indigo btn-page" data-id="2">Enhance your story <i class="fa-light fa-ranking-star"></i></button>
+                        </div>
+                    </div>
+                    <div id="page_2" class="page">
+                        <div class=" row g-3">
+                            <div class="col-md-4">
+                                <div class="my-3">
+                                    <p class="fs-4">May we tag you?</p>
+                                    <p>We'd like to share your experience and what you’ve learned with the world. Could you please provide your social media handles?</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-group mb-1">
+                                    <label for="linkedin" class="form-label visually-hidden">LinkedIn Profile</label>
+                                    <span class="input-group-text" id="linkedin-img"><i class="fa-brands fa-linkedin-in"></i></span>
+                                    <input type="url" class="form-control" id="linkedin" name="testimonial_linkedin" placeholder="LinkedIn Profile" aria-describedby="linkedin-img" />
+                                </div>
+                                <div class="form-check form-switch mb-3">
+                                    <input class="form-check-input" type="checkbox" role="switch" name="testimonial_linkedin_img" id="linkedin_img" value="yes" aria-describedby="linkedin_img_help">
+                                    <label class="form-check-label" for="linkedin_img">Permission to use profile image for Author image display</label>
+                                    <div id="linkedin_img_help" class="form-text">You can contact us at any time to request an update to your profile picture or to have it removed entirely.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="input-group  mb-3">
+                                    <label for="github" class="form-label visually-hidden">GitHub Profile</label>
+                                    <span class="input-group-text" id="git-img"><i class="fa-brands fa-git"></i></span>
+                                    <input type="url" class="form-control" id="github" name="testimonial_github" placeholder="GitHub Profile" aria-describedby="git-img" />
+                                </div>
+                                <div class="input-group  mb-3">
+                                    <label for="gravatar" class="form-label visually-hidden">Gravatar link for Author image display</label>
+                                    <span class="input-group-text" id="gravatar-img"><i class="fa-light fa-g fa-rotate-270"></i></span>
+                                    <input type="url" class="form-control" id="gravatar" name="testimonial_gravatar" placeholder="Gravatar link for Author image display" aria-describedby="gravatar-img" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex justify-content-between">
+                            <button type="button" class="btn btn-light btn-page" data-id="1"><i class="fa-light fa-chevron-left"></i></button>
+                            <button type="button" class="btn btn-sg-indigo btn-page" data-id="3">Tag your story <i class="fa-light fa-hashtag"></i></button>
+                        </div>
+                    </div>
+                    <div id="page_3" class="page">
+                        <div class=" row g-3">
+                            <div class="col-md-4">
+                                <div class="my-3">
+                                    <p class="fs-4">Impact Metrics</p>
+                                    <p>Can you please estimate the positive impact of SmartGit on your and your colleagues work?</p>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="form-floating mb-3">
+                                    <input type="number" min="1" step="1" class="form-control" id="hours" name="hours_per_month" placeholder="Hours/month" required />
+                                    <label for="hours" class="form-label">How many man hours are saved by SmartGit?</label>
+                                    <div class="invalid-feedback">
+                                        Please provide estimated hours/month.
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="number" min="1" step="1" class="form-control" id="developers" name="developers" placeholder="# of developers" />
+                                    <label for="developers" class="form-label">Number of developers in your company using SmartGit</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 d-flex justify-content-between">
+                            <button type="button" class="btn btn-light btn-page" data-id="2"><i class="fa-light fa-chevron-left"></i></button>
+                            <button type="button" class="btn btn-sg-indigo btn-page" data-id="4">Add impact in numbers <i class="fa-light fa-chart-pie"></i></button>
+                        </div>
+                    </div>
+                    <div id="page_4" class="page">
+                        <p>Thank you again for sharing your success story!</p>
+                        <p>Please don't forget to check your inbox for an email from <b>noreply@smartgit.dev</b> and confirm if you haven't already done so.</p>
+                    </div>
+                    <div class="visually-hidden">
+                        <div id="turnstile-container"></div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
+    {{ $sgsf := resources.Get "javascripts/smartgit-story-form.js" | resources.Fingerprint }}
+    <script src="{{ $sgsf.RelPermalink }}"></script>
+</main>
+{{ end }}

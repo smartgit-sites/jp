@@ -1,0 +1,19 @@
+{{ $level := .level }}
+{{ $text := .text }}
+{{ $id := .id }}
+{{ $class := .class }}
+
+{{ $headingLevel := int $level }}
+{{ $htmlTag := printf "%d" $headingLevel }}
+{{ $attributes := "" }}
+
+{{ with $id }}
+{{ $attributes = printf "%s id=%q" $attributes . | safeHTMLAttr }}
+{{ end }}
+{{ with $class }}
+{{ $attributes = printf "%s class=%q" $attributes . | safeHTMLAttr }}
+{{ end }}
+
+{{ if gt $headingLevel 0 }}
+<h{{ $htmlTag }} {{ $attributes }}>{{ $text }}</h{{ $htmlTag }}>
+{{ end }}

@@ -1,0 +1,2 @@
+{{ $params := dict "listSource" (.Get "listSource") "listName" (.Get "listName") "dtClass" (.Get "dtClass") "ddClass" (.Get "ddClass") }}
+{{ partial "definitionlist" $params }}

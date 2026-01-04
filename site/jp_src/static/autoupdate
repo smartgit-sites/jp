@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<updateinfo>
+	<product id="syntevo.smartgit.release-25.1" match="license-kind-non-commercial,license-kind-hobby" match-type="or">
+		<version>
+			<major-version>25.1</major-version>
+			<major-date>2025-10-30</major-date>
+			<build>251102</build>
+			<name>25.1.102</name>
+			<date>2025-12-11</date>
+			<location>https://www.smartgit.dev/download/</location>
+			<changelog>https://www.smartgit.dev/changelogs/changelog-25.1.txt</changelog>
+			<update-url>https://update.syntevo.com/smartgit/control-251102</update-url>
+			<update-density>100</update-density>
+			<update-density-salt>EDF4CA82</update-density-salt>
+			<update-density-manual>true</update-density-manual>
+		</version>
+	</product>
+	<product id="syntevo.smartgit.release-25.1">
+		<version>
+			<major-version>25.1</major-version>
+			<major-date>2025-10-30</major-date>
+			<build>251102</build>
+			<name>25.1.102</name>
+			<date>2025-12-11</date>
+			<location>https://www.smartgit.dev/download/</location>
+			<changelog>https://www.smartgit.dev/changelogs/changelog-25.1.txt</changelog>
+			<update-url>https://update.syntevo.com/smartgit/control-251102</update-url>
+			<update-density>0</update-density>
+			<update-density-salt>EDF4CA82</update-density-salt>
+			<update-density-manual>true</update-density-manual>
+		</version>
+		<version>
+			<major-version>25.1</major-version>
+			<major-date>2025-10-30</major-date>
+			<build>251093</build>
+			<name>25.1.093</name>
+			<date>2025-10-30</date>
+			<location>https://www.smartgit.dev/download/</location>
+			<changelog>https://www.smartgit.dev/changelogs/changelog-25.1.txt</changelog>
+			<update-url>https://update.syntevo.com/smartgit/control-251093</update-url>
+			<update-density>100</update-density>
+			<update-density-salt>FBFFE1AD</update-density-salt>
+			<update-density-manual>true</update-density-manual>
+		</version>
+		<info>
+			<channel>poll</channel>
+			<date>2025-11-05</date>
+			<id>smartgit-ui-look-and-feel-poll</id>
+			<location>https://eu.jotform.com/253064951362356?unique=${license-identifier-short-}</location>
+			<message>Quick Poll: Native vs cross-platform look-and-feel</message>
+			<note>Tell us how important native OS controls are vs a uniform look across Windows, macOS, and Linux.</note>
+			<update-url>https://eu.jotform.com/253064951362356</update-url>
+			<update-density>0</update-density>
+			<update-density-salt>1</update-density-salt>
+			<update-density-manual>false</update-density-manual>
+		</info>
+	</product>
+	<product id="syntevo.smartgit.release-24.1" match="evaluation,foundation" match-type="or">
+		<info>
+			<date>2025-06-30</date>
+			<id>smartgit-full-non-commercial-license</id>
+			<location>https://blog.syntevo.com/smartgit/2025/06/26/non-commercial-full-version.html</location>
+			<message>Full SmartGit feature set now free for non-commercial users!</message>
+			<note>Starting with SmartGit 25.1, the complete feature set - including the Standard window and support for on-premise GitLab instances - will be available free of charge for academic users, open-source developers, and charitable organizations.</note>
+			<update-url>https://blog.syntevo.com/smartgit/2025/06/26/non-commercial-full-version.html</update-url>
+			<update-density>100</update-density>
+			<update-density-max>100</update-density-max>
+		</info>
+	</product>
+	<product id="syntevo.smartgit.release-24.1" match="license-kind-non-commercial,license-kind-hobby" match-type="or">
+		<major>
+			<version>25.1</version>
+			<date>2025-10-30</date>
+			<location>https://www.smartgit.dev/download/</location>
+			<message>Upgrade to SmartGit 25.1!</message>
+			<note>SmartGit 25.1 focuses on AI assistance, Git Notes, worktree improvements, and many refinements for a smoother experience.</note>
+			<update-url>https://update.syntevo.com/smartgit/control-251102</update-url>
+			<update-delay>123</update-delay>
+			<update-density>100</update-density>
+			<update-density-max>100</update-density-max>
+		</major>
+	</product>
+	<product id="syntevo.smartgit.release-24.1">
+		<version>
+			<major-version>24.1</major-version>
+			<major-date>2024-11-06</major-date>
+			<build>21169</build>
+			<name>24.1.5</name>
+			<date>2025-09-22</date>
+			<location>https://www.smartgit.dev/download/archive/</location>
+			<update-url>https://www.syntevo.com/updates/smartgit/control-21169</update-url>
+			<update-delay>123</update-delay>
+			<update-density>100</update-density>
+			<update-density-max>100</update-density-max>
+			<update-density-manual>true</update-density-manual>
+		</version>
+		<major>
+			<version>25.1</version>
+			<date>2025-10-30</date>
+			<location>https://www.smartgit.dev/download/</location>
+			<message>Upgrade to SmartGit 25.1!</message>
+			<note>SmartGit 25.1 focuses on AI assistance, Git Notes, worktree improvements, and many refinements for a smoother experience.</note>
+			<update-url>https://update.syntevo.com/smartgit/control-251101</update-url>
+			<update-delay>123</update-delay>
+			<update-density>0</update-density>
+			<update-density-max>100</update-density-max>
+		</major>
+	</product>
+	<product id="syntevo.smartgit.release-23.1" match="evaluation,foundation,hobby" match-type="or">
+		<version>
+			<major-version>23.1</major-version>
+			<major-date>2023-11-24</major-date>
+			<build>20215</build>
+			<name>23.1.5</name>
+			<date>2024-11-12</date>
+			<location>https://www.syntevo.com/smartgit/download/archive/</location>
+			<update-url>https://www.syntevo.com/updates/smartgit/control-20215</update-url>
+			<update-delay>123</update-delay>
+			<update-density>100</update-density>
+			<update-density-max>100</update-density-max>
+		</version>
+		<major>
+			<version>25.1</version>
+			<date>2025-10-30</date>
+			<location>https://www.smartgit.dev/download/</location>
+			<message>Upgrade to SmartGit 25.1!</message>
+			<note>SmartGit 25.1 focuses on AI assistance, Git Notes, worktree improvements, and many refinements for a smoother experience.</note>
+			<update-url>https://update.syntevo.com/smartgit/control-251101</update-url>
+			<update-delay>123</update-delay>
+			<update-density>0</update-density>
+			<update-density-max>100</update-density-max>
+		</major>
+	</product>
+	<product id="syntevo.smartgit.release-23.1">
+		<major>
+			<version>25.1</version>
+			<date>2025-10-30</date>
+			<location>https://www.smartgit.dev/download/</location>
+			<message>Upgrade to SmartGit 25.1!</message>
+			<note>SmartGit 25.1 focuses on AI assistance, Git Notes, worktree improvements, and many refinements for a smoother experience.</note>
+			<update-url>https://update.syntevo.com/smartgit/control-251101</update-url>
+			<update-delay>123</update-delay>
+			<update-density>0</update-density>
+			<update-density-max>100</update-density-max>
+		</major>
+		<version>
+			<major-version>23.1</major-version>
+			<major-date>2023-11-24</major-date>
+			<build>20215</build>
+			<name>23.1.5</name>
+			<date>2024-11-12</date>
+			<location>https://www.syntevo.com/smartgit/download/archive/</location>
+			<update-url>https://www.syntevo.com/updates/smartgit/control-20215</update-url>
+			<update-delay>123</update-delay>
+			<update-density>100</update-density>
+			<update-density-max>100</update-density-max>
+		</version>
+	</product>
+	<product id="syntevo.smartgit.release-22.1">
+		<major>
+			<version>25.1</version>
+			<date>2025-10-30</date>
+			<location>https://www.smartgit.dev/download/</location>
+			<message>Upgrade to SmartGit 25.1!</message>
+			<note>SmartGit 25.1 focuses on AI assistance, Git Notes, worktree improvements, and many refinements for a smoother experience.</note>
+			<update-url>https://update.syntevo.com/smartgit/control-251101</update-url>
+			<update-delay>123</update-delay>
+			<update-density>0</update-density>
+			<update-density-max>100</update-density-max>
+		</major>
+		<version>
+			<major-version>22.1</major-version>
+			<major-date>2022-11-11</major-date>
+			<build>19294</build>
+			<name>22.1.8</name>
+			<date>2023-11-30</date>
+			<location>https://www.syntevo.com/smartgit/download/archive/</location>
+			<update-url>https://www.syntevo.com/updates/smartgit/control-19294</update-url>
+			<update-delay>123</update-delay>
+			<update-density>100</update-density>
+			<update-density-max>100</update-density-max>
+		</version>
+	</product>
+	<product id="syntevo.smartgit.release-21.2">
+		<major>
+			<version>25.1</version>
+			<date>2025-10-30</date>
+			<location>https://www.smartgit.dev/download/</location>
+			<message>Upgrade to SmartGit 25.1!</message>
+			<note>SmartGit 25.1 focuses on AI assistance, Git Notes, worktree improvements, and many refinements for a smoother experience.</note>
+			<update-url>https://update.syntevo.com/smartgit/control-251101</update-url>
+			<update-delay>123</update-delay>
+			<update-density>0</update-density>
+			<update-density-max>100</update-density-max>
+		</major>
+		<version>
+			<major-version>21.2</major-version>
+			<major-date>2021-07-12</major-date>
+			<build>18150</build>
+			<name>21.2.4</name>
+			<date>2022-09-02</date>
+			<location>https://www.syntevo.com/smartgit/download/archive/</location>
+			<update-url>https://www.syntevo.com/updates/smartgit/control-18150</update-url>
+			<update-delay>123</update-delay>
+			<update-density>100</update-density>
+			<update-density-max>100</update-density-max>
+		</version>
+	</product>
+	<product id="syntevo.smartgit.release-21.1">
+		<major>
+			<version>25.1</version>
+			<date>2025-10-30</date>
+			<location>https://www.smartgit.dev/download/</location>
+			<message>Upgrade to SmartGit 25.1!</message>
+			<note>SmartGit 25.1 focuses on AI assistance, Git Notes, worktree improvements, and many refinements for a smoother experience.</note>
+			<update-url>https://update.syntevo.com/smartgit/control-251101</update-url>
+			<update-delay>123</update-delay>
+			<update-density>0</update-density>
+			<update-density-max>100</update-density-max>
+		</major>
+		<version>
+			<major-version>21.1</major-version>
+			<major-date>2021-07-12</major-date>
+			<build>17193</build>
+			<name>21.1.7</name>
+			<date>2022-09-02</date>
+			<location>https://www.syntevo.com/smartgit/download/archive/</location>
+			<update-url>https://www.syntevo.com/updates/smartgit/control-17193</update-url>
+			<update-delay>123</update-delay>
+			<update-density>100</update-density>
+			<update-density-max>100</update-density-max>
+		</version>
+	</product>
+	<product id="syntevo.smartgit.release-20.2">
+		<version>
+			<major-version>20.2</major-version>
+			<major-date>2020-11-23</major-date>
+			<build>16183</build>
+			<name>20.2.6</name>
+			<date>2021-08-16</date>
+			<location>https://www.syntevo.com/smartgit/download/archive/</location>
+			<update-url>https://www.syntevo.com/updates/smartgit/control-16183</update-url>
+			<update-delay>123</update-delay>
+			<update-density>100</update-density>
+			<update-density-max>100</update-density-max>
+		</version>
+	</product>
+	<product id="syntevo.smartgit.release-20.1">
+		<version>
+			<major-version>20.1</major-version>
+			<major-date>2020-03-20</major-date>
+			<build>15193</build>
+			<name>20.1.6</name>
+			<date>2021-11-03</date>
+			<location>https://www.syntevo.com/smartgit/download/archive/</location>
+			<update-url>https://www.syntevo.com/updates/smartgit/control-15193</update-url>
+			<update-delay>123</update-delay>
+			<update-density>100</update-density>
+			<update-density-max>100</update-density-max>
+		</version>
+	</product>
+	<product id="syntevo.smartgit.release-19.1" match="macosx,mode-download" match-type="and">
+		<version>
+			<major-version>19.1</major-version>
+			<major-date>2019-08-08</major-date>
+			<build>14231</build>
+			<name>19.1.8a</name>
+			<date>2020-06-04</date>
+			<location>https://www.syntevo.com/smartgit/download/archive/</location>
+			<update-url>https://www.syntevo.com/updates/smartgit/control-14231</update-url>
+			<update-delay>123</update-delay>
+			<update-density>100</update-density>
+			<update-density-max>100</update-density-max>
+		</version>
+	</product>
+	<product id="syntevo.smartgit.release-19.1">
+		<version>
+			<major-version>19.1</major-version>
+			<major-date>2019-08-08</major-date>
+			<build>14230</build>
+			<name>19.1.8</name>
+			<date>2020-03-20</date>
+			<location>https://www.syntevo.com/smartgit/download/archive/</location>
+			<update-url>https://www.syntevo.com/updates/smartgit/control-14230</update-url>
+			<update-delay>123</update-delay>
+			<update-density>100</update-density>
+			<update-density-max>100</update-density-max>
+		</version>
+	</product>
+	<product id="syntevo.smartgit.release-18.2">
+		<version>
+			<major-version>18.2</major-version>
+			<major-date>2018-11-30</major-date>
+			<build>13269</build>
+			<name>18.2.9</name>
+			<date>2019-06-19</date>
+			<location>https://www.syntevo.com/smartgit/download/archive/</location>
+			<update-url>https://www.syntevo.com/updates/smartgit/control-13269</update-url>
+			<update-delay>123</update-delay>
+			<update-density>100</update-density>
+			<update-density-max>100</update-density-max>
+		</version>
+	</product>
+	<product id="syntevo.smartgit.release-18.1">
+		<version>
+			<major-version>18.1</major-version>
+			<major-date>2018-04-10</major-date>
+			<build>12168</build>
+			<name>18.1.5</name>
+			<date>2018-09-25</date>
+			<location>http://www.syntevo.com/smartgit/download/archive/</location>
+			<update-url>http://www.syntevo.com/updates/smartgit/control-12168</update-url>
+			<update-delay>123</update-delay>
+			<update-density>100</update-density>
+			<update-density-max>100</update-density-max>
+		</version>
+	</product>
+	<product id="syntevo.smartgit.release-17.1">
+		<version>
+			<major-version>17.1</major-version>
+			<major-date>2017-10-12</major-date>
+			<build>11221</build>
+			<name>17.1.6</name>
+			<date>2018-03-28</date>
+			<location>http://www.syntevo.com/smartgit/download/archive/</location>
+			<update-url>http://www.syntevo.com/updates/smartgit/control-11221</update-url>
+			<update-delay>123</update-delay>
+			<update-density>100</update-density>
+			<update-density-max>100</update-density-max>
+		</version>
+	</product>
+	<product id="syntevo.smartgit.unittest">
+		<version>
+			<major-version>unittest</major-version>
+			<major-date>2022-12-31</major-date>
+			<build>1</build>
+			<name>1 preview</name>
+			<date>2023-06-31</date>
+			<location>https://www.syntevo.com/smartgit/download/</location>
+		</version>
+	</product>
+</updateinfo>

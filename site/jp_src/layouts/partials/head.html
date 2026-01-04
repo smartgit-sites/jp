@@ -1,0 +1,62 @@
+<head>
+<title>{{ if .Title }}{{ .Title | markdownify }} | {{ .Site.Title }}{{ else }}{{ .Site.Title }}{{ end }}</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Meta Description -->
+<meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+
+<!-- Keywords -->
+{{ with .Params.keywords }}
+<meta name="keywords" content="{{ delimit . ", " }}">
+{{ else }}
+  {{with .Site.Params.keywords }}
+<meta name="keywords" content="{{ delimit .Site.Params.keywords ", " }}">
+  {{ end }}
+{{ end }}
+
+<!-- Canonical URL -->
+  {{- $canonical := printf "https://www.smartgit.dev%s" .RelPermalink -}}
+  <link rel="canonical" href="{{ $canonical }}">
+  {{- if .Site.Params.disableRobots }}
+  <meta name="robots" content="noindex, nofollow">
+  {{- end }}
+
+<link rel="icon" type="image/png" href="{{ .Site.Params.favicon96 }}" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="{{ .Site.Params.faviconSvg }}" />
+<link rel="shortcut icon" href="{{ .Site.Params.favicon }}" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{ .Site.Params.appleTouchIcon }}" />
+<meta name="apple-mobile-web-app-title" content="{{ .Title }}" />
+<link rel="manifest" href="{{ .Site.Params.webmanifest }}" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:image" content="{{ .Site.Params.ogImage }}">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ .Title }}">
+<meta name="twitter:description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+{{ with .Params.images }}
+<meta name="twitter:image" content="{{ index . 0 }}">
+{{ else }}
+  {{with .Site.Params.og_image }}
+<meta name="twitter:image" content="{{ .Site.Params.og_image }}">
+  {{ end }}
+{{ end }}
+{{ with .Site.Params.twitter_site }}
+<meta name="twitter:site" content="@{{ . }}">
+{{ end }}
+
+
+  {{ $styles := resources.Get "scss/main.scss" | css.Sass | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+
+  {{ $bs := resources.Get "javascripts/bootstrap.bundle.min.js" | resources.Fingerprint }}
+  <script src="{{ $bs.RelPermalink }}"></script>
+  <meta name="google-site-verification" content="7RUggdkxWsYfAjmmFbroGrAbDzBo2LYY3tgimZxAMFk" />
+</head>

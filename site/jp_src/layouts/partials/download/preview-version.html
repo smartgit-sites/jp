@@ -1,0 +1,23 @@
+{{ $resource := .Site.GetPage "/download/" }}
+{{ $releases := site.Data.preview_release }}
+
+<section id="dnld-for-os" class="container">
+    {{ if not $releases }}
+    <div class="info-box mb-4">
+        <p>There is currently no active preview.</p>
+        <a href="/download/" title="Download Current Release" class="btn btn-sg-orange"><span>Download Current Release</span></a>
+    </div>
+    {{ else }}
+    <div class="info-box mb-4">
+        <ul>
+            <li>The preview version is generally stable and safe to use alongside the release version, but issues may occur.</li>
+            <li>Please report problems to <a href="mailto:smartgit@syntevo.com">smartgit@syntevo.com</a>.</li>
+            <li><b>Avoid offline use</b> &mdash; this is a rolling release.</li>
+        </ul>
+
+        <a href="/whats-new/25_1/" title="What's New" class="btn btn-sg-orange"><span>What's New in 25.1</span></a>
+    </div>
+    {{ partial "download-os.html" (dict "release" $releases "page" . "show_install_instructions" true) }}
+    {{ end }}
+</section>
+{{ partial "looking-for-help" . }}

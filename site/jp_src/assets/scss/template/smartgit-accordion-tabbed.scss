@@ -1,0 +1,36 @@
+.nav.nav-accordion-tabbed.nav-underline{
+  --bs-nav-underline-gap: 0;
+  align-items: end;
+}
+.nav.nav-accordion-tabbed.nav-underline .nav-item{
+  display:inline;
+}
+.accordion.accordion-flush.accordion-tabbed .accordion-header .nav-link{
+  text-decoration: underline;
+}
+.accordion.accordion-flush.accordion-tabbed .accordion-button,
+.nav.nav-accordion-tabbed.nav-underline .nav-link{
+  background-color: transparent;
+  font-size:map-get($font-sizes, 5);
+  color: $sg-text-muted;
+  border-bottom-style: solid;
+  border-bottom-width: $nav-underline-border-width;
+  border-bottom-color: $sg-border-tab-default;
+}
+.accordion.accordion-flush.accordion-tabbed .accordion-button:focus,
+.accordion.accordion-flush.accordion-tabbed .accordion-button:hover,
+.nav.nav-accordion-tabbed.nav-underline .nav-link:focus,
+.nav-underline .nav-link:hover{
+  color: $sg-text-link;
+  border-bottom-color: $sg-border-tab-default;
+}
+.accordion.accordion-flush.accordion-tabbed .accordion-button[aria-expanded="true"],
+.nav.nav-accordion-tabbed.nav-underline .nav-link.active,
+.nav.nav-accordion-tabbed.nav-underline .nav-link[aria-expanded="true"] {
+  color: $sg-text-link;
+  font-weight: bold;
+  border-bottom-color: $sg-border-tab-active;
+}
+.accordion.accordion-flush.accordion-tabbed .accordion-item{
+  border:none;
+}

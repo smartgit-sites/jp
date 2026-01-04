@@ -1,0 +1,20 @@
+{{ define "main" }}
+{{ $h1 := .Title }}
+{{ $h2 := .Params.Subline }}
+{{ if .Params.headerH1 }}
+{{ $h1 = .Params.headerH1 }}
+{{end }}
+{{ if .Params.headerH2 }}
+{{ $h2 = .Params.headerH2 }}
+{{end }}
+{{ partial "header" (dict "h1" $h1 "h2" $h2  "h3" .Params.headerH3  "message" .Params.headerMessage) . }}
+<main id="events_section">
+  <section class="container mt-n5 mb-5">
+    <div class="row">
+      <div class="col-12">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+</main>
+{{ end }}

@@ -1,0 +1,36 @@
+$iconGeneralSize: map-get($spacers, 4);
+$generalBgColor: $sg-surface-lightest-gray;
+#integrations .icon-circle{
+  background-color: $sg-surface-neutral;
+  border-radius: 50%;
+  border: $iconGeneralSize solid $generalBgColor;
+  box-shadow: inset 0 0 0 $iconGeneralSize $generalBgColor;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#integrations .icon-circle::after,
+#integrations .icon-circle::before,
+#integrations .placeholder::after{
+  content: "";
+  width: $iconGeneralSize;
+  height: 1px;
+  background-color: $sg-integration-highlight;
+  position: absolute;
+  top: calc(50% - .5px);
+}
+#integrations .icon-circle::after{
+  right:$iconGeneralSize * -1;
+}
+#integrations .icon-circle::before{
+  left:$iconGeneralSize * -1;
+}
+#integrations .placeholder{
+  background-color: $generalBgColor;
+  opacity: 1;
+}
+#integrations .placeholder::after{
+  left:0;
+  width: 100%;
+}

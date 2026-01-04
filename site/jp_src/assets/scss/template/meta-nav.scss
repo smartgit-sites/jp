@@ -1,0 +1,19 @@
+#meta-nav{
+  background-color: map-get($colors, "white");
+}
+#meta-nav .nav-link{
+  color: map-get($colors, "black");
+  font-size: $small-font-size;
+}
+#meta-nav .nav-link:hover,
+#meta-nav .nav-link:focus{
+  color: map-get($sg-colors, "sg-indigo");
+}
+#meta-nav .nav-link > [class*="sg sg-"]{
+  color: $sg-text-muted;
+  opacity:.7;
+}
+#meta-nav .nav-link:focus > [class*="sg sg-"],
+#meta-nav .nav-link:hover > [class*="sg sg-"]{
+  color: $sg-text-link-hover !important;
+}

@@ -1,0 +1,41 @@
+major_version: 25.1
+version: 25.1.103
+released_on: 2025-12-18
+change_log: /changelog-25.1.txt
+general_note:
+downloads_by_platform:
+  windows:
+    - name: Installer
+      note: Windows 10+ (64-bit)
+      file_name: /smartgit/smartgit-25_1_103-win-installer.zip
+      file_size: 139572769
+      checksum: 910e3e69a53cf97451cb7d2e1af3a4eafe691994afd832d5d75051b1bc77fa4f
+    - name: Portable (7z)
+      note: Windows 10+ (64-bit)
+      file_name: /smartgit/smartgit-25_1_103-win-portable.7z
+      file_size: 134413142
+      checksum: bfb0e7dfa8381432c85e748192829131a094d793882e39c91b4dd002f26cdc4b
+  mac_os:
+    - name: Apple Silicon
+      note: macOS 11 - 15
+      file_name: /smartgit/smartgit-25_1_103-macos-arm64.dmg
+      file_size: 91968177
+      checksum: dcfb65f233799ee9ce843fb1c0fc2fc1c0846e110eb3cefa7d00869ff73f3edd
+    - name: Intel x86_64
+      note: macOS 10.14 - 15 (Intel 64-bit)
+      file_name: /smartgit/smartgit-25_1_103-macos-x86_64.dmg
+      file_size: 92827621
+      checksum: 2e9554035d52aeac3f1e0f2488bcf69e410ac58beef0e5477e5af7fbd62da1de
+  linux:
+    - name: Tar Achive
+      note: Linux (64-bit, GTK 3.24+)
+      file_name: /smartgit/smartgit-25_1_103-linux-amd64.tar.gz
+      file_size: 125359802
+      checksum: 0e7ecbbb8ded3d67bff4c89d738c50956dd7bd53920bbf1cdbc497bf498f73b0
+    - name: Debian Bundle
+      note: Linux (64-bit, GTK 3.24+)
+      file_name: /smartgit/smartgit-25_1_103-linux_amd64.deb
+      file_size: 58746494
+      checksum: 3bfee88fff8b1c99ac25ae9a26b1c05315228b9f2429ac85c44131cb108f3184
+      warning: "We recommend using the Tar Archive bundle, as it allows for easier updates."
+

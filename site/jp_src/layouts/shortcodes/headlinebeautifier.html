@@ -1,0 +1,2 @@
+{{ $params := dict "level" (.Get "level" | default "1") "text" (.Get "text") "id" (.Get "id") "class" (.Get "class") }}
+{{ partial "headlinebeautifier.html" $params }}

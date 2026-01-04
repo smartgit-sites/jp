@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "head.html" . }}
+{{ $class := cond (eq .RelPermalink "/") "home" ( trim (replaceRE `/` " " .RelPermalink) " ") }}
+<body class="{{ $class }} pt-5">
+{{ partial "navbar.html" . }}
+{{ partial "noScript" . }}
+{{ block "main" . }}{{ end }}
+{{ partial "footer.html" . }}
+</body>
+</html>

@@ -1,0 +1,59 @@
+#wait-for-promise,
+#drop_zone {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  border: 1rem dashed white;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  display: none;
+  background-color: $sg-form-background;
+  font-size: 200%;
+  backdrop-filter: blur(10px);
+}
+#wait-for-promise.show,
+#drop_zone.show {
+  height: 100vh;
+  width: calc(100vw - 1rem);
+  display:flex;
+}
+
+[required]{
+  border-right-color: $primary;
+  border-right-width: map-get($border-widths, 3);
+}
+[required] ~ label::after{
+  content: '*';
+}
+*[id*=page_]{
+  display:none;
+}
+*[id*=page_].active{
+  display:block;
+}
+.form-floating label{
+  width: 100%;
+  background-color: transparent;
+}
+.form-control,
+.form-select{
+  border-color: $sg-border-form-default;
+}
+.form-control:focus,
+.form-select:focus{
+  border-color: $sg-border-form-focus;
+  box-shadow: 0 0 0 .25rem $sg-focus-ring;
+}
+
+.form-check.form-switch{
+  background-color: $sg-surface-light;
+  border: $border-width solid $sg-border-form-default;
+  border-radius: $border-radius-sm;
+}
+.form-check.form-switch .btn-check:checked + .btn{
+  @extend .btn-sg-indigo
+}

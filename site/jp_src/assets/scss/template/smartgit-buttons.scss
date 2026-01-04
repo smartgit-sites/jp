@@ -1,0 +1,49 @@
+@each $name, $color in $sg-colors {
+  .btn-#{$name} {
+    color: map-get($colors, "white");
+    background-color: $color;
+    border-color: $color;
+
+    &:hover,
+    &:focus {
+      background-color: darken($color, 10%);
+      border-color: darken($color, 12%);
+      color: map-get($colors, "white");
+    }
+
+    &:disabled,
+    &.disabled {
+      background-color: lighten($color, 15%);
+      border-color: lighten($color, 15%);
+      color: map-get($colors, "white");
+      opacity: 0.65;
+    }
+
+    &:active,
+    &.active {
+      background-color: darken($color, 15%);
+      border-color: darken($color, 20%);
+      color: map-get($colors, "white");
+    }
+  }
+}
+
+.btn [class*="sg-"]:not(:only-child):last-child{
+  margin-left: $btn-padding-x;
+}
+.btn.btn-sm [class*="sg-"]:not(:only-child):last-child{
+  margin-left: $btn-padding-x-sm;
+}
+.btn.btn-lg [class*="sg-"]:not(:only-child):last-child{
+  margin-left: $btn-padding-x-lg;
+}
+
+.btn [class*="sg-"]:not(:only-child):first-child{
+  margin-right: $btn-padding-x;
+}
+.btn.btn-sm [class*="sg-"]:not(:only-child):first-child{
+  margin-right: $btn-padding-x-sm;
+}
+.btn.btn-lg [class*="sg-"]:not(:only-child):first-child{
+  margin-right: $btn-padding-x-lg;
+}

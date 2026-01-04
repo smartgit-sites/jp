@@ -1,0 +1,93 @@
+{{ define "main" }}
+    {{ $scCUTC := "{{< btn-copy-url-to-clipboard >}}" }}
+    {{ partial "header.html" (merge (merge .Params (dict "Page" .)) (dict "headerH1" .Title "headerH3" (printf "%s" .Params.testimonial_company | printf "%s\n\n%s" .Params.testimonial_user | printf "%s") "message" .Params.summary )) }}
+    <main>
+        <section id="success-story-detail" class="container mt-n5 px-lg-5">
+            <div class="row">
+                {{ $testimonialContent := "" }}
+                {{ range (split .RawContent "\n# ") }}
+                    {{ if hasPrefix . "testimonial\n" }}
+                        {{ $testimonialContent = replaceRE "^testimonial\n" "" . | markdownify }}
+                    {{ end }}
+                {{ end }}
+                {{ with $testimonialContent }}
+                <div class="col-12 text-end py-4">
+                    <blockquote class="blockquote fst-italic fs-4 text-muted" style="max-width: 75%; margin-left: auto;">
+                        &ldquo;{{ . | safeHTML }}&rdquo;
+                        <footer class="blockquote-footer mt-2">
+                            {{ $.Params.testimonial_user }},
+                            {{ if $.Params.testimonial_link }}
+                                <a href="{{ $.Params.testimonial_link }}" target="_blank" class="text-decoration-none">{{ $.Params.testimonial_company }}</a>
+                            {{ else }}
+                                {{ $.Params.testimonial_company }}
+                            {{ end }}
+                        </footer>
+                    </blockquote>
+                </div>
+                {{ end }}
+
+                {{ partial "markdown-render-section" (slice . "summary" `<div class="col-12 sg-gray-400 pb-4 lead">$content</div>`) }}
+
+                {{ partial "markdown-render-section" (slice . "challenge" `<div class="col-12 col-md-6 py-4"><h3 class="fs-6 fw-bold sg-indigo-500">Challenge</h3>$content</div>`) }}
+
+                {{ partial "markdown-render-section" (slice . "solution" `<div class="col-12 col-md-6 py-4"><h3 class="fs-6 fw-bold sg-indigo-500">The SmartGit Solution</h3>$content</div>`) }}
+
+    {{ $items := partial "markdown-render-section" (slice . "gallery" `$content`) }}
+    {{ if gt (len $items) 0 }}
+        {{ $srcPattern := `<img[^>]*src=['"]([^'"]+)['"]` }}
+        {{ $srcMatches := findRE $srcPattern $items }}
+        {{ $altPattern := `<img[^>]*alt=['"]([^'"]+)['"]` }}
+            </div>
+        </section>
+        <section class="container-fluid bg-sg-indigo-100-rgb bg-opacity-50 pb-2 pt-4" id="gallery">
+            <div class="container px-lg-5">
+                <h3 class="visually-hidden">Gallery</h3>
+                <div class="row my-5" id="gallery-content">
+        {{ range $index, $elem :=$srcMatches }}
+            {{ $path := replaceRE `.*src=['"]([^'"]+)['"].*` `$1` . }}
+            {{ $altMatches := findRE $altPattern $items }}
+            {{ $altMatch := index $altMatches $index}}
+            {{ $alt := replaceRE `.*alt=['"]([^'"]+)['"].*` `$1` $altMatch }}
+
+                    <div class="col-12 col-sm-6 mb-4">
+                        <div class="gallery-items border ratio ratio-4x3" style="background-image:url({{ $path | safeHTML }});" data-img="{{ $path| safeHTML }}" data-alt="{{ $alt }}"><span class="visually-hidden">{{ $alt }}</span></div>
+                    </div>
+        {{ end }}
+                </div>
+        {{ partial "modalGallery.html" . }}
+
+            </div>
+        </section>
+        <section id="success-story-detail-after-gallery" class="container my-5 px-lg-5">
+            <div class="row">
+    {{ end }}
+
+                {{ partial "markdown-render-section" (slice . "impact" `<div class="col-12 col-md-6 py-4"><h3 class="fs-6 fw-bold sg-indigo-500">Impact</h3>$content</div>`) }}
+
+                {{ partial "markdown-render-section" (slice . "benefits" `<div class="col-12 col-md-6 py-4"><h3 class="fs-6 fw-bold sg-indigo-500">Key Benefits</h3>$content</div>`) }}
+
+                {{ partial "markdown-render-section" (slice . "features" `<div class="col-12 col-md-6 py-4"><h3 class="fs-6 fw-bold sg-indigo-500">SmartGit Features</h3>$content</div>`) }}
+
+                {{ partial "markdown-render-section" (slice . "conclusion" `<div class="col-12 sg-gray-400 pt-4 lead"><h3 class="fs-5 fw-bold sg-indigo-500">Conclusion</h3>$content</div>`) }}
+
+            </div>
+        </section>
+        <section class="container-fluid border-bottom border-top border-sg-indigo-100 bg-sg-gray-500-rgb bg-opacity-10 py-5 my-5">
+                <div class="container px-lg-5">
+                    <div class="row">
+                        <div class="col-12 col-md-8">
+                            Have you taken your Git workflow to the next level with SmartGit? Whether you’ve streamlined collaboration, eliminated merge chaos, or simply found joy in a cleaner UI — we’d love to hear your story!
+                        </div>
+                        <div class="col-12 col-md-3 text-end">
+                            <a href="/company/success-stories#success-stories-form" title="Share your experience" class="btn btn-sg-orange">Share your experience <i class="fa-light fa-paper-plane"></i></a>
+                        </div>
+                        <div class="col-12 col-md-1 text-end">
+                            {{ .Page.RenderString $scCUTC }}
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    {{ $js := resources.Get "javascripts/smartgit-gallery.js" | minify | resources.Fingerprint }}
+    <script src="{{ $js.RelPermalink }}"></script>
+{{ end }}

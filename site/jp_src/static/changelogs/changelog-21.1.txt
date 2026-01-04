@@ -1,0 +1,631 @@
+SmartGit 21.1.7 (2022-09-02)
+============================
+Fixed Bugs
+----------
+- Azure DevOps: integration was not applicable for ssh://company@ssh.de.azure.com:22/project/_git/application URLs
+- Changes view:
+    - possible internal error selecting certain images (depending on color model)
+    - possible internal error when applying/reverting selection containing removal of empty line
+- Git-Flow (external): finish feature/hotfix/release branches containing '/' did not work
+- Log:
+    - Graph: possible internal error for partial clones when filtering for file name or content
+    - Refresh:
+        - BitBucket Server: possible internal error if pull request has been created from tag
+        - squashed subtrees were not detected
+- rebooting while running might lose newly entered hosting provider credentials
+- Refresh (working tree): possible internal error if .git/index has null-checksum
+
+Other Noteworthy Changes
+------------------------
+- added low level property refresh.checkGitAdminOutsideOfModel
+
+
+SmartGit 21.1.6 (2022-05-30)
+============================
+Fixed Bugs
+----------
+- Changes view
+    - internal error related "Split leading/trailing lines" option
+    - Copy without selection: copies 1 char too much resulting in crash for last line
+    - for Unified view, Goto Next Change may remain at existing change
+    - error "failed to read file" for missing files if "core.autocrlf=input" is configured
+- Files (Log and WT): State and Working Tree State columns should denote rename sources as "missing", not "unchanged"
+- GitLab: error "The authorization server does not support this response type" when trying to generate a new token
+- Log: possible internal error when filter for modified content
+- Pull: Git config "pull.rebase=merges" should be honored
+- Pull/others: submodule.<name>.update=none should be honored
+- Refresh (WT): "filter" may not be applied if listed after "text" or "eol" in .gitattributes
+
+Other Noteworthy Changes
+------------------------
+- GitHub: support OAuth repository authentication for gist.github.com, too
+- added low-level properties
+    status.gitCompatibleMode
+    submoduleUpdate.failAllIfSingleUpdateFails
+
+
+SmartGit 21.1.5 (2022-01-27)
+============================
+Fixed Bugs
+----------
+- Changes view: split-off block may miss background color
+- Cherry-pick: possible internal error related to subtrees
+- Conflict Solver: for LFS conflicts, left and right will show wrong contents (of base file)
+- Graph (macOS): (x refs) box with dark background on dark system with light SmartGit theme
+- Pull: possible internal error when trying to initialize SVN submodule
+- Refresh (Windows): internal error when trying to open repository located at special directory, like "C:\Users\account\My Documents"
+
+Other Noteworthy Changes
+------------------------
+- added low-level property "gitlab.additionalRequestHeaders" 
+
+
+SmartGit 21.1.4 (2021-12-20)
+============================
+Fixed Bugs
+----------
+- Changes View:
+    - Unified display: possible internal error if the last line has been cleared
+    - Working Tree window: hitting Refresh did not reload file content
+    - internal error staging changes in file with CR line endings
+    - Stage/Unstage: possible wrong inserted line endings (for CRLF and CR files)
+    - unexpected "Error reading file, Details: cancelled" for Git-LFS file which exceed the size threshold
+- Commit and Stash: error "unknown option 'pathspec-from-file='" when using Git 2.25
+- Log:
+    - Graph: memory leak of core objects after invoking popup menu
+    - File log: internal error if deleting and re-cloning repository while file log is open
+- Gravatar: fixed assertion for incorrectly sized images
+- Refresh:
+    - possible internal error "Unknown chunk ID ..."
+    - internal error trying to open a repository which is actually a file
+- Tag-grouping: should auto-detect groups only after the last / and skip tag-grouping in case of multiple groups
+- macOS: completion popup is too small
+
+Other Noteworthy Changes
+------------------------
+- Git-LFS: added low-level property status.forceUpdateIndexForLfsRepositories
+- Pull: added low-level property pull.propagateFetchTagsToSubmodules
+
+
+SmartGit 21.1.3 (2021-10-29)
+============================
+Fixed Bugs
+----------
+- Azure DevOps: should allow multiple configurations for different server URLs
+- Changes View:
+    - Apply was available when starting within an inner-line change
+    - possible internal error when reverting a black and changing the file once again while the confirmation dialog is showing
+- Journal: possible false-positive pushed commits for local, untracked branches
+- Kaleidoscope.app command line tool hang until SmartGit was closed; added a workaround
+- Linux: possible NoSuchMethodError running on older GTK with older SWT
+- macOS: Changes view reoccurs on next start after having closed it
+
+
+SmartGit 21.1.2 (2021-10-01)
+============================
+Fixed Bugs
+----------
+- Azure DevOps: possible "Could not parse date" error on pull request refresh
+- Branches view:
+    - refresh may change selection from remote to local tracking branch
+    - tag message did not show up for grouped tags
+    - toggling remote ref might select local ref
+- Changes view:
+    - if saving fails, error banner hides too quickly
+    - horizontal scrolling did not always update reliably
+    - possible assertion on Apply
+    - staging hunks for untracked-missing renamed file fails with "Failed to write file" error
+    - Working Tree window: did not reliably refresh after failed save
+- Ignore: showed scary warning about discarding changes for untracked file
+- Log:
+    - Files (working tree): ignored removed file which is locally existing does not show up unless View Ignored Files is selected
+    - Refresh (Working Tree): automatic refresh did not clean up files after ignoring directory in non-root .gitignore
+- Refresh: possible internal error for commits with commit times > 2038
+
+Other Noteworthy Changes
+------------------------
+- UTF8 detection now scans full file instead of just the first 64kB
+- GitHub: shows reasonable warning in case of organization access restrictions
+- low-level property "core.tree.filter.backwardCompatibilityWithNonUnicodeGitOnWindows"
+- Table controls: if low-level property table.scrollToSelection is set to false, ignore the selection's visibility
+
+
+SmartGit 21.1.1 (2021-08-11)
+============================
+Fixed Bugs
+----------
+- BitBucket: possible internal error on refresh
+- Changes pane:
+    - maximum size limit was not applied to images possibly resulting in out-of-memory errors
+    - possible out-of-memory error when selecting large file and having "core.autocrlf=input" configured
+    - Stage did nothing on "Added" conflicts
+    - fixed names on Unstage/Revert Hunk
+    - Working Tree window: Changes pane does not show file if it is made visible while a file already was selected
+- Conflict Solver:
+    - external conflict solver: temporary files may be corrupted by replacing LF with CRLF
+- Refresh:
+    - index files format 4 could not be read
+    - fails for repotool files which have been initialized with --worktree option
+    - Windows: might fail if file in repository was inaccessible (regression since 20.2)
+- Setup: possible internal error with invalid msysgit-installation location
+- Startup: --log with a file fails with "Cache has not yet been updated/initialized"
+- Syntax coloring:
+    - Java: binary and hex literals were not detected correctly
+    - PHP: 'strings in quotes' are not detected in script mode
+- MacOS 11: radio button selection changes invisibly when clicking a dfifferen tab item
+
+Other Noteworthy Changes
+------------------------
+- Syntax coloring:
+    - SQL: use standard SQL without backslash escaping in strings
+
+
+SmartGit 21.1 (2021-07-12)
+==========================
+Fixed Bugs
+----------
+- Changes view: possible paint artefacts by resizing window
+
+
+SmartGit 21.1 RC 6 (2021-07-09)
+===============================
+Fixed Bugs
+----------
+- Changes view:
+    - possible internal error
+    - macOS: selecting a different file did not reliable redraw the viewport rectangle inside the changes stripe
+- Log:
+    - Drag and drop-cherry-picking to Branches view didn't work for multiple commits (as within the Graph)
+    - selecting a different open repository must not wipe the Output view
+- Refresh: possible internal error related to tag-grouping-detection when opening a repository for the first time
+- Tag Grouping: configuration auto-detection may give too short (and generic) prefixes
+
+Other Noteworthy Changes
+------------------------
+- Chinese translation updated
+
+
+SmartGit 21.1 RC 5 (2021-07-02)
+===============================
+Fixed Bugs
+----------
+- Apply Stash: was not possible to invoke in Merging/Rebasing/Cherry-Picking/Reverting state
+- Background Fetch:
+    - periodical fetching could break if multiple windows were open
+    - for multiple windows with "Open repository when idle", every window should only fetch its own repositories
+- Changes view:
+    - internal error related to CR line endings, especially with forced text on binary files
+    - Unified view: clicking [x] did not work in all situations
+    - Working tree window: switching between Working Tree and Index table should focus first change if a different file is selected
+- Gravatar: images with transparency drawed over previous image instead of over background color
+- Refresh: possible internal error related to invalid path in core.hooksPath
+- Remove: "Delete Local Files" was disabled for a file selection with existing and missing files
+- Submodule, Resolve: "Leave submodule pointer as is" did not work (resolving as "theirs")
+- Syntax:
+    - Java: 1_000_000_000d was not detected as literal
+    - Shell: heredoc end not detected with leading whitespace
+- Tools: creating a tool using ${git} immediately expands to the current path instead of keeping this variable
+- UI:
+    - moving maximized windows between different monitors using hotkeys (e.g. Win+Shift+Left/Right on Windows) did not remember new coordinates
+    - preferences dialog was too wide on monitors with 100% zoom level
+
+Other Noteworthy Changes
+------------------------
+- BitBucket: support for non-root repository URLs
+- Ignore: ignoring a modified file warns before removing and ignoring it
+
+
+SmartGit 21.1 RC 4 (2021-06-17)
+===============================
+Fixed Bugs
+----------
+- Changes View: paint artefacts might occur
+    workaround for https://bugs.eclipse.org/bugs/show_bug.cgi?id=574272
+- Investigate: if gravatars were disabled, no self-rendered gravatars were shown
+- Log:
+    - possible internal error in node cache
+- Refresh: possible internal error refreshing tracking state
+- Syntax:
+    - SQL: 'string' did not recognize all escapes correctly
+- Linux:
+    - Preferences: search result highlight remained after clearing filter input field
+    - Gravatars were drawn in wrong size for 200% zoom level
+        workaround for https://bugs.eclipse.org/bugs/show_bug.cgi?id=574182
+    - possible internal error selecting an empty directory
+
+Other Noteworthy Changes
+------------------------
+- added low-level properties "ignoreRemote[Hotfixes|Releases]OnStartOfNew[Hotfix|Release]"
+
+
+SmartGit 21.1 RC 3 (2021-06-10)
+===============================
+New Features, Improvements
+--------------------------
+- Diff tools: support for ${baseFile} in addition to ${leftFile} and ${rightFile}
+
+Fixed Bugs
+----------
+- Azure integration: possible OAuth-related internal error
+- Changes view:
+    - Apply Selection did not work on a subset of added block (same holds true Revert Selection and removed block, regression since 20.2)
+    - internal error when trying to apply selection of modified block which has no inner-line changes
+    - Take Ours/Theirs and Recreate Conflict may show false-positive warnings about manually modified files
+- Diff Tools: possible confusion of ${rightEncoding} with ${leftEncoding}
+- Distributed Reviews: deleted comment not denoted as "deleted" (strike-through) until repository is reopened
+- Edit User Config: may open the wrong config file or fail to open non-existing file (especially on Windows with HOME, HOMEDRIVE and HOMEPATH)
+- Find Objects: possible internal error when selecting a tag to check out
+- GitLab: fix "local merge request commits differ from server-side commits" for merge request which is merging back and forth with target branch
+- Investigate (Linux): tooltips without readable text in dark theme
+    workaround for https://bugs.eclipse.org/bugs/show_bug.cgi?id=573760
+- Log:
+    - Graph: does not update if having only toggled old ref
+- Partial clone: fetch-on-demand should disallow auto gc
+- Syntax:
+    - SQL: incorrect detection of comment
+- Linux:
+    - Preferences, Built-in Text editors: buttons and comboboxes are nearly unreadable with dark theme
+
+Other Noteworthy Changes
+------------------------
+- Changes view: can show an error message permanently in a banner
+- Changes view/File Compare: fine-tuned default colors for dark theme to have better contrast
+- Discard: low-level property discard.safeDefault=false hides "Discard to Stash" button
+- Log,
+    - Graph:
+        - when filtered, de-facto inapplicable history-related actions (like Edit Commit Message) should actually be disabled
+        - while filtering the buttons "Reveal", "Reset" and "Rerun Thorougly" have a tooltip with further information
+- restored manifest of smartgit.exe
+- added command line option --add-tool for adding diff or merge tools, e.g.:
+    $ smartgit.exe --add-tool type=diff pattern=*.eap "command=C:\Program Files\difftool.exe" "parameters=${leftFile} ${rightFile}"
+    $ smartgit.exe --add-tool type=merge pattern=*.eap "command=C:\Program Files\mergetool.exe" "parameters=${leftFile} ${rightFile} ${baseFile} ${mergedFile}"
+- Git execution (Windows): if HOMEDRIVE+HOMEPATH is no valid directory, fall back to USERPROFILE
+
+
+SmartGit 21.1 RC 2 (2021-05-19)
+===============================
+Fixed Bugs
+----------
+- Azure DevOps: wrong "Open"-link in Commits view for on-premise instances
+- Branches view: missing Tag-grouping "group" node if all tags belong to this group
+- External Conflict Solver: left and right files might have incorrect line-endings
+- File Log, Blame, Investigate: possible internal error related to shallow repositories
+- Files view: banner might be not layed out correctly if another tab is on top of it
+- Log:
+    - Changes view:
+        - left side may not update properly after committing some sorts of file-renames
+        - incorrect rendering of the [>] symbol for hidden change
+        - "Stage" did not work for deleted-both conflicts
+    - Files view:
+        - Cherry-Pick and Revert must not be available for 2-commit diffs
+- Resolve: Take Ours, Take Theirs was not available for all kinds of conflicts
+
+Other Noteworthy Changes
+------------------------
+- Add Tag:
+    - select "GPG sign tag" only if text is provided (to prevent wrong assumption)
+- Hosting Providers:
+    - set default of "hostingProvider.ignoreSubDomainsForConfigurationDetection" to "true"
+    - removed Assembla, Beanstalk, Codebase, Unfuddle (some implementations were entirely broken, support for others was quite poor compared to the full featured remaining providers)
+
+
+SmartGit 21.1 RC 1 (2021-05-04)
+===============================
+New Features, Improvements
+--------------------------
+- GitHub: denotes in toolbar icon whether the access token is outdated
+
+Fixed Bugs
+----------
+- Azure DevOps:
+    - fixes for on-premise instances
+    - comments created in SmartGit don't show up properly in the web frontend (missing leading /)
+    - internal error if reply is linked to deleted comment
+- Changes view:
+    - internal error applying a removed block at the beginning of a file
+- fixed a couple of memory or ressource leaks
+
+Other Noteworthy Changes
+------------------------
+- increased upper limit for repositories.maxRepositoriesToOpenByDoubleClick
+
+
+SmartGit 21.1 Preview 6 (2021-04-27)
+====================================
+New Features, Improvements
+--------------------------
+- Branches:
+    - ability to copy ref group prefixes
+- Changes View:
+    - Apply Line: is also allowed now if source and target have same line count
+    - Apply Selection: much more powerful than before
+- Git-Flow, Finish: merge/rebase default based on "no-ff=true"
+- Local | Fix Line-Endings: to rewrite text files with a certain line-ending
+- Log:
+    - Graph: if "log.graph.preserveParentOrder" is "true", layout order of parents should observe parent-order regardless of Git-Flow branch priorities
+- Show Changes: don't ask for what to compare if it is obvious from the selection
+    set low-level property showChanges.askForIndexAndWtModifiedFiles to true to enforce the previous choice
+
+Fixed Bugs
+----------
+- Changes view:
+    - Unified: possible internal error staging/unstaging change
+- Check Out:
+    - checking out remote branch did not suggest appropriate local branch name anymore
+    - checking out remote branch did nothing when clicking OK
+- Commit:
+    - possible duplicate confirmation dialog using Commit & Push
+    - shouldn't allow to amend in "merging" state, but allow to amend in "reverting " state (like Commit view)
+- GitLab: problems creating/assigning merge request comments if target commit is not the base commit
+- LFS Install: did not trigger refresh so other LFS commands remained disabled until the next refresh
+- Log:
+    - Graph:
+        - possible unnecessary twisting connectors related to Git-Flow
+        - possible display of stashes though "Stashes" node in Branches view was unselected
+    - opening repository in "rebasing" state may fail
+    - switching repositories quickly should not open new window
+- Linux:
+    - internal error typing accent characters because of GTK bug: https://bugs.eclipse.org/bugs/show_bug.cgi?id=571740
+- Syntax:
+    - Shell: heredoc problems
+
+Other Noteworthy Changes
+------------------------
+- Check for New Version: don't offer already downloaded updates to install on startup if Check for New Version is disabled
+- Log:
+    - File log: improved startup time
+- moved View | Tag-Grouping into Repository | Settings
+
+
+SmartGit 21.1 Preview 5 (2021-04-16)
+====================================
+New Features, Improvements
+--------------------------
+- Azure DevOps integration, see https://smartgit.userecho.com/en/communities/1/topics/368-
+- Changes View:
+    - applying deleted blocks to other side
+    - shows banner with certain commands in case of conflict
+    - better display for comparing submodules
+- Checkout: unified logic for Branches view, Graph and Working Tree window's Checkout dialog
+- Files view: for conflicted files denote whether the current working tree state equals "ours" or "theirs" state
+- Hosting providers:
+    - Review Comments: by default show author names instead of account names
+    - more compact display of repository-name-branch combinations
+- Log:
+    - Blame, Conflict Solver, Index Editor, Investigate work now on the selected file, even if some other view is focused
+    - Files view: Revert also can work on a file selection now
+
+Fixed Bugs
+----------
+- Changes view:
+    - Copy copied 1 char too much, might result in internal error
+    - was not cleared if a file was unselected
+    - Side by Side view: unified scrollbar at wrong position selecting an added file
+- Conflict Solver: was enabled for selected submodule conflicts though it failed
+- Log:
+    - Graph (and others): confusion if commit-graph changes while repository is open
+- Syntax:
+    - Bat/Cmd: incorrect detection of %1
+    - SQL: problems with 'strings' spanning multiple lines
+- Working Tree window:
+    - Refresh: possible inefficient processing due to "racily-clean" files
+
+Other Noteworthy Changes
+------------------------
+- Log,
+    - File log: ~30% performance improvements for large repositories with many merges
+- Bitbucket/GitHub/GitLab: "Retract Pull Request" -> "Reject Pull Request"
+- Rebase Continue: optionally skip confirmation dialog
+
+
+SmartGit 21.1 Preview 4 (2021-03-30)
+====================================
+New Features, Improvements
+--------------------------
+- Changes view: show common images side-by-side
+- Changes view, Compare: keyboard shortcuts for staging hunks, lines, inner-line changes
+- Compare, Conflict Solver, ...: optionally replaces tabs with spaces, backspace unindents leading spaces (preferences option)
+- Log Graph, Journal:
+    - show tiny gravatar by default
+    - if no gravatar is found (or it is disabled in the preferences), own images based on the initials and email are created
+- JIRA, Git-Flow, Push: optionally set a feature in-progress
+
+Fixed Bugs
+----------
+- Changes view:
+    - incorrect Delete Block text, wrong confirmation
+- Clone: for "svn" and "svn+ssh" protocols, automatically use SVN
+- Log:
+    - Graph:
+        - switching between "Follow Only First Parents"/all loaded to many commits
+        - possible flickering with "Follow Only First Parents"
+        - possible internal error during refresh for "experimental.nodeCache.useCommitGraph=true"
+        - File Log: Branch/Merge Coloring did not work if no HEAD was shown
+        - Merge Coloring (including Merge and Cherry-Pick dialog): false-positive mergable commits if HEAD is not shown
+        - for Mergable/Branch coloring top-most node may show up in gray, even it's "matched"
+    - Branches:
+        - internal error unselecting all refs
+    - Refresh: possible internal error after a "git repack"
+- Pull/others: false-positive warning about SVN though pure Git repository
+- Syntax:
+    - Java: bug in lexing escape characters in Strings
+    - YAML: problem with ' in values
+- Working Tree window:
+    - Log Chooser dialogs: possible flickering when opening (outdated graph showed up for a short while)
+
+Other Noteworthy Changes
+------------------------
+- Changes view: compact display is default now
+- Ignore:
+    - remembers selected destination
+    - added low-level property ignore.supportTrackedDir to ignore tracked directories
+- Log
+    - Graph:
+        - switched to Git commit-graphs (instead of own node cache)
+        - switching between "Follow Only First Parents"/all should preserve commit order better now
+        - "Follow Only First Parents": layouts new roots downmost - see log.graph.sortingRootOrder
+        - "Show working tree node permanently" is the default now - see https://twitter.com/smartgithg/status/1370385647719084040
+        - "Sort Merge Parents First" is default now (because "git log --graph" uses this approach, too)
+        - improved filter performance
+        - double-clicking on a commit while bisecting: default to checkout the commit (not creating a branch)
+    - Files: replaced "Unmodified" with "Unchanged"
+- Working Tree window:
+    - Merge, Cherry-Pick and others: remembers graph roots independently
+- updated bundled Git to version 2.30.2 (fixing security leak https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-21300 when cloning LFS repositories)
+- Windows: use system proxy by default (set java.net.useSystemProxies to true if it is unset)
+
+
+SmartGit 21.1 Preview 3 (2021-03-10)
+====================================
+New Features, Improvements
+--------------------------
+- Changes view:
+    - Working tree window: keep scroll position when switching between HEAD-Index and Index-Working Tree
+    - Go to Next/Prev Change: if there is no more change, select at least the last one
+- Commit view, file name completion: suggest staged items before unstaged ones
+- Discard: remembers the last used option
+- Git: support for "init.defaultBranch"
+- Log:
+    - Files: denotes case-changed file name (and possible duplicate) like in the Working Tree window
+    - Open From Working Tree: works on multi-selection
+- Rename (Windows): allow to rename case-changed file back to original Git name, e.g. Index name
+- Syntax:
+    - Shell script: support for heredoc
+
+Fixed Bugs
+----------
+- Changes view:
+    - did not scroll to single deletion at end of file
+    - Ignore Line Endings was not honored
+    - switching from Unified to Side-by-side view, caret may be off 1 line
+    - Unified view: Goto Next/Previous did not work for change block at end of file
+    - Working Tree window: Changes view not populated after being made visible
+- File completion (in file/directory path input fields): completion should not replace symlinks by absolute paths
+- GitLab: pull requests may not show up if they originate from repositories for which the current user is no "member"
+- Graph:
+    - hiding the empty working tree node was visually noisy
+    - toggling a ref was noisy for selected Follow Only Primary Parent option
+    - Merge coloring was influenced by the Follow Only Primary Parent option
+- Log:
+    - Files: Submodule Log (History of Updates) may fail with "missing object" error
+    - Graph: for orphan checkouts, Working tree node should always show up
+    - File Log: possible internal error after external commit to repository
+- Refresh (Linux): possible native crash related to overflow of memory-mapped file handles
+- Syntax:
+    - ANTLR: range with backslash might be parsed too greedy
+
+Other Noteworthy Changes
+------------------------
+- from now on SVN support is only available in commercial edition
+- Add Branch: warn if branch starts with <remote>/
+- added low-level property push.modifyPushedCommitsCheck.skipGitFlowFeatures to optionally skip modify-pushed commits check for feature branches
+- added low-level property commandDialogs.rememberOptions to avoid remembering last used options in command dialogs
+- Log graph, colorings: don't use red one because red might be considered as something to worry about (e.g. invalid state)
+- Table controls: if the selection is scrolled outside the visible view, a refresh should not try to scroll it into view
+
+
+SmartGit 21.1 Preview 2 (2021-02-22)
+====================================
+New Features, Improvements
+--------------------------
+- Changes view, Compare, Conflict Solver, ...:
+    - Find dialog improved
+        - shows over appropriate side
+        - hide replace parts for readonly views
+- Log:
+    - Graph:
+        - Filter banner shows up immediately to allow changing options
+    - Refresh:
+        - for problems, include details in the dialog
+- Partial clone support
+    https://smartgit.userecho.com/communities/1/topics/1223-
+- Push, JIRA: optionally set the issue 'in progress'
+- Subtree support:
+    - Add: optionally create local tracking branch
+    - Branches view: "Subtrees" node
+    - Push: directly split and push changes without requiring local subtree-branches
+- Various branch-related commands: slightly improved responsiveness
+
+Fixed Bugs
+----------
+- Changes view:
+    - internal error when selecting binary file and switching to Unidiff view
+    - Working tree window: staging a change scrolled back to first change
+- Refresh:
+    - possible "refresh failed" error when restoring currently open repository from backup
+- Set Tracked Branch: possible "<refname> is ambiguous" error
+- Subtree: possible redundant inefficient processing
+- Syntax:
+    - Shell scripts: incorrect escaped characters in strings
+
+Other Noteworthy Changes
+------------------------
+- Background fetch of Open Repository: changed default to unselected
+- Bisect: if the HEAD was reset, reveal it
+- Changes view: should not show blocks for added/untracked, removed/missing files
+- Changes view, Compare, Conflict Solver, ...:
+    - try to keep [<<], [X], [>>] buttons visible for partly outside blocks
+- Clone:
+    - by default, don't show "VCS type" dialog
+    - when selecting to clone just a single branch, "git clone --single-branch" is used
+- Reset: added low-level property reset.default to configure the type used by the "normal" reset command
+- Working Tree window: report problems in case of missing repository
+
+
+SmartGit 21.1 Preview 1 (2021-02-09)
+====================================
+New Features, Improvements
+--------------------------
+- Changes view:
+    - completely rewritten
+        - new "Unified" display option
+        - syntax highlighting even in compact mode
+        - manual expansion in compact mode
+        - apply changes in compact or unified mode, too
+- Compare:
+    - select from multiple configured, matching file compare tools
+    - improved memory consumption related to syntax coloring
+- GitHub/other hosting providers: allow to fetch conflicting pull requests and denote as "conflicting"
+- History-based commands: allow to rewrite merge commits
+- Log:
+    - Branches view: context menu item to forget about commit entries
+    - Files view:
+        - Split-Off Commit
+        - Cherry Pick selected files only
+    - Graph:
+        - double-clicking a local branch symbol checks it out
+        - File log: for grouped tags denotes whether all tags are signed
+- Rebase Continue: optionally don't show confirmation dialog again
+- Modify or Split Commit: allow to stop/edit all commits
+- Refresh: performance improvements
+- Working Tree window:
+    - Add Branch: considers Branches view selection
+
+Fixed Bugs
+----------
+- Log:
+    - Revealing a stash did not always ensure that the base commit was loaded
+- Rebase Continue: might fail if commit message contains leading #
+- Syntax:
+    - several languages were too restrictive, e.g. for lines starting with # - which was wrong and slow
+- Refresh:
+    - Linux, macOS: possible false-positive modifications
+
+Other Noteworthy Changes
+------------------------
+- updated Git to version 2.30.0
+- Log, Graph: when autoscrolling while drag-and-drop, don't scroll to 'wrong' direction
+- unified Find Action and Find Object in one popup
+- wizards: unified [Next >] and [Finish] buttons
+- Branches view: changed order of context menu items
+- more specific refresh progress for expensive tasks like rebuilding the Log Cache
+- File icons: more modern look, easier to distinguish by color-blind people
+- Compare: enabled smart tab handling by default
+- low-level-properties:
+    - defaults for executable.addBinDirectoryToPath and credentials.improvedPromptHanding changed to true
+    - renamed gui.* to ui.*
+- if a file or directory chooser is shown, the display of other dialogs (from other threads) is delayed until the file or directory chooser is closed
+- make opening multiple repositories easier by setting the low-level property repositories.maxRepositoriesToOpenByDoubleClick
+- Linux:
+    - uses 'gio open' instead of deprecated 'xdg-open'
+    - uses 'gio trash' to trash files

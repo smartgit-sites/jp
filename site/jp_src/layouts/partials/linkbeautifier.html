@@ -1,0 +1,13 @@
+{{- $url := .url -}}
+{{- $display := .display -}}
+{{- $title := .title -}}
+{{- $id := .address -}}
+{{- $class := .class -}}
+{{- $target := .target -}}
+{{- $isExternal := strings.Contains $url "http" -}}
+{{- if $isExternal -}}
+{{- $target = "_blank" -}}
+{{- end -}}
+{{- $hasIcon := strings.Contains $class "fa-" -}}
+
+<a href="{{ $url }}" title="{{ $title }}"{{with $id }} id="{{ $id }}"{{ end }}{{with $class }} class="{{ $class }}"{{ end }}{{with $target }} target="{{ $target }}"{{ end }}><span>{{ $display }}</span>{{ if and (eq $hasIcon false) (eq $isExternal true) }}&nbsp;<i class="fa-light fa-arrow-up-right-from-square small"></i>{{ end }}</a>

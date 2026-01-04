@@ -1,0 +1,918 @@
+SmartGit 19.1.8 (2020-03-02)
+============================
+Fixed Bugs
+----------
+- Windows: upgrade to version 20.1 did not work
+- "default" directory: preferences.yml was not copied
+
+
+SmartGit 19.1.7 (2020-03-02)
+============================
+Fixed Bugs
+----------
+- BitBucket Server: possible internal error when refreshing (related to moved repositories)
+- GitHub, Create Pull Request: fails if target repository name contains uppercase letters
+- macOS:
+    - update of installation directory fails to cleanup old installation correctly
+- Refresh:
+    - Git-LFS lock file information may fail to parse due to new timestamp format
+    - Git-LFS locks processing (for own locks) should be more tolerant in case of missing "owner"
+- corrupt yml settings files (e.g. containing 0x00 bytes) fail SmartGit to start
+- Investigate: showed DeepGit version in title
+
+
+SmartGit 19.1.6 (2020-01-14)
+============================
+Fixed Bugs
+----------
+- Git-Flow, Integrate/Finish Feature: may unexpectedly skip commits to rebase
+- Log:
+    - possible internal error for files obstructured by submodules
+- Log/Working tree window:
+    - memory leak when closing
+- Log Graph/Journal:
+    - internal error if a user name contained \r
+- Journal: changing Auxiliary Ref in submodule did not refresh automatically
+- opening bare repository may fail due to missing "logs" directory
+- Ignore:
+    - internal error trying to ignore the root directory; resolved by only allowing directories containing only untracked (or ignored) files
+- Refresh:
+    - for notification "Repository ... has a locked index" the "Delete" button may not work if .git/index.lock has been removed in the meanwhile
+- GUI
+    - text input field, e.g. filters: Ctrl+Z triggered accelerator instead of accepting as undo for text field
+- internal error setting log level to FINE
+- macOS:
+    - drag and drop of repositories was more or less broken
+    - default tool to open terminal might open wrong directory; requires installation upgrade
+    - 10.15: preferences, menu items were scrolled out of view; workaround for https://bugs.eclipse.org/bugs/show_bug.cgi?id=558584
+- Linux:
+    - VM crash when notification was closed when fcitx IME was used
+    - checkboxes and radiobuttons hard to read on Fedora 31 with Gnome 3.24.1 and Adwaita
+
+
+SmartGit 19.1.5 (2019-12-05)
+============================
+New Features, Improvements
+--------------------------
+- GUI:
+    - table control: added low-level property table.scrollToSelection to prevent scrolling to selection, e.g. after toggling the sort status
+
+Fixed Bugs
+----------
+- Compare:
+    - resizing the window did not redraw the "Long lines" view causing garbage to be shown there
+    - forgots some options when using "Remember as Default"
+- Log:
+    - opening a freshly cloned shallow repository failed if a commit listed in .git/shallow was not present in the repository
+- GitHub: query was not tolerant in case of missing parent repositories
+- Rebasing commands (reordering, changing messages, ...): had problems with spaces in paths
+- opening a missing repository in 2 windows could result in an internal error when confirming the removal
+- possible internal error related to bare repositories
+- Index Editor: did not show a warning if a file could not be saved, e.g. because it was locked by another application
+- i18n: variable text parts could be replaced by "1", "2", ...
+- internal error saving passwords
+- for commercial users with outdated licenses the evaluation did not work
+- applying changes from default settings (startup.settingsToReplaceFromDefaults) did not work when upgrading from old XML files
+
+
+SmartGit 19.1.4 (2019-10-02)
+============================
+New Features, Improvements
+--------------------------
+- Branches view: ability to copy stash name
+- Changes view: include commit ID for "Could not find submodule commit" message
+- Hosting providers: added low-level property
+  smartgit.hostingProvider.skipCheckForConfigurations to prevent, e.g.
+  notifications "Bitbucket Server integration is not yet configured"
+- added low-level property smartgit.pull.skipCheckForExternalCredentialsHelper to
+  prevent notification "External Credentials Helper detected"
+
+Fixed Bugs
+----------
+- Log:
+    - Files: toggling Show Directories did not update the GUI immediately
+    - Working Tree refresh: possible internal error related to core.ignoreCase=true
+- clicking sourcetree:// URLs in Bitbucket did not open clone wizard any more
+- SVN:
+    - Submodule initialization was not possible if smartgit.svn.scanSubmodulesForNonSvnParents=true
+    - Refresh: uninitialized submodules don't show up if smartgit.svn.scanSubmodulesForNonSvnParents=true
+- UI:
+    - Ctrl+Shift+1/2/... did not work if commit message field in Commit/Message view
+      was focused
+    - Graph/Journal view: focus rect not drawn correctly
+    - Linux:
+        - possible internal error showing dialog on top of parent window immediately when showing
+          this window (https://bugs.eclipse.org/bugs/show_bug.cgi?id=551624)
+        - performance problem in tree controls with large amount of items
+- Windows launchers were monitor-dpi-aware by accident
+
+Other Noteworthy Changes
+------------------------
+- dropped "Merge Directly To" 3rd-party tool due to a couple of problems with
+  changed low-level Git API
+
+
+SmartGit 19.1.3 (2019-09-11)
+============================
+Fixed Bugs
+----------
+- Log, Graph:
+    - Enter did not the same as double-click
+    - focus rect was not drawn any more
+- Compare or others: possible internal error applying change
+- Output: for Git >= 2.23, progress output like "Compressing objects:" was not
+  properly recognized anymore
+- Stash On Demand: failed with "Your local changes have been stashed away, but
+  could not be reapplied." if stashing untracked files is disabled
+- Windows: if some special environment variables were set, e.g. JAVA_TOOL_OPTIONS,
+  the launchers did not recognize the bundled JRE and possibly tried to use an
+  outdated one from the system causing an internal error
+
+
+SmartGit 19.1.2 (2019-09-06)
+============================
+Fixed Bugs
+----------
+- Git-Flow:
+    - Finish Release: Tag Message is not set to tag
+    - Finish Feature/Hotfix/Release: should not remeove remote branch if "push"
+      option is deselected
+- Log:
+    - Commit view: temporary inconsistency might caused assertion
+    - Graph:
+        - could become inconsistend between selected refs and shown commits
+        - when merging a tag (by right-clicking it), commit or other branch name
+          on commit was used instead of the tag
+        - adding/removing tag from local branch did not properly update local/
+          remote state (orange vs. black nodes)
+        - Rebasing state: "done" labels might be in wrong order
+        - Repository state banner text could get focus with blinking caret,
+          e.g. after having clicked (Rebase) Continue
+    - internal error trying to open bare repository containing .git admin
+      directory
+    - Window | Files tried to focus Directories view, even if hidden
+- Pull: possible internal error if repository config could not be read
+- Refresh: - reduced short-term memory usage
+- Stash on Demand: asked to stash untracked files even if option to stash
+  untracked files was unselected
+- SVN:
+    - Cherry Picking a not yet pushed commit (= a commit without a revision)
+      fails with "Aborting commit due to empty commit message"
+    - "forgot" https credentials
+- Linux:
+    - fails with NoSuchMethodError if SWT_GTK3=0 and non-default SmartGit theme
+      is used
+    - application icon is independent of pinned launcher icon
+- macOS:
+    - Stash All: adds backslashs before " to message
+- GUI:
+    - possible internal error expanding a tree control
+
+
+SmartGit 19.1.1 (2019-08-12)
+============================
+Fixed Bugs
+----------
+- Commit, Discard: invoking Compare for renamed file does not show source file,
+  but only empty file
+- Git-Flow:
+    - Integrate did not honor custom base (if configured)
+    - Start Hotfix fails if an unrelated version-tag is present
+    - Start Release may suggest invalid (already existing) release name
+- Tools: tools with only ${dirSelect} did not show up in menu
+- Startup: under certain conditions always asks for confirmation to send bug
+  traces
+- Linux:
+    - smartgit.sh suggested to add jre= line if no JRE was found, but ignored
+      this line
+    - https authentication failed if SmartGit path contained spaces
+
+
+SmartGit 19.1 GA (2019-08-08)
+=============================
+Fixed Bugs
+----------
+- GitLab: Open-link did not work for repositories in subgroups
+- SVN:
+    - cloning created 2 smartgit-*.tmp files in repository
+    - duplicate tooltip in the status bar while cloning
+- GUI:
+    - docking: unmaximizing a view with double click could close another view
+      if its (X) button was positioned at the same location
+
+
+SmartGit 19.1 RC 4 (2019-08-01)
+===============================
+Fixed Bugs
+----------
+- Log:
+    - Files view (Working Tree): obsolete rename information may remain after
+      partial refresh of working tree
+    - Refresh: when opening mutliple repositories at once with "Show working
+      tree node permanently" selected, local modifications didn't show until
+      repository was selected
+    - Repositories: certain commands didn't work on multi-selection of
+      submodules (but worked on multi-selection of normal repositories)
+- Preferences: internal error exporting external tools
+- Themes: - some dark theme fixes
+- Tools: invalid .gitconfig empties after tool invocation
+- handle leak after invocation of external processes
+- Mercurial:
+    - Log windows missed Window | Branches menu item
+- SVN: Push was broken
+- Windows:
+    - assertion in JGit detecting the file system timestamp resolution
+    - possible infinite hang when trying to open repository from network share
+
+
+Other Noteworthy Changes
+------------------------
+- GitHub API server fingerprint updated
+- show info about obsolete system property "smartgit.core.push.recurseSubmodulesCheck"
+
+
+SmartGit 19.1 RC 3 (2019-07-19)
+===============================
+New Features, Improvements
+--------------------------
+- Git-Flow: informs users about changed behavior of AVH using a notification
+- Preferences: option to switch to Simplified Chinese independent of the
+  configured system locale
+
+Fixed Bugs
+----------
+- background fetch could show multiple error dialogs
+- Commit:
+    - template needs to be read with UTF-8
+    - merge commit was rejected if there were no files to commit
+    - "Select from Log" and "Select from JIRA" were not sorted the same way for
+      all commit message fields
+- Edit Author: selected date was incorrectly applied
+- Hosting providers: obsolete and newly entered passwords were not remembered
+- Investigate: fixed border of Graph table
+- Repositories view: a group had 2 rename commands in the context menu
+- Log window:
+    - Graph:
+        - when Rebasing (or modifying a commit) an amended commit showed up in
+          the "todo" section, too
+        - macOS: autoscrolling while drag and drop did not work
+    - Files:
+        - performance problem for certain scenarios due to changed rename
+          detection limits (compared with v18.2)
+        - sorting by "State" column was not correct for renamed files
+- Working Tree window:
+    - Files: "Index State" and "Working Tree State" columns didn't denote
+      renames
+- SVN:
+    - Clone: "incomplete" repository could not be pulled
+    - submodules may not show up if "Show Untracked File" was unselected
+- Linux:
+    - Deepin Desktop:
+        - new dialogs weren't activated
+        - Move to Trash was disabled until the first file was trashed outside
+          SmartGit
+    - Ubuntu 14.04 with default theme: checkboxes/radiobuttons looked odd
+- Windows:
+    - updated smartgit*.exe because the previous ones did not detect Java if
+      _JAVA_OPTIONS was configured
+
+Other Noteworthy Changes
+------------------------
+- Linux: ignores obsolete 'jre=' lines in the smartgit.vmoptions file
+- macOS: don't search for repositories inside ~/Pictures because otherwise
+  macOS would show an irritating warning dialog
+
+
+SmartGit 19.1 RC 2 (2019-07-04)
+===============================
+New Features, Improvements
+--------------------------
+- Use Message for Commit:
+    - added to the Journal view of the Working Tree window
+    - allowed for non-root logs
+- Preferences, User Interface: Chinese users will now be able to switch to a
+  Chinese interface
+
+Fixed Bugs
+----------
+- Commit: if in merging state and no staged file existed, all untracked files
+  were added, even though "Add untracked files" was unselected
+- Log:
+    - Graph:
+        - Ref Delete/Rename: was possible even for exotic refs like svn/attic
+        - possible internal layouting-related error with low-level property
+          log.graph.preserveConnectorsUntilFor set
+    - Refresh: possible dead-lock
+- Refresh:
+    - various problems (like "missing object") and possible crashes if
+      repository contains invalid ref (pointing to a valid SHA not referencing
+      a commit)
+    - possible internal error if repository was in rebasing state
+- Compare and others: word-based cursor movement moved too far
+
+
+SmartGit 19.1 RC 1 (2019-06-26)
+===============================
+New Features, Improvements
+--------------------------
+- Branches view: added low-level property branches.delete.preselectDeleteFromRemote
+  to make it easier to delete remote branches
+- Compare, Go to next/previous change: tries to scroll full inner-line change
+  block into view
+- Log, Graph, Use Message for Commit: focuses Commit view
+- Search for Repositories: remembers unselected repositories
+- UTF-8 encoded file detection: added low-level properties for disabling
+  (text.detectUtf8WithoutBOM) and configuring the maximum character count to
+  check (text.detectUtf8WithoutBOM.maxChars)
+- Window | Maximize View: renames to Restore Maximized View in maximized state
+
+Fixed Bugs
+----------
+- LFS, Track dialog: on Windows a file FOO.JPG was rejected for a pattern *.jpg
+  though core.ignorecase was set to true
+
+
+SmartGit 19.1 preview 8 (2019-06-19)
+====================================
+New Features, Improvements
+--------------------------
+- Log:
+    - Checkout: right-clicking a remote branch should honor clicked branch for
+      subsequent Check Out target dialog
+    - Commit view: when filtered, "parents" should denote commit parents
+      instead of matching virtual parent nodes
+- Fetch: added low-level property fetch.fetchOnlyCurrentRemote (current remote
+  means remote from the tracked branch of the current branch)
+- Rebase: uses --rebase-merges instead of --preserve-merges for Git 2.21+
+- Repositories view: show icon for groups, so the text of the same level is
+  aligned
+- Memory consumption reduced by ~10% for large working trees
+
+Fixed Bugs
+----------
+- Log window:
+    - Branches view: toggling Git-Flow branches (e.g. feature branches) in
+      remote category did not work
+    - Graph view:
+        - Checkout:
+            - checking out remote branch resulted in detached HEAD (contrary to
+              what is selected in the dialog)
+            - possible internal error invoking Checkout on diverged remote
+              branch
+    - Refresh: possible internal error after submodule vanished, e.g. when
+      switching branches
+- Working Tree window:
+    - Commit: internal error invoking commit on files from different
+      repositories
+- Branches view: invoking Fetch on a selected remote should only fetch this
+  remote, not from all
+- Clone: Fetch Only a specific branch was broken
+- Passwords (JIRA and hosting provider): might not have been stored
+- Revert: for Revert & Commit the custom template from low-level property was
+  ignored in case of conflicts
+- Split Commit: Commit view was cleared after 1st commit
+- Mercurial:
+    - Journal: HEAD commit should be denoted in bold
+- Linux: if JAVA_HOME was set to an older JRE, SmartGit did not start with a
+  NoSuchMethodError
+- macOS: possible internal error for shell-toolbar
+
+Other Noteworthy Changes
+------------------------
+- license agreement: made commercial use details more clear
+
+
+SmartGit 19.1 preview 7 (2019-06-03)
+====================================
+New Features, Improvements
+--------------------------
+- Branches view:
+    - Copy URL for Remotes
+- Commit view:
+    - now also supports merge, cherry-pick, ... messages, commit.message
+      template
+    - optionally stage all files without confirmation
+- Git-Flow:
+    - Finish Feature: merge should be non-fast-forward by default
+    - Start Support: allow to specify base commit for support branch
+- GitHub (and others), Create Pull Request:
+    - reasonable target default
+    - use information from latest commit as default title
+    - works on Graph selection, too (not just branch selection)
+- Bitbucket Server: low-level property "stash.https.fingerprint" to specify
+  default server fingerprint
+- Log/Journal: show configured fixup-prefix in light color
+- Log:
+    - Graph view:
+        - inlined ref sub menu
+        - ref context menu: merge also works on ref
+    - Files view:
+        - Directories tree: offer external directory tools
+        - Rename file: also can rename untracked file
+- Working Tree window:
+    - Commit view:
+        - added Select from Log
+
+Fixed Bugs
+----------
+- Git-Flow:
+    - Start Support: did not honor selected base branch
+- Prune Worktree:
+    - show error message in case of error
+- Commit:
+    - commit.message template not honored anymore
+- Log:
+    - Graph view: scrollbar had brown background on macOS 10.14 with dark theme
+    - Checkout:
+        - can't create new branch for multiple remote branches on selected
+          commit
+    - Cherry-pick (without commit): subsequent Commit dialog may suggest
+      wrong commit message
+    - possible internal error opening GitHub/Bitbucket/GitLab repository for
+      which no hosting provider is configured
+    - Refresh: possible internal error
+- Dark theme (Win10): Changes view may get visible (dark) scrollbars, e.g. after
+  changing perspectives
+
+Other Noteworthy Changes
+------------------------
+- Commit and others, Select Message from Log: replaced "Fixup!"-prefix checkbox
+  with configurable prefix with low-level property log.useCommitMessage.prefix
+- Rebase Interactive: disabled auto-squash of fixup! commits, because it offers
+  3 options to do that (to top/newest commit, neighbor commits, to bottom/
+  oldest commit)
+- Stash selection: show information that the index always is stashed
+- Log: renamed views "Commits" -> "Graph", "Details" -> "Commit"
+- SSH: shows better error message in case of ECDSA keys
+- upgraded to Java 11.0.3
+
+
+SmartGit 19.1 preview 6 (2019-05-15)
+====================================
+New Features, Improvements
+--------------------------
+- Clone:
+    - preselect default branch if "Fetch all Heads and Tags" is unselected
+    - the 1st previous URLs are shown in recently used order, the remainding
+      ones are sorted by name for easier reading
+- Details/Commit Message view:
+    - apply more features of the classic Commit dialog:
+        - if amend is selected, check for modifying pushed commits
+        - checks for configured name/email
+        - ability to select JIRA issue as message
+    - commit single change without confirmation
+    - file name completion: support for renamed files
+- Log:
+    - Edit Commit Message now also works if Index or Working Tree is selected
+    - Commits/Graph:
+        - context menu:
+            - use submenu to group all commands for the clicked ref
+            - removed general Push, because it did not work on the selected
+              commit
+            - added Fixup command that takes the commit message and selects the
+              working tree
+            - if Index or Working Tree were clicked, show Commit, Stage/Unstage
+        - filtering: performance improvements for subsequent filtering by
+          cached commit data
+        - more compact options ("hamburger") menu
+- Git-Flow:
+    - toolbar button: Integrate should also be default if we are only behind
+      origin/develop, but not local develop
+- Modifying or Splitting Commit: Continue button opens Commit dialog for local
+  changes
+- Log/Journal: Squash Commit did not ignore "!fixup" prefix
+- Bitbucket/GitHub/GitLab: option to open pull request in browser
+- File Compare, Conflict Solver:
+    - added _ as word character
+- External tools: made non-case-sensitive on Windows
+- Output view: added low-level property "output.view.maxDisplayedLines"
+- GUI:
+    - macOS 10.14: support for dark system theme; because of bug 540081
+      (https://bugs.eclipse.org/bugs/show_bug.cgi?id=540081) it requires the
+      use of non-system toolbars
+    - themes: by default switch between light and dark default themes,
+      especially on macOS 10.14 and Linux
+
+Fixed Bugs
+----------
+- Bitbucket/GitHub/GitLab:
+    - integration may not work properly if remote URL contained port number
+    - re-fetching pull request might not work
+    - re-fetching "locally outdated" pull request did not clear "locally
+      outdated" marker
+- Clone dialog: showed duplicate URLs
+- Commit: possible OOME for large commits (adds)
+- Details/Commit Message view:
+    - could not commit into empty repository
+    - could not commit submodule change
+    - only untracked files were not detected as committable ("nothing to
+      commit")
+- Find Action: wrong priority handling
+- Git-Flow: Finish should be default if feature is ahead of develop
+- GitLab: Add Comment (Changes view) may fail because it tries to create
+  comment in wrong repository
+- Split Commit: false-positive "The splitting of commit ... is still in
+  progress" warning when having only untracked files in the working tree
+- Log:
+    - Branches view:
+        - Bitbucket Server: misleading tooltip "Hosting provider is not
+          configured for the current repository" for refresh button
+    - Changes view:
+        - did not show expected vs. real EOL
+        - could not show Index content if repository was empty (invalid HEAD)
+    - cloning repository did not show up as open (bold)
+    - Commits:
+        - clicking up-link arrow to Index (on pending merge commit) did not
+          work
+        - "hand" cursor over links did not show up anymore
+        - Working Tree and Index node always should be next to each other
+        - gap/flickering updating the "states" panel
+        - stashes should show up completely, even if "Show Only First Parents"
+          is selected
+    - Repositories:
+        - possible internal error opening multiple repositories in quick series
+        - SVN "incomplete" state not detected (showing "missing" instead)
+    - GitHub: possible empty "Reply" menu when right-clicking comment
+    - file/subdir log did not remember layout
+    - open, missing repository: each window activation caused a new error
+      dialog to pop up
+- Working Tree window:
+    - hosting providers: incoming pull requests may not be denoted if
+      Distributed Reviews is enabled for the repository, too
+- GUI:
+    - Feature Integrate/Finish: "Merge" became pre-selected where "Rebase"
+      should be
+    - "Default for dark system" theme was outdated
+    - Linux:
+        - elementary OS: checkboxes/radiobuttons inside tabbed pane looked odd
+- XML->YML conversion: possible incorrect conversion for null objects
+
+Other Noteworthy Changes
+------------------------
+- memory limitation for helper processes
+- macOS: changed a few default shortcuts that conflict with default ones on macOS
+- Windows installer: update registry keys for Windows 7 (thanks to Guillaume
+  Lachance)
+- Linux: detect display close event, e.g. on shutdown or logout
+
+
+SmartGit 19.1 preview 5 (2019-04-25)
+====================================
+New Features, Improvements
+--------------------------
+- Git-Flow: support for AVH edition 1.12.2
+    - support for custom base branch
+    - smart "Integrate Develop" for sub-features with diverged base branches
+    - default to "Integrate" if feature lags behind parent (develop)
+    - log safe diverged states only as "info" (instead of "warning") to the
+      Output view
+- Garbage Collector: re-added option for expire-reflogs-now with additional
+  confirmation because it will delete stashes, too
+- Edit Last Commit Message has been removed, because Edit Commit Message
+  already supports it (even for merge commits)
+- Log:
+    - Commits:
+        - show banner for current rebasing/merging/cherry-pick/... state with
+          state-specific commands what to do
+            - Abort toolbar button has been removed
+            - Commit toolbar button does not change to "Continue" any more
+              (but still can be used to continue a rebase)
+    - Details: unified Commit Message view into Details view (if index or
+      working tree nodes are selected, the commit message can be entered)
+        - with Amend checkbox and Commit button to commit without the dialog
+        - commit button works on index
+        - if no file was staged, optionally all local files get staged upon
+          request (git add -- .)
+- Working Tree window:
+    - Commit Message view: with Commit button (see Log/Details above)
+- Stash Apply: now also works in rebasing state
+- GUI:
+    - commands that don't influence index or working tree are moved from the
+      Local to the Branch menu (Bisect, Edit Commit Message, Edit Author,
+      Squash Commits
+    - Repositories: added Add Group to context menu of group
+- external tools (Linux): detect more terminal applications
+
+Fixed Bugs
+----------
+- Log:
+    - Commits:
+        - when rebasing only a slice of commits, "rebase plan" may show too
+          many false-positive "done" commits
+        - possible internal error trying to open repository in rebasing state
+        - certain degenerated rebasing states don't show up
+        - F2 did not invoke Edit Message
+    - Details:
+        - Gerrit change IDs were detected as possible commit ID
+- Split Commit: wrong message is suggested after having entered a different
+  message
+- Linux: scrolling related hard crash
+  https://bugs.eclipse.org/bugs/show_bug.cgi?id=546274
+- GUI:
+    - Log:
+        - Commits: for a file log, the context menu contains always disabled
+          commands
+    - toolbar: changing "Show text below icon" did not relayout correctly
+    - Rebase Interactive: if aborted, don't show "succeeded" message
+
+
+SmartGit 19.1 preview 4 (2019-04-16)
+====================================
+New Features, Improvements
+--------------------------
+- Modify or Split Commit:
+    - the is-equals-check only is performed if Split Commit was invoked
+- Log:
+    - Commits:
+        - by default, roots are sorted by "first merge" instead of "time"
+        - Drag and drop for reordering commits: show confirmation popup (set
+          low-level property log.dragAndDrop.moveCommitNeedsConfirmation to
+          false to prevent)
+        - Push Commits: added low-level property pushCommits.allowAnyCommit to
+          move the tracked branch to any (even diverged) commit (not just in
+          the unpushed linear history of the HEAD)
+        - Rebase: improved visualization of pending commits
+        - Low-level property "log.graph.includeTrackedRemoteBranchForHead" to
+          exclude HEAD's tracked branch from the Commits graph
+    - Files:
+        - Working tree directories with staged changes should show up as
+          "modified" (red) if View Staged option is set
+        - if HEAD is selected, F2 can rename a file
+    - Checkout, Merge and Rebase menu and toolbar commands should work on
+      Branches selection, too (not just the commands in the context menu)
+- Journal: "pushed" commits are always detected due to improved performance
+- Log/Journal: show different commit time even if author = committer
+- Pull: rephrased credential.helper warning to sound less dangerous
+- Pull/Sync: more detailed message for auto-stash confirmation dialog
+- Reset:
+    - split into the more common "Reset Hard" and "Reset Advanced"
+    - Reset Advanced:
+        - support for the --keep and --merge options
+        - added "Thoroughly fix line-endings"
+- Sync: moved configure order options from preferences to toolbar button popup
+  menu
+- Git config: warn if svn-remote information is stored in user or global config
+
+Fixed Bugs
+----------
+- Branches:
+    - F2 on a remote triggered the Stash Rename (which failed)
+    - Merge: the long ref name was used in the confirmation dialog
+- Log:
+    - Commits:
+        - macOS: right-clicking an unselected commit operated on previous
+          selection
+        - Modify Commit: "rebase plan" should not contain current commit
+        - Rebase HEAD to: "rebase plan" contained too many commits
+        - possible internal error trying to lay out "far arrows"
+        - SHA text was hard to read in dark theme
+    - Compare with Working Tree: left file title always was "<path> (Before)"
+      even if "Compare After" was selected
+    - Changes:
+        - for a renamed file, the title says "Added"
+- Journal:
+    - commits are not denoted as ahead (pushable) if commit is checked out
+      (despite "journal.determinePushedCommits" was set)
+    - Modify/Split/Interactive Rebase: possible duplicate "Do you want to
+      modify..." confirmation
+- Log/Journal:
+    - "pushed" detection should not take into account other branches
+    - author and date hard to see in dark theme for author != committer
+
+
+Other Noteworthy Changes
+------------------------
+- updated bundled Git to version 2.21.0
+- Windows:
+    - revealing a node programmatically does not scroll any more horizontally
+
+
+SmartGit 19.1 preview 3 (2019-03-27)
+====================================
+New Features, Improvements
+--------------------------
+- Git:
+    - DeepGit:
+        - added "Open SmartGit Log" and "Open SmartGit Root Log" to Navigation
+          view
+    - Discard: if > 1 file is discarded, show a second confirmation
+    - JIRA/others: detect HTTP->HTTPS redirects and show a reasonable error
+    - Log:
+        - Branches:
+            - Reveal: always asks for local/tracked branch if tracked branches
+              are not shown
+        - Commits:
+            - optionally show only first parents; expandable on-demand
+            - sorting options for
+                - time,
+                - primary parents first,
+                - merge parents first
+            - for Branch and Mergable coloring text of "non-matching" nodes is
+              shown gray as for merge commits
+        - Commits and Files: saves and restore states when switching between
+          multiple open repositories
+        - Files:
+            - Directories:
+                - Copy Name/Path/Relative Path: now also work for a commit
+                  selection
+            - empty untracked directories are only shown if "Show Unchanged" and
+              "Show Untracked" is selected
+        - opening: immediate loading feedback even for huge repositories
+        - closing checks for running command as working tree window does
+    - Log Graph/Journal: shows email addresses in tooltip
+      https://smartgit.userecho.com/communities/1/topics/932-
+    - Modify or Split Commit work flow improved:
+        - the Continue option only is shown for no local changes (making
+          creating commits more explicit)
+        - no second commit is tried to be applied
+        - warns if the commits are not diff-equal to the original commit (e.g.
+          if something has removed intentionally or forgotten); optionally put
+          remainder to the index
+        - for each commit operation the original commit's message is suggested
+    - Rebase Interactive, Modify or Split: warn if trying to modify pushed
+      history
+    - Refresh: shows warning for repositories with many unpacked refs
+    - GitHub: option to create draft pull requests
+    - Changes view: Edit in Index Editor: is now disabled if inapplicable
+- Output view and dialog:
+    - highlight links https://smartgit.userecho.com/communities/1/topics/336-
+- default settings: if smartgit.startup.settingsToReplaceFromDefaults is
+  configured, default yml files are processed specially:
+    - a leading '-' for the key will delete this key from the settings file
+    - for lists:
+        - list items with the key-value "__merge__: delete" will be deleted
+          from the list
+        - other list items from the default yml file are prepended to the list
+            - only if the list does not yet contain such entries (only the keys
+              from the default list are used for the comparison)
+- UI:
+    - tables: low-level property ui.table.sortByMultipleColumns to disable
+      sorting by multiple columns
+    - Repositories view: low-level property repositories.sortFavoritesFirst to
+      disable moving favorite repositories before groups
+    - Find Command: full menu item name has higher priority now than "words"
+
+Fixed Bugs
+----------
+- Git:
+    - Blame/Investigate: when invoking "Open Log" with "Existing Window" in
+      file logs, the commit is not properly revealed
+    - Log:
+        - opening missing repository showed duplicate error dialogs
+        - macOS: blurry graph on HiDPI screens
+- Preferences:
+    - Hosting Providers: possible internal error
+- Repositories:
+    - possible internal error invoking Copy ... on invalid repository
+- themes: graph.merge.text was not honored
+
+Other Noteworthy Changes
+------------------------
+- Windows bundles: use JRE 11
+- repositories-cache.yml has been replaced with a binary file repository-cache
+  (no need to be editable)
+
+
+SmartGit 19.1 preview 2 (2019-03-15)
+====================================
+New Features, Improvements
+--------------------------
+- Git:
+    - Add Repository: report details on possible problems instead of just
+      considering repository as invalid (and thus asking whether it should be
+      initialized)
+    - Commit: support for empty commits, e.g. during cherry-pick - only if low-
+      level property commit.allowToCreateEmpty is set to true
+    - Ignore: allow to ignore directory with tracked files (to ignore *new*
+      tracked files)
+    - Log:
+        - slightly larger arrows for thin (unpushed) connector lines
+- Changes view:
+    - for binary files the file size and hash always is shown; might cause
+      problems with very large files
+- Tools:
+    - automatically add default tools except if they were deleted by the user
+- Linux:
+    - experimental support for delete-to-trash (move to
+      "$(XDG_DATA_HOME:-~/.local/share)/Trash", "<partition>/.Trash" or
+      "<partition>/.Trash-<uid>")
+    - dark theme improvements:
+        - table headers
+        - Working Tree window, Changes view: HEAD/Working Tree side buttons
+- Windows 10:
+    - with dark theme scrollbars, menu, title bar are also dark (requires
+      quite latest Windows 10 builds)
+    - if the explorer is configured to be dark, too, even context menus are
+      shown in black
+
+Fixed Bugs
+----------
+- Git:
+    - Add or Create Repository, Clone: "repository is not valid" error
+    - Commit: creating empty commit did nothing for normal state
+    - Interactive Rebase:
+        - Squashing/Edited Commit Message: possible "invalid line" errors
+    - Log:
+        - Commits: possible wrong combination of thin (pushable) and thick
+          (pushed) lines
+        - Refresh:
+            - possible internal error for sparse checkouts
+            - low-level property refresh.scanIntoSubmodules was ignored
+        - title did not update when closing a repository
+        - trying to open branch or Journal commit from Working Tree window in
+          Log sometimes did not revealed the commit properly
+- Linux:
+    - hardly noticable caret in dark theme
+    - tables in Edit | Customize dialog had bright background
+    - wrong selection color is read from GTK
+      https://bugs.eclipse.org/bugs/show_bug.cgi?id=542469
+    - duplicate window border on Elementary OS
+      https://bugs.eclipse.org/bugs/show_bug.cgi?id=542451
+- Welcome dialog: possible duplicate entries
+- startup: always asks for confirmation about crash footprints
+- Spellchecker: performance problem for large text with unknown words and too
+  long lines
+
+
+SmartGit 19.1 preview 1 (2019-03-06)
+====================================
+New Features, Improvements
+--------------------------
+- Git:
+    - Branches:
+        - ahead/behind information includes now merged commits similar to
+          "git status"
+    - Commit: support for empty commits, e.g. during cherry-pick
+    - Delete Branch: check for disallowing deletion of the current branch early
+      (not just in command)
+    - Fetch (background): option to cancel between fetches of different
+      repositories
+    - Git-Flow, Integrate: use Git's default message
+    - GitHub: denote draft pull requests
+    - Log:
+        - Branches:
+            - Reveal Branch: if tracking, optionally allow to always reveal the
+              local branch without asking
+        - Commits:
+            - several performance improvements
+            - Mergable coloring: start with black lines on first mergable
+              commit
+            - Reset Hard now possible on HEAD commit
+            - sorting is slightly more consequent in keeping commit with its
+              primary or merge parent together
+        - Files:
+            - optional directories tree
+            - staging one file will select the next, not the 1st one
+            - Show Unchanged Files works in Index mode, too
+        - open submodules are updated immediately on change (even in non-
+          active repository)
+        - Split Commit: if rebase stops, the Index is selected
+    - Journal: reorder and other commands use interactive rebase now for better
+      performance
+    - Interactive Rebase, Auto-Squash: added "To Last Commit" option
+    - Open Repository: more detailed error in case of corrupt .git/index
+    - Push To: for tags, "--force" is used now instead of "--force-with-lease"
+    - Submodule, Add: reject to add SVN submodules to non-SVN repositories
+- Compare:
+    - improved for special case
+- Tools:
+    - support for /usr/bin/mate-terminal
+- SSH: support for OpenSSHK Key (v1) by using SSHJ
+- GUI:
+    - Windows: sharper fonts and faster text drawing using GDI instead of GDI+
+
+Fixed Bugs
+----------
+- BitBucket: Clone dialog showed wrong repository URLs
+- Git:
+    - Commit: Commit & Push may give "do you want to overwrite unseen remote
+      changes" warning for merge commit
+    - Git process invocation: native handle leak
+    - Hosting providers: fixes to when which pull-request-related operations are
+      available
+    - Log:
+        - Commits:
+            - possible flickering when changing commits with Mergable Coloring
+        - Distributed Reviews: display becomes confused when opening multiple
+          repositories
+        - when opening repository, filter is not applied immediately but only
+          on second reload (which immediately follows first load and hence
+          caused flickering)
+        - File log: merging/rebasing state did not show up anymore
+    - Rebase Interactive: Git >= 2.20 showed warning when cancelling rebase
+- autoupdate: might fail to launch explorer.exe
+- GUI:
+    - drag and drop: possible dead-lock
+    - restoring view after maximizing restored old size
+    - Repositories | Create Group: warned about a group with same name in
+      different group level
+- JRE:
+    - some rarely used encodings were missing
+
+Other Noteworthy Changes
+------------------------
+- rewrote settings framework to save changed settings after a few moments; now
+  uses YML format instead of XML
+- switched to latest SSHJ library
+- the default SSH library is now SSHJ; use low-level property ssh.impl to
+  switch between SSHJ, JSch, Trilead

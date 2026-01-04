@@ -1,0 +1,6 @@
+{{ $page := .page }}
+{{ $content := .content }}
+
+{{ $params := dict "page" $page "content" $content }}
+
+{{ $content | markdownify }}

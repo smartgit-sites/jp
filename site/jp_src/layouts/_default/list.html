@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{ partial "header.html" . }}
+<main id="default_list">
+    <h1>{{ .Data.Term }}</h1>
+    <section class="container mt-n5 px-lg-5">
+        <div class="row">
+            <div class="col-12 col-lg-10 offset-lg-1 col-lg-3 pb-4">
+                <div class="row row-cols-1 row-cols-md-3 gx-4 gy-5">
+
+                    {{ range .Paginator.Pages }}
+                    <div class="col">
+                        <div class="card h-100">
+                            <div class="card-header bg-sg-indigo-200-rgb bg-opacity-25">
+                                <h3 class="fs-5 my-2 sg-gray-500">{{ .Title }}</h3>
+                            </div>
+                            <div class="card-body p-4 d-md-flex flex-md-column">
+                                {{ .Summary }}
+                                <a href="{{ .Permalink }}" class="stretched-link btn btn-sg-orange w-50 position-absolute end-0 bottom-0 me-3 mb-n4 border-5 rounded-4 border-white">{{ .Title }}</a>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        {{ partial "pagination" . }}
+    </section>
+    <section id="faqs" class="container mt-5 px-lg-5">
+        {{ .Content }}
+    </section>
+</main>
+{{ end }}

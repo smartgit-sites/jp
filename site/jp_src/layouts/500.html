@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ partial "header.html" (dict "h1" "500" "h2" "Internal Server Error") . }}
+<section id="content" class="container my-5">
+    <div class="row">
+        <div class="col-12">
+            <p>
+              Sorry! The page you were looking for could not be found.<br>
+              <a href="/">Visit homepage</a>
+            </p>
+        </div>
+    </div>
+ </section>
+{{ end }}

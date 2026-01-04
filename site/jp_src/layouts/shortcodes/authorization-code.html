@@ -1,0 +1,51 @@
+<noscript>
+  <div class="alert alert-danger">You need to enable JavaScript in order to get the authorization code.</div>
+</noscript>
+<div id="authorization-wrapper">
+  <div id="success-message" class="d-none">
+    <label for="authorization-code">Enter following code in SmartGit to complete the authorization:</label>
+    <textarea id="authorization-code" class="form-control" rows="1" readonly></textarea>
+    <button id="copy-button" type="button" class="btn btn-secondary btn-sm mt-2">Copy to clipboard</button>
+  </div>
+  <p id="error-message" class="d-none">
+    The authorization request failed due to unknown reasons. Please contact <a href="mailto:smartgit@syntevo.com">smartgit@syntevo.com</a>.
+  </p>
+</div>
+<style>
+#authorization-code {
+  overflow: hidden;
+  resize: none;
+  word-break: break-all;
+  white-space: pre-wrap;
+}
+</style>
+<script>
+(function() {
+  const params = new URLSearchParams(window.location.search);
+  const code = params.get('code');
+  const success = document.getElementById('success-message');
+  const error = document.getElementById('error-message');
+  const codeEl = document.getElementById('authorization-code');
+  const copyBtn = document.getElementById('copy-button');
+  if (code) {
+    success.classList.remove('d-none');
+    if (codeEl) {
+      if (codeEl.tagName === 'TEXTAREA') {
+        codeEl.value = code;
+        // Auto-enlarge the textarea so no scrollbar is needed
+        codeEl.style.height = 'auto';
+        codeEl.style.height = codeEl.scrollHeight + 'px';
+      } else {
+        codeEl.textContent = code;
+      }
+    }
+    if (copyBtn) {
+      copyBtn.addEventListener('click', function() {
+        navigator.clipboard.writeText(code);
+      });
+    }
+  } else {
+    error.classList.remove('d-none');
+  }
+})();
+</script>

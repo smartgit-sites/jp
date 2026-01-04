@@ -1,0 +1,32 @@
+{{ $resource := .Site.GetPage "/download/" }}
+{{ $translations := $resource.Params.translations }}
+{{ $releases := site.Data.latest_builds }}
+{{ $len := len $releases }}
+
+<section id="dnld-for-os" class="container">
+    <div class="info-box">
+        <p>Get early access to new features and fixes from our development lines, intended mainly for testing. The <b>recommended and fastest way</b> to update is via <b>Help | Check for Latest Build</b> in SmartGit. If direct server access is unavailable, full bundles are available below.</p>
+    </div>
+    {{ range $i, $release := $releases }}
+    <div class="row" id='{{ (printf "v%.0f" .major_version) }}'>
+        <div class="col-12 sg-gray-400 pt-3 pb-2">
+            <h3>
+                <span class="version-title" 
+                      data-version="{{ .major_version }}"
+                      {{ if .build_file_url }}data-build-url="{{ .build_file_url }}"{{ end }}>
+                    {{ $translations.version }} {{ .major_version }}
+                </span>
+                <span class="build-number" style="display: none;"></span>
+            </h3>
+        </div>
+    </div>
+    {{ partial "download-os.html" (dict "release" $release "page" $) }}
+    {{ if lt $i (sub $len 1) }}
+    <hr>
+    {{ end }}
+    {{ end }}
+</section>
+{{ partial "looking-for-help" . }}
+
+{{ $latestBuildsJS := resources.Get "javascripts/latest-builds.js" | minify | resources.Fingerprint }}
+<script src="{{ $latestBuildsJS.RelPermalink }}"></script>

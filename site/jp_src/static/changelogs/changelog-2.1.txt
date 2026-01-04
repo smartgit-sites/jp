@@ -1,0 +1,700 @@
+SmartGit 2.1.8a (2012-04-26)
+============================
+Fixed Bugs
+----------
+- Various operations (Mac, since JRE 1.6.31): possible internal error
+
+
+SmartGit 2.1.8 (2012-04-03)
+===========================
+New and Improved Features
+-------------------------
+- Cherry pick: "(cherry-pick ...)" addition to commit message should be
+  placed on new line to mimic "git cherry-pick -x"
+
+Fixed Bugs
+----------
+- Clone: Unfuddle URLs contain "syntevo" instead of domain name
+- Pushable Commits (SVN): new local branches should be pushed as new
+  branches
+- SVN repositories (https-protocol): possible SSL connection problems
+  (regression)
+- Shutdown: possible internal error related to "Changes" view
+
+
+SmartGit 2.1.7 (2012-01-23)
+===========================
+Fixed Bugs
+----------
+- Add Submodule: should invoke "submodule add" instead of "clone" to have
+  1.7.7 submodules in proper format
+- Clone (SVN):
+  - always fails if non-trunk branch to checkout is specified
+  - "cannot resolve reference" while checking for large .gitattributes
+  - problem when trying to clone from SVN 1.7 servers
+  - possible internal error in "joining" phase
+- Log: "Files" display may hang due to very expensive rename-detection
+- Pushable Commits:
+  - all commits with the same timestamp as the selected commit were pushed
+  - didn't show commits of local branch any more
+  - should honor tracking branch configuration
+- Refresh: possible internal errors
+- Status Bar: "Cloning" tooltip did not display
+
+
+SmartGit 2.1.6 (2011-12-03)
+===========================
+Fixed Bugs
+----------
+- Clone: problems when cloning GitHub repository
+  (Git protocol should be preferred over SVN protocol)
+- Submodules: compatibility issue with Git 1.7.7 submodules
+
+
+SmartGit 2.1.5 (2011-11-30)
+===========================
+New and Improved Features
+-------------------------
+- Open Working Tree: when user selects an SVN repository, explain how to
+  use SmartGit's SVN support instead of suggesting to initialize Git
+  working tree
+- Push (SVN): show more details on lossy merge
+
+Fixed Bugs
+----------
+- Built-in SSH client: if neither password nor public-key authentication
+  is supported, the authentication dialog still occurs
+- Changes view: more reasonable error message in case of large files
+- Check for New Version: possible internal error when using proxy which
+  requires password authentication
+- Cherry Pick (SVN): parent commit should not be selectable (it will
+  always be the first parent which is merged)
+- Clone:
+  - for Beanstalk, possible bad composition of URL
+  - possible internal error when using API token instead of password
+  - SVN: if .gitattributes support is turned off, core.autocrlf is not
+    properly re-configured, possibly resulting in CRLF files stored in
+    the SVN repository
+  - SVN (Mac): possible internal error when cloning repositories
+    containing files with certain special characters
+- Log
+  - Cherry-pick (SVN) should warn in case of lossy merges
+  - possible internal error on Refresh
+  - Save As: wrong directory preselected in file chooser
+- Merge:
+  - Cherry-pick (SVN) might report false-positive lossy merges (caused
+    by parent commits of the cherry-picked revisions)
+  - graph is not refreshed after having entered/discarded "Merging" state
+- Push (SVN): "checksum mismatch" when pushing changes to a file with
+  svn:eol-style set to "CRLF"
+- Rebase:
+  - possible internal error
+- Refresh:
+  - EOL-only modifications are not displayed in certain situations
+  - files with CRLF in repository may be reported as modified when
+    using autocrlf=true
+  - Mac OS: .gitignore/.gitattributes should be read with UTF-8 encoding
+  - possible internal error for invalid HEAD
+  - Submodule status (SVN): sometimes "URL mismatch" is shown instead of
+    valid state
+
+
+SmartGit 2.1.4 (2011-11-02)
+===========================
+Fixed Bugs
+----------
+- Clone: internal error when entering URLs with certain syntax for
+  "Repository URL" (regression)
+- Refresh: internal error when working copy is located at drive root
+
+
+SmartGit 2.1.3 (2011-10-31)
+===========================
+Fixed Bugs
+----------
+- Cherry Pick: system property "smartgit.cherry-pick.sha-prefix" to enable
+  and specify prefix for appending of SHA to cherry-picked commit message
+- Clone (SVN):
+  - file://-protocol should not be supported
+  - branches/branchname should be mapped to
+    ref/remotes/svn/branches/branchname instead of just
+    refs/remotes/svn/branchname to avoid problems if a branch
+    'trunk' exists.
+- Various commands (Windows): git output parsing should assume UTF-8 
+
+
+SmartGit 2.1.2 (2011-10-26)
+===========================
+Fixed Bugs
+----------
+- Clone: cloning Git repository using file:// protocol did not work
+- Compare:
+  - internal error when invoking Replace
+  - backward searching: at beginning of document the user was asked
+    whether to start from beginning
+- Internal errors might not be reported anymore for Java 7
+- Push Advanced: configuring tracking for selected branch(es) did not work
+- Refresh (on frame activation): should not refresh when switching between
+  SmartGit windows
+- Setup:
+  - new evaluation is not possible, if older version had been evaluated
+    earlier
+  - possible internal error when configuring Git executable
+- Tag Browser: possible internal error
+
+
+SmartGit 2.1.1 (2011-10-24)
+===========================
+New and Improved Features
+-------------------------
+- Push Advanced: remembers non-default remote branch
+- Refresh (Linux): refreshs onn frame activation
+
+Fixed Bugs
+----------
+- Refresh:
+  - internal error in combination with submodules
+  - internal error if working tree was located at drive root
+- Clone (SVN): internal error
+- Push Advanced: asked for tracking configuration when pushing to
+  non-default remote branch
+- OS X: clicking "Purchase Update" buttons did nothing
+
+
+SmartGit 2.1 final (2011-10-12)
+===============================
+New and Improved Features
+-------------------------
+- Pull/Initialize: should perform submodule initialization recursively
+  (except when initializing just a single submodule)
+
+Fixed Bugs
+----------
+- Bugreport window: email button was not shown on Linux
+- Clone (SVN):
+  - background clone was not resumed on restart if credentials are
+    required and master password is used
+- Clone/Fetch (SVN):
+  - internal error if tags/branches were copied as a whole directory
+  - spaces and '#' in svn:eol-style and svn:mime-type could result
+    in unparsable .gitattributes lines
+  - svn:ignore containing '\r' was not properly processed
+- Refresh: "text=auto" in .gitattributes was not handled properly
+
+
+SmartGit 2.1 rc 4 (2011-09-29)
+==============================
+New and Improved Features
+-------------------------
+- Clone (SVN): faster final cloning phase, displaying progress
+- Projects (SVN): after loading a project, a warning in case of
+  git-svn compatible repositories (which provide less functionality)
+  should be issued
+- Submodules (SVN): .gitsvnextmodules: paths of the externals (not only
+  their names) should be used as as subsections
+- Submodule Initialization (SVN): if parent is a "snapshot" module,
+  default for submodules should also be "snapshot" 
+
+Fixed Bugs
+----------
+- Clone (SVN):
+  - cleanup (git gc) should not be performed until repository has been
+    completely cloned
+- Fetch (SVN):
+   - malformed svn:externals should be ignored
+   - possible error "Cannot compute branch binding for tags for remote
+     svn"
+   - problems when fetching revisions which affect parent paths of
+     the repository root
+   - SVN branch names starting with a dot (.) should be escaped
+   - various problems with generated .gitignore, .gitattributes and
+     .gitsvnextmodules
+- Refresh:
+  - possibly wrong interpretation of "text=auto" as "text" in
+    .gitattributes
+  - some SVN repositories were incorrectly considered as "inconsistent"
+    when reopening project
+
+
+SmartGit 2.1 rc 3 (2011-09-15)
+==============================
+New and Improved Features
+-------------------------
+- Hosting providers: github server can be configured by
+  "smartgit.github.server" property
+
+Fixed Bugs
+----------
+- Clone (SVN): should not join the detached HEAD while the repository
+  is in merging or rebasing state
+- Pushable commits: nested roots should not be considered
+
+
+SmartGit 2.1 rc 2 (2011-09-05)
+==============================
+New and Improved Features
+-------------------------
+- Setup: should give more hints in case of invalid Git executable
+
+Fixed Bugs
+----------
+- Log:
+  - possible internal error in case of invalid HEAD
+  - Cherry-pick and Commit should not commit if Index was not clean
+    before, but issue a warning instead
+- Merge (SVN): an empty svn:mergeinfo could be generated after
+  cherry-picking of a natural history commit
+- Pull: new tags were not fetched (regression since 2.0.x)
+- Push Advanced: available Remotes list may be obsolete
+- Refresh (SVN): empty, intermediate directories of submodules should
+  be displayed
+- Refresh:
+  - possible error message
+    "<repository-root>.git\svn\.svngit\detachedRepository\.git is not
+    valid"
+  - possible internal error
+- Various commands (SVN): possible slowness in case of invalid
+  repositories
+
+
+SmartGit 2.1 rc 1 (2011-08-26)
+==============================
+Fixed Bugs
+----------
+- Hosting providers: Codebase integration broken for recent Codebase API
+  changes
+- Log: irrelevant merge commits are reported for sub-directory logs
+  (regression since 2.0.4)
+  
+
+SmartGit 2.1 alpha 3 (2011-08-23)
+=================================
+New and Improved Features
+-------------------------
+- Refresh: performance improvements (by only invoking
+  "git update-index --refresh" if actually necessary)
+- SVN branches: attic branches are stored in .git/refs/svn-attic
+
+Fixed Bugs
+----------
+- Commit: should offer to commit all staged changes when selecting
+  removed, existing file
+- Directory Tree: should display change markers for missing directories
+  and for modified submodules
+- Pull/Fetch (SVN):
+  - branch with name '+' couldn't be created
+  - possible duplication of empty commit
+  - submodule initialization should ignore file externals (which are not
+    supported currently)
+  - wrong translation between Git and SVN branch name if SVN branch name
+    is a regular expression
+- Pushable Commits (SVN): Push may fail with error message
+  'refs/stash has not been configured yet'
+- Pushable commits: should not include nested roots
+- Refresh: possible dead-lock
+- Reset: failed when trying to reset to a commit for which a file with
+  the same name (commit SHA) exists
+- Submodules: Reset should warn if HEAD commit won't be accessible anymore
+  after the Reset
+- Submodules (SVN):
+  - possible internal error on staging
+  - Reset should work on "URL mismatch" modules
+  - Unregister/Sync: should not be available
+- Various commands: slow execution while background Refresh is in progress
+
+
+SmartGit 2.1 alpha 2 (2011-08-15)
+=================================
+New and Improved Features
+-------------------------
+- Push Advanced: optional toolbar button
+
+Fixed Bugs
+----------
+- Clone: possible authentication-related internal error
+- Mac OS X 10.7: file system monitor is broken
+- Undo last commit message: locale problem 
+
+
+SmartGit 2.1 alpha 1 (2011-07-15)
+=================================
+Fixed Bugs
+----------
+- Pushable Commits: pushable commits are displayed despite of
+  detached HEAD
+
+
+SmartGit 2.1 early-access build 12 (2011-07-13)
+===============================================
+New and Improved Features
+-------------------------
+- Push/Merge (SVN): warn in case of lossy merge commits
+
+Fixed Bugs
+----------
+- Log: possible internal error
+- Push (SVN): svn:mergeinfo generation may silently include foreign,
+  fetched-back commits
+- http-repositories: ask for password again, if supplied one is not
+  correct
+
+
+SmartGit 2.1 early-access build 11 (2011-06-24)
+===============================================
+New and Improved Features
+-------------------------
+- Compare Preview: more reasonable auto-detection of compare type
+- Directory Tree/Refresh: handling of submodule conflicts
+- Pull: for combination of "prune obsolete remote tracked branches" and
+  "tagopt==--tags" set in .git/config, issue two "fetch" commands to
+  work-around Git bug
+- Switch dialog: preselect the current branch
+
+Fixed Bugs
+----------
+- Clone/Fetch (SVN): unable to resolve reference that contains ','
+- http-repositories: should ask for password again, if supplied one is
+  not correct 
+- Log, Compare with Working Tree: error selecting "Previous file content"
+  on a renamed file
+- Log: explicit Refresh should remove obsolete displayed nodes
+  (non-existing stashes, nodes without refs, ...)
+- Log: no files were displayed for the first (initial) commit
+- Pushable commits: false-positive classification of a commit to belong
+  to multiple branches
+- Refresh: possible internal error
+- Various actions: should not be enabled on (physically) non-existing
+  files
+- Setup wizard: high CPU load
+
+
+SmartGit 2.1 early-access build 10a (2011-06-01)
+================================================
+Fixed Bugs
+----------
+- Pull: internal error when invoked with focus in file table
+
+
+SmartGit 2.1 early-access build 10 (2011-06-01)
+===============================================
+New and Improved Features
+-------------------------
+- Submodules (SVN): leight-weight, read-only check out of externals
+
+Fixed Bugs
+----------
+- Branch Manager: no more question whether to remove remote branch in
+  remote repository occurred (regression) 
+- Push (SVN): possible internal error
+- Submodule:
+  - Initialization should not pull, if pulling is not been selected 
+  - Reset should update submodule, if commit/revision is not yet present
+  - Update (SVN) of the parent repository should not reset submodule
+    repository to the commit registered in .gitsvnextmodules,
+    if submodule is switched or changed
+- SVN: problems with branch names containing spaces
+
+
+SmartGit 2.1 early-access build 9 (2011-05-19)
+==============================================
+New and Improved Features
+-------------------------
+- Branch Manager (SVN): deletion of remote SVN branches
+- Cherry-pick: if the pending commit message already contains the new commit
+  message, don't append it once again
+- Clone (SVN):
+  - background clone is now completely independent of other Git operations and
+    hence makes better progress
+  - possible error in case of empty commits
+  - smarter proposals of directory name suggestion
+- Hosting providers: preferences' UI tweaked
+- Log, Rebase to HEAD: don't offer "Single Commit" option any more,
+  because Cherry-Pick & Commit already covers this case
+- Pull: do not rebase/merge after forced update
+- Push/Pull/Sync: update Git information from file system before
+  invocation
+- Refresh (SVN): new submodules states
+- Submodules Add: Support for SVN submodules
+- Switch: should just merge fast-forward instead of doing a full merge
+- Various commands: truncate very long error messages
+
+Fixed Bugs
+----------
+- Branch Manager:
+  - possible slowness after closing dialog which is fetching background
+    data
+  - scroller position was reset when speed search is enabled and
+    background data is fetched
+- Checkout/others: branch name suggestions should not intersect with
+  existing tags (to avoid 'ambigous refname' warning)
+- Clone
+  - internal error when trying to open Git provider dialogs
+  - no error was shown if the user enters non-existing SVN URL
+  - after confirmation dialog, new frame was openened but SmartGit
+    switches back to original frame immediately
+- Clone/Fetch (SVN):
+  - "Cloning finished" message after switching to a different project
+  - internal error for non-ASCII filenames which can't be represented in
+    the encoding specified in svnpathencoding; such file names are now
+    encoded using URL-encoding style with "%".
+  - in case of unparsable svn:externals command should not interrupt with
+    error
+  - the temporary remote section is not removed from .git-metadata
+    configuration files
+  - possible internal error in case of SSL or SSH authentication problems
+- Conflict Solver: couldn't be opened for "Conflicted (deleted by us)" or
+  "Conflicted (deleted by them)" files
+- Discard: pending commit message should only be reset when invoked on
+  root
+- File compare: title should mention "Compare"
+- Log, Cherry-Pick & Commit: if already committed, an error was shown
+- Log: for merge commits modified files may be displayed as added
+- Merge (SVN): should branch name instead of SHA for auto-generated merge
+  message
+- Open project: pressing ESC in the "where-to-open"-dialog opened anyway
+- Push: switched to "push all branches" after pushing a specific branch
+  with Push Advanced
+- Pushable commits: should not show commits which are already part of a
+  (different) remote branch
+- Refresh: binary file may be incorrectly displayed as modified, if marked
+  as "text" in .gitattributes
+- Refresh:
+  - did not work in case of invalid Git executable
+  - no refresh occured when switching from one branch to another
+    (in the Log) which point to the same commit
+  - internal error when accessing bare repositories
+  - possible internal error related to SVN repositories
+- Submodules (SVN):
+  - Init: problems when changing server name of URL
+  - modified submodules may be reset
+  - possible wrong translation between svn:externals and .gitsvnextmodules
+  - Update: "reset --hard" was always called
+- Ubuntu 10.10: even for a plain Git repository one gets the warning
+  message that "for SVN Git version 1.7.2 or higher is required"
+- Various commands:
+  - for SVN repositories, internal repository files remained locked
+    (resulting in 'cannot unlink ...' errors)
+  - line breaks within Git error message should be preserved
+- Windows: internal error when switching theme from Classic to, e.g., Basic
+- Working tree root: duplicate entry "Working Tree Settings" in
+  context menu
+- UI: 'sporadic' possible internal errors
+
+
+SmartGit 2.1 early-access build 8 (2011-04-15)
+==============================================
+New and Improved Features
+-------------------------
+- SVN: cherry-pick merging 
+- Cherry-pick: do not append SHA
+- Commit: pending message is stored in .git/SMARTGIT_PENDING_MESSAGE
+- Rebase: do not use '--preserve-merges' option, as it usually does not
+  work. --preserve-merges can be activated by system property:
+    -Dsmartgit.core.rebase.preserve-merges=true
+
+Fixed Bugs
+----------
+- .gitattributes: simple glob patterns (like "file") were not applied
+  properly
+- Branch|Switch: switching to a remote branch and selecting "Don't create
+  local branch" created local branch with same name as remote
+- High CPU usage caused by file monitor
+- Log, Cherry-Pick & Commit: even if successful, the commit message was
+  stored for future commits
+- Pull/Fetch (SVN)
+  - possible internal error
+  - merge commit without changes was not translated to SVN
+- Pushable commits:
+  - possible internal error
+  - push must not be forced
+  - unexpected pushable commit for SVN repositories
+- SVN integration: various problems when working with branches containing
+  invalid ref-characters, like blanks
+
+
+SmartGit 2.1 early-access build 7 (2011-03-30)
+==============================================
+Fixed Bugs
+----------
+- Clone/Pull (SVN):
+  - error because of failing temp file deletion
+  - .gitsvnextmodules was re-ordered randomly
+  - internal error in case for binary properties
+  - problems with spaces in tag/branch names
+- Push (SVN): wrong addition of mergeinfo
+- Refresh (file monitor): possible UI locks due to performance bottleneck
+- Refresh: possible internal error when removing the currently open
+  repository outside of SmartGit and switching back
+- Startup: launching a new instance does not open a new project window
+- UI: menu "jumping" when opening main window
+
+
+SmartGit 2.1 early-access build 6 (2011-03-29)
+==============================================
+New and Improved Features
+-------------------------
+- Commit: selecting the Amend checkbox fills the commit message input
+  field from previous commit
+- "Changes" tool window in the project window: the three existing options
+  for showing HEAD/Index/Working Tree now don't switch automatically any
+  more, but the new option "Automatic" does
+- Reset hard:
+  - resets submodules to the registered commit, too
+  - optionally (not mandatorily) fix line separators
+- Log:
+  - Merge and Cherry-Pick now optionally commit the changes in case of no
+    conflicts
+  - Query|Show Changes is now also enabled if the another tool window
+    than "Files" is focused
+- Pull: the git command output is now better parsed regarding progress
+- Push:
+  - if a single remote is not named "origin", it can be pushed, too
+  - SVN integration: ability to push tags (existing repositories need to
+    be re-cloned)
+- Checkout: only warn (instead of abort) in case of submodules could not be
+  checked out
+- Conflict solver: tries to show names of current and merged branch
+- Manage Remotes: when adding the first remote, "origin" is automatically
+  suggested as name
+- status bar, project state: shows "Push current branch" if the current
+  branch points to a different commit than the tracked remote branch, but
+  the commit are already in the repository (only the branch pointer needs
+  to be pushed)
+- added command line option "-log" to directly open the Log window
+
+Fixed Bugs
+----------
+- message dialogs, especially error dialogs after executing a command:
+  might became larger than the screen
+- Log: warning dialogs were shown on top of project window
+- directory tree: tooltip did not show proper merge commit ID
+- Refresh after Commit: manual refresh was necessary to show committed
+  submodule as unchanged
+- last line of Git command output might not have been displayed in Output
+- SSH authentication dialog: initially had "Password" option selected, but
+  showed the input field for private keys
+
+
+SmartGit 2.1 early-access build 5 (2011-03-18)
+==============================================
+New and Improved Features
+-------------------------
+- .gitattributes: more efficient processing for large files
+- Checkout: performance improvements
+- Clone (SVN): perform GC after clone has been finished
+- Cloning multiple SVN repositories: show one final success dialog
+  instead of one for each cloned repository
+- Commit Messages notes should be managed independently of per-root pending
+  commit messages
+- Directory Tree: "Working Tree Settings" added for working tree roots
+- Log: ability to reset working tree branch to selected commit
+- Project Manager: quick search
+
+Fixed Bugs
+----------
+- Branch Chooser: if closed too quickly, further commands will hang
+- Branch Manager: internal error when removing remote branch
+- Branches: don't consider tracked branches which do not exist
+- Clone (SVN): various fixes
+- Commit dialog: double-clicking an untracked fails
+- General: possible internal error in case of out-of-memory problems
+- Log: redundant "Rebase HEAD (HEAD) to" title fixed 
+- Project: opening a new project and answering the question where
+  to open with "new window" switched back to current window
+- Preview: possible internal error
+- Push (SVN): useless tracking configuration and subsequent error when
+  trying to push a branch for a repository which does not manage branches
+- Pushable commits: showed commits in incorrect order
+- Rebase: could get stuck because "git rebase --continue" opens editor on
+  command line
+- Rebase: "Finish" button was enabled though nothing was selected
+- Refresh (after commands): performance problems (regression)
+- Refresh: empty, intermediate parent directories of submodules are
+  displayed as unversioned
+- Refresh: possible internal error
+- Resolve: internal error when trying to resolve conflicts for untracked
+  files
+- SVN integration: possible repeating passwords prompts
+- Submodules: "Initialize" dialog must not be of fixed size
+- Submodule updating: initialization of nested SVN repositories is not
+  performed
+
+
+SmartGit 2.1 early-access build 4 (2011-03-10)
+==============================================
+New and Improved Features
+-------------------------
+- Project: moved working trees are easier to fix
+
+Fixed Bugs
+----------
+- Branch Manager: cancel loading of branches if authentication
+  would be required
+- Refresh (Mac OS): possible internal error
+- Refresh (Windows): performance problems when not having git.exe
+  on the PATH
+- Refresh: non-changes reported by "git status" were not reported
+  by SmartGit
+- Project: removing a working tree selected the invisible root node
+- Stage: during conflict resolution failed with error
+  "can't read .gitsvnextmodules" if .gisvnextmodules is conflicted
+
+
+SmartGit 2.1 early-access build 3 (2011-03-07)
+==============================================
+Fixed Bugs
+----------
+- Clone/Pull (SVN): CRLF-related problems fixed
+- Pull (SVN): Submodules in submodules are not initialized
+- Refresh (Windows, Mac): possible dead-lock
+- SVN integration: locked pack-files result in certain
+  git operations failing 
+
+
+SmartGit 2.1 early-access build 2 (2011-03-02)
+==============================================
+New and Improved Features
+-------------------------
+- Clone (SVN): display of received bytes during background clone
+- SVN integration: mapping of SVN to Git tags
+
+Fixed Bugs
+----------
+- Fetch/Clone (SVN): EOL-style related problems
+- Log (OS X): Log can't be opened
+- Push (SVN): for command line git-svn repositories, push does not work
+- Push (from pushable commits): internal error after successful push
+- Push: multiple "do you really want to push" dialogs
+- Refresh (after commands, Windows): possible internal error
+- Refresh: staging a staged file with local modifications does not
+  cause a refresh
+- Switch: duplicate set up of tracking branch 
+- Startup (OSX): crash
+
+
+SmartGit 2.1 early-access build 1 (2011-03-01)
+==============================================
+New and Improved Features
+-------------------------
+- Branch Manager: allow to configure local tracking branches
+- Branch Manager: list real remote branches
+- Index Editor and Conflict Solver: remember layout
+- Instead of "push current branch" or "rebase to HEAD" use branch name
+- Manages Remotes: option to change repository URL
+- Rebase: use '--preserve-merges' option
+- SVN integration reworked
+- Various commands: fix EOLs according to changed .gitattributes
+
+Fixed Bugs
+----------
+- Branch Manager and Log did not show a branch
+- Changes view: not refreshed after pull
+- Commit: performance bottleneck for scanning of staged entries
+- Git config: certain properties are not loaded from system-wide config
+- Pushable Commits: should not show commits which are already in the
+  remote repository, e.g. from another branch
+- Refresh (Window, Mac): certain .git/-changes are not recognized on
+  frame activation (by file monitor refresh)
+- Sync: duplicate "not all roots have been pushed" message
+- Sync: incorrect error (overlapping changes) shown if SSH error
+

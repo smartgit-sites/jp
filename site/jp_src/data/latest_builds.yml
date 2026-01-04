@@ -1,0 +1,34 @@
+- major_version: 25.1
+  build_file_url: https://download.smartgit.dev/smartgit/smartgit-25_1-latest.build
+  downloads_by_platform:
+    windows:
+      - name: Installer
+        note: Windows 10+ (64-bit)
+        file_name: /smartgit/smartgit-25_1-latest-win-installer.zip
+        file_size:
+        checksum:
+        warning: "We recommend using the Portable bundle, which can be safely used alongside an existing release installation of SmartGit."
+      - name: Portable (7z)
+        note: Windows 10+ (64-bit)
+        file_name: /smartgit/smartgit-25_1-latest-win-portable.7z
+        file_size:
+        checksum:
+    mac_os:
+      - name: Apple Silicon
+        note: macOS 11 - 15
+        file_name: /smartgit/smartgit-25_1-latest-macos-arm64.dmg
+      - name: Intel x86_64
+        note: macOS 10.14 - 15 (Intel 64-bit)
+        file_name: /smartgit/smartgit-25_1-latest-macos-x86_64.dmg
+        file_size:
+        checksum:
+    linux:
+      - name: Tar Archive
+        note: Linux (64-bit, GTK 3.24+)
+        file_name: /smartgit/smartgit-25_1-latest-linux-amd64.tar.gz
+      - name: Debian Bundle
+        note: Linux (64-bit, GTK 3.24+)
+        file_name: /smartgit/smartgit-25_1-latest-linux_amd64.deb
+        file_size:
+        checksum:
+        warning: "We recommend using the Tar Archive bundle, which can be safely used alongside an existing release installation of SmartGit."

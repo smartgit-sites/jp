@@ -1,0 +1,51 @@
+<nav id="sub-nav" class="border border-1 rounded-1 navbar navbar-expand-md py-0">
+    <div class="container-fluid p-0">
+        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleSubmenu" aria-controls="navbarToggleSubmenu" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler w-100 border-0 collapsed">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarToggleSubmenu" style="">
+            <ul class="nav flex-column w-100">
+                {{ $currentPage := .context }}
+                {{ $menu := default "main" .menu }}
+                {{ $overviewTitle := .overviewTitle }}
+                {{ range index $currentPage.Site.Menus $menu }}
+                    {{ $top := . }}
+                    {{ if or ($currentPage.IsMenuCurrent $menu $top) ($currentPage.HasMenuCurrent $menu $top) }}
+                        {{ $children := $top.Children }}
+                        {{ $parent := $top }}
+                        {{ if $top.HasChildren }}
+                            {{ range $top.Children }}
+                              {{ if and .HasChildren (or ($currentPage.IsMenuCurrent $menu .) ($currentPage.HasMenuCurrent $menu .)) }}
+                                {{ $children = .Children }}
+                                {{ $parent = . }}
+                                {{ break }}
+                              {{ end }}
+                            {{ end }}
+                        {{ end }}
+                        {{ if $overviewTitle }}
+                            {{ with $parent }}
+                                <li class="nav-item">
+                                    {{ if $currentPage.IsMenuCurrent $menu . }}
+                                    <a class="nav-link active" aria-current="page" href="{{ .URL }}">{{ $overviewTitle }}</a>
+                                    {{ else }}
+                                    <a class="nav-link" href="{{ .URL }}">{{ $overviewTitle }}</a>
+                                    {{ end }}
+                                </li>
+                            {{ end }}
+                        {{ end }}
+                        {{ range $children }}
+                            <li class="nav-item">
+                                {{ if $currentPage.IsMenuCurrent $menu . }}
+                                <a class="nav-link active" aria-current="page" href="{{ .URL }}">{{ .Name }}</a>
+                                {{ else }}
+                                <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+                                {{ end }}
+                            </li>
+                        {{ end }}
+                        {{ break }}
+                    {{ end }}
+                {{ end }}
+            </ul>
+        </div>
+    </div>
+</nav>

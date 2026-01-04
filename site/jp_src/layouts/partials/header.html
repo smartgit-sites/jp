@@ -1,0 +1,50 @@
+{{- /* Decide if the caller passed a dict or a Page */ -}}
+{{- $isMap := hasPrefix (printf "%T" .) "map" -}}
+{{- $over := dict -}}
+{{- $page := . -}}
+{{- if $isMap -}}
+  {{- $over = . -}}
+  {{- with index $over "Page" }}{{ $page = . }}{{ end -}}
+{{- end -}}
+
+{{- /* 1) Explicit overrides (from $over only) */ -}}
+{{- $h1 := or (index $over "headerH1") (index $over "h1") -}}
+{{- $h2 := or (index $over "headerH2") (index $over "h2") -}}
+{{- $h3 := or (index $over "headerH3") (index $over "h3") -}}
+{{- $message := or (index $over "message") (index $over "headerMessage") -}}
+
+{{- /* 2) Fallbacks from the page (only if still empty) */ -}}
+{{- with $page -}}
+  {{- if not $h1 }}{{ $h1 = or .Params.headerH1 .Params.h1 .Title }}{{ end -}}
+  {{- if not $h2 }}{{ $h2 = or .Params.headerH2 .Params.h2 }}{{ end -}}
+  {{- if not $h3 }}{{ $h3 = or .Params.headerH3 .Params.h3 }}{{ end -}}
+  {{- if not $message }}{{ $message = or .Params.message .Params.headerMessage }}{{ end -}}
+{{- end -}}
+
+{{- $message := trim $message " " -}}
+{{ $hasMessage := ne (trim $message " ") "" }}
+
+<header>
+  <div class="container py-5 mb-5">
+    <div class="row teaser-container">
+      <div class="col-12 teaser-upper">
+        <div class="col-md-6">
+          <h1 class="fw-semibold lh-1 mb-0">{{ $h1 }}</h1>
+          {{ with $h2 }}<h2 class="fs-5">{{ . }}</h2>{{ end }}
+        </div>
+      </div>
+
+      <div class="col-12 position-relative">
+        <div class="header-construct">
+          <span class="sg sg-construct-header" data-sg="sg-orange-500,sg-indigo-500" data-sg-stroke="var(--bs-white)"></span>
+        </div>
+      </div>
+
+      <div class="col-12 teaser-lower">
+        <div class="row g-2">
+          {{ with index $over "partial" }}{{ . }}{{ end }}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

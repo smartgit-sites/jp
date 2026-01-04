@@ -1,0 +1,7 @@
+tmp/
+.DS_Store
+
+# Directories starting with dot
+.**/
+# But keep .gitignore files
+!.gitignore

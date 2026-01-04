@@ -1,0 +1,27 @@
+:root {
+  --main-nav-height: calc(#{$navbar-padding-y} * 2 + #{$nav-link-height});
+}
+
+.sticky-sidebar {
+  position: sticky;
+  top: calc(var(--main-nav-height) + 1rem);
+}
+
+@media (max-width: map-get($grid-breakpoints, "md") - 1px) {
+  .sticky-sidebar {
+    position: static;
+  }
+}
+
+#sub-nav .nav-link{
+  color: $sg-text-secondary;
+}
+#sub-nav .nav-link:hover,
+#sub-nav .nav-link:focus{
+  color: $sg-text-link;
+}
+#sub-nav .nav-link.active{
+  background-color: $sg-surface-light;
+  color: $sg-text-link;
+  font-weight: $font-weight-bolder;
+}

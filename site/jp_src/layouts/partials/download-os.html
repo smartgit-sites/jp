@@ -1,0 +1,138 @@
+{{ $release := .release }}
+{{ $resource := site.GetPage "/download/" }}
+{{ $icons := $resource.Params.icons }}
+{{ $translations := $resource.Params.translations }}
+{{ $downloadRef := site.Params.downloadRef }}
+{{ $preferredOS := $resource.Params.osOrder }}
+{{ $reorderedOS := slice }}
+
+{{ if eq $release.is_supported false }}
+<p class="p-3 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-3"><strong>This version is not supported anymore.</strong></p>
+{{ end }}
+
+{{ $len := len $preferredOS }}
+{{ range (seq $len) }}
+  {{ $i := sub $len . }}
+  {{ $reorderedOS = append (index $preferredOS $i) $reorderedOS }}
+{{ end }}
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 align-items-stretch">
+  {{ range $os := $reorderedOS }}
+    {{ $pageForOS := index $release.downloads_by_platform $os }}
+    {{ $osIcons := index $icons $os }}
+    {{ $osIcon := index $osIcons 0 }}
+    <div class="col d-flex flex-column">
+      <div class="text-center">
+        <h3 class="mb-3"><span class="visually-hidden">{{ $translations.download }} {{ $osIcon.name }}</span><span class="{{ $osIcon.icon }} {{ $osIcon.color }}"></span> <span class="fs-6">{{ $osIcon.name }}</span></h3>
+      </div>
+      <div class="card h-100" data-os="{{ $os }}">
+        <div class="card-body px-0 pb-0">
+          {{ $withoutWarning := where $pageForOS "warning" "eq" nil }}
+          {{ $withWarning := where $pageForOS "warning" "ne" nil }}
+          {{ $downloadsOrdered := append $withWarning $withoutWarning }}
+          <ul class="list-group list-group-flush">
+            {{ range $downloadsOrdered }}
+              {{ if .name }}
+              <li class="list-group-item position-relative border-sg-indigo-200 pb-4">
+                <h4 class="sg-gray-400">{{ .name }}</h4>
+                {{ if .warning }}
+                <p class="text-warning small mb-1">Not recommended <span class="fa-regular fa-info-circle ms-1 position-relative z-3" data-bs-toggle="tooltip" data-bs-title="{{ .warning }}"></span></p>
+                {{ end }}
+                <p class="sg-gray-300 mb-0 small position-relative ms-3 me-5">
+                  <span class="fa-regular fa-info-circle mt-1 me-1 position-absolute end-100 top-0 z-3" data-bs-toggle="tooltip" data-bs-title="{{ $translations.file_size }}: {{ .file_size}} | {{ $translations.checksum }}: {{ .checksum }}"></span> {{ .note }}
+                </p>
+                <div class="position-absolute end-0 bottom-0 px-2 py-1 bg-sg-indigo-200-rgb bg-opacity-25 rounded-circle mb-4 me-3 z-1 pe-none"><span class="fa-light fa-arrow-down-to-bracket sg-indigo-500 sg-n2x mt-n1"></span></div>
+                <a href="{{ $downloadRef }}{{ .file_name }}" target="_blank" title="{{ .name }}: {{ $translations.download }} {{ $osIcon.name }}" class="stretched-link"></a>
+              </li>
+              {{ else }}
+                {{ errorf "download name is not set for %s" .file_name }}
+              {{ end }}
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  {{ end }}
+</div>
+{{ with $release.change_log }}
+<p class="text-center my-3"><a href="/changelogs{{ . }}" target="_blank" class="fw-bold" title="{{ $translations.changeLog}}: {{ $translations.download}} {{ $translations.version }} {{ $release.major_version }}">{{ $translations.changeLog}}</a></p>
+{{ end }}
+{{ if .show_install_instructions }}
+{{ $instructions := slice
+    (dict "os" "linux" "title" "Tar Archive" "steps" (slice
+        "if you have an older SmartGit version installed, exit SmartGit (use Repositories | Exit)."
+        "unpack the downloaded file into a directory of your choice (don't unpack over an existing installation!): ``tar xzf <smartgit*.tar.gz>``"
+        "start SmartGit: invoke ``bin/smartgit.sh``"
+        "create SmartGit menu item: invoke ``bin/add-menuitem.sh``"
+        "remove SmartGit menu item: invoke ``bin/remove-menuitem.sh``"))
+    (dict "os" "linux" "title" "Debian Bundle" "steps" (slice
+        "if you have an older SmartGit version installed, exit SmartGit (use Repositories | Exit)."
+        "install SmartGit: ``sudo dpkg -i <smartgit*.deb>``"
+        "if some dependencies are unmet, invoke ``sudo apt --fix-broken install``"))
+    (dict "os" "mac_os" "title" "Application" "steps" (slice
+        "if you have an older SmartGit version installed, exit SmartGit (Cmd+Q)."
+        "double-click the downloaded dmg file"
+        "copy the contained application directory structure to a directory of your choice (typically/Applications)"
+        "if you prefer, drag & drop the application to the dock to create an icon"))
+    (dict "os" "windows" "title" "Installer" "steps" (slice
+        "if you have an older SmartGit version installed, exit SmartGit (use Repositories | Exit)."
+        "unpack the downloaded zip file"
+        "launch the installer and follow the instructions"))
+    (dict "os" "windows" "title" "Portable" "steps" (slice
+        "if you have an older SmartGit version installed, exit SmartGit (use Repositories | Exit)."
+        "unpack the downloaded 7z file into an arbitrary directory of your choice (don't unpack over an existing installation!)"
+        "start SmartGit: invoke ``bin\\smartgit.exe``"))
+}}
+
+<div class="row">
+    <div class="col-12 mt-5">
+        <h2 class="fw-bold sg-indigo-500 text-center">Installation instructions</h2>
+    </div>
+</div>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 align-items-stretch">
+    {{ range $os := $reorderedOS }}
+        {{ $osInstructions := where $instructions "os" $os }}
+        {{ $osIcon := index (index $icons $os) 0 }}
+        <div class="col d-flex flex-column">
+            <div class="text-center">
+                <h3 class="mb-3"><span class="visually-hidden">{{ $translations.download }} {{ $osIcon.name }}</span><span class="{{ $osIcon.icon }} {{ $osIcon.color }}"></span> <span class="fs-6">{{ $osIcon.name }}</span></h3>
+            </div>
+            <div class="card h-100" data-os="{{ $os }}">
+                <div class="card-body p-4">
+                    {{ range $instr := $osInstructions }}
+                        <h3 class="fs-6 sg-indigo-500 mt-3">{{ $instr.title }}</h3>
+                        <ul class="mb-3">
+                            {{ range $step := $instr.steps }}
+                                <li>{{ $step | markdownify | replaceRE "^<p>|</p>$" "" | safeHTML }}</li>
+                            {{ end }}
+                        </ul>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    {{ end }}
+  </div>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var os;
+    var platform = navigator.platform.toLowerCase();
+    if (platform.includes('win')) {
+      os = 'windows';
+    } else if (platform.includes('mac')) {
+      os = 'mac_os';
+    } else if (platform.includes('linux')) {
+      os = 'linux';
+    }
+    if (os) {
+      var cards = document.querySelectorAll('.card[data-os="' + os + '"]');
+      cards.forEach(function(card) {
+        card.classList.add('download-highlight');
+      });
+    }
+  });
+  </script>
+  <style>
+  .download-highlight {
+    box-shadow: 0 0 0 .50rem var(--sg-indigo-500);
+  }
+  </style>
+  {{ end }}

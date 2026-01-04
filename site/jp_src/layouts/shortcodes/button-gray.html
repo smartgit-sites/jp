@@ -1,0 +1,9 @@
+{{- partial "linkbeautifier.html"
+(dict
+"url" (.Get "url" | default (.Get 0))
+"display" (.Get "display" | default (.Get "url"))
+"id" (.Get "id")
+"class" "btn btn-sg-gray"
+"title" (.Get "title" | default (.Get "display" | default (.Get "url")))
+)
+-}}

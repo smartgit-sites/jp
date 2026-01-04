@@ -1,0 +1,647 @@
+SmartGit 18.1.5 (2018-09-25)
+============================
+New Features, Improvements
+--------------------------
+- Git:
+  - Push to Gerrit: if topic is entered, add topic to master-option,
+    like "refs/for/master%topic=topic"
+
+Fixed Bugs
+----------
+- Git:
+  - Gitignore/Git-config editor: is bright even with dark theme
+  - Find Objects: possible internal error when entering a long search
+    string
+  - Refresh/Log: rename detection limit should be 50% by default (as for
+    Git)
+- Hg:
+  - internal error if no Git executable is configured
+- startup: possible internal error related to a bad settings.xml
+
+
+SmartGit 18.1.4 (2018-07-19)
+============================
+New Features, Improvements
+--------------------------
+- GUI:
+  - system property "tooltip.enabled" to disable the large tooltips
+
+Fixed Bugs
+----------
+- Git:
+  - Blame: possible internal error
+  - Clone (SSH): possible out-of-memory error when using built-in SSH client
+  - Edit Last Commit Message: was erroneously not allowed in rebasing state
+  - Ignore dialog: ignoring by pattern was broken
+  - JIRA: for JQL queries, substituted project IDs had the be put in quotes
+  - Log:
+    - Tools menu: did not update if tools configuration in the preferences got
+      changed
+    - View | Include Tracked Remote Branches did not update instantly
+  - Push to Gerrit: target selection was not honored if entering a topic
+  - Repository | Edit Git Config | User: used wrong file if HOME was configured
+- Bitbucket:
+  - possible "cyclic reference" error
+  - error "Object 'user/username' not found" for deleted comments, authors
+- GitHub/Bitbucket: possible error message "Could not determine remote ref for
+  pull request anchor" for special URLs
+- Compare:
+  - Ctrl+Shift+Up/Down changed read-only file content
+  - Ctrl+D on empty line -> internal error
+- possible internal error pinging license server
+- Linux:
+  - bundle did not start (e.g. on SuSE Leap)
+- Windows:
+  - added system property "fileMonitor.analyzeSystemLoad" to prevent hard
+    crashes in msvcrt.dll (Java or Windows bug on certain machines)
+  - temp directory was not cleared on system shutdown
+
+
+SmartGit 18.1.3 (2018-06-11)
+============================
+New Features, Improvements
+--------------------------
+- Git:
+  - Log:
+    - Refresh: improved error message in case of bad stash-reflogs
+    - revealing a ref in an existing, filtered log window now resets the filter
+  - Updated bundled Git to version 2.17.1 (macOS, Windows; needs new
+    installation or manual triggering of a genuine update in the About dialog)
+- Bitbucket integration: improved error reporting
+- Output dialog: remembers size (and location)
+- some hosting providers: added low-level property "json.enableGzip" to enable
+  GZIP compression
+- Setup wizard: added option to use gravatar.com (in the preferences, it was
+  moved from the Commands > Log page to the Privacy page)
+
+Fixed Bugs
+----------
+- Git:
+  - Commit Message view: entered message was not stored in the history
+  - Ignore: internal error trying to ignore directory with certain special
+    characters like '[' in its name
+  - Local | Rename: allowed to rename the . directory
+  - Log:
+    - internal error switching back from "Varying Coloring" to "Root Coloring"
+    - toggling individual pull requests did not work
+  - Log/Journal: - right-clicking an unselected commit showed commands for
+    previously selected commit (Linux, macOS)
+  - Refresh: possible error for files with name "aux" (Windows)
+  - Stash Selection: failed with quotes in the message
+- Bitbucket integration: problems parsing multiple reviewers
+- GitHub integration (main window): certain errors were not reported
+- GitLab integration: API version v3 is not supported any more
+- SSH:
+  - recurring error "The fingerprint of the SSH server has changed"
+  - an invalid .ssh/known_hosts file might show a lot of notifications about the
+    failed read
+- Tools: internal error invoking tool on repository located on drive root
+  (Windows)
+- Upgrade (Windows): possible "The process cannot access the file because it is
+  being used by another process" error
+
+
+SmartGit 18.1.2 (2018-05-16)
+============================
+New Features, Improvements
+--------------------------
+- Git:
+  - Log: re-introduced former "varying" coloring
+  - added low-level property compare.gitCompatibleBinaryDetection
+
+Fixed Bugs
+----------
+- Git:
+  - interactive rebase timed out after 2min (Windows)
+  - Journal/Log:
+    - possible "Node ... not found" error when opening repository
+    - right-clicking loses selection if scrolled down
+  - Rebase Head To: "Can't rebase HEAD to HEAD or an anchestor commit" error if
+    HEAD is hidden
+- Hg:
+  - Conflict Solver: did not open for graft-conflicts
+  - Log: internal error when opening in Rebasing state
+- SSH: certain problems with private key authentication (depending on files
+  parallel to the provided private key file)
+- Linux bundle:
+  - added work-around for reg-ex related Java crashes caused by syntax
+    highlighting code
+  - DEB bundle did not start on Ubuntu 18.04
+
+
+SmartGit 18.1.1 (2018-04-26)
+============================
+New Features, Improvements
+--------------------------
+- Git:
+  - Git-Flow: if the low-level property gitflow.requireCleanWorktreeOnStart is
+    set to true, starting a feature or hotfix with local changes will abort
+  - Log: if low-level property log.graph.displayCommitDateForAuthor is set to
+    true, it will show the author, but the commit (instead of the author) date
+- Output: if low-level property output.showOnlyIfViewInvisible is set to false,
+  the Output dialog is shown independent of the Output view's visibility
+
+Fixed Bugs
+----------
+- Git:
+  - Blame: memory leak
+  - Edit Last Commit Message: internal error when in bisecting mode
+  - Journal, Move & Squash: when dragging onto first pushed commit, no "already
+    pushed" warning was displayed
+  - Log:
+    - macOS: right-clicking an unselected commit showed context entries for
+      previously selected commit
+  - memory leak when switching between repositories frequently
+  - quotes around filter definitions, e.g. git-crypt, caused errors starting
+    these commands
+  - possible error "Raw log messge does not parse as log entry"
+  - Refresh: internal error when opening repositories with core.worktree set
+- Hg:
+  - Refresh: possible hang related to conflicts
+- Compare: Ignore Whitespace should not display completely unchanged blocks as
+  changed
+- Linux: file completion popup might be too small after accepting parent directory
+- macOS: new launcher ignored command line parameter
+
+
+SmartGit 18.1 (2018-04-10)
+==========================
+Fixed Bugs
+----------
+- Git:
+  - Log:
+    - possible internal error opening log in merging or rebasing state
+    - added system property smartgit.nodecache.maxCachesToKeepInMemory to limit
+      the log caches to keep in memory
+  - Investigate (DeepGit):
+    - memory leak
+    - wrong colors used for system-independent light theme
+  - Various commands with dialog-based Log (Checkout, Merge, ...): graph filter
+    options missing in File input field's drop-down menu
+- Linux, Mac: link to directory could not be deleted
+
+
+SmartGit 18.1 RC 3 (2018-04-05)
+===============================
+Fixed Bugs
+----------
+- Git:
+  - Journal: switching repositories did not scroll to top position
+  - Log:
+    - Details: Copy Ref copied long instead of commonly used short ref
+    - possible internal error revealing a commit
+    - Reveal sometimes not brought branch into visible area
+- GitHub/BitBucket: UTF-8 encoding should be used to read from REST API
+- Startup: new version check should only occur if "Automatically download and
+  install updates" has been selected
+
+
+SmartGit 18.1 RC 2 (2018-03-28)
+===============================
+New Features, Improvements
+--------------------------
+- Git:
+  - Push to Gerrit: offers "refs/drafts/master", too
+  - Edit | Select Directory works on submodule directory, not parent directory
+  - Edit | Select Repository Root, especially for selecting the submodule
+- Journal, Log: if message is truncated, show it as tooltip
+
+Fixed Bugs
+----------
+- Changes view: no inline changes showed up for large files with line-ending
+  changes
+- Git:
+  - Files view, Size column: showed 0 for missing files instead of nothing
+  - Log:
+    - possible internal error in cache
+    - possible long hang when selecting huge commit with many renames
+    - Filter: possible long hang when filtering through huge commit
+- http(s) authentication: passwords might have been reset if using master
+  password and background fetching is enabled
+- Tools:
+  - Edit dialog: some input fields were applied though cancelled after error
+  - Open: forked tools were forcefully terminated after 1 minute
+  - possible internal error invoking long-running tool
+
+Other Noteworthy Changes
+------------------------
+- macOS: updated bundled Git to version 2.16.2
+
+
+SmartGit 18.1 RC 1 (2018-03-21)
+===============================
+New Features, Improvements
+--------------------------
+- Git:
+  - Log: Compare with Working Tree: improved GUI texts for 2-commit-compare
+  - show warning for Git versions that are considered problematic, e.g. with
+    GitHub
+- External tools: refresh selected file after invoking a tool, even if
+  "Show output and wait until finished" is unselected
+- File Compare tools: support for optional ${leftLocalFile} and ${rightLocalFile}
+  parameters that always refer to the file in the working tree, even if the
+  repository content is stored in a temporary file
+
+Fixed Bugs
+----------
+- Git:
+  - Git-Flow: possible internal error related to auto-stashing
+  - Git-LFS (Windows): the git-lfs executables were not found by Java
+- Changes view:
+  - lines for line-ending only changed files may show up entirely modified
+    (instead of inline-changed)
+  - modified line-endings are not shown
+
+Other Noteworthy Changes
+------------------------
+- Windows installer: according to Windows guidelines no default desktop shortcut
+  https://msdn.microsoft.com/en-us/library/windows/desktop/dn742493(v=vs.85).aspx
+
+
+SmartGit 18.1 preview 7 (2018-03-14)
+====================================
+New Features, Improvements
+--------------------------
+- Git:
+  - Branches, Journal: performance improvements
+  - Ignore: ability to select 3 ignore file locations: parent directory, root
+    directory, excludes file inside .git directory
+  - Log: - Git-Flow layout preserves columns from higher-priority parents
+  - Rebase Head To: optionally rebase interactively
+- Journal: option to just display author without date
+- Preferences:
+  - Tools: ability to export/import
+  - way to edit system properties ("Low-level Properties")
+    https://smartgit.userecho.com/communities/1/topics/330-
+- converted too specific preferences options to system properties
+
+Fixed Bugs
+----------
+- Git:
+  - Edit Ignore: did not work if no local .gitignore file was present and no
+    file was ignored
+  - Ignore:
+    - repository-only option did not work for worktree repository
+    - repository-only option did not add relative path
+  - Journal:
+    - dropping before first (oldest) commit did not work
+    - Squash: authorship selector showed commit instead of author time
+  - Log:
+    - did not honor "smartgit.refLimit" configuration
+    - ancestors of stashes were treated as pushed
+  - Refresh: .git/info/exclude and .git/info/sparse-checkout were not honored
+    for worktrees
+  - Resolve dialog: resolved the wrong ours/theirs if "Swap for rebase" option
+    was selected in the preferences
+  - various commands: possible internal error related to bad .git/config file
+- Compare: internal error duplicating lines (Ctrl+D)
+- Find Action/Object: a few fixes
+- Open (external tool): did not provide ${repositoryRootPath}
+- macOS 10.13: starting SmartGit a second time caused macOS to "think" SmartGit
+  would hang, preventing to shutdown
+
+
+SmartGit 18.1 preview 6 (2018-02-27)
+====================================
+New Features, Improvements
+--------------------------
+- Git:
+  - Bisect commands: reset submodules
+  - Commit dialog: cursor-up on empty message gets the HEAD commit message
+    <https://smartgit.userecho.com/communities/1/topics/571->
+  - Files view: ability to toogle between (current) Mixed, Index and
+    Working Tree display
+    <https://smartgit.userecho.com/communities/1/topics/77->
+  - Ignore:
+    - support for adding pattern to repository-only .git/info/exclude
+      <https://smartgit.userecho.com/communities/1/topics/301->
+    - Reveal Ignore File has been turned into Edit Ignore File
+  - Journal: keep HEAD commit selected if it was selected before a refresh
+  - Log:
+    - Details: clicking commit ID will navigate to the found commit
+    - Filter:
+      - better responsiveness
+      - limited to prevent memory overflow
+  - Log, Journal: detect URLs and turn them into links
+    <https://smartgit.userecho.com/communities/1/topics/86->
+  - Output: display more error details, if available
+  - Pull/Push/other remote commands: credentials are not dismissed in case of
+    (temporary) 500 internal server error
+  - Pull/Sync: display more details on post-operation processing in status bar
+  - Push To: shows branch name to push
+  - Push to Gerrit: offer to push to master
+  - Repository | Edit Git Config: ability to edit .git/config and ~/.gitconfig
+  - Refresh:
+    - improved .gitignore processing performance
+      <https://smartgit.userecho.com/communities/1/topics/630->
+    - "inaccessible" state if working tree content can't be read, e.g. due to
+      exclusive file system locks
+  - Reset (Hard), other commands: allow to proceed even if auto-stashing is not
+    possible
+  - Revert:
+    - update submodules
+    - use Git's default message
+  - Sync: shows a dismissible confirmation dialog to prevent invoking it by
+    accident
+- Hg:
+  - support for Mercurial 4.5
+- Compare and others:
+  - improved shifting resulting in smaller change blocks
+  - Find and Replace dialog: regular expression can now be used in the replace
+    string, too
+- GUI:
+  - Repository | Add Group
+  - Updater: shows progress in taskbar icon
+
+Fixed Bugs
+----------
+- Git:
+  - Background Refresh (Remote): false-positive incoming marker (green arrow)
+    might remain
+  - Branches: Reset always used tracked branch as target
+  - Cherry-Pick/Revert: in no-commit mode, cumulated commit message get lost
+  - Conflict Solver: if option "Swap on Rebase" is selected in the preferences,
+    files are not swapped correctly
+  - DeepGit/Investigate: possible internal error
+  - External tools: "Applies To"-file filter was ignored if the tool used
+    "${selectionFile}"
+  - Git-Flow: several errors related to "system Git-Flow"
+  - Log:
+    - Select Parent Commit: possible internal error if parent is not yet loaded
+    - internal error invoking graph context menu on bare repository log
+    - for Git-Flow-enabled repository possible unexpected connector column change
+    - problems dragging multiple commits
+    - might not refresh for worktree repositories
+    - various commands: were not available on commits containing meta ref
+  - Log/Journal:
+    - right-clicking link did not show link-context menu any more
+    - Ctrl+C did not copy any more
+  - various commands: possible internal error related to bad .git/config files
+- GUI:
+  - External Tools, "Select which refs"-dialog: needed relayout after swapping
+  - Linux/GTK2:
+    - Log, Changes view: internal error painting comments
+  - Log, Journal:
+    - reimplemented whole keyboard and mouse selection
+    - right-clicking a different revision while a context menu already was
+      displayed sometimes did not show a new context menu
+    - ref-popup was broken
+  - Switching perspectives lost focus control
+  - possible resource leak related to context menus
+
+
+SmartGit 18.1 preview 5 (2018-02-08)
+====================================
+New Features, Improvements
+--------------------------
+- Git:
+  - Find Object: allows to check out found branch
+  - Journal:
+    - Create Tag added
+  - Log:
+    - Branches:
+      - "Compare with Current Branch" added
+      - Reveal selects revealed branch
+    - Commit graph:
+      - truncated refs group shows tags in groups, e.g.
+        "build-12045 ... build-12067"
+    - Details:
+      - "On Branches" is independent of selected refs for graph display and
+        works for filtered logs, too
+  - Repositories view: added "Rename" to context menu of directory
+- Compare:
+  - option to split leading/trailing additions or removals to separate blocks
+
+Fixed Bugs
+----------
+- Git:
+  - Add Worktree: internal error if current directory name == branch name
+  - Bisect: could not set HEAD to Bad after having set already to Bad
+  - Branches: when tracking breaks, branch entry first shows up in gray and only
+    later in red
+  - DeepGit/Investigate: internal error selecting non-in-place change
+  - Journal:
+    - Select Auxiliary Ref: allowed to select a remote HEAD
+  - Log:
+    - possible "missing unknown ..." error upon opening
+    - scrolling down while 1st line was selected reset view position to top
+    - Copy Message: for multiple lines, the order was arbitrary
+  - various commands: EOL correction modified even conflicting files
+- Hg:
+  - Log: initially showed up empty
+- Compare/Changes view:
+  - internal error selecting binary file
+  - possible internal error related to "Ignore Line-Ending Changes" option
+  - inner-line changes sometimes not occurred up where they should
+  - inner-line changes might be outdated after switching options
+- GUI:
+  - Customize toolbar dialog: no icons were shown
+  - the toolbar drop-downs (Windows, Linux) are now independent from the system
+    tooltip-delay (delay can be configured by setting
+    smartgit.toolbar.popupLongClickTimeout)
+- SSH:
+  - potential internal error waiting too long with open password dialog
+
+
+SmartGit 18.1 preview 4 (2018-01-24)
+====================================
+New Features, Improvements
+--------------------------
+- Git:
+  - Bisect command with visual clues in Journal and Log
+  - Clean command: remove untracked or ignored files/directories
+  - Log:
+    - ID filter matches SVN revisions, too
+    - denotes rebasing state
+  - Worktree support:
+    - ability to add a worktree
+    - ability to prune obsolete worktree information
+    - adding a repository will add all worktrees, too
+    - searching repositories will find all worktrees, too
+- Compare:
+  - Apply Selection: handles special case where selection starts at source block
+    without inner-line changes
+  - coalesces nearby changes for inner-line diffs
+  - improved block shifting, e.g. to not match across method boundaries
+  - improved inner-line diff algorithm
+  - option to ignore (only) leading whitespace changes
+- Drag and drop: autoscrolling now starts immediately when the cursor is over
+  the first or last line -> making it easier noticeable
+- Repositories view: command to select obsolete repositories
+- Setup, repository search: groups repositories according to directory structure
+
+Fixed Bugs
+----------
+- Git:
+  - Changes View: a renamed file was not compared correctly
+  - Log: resetting filter made selected line not visible
+- SVN:
+  - Log:
+    - filtering hid SVN column
+- Built-in SSH client: possible error message "The SSH server '-G' could not be
+  found"
+- Linux:
+  - workaround for https://bugs.eclipse.org/bugs/show_bug.cgi?id=529126
+
+Other Noteworthy Changes
+------------------------
+- Update check (autoupdate) VM options have been unified
+- Windows:
+  - executables and installer are signed
+  - updated Git to 2.16.1
+
+
+SmartGit 18.1 preview 3 (2018-01-08)
+====================================
+New Features, Improvements
+--------------------------
+- Git:
+  - Log:
+    - when filtering, the graph structure is kept
+    - text for moved/renamed files shortened
+    - Files view: "Unchanged Files" option moved to options menu
+  - Log/Journal: email address is trimmed from invalid name
+- Changes view: mouse-wheel scrolling should change to single change, but not
+  scroll the wrong direction
+- Help | Find Action and Help | Find Object (repository, branch, tag, commit)
+- log4j.properties is not used any more, but logger.properties
+
+Fixed Bugs
+----------
+- Git:
+  - Log:
+    - File log: possible error "Node ... not found"
+    - possible internal error when clicking with mouse
+    - merge commits did not show up in gray anymore
+    - internal error opening on merging root/file
+  - Log/Journal:
+    - possible internal error having more than 2 lines selected
+    - selection background was wrong with light-theme
+    - macOS: Cmd+click did not multi-select
+- GTK3: auto-disappearing popup, e.g. after command execution, were shown at
+  random places and most time unreadable
+
+
+SmartGit 18.1 preview 2 (2017-12-22)
+====================================
+New Features, Improvements
+--------------------------
+- Changes view:
+  - when mouse-wheel scrolling over the connecting control
+    between both sides
+    - for a single changed block will scroll to the single change
+    - scrolling up/down will only scroll up/down, not the other direction
+- Compare:
+  - Ctrl+Shift+Up/Down will move the current line up/down
+- Git:
+  - Cherry Pick/Revert: automatically pick primare parent changes for merge
+    commits instead of showing hard to understand parent selection dialog
+  - Log:
+    - Option to fork merge-parent right-most (less wobbling but more crossings)
+  - Log, Journal:
+    - show the HEAD commit message in bold
+    - option to show full author name/email
+    - if HEAD is selected in the Branches view and HEAD points to a branch,
+      this branch ref will be shown in the Commits view
+  - Abort: aborting a merge will invoke "git merge --abort" instead of
+    "git reset --hard"
+- XML settings files: more compact format making it easier, e.g., to add
+  external tools
+
+Fixed Bugs
+----------
+- External diff tools: did not inflate Git-LFS files
+- Git:
+  - Git-Flow, Finish: failed if feature contained submodule update
+  - Log:
+    - internal error for duplicate IDs
+    - Mergable Coloring used wrong colors
+    - possible internal error hovering over Commits view
+    - showed remote HEADs (regression)
+  - Log/Journal:
+    - connector click-area broken
+  - Refresh: nested root turning into submodule didn't trigger refreshing of the
+    submodule
+- macOS: possible internal error related to disconnecting monitors
+- SmartGit process hangs if it was launched multiple times
+
+
+SmartGit 18.1 preview 1 (2017-12-12)
+====================================
+New Features, Improvements
+--------------------------
+- Journal and Log Graph:
+  - completely new implementation
+  - better performance
+  - improved layout
+  - as much text from the message is shown as fits into the available space
+  - show either author or committer
+  - show either alternating rows or columns
+- Git:
+  - Background poll/fetch: periods are configurable in the preferences
+  - Branches view:
+    - Merge also supports merging from tags
+    - Remote Properties dialog: only checks connection if URL has been changed
+    - Reset: can be used HEAD to the selected ref or HEAD to its tracking branch
+  - Commit: selecting "Amend" asks user if message is not empty
+  - Fetch all: continues to fetch from other remotes if one fails
+  - Interactive rebase: support for rebase.autoSquash=true to automatically
+    squash commits using "fixup!" or "squash!" commit message prefixes
+  - Journal: shows commits also for branches tracking a local branch
+  - Log:
+    - Commits view:
+      - default coloring depends on selected refs and uses colored checkboxes
+        in the Branches view as legend (HEAD: black, some selected refs: several
+        colors, too much selected refs: blue, merged selected refs: brown,
+        others: gray; colors of selected refs follow primary parent)
+      - option to show/hide non-selected refs
+      - for file logs, refs pointing to the nearest child commits are shown
+        different than refs pointing directly to the commit
+    - Details view:
+      - new category "on branches" for all refs where the commit is reachable
+        from the primary parents
+  - Push To dialog: replaces invalid ref characters like in other dialogs
+  - Repository Search: ignores now directories with empty .git directory
+- Hg:
+  - Commit: selecting "Amend" asks user if message is not empty
+  - Log:
+    - added Revert command
+- SSH:
+  - SSHJ is used by default supporting more modern SSH servers and is faster
+  - JSch is used if smartgit.ssh.useSshj=false
+- GUI:
+  - Autoupdate on startup: shows progress when fetching (large) files
+  - Changes views, Compare: separate "Remember as Default" menu item
+  - Enter should do same as double-click on selected table rows
+  - Files table should not show pink if untracked files are hidden and Commit
+    option "Suggest to add untracked files" is not selected
+  - system independent light theme
+  - table columns use ownerdraw now to avoid problems with theming
+  - Repositories view: show "Move To" submenu only for selected repositories
+- work-around for 0x00 settings files after hard crash using backup files in the
+  new .backup directory (which is filled after successful load and used if
+  loading the normal settings failed)
+
+Fixed Bugs
+----------
+- Git:
+  - Commit: incorrect forced-push check
+  - Git-Flow, Finish Feature: possible phantom "fatal: Working tree contains
+    unstaged changes"
+  - Ignore: used platform line-ending when modifying .gitignore file (instead of
+    keeping the existing line-ending)
+  - Journal:
+    - Squash was enabled even for non-continues commits
+- File compare:
+  - bad repaint performance for large amount of (white)space drawing
+  - no syntax coloring was used if file extension was configured as, e.g.,
+    *.html.erb
+
+Other Noteworthy Changes
+------------------------
+- Windows bundles:
+  - use 64-bit Java and Git
+  - smartgit.exe and smartgitc.exe are 64-bit
+  - use smartgit32.exe and smartgitc32.exe as fall-back for 32-bit systems
+- Linux bundle: now also comes with 64-bit JRE
+- support for Java 9

@@ -1,0 +1,287 @@
+// =============================================================================
+// SMARTGIT COLOR SCHEMA
+// Consolidated color system for the SmartGit website
+// =============================================================================
+
+// =============================================================================
+// BASE COLOR PALETTE
+// =============================================================================
+
+// Core brand colors with computed shade variations
+$sg-gray: #585858;
+$sg-gray-100: tint-color($sg-gray, 80%); //#F2F2F2;
+$sg-gray-200: tint-color($sg-gray, 60%); //#d5d5d5
+$sg-gray-300: tint-color($sg-gray, 40%); //#b3b3b3
+$sg-gray-400: tint-color($sg-gray, 20%); //#757575
+$sg-gray-500: $sg-gray;
+$sg-gray-600: shade-color($sg-gray, 20%);
+$sg-gray-700: shade-color($sg-gray, 40%);
+$sg-gray-800: shade-color($sg-gray, 60%);
+$sg-gray-900: shade-color($sg-gray, 80%);
+
+$sg-indigo: #60247e;
+$sg-indigo-100: tint-color($sg-indigo,80%); //#F2EAF5
+$sg-indigo-200: tint-color($sg-indigo,60%); //#c797DA
+$sg-indigo-300: tint-color($sg-indigo,40%); //#906cc1
+$sg-indigo-400: tint-color($sg-indigo,20%); //#884ABE
+$sg-indigo-500: $sg-indigo;
+$sg-indigo-600: shade-color($sg-indigo, 20%); //#621981
+$sg-indigo-700: shade-color($sg-indigo, 40%);
+$sg-indigo-800: shade-color($sg-indigo, 60%); //#2C1038
+$sg-indigo-900: shade-color($sg-indigo, 80%);
+
+$sg-orange: #EF673E;
+$sg-orange-100: tint-color($sg-orange,80%);
+$sg-orange-200: tint-color($sg-orange,60%);
+$sg-orange-300: tint-color($sg-orange,40%);
+$sg-orange-400: tint-color($sg-orange,20%);
+$sg-orange-500: $sg-orange;
+$sg-orange-600: shade-color($sg-orange, 20%);
+$sg-orange-700: shade-color($sg-orange, 40%);
+$sg-orange-800: shade-color($sg-orange, 60%);
+$sg-orange-900: shade-color($sg-orange, 80%);
+
+$sg-blue: #454585;
+$sg-blue-100: tint-color($sg-blue,80%);
+$sg-blue-200: tint-color($sg-blue,60%);
+$sg-blue-300: tint-color($sg-blue,40%);
+$sg-blue-400: tint-color($sg-blue,20%);
+$sg-blue-500: $sg-blue;
+$sg-blue-600: shade-color($sg-blue, 20%);
+$sg-blue-700: shade-color($sg-blue, 40%);
+$sg-blue-800: shade-color($sg-blue, 60%);
+$sg-blue-900: shade-color($sg-blue, 80%);
+
+$sg-green: #7a815a;
+$sg-green-100: tint-color($sg-green,80%);
+$sg-green-200: tint-color($sg-green,60%);
+$sg-green-300: tint-color($sg-green,40%);
+$sg-green-400: tint-color($sg-green,20%);
+$sg-green-500: $sg-green;
+$sg-green-600: shade-color($sg-green, 20%);
+$sg-green-700: shade-color($sg-green, 40%);
+$sg-green-800: shade-color($sg-green, 60%);
+$sg-green-900: shade-color($sg-green, 80%);
+
+// =============================================================================
+// COLOR MAPS FOR BOOTSTRAP INTEGRATION
+// =============================================================================
+
+$sg-special-colors: (
+  "sg-gray": (
+    "100": $sg-gray-100,
+    "200": $sg-gray-200,
+    "300": $sg-gray-300,
+    "400": $sg-gray-400,
+    "500": $sg-gray-500,
+    "600": $sg-gray-600,
+    "700": $sg-gray-700,
+    "800": $sg-gray-800,
+    "900": $sg-gray-900,
+  ),
+  "sg-indigo": (
+    "100": $sg-indigo-100,
+    "200": $sg-indigo-200,
+    "300": $sg-indigo-300,
+    "400": $sg-indigo-400,
+    "500": $sg-indigo-500,
+    "600": $sg-indigo-600,
+    "700": $sg-indigo-700,
+    "800": $sg-indigo-800,
+    "900": $sg-indigo-900,
+  ),
+  "sg-orange": (
+    "100": $sg-orange-100,
+    "200": $sg-orange-200,
+    "300": $sg-orange-300,
+    "400": $sg-orange-400,
+    "500": $sg-orange-500,
+    "600": $sg-orange-600,
+    "700": $sg-orange-700,
+    "800": $sg-orange-800,
+    "900": $sg-orange-900,
+  ),
+  "sg-blue": (
+    "100": $sg-blue-100,
+    "200": $sg-blue-200,
+    "300": $sg-blue-300,
+    "400": $sg-blue-400,
+    "500": $sg-blue-500,
+    "600": $sg-blue-600,
+    "700": $sg-blue-700,
+    "800": $sg-blue-800,
+    "900": $sg-blue-900,
+  ),
+  "sg-green": (
+    "100": $sg-green-100,
+    "200": $sg-green-200,
+    "300": $sg-green-300,
+    "400": $sg-green-400,
+    "500": $sg-green-500,
+    "600": $sg-green-600,
+    "700": $sg-green-700,
+    "800": $sg-green-800,
+    "900": $sg-green-900,
+  ),
+);
+
+$sg-colors: (
+  "sg-indigo": $sg-indigo-500,
+  "sg-orange": $sg-orange-500,
+  "sg-gray": $sg-gray-500,
+  "sg-blue": $sg-blue-500,
+  "sg-green": $sg-green-500,
+);
+
+$theme-colors: map-merge($theme-colors, $sg-colors);
+
+// =============================================================================
+// SEMANTIC COLOR DEFINITIONS
+// =============================================================================
+
+// TEXT COLORS
+$sg-text-primary: map-get(map-get($sg-special-colors, "sg-gray"), "900");        // Main body text
+$sg-text-secondary: map-get(map-get($sg-special-colors, "sg-gray"), "500");      // Secondary headings
+$sg-text-muted: map-get(map-get($sg-special-colors, "sg-gray"), "400");         // Muted/disabled text
+
+// Text colors for gray backgrounds
+$sg-text-on-light-gray: map-get(map-get($sg-special-colors, "sg-gray"), "800"); // Text for light gray backgrounds
+$sg-text-on-dark-gray: $white;                                                  // Text for dark gray backgrounds
+
+// Interactive text colors
+$sg-text-link: map-get(map-get($sg-special-colors, "sg-indigo"), "500");        // Links and interactive elements
+$sg-text-link-hover: map-get(map-get($sg-special-colors, "sg-indigo"), "700");  // Link hover states
+$sg-text-accent: map-get(map-get($sg-special-colors, "sg-orange"), "500");      // Accent text and highlights
+
+// Footer text colors
+$sg-text-download-teaser: map-get(map-get($sg-special-colors, "sg-indigo"), "500");  // Download teaser text on light indigo background
+$sg-text-footer-top: $white;                                                    // Main footer text on indigo background  
+$sg-text-footer-bottom: map-get(map-get($sg-special-colors, "sg-indigo"), "500");    // Bottom footer text on light indigo background
+
+// Footer border colors
+$sg-border-download-teaser: map-get(map-get($sg-special-colors, "sg-indigo"), "500");  // Download teaser border
+$sg-border-footer-separator: map-get(map-get($sg-special-colors, "sg-indigo"), "100");  // Footer menu separator
+
+// BACKGROUND COLORS
+$sg-surface-primary: map-get(map-get($sg-special-colors, "sg-indigo"), "500");  // Primary brand surfaces
+$sg-surface-light: map-get(map-get($sg-special-colors, "sg-indigo"), "100");    // Light brand surfaces
+$sg-surface-neutral: map-get(map-get($sg-special-colors, "sg-gray"), "100");    // Neutral backgrounds
+$sg-surface-muted: map-get(map-get($sg-special-colors, "sg-gray"), "300");      // Muted/disabled surfaces
+
+// Lightest gray surface for navigation and teasers
+$sg-surface-lightest-gray: #F9F9F9;                                            // Lightest gray for navigation and teasers
+$sg-surface-light-box: $sg-surface-lightest-gray;                              // Light box backgrounds for content areas
+
+// Additional gray surfaces
+$sg-surface-light-gray: map-get(map-get($sg-special-colors, "sg-gray"), "100"); // Light gray surfaces
+$sg-surface-medium-gray: map-get(map-get($sg-special-colors, "sg-gray"), "500"); // Medium gray surfaces
+$sg-surface-dark-gray: map-get(map-get($sg-special-colors, "sg-gray"), "600");   // Dark gray surfaces
+
+// Border colors
+$sg-subtle-border: #dee2e6;                                                    // Subtle gray border
+
+// Navigation backgrounds
+$sg-nav-background: $sg-surface-lightest-gray;                                 // Main navigation bar
+$sg-nav-border: $sg-subtle-border;                                             // Navigation border
+$sg-nav-dropdown: rgba(map-get(map-get($sg-special-colors, "sg-indigo"), "500"), 0.8);  // Dropdown overlays
+
+// Footer backgrounds
+$sg-footer-gradient-start: map-get($colors, "white");                          // Footer gradient start
+$sg-footer-gradient-end: map-get(map-get($sg-special-colors, "sg-indigo"), "800");  // Footer gradient end
+$sg-footer-top: map-get(map-get($sg-special-colors, "sg-indigo"), "500");      // Top footer section (company info) - indigo
+$sg-footer-bottom: map-get(map-get($sg-special-colors, "sg-indigo"), "100");   // Bottom footer section (register info) - light indigo
+
+// BORDER COLORS
+// Form borders
+$sg-border-form-default: map-get(map-get($sg-special-colors, "sg-indigo"), "300");  // Form input borders
+$sg-border-form-focus: map-get(map-get($sg-special-colors, "sg-indigo"), "500");    // Focused form borders
+$sg-border-accent: map-get(map-get($sg-special-colors, "sg-orange"), "500");        // Accent borders
+
+// Tab/accordion borders
+$sg-border-tab-default: map-get(map-get($sg-special-colors, "sg-gray"), "400");     // Default tab borders
+$sg-border-tab-active: map-get(map-get($sg-special-colors, "sg-indigo"), "500");    // Active tab borders
+
+// INTERACTIVE STATES
+// Dropzone (needed for focus outline)
+$sg-dropzone-border: #a3bf2b;
+
+// Focus states
+$sg-focus-ring: rgba(var(--sg-indigo-500-rgb), 0.25);                         // Focus ring shadow
+$sg-focus-outline: $sg-dropzone-border;                                       // Focus outline color
+
+// Hover states  
+$sg-hover-surface: map-get(map-get($sg-special-colors, "sg-indigo"), "500");  // Hover background
+$sg-hover-text: map-get(map-get($sg-special-colors, "sg-indigo"), "500");     // Hover text color
+
+// COMPONENT-SPECIFIC COLORS
+// Accordion colors
+$sg-accordion-icon-default: map-get(map-get($sg-special-colors, "sg-gray"), "500");
+$sg-accordion-icon-active: map-get(map-get($sg-special-colors, "sg-indigo"), "500");
+
+// Integration cards
+$sg-integration-highlight: map-get(map-get($sg-special-colors, "sg-orange"), "500");
+
+// Career page
+$sg-career-background: map-get(map-get($sg-special-colors, "sg-indigo"), "500");
+$sg-career-text: map-get(map-get($sg-special-colors, "sg-indigo"), "500");
+
+// OVERLAY AND TRANSPARENCY
+// Surface overlays
+$sg-surface-overlay: rgba(255, 255, 255, 0.9);
+$sg-surface-overlay-solid: rgb(255, 255, 255);
+$sg-surface-transparent: rgba(255, 255, 255, 0);
+
+// Form overlays
+$sg-form-background: rgba(255, 255, 255, 0.6);
+
+// SECONDARY BRAND COLORS
+// Green brand colors (secondary brand palette)
+$sg-brand-green: #7a815a;
+$sg-brand-green-light: #E3EDB7;  
+$sg-brand-green-medium: #C4D090;
+
+// =============================================================================
+// CSS CUSTOM PROPERTIES & UTILITY CLASSES
+// =============================================================================
+
+:root {
+  @each $color-name, $shades in $sg-special-colors {
+    @each $shade, $value in $shades {
+      --#{$color-name}-#{$shade}: #{$value};
+      --#{$color-name}-#{$shade}-rgb: #{red($value)}, #{green($value)}, #{blue($value)};
+    }
+  }
+}
+
+@each $color-name, $shades in $sg-special-colors {
+  @each $shade, $value in $shades {
+    // Background utilities
+    .bg-#{$color-name}-#{$shade} {
+      background-color: var(--#{$color-name}-#{$shade}) !important;
+    };
+    .bg-#{$color-name}-#{$shade}-rgb {
+      background-color: rgba(var(--#{$color-name}-#{$shade}-rgb), var(--bs-bg-opacity)) !important;
+    };
+
+    // Text color utilities
+    .#{$color-name}-#{$shade} {
+      color: var(--#{$color-name}-#{$shade}) !important;
+    }
+
+    // link color
+    .link-#{$color-name}-#{$shade}{
+      color: var(--#{$color-name}-#{$shade}) !important;
+    }
+
+    // link underline
+    .link-underline-#{$color-name}-#{$shade}{
+      text-decoration-color: var(--#{$color-name}-#{$shade}) !important;
+    }
+
+    // Border Color
+    .border-#{$color-name}-#{$shade} {
+      border-color: var(--#{$color-name}-#{$shade}) !important;
+      --bs-border-color: var(--#{$color-name}-#{$shade}) !important;
+    }
+  }
+}

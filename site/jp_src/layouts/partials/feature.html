@@ -1,0 +1,12 @@
+{{ $page := .Page | default . }}
+{{ partial "header.html" (merge (dict "Page" $page) $page.Params) }}
+<main id="feature-overview">
+    <div class="container">
+        <div class="row">
+            {{ $params := merge (dict "sideButtonText" .sideButtonText "sideButtonLink" .sideButtonLink "overviewTitle" "Overview") $page.Params }}
+            {{ partial "submenu-column" (dict "Page" $page "Params" $params) }}
+            {{ partial "feature-column.html" $page }}
+        </div>
+    </div>
+</main>
+

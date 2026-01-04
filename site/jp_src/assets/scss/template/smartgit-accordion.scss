@@ -1,0 +1,25 @@
+.accordion-item{
+  color: $sg-text-secondary;
+}
+.accordion.accordion-flush .accordion-button {
+  box-shadow: none;
+}
+.accordion.accordion-flush .accordion-item {
+  border-color: var(--sg-indigo-500);
+}
+.accordion.accordion-flush .accordion-button{
+  background-color: transparent;
+  font-size:map-get($font-sizes, 5);
+  color: $sg-text-muted;
+  border-bottom-style: solid;
+  border-bottom-color: $sg-border-tab-default;
+}
+.accordion.accordion-flush .accordion-button:focus,
+.accordion.accordion-flush .accordion-button:hover{
+  color: $sg-text-link;
+  border-bottom-color: $sg-border-tab-default;
+}
+.accordion.accordion-flush .accordion-button[aria-expanded="true"]{
+  color: $sg-text-link;
+  border-bottom-color: $sg-border-tab-active;
+}

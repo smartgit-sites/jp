@@ -1,0 +1,22 @@
+{{ $page := site.GetPage "home/who-uses-smartgit.md" }}
+{{ $list := $page.Params.list }}
+<section id="who-uses-smartgit" class="container my-5">
+    <div class="row">
+        <div class="col-12 text-center sg-gray-400 pb-4">
+            <h2>{{ $page.Params.title | markdownify }}</h2>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        {{ range $item := $list }}
+        <div class="col">
+            <div class="card border-sg-indigo-200 bg-sg-indigo-100 h-100">
+                <div class="card-body p-5 d-md-flex flex-md-column">
+                    <h3 class="fs-6 card-title sg-indigo-500">{{ $item.title }}</h3>
+                    <p class="card-text sg-gray-500">{{ $item.desc }}</p>
+                    <!--a href="{{ $item.linkUrl }}" class="stretched-link sg-gray-500 text-decoration-none mt-auto">{{ $item.linkText }}</a-->
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>

@@ -1,0 +1,24 @@
+.carousel-caption:only-child{
+  position: relative;
+  text-align: left;
+  width: 75%;
+}
+.carousel-caption .blockquote-footer::before {
+  content: "";
+}
+.carousel-item.sg-indigo .carousel-caption .blockquote {
+  color: $sg-text-link;
+}
+.carousel-item.sg-indigo .carousel-caption .blockquote-header{
+  background-color: $sg-surface-light;
+}
+.carousel-item.sg-indigo .carousel-caption .blockquote-footer cite{
+  color: $sg-text-accent;
+  font-style: normal !important;
+}
+.carousel-control-next{
+  background: linear-gradient(to left, $sg-surface-overlay-solid 0%, $sg-surface-transparent 100%);
+}
+.carousel-control-prev{
+  background: linear-gradient(to right, $sg-surface-overlay-solid 0%, $sg-surface-transparent 100%);
+}

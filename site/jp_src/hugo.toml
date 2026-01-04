@@ -1,0 +1,392 @@
+basepageRef = 'https://smartgit.jp/'
+languageCode = 'ja'
+title = 'SmartGit'
+pagination.pagerSize = 100
+baseURL = 'https://smartgit.jp/'
+
+[params]
+apiHost = 'https://api.syntevo.com'
+description = 'SmartGit - プロフェッショナルとチームのためのクロスプラットフォームGitクライアント'
+keywords = ''
+ogTitle = 'SmartGit -- チームとプロのためのスマートなGitクライアント'
+ogImage = '/images/og_image.jpg'
+favicon = '/images/favicon.ico'
+favicon96 = '/images/favicon-96x96.png'
+faviconSvg = '/images/favicon.svg'
+appleTouchIcon = '/images/apple-touch-icon.png'
+webmanifest = '/images/site.webmanifest'
+downloadRef = 'https://smartgit.jp'
+disableRobots = true
+
+[outputFormats.Robots]
+mediaType = "text/plain"
+baseName = "robots"
+isPlainText = true
+notAlternative = true
+
+[outputs]
+home = ["HTML", "RSS", "Robots", "Sitemap"]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[taxonomies]
+  success-story = 'success-stories'
+
+[menus]
+    [[menus.main]]
+    identifier = 'features'
+    name = 'Features'
+    pageRef = '/features/'
+    url = '/features/'
+    weight = 20
+    params.icon = ''
+    params.target = '_parent'
+
+        [[menus.main]]
+        identifier = 'feature-overview'
+        name = 'Overview'
+        pageRef = '/features/'
+        url = '/features/'
+        weight = 10
+        parent = 'features'
+        params.icon = ''
+        params.target = '_parent'
+
+            [[menus.main]]
+            name = 'Three Window Styles'
+            pageRef = '/features/three-window-styles/'
+            url = '/features/three-window-styles/'
+            weight = 10
+            parent = 'feature-overview'
+            params.icon = ''
+            params.target = '_parent'
+
+            [[menus.main]]
+            name = 'Clean Commits'
+            pageRef = '/features/clean-commits/'
+            url = '/features/clean-commits/'
+            weight = 30
+            parent = 'feature-overview'
+            params.icon = ''
+            params.target = '_parent'
+
+            [[menus.main]]
+            name = 'Smart Branching'
+            pageRef = '/features/smart-branching/'
+            url = '/features/smart-branching/'
+            weight = 40
+            parent = 'feature-overview'
+            params.icon = ''
+            params.target = '_parent'
+
+            [[menus.main]]
+            name = 'Conflict Resolution'
+            pageRef = '/features/conflict-resolution/'
+            url = '/features/conflict-resolution/'
+            weight = 50
+            parent = 'feature-overview'
+            params.icon = ''
+            params.target = '_parent'
+
+            [[menus.main]]
+            name = 'Customizable Visual History'
+            pageRef = '/features/visual-history/'
+            url = '/features/visual-history/'
+            weight = 60
+            parent = 'feature-overview'
+            params.icon = ''
+            params.target = '_parent'
+
+            [[menus.main]]
+            name = 'Standard Window'
+            pageRef = '/features/standard-window/'
+            url = '/features/standard-window/'
+            weight = 70
+            parent = 'feature-overview'
+            params.icon = ''
+            params.target = '_parent'
+
+
+        [[menus.main]]
+        identifier = 'whats-new'
+        name = "What's new"
+        pageRef = '/whats-new'
+        url = '/whats-new/'
+        parent = 'features'
+        weight = 20
+        params.icon = ''
+        params.target = '_parent'
+
+            [[menus.main]]
+            name = 'Version 25.1'
+            pageRef = '/whats-new/25_1'
+            url = '/whats-new/25_1'
+            parent = 'whats-new'
+            weight = 9
+            params.icon = ''
+            params.target = '_parent'
+
+            [[menus.main]]
+            name = 'Version 24.1'
+            pageRef = '/whats-new/24_1'
+            url = '/whats-new/24_1'
+            parent = 'whats-new'
+            weight = 10
+            params.icon = ''
+            params.target = '_parent'
+
+            [[menus.main]]
+            name = 'Version 23.1'
+            pageRef = '/whats-new/23_1'
+            url = '/whats-new/23_1'
+            parent = 'whats-new'
+            weight = 20
+            params.icon = ''
+            params.target = '_parent'
+
+            [[menus.main]]
+            name = 'Version 22.1'
+            pageRef = '/whats-new/22_1'
+            parent = 'whats-new'
+            weight = 30
+            params.icon = ''
+            params.target = '_parent'
+
+            [[menus.main]]
+            name = 'Version 21.x'
+            pageRef = '/whats-new/21_2'
+            parent = 'whats-new'
+            weight = 40
+            params.icon = ''
+            params.target = '_parent'
+
+            [[menus.main]]
+            name = 'Version 20.2'
+            pageRef = '/whats-new/20_2'
+            parent = 'whats-new'
+            weight = 50
+            params.icon = ''
+            params.target = '_parent'
+
+            [[menus.main]]
+            name = 'Version 20.1'
+            pageRef = '/whats-new/20_1'
+            parent = 'whats-new'
+            weight = 60
+            params.icon = ''
+            params.target = '_parent'
+
+            [[menus.main]]
+            name = 'Version 19.1'
+            pageRef = '/whats-new/19_1'
+            parent = 'whats-new'
+            weight = 70
+            params.icon = ''
+            params.target = '_parent'
+
+            [[menus.main]]
+            name = 'Version 18.2'
+            pageRef = '/whats-new/18_2'
+            parent = 'whats-new'
+            weight = 80
+            params.icon = ''
+            params.target = '_parent'
+
+            [[menus.main]]
+            name = 'Version 18.1'
+            pageRef = '/whats-new/18_1'
+            parent = 'whats-new'
+            weight = 90
+            params.icon = ''
+            params.target = '_parent'
+
+            [[menus.main]]
+            name = 'Version 17.1'
+            pageRef = '/whats-new/17_1'
+            parent = 'whats-new'
+            weight = 100
+            params.icon = ''
+            params.target = '_parent'
+
+    [[menus.main]]
+    identifier = 'purchase'
+    name = 'Purchase'
+    pageRef = '/purchase/'
+    url = '/purchase/'
+    weight = 30
+    params.icon = ''
+    params.target = '_parent'
+
+        [[menus.main]]
+        identifier = 'purchase-overview'
+        name = 'Overview'
+        pageRef = '/purchase/'
+        url = '/purchase/'
+        parent = 'purchase'
+        weight = 10
+        params.icon = ''
+        params.target = '_parent'
+
+        [[menus.main]]
+        name = 'License Agreement'
+        pageRef = '/purchase/license-agreement'
+        url = '/purchase/license-agreement/'
+        parent = 'purchase'
+        weight = 20
+        params.icon = ''
+        params.target = '_parent'
+
+        [[menus.main]]
+        name = 'Reseller Information'
+        pageRef = '/purchase/reseller-information'
+        url = '/purchase/reseller-information/'
+        parent = 'purchase'
+        weight = 30
+        params.icon = ''
+        params.target = '_parent'
+
+    [[menus.main]]
+    identifier = 'knowledge-hub'
+    name = 'Knowledge Hub'
+    pageRef = '/knowledge-hub/'
+    weight = 40
+    params.icon = ''
+    params.target = '_parent'
+
+        [[menus.main]]
+        name = 'Manuals'
+        url = 'https://docs.syntevo.com/SmartGit/Latest/Manual/'
+        parent = 'knowledge-hub'
+        weight = 10
+        params.icon = ''
+        params.target = '_blank'
+
+        [[menus.main]]
+        name = 'How-tos'
+        url = 'https://docs.syntevo.com/SmartGit/Latest/HowTos/'
+        parent = 'knowledge-hub'
+        weight = 20
+        params.icon = ''
+        params.target = '_blank'
+
+        [[menus.main]]
+        name = 'Training'
+        pageRef = '/knowledge-hub/trainings/'
+        parent = 'knowledge-hub'
+        weight = 30
+        params.icon = ''
+        params.target = '_parent'
+
+        [[menus.main]]
+        name = 'Community Forum'
+        url = 'https://smartgit.userecho.com/'
+        parent = 'knowledge-hub'
+        weight = 40
+        params.icon = ''
+        params.target = '_blank'
+
+    [[menus.main]]
+    identifier = 'company'
+    name = 'Company'
+    pageRef = '/company/'
+    url = '/company/'
+    weight = 50
+    params.icon = ''
+    params.target = '_parent'
+
+        [[menus.main]]
+        name = 'About us'
+        pageRef = '/company/about-us/'
+        parent = 'company'
+        weight = 10
+        params.icon = ''
+        params.target = '_parent'
+
+        [[menus.main]]
+        name = 'Team'
+        pageRef = '/company/team/'
+        parent = 'company'
+        weight = 20
+        params.icon = ''
+        params.target = '_parent'
+
+        [[menus.main]]
+        identifier = 'success-stories'
+        name = 'Success stories'
+        pageRef = '/company/success-stories/'
+        parent = 'company'
+        weight = 30
+        params.icon = ''
+        params.target = '_parent'
+
+        [[menus.main]]
+        name = 'Success stories confirmed'
+        pageRef = '/company/success-stories/success-stories-confirmed'
+        parent = 'success-stories'
+        weight = 40
+        params.icon = ''
+        params.target = '_parent'
+
+        [[menus.main]]
+        name = 'Contact'
+        pageRef = '/company/contact/'
+        parent = 'company'
+        weight = 60
+        params.icon = ''
+        params.target = '_parent'
+
+        [[menus.main]]
+        name = 'Imprint'
+        pageRef = '/company/imprint/'
+        parent = 'company'
+        weight = 70
+        params.icon = ''
+        params.target = '_parent'
+
+        [[menus.main]]
+        name = 'Privacy policy'
+        pageRef = '/company/privacy-policy/'
+        parent = 'company'
+        weight = 80
+        params.icon = ''
+        params.target = '_parent'
+
+    [[menus.main]]
+    name = 'Blog'
+    url  = 'https://blog.syntevo.com/'
+    weight = 70
+    params.icon = ''
+    params.target = '_blank'
+
+    [[menus.meta]]
+    identifier = 'download'
+    name = 'Download'
+    pageRef  = '/download/'
+    weight = 70
+    params.icon  = 'fa-light fa-download'
+    params.target  = '_parent'
+
+        [[menus.meta]]
+        name = 'Preview Version'
+        pageRef  = '/download/preview'
+        parent = 'download'
+        weight = 20
+        params.icon  = ''
+        params.target  = '_parent'
+
+        [[menus.meta]]
+        name = 'Older Versions'
+        pageRef  = '/download/archive/'
+        parent = 'download'
+        weight = 30
+        params.icon  = ''
+        params.target  = '_parent'
+
+        [[menus.meta]]
+        name = 'Latest Builds'
+        pageRef  = '/download/latest-builds'
+        parent = 'download'
+        weight = 40
+        params.icon  = ''
+        params.target  = '_parent'

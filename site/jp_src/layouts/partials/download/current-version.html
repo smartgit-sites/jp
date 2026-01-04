@@ -1,0 +1,7 @@
+{{ $resource := .Site.GetPage "/download/" }}
+{{ $releases := site.Data.latest_release }}
+
+<section id="dnld-for-os" class="container">
+    {{ partial "download-os.html" (dict "release" $releases "page" . "show_install_instructions" true) }}
+</section>
+{{ partial "looking-for-help" . }}

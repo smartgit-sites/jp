@@ -1,0 +1,15 @@
+<div class="ratio ratio-16x9 youtube-preview position-relative mb-3 overflow-hidden" data-video-id="{{ .Get "id" }}" role="button">
+    <img
+            src="https://img.youtube.com/vi/{{ .Get "id" }}/hqdefault.jpg"
+            class="img-fluid rounded"
+            alt="YouTube preview thumbnail"
+            loading="lazy"
+    />
+    <div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+        <i class="fa-brands fa-youtube fa-4x sg-orange-500"></i>
+    </div>
+    <noscript>
+        <a href="https://www.youtube.com/watch?v={{ .Get "id" }}" class="stretched-link z-3" target="_blank">&nbsp;</a>
+    </noscript>
+</div>
+

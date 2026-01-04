@@ -1,0 +1,23 @@
+{{/* Extract YouTube video ID from URL */}}
+{{ $url := .url }}
+{{ $re := `[\?&]v=([0-9A-Za-z_-]{11})` }}
+{{ $matches := findRE $re $url }}
+{{ if lt (len $matches) 1 }}
+<div class="alert alert-warning">Invalid YouTube URL</div>
+{{ else }}
+{{ $id := index $matches 0 | replaceRE `(?:.*v=|.*\/)` "" }}
+<div class="ratio ratio-16x9 youtube-preview position-relative mb-3 overflow-hidden" data-video-id="{{ $id }}" role="button">
+    <img
+            src="https://img.youtube.com/vi/{{ $id }}/hqdefault.jpg"
+            class="img-fluid rounded"
+            alt="YouTube preview thumbnail"
+            loading="lazy"
+    />
+    <div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+        <i class="fa-brands fa-youtube fa-4x sg-orange-500"></i>
+    </div>
+    <noscript>
+        <a href="{{ $url }}" class="stretched-link z-3" target="_blank">&nbsp;</a>
+    </noscript>
+</div>
+{{ end }}

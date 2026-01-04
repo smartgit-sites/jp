@@ -1,0 +1,52 @@
+{{ partial "header.html" (merge (dict "Page" .) .Params) }}
+<main id="6-powerful-features-plus-add-features_list">
+    <div class="container">
+        <div class="row">
+            {{ partial "submenu-column" (dict "Page" . "overviewTitle" "Overview") }}
+            <div class="col-12 col-md-9 col-lg-10 pe-md-0">
+                <section class="container mt-md-n5">
+                    {{ if ne .Content "" }}
+                        <div class="row">
+                            <div class="col-12 sg-gray-400 pb-2 lead">
+                                {{ .Content }}
+                            </div>
+                        </div>
+                    {{ end }}
+                </section>
+                {{ range $index, $page := sort .RegularPages "Params.weight" "asc" }}
+                    {{- $summary := $page.Summary -}}
+                    {{- $summaryContent := split $page.RawContent "\n***" -}}
+                    {{- if gt $summaryContent 1 -}}
+                        {{- $summary = delimit (first 1 $summaryContent) "" -}}
+                    {{- end -}}
+                <section class="container mb-4">
+                    <div class="row">
+                        <div class="col-12 {{ if eq $index 0 }}pb-4{{ else }}py-4{{ end }}">
+                            <h3 class="sg-indigo-500 mb-0">{{ $page.Params.listTitle }}</h3>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card h-100 border-0 bg-feature-image p-4">
+                                <img src="{{ $page.RelPermalink }}index.png" alt="{{ $page.Params.imageAltText }}">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 border-sg-indigo-100">
+                                <div class="card-body">
+                                    <div class="card-text position-relative">
+                                        {{ $summary | markdownify }}
+                                        {{ if gt (len $page.RawContent) 0 }}
+                                        <div class="mt-3"><a href="{{ $page.Permalink }}" class="sg-indigo-500 small fw-bold"><span class="text-truncate d-block pe-5">{{ $page.Params.linkText }}</span> <div class="position-absolute end-0 bottom-0 px-2 py-1 bg-sg-indigo-200-rgb bg-opacity-25 rounded-circle mb-4 me-3"><i class="fa-light  fa-link-simple sg-indigo-500"></i></div></a></div>
+                                        {{ end }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</main>

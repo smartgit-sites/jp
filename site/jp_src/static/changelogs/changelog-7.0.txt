@@ -1,0 +1,599 @@
+SmartGit 7.0.5 (2016-01-25)
+===========================
+New Features, Improvements
+--------------------------
+Fixed Bugs
+----------
+- Git:
+  - Cherry Pick, Append SHA: appended 2 SHA lines
+  - Commit+Amend, Undo Last Commit did not work on detached head
+  - Push: internal error pushing branches with non-remote tracked branches
+  - Refresh: internal error in case of corrupt .git/index file
+- SVN:
+  - Remote, Delete was enabled though not possible
+- Linux:
+  - repository "%u" created when launching from created shortcut on some
+    Linux systems
+  - Debian-bundle: license.html was not found
+
+
+SmartGit 7.0.4 (2015-11-30)
+===========================
+New Features, Improvements
+--------------------------
+- Bitbucket Server 4.0 support
+- SVN: added system property smartgit.svn.scanSubmodulesForNonSvnParents
+
+Fixed Bugs
+----------
+- Git:
+  - Branches:
+    - stashes only showed up if .git/refs/stash file was existing
+  - External tools (Windows): might not work properly when using 64-bit Git
+    executable
+  - Log:
+    - possible internal error if repository has GitHub and BitBucket remote and
+      both hosting providers are configured
+    - Reveal Commit: did not work reliable for old commits
+  - Refresh: false-positive modifications when using 64-bit Git executable
+- Hg:
+  - Compare 2 files: blocked the repository
+  - Log (Directories): crazy graphs due to missing merge commits
+- Startup: recurring "passwords could not be read" problem
+
+
+SmartGit 7.0.3 (2015-09-25)
+===========================
+New Features, Improvements
+--------------------------
+- Log, Save As: creates missing parent directory
+
+Fixed Bugs
+----------
+- Atlassian Stash: for SSH clones pull requests might not show up
+- Authentication:
+  - authentication failures with http(s) simply failed instead of asking for
+    credentials
+- Commit:
+  - File name completion: possible internal error after deleting all text and
+    then accepting the suggestion
+- Git:
+  - Executable configuration: internal error if git-gui.exe was specified
+    instead of git.exe
+  - GitHub:
+    - line comments were created with wrong text
+    - wording for 2FA dialog improved
+  - Log: possible internal error if repository had GitHub and Bitbucket remote
+    and both hosting providers were configured
+- GitLab:
+  - underscores _ were rejected as token characters though valid
+- GUI:
+  - Branches view: hosting provider icon did not show up reliable until resize
+  - Edit | Customize (Linux): table rows became too flat after changes
+  - Outgoing: title (count) was not properly updated when switching to bare or
+    broken repository
+- Refresh:
+  - possible hang (jgit infinite loop)
+- Updater:
+  - endless loop if updater temp directory could not be cleaned up
+  - Linux: failed to update from 6.5 to 7 if admin password was required
+  - Windows: update failed checking for read-only file system if SmartGit was
+    installed in root directory (Java bug?)
+- certain failures could produce tons of bug*.zip files
+
+
+SmartGit 7.0.2 (2015-09-10)
+===========================
+New Features, Improvements
+--------------------------
+- Atlassian Stash support: added "Use SSH instead of HTTPS" option
+- Hg: http-access is now more robust in case of errors
+
+Fixed Bugs
+----------
+- Atlassian Stash support: client certificates did not work
+- BitBucket support: cloning repositories with space in name did not work
+- Git:
+  - Log: toggling categories like "origin" broken (regression since 7.0.1)
+- Windows: launchers contained invalid dpiAware manifest entry
+
+
+SmartGit 7.0.1 (2015-09-09)
+===========================
+New Features, Improvements
+--------------------------
+- External tools (Windows): automatically fix "Open Git-Shell" for newer Git
+  versions like this bundles with SmartGit 7
+
+Fixed Bugs
+----------
+- Git:
+  - Branches, Push: failed for multiple selected branches with different
+    tracked remotes
+  - Changes view: sometimes a refresh scrolled to first change, sometimes not
+  - Log (Files, Subdirectories): only ancestor commits of the current HEAD
+    were displayed
+
+
+SmartGit 7 (2015-09-03)
+=======================
+- no new features, improvements or fixed bugs
+
+
+SmartGit 7 rc 3 (2015-09-01)
+============================
+New Features, Improvements
+--------------------------
+- GitHub: each instance has its own access token
+
+Fixed Bugs
+----------
+- Git:
+  - Conflict Solver: for certain rebase operations the content and the title of
+    the left/right sides were swapped
+- Windows: default external tool to open Git shell used outdated "Git Bash.vbs"
+  instead of "git-bash.exe --cd=<path>"
+
+
+SmartGit 7 rc 2 (2015-08-27)
+============================
+New Features, Improvements
+--------------------------
+- system property smartgit.core.shortShaLength (default = 8)
+- Windows: Git updated to version 2.5.0
+
+Fixed Bugs
+----------
+- Autoupdate: fixed a problem on Linux
+- Git:
+  - Log:
+    - Save As: when overwriting file in working tree, modification might not
+      show up until refreshed
+  - Submodule Add: did not request credentials for absolute URL
+- GitLab: "Object 'owner' not found." error
+- GUI:
+  - Compare, Find dialog: previous text was not preselected
+  - Compare (OS X): the focus is sometimes not moved to the writable side
+  - Compare: after showing a dialog, e.g. Find, the focus was lost
+  - several command's enabled state not refreshed correctly, e.g. after
+    cancelling Commit dialog
+- Hg: - Mercurial integration broken for Mercurial 3.5
+- startup: slf4j error message printed to console
+
+
+SmartGit 7 rc 1 (2015-08-18)
+============================
+New Features, Improvements
+--------------------------
+- Git:
+  - File table: Working Tree State for unchanged submodules show "As Index"
+    (similar to files)
+- Commit: optionally don't remove leading and trailing whitespace
+
+Fixed Bugs
+----------
+- BitBucket integration: team repositories were not showing up
+- Edit Tool dialog: confirmation message field was not disabled initially
+- SVN: fetching of "incomplete" repository is not properly resumed and may
+  result in internal error later
+
+
+SmartGit 7 preview 14 (2015-08-11)
+==================================
+New Features, Improvements
+--------------------------
+- GitLab hosting provider: ability to use own server
+- Git:
+  - uninitialized submodules always show up in the Files view
+- Hg:
+  - Push: ability to push closed heads
+
+Fixed Bugs
+----------
+- Git:
+  - BitBucket: outgoing pull request might result in error
+  - Log:
+    - when opened from a Blame, target revision might not be revealed
+    - revealing a stash did not work
+- Blame:
+  - line number < 10 specified as command line parameter did not work
+
+
+SmartGit 7 preview 13 (2015-07-30)
+==================================
+New Features, Improvements
+--------------------------
+- Git:
+  - EOL-modification detection improved (set smartgit.refresh.inspectEOL=true
+    in smartgit.properties)
+  - Submodules (Pull and others): honor the "prune" option of the submodule
+    repository
+  - Windows: updated bundled Git to version 2.4.5.1 RC4
+- Hg:
+  - Branches:
+    - if multiple heads, head count is shown behind branches
+    - shows separate entry for every closed head
+  - Bookmarks: when deleting bookmark, optionally delete from remotes, too
+  - Log:
+    - Close branch works on individual heads in the Graph view
+    - File log: denotes revision numbers for refs not actually located on the
+      displayed commit
+    - Update on a commit with bookmark asks whether to update to branch or
+      bookmark
+
+Fixed Bugs
+----------
+- Git:
+  - external tools did not work with Git 2.4/Windows (bash.exe removed itself
+    from the path)
+- Hg:
+  - Blame:
+    - internal error invoking Log on blame line
+    - subsequent lines of same commit showed commit info again
+  - Branches: Close on the current branch with multiple heads was disabled
+    (now closes the current head)
+  - Log: false-positive head markers on many refs
+  - Outgoing:
+    - several commands update the branch instead of the previously updated
+      bookmark
+    - moving allowed to move commit before first commit leaving the repository
+      in corrupt state
+  - Refresh: internal error opening empty repository with bookmark
+  - Repositories: no outgoing arrow if bookmark was checked out
+- Compare, Conflict Solver:
+  - moving caret in line did not scroll horizontally (regression)
+  - Ctrl+I inserted tab instead of invoking menu command
+- GitHub: possible internal error requesting password
+- http(s) authentication may not reset in case of errors (regression)
+- Startup silently may fail if update-repository files are corrupt
+
+
+SmartGit 7 preview 12 (2015-07-15)
+==================================
+New Features, Improvements
+--------------------------
+- Git:
+  - Blame: follows merge source (instead of primary parent) if creation was in
+    merge source
+  - Commit: performance improvement (detecting pushed commits)
+  - Reset: one global option for the reset type (hard, mixed, soft) instead of
+    repository specific
+- Hg:
+  - Push: if bookmark is checked out, it's been preselected for pushing
+  - Repository root: show checked out bookmark instead of belonging branch
+
+Fixed Bugs
+----------
+- Git
+  - Compare two files with each other: keeps repository in locked state
+  - Log:
+    - when logging a renamed file in an older, checked out branch, history
+      might end prematurely
+    - Reveal:
+      - possible internal error
+      - does not work if graph is empty
+      - after failed reveal, e.g. because Graph was empty, context menu was
+        shown incorrectly without new selection
+  - Reset hard: complained about overwriting Index or working tree changes
+    when a submodule has checked out a different commit
+- Hg:
+  - Branches view: after "hg update -C" the bookmark was shown as "current"
+    where it just was "active"
+  - Discard Cherry-Pick/Merge: after execution checked out bookmark was not
+    checked out any more
+  - Merge two heads: failed if bookmark was checked out
+  - Outgoing: merge commits were not detected and displayed correctly
+- GUI:
+  - fixed tab order and layout in several dialogs
+- Other:
+  - launching 2nd SmartGit instead did not open window in 1st SmartGit instance
+  - Linux: if no local port could be created after Linux update, show error
+    instead of bug dialog
+
+
+SmartGit 7 preview 11 (2015-07-07)
+==================================
+New Features, Improvements
+--------------------------
+- Conflict Solver: when using external tool, showing the resolve dialog is now
+  optionally
+- Git:
+  - force English output
+  - Outgoing: ability to move and squash the dragged commit when dropping on
+    another similar named commit
+  - Log:
+    - Details: revealing commits when clicking link improved
+    - Performance improvement in case of many refs (tags)
+    - Reviews: Jump To reveals invisible Pull Request heads, too
+  - Windows: updated Git to version 2.4.5.1 RC4
+- Hg:
+  - Branches view: draft commits are denoted
+  - Bookmark support: push, delete
+  - Log:
+    - ability to close branch
+    - ability to toggle closed branches
+    - move bookmark to other commit
+- GitLab hosting provider
+
+Fixed Bugs
+----------
+- Autoupdate:
+  - proceeds on OS X and Linux even if SmartGit could not be exited, e.g.
+    because a command was running
+  - cleanup problems after restarting updated SmartGit
+- Git:
+  - Log:
+    - Details: possible internal error clicking invalid #-link
+    - old branches should not be loaded just by toggling them
+  - Outgoing: reselection after moving a commit was broken
+  - problems with http authentication (403)
+  - Refresh:
+    - ~/.config/gitignore was not honored
+    - /etc/gitconfig was not honored on Linux
+  - switching branches might leave submodule red
+- Hg:
+  - branches are not shown as checkout any more if the bookmark actually is
+  - Log: did not work if working copy had no valid parent (HEAD)
+
+
+SmartGit 7 preview 10 (2015-06-19)
+==================================
+New Features, Improvements
+--------------------------
+- Git:
+  - Outgoing: author date is preserved by default
+  - Pull (forced update): removed noisy output
+- Hg:
+  - Branches: new categories for closed branches and bookmarks
+  - Add Branch: extended to create bookmark
+  - ability to switch to bookmarks
+- GitHub: performance improvement
+- performane improvement
+
+Fixed Bugs
+----------
+- Git:
+  - Branches: "Rebase HEAD to" on HEAD did not rebase onto tracking branch
+  - Conflict Solver: showed wrong SHA
+  - Delete Branch: offered to deleted *local* tracked branch
+  - Ignore: explicitly ignoring does not work for multiple files
+  - Log: HEAD ref could be shown in "..."-section
+  - Push: possible internal error related to reflogs
+  - Refresh:
+    - missing files marked as assume-unchanged contributed to "modified" state
+    - submodules states were not consistent to file states (e.g. "Added
+      Modified" vs. "Added As-Index")
+- SVN:
+  - Cherry-Pick: possible internal error
+- Views: drag-and-drop preview showed sometimes non-rectangular form
+- OS X 10.10: parent-less dialogs get maximized if other windows are maximized
+- OS X 10.11 preview: work-around for internal error
+
+
+SmartGit 7 preview 9 (2015-06-11)
+=================================
+New Features, Improvements
+--------------------------
+- Git:
+  - Blame: support for files with UTF-8 BOM
+  - Branches view: remotes were unsorted
+  - Log: selecting "Recyclable Commits" shows also commits only reachable from
+    stashes
+  - Submodule Init: option to auto-initialize SVN submodules
+- Hg:
+  - uses only native hg.exe (no Hg4J any more)
+  - performance improvements for various commands
+- Autoupdate: better cleanup update cache to save disk space
+- Clone (hosting providers): allow to proceed even in case of API connection
+  problems
+
+Fixed Bugs
+----------
+- Git:
+  - Log:
+    - "Recyclable Commits" might not show all commits
+    - Reveal Comment: possible internal error
+    - Save As: "Before" option failed for renamed files
+  - Merge (Git-Flow): escaped quotes on Linux/OS X
+- Hg:
+  - various comments: possible internal error if command produces much output
+- Autoupdate: had problems with Innosetup related files for the uninstaller
+
+
+SmartGit 7 preview 8 (2015-05-20)
+=================================
+New Features, Improvements
+--------------------------
+- Autoupdate:
+  - when configured to only report new versions, allow to trigger the download
+- File Compare: ability to force text display
+- Git:
+  - Discard: ability to discard changes in modified assume-unchanged files
+  - Refresh: performance improvements (if many ignored files are added)
+
+Fixed Bugs
+----------
+- Git:
+  - Log: internal error revealing commit while opening (Linux)
+  - Refresh:
+    - tracked files in directories with skipped files may not showed up
+    - possible (temporary) "case changed" display (Windows)
+- Hg:
+  - possible "unexpected negative size" error processing commands with larger
+    output
+- GitHub: organization repositories were not displayed any more
+
+
+SmartGit 7 preview 7 (2015-05-18)
+=================================
+New Features, Improvements
+--------------------------
+- Hg:
+  - repository-specific commands are executed using command server interface
+- GUI:
+  - Autoupdate: made behavior more clear from names
+  - Filter input field for table: first row is automatically selected
+  - Preferences, external compare/merge tool configuration: prefill required
+    arguments
+
+Fixed Bugs
+----------
+- BitBucket: possible internal error querying comments
+- Clone: internal error stepping through wizard with Git repo, then going
+  back and stepping with Hg repo again
+- External Tools: GIT_EDITOR must not be overridden
+- Git: - Submodule add: internal error if local directory already exists
+  (after closing the wizard)
+- Hg:
+  - Apply Stash (Unshelve) even if a stash is Apply-ied, it could be deleted
+  - Refresh: internal error related renamed files
+- GitHub: internal error trying to reveal comment on deleted file
+- SVN:
+  - Pull: do not try to initialize SVN submodule if no SVN clone
+
+
+SmartGit 7 preview 6 (2015-04-30)
+=================================
+New Features, Improvements
+--------------------------
+- About dialog: button right beside version display to trigger installation
+  directory update manually
+- External tools: sets HOME environment variable, so Git will behave in an
+  external tool the same as inside SmartGit
+- Mercurial:
+  - Show Changes now allows to compare 2 selected files, similar to Git
+- Notification display has been reworked resolving window-activation-related
+  problems
+- Output view: optionally shows working directory
+
+Fixed Bugs
+----------
+- Git:
+  - Log: obsolete heads may remain after refresh
+- SVN:
+  - Clone/Fetch: possible internal error
+- Autoupdate: fixed a couple of problems
+- Branches view: category with HEAD was always expanded after a refresh
+- Compare, View settings: "Trim equal start/end of inner-line change" was not
+  remembered correctly
+- GitHub: can't request oauth-token
+- Show Changes: wrong line separator was used when comparing 2 files
+
+
+SmartGit 7 preview 5 (2015-04-17)
+=================================
+New Features, Improvements
+--------------------------
+- Git:
+  - Clean Up: option to expire reflogs now
+  - Distributed Reviews add-on: report server-side errors
+  - Log:
+    - customizable colors by using the VM properties
+      smartgit.log.graph.<value>.(red|green|blue)
+      where value might be
+      Git: tag, branchLocal, branchRemote, branchOther, headArrow
+      Hg: branch, branchClosed, tagLocal, tagGlobal, bookmark, headArrow
+    - renamed "Lost Heads" to "Recyclable Commits"
+    - Save As allows to save previous/next state
+- SVN:
+  - Clone supports trunk/tag/branch mapping even if trunk is missing
+- Linux:
+  - if "Ubuntu Mono" font is not present, "Monospace" will be tried to use as
+    default monospaced font
+  - support for file managers Nemo and Dolphin (beside Nautilus)
+
+Fixed Bugs
+----------
+- Git:
+  - Changes view: wrong "x" button for HEAD vs. Index comparison
+  - Cherry Pick (and other) dialog: possible internal error when closing
+  - Distributed Review: were not available in main window
+  - Log: possible warning "Missing unknown <SHA>" when toggling "Recyclable
+    Commits"
+  - Refresh: deleted files were not displayed if entire directory is deleted
+- Updater:
+  - "checksum does not match" error
+  - Check for New Version: obsolete notifications may remain in case of problems
+- possible dead-lock when clicking Exit in the bug dialog
+
+
+SmartGit 7 preview 4 (2015-03-23)
+=================================
+New Features, Improvements
+--------------------------
+- Git:
+  - Outgoing view: ability to change author of commits
+  - Revert: added vm-property "smartgit.revert.commitMessageTemplate" to
+    customize the commit message; use ${message} and ${sha} for the message
+    or SHA ID of the reverted commit and \n to add a line-break
+- Add or Create Repository: detect repository even if admin subdirectory
+  (.git/.hg) is specified
+- GitHub: compatibility fix for upcoming OAuth API change
+  https://developer.github.com/changes/2015-02-20-migration-period-removing-authorizations-token/
+- GitHub, Stash, Bitbucket integration: notification to suggest configuration
+
+Fixed Bugs
+----------
+- Blame: Ctrl+Z accelerator did not work when focus was in file content pane
+- Refresh/other commands: possible hangs related to Cygwin installations
+  (Cygwin Git, Open SSH)
+
+
+SmartGit 7 preview 3 (2015-03-09)
+=================================
+New Features, Improvements
+--------------------------
+- Log:
+  - Branches view: explicit "Anchor" node to toggle
+- Repository|Add Group: shows warning when group with this name already exists
+- Startup: "--anchor-commit" command line option in addition to "--log"
+
+Fixed Bugs
+----------
+- Cherry Pick/Revert: merge commits do not work when view is filtered
+- Stash integration (Atlassian): possible internal error if repository has
+  blank in its name
+
+
+SmartGit 7 preview 2 (2015-02-19)
+=================================
+Fixed Bugs
+----------
+- Git:
+  - Branches:
+    - obsolete stashes may show up
+    - switching repositories may show invalid stashes
+- Stash Integration: authentication failures
+- SVN:
+  - Clone: possible internal error
+
+
+SmartGit 7 preview 1 (2015-02-17)
+=================================
+New Features, Improvements
+--------------------------
+- BitBucket:
+  - advanced integration similar to GitHub
+  - option to use either SSH or HTTPS URLs
+- Stash integration
+- Git:
+  - .gitignore-related performance improvements
+  - added View|Show Skipped Files
+  - file filter finds skipped files, too
+- Changes view:
+  - display of reason why a file is considered as binary
+  - ability to force displaying it as text
+
+Fixed Bugs
+----------
+- Git
+  - Refresh:
+    - possible endless loop
+    - skipped (missing) directories might temporarily show up as missing
+- Updater:
+  - fixed problems when installing newer version over old version
+
+Other Changes
+-------------
+- updated Java to version 1.8.0_31, especially to support the latest timezones
+- updated SWT to version 4.5M5 to fix certain SWT bugs

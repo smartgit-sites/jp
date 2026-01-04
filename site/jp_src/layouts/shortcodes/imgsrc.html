@@ -1,0 +1,14 @@
+{{ $file := .Get "file" }}
+{{ $alt := .Get "alt" }}
+{{ $page := .Page }}
+{{ if $page }}
+    {{ with $page.Resources.GetMatch $file }}
+        <img src="{{ .RelPermalink }}" alt="{{ $alt }}">
+    {{ else }}
+        {{ $scMessageR := "{{< message type=\"warning\" message=\"Image not found in page resource.\" >}}" }}
+        {{ .Page.RenderString $scMessageR }}
+    {{ end }}
+{{ else }}
+    {{ $scMessageC := "{{< message type=\"info\" content=\"Page context not found.\" >}}" }}
+    {{ .Page.RenderString $scMessageC }}
+{{ end }}

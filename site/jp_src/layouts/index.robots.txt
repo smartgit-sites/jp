@@ -1,0 +1,10 @@
+User-Agent: *
+Allow: /api/v1/
+Disallow: /api/
+Disallow: /azuredevops-callback/
+Disallow: /bitbucket-callback/
+Disallow: /cdn-cgi/
+Disallow: /cn/
+Disallow: /github-callback/
+Disallow: /gitlab-callback/
+Disallow: /updates/

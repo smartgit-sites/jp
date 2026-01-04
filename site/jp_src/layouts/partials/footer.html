@@ -1,0 +1,96 @@
+{{ $currentPage := . }}
+{{ $footer := site.GetPage "/footer/index.md" }}
+{{ $company := site.Data.company }}
+{{ $scDnldSG := "{{< btn-download-smartgit >}}" }}
+{{ $scPLSG := "{{< btn-purchase-license >}}" }}
+{{ $scCAB := "{{< company-address-block >}}" }}
+<footer>
+    <div id="above-footer" class="container-fluid pt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card border-2 bg-download-teaser border-download-teaser">
+                        {{ with $footer }}
+                            {{ partial "markdown-render-section" (slice . "display" `<div class="card-body text-download-teaser display-6 lh-base p-5">$content</div>`) }}
+                        {{ end }}
+                        <div class="card-footer px-5 pb-5 border-0">
+                            <div class="d-grid gap-2 d-md-block">
+                                {{ .Page.RenderString $scDnldSG }}
+                                {{ .Page.RenderString $scPLSG }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="main-footer" class="container-fluid bg-footer-top text-footer-top pt-5 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-xl-4 order-last order-xl-0 mt-5 mt-xl-3">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-xl-12">
+                            <p>
+                                {{ $company.details.name }}<br>
+                                {{ .Page.RenderString $scCAB }}
+                                {{ $company.vat }}
+                            </p>
+                            <p>
+                                <strong>E-Mail:</strong> {{ partial "cloakemail" (dict "address" $company.emails.sales  "class" "text-footer-top text-decoration-none") }} • {{ partial "cloakemail" (dict "address" $company.emails.general "class" "text-footer-top text-decoration-none") }}
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 col-xl-12">
+                            <dl class="row">
+                                {{ range $company.social }}
+                                    {{ $arr := split .url "/" }}
+                                    {{ $last := last 1 $arr }}
+                                <dt class="col-sm-3 text-nowrap text-footer-top"><i class="{{ .icon }} me-2"></i> {{ .title }}</dt>
+                                <dd class="col-sm-9"><a href="{{ .url }}" target="{{ .target }}" class="text-footer-top text-decoration-none">{{ delimit $last ""}}</a></dd>
+                                {{ end }}
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                {{ $index := 0 }}
+                {{ range .Site.Menus.main }}
+                {{ $isActive := $currentPage.HasMenuCurrent "main" . }}
+
+                <div class="col-6 col-lg-3 col-xl-2 mt-3 order-{{ add $index -1 }} order-xl-{{ $index }}" id="footer_menu">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class=" nav-link text-footer-top px-0 fw-bolder{{ if $isActive }} active {{ end }}" aria-current="{{ if $isActive }}page{{ end }}" href="{{ .URL }}" title="{{ .Name }}" target="{{ .Params.target }}">{{ .Name }}</a>
+                        </li>
+                        {{ if .HasChildren }}
+                        <li class="nav-item">
+                            <hr class="border-footer-separator my-2">
+                        </li>
+                            {{ range .Children }}
+                                {{ $childActive := $currentPage.HasMenuCurrent "main" . }}
+                        <li class="nav-item">
+                            <a class=" nav-link text-footer-top px-0{{ if $childActive }} active{{ end }}" href="{{ .URL }}" title="{{ .Name }}" target="{{ .Params.target }}">{{ .Name }}</a>
+                        </li>
+                            {{ end }}
+                        {{ end }}
+                    </ul>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+    <div id="below-footer" class="container-fluid bg-footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 py-4">
+                    <p class="mb-0 text-center text-footer-bottom">
+                        <span class="d-block d-md-inline-block">{{ $company.reg }} {{ $company.tradeAuth }}</span><span class="vr d-none d-xl-inline-block mx-lg-3"></span><span class="d-block pt-2 pt-xl-0 d-md-inline-block">{{ $company.director }}</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+{{ partial "gittyStatic" . }}
+{{ $sgi := resources.Get "javascripts/smartgit-icons.js" | minify | resources.Fingerprint }}
+<script src="{{ $sgi.RelPermalink }}"></script>
+{{ $sgt := resources.Get "javascripts/smartgit-template.js" | minify | resources.Fingerprint }}
+<script src="{{ $sgt.RelPermalink }}"></script>

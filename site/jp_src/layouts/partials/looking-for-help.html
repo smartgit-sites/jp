@@ -1,0 +1,40 @@
+{{ $resource := .Site.GetPage "download/help/" }}
+{{ with $resource }}
+<section id="installation-help" class="mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-5">
+                <h2 class="fw-bold sg-indigo-500 text-center">{{ .Title }}</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 py-4">
+                <ul class="list-group list-group-flush">
+                    {{ with .Site.GetPage "section" "download/help" }}
+                        {{ $pl := .Pages | len }}
+                        {{ $hl := math.Sub (math.Floor (div $pl 2)) 1 }}
+                        {{ range $idx, $pgs := .Pages }}
+                    <li class="list-group-item border-0 sg-gray-500 hstack align-items-stretch">
+                        <div class="pe-4 ms-n3">
+                                    <span class="btn bg-sg-indigo-200-rgb bg-opacity-25">
+                                        <span class="{{ .Params.icon }} sg-orange-500 mt-n1"></span>
+                                    </span>
+                        </div>
+                        <div>
+                            <h3 class="fs-6 fw-bold mb-0">{{ .Title }}</h3>{{ .Content }}
+                        </div>
+                    </li>
+                            {{ if eq (int $idx) ( int $hl) }}
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 py-4">
+                <ul class="list-group list-group-flush">
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}

@@ -1,0 +1,22 @@
+{{ $resource := .Site.GetPage "/download/" }}
+{{ $translations := $resource.Params.translations }}
+{{ $releases := site.Data.releases }}
+{{ $len := len $releases }}
+
+<section id="dnld-for-os" class="container">
+    <div class="info-box">
+        <p>These older SmartGit versions may be unsupported.  We recommend using the <a href="/download">latest release</a>.</p>
+    </div>
+    {{ range $i, $release := $releases }}
+    <div class="row" id='{{ (printf "v%.0f" .major_version) }}'>
+        <div class="col-12 sg-gray-400 pt-3 pb-2">
+            <h3>{{ $translations.version }} {{ .major_version }}</h3>
+        </div>
+    </div>
+    {{ partial "download-os.html" (dict "release" $release "page" $) }}
+    {{ if lt $i (sub $len 1) }}
+    <hr>
+    {{ end }}
+    {{ end }}
+</section>
+{{ partial "looking-for-help" . }}

@@ -1,0 +1,57 @@
+{{ $files := .Site.Data.testimonials.list }}
+{{ $testimonialPage := site.GetPage "home/testimonials.md" }}
+<section id="carousel" class="container my-5">
+    <div class="row">
+        <div class="col-12 text-center sg-gray-400 mt-5">
+            <h2>{{ $testimonialPage.Params.title | markdownify }}</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 py-5">
+            <div id="carouselQuote" class="carousel slide equal-height-container border border-1 border-sg-indigo-500 rounded-2" data-bs-ride="carousel">
+                <div class="carousel-inner pt-5">
+                {{ range  $key, $value := $files }}
+                    {{ $page := site.GetPage .filename }}
+                    {{ if $page }}
+                        {{ $params := $page.Params }}
+                        {{ $words := split $params.testimonial_user " " }}
+                        {{ $initials := apply $words "substr" "." 0 1 }}
+                        {{ $initialsString := delimit $initials "" }}
+                    <div class="carousel-item equal-height-item sg-indigo {{if not $key}}active{{end}}">
+                        <div class="carousel-caption py-5 row">
+                            <div class="d-none d-md-block col-md-3 col-lg-2">
+                                <div class="ratio ratio-1x1">
+                                    <div class="blockquote-header rounded-circle d-flex justify-content-center align-items-center">
+                                        <span class="display-1 p-3">{{ $initialsString | upper }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-9 col-lg-10">
+                                <figure>
+                                    <blockquote class="blockquote">
+                                        {{ with $page }}
+                                        {{ partial "markdown-render-section" (slice . "testimonial" `<p class="fs-2 fw-bolder">$content</p>`) }}
+                                        {{ end }}
+                                    </blockquote>
+                                    <figcaption class="blockquote-footer">
+                                        <cite title="Source Title">{{ $params.testimonial_user }} | {{ $params.testimonial_company }}</cite>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                {{ end }}
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselQuote" data-bs-slide="prev">
+                    <span class="sg sg-chevron-down sg-indigo-500 sg-2x sg-rotate-90" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselQuote" data-bs-slide="next">
+                    <span class="sg sg-chevron-down sg-indigo-500 sg-2x sg-rotate-270" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>

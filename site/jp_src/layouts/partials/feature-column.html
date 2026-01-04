@@ -1,0 +1,83 @@
+<div class="col-12 col-md-9 col-lg-10 pe-md-0">
+    <section class="container mt-md-n5">
+        <div class="row">
+            <div class="col-12 pb-4 pe-md-0">
+            {{- $rawContent := .RawContent -}}
+            {{- $summaryContent := split $rawContent "\n***" -}}
+            {{- if gt $summaryContent 1 -}}
+                {{- $rawContent = delimit (last 1 $summaryContent) "" -}}
+            {{- end -}}
+            {{- $normalizedContent := replaceRE "\n#( |\n)" "<<<DELIM>>>" (replace $rawContent "\r\n" "\n") -}}
+            {{- $sections := split $normalizedContent "<<<DELIM>>>" -}}
+            {{- range $index, $section := $sections -}}
+                {{- $lines := split $section "\n" -}}
+                {{- $title := index $lines 0 -}}
+                {{- $level := 2 -}}
+                {{- if and (hasPrefix $title "**") (hasSuffix $title "**") -}}
+                    {{- $title = substr $title 2 (sub (len $title) 4) -}}
+                    {{- $level = 1 -}}
+                {{- end -}}
+                {{- $body := trim (delimit (after 1 $lines) "\n") " \n" -}}
+                {{- $boxes := split $body "\n---\n" }}
+                {{- $vAdjust := "py-4" }}
+                {{- if eq $index 1 -}}
+                    {{- if eq $level 1 -}}
+                        {{- $vAdjust = "mt-md-n1 pb-4" -}}
+                    {{- else -}}
+                        {{- $vAdjust = "pb-4" -}}
+                    {{- end -}}
+                {{- end -}}
+                {{ if or (ne $title "") (ne $body "") }}
+                    <section class="container {{ if eq $level 2 }} mb-5 {{ end }}" id="{{ $title | lower | replaceRE `[^a-zA-Z0-9]+` "_"}}">
+                        {{ if ne $title "" }}
+                        <div class="row">
+                            <div class="col-12 px-0 {{ $vAdjust }}">
+                                {{ if eq $level 1 }}
+                                    <h1 class="sg-indigo-500 mb-0">{{ $title | markdownify }}</h1>
+                                {{ else if eq $level 2 }}
+                                    <h3 class="sg-indigo-500 mb-0">{{ $title | markdownify }}</h3>
+                                {{ end }}
+                            </div>
+                        </div>
+                        {{ end }}
+                        {{ if ne $body "" }}
+                            {{ if eq (len $boxes) 1 }}
+                                <div class="row g-4 overflow-hidden">
+                                    <div class="col-12 col-lg-10 px-0 position-relative chevron-right">
+                                        <div class="card h-100 border-0 border-lg border-sg-indigo-100">
+                                            <div class="card-body">
+                                                <div class="card-text position-relative p-lg-4">
+                                                    {{- index $boxes 0 | markdownify }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {{ else if eq (len $boxes) 2 }}
+                                <div class="row row-cols-1 row-cols-md-2 g-4">
+                                    <div class="col ps-md-0">
+                                        <div class="card h-100 border-0 bg-sg-gray-200-rgb bg-opacity-10 p-4">
+                                            {{- index $boxes 0 | markdownify }}
+                                        </div>
+                                    </div>
+                                    <div class="col pe-md-0">
+                                        <div class="card h-100 border-sg-indigo-100">
+                                            <div class="card-body">
+                                                <div class="card-text position-relative">
+                                                    {{- index $boxes 1 | markdownify }}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {{ else }}
+                                {{ errorf "Invalid number of boxes" }}
+                            {{ end }}
+                        {{ end }}
+                    </section>
+                {{ end }}
+            {{ end }}
+            </div>
+        </div>
+    </section>
+</div>

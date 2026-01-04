@@ -1,0 +1,28 @@
+{{ define "main" }}
+{{ $company := site.Data.company }}
+{{ $scCAB := "{{< company-address-block >}}" }}
+{{ partial "header" (dict "h1" .Params.headerH1 "h2" .Params.headerH2 "h3" .Params.headerH3 "headerMessage" .Params.headerMessage) . }}
+<main>
+    <section id="imprint" class="container mt-n5 px-lg-5">
+        <div class="row">
+            <div class="col-12 col-md-6 offset-lg-1 col-lg-3 pb-4 lead">
+                <h2 class="fs-3">{{ $company.details.name }}</h2>
+                {{ .Page.RenderString $scCAB }}
+            </div>
+            <div class="col-12 col-md-6 col-lg-8 pb-4">
+                <p>{{ $company.director }}</p>
+                <p>
+                    {{ $company.reg }}<br>
+                    {{ $company.tradeAuth }}<br>
+                    {{ $company.vat }}<br>
+                    {{ $company.duns }}<br>
+                    {{ partial "cloakemail" (dict "address" $company.emails.general) }}
+                </p>
+            </div>
+            <div class="col-12 offset-lg-1 col-lg-10 pb-4">
+                {{ .Content }}
+            </div>
+        </div>
+    </section>
+</main>
+{{ end }}

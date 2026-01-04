@@ -1,0 +1,26 @@
+{{ $listSource := .listSource }}
+{{ $resource := site.GetPage $listSource }}
+{{ with $resource }}
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-4">
+    {{ range .Pages }}
+        {{ $words := split .Title " " }}
+        {{ $initials := apply $words "substr" "." 0 1 }}
+        {{ $initialsString := delimit $initials "" }}
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-body text-center p-4 d-md-flex flex-md-column">
+                <div class="col-4 offset-4 col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+                    <div class="ratio ratio-1x1">
+                        <div class="rounded-circle d-flex justify-content-center align-items-center bg-sg-indigo-300">
+                            <span class="fs-1 p-3 sg-indigo-100">{{ $initialsString | upper }}</span>
+                        </div>
+                    </div>
+                </div>
+                <h5 class="card-title sg-indigo-500 fw-bold pt-4">{{ .Title }}</h5>
+                <p>{{ .Params.position }}</p>
+            </div>
+        </div>
+    </div>
+    {{ end }}
+</div>
+{{ end }}

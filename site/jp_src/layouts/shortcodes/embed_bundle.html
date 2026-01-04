@@ -1,0 +1,19 @@
+{{/*
+Shortcode to embed content from a Leaf Bundle.
+Usage: {{< embed_bundle path="path/to/bundle" >}}
+{{< embed_bundle path="reusable-blocks/product-a" >}}
+*/}}
+
+{{ $path := .Get "path" }}
+{{ $partial := .Get "type" }}
+{{ $bundlePage := .Site.GetPage $path }}
+
+{{ if $bundlePage }}
+    {{ if $partial }}
+        {{ partial $partial (dict "context" $bundlePage) }}
+    {{ else }}
+        <p style="color: red;">Error: partial not provided."</p>
+    {{ end }}
+{{ else }}
+    <p style="color: red;">Error: Could not find bundle at path: "{{ $path }}"</p>
+{{ end }}

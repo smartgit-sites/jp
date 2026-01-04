@@ -1,0 +1,140 @@
+<form action="" accept-charset="UTF-8" method="get" data-module="purchase-form" data-product-id="smartgit" data-checkout-type="one-off.upgrade" enctype="multipart/form-data">
+    <input type="hidden" name="purchase_one_off.upgrade[coupon-code]" value="">
+    <div class="row">
+        <div class="col-12 px-0">
+            <div class="d-flex align-items-center mb-3">
+                <span class="visually-hidden">Currency</span>
+                <div class="form-check form-switch ms-auto p-1 bg-transparent border-0">
+                    <input type="radio" class="btn-check" name="purchase_one_off.upgrade[currency]" value="EUR" id="purchase_one_off.upgrade_currency_EUR" data-update-on="change" data-label="EUR" autocomplete="off">
+                    <label class="btn btn-sm" for="purchase_one_off.upgrade_currency_EUR">EURO</label>
+                    <input type="radio" class="btn-check" name="purchase_one_off.upgrade[currency]" value="USD" id="purchase_one_off.upgrade_currency_USD" data-update-on="change" data-label="USD" autocomplete="off" checked>
+                    <label class="btn btn-sm" for="purchase_one_off.upgrade_currency_USD">USD</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 px-0">
+            <div class="card">
+                <div class="card-body border-bottom border-sg-indigo-200">
+                        <span class="fs-4 sg-gray-500">SmartGit Licenses</span>
+                </div>
+                <div class="card-body border-bottom border-sg-indigo-200">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-12" data-module="license-dropzone">
+                            <input type="hidden" name="purchase_one_off.upgrade[license]" value="" id="purchase_one_off.upgrade_license">
+                            <input type="file" name="purchase_one_off.upgrade[license_file]" id="purchase_one_off.upgrade_license_file" class="visually-hidden">
+                            <label for="purchase_one_off.upgrade_license_file" class="d-flex justify-content-between btn px-0 mb-3">
+                                <span class="fs-4 sg-gray-500">1. Drag your license file here or</span> &nbsp;
+                                <i class="fa-regular fa-circle-plus fa-3x sg-indigo-500"></i>
+                            </label>
+                            <div class="dropzone__message dropzone__message--processing">
+                                <div class="alert alert-info">Your license file is being uploaded …</div>
+                            </div>
+                            <div class="dropzone__message dropzone__message--success">
+                                  <div class="alert alert-success">Your license file has been uploaded. <span class="btn btn-danger btn-sm" data-action="reset-dropzone">Reset</span></div>
+                            </div>
+                            <div class="dropzone__message dropzone__message--error">
+                                  <div class="alert alert-danger">Something went wrong. <span class="btn btn-danger btn-sm" data-action="reset-dropzone">Try again</span></div>
+                            </div>
+
+                            <div class="fullscreen-dropzone" data-role="fullscreen-ghost">
+                                Drop your license here
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body border-bottom border-sg-indigo-200">
+                    <div class="mb-3">
+                        <span class="fs-4 sg-gray-500">2. Refine your license configuration</span>
+                    </div>
+                    <div class="row g-3 align-items-center">
+                        <div class="d-flex align-items-center">
+                            <span class="sg-gray-500">Updates</span>
+                            <div class="form-check form-switch ms-auto p-1">
+                                <input type="radio" class="btn-check" name="purchase_one_off.upgrade[updates]" value="1y" id="purchase_one_off.upgrade_updates_1y" data-update-on="change" autocomplete="off" checked>
+                                <label class="btn btn-sm" for="purchase_one_off.upgrade_updates_1y">1 year</label>
+                                <input type="radio" class="btn-check" name="purchase_one_off.upgrade[updates]" value="2y" id="purchase_one_off.upgrade_updates_2y" data-update-on="change" autocomplete="off">
+                                <label class="btn btn-sm" for="purchase_one_off.upgrade_updates_2y">2 years</label>
+                                <input type="radio" class="btn-check" name="purchase_one_off.upgrade[updates]" value="3y" id="purchase_one_off.upgrade_updates_3y" data-update-on="change" autocomplete="off">
+                                <label class="btn btn-sm" for="purchase_one_off.upgrade_updates_3y">3 years</label>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="sg-gray-500">Support</span>
+                            <div class="form-check form-switch ms-auto p-1">
+                                <input type="radio" class="btn-check" name="purchase_one_off.upgrade[support]" value="90d" id="purchase_one_off.upgrade_support_90d" data-update-on="change" autocomplete="off">
+                                <label class="btn btn-sm" for="purchase_one_off.upgrade_support_90d">90 days</label>
+                                <input type="radio" class="btn-check" name="purchase_one_off.upgrade[support]" value="1y" id="purchase_one_off.upgrade_support_1y" data-update-on="change" autocomplete="off" checked>
+                                <label class="btn btn-sm" for="purchase_one_off.upgrade_support_1y">1 year</label>
+                                <input type="radio" class="btn-check" name="purchase_one_off.upgrade[support]" value="2y" id="purchase_one_off.upgrade_support_2y" data-update-on="change" autocomplete="off">
+                                <label class="btn btn-sm" for="purchase_one_off.upgrade_support_2y">2 years</label>
+                                <input type="radio" class="btn-check" name="purchase_one_off.upgrade[support]" value="3y" id="purchase_one_off.upgrade_support_3y" data-update-on="change" autocomplete="off">
+                                <label class="btn btn-sm" for="purchase_one_off.upgrade_support_3y">3 years</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body border-bottom border-sg-indigo-200 py-5">
+                    <div class="row g-3 align-items-center">
+                        <div id="purchase_one_off.upgrade_price" data-price-tag="total" class="col-sm-8 fs-2 sg-indigo-500 fw-bold lh-1 order-1 text-end">...</div>
+                        <div class="col-sm-4 order-first order-sm-0">
+                            <div class="input-group mb-3">
+                                <input type="number" class="form-control" id="purchase_one_off.upgrade_quantity" name="purchase_one_off.upgrade[quantity]" min="1" max="10000" value="1" aria-label="Quntity" data-update-on="change" data-min="1" data-max="10000">
+                                <span class="input-group-text">QTY</span>
+                            </div>
+                        </div>
+                        <div class="col-12 text-muted fs-6 fw-normal order-1 order-sm-last mt-n1 text-end">(excl. VAT)<p></p></div>
+                        <div class="col-12 mt-3" data-notification="license-count"></div>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <button class="btn btn-sg-gray w-100" data-action="request-quote">Request Quote</button>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <button class="btn btn-sg-indigo w-100" type="button" data-action="request-purchase">Purchase via Cleverbridge</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body border-bottom border-sg-indigo-200">
+                    <div class="row g-3 align-items-center">
+                        <div class="col-12 col-sm-6 fw-bold">Renewal Discount</div>
+                        <div class="col-12 col-sm-6 text-end" data-price-tag="upgrade"></div>
+                        <div class="col-12 text-danger mb-n3 mx-n3" data-notification="upgrade"></div>
+                        <div class="col-12 text-info m-n3" data-notification="still-valid-until"></div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-7">
+                            <div class="form-check">
+                                <input type="hidden" name="purchase_one_off.upgrade[distributed_reviews_addon]" value="0">
+                                <input class="form-check-input" type="checkbox" value="1" id="purchase_one_off.upgrade_distributed_reviews_addon" name="purchase_one_off.upgrade[distributed_reviews_addon]" data-update-on="change" checked>
+                                <label class="form-check-label fw-bold" for="purchase_one_off.upgrade_distributed_reviews_addon">
+                                    Incl. Distributed Reviews Add-on<br>
+                                    <span class="fw-normal">local, offline and fast code reviewing</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-5">
+                            <div class="text-end" data-price-tag="distributed_reviews_addon"></div>
+                        </div>
+                        <div class="col-12 col-sm-7">
+                            <div class="form-check">
+                                <input type="hidden" name="purchase_one_off.upgrade[smart_synchronize]" value="0">
+                                <input class="form-check-input" type="checkbox" value="1" id="purchase_one_off.upgrade_smart_synchronize" name="purchase_one_off.upgrade[smart_synchronize]" data-update-on="change" checked>
+                                <label class="form-check-label fw-bold" for="purchase_one_off.upgrade_smart_synchronize">
+                                    Incl. SmartSynchronize licenses<br>
+                                    <span class="fw-normal">SmartGit's file (and directory) compare as standalone tool</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-5">
+                            <div class="text-end" data-price-tag="smart_synchronize"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

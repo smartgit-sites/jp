@@ -1,0 +1,27 @@
+{{ define "main" }}
+{{ partial "header.html" (merge (dict "Page" .) .Params) }}
+<main>
+    <section id="vision" class="container mt-n5 px-lg-5">
+        <div class="row">
+            <div class="col-12 col-md-6 py-4">
+                <h2 class="fs-6 fw-bold sg-indigo-500 mb-4">Vision</h2>
+                {{ partial "markdown-render-section" (slice . "vision" `<p>$content</p>`) }}
+            </div>
+            <div class="col-12 col-md-6 py-4">
+                {{ partial "success-stories-featured-slim" . }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h2 class="fs-6 fw-bold sg-indigo-500 mb-4">History</h2>
+                {{ partial "markdown-render-section" (slice . "history" `<p>$content</p>`) }}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                {{ partial "markdown-render-section" (slice . "links" `<p>$content</p>`) }}
+            </div>
+        </div>
+    </section>
+</main>
+{{ end }}

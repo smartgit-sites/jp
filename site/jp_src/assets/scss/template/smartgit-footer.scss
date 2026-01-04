@@ -1,0 +1,13 @@
+#above-footer{
+  background: linear-gradient(to bottom, $sg-footer-gradient-start 0%, $sg-footer-gradient-start 67%, $sg-footer-top 67%, $sg-footer-top 100%);
+}
+#above-footer .card-footer {
+  background-color: transparent;
+}
+#main-footer{
+  font-size: smaller;
+}
+#below-footer{
+  font-size: smaller;
+  font-weight:500;
+}

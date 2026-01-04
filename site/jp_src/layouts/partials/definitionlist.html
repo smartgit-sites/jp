@@ -1,0 +1,21 @@
+{{ $dtClass := .dtClass | default "col-2" }}
+{{ $ddClass := .ddClass | default "col-10" }}
+{{ $listSource := .listSource }}
+{{ $listName := .listName }}
+{{ $listPage := site.GetPage $listSource }}
+{{ $listPageParams := $listPage.Params }}
+{{ $items := slice }}
+
+{{ with $listPageParams }}
+{{ range $key, $value := . }}
+{{ if eq $key (lower $listName) }}
+{{ $items = $items | append $value }}
+{{ end }}
+{{ end }}
+{{ end }}
+<dl class="row mt-5">
+{{ range $items }}
+<dt class="{{ $dtClass }}"><i class="{{ .icon }}"></i></dt>
+<dd class="{{ $ddClass }}">{{ with .name }}{{.name}} {{end}}{{ .desc }}</dd>
+{{ end }}
+</dl>

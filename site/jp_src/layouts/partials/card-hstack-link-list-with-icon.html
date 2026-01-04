@@ -1,0 +1,29 @@
+{{ $listSource := .listSource }}
+{{ $listName := .listName }}
+{{ $listPage := site.GetPage $listSource }}
+{{ $listPageParams := $listPage.Params }}
+{{ $items := slice }}
+
+{{ with $listPageParams }}
+    {{ range $key, $value := . }}
+        {{ if eq $key (lower $listName) }}
+            {{ $items = $items | append $value }}
+        {{ end }}
+    {{ end }}
+{{ end }}
+<div class="card">
+<div class="card-body bg-sg-indigo-100">
+<div class="hstack align-items-center h-100">
+{{ range $items }}
+<div class="col text-center position-relative">
+<i class="{{ .icon }}"></i>
+{{ if ne .link "" }}
+<p class="mb-0"><a class="stretched-link" target="{{ if ne .target "" }}{{ .target }}{{ else }}_parent{{ end }}" href="{{ .link }}">{{ if ne .name "" }}{{ .name }}{{ end }}</a></p>
+{{ else }}
+{{ if ne .name "" }}{{ .name }}{{ end }}
+{{ end }}
+</div>
+{{ end }}
+</div>
+</div>
+</div>

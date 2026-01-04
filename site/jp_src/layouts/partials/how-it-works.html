@@ -1,0 +1,66 @@
+{{ $resource := .Site.GetPage "/how-it-works" }}
+{{ $stepsPage := site.GetPage "how-it-works/" }}
+{{ $steps := $stepsPage.Params.steps }}
+<noscript>
+    <style>
+        .no-js-d-none{display:none !important;}
+    </style>
+</noscript>
+<section id="how-it-works" class="container my-5">
+    <div class="row">
+        <div class="col-12 text-center sg-gray-400 pb-4">
+            {{ with $resource }}
+            {{ partial "markdown-render-section" (slice . "headline" `<h2>$content</h2>`) }}
+            {{ partial "markdown-render-section" (slice . "desc" `<p>$content</p>`) }}
+            {{ end }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="card border-2 box-dark border-sg-indigo-300">
+                <div class="card-body p-5">
+                    <div class="row equal-height-container">
+                        <div class="col-12 col-lg-3">
+                            <div class="equal-height-item-lg position-relative pb-5 pb-lg-0">
+                                <div class="position-absolute top-100">
+                                    <h2 class="mt-lg-4 mt-n5">{{ $stepsPage.Params.title }}</h2>
+                                </div>
+                            </div>
+                            <div class="position-relative mx-n3 px-3 d-none d-lg-block no-js-d-none">
+                                <div class="sg-icon py-4">
+                                    <div class="ratio ratio-1x1"></div>
+                                </div>
+                            </div>
+                        </div>
+                        {{ range $item := $steps }}
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4 mb-sm-0 d-flex flex-column">
+                            <div class="equal-height-item d-flex align-items-center text-break order-1 order-lg-0">
+                                <h3>{{ $item.title }}</h3>
+                            </div>
+                            <div class="position-relative mx-n3 px-3 order-0 order-lg-1 no-js-d-none">
+                                <div class="sg-icon py-4">
+                                    <div class="ratio ratio-1x1">
+                                        <div class="rounded-circle d-flex justify-content-center align-items-center bg-white">
+                                            <span class="{{ $item.icon }}"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="order-2">{{ $item.desc }}</p>
+                        </div>
+                        {{ end }}
+                        <div class="d-none d-md-block col-md-2 col-lg-1 no-js-d-none">
+                            <div class="equal-height-item"></div>
+                            <div class="position-relative mx-n3 px-3">
+                                <div class="sg-icon py-4">
+                                    <div class="ratio ratio-1x1">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

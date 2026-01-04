@@ -1,0 +1,54 @@
+{{ $currentPage := . }}
+{{ $menuPage := site.GetPage "navigation/menu.md" }}
+{{ $menu := $menuPage.Params.menu }}
+{{ $scDnldSG := "{{< btn-download-smartgit >}}" }}
+<noscript><style>.external-icon{display:none;}</style></noscript>
+<section id="main-nav" class="container-fluid fixed-top">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="/"><noscript><img src="/images/smartgit.png" class="img-fluid"></noscript><span class="sgb sg-smartgit2 sg-n3x" data-sg="sg-indigo-500,sg-gray-900"></span></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ $menuPage.Params.labelToggle}}">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarSupportedContent" aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title visually-hidden" id="offcanvasNavbarLabel">{{ $menuPage.Params.labelOffCanvas}}</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="{{ $menuPage.Params.labelClose}}"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+                        {{ range .Site.Menus.main }}
+                            {{ $isActive := $currentPage.HasMenuCurrent "main" . }}
+                            {{ if .HasChildren }}
+                                    <li class="nav-item level-1 deeper parent">
+                                        <a class="nav-link deeper parent {{ if $isActive }}active{{ end }}" href="{{ .URL }}" title="{{ .Name }}" target="{{ .Params.target }}">{{ .Name }}{{ if eq .Params.target "_blank" }} <span class="external-icon"><i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></span><noscript> ↗</noscript>{{ end }}</a>
+                                        <ul class="dropdown-menu" data-level="1" data-end="0">
+                                            {{ range .Children }}
+                                                {{ $childActive := $currentPage.IsMenuCurrent "main" . }}
+                                            <li class="nav-item level-2" role="menuitem">
+                                                <a href="{{ .URL }}" class="nav-link{{ if $childActive }} active{{ end }}" title="{{ .Name }}" target="{{ .Params.target }}"><span>{{ .Name }}{{ if eq .Params.target "_blank" }} <span class="external-icon"><i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></span><noscript> ↗</noscript>{{ end }}</span></a>
+                                            </li>
+                                            {{ end }}
+                                        </ul>
+                                    </li>
+                            {{ else }}
+                                    <li class="nav-item level-1">
+                                        <a class="nav-link{{ if $isActive }} active{{ end }}" href="{{ .URL }}" title="{{ .Name }}" target="{{ .Params.target }}">{{ .Name }}{{ if eq .Params.target "_blank" }} <span class="external-icon"><i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i></span><noscript> ↗</noscript>{{ end }}</a>
+                                    </li>
+                            {{ end }}
+                          {{ end }}
+                                </ul>
+                                <div class="d-grid mt-5 mt-lg-0">
+                                    {{ .Page.RenderString $scDnldSG }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>

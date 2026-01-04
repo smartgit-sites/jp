@@ -1,0 +1,545 @@
+# SmartGit 25.1.103 (2025-12-18)
+
+## Fixed Bugs
+- AI integration:
+  - Commit annotation: diffContextLines configuration was not honored in single-commit mode (worked correctly in diff mode)
+- Log:
+  - GitHub/other hosting providers: Branches view was no longer refreshed after fetching or dropping pull requests (regression since 25.1.100)
+
+## Other Noteworthy Changes
+- Internationalization:
+  - Updated translations, primarily Japanese
+
+
+# SmartGit 25.1.102 (2025-12-11)
+
+## Fixed Bugs
+- AI integration:
+  - Commit message generation: diffContextLines configuration was not honored
+- Refresh:
+  - Commits view: possible internal error for invalid tree objects
+- UI:
+  - Main window status bar: possible internal error in status bar layout
+
+
+# SmartGit 25.1.100 (2025-11-28)
+
+## Fixed Bugs
+- AI integration:
+  - Close: memory leak related to AI integration
+  - Save Stash dialog: did not remember AI option
+- Conflict Solver: possible internal error for conflicts at the end of the file
+- Hosting providers:
+  - Azure DevOps/Bitbucket: misleading "GitLab" in site selection title
+- Linux:
+  - dark theme: selected toolbar buttons were hardly noticeable
+- Log window:
+  - Branches view: internal error when toggling "Recyclable Commits" with refs that have invalid file system names (e.g. including double quotes on Windows)
+- Notes:
+  - Refresh: should not force fetching commits that do not exist in the local clone
+- Refresh:
+  - Standard window: possible internal error related to refreshing GitHub and/or CI
+  - Working Tree, LFS: "unexpanded LFS objects" warning should not appear if Git config option `lfs.fetchexclude` is set
+- Syntax:
+  - Markdown: styled link not rendered correctly
+  - Shell-Script: parse bug for escaped character in command substitution
+- UI:
+  - Edit Message dialog: should select entire message when selecting from issue tracker (regression since 25.1.013)
+- WSL: browser could not be opened
+
+## Other Noteworthy Changes
+- AI integration:
+  - low-level property `ai.enabled=false` to forcefully disable the AI integration
+  - Preferences, AI: option to force-disable the AI integration if it is not yet configured
+- Linux:
+  - improved dark-theme experience
+- Push:
+  - enhanced force-push warning regarding feature branches
+- Refresh:
+  - LFS: low-level property `core.status.filterProcess.useTemporaryLfsStorage` to work around rapidly growing `.git/lfs` storage
+- Submodules:
+  - Unregister: should work on multiple files (as Deactivate does)
+  - Update: removed deprecation of low-level property `submoduleUpdate.failAllIfSingleInitFails`
+
+
+# SmartGit 25.1.093 (2025-10-31)
+
+## Fixed Bugs
+- Refresh: internal error related to external credential helper configuration
+- Startup: incorrect quick poll notification text
+- Syntax, Markdown: possible internal error opening with unicode characters
+  
+
+# SmartGit 25.1.090 GA (2025-10-30)
+
+## Fixed Bugs
+- AI: possible "error when trying to reword stash -- cancelled"
+- Notes: tag notes should be handled at least basically
+- Syntax:
+  - Markdown: quote is incorrectly rendered in special situations
+- MacOS: filtered file table kept yellow background
+
+## Other Noteworthy Changes
+- fixed changelog URL
+
+
+# SmartGit 25.1.086 RC (2025-10-16)
+
+## Fixed Bugs
+- AI integration: possible internal error related to invalid characters in API token
+- Changes view: get light background when focused (mostly noticable with dark theme)
+- Configure Toolbar dialog: right list might show horizontal scrollbar and might not react to mouse-wheel scrolling
+- Commit: possible internal error when replacing existing commit message during amend-comment
+- Ignore: trying to ignore nested roots failed with "pathspec ... did not match any files"
+- Preferences:
+	- Hosting providers: re-opening a newly created provider lost the token
+- Syntax:
+	- C#: interpolated verbatim strings could also start with `@$"`
+	- JavaScript: interpolated string incorrectly treated as identifier
+	- Markdown: failed for email address immediately before line ending
+- UI:
+	- Revert dialog: showed Merge icon
+	- word-wise cursor movement (or double-click): fixed possible internal error for multi-line tokens 
+	- Some confirmation dialogs did not remember the "Don't show again" checkbox
+- Standard window:
+	- for staged files no external tools showed up in the context menu (only for unstaged files)
+
+## Other Noteworthy Changes
+- AI, commit message generation: warn about skipped untracked files
+- Submodule, Update: introduce low-level property `submoduleUpdate.failAllIfSingleInitFails` to be tolerant in case of problematic submodules
+
+
+# SmartGit 25.1.081 RC (2025-09-24)
+
+## New Features, Improvements
+- Commit dialog: option to reconfigure AI integration
+
+## Fixed Bugs
+- AI
+  - for commit and stash message generation with the default prompt, the diff was sent duplicated
+  - setup: possible internal error when entering bad URL
+- Commit dialog:
+  - AI buttons looked weird
+  - AI integration remained enabled for a while after disabling
+- External tools/Conflict Solver: could hang if the Windows process exited with code 259 (STILL_ALIVE)
+- Git Notes, Add: should not be available if only "internal" (auto-configured) note categories area available
+- Ignore: failed for `.git/info/exclude` if `info` didn't exist
+- Log Graph: possible internal error related to layouting
+- Merge (and others): auto-save stash did not work any more
+- Preferences:
+  - some tables lacked basic accessibility information
+  - Tools: entering an invalid `${...}` variable leaked exception name to GUI
+- Refresh:
+  - be tolerant in case of inaccessible directories
+  - more consistent handling of "inactive" submodule state
+- Standard window:
+  - My History: selecting >2 branches for octopus merging just selects the first 2 of them in the graph
+  - multiple issues with submodules when repository tree entries for them were created or removed
+  - Graph (submodule tab): possible internal error right-clicking commit
+  - Worktrees: internal error when opening a worktree for which the repository was not yet known
+
+## Other Noteworthy Changes
+- Commit: AI button should be enabled even if there are no working tree changes
+- Standard window:
+  - disable certain commands on mixed file/submodule selections as they will fail anyway (because they can't operate on submodules)
+
+
+# SmartGit 25.1.073 RC (2025-08-27)
+
+## New Features, Improvements
+- AI Integration:
+  - added Preferences option to re-enable or reconfigure the AI integration
+  - added AI upload consent dialog with explicit opt-in per repository and provider
+
+## Fixed Bugs
+- Add Worktree: did not consistently update the "(worktree)" markers in the Graph or Branches view
+- JIRA: possible problems when connecting to atlassian.net cloud ("Connection failed. The requested API has been removed.")
+- Toolbar configuration dialog: right list shows drop-at indicator though not useful
+
+## Other Noteworthy Changes
+- AI Setup: for the API Key dialogs include information how to create them
+- Discard dialog: improved for case of untracked files
+- Select Obsolete Repositories: also select those where the directory remains but the `.git/config` is gone
+- Worktrees: do not denote the current branch as "worktree" in the Graph and Branches view
+
+
+# SmartGit 25.1.070 RC (2025-08-20)
+
+## New Features, Improvements
+- Branches view: added *Open in Codex* command
+- Commit: ability to amend previous commit during merging state; that way octopus merge is also possible
+- External tools:
+  - added another default external tool *Open in VSCode*
+- Improve Credential Helper handling:
+  - moved "Configure newly cloned repository to use SmartGit as credential helper on Git command line" below the "Use SmartGit for authentication" option on the *Git Executable* page
+  - Repository Settings: added page "Credential Helper" with option "Configure SmartGit as credential helper for Git command line"
+  - Clone" don't show a dialog on the first clone, but instead just have a checkbox on second Clone wizard page
+- LFS Refresh: improved performance for large files
+- Standard window:
+  - in case of non-fatal/expected errors, e.g. merge conflicts, show more appropriate warning dialog
+
+## Fixed Bugs
+- Changes view: possible internal error staging line
+- Clone: "Create upstream remote" option was visible for all GitHub repositories, not just forks
+- Commit, GitHub issue selection: possible invalid "Select from GitHub: for explicit configuration in `.gitbugtraq`
+- Log window:
+  - Context menu did not show Rebase menu item
+  - Remove \| Properties was no longer available for single-remote repository selection
+- Standard window:
+  - Clone: possible internal error if target repo was already open (but not loaded any more)
+  - Integrate: fork point detection did not work correctly if merge commits were involved
+  - Push and other commands: did not show the executed command in the output
+- Linux:
+  - the first SWT dialog was shown with weird size - added workaround
+  - on some Linux systems, e.g. MX Linux, opening the browser failed
+- Standard window, GitHub: possible internal error related to refreshing
+
+## Other Noteworthy Changes
+- Syntax, XML: several fixes
+- Standard window:
+  - GitHub: report warnings or errors
+
+
+# SmartGit 25.1.063 Preview (2025-08-01)
+
+## New Features, Improvements
+- AI:
+  - Commit annotation
+  - Setup wizard
+  - Save Stash dialog: support for AI message generation
+  - Commit message generation improved:
+    - improve detection of reusable commit message for reworder
+    - support for "@ai<"
+    - config: diffContextLines configuration
+    - config: support for ${generic} and ${reasoning} model names
+    - config: support default API URLs
+    - config: fix possible duplication of commit message prompts
+    - improve API secret id
+- Git Notes: displayed as markdown in the Commit details
+- Merge: support octopus merges by selecting multiple branches
+- Syntax, Markdown: different implementation
+- Standard window:
+  - My History view: added options which pull requests to show
+    - ability to show unassigned pull requests
+    - show background refresh in toolbar
+    - denote problematic states with warning icon
+
+## Fixed Bugs
+- Bisect: focusing old branches did not work reliably
+- Changes view:
+  - possible internal error trying to Stage inner-line change
+  - possible internal error related to caret
+  - potential OOME reading text file with certain characters at the beginning
+- Checkout:
+  - switching to worktree did not work if worktree was not yet known as repository
+  - switching to worktree should display error in case of an invalid worktree
+- Cherry-Pick File: submodules were not properly initialized/updates
+- GitHub:
+  - possible internal error adding comment
+  - possible internal error querying CI state
+- Graph:
+  - potential internal error for certain branching structures when filtering
+  - old (root) branches may be layouted too far top in the Graph
+- Creating a tag or pushing an existing tag used different pushability conditions
+- Distributed Review: adding or removing comment did not redraw
+- MacOS: potential issues with PATHs, e.g., when using Homebrew LFS
+- Log window:
+  - Branches view: confusing availability of commands for multi-selection of different entry types
+- Standard window:
+  - could not rename incorrectly named branch to correct name
+  - Commit: should not switch to History if there are local changes remaining (for initial commit)
+  - GitHub/CI: possible confusion with multiple remotes
+  - History, Files: Open in GitHub should be available for All Refs and Tags, too (not only My History)
+
+## Other Noteworthy Changes
+- Git: upgrade to version 2.50.1
+= Graph: improved rebasing state layout
+- GUI:
+  - buttons for dangerous choices have a red background
+  - Preferences: the search now also finds low-level properties
+  - support for character-based accelerators by disabling the speed-search in tables/trees by setting the low-level property `ui.speedSearch`
+- various dialogs: natural sorting of branches
+- Register: allow to select existing on-premise license file
+- Standard window:
+  - Graph: improved filter performance
+  - My History: improved tooltip for pull requests
+
+
+# SmartGit 25.1.054 Preview (2025-07-09)
+
+## New Features, Improvements
+- Edit Author: easy way to paste author strings `name <email>`
+- Edit Message: add GitHub issue selector
+- Licenses: academic, open-source and charity licenses become full licenses (see https://blog.syntevo.com/smartgit/2025/06/26/non-commercial-full-version.html)
+- Log, Details: copy `name <email>`
+- Squash: optionally add **co-authored-by** lines
+- Standard window:
+  - Edit Message: allow during Rebase for HEAD commit
+  - File Log: for conflicting files limit the log by default to HEAD only
+  - GitHub: query all remotes for displaying pull requests
+
+## Fixed Bugs
+- Changes view: colors of separator lines differ in gutter and text field
+- Commit, AI: internal error when switching model while having a commit node selected in the Graph
+- GitHub/others, comments: possible problems with orphan (e.g. the initial) commit
+- GitLab: isssues with handling pull requests from disjoint history
+- Push: possibly unclear text for forced push confirmation dialog
+- Refresh (refs): possible internal error related to invalid packed-refs file
+- Syntax, Properties: values with `\` at EOL are not correctly detected
+- Standard window:
+  - Integrate: possibly fails to find main ref for repositories with multiple remotes
+
+## Other Noteworthy Changes
+- AI integration, config: support for optional urlQueryParams
+- Git: upgrade to version 2.50
+- Git Config Editor: no lonely save toolbar button
+- Log: remembers different window locations for repository log and file/subdirectory log
+- Rename Stash: more robust implementation
+- Repository Settings (and Preferences, Git Config): editing should be partially possible if (simple) includes are used
+- Several commands: disable for non-normal states, e.g. rebasing, merging, cherry-picking, ...
+- Standard window:
+  - Checkout remote branch: try "branch-remote" before "branch-<number>"
+  - Start Feature: warn for duplicate feature-prefix
+  - when opening a repository the Graph view should get the focus
+  - My History: "All branches" renamed to "All my branches"
+
+
+# SmartGit 25.1.050 Preview (2025-06-16)
+
+## New Features, Improvements
+- Standard window:
+  - Checkout remote branch: uses different name now (instead of aborting) for multi-remote repositories with equally named already existing local branch
+
+## Fixed Bugs
+- Changes view, File Compare, ...: internal error double-clicking word immediately preceding EOF
+- Refresh (WT, Windows): possible internal error if repository is located on symlink
+- Refresh (WT/Changes View, ...): possible hang when trying to access Git-LFS objects
+- Syntax coloring:
+  - C#: failed for `@`
+- Standard window:
+  - Rename Branch: now only tries to rename the remote branch if it was equally named with the local branch
+  - closing with submodule selected, automatically opened repository in first tab; now opens the parent repository tab
+  - Conflict Solver: internal error when staging file on close, and the corresponding repository tab has already been closed
+- MacOS:
+  - alternatving row colors for tables were broken
+- Linux:
+  - Toolbar: click-and-hold to show popup did not work
+
+## Other Noteworthy Changes
+- Git-Flow, Finish Release: clarify dialog when master merge isn't supported due to a custom base branch
+- updated Git to version 2.49.0
+  - on Windows with `core.longPaths` set to `true` by default
+- I18n:
+  - translation fixes and slight improvements
+  - potentially incorrect texts for multiple dialog GUI items (due to duplicates)
+
+
+# SmartGit 25.1.046 Preview (2025-05-16)
+
+## New Features, Improvements
+- Changes view, Compare, ...:
+  - support language-specific word-definitions for caret movement (e.g. `foo_bar` as a identifier will be treated as one word, but not inside strings or comments)
+  - allow to configure additional line spacing using the low-level property `styledText.lineSpacing`
+- Commit: AI commit message generation improved
+- Edit Git-Config:
+  - syntax coloring
+  - check validity before saving, reject to save invalid files
+- Log Graph: for stashes show the comment message instead of the commit message
+- Preferences:
+  - Authentication:
+    - rewritten management for API tokens (GitHub, JIRA, ...)
+- Submodules: honor Git config `submodule.recurse = false`
+- Standard window:
+  - Add Branch: allow to create a branch for which a similar named remote branch exists (if low-level property `standard.addBranch.allowOverwrite` is set)
+  - All Branches + Tags: remember the reg-ex option
+  - My History: warn only those cases of `<name> != <remote>/<name>` if renaming the local branch could fix it
+  - Rename Stashes
+
+## Fixed Bugs
+- Changes view, Compare, ...: Syntax-selection dialog did not scroll selection into view
+- Clone: fails if repository is already open
+- Kill Process dialog: possible internal error
+- Log Graph: filtering with inversion (using leading `!`) did only work correct if "message" was selected
+- Rebase Interactive: Edit Message missed "JIRA" option if bugtraq was configured
+- Show Changes: possibly incorrect HEAD vs. Index vs. Working Tree file content selection for renamed files
+- Linux:
+  - Changes view: zoomed images occurred blurred
+  - dragging a ref might select a different commit (workaround for https://github.com/eclipse-platform/eclipse.platform.swt/issues/2119)
+  - windows may occur on "wrong" monitor
+- Standard window:
+  - Graph: may show incomplete ref context menu
+
+## Other Noteworthy Changes
+- various commands: enable remote support, so, e.g., LFS authentication also works
+- Refresh: added low-level property `refresh.ignoreSymlinkModificationsIfUnsupported`
+- Standard window:
+  - My History, All Branches + Tags: reduced (minimum) image height
+
+
+# SmartGit 25.1.038 Preview (2025-04-18)
+
+## New Features, Improvements
+- Blame, Investigate: honors configured text file encoding
+- Standard window:
+  - All Branches + Tags:
+    - add remotes
+      - including context commands for fetching, renaming, deleting, ...
+    - branches and tags are grouped by prefix, except for *Sort by Date* (for which it makes no sense)
+- Log and Standard window:
+  - Checkout (Enter): by default will check out local branch(es) on the selected commit
+
+## Fixed Bugs
+- Standard window:
+  - preferences option "Allow modifying pushed commits:
+    - "Only for feature branches" did not work for empty feature prefix
+    - low-level property "push.forcedPushConfirmationForSafeBranches" should also be honored if force-pushing is allowed "For all branches"
+
+## Other Noteworthy Changes
+- Branches/Graph: added low-level property "core.refs.additionalTopLevelRefs" to parse additional top-level refs
+- Master password dialog: make hint visible
+- Preferences:
+  - Low-level Properties: removed confirmation button and show all by default
+- updated SWT
+- Standard window:
+  - Repositories tab:
+    - add link to select obsolete repositories
+    - Filter:
+      - entered (valid) path is taken as default for *Add or Create Repository*
+      - use Ctrl/Cmd+Enter to invoke the *Add* or *Initialize* command for existing repositories/directories
+  - Stashes view: auto-select newest stash
+
+
+# SmartGit 25.1.029 Preview (2025-04-02)
+
+## New Features, Improvements
+- AI integration:
+  - Commit: improved message generation and rewording capabilities
+- Clone/Fetch operations:
+  - display progress for "Finding sources"
+  - more accurate progress display
+  - GitLab: option to create upstream remote
+- Graph and UI:
+  - issue links for github.com and gitlab.com repositories (for freshly cloned)
+  - only display single, selected pull request from Branches view
+- Pull Requests and branch management:
+  - added new option to allow force-pushing to only specific branches
+  - during Rebase, hide all other branches in Log
+  - right-clicking a pull request only shows PR related commands
+- Syntax coloring improvements:
+  - ERB: improvements for the frontmatter
+  - Dart: improved strings, string interpolation, escapes
+  - V: improved strings, string interpolation, and escapes
+- Standard window:
+  - ensure the GUI is correctly invalidated once a repository becomes invalid
+  - Files: show tooltip for LFS-inconsistent files
+  - Reflog: turn "showIntermediateCommits" into hamburger menu option
+- Azure DevOps: added option to use empty username for token authentication with on-premise instances
+- Changes view: do not show diff highlighting for binary files
+- Compare: shift blocks similar to other options in syntax-based comparison
+- Refresh: warn in case of too many untracked files
+
+## Fixed Bugs
+- Branch operations:
+  - switching branches within a worktree isn't possible anymore
+  - history-related operations are disallowed if force-pushing is not enabled
+- Graph and UI:
+  - HEAD jumps back when selecting PR for HEAD
+  - possible internal error in Log
+- Push and Pull:
+  - Pull Requests: successful forced push needs to pull to update
+  - Push toolbar button: no menu shown when clicking v with Files focused
+- Refresh and Files:
+  - possible "No such file" error for missing LFS files
+- Syntax:
+  - Pascal/Delphi: identifiers can now start with &
+- Preferences:
+  - Accelerators: removed unexpected entries in Debug mode
+
+# SmartGit 25.1.016 Preview (2025-03-06)
+
+## New Features, Improvements
+- Branches view: Hamburger option "Except for single refs" is now unselected by default
+- Commit: opt-in AI commit message generation (https://docs.syntevo.com/SmartGit/Latest/Manual/Integrations/AI)
+- Files table: show moved+modified with a different icon than moved+unchanged
+- Graph:
+  - Refresh: include node about how to increase the performance limit
+  - denote worktrees
+  - Checkout will now open the other worktree (instead of fail)
+- Pull Requests:
+  - Fetch/Merge should only retrieve the corresponding ref, without including tags
+- Run Garbage Collector command: added LFS prune
+- Syntax coloring:
+  - Dart: added escape sequences, string interpolation
+  - Nix
+- Log window:
+  - Checkout should follow the same "default branch" name logic as Add Branch
+  - Files: Save As for a commit diff shows the commit IDs on the buttons
+- Log and Working Tree window:
+  - Files view: show details in the tooltip of renamed files
+- Standard window:
+  - added tracking commands (Set Tracking, Stop tracking)
+  - added worktree commands (Add, Remove, Prune)
+  - added Push-to command
+  - All Branches + Tags: the filter should be case insensitive
+  - Discard: optionally also deletes untracked files
+  - Integrate Feature: do not merge (for certain scenarios), but always rebase
+  - Graph:
+    - long-running filters should report results on-the-fly
+    - denote refreshing state for background operations (e.g. filtering)
+  - Refresh: improved performance of local refresh
+  - Start Feature:
+    - for multi-base-branch setups, preselect the closes base branch
+    - can also be triggered from a selected commit
+
+## Fixed Bugs
+- Checkout: problem when switching a submodule to a plain directory (or visa versa)
+- Graph:
+  - Alt+Down did not reload on an "arrow"
+  - do not try to extend in filtered mode
+- GUI: "More Options" checkbox in multiple dialogs was lacking the mnemonic
+- Repositories view: dragging an entry beyond the last one seemed to accept it
+- Syntax:
+  - Powershell: possible internal error
+- Worktrees: branch of rebasing/bisecting worktrees was not properly detected
+- Standard window:
+  - could not invoke terminal tools in opened submodule
+  - Graph:
+    - right-clicking a ref did not use that refs in external tool for `${commit}`
+    - possible endless refreshing for repositories with very short history
+  - Undo Last Commit: should check for untracked files, too
+
+
+
+# SmartGit 25.1.002 Preview (2025-01-08)
+
+## New Features, Improvements
+- Files view: denote unexpanded LFS files
+- Preferences:
+  - Syntax coloring configuration:
+    - clicking a token in the preview selects the corresponding color
+- Push To: preselect the matching remote for the selected ref
+- Syntax coloring:
+  - Kotlin: valid/invalid escapes, string templates
+  - Powershell
+  - TCL
+- Standard window:
+  - Commit: allow to create empty merge commit
+  - Files: introduce "Open in GitHub"
+  - Finish Feature: if branch was not deleted, don't suggest to delete it the next time
+
+## Fixed Bugs
+- Edit Commit Message: silently failed for empty commits
+- Graph: dragging a remote ref must not be allowed
+- Revert: commit messages containing patterns `${sha}` or `\n` might be expanded
+- Standard window:
+  - switching from Local Files to History did not focus any control
+- Windows 11 24H2: menu and scrollbar background was bright in dark theme
+
+## Other Noteworthy Changes
+- Revert and Rollback: use low-level property to configure message templates
+- new version numbering
+- JIRA Resolve dialog: scroll selection into view
+- Log window:
+  - right-clicking a commit should show "Reveal Commit" instead of "Select Commit"
+- Standard window:
+  - Local Files toolbar button: in case of conflict show only the number of conflicting files, not all changed files
