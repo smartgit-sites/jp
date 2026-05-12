@@ -5,7 +5,7 @@
 
 <section id="dnld-for-os" class="container">
     <div class="info-box">
-        <p>Get early access to new features and fixes from our development lines, intended mainly for testing. The <b>recommended and fastest way</b> to update is via <b>Help | Check for Latest Build</b> in SmartGit. If direct server access is unavailable, full bundles are available below.</p>
+        <p>主にテスト向けとして、開発版の新機能や修正を早めに試せます。更新するには、SmartGit の <b>Help | Check for Latest Build</b> を使う方法が<b>推奨かつ最速</b>です。サーバーへ直接アクセスできない場合は、以下のフルバンドルを利用できます。</p>
     </div>
     {{ range $i, $release := $releases }}
     <div class="row" id='{{ (printf "v%.0f" .major_version) }}'>

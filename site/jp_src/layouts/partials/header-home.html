@@ -10,20 +10,20 @@
                 {{ partial "markdown-render-section" (slice . "subline" `<p class="fs-5 pb-4">$content</p>`) }}
                 <div class="d-flex gap-3 flex-wrap align-items-center">
                     {{ .Page.RenderString $scDnldSG }}
-                    <a href="/features/" class="btn btn-outline-sg-indigo">Explore All Features</a>
+                    <a href="/features/" class="btn btn-outline-sg-indigo">すべての機能を見る</a>
                 </div>
-                <p class="text-muted small fw-semibold mt-4 mb-2">Works on Your Platform</p>
+                <p class="text-muted small fw-semibold mt-4 mb-2">お使いの環境で動作</p>
                 <div class="d-flex gap-4 align-items-center mb-3">
                     <i class="fa-brands fa-windows fa-2x sg-indigo-500" data-bs-toggle="tooltip" title="Windows"></i>
                     <i class="fa-brands fa-apple fa-2x sg-indigo-500" data-bs-toggle="tooltip" title="macOS"></i>
                     <i class="fa-brands fa-linux fa-2x sg-indigo-500" data-bs-toggle="tooltip" title="Linux"></i>
                 </div>
-                <p class="text-muted small fw-semibold mb-2">Integrates with Your Tools</p>
+                <p class="text-muted small fw-semibold mb-2">普段のツールと連携</p>
                 <div class="d-flex gap-4 align-items-center">
                     <i class="fa-brands fa-gitlab fa-2x sg-orange-500" data-bs-toggle="tooltip" title="GitLab"></i>
                     <i class="fa-brands fa-github fa-2x sg-orange-500" data-bs-toggle="tooltip" title="GitHub"></i>
                     <i class="fa-brands fa-bitbucket fa-2x sg-orange-500" data-bs-toggle="tooltip" title="Bitbucket"></i>
-                    <i class="fa-light fa-server fa-2x sg-orange-500" data-bs-toggle="tooltip" title="Self-hosted Git"></i>
+                    <i class="fa-light fa-server fa-2x sg-orange-500" data-bs-toggle="tooltip" title="セルフホスト Git"></i>
                 </div>
             </div>
             <div class="col-12 col-lg-6 p-4 d-none d-lg-block">

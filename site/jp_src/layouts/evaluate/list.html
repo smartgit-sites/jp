@@ -1,6 +1,6 @@
 {{ define "main" }}
 {{ $contentSpanClass := partial "content-span-class.html" (dict "Page" . "Default" "center-span") }}
-{{ partial "header.html" (merge (dict "Page" . "contentSpanDefault" "center-span" "message" .Params.description "headerH2" "Free 30 days evaluation") .Params) }}
+{{ partial "header.html" (merge (dict "Page" . "contentSpanDefault" "center-span" "message" .Params.description "headerH2" "30 日間無料で評価") .Params) }}
 <main>
   <noscript>
     <section class="container pt-0 pb-0 teaser-follow-up">

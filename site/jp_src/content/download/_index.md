@@ -20,12 +20,12 @@ icons:
         name: "Linux"
 
 translations:
-  file_size: "Bytes"
-  checksum: "Checksum"
-  installer: "Installer"
-  download: "Download for"
-  version: "Version"
-  changeLog: "Change Log"
+  file_size: "バイト"
+  checksum: "チェックサム"
+  installer: "インストーラー"
+  download: "ダウンロード:"
+  version: "バージョン"
+  changeLog: "変更履歴"
 
 # you have to use the reversed order to show right
 osOrder: ["linux", "mac_os", "windows"]

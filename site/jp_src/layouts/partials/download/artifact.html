@@ -25,11 +25,11 @@
     </div>
     {{ if or $item.file_size $item.checksum }}
     <details class="download-artifact-details" open data-js-collapse>
-        <summary class="download-artifact-details-toggle">Details</summary>
+        <summary class="download-artifact-details-toggle">詳細</summary>
         <div class="download-artifact-details-panel">
             {{ if $item.file_size }}
             <div class="download-artifact-detail-row">
-                <span class="download-artifact-detail-label">Size</span>
+                <span class="download-artifact-detail-label">サイズ</span>
                 <div class="download-artifact-detail-value">
                     <code class="download-artifact-detail-code">{{ $formattedFileSize }}</code>
                 </div>
@@ -44,8 +44,8 @@
                         type="button"
                         class="download-artifact-copy-link btn btn-link p-0 border-0"
                         data-copy-text="{{ $item.checksum }}"
-                        data-copied-label="Copied">
-                        Copy
+                        data-copied-label="コピーしました">
+                        コピー
                     </button>
                 </div>
             </div>

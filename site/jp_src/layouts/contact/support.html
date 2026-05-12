@@ -7,27 +7,27 @@
       <div class="{{ $contentSpanClass }}">
         {{/* Feedback Type Selection - Prominent at top */}}
         <div class="mb-4">
-          <h3 class="fs-5 fw-semibold mb-3 text-center">What kind of feedback do you have?</h3>
+          <h3 class="fs-5 fw-semibold mb-3 text-center">お問い合わせ内容を選択してください</h3>
           <div class="row row-cols-1 row-cols-md-3 g-3" id="feedback-type-selector">
             <div class="col">
               <input type="radio" class="btn-check" name="feedbackType" id="type-question" value="question" checked>
               <label class="btn btn-outline-sg-indigo w-100 h-100 d-flex align-items-center justify-content-center p-3" for="type-question">
                 <i class="fa-light fa-circle-question fa-lg me-2 sg-orange-500"></i>
-                <span>Question / Problem</span>
+                <span>質問 / 問題</span>
               </label>
             </div>
             <div class="col">
               <input type="radio" class="btn-check" name="feedbackType" id="type-feature" value="feature">
               <label class="btn btn-outline-sg-indigo w-100 h-100 d-flex align-items-center justify-content-center p-3" for="type-feature">
                 <i class="fa-light fa-lightbulb fa-lg me-2 sg-orange-500"></i>
-                <span>Feature Request</span>
+                <span>機能リクエスト</span>
               </label>
             </div>
             <div class="col">
               <input type="radio" class="btn-check" name="feedbackType" id="type-confidential" value="confidential">
               <label class="btn btn-outline-sg-indigo w-100 h-100 d-flex align-items-center justify-content-center p-3" for="type-confidential">
                 <i class="fa-light fa-lock fa-lg me-2 sg-orange-500"></i>
-                <span>Confidential / License</span>
+                <span>機密事項 / ライセンス</span>
               </label>
             </div>
           </div>
@@ -36,7 +36,7 @@
         {{/* JavaScript Required Notice */}}
         <noscript>
           <div class="alert alert-warning mb-5">
-            JavaScript is required to use this support form. Please enable JavaScript and reload the page.
+            このサポートフォームを使用するには JavaScript が必要です。JavaScript を有効にしてページを再読み込みしてください。
           </div>
         </noscript>
 
@@ -49,19 +49,19 @@
                 <i class="fa-brands fa-reddit fa-2x sg-orange-500 me-3 mt-1"></i>
                 <div class="flex-grow-1">
                   <h5 class="alert-heading mb-2">
-                    <span class="badge bg-sg-orange-500 text-white me-2">Recommended</span>
-                    Ask on Reddit
+                    <span class="badge bg-sg-orange-500 text-white me-2">推奨</span>
+                    Reddit で質問する
                   </h5>
-                  <p class="mb-3">The fastest way to get help. Our team and community actively monitor the subreddit.</p>
+                  <p class="mb-3">最も早く助けを得られる方法です。SmartGit チームとコミュニティが subreddit を確認しています。</p>
                   <ul class="list-unstyled mb-3 small">
-                    <li><i class="fa-light fa-check sg-indigo-500 me-2"></i>Quick community response</li>
-                    <li><i class="fa-light fa-check sg-indigo-500 me-2"></i>Others may have solved similar issues</li>
-                    <li><i class="fa-light fa-check sg-indigo-500 me-2"></i>Your solution helps future users</li>
+                    <li><i class="fa-light fa-check sg-indigo-500 me-2"></i>コミュニティから素早く反応を得られます</li>
+                    <li><i class="fa-light fa-check sg-indigo-500 me-2"></i>似た問題を解決したユーザーがいる可能性があります</li>
+                    <li><i class="fa-light fa-check sg-indigo-500 me-2"></i>解決内容が今後のユーザーの助けになります</li>
                   </ul>
                   <button type="button" class="btn btn-sg-orange btn-lg w-100" id="btn-reddit">
-                    <i class="fa-brands fa-reddit me-2"></i>Post on Reddit
+                    <i class="fa-brands fa-reddit me-2"></i>Reddit に投稿
                   </button>
-                  <p class="text-center mt-2 mb-0 small sg-gray-400">Opens Reddit in a new tab</p>
+                  <p class="text-center mt-2 mb-0 small sg-gray-400">Reddit を新しいタブで開きます</p>
                 </div>
               </div>
             </div>
@@ -73,16 +73,16 @@
               <div class="d-flex align-items-start">
                 <i class="fa-light fa-lightbulb fa-2x sg-orange-500 me-3 mt-1"></i>
                 <div class="flex-grow-1">
-                  <h5 class="alert-heading mb-2">Request at UserEcho</h5>
-                  <p class="mb-3">Feature requests are tracked on our UserEcho portal where others can vote and discuss.</p>
+                  <h5 class="alert-heading mb-2">UserEcho でリクエストする</h5>
+                  <p class="mb-3">機能リクエストは UserEcho ポータルで管理され、他のユーザーが投票や議論を行えます。</p>
                   <div class="bg-sg-gray-500-rgb bg-opacity-10 p-2 rounded small mb-3">
                     <i class="fa-light fa-circle-info sg-orange-500 me-2"></i>
-                    Consider discussing your idea on <a href="https://www.reddit.com/r/SmartGit" target="_blank">Reddit</a> first to gather feedback before submitting.
+                    投稿前に、まず <a href="https://www.reddit.com/r/SmartGit" target="_blank">Reddit</a> でアイデアを相談し、反応を集めることも検討してください。
                   </div>
                   <button type="button" class="btn btn-sg-orange btn-lg w-100" id="btn-userecho">
-                    <i class="fa-light fa-lightbulb me-2"></i>Request at UserEcho
+                    <i class="fa-light fa-lightbulb me-2"></i>UserEcho でリクエスト
                   </button>
-                  <p class="text-center mt-2 mb-0 small sg-gray-400">Opens UserEcho in a new tab</p>
+                  <p class="text-center mt-2 mb-0 small sg-gray-400">UserEcho を新しいタブで開きます</p>
                 </div>
               </div>
             </div>
@@ -94,15 +94,15 @@
               <div class="d-flex align-items-start">
                 <i class="fa-light fa-lock fa-2x sg-orange-500 me-3 mt-1"></i>
                 <div class="flex-grow-1">
-                  <h5 class="alert-heading mb-2">Contact via Email</h5>
-                  <p class="mb-3">For confidential inquiries or license-related matters, please contact us directly via email.</p>
+                  <h5 class="alert-heading mb-2">メールで問い合わせる</h5>
+                  <p class="mb-3">機密性の高いお問い合わせやライセンス関連のご相談は、メールで直接お問い合わせください。</p>
                   <div class="bg-sg-gray-500-rgb bg-opacity-10 p-2 rounded small mb-4">
                     <i class="fa-light fa-clock sg-orange-500 me-2"></i>
-                    Response times may be longer compared to public channels.
+                    公開チャンネルに比べて返信に時間がかかる場合があります。
                   </div>
                   <div class="text-center py-3">
                     <p class="fs-5 mb-2" id="email-fallback-link">{{ partial "cloakemail" (dict "address" "smartgit@syntevo.com") }}</p>
-                    <p class="small text-muted mb-0">Click the email address above to open your email client with pre-filled information</p>
+                    <p class="small text-muted mb-0">上のメールアドレスをクリックすると、入力済みの内容でメールクライアントを開きます</p>
                   </div>
                 </div>
               </div>

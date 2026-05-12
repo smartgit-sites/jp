@@ -5,72 +5,72 @@ change_log: /changelog-25.1.txt
 general_note:
 downloads_by_platform:
   windows:
-    - name: Installer
+    - name: インストーラー
       file_name: /smartgit/smartgit-25_1_128-win-installer.zip
       file_size: 139693268
       checksum: 4b0b9b30f278c593079ed036abe2496b06a4fe10292afaa19e3dba5a9140851c
       note: Windows 10+ (64-bit)
-    - name: Installer without Git
+    - name: Git なしインストーラー
       file_name: /smartgit/smartgit-25_1_128-no-git-win-installer.zip
       file_size: 44189853
       checksum: cd0188729bf25f81bfd1353e9d191f1676825aadd7971b224ccafa7d2c3cb4d9
       special: true
-      note: Only for special Git or company setups. Windows 10+ (64-bit)
-      note_details: Use the version without bundled Git only if you already have a custom Git setup. Otherwise, we recommend using SmartGit with its bundled Git.
+      note: 特殊な Git 環境または企業向け構成用。Windows 10+ (64-bit)
+      note_details: バンドル版 Git を含まないバージョンは、独自の Git 環境をすでに用意している場合にのみ使用してください。それ以外の場合は、Git を同梱した SmartGit の使用をおすすめします。
     - name: Portable (7z)
       file_name: /smartgit/smartgit-25_1_128-win-portable.7z
       file_size: 134428699
       checksum: 3bf886278c1491ee1fbab452b8b38f4df0855f6380e84baaf393fa65d7466b3b
       note: Windows 10+ (64-bit)
-    - name: Portable without Git (7z)
+    - name: Git なしポータブル (7z)
       file_name: /smartgit/smartgit-25_1_128-no-git-win-portable.7z
       file_size: 42566087
       checksum: ea1aea9dd431cd236b0bd1858379a1c1eba2d2fa4df13257478e9679a50dce44
       special: true
-      note: Only for special Git or company setups. Windows 10+ (64-bit)
-      note_details: Use the version without bundled Git only if you already have a custom Git setup. Otherwise, we recommend using SmartGit with its bundled Git.
+      note: 特殊な Git 環境または企業向け構成用。Windows 10+ (64-bit)
+      note_details: バンドル版 Git を含まないバージョンは、独自の Git 環境をすでに用意している場合にのみ使用してください。それ以外の場合は、Git を同梱した SmartGit の使用をおすすめします。
   mac_os:
     - name: Apple Silicon
       file_name: /smartgit/smartgit-25_1_128-macos-arm64.dmg
       file_size: 91969254
       checksum: 1e52b7cf013e6edf6426bd926e77c85dc3bfecd7a0db54fb4da347e618959f87
       note: macOS 11 - 15
-    - name: Apple Silicon without Git
+    - name: Git なし Apple Silicon
       file_name: /smartgit/smartgit-25_1_128-no-git-macos-arm64.dmg
       file_size: 55524838
       checksum: e3010cccd437a85fec68128a615d7bed21da01d64a2a1202370cdf8e96f31f5a
       special: true
-      note: Only for special Git or company setups. macOS 11 - 15
-      note_details: Use the version without bundled Git only if you already have a custom Git setup. Otherwise, we recommend using SmartGit with its bundled Git.
+      note: 特殊な Git 環境または企業向け構成用。macOS 11 - 15
+      note_details: バンドル版 Git を含まないバージョンは、独自の Git 環境をすでに用意している場合にのみ使用してください。それ以外の場合は、Git を同梱した SmartGit の使用をおすすめします。
     - name: Intel x86_64
       file_name: /smartgit/smartgit-25_1_128-macos-x86_64.dmg
       file_size: 92850741
       checksum: ab5524e1613fc26fe12fbb01e3331530780fbe1a1219da1cb582cd48eddca1ee
       note: macOS 10.14 - 15 (Intel 64-bit)
-    - name: Intel x86_64 without Git
+    - name: Git なし Intel x86_64
       file_name: /smartgit/smartgit-25_1_128-no-git-macos-x86_64.dmg
       file_size: 56414329
       checksum: ce3d9b1fe2a2c279b1952c29f842ebcff3f1e112ec9cf05752867d8e47c1f6ad
       special: true
-      note: Only for special Git or company setups. macOS 10.14 - 15 (Intel 64-bit)
-      note_details: Use the version without bundled Git only if you already have a custom Git setup. Otherwise, we recommend using SmartGit with its bundled Git.
+      note: 特殊な Git 環境または企業向け構成用。macOS 10.14 - 15 (Intel 64-bit)
+      note_details: バンドル版 Git を含まないバージョンは、独自の Git 環境をすでに用意している場合にのみ使用してください。それ以外の場合は、Git を同梱した SmartGit の使用をおすすめします。
   linux:
     - name: Tar Archive
       file_name: /smartgit/smartgit-25_1_128-linux-amd64.tar.gz
       file_size: 125342346
       checksum: 5775ebd37716aaf65bb1274c10b38819434f39eebe2d3b4ea72d88bfe4312c19
       note: Linux (64-bit, GTK 3.24+)
-    - name: Tar Archive without Git
+    - name: Git なし Tar アーカイブ
       file_name: /smartgit/smartgit-25_1_128-no-git-linux-amd64.tar.gz
       file_size: 58972905
       checksum: 50e8e49cb8e2d732177d074b1e60896f601ce39fab3ffd696e686ee703edd683
       special: true
-      note: Only for special Git or company setups. Linux (64-bit, GTK 3.24+)
-      note_details: Use the version without bundled Git only if you already have a custom Git setup. Otherwise, we recommend using SmartGit with its bundled Git.
+      note: 特殊な Git 環境または企業向け構成用。Linux (64-bit, GTK 3.24+)
+      note_details: バンドル版 Git を含まないバージョンは、独自の Git 環境をすでに用意している場合にのみ使用してください。それ以外の場合は、Git を同梱した SmartGit の使用をおすすめします。
     - name: Debian Bundle
       file_name: /smartgit/smartgit-25_1_128-linux_amd64.deb
       file_size: 58757786
       checksum: d78037a405a98d68305b338effc7763c7aa3e721dc70e7515935b7909815e103
       special: true
-      note: Not recommended, Linux (64-bit, GTK 3.24+)
-      note_details: We recommend using the Tar Archive bundle, as it allows for easier updates.
+      note: 非推奨、Linux (64-bit, GTK 3.24+)
+      note_details: 更新が容易なため、Tar アーカイブ版の使用をおすすめします。

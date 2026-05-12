@@ -5,13 +5,13 @@ headless: true
 icon: "fa-light fa-hexagon-nodes"
 
 integrations:
-  - title: "Github"
+  - title: "GitHub"
     icon: "fa-brands fa-github fa-3x"
-  - title: "Gitlab"
+  - title: "GitLab"
     icon: "fa-brands fa-gitlab fa-3x"
-  - title: "bitbucket"
+  - title: "Bitbucket"
     icon: "fa-brands fa-bitbucket fa-3x"
-  - title: "jira"
+  - title: "Jira"
     icon: "fa-brands fa-jira fa-3x"
 docsync:
   source:

@@ -24,7 +24,7 @@
                 {{ if isset . "link" }}
                 <div class="mt-3">
                     <a href="{{ .link }}" class="btn btn-sm btn-outline-sg-indigo w-100"{{if isset . "target"}} target="{{ .target }}"{{ end }}>
-                        {{ if isset . "linkText" }}{{ .linkText }}{{ else }}Learn More{{ end }} <i class="fa-light fa-arrow-right ms-1"></i>
+                        {{ if isset . "linkText" }}{{ .linkText }}{{ else }}詳しく見る{{ end }} <i class="fa-light fa-arrow-right ms-1"></i>
                     </a>
                 </div>
                 {{ end }}

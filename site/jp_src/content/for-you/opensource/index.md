@@ -105,7 +105,7 @@ docsync:
 <div class="ps-lg-4">
 <i class="fa-light fa-list-ol fa-2x sg-indigo-500 mb-3"></i>
 <h3 class="sg-indigo-500 mb-3">完全なプレビューを備えたインタラクティブなリベース</h3>
-<p class="mb-3">コミットを視覚的に並べ替え、潰し、編集し、実行前に何が変更されるかを正確に確認します。</p>
+<p class="mb-3">コミットを視覚的に並べ替え、スカッシュ、編集し、実行前に何が変更されるかを正確に確認します。</p>
 <ul class="text-muted mb-4" style="list-style: none; padding-left: 0;">
 <li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>コミットを視覚的に並べ替え、圧縮し、編集する</li>
 <li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>実行前に何が変わるかを正確に確認する</li>

@@ -3,7 +3,7 @@ title: "SmartGit の機能 -- 開発者とチームのためのビジュアル G
 headerH1: "SmartGit の機能"
 headerH2: "開発者とチームのための強力なツール"
 headerMessage: "**コミットの視覚化**から**ブランチ管理**まで、SmartGit がどのように Git ワークフローを簡単に強化するかをご覧ください。"
-sideButtonText: "What's New"
+sideButtonText: "新機能"
 sideButtonLink: "../whats-new"
 description: "SmartGit の最も強力な Git 機能を探索してください: 視覚的なコミット履歴、クリーンな分岐、直感的な競合解決、およびもっと。開発者とチーム向けに構築されています。"
 ogTitle: "SmartGit の機能 -- 開発者とチームのためのビジュアル Git ツール"

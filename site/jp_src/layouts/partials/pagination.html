@@ -4,7 +4,7 @@
     {{ if .Paginator.HasPrev }}
         <li class="page-item">
             <a class="page-link border-0" href="{{ .Paginator.Prev.URL }}">
-                <i class="fa-light fa-chevron-left"></i> Previous
+                <i class="fa-light fa-chevron-left"></i> 前へ
             </a>
         </li>
     {{ end }}
@@ -18,7 +18,7 @@
     {{ if .Paginator.HasNext }}
         <li class="page-item">
     <a class="page-link border-0" href="{{ .Paginator.Next.URL }}">
-        Next <i class="fa-light fa-chevron-right"></i>
+        次へ <i class="fa-light fa-chevron-right"></i>
     </a>
         </li>
     {{ end }}

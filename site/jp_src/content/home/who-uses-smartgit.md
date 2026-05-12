@@ -3,16 +3,16 @@ title: "成功事例: 開発者とチームが **SmartGit** を選ぶ理由"
 headless: true
 
 list:
-  - title: "Developer-Friendly Experience"
-    desc: "高度な Git ワークフロー、カスタマイズ可能なショートカット、直感的なインターフェイス要素により、SmartGit は個人の開発者にもパワー ユーザーにも同様に理想的です。"
+  - title: "開発者にやさしい操作感"
+    desc: "高度な Git ワークフロー、カスタマイズ可能なショートカット、直感的なインターフェイスにより、SmartGit は個人開発者にもパワーユーザーにも適しています。"
     linkText: "続きを読む"
     linkUrl: "#"
-  - title: "Boost Team Productivity"
-    desc: "SmartGit は、統合された競合解決、プル リクエストの処理、ブランチ管理をすべて 1 つの Git GUI で行うことで、チームのコラボレーションをサポートします。"
+  - title: "チームの生産性を高める"
+    desc: "SmartGit は、競合解決、プルリクエスト対応、ブランチ管理をひとつの Git GUI にまとめ、チームのコラボレーションを支えます。"
     linkText: "続きを読む"
     linkUrl: "#"
-  - title: "Enterprise-Grade Features"
-    desc: "カスタム構成から自動化、安全な導入まで -- SmartGit は、エンタープライズ規模の Git 環境に必要な柔軟性と制御を提供します。"
+  - title: "エンタープライズ向け機能"
+    desc: "カスタム設定、自動化、安全な展開まで、SmartGit はエンタープライズ規模の Git 環境に必要な柔軟性と制御を提供します。"
     linkText: "続きを読む"
     linkUrl: "#"
 docsync:

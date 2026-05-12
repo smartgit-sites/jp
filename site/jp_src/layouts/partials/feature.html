@@ -3,7 +3,7 @@
 <main id="feature-overview">
     <div class="container">
         <div class="row">
-            {{ $params := merge (dict "sideButtonText" .sideButtonText "sideButtonLink" .sideButtonLink "overviewTitle" "Overview") $page.Params }}
+            {{ $params := merge (dict "sideButtonText" .sideButtonText "sideButtonLink" .sideButtonLink "overviewTitle" "概要") $page.Params }}
             {{ partial "submenu-column" (dict "Page" $page "Params" $params) }}
             {{ partial "feature-column.html" $page }}
         </div>

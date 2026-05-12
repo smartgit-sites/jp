@@ -2,17 +2,17 @@
 title: "**3 つの簡単なステップ**で SmartGit を使い始めましょう"
 headless: true
 
-summary: "それでおしまい。 SmartGit を使用して、強力で直感的な Git エクスペリエンスをお楽しみください。"
+summary: "これだけで準備完了です。SmartGit で、強力で直感的な Git 体験を始められます。"
 
 steps:
-  - title: "Download & Install"
+  - title: "ダウンロードしてインストール"
     desc: "数回クリックするだけで、Windows、macOS、または Linux 用の SmartGit を入手できます。"
     icon: "fa-light fa-circle-arrow-down fa-4x"
-  - title: "Connect Your Repository"
+  - title: "リポジトリに接続"
     desc: "ローカル Git リポジトリを開くか、GitHub、GitLab、Bitbucket、または Azure DevOps からクローンを作成します。"
     icon: "fa-light fa-chart-network fa-4x"
-  - title: "Start Coding & Committing"
-    desc: "変更を加え、自信を持ってコミットし、楽に作業を進めてください。"
+  - title: "コーディングとコミットを開始"
+    desc: "変更を加え、内容を確認しながら自信を持ってコミットし、作業を前に進められます。"
     icon: "fa-light fa-diagram-project fa-rotate-90 fa-4x"
 docsync:
   source:

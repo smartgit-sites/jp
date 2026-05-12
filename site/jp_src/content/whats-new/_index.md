@@ -8,7 +8,7 @@ category: ["whats-new"]
 headerH1: "SmartGit の新機能"
 headerH2: "すべてのアップデートと機能強化を知る"
 headerMessage: "SmartGit の**リリース**を調べ、主要な**機能**を追跡し、バージョン間のすべての**改善**を発見します。"
-sideButtonText: "All Features"
+sideButtonText: "すべての機能"
 sideButtonLink: "../features"
 
 linkText: "詳細を見る"

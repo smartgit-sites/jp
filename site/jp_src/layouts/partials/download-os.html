@@ -7,7 +7,7 @@
 {{ $reorderedOS := slice }}
 
 {{ if eq $release.is_supported false }}
-<p class="p-3 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-3"><strong>This version is not supported anymore.</strong></p>
+<p class="p-3 text-warning-emphasis bg-warning-subtle border border-warning-subtle rounded-3"><strong>このバージョンは現在サポート対象外です。</strong></p>
 {{ end }}
 
 {{ $len := len $preferredOS }}
@@ -31,13 +31,13 @@
           {{ $special := where $pageForOS "special" "eq" true }}
           <ul class="list-group list-group-flush">
             {{ if (gt (len $regular) 0) }}
-            <li class="list-group-item download-section-label text-center fw-normal small py-2">Recommended</li>
+            <li class="list-group-item download-section-label text-center fw-normal small py-2">推奨</li>
             {{ end }}
             {{ range $regular }}
               {{ partial "download/artifact.html" (dict "item" . "downloadRef" $downloadRef "osIcon" $osIcon "translations" $translations) }}
             {{ end }}
             {{ if and (gt (len $special) 0) (gt (len $regular) 0) }}
-            <li class="list-group-item download-section-label text-center fw-normal small py-2">Special Bundles</li>
+            <li class="list-group-item download-section-label text-center fw-normal small py-2">特殊なバンドル</li>
             {{ end }}
             {{ range $special }}
               {{ partial "download/artifact.html" (dict "item" . "downloadRef" $downloadRef "osIcon" $osIcon "translations" $translations) }}
@@ -55,33 +55,33 @@
 {{ if .show_install_instructions }}
 {{ $instructions := slice
     (dict "os" "linux" "title" "Tar Archive" "steps" (slice
-        "if you have an older SmartGit version installed, exit SmartGit (use Repositories | Exit)."
-        "unpack the downloaded file into a directory of your choice (don't unpack over an existing installation!): ``tar xzf <smartgit*.tar.gz>``"
-        "start SmartGit: invoke ``bin/smartgit.sh``"
-        "create SmartGit menu item: invoke ``bin/add-menuitem.sh``"
-        "remove SmartGit menu item: invoke ``bin/remove-menuitem.sh``"))
+        "古い SmartGit が起動している場合は終了します（Repositories | Exit）。"
+        "ダウンロードしたファイルを任意のディレクトリに展開します（既存のインストール先には上書き展開しないでください）：``tar xzf <smartgit*.tar.gz>``"
+        "SmartGit を起動します：``bin/smartgit.sh`` を実行"
+        "SmartGit のメニュー項目を作成します：``bin/add-menuitem.sh`` を実行"
+        "SmartGit のメニュー項目を削除します：``bin/remove-menuitem.sh`` を実行"))
     (dict "os" "linux" "title" "Debian Bundle" "steps" (slice
-        "if you have an older SmartGit version installed, exit SmartGit (use Repositories | Exit)."
-        "install SmartGit: ``sudo dpkg -i <smartgit*.deb>``"
-        "if some dependencies are unmet, invoke ``sudo apt --fix-broken install``"))
-    (dict "os" "mac_os" "title" "Application" "steps" (slice
-        "if you have an older SmartGit version installed, exit SmartGit (Cmd+Q)."
-        "double-click the downloaded dmg file"
-        "copy the contained application directory structure to a directory of your choice (typically/Applications)"
-        "if you prefer, drag & drop the application to the dock to create an icon"))
-    (dict "os" "windows" "title" "Installer" "steps" (slice
-        "if you have an older SmartGit version installed, exit SmartGit (use Repositories | Exit)."
-        "unpack the downloaded zip file"
-        "launch the installer and follow the instructions"))
-    (dict "os" "windows" "title" "Portable" "steps" (slice
-        "if you have an older SmartGit version installed, exit SmartGit (use Repositories | Exit)."
-        "unpack the downloaded 7z file into an arbitrary directory of your choice (don't unpack over an existing installation!)"
-        "start SmartGit: invoke ``bin\\smartgit.exe``"))
+        "古い SmartGit が起動している場合は終了します（Repositories | Exit）。"
+        "SmartGit をインストールします：``sudo dpkg -i <smartgit*.deb>``"
+        "依存関係が不足している場合は、``sudo apt --fix-broken install`` を実行します"))
+    (dict "os" "mac_os" "title" "アプリケーション" "steps" (slice
+        "古い SmartGit が起動している場合は終了します（Cmd+Q）。"
+        "ダウンロードした dmg ファイルをダブルクリックします"
+        "含まれているアプリケーションディレクトリ構造を任意の場所にコピーします（通常は /Applications）"
+        "必要に応じて、アプリケーションを Dock にドラッグ＆ドロップしてアイコンを作成します"))
+    (dict "os" "windows" "title" "インストーラー" "steps" (slice
+        "古い SmartGit が起動している場合は終了します（Repositories | Exit）。"
+        "ダウンロードした zip ファイルを展開します"
+        "インストーラーを起動し、画面の指示に従います"))
+    (dict "os" "windows" "title" "ポータブル" "steps" (slice
+        "古い SmartGit が起動している場合は終了します（Repositories | Exit）。"
+        "ダウンロードした 7z ファイルを任意のディレクトリに展開します（既存のインストール先には上書き展開しないでください）"
+        "SmartGit を起動します：``bin\\smartgit.exe`` を実行"))
 }}
 
 <div class="row">
     <div class="col-12 mt-5">
-        <h2 class="fw-bold sg-indigo-500 text-center">Installation instructions</h2>
+        <h2 class="fw-bold sg-indigo-500 text-center">インストール手順</h2>
     </div>
 </div>
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 align-items-stretch">
