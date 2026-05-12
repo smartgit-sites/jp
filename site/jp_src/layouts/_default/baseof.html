@@ -2,7 +2,7 @@
 <html lang="en">
 {{ partial "head.html" . }}
 {{ $class := cond (eq .RelPermalink "/") "home" ( trim (replaceRE `/` " " .RelPermalink) " ") }}
-<body class="{{ $class }} pt-5">
+<body class="{{ $class }}{{ with .Params.bodyClass }} {{ . }}{{ end }} pt-5">
 {{ partial "navbar.html" . }}
 {{ partial "noScript" . }}
 {{ block "main" . }}{{ end }}

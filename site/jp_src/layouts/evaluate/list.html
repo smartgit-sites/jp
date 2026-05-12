@@ -1,10 +1,11 @@
 {{ define "main" }}
-{{ partial "header.html" (merge (dict "Page" . "message" .Params.description "headerH2" "Free 30 days evaluation") .Params) }}
+{{ $contentSpanClass := partial "content-span-class.html" (dict "Page" . "Default" "center-span") }}
+{{ partial "header.html" (merge (dict "Page" . "contentSpanDefault" "center-span" "message" .Params.description "headerH2" "Free 30 days evaluation") .Params) }}
 <main>
   <noscript>
-    <section class="container pt-0 pb-0 mt-n5">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8">
+    <section class="container pt-0 pb-0 teaser-follow-up">
+      <div class="row">
+        <div class="{{ $contentSpanClass }}">
           <div class="alert alert-warning">
             JavaScript is required to request the evaluation license on this page. Please enable JavaScript and reload.
             Alternatively, you can download SmartGit and follow the Setup wizard — it will request your evaluation license automatically.
@@ -13,9 +14,9 @@
       </div>
     </section>
   </noscript>
-  <section class="container pt-0 pb-4 mt-n5">
-    <div class="row justify-content-center">
-      <div class="col-lg-10 col-xl-8">
+  <section class="container pt-0 pb-4 teaser-follow-up">
+    <div class="row">
+      <div class="{{ $contentSpanClass }}">
 
         <div id="eval-alert" class="alert d-none" role="alert"></div>
 

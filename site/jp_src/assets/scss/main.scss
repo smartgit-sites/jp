@@ -28,10 +28,17 @@
 @import "template/smartgit-success-stories.scss";
 @import "template/smartgit-form.scss";
 @import "template/smartgit-subnav.scss";
+@import "template/smartgit-layout.scss";
+@import "template/smartgit-header-hero.scss";
 
 body{
   font-family: "Instrument Sans", var(--bs-font-sans-serif);
   color: $sg-text-primary;
+  background-color: $white;
+}
+
+section[id] {
+  scroll-margin-top: 80px;
 }
 
 a, a *{
@@ -68,44 +75,9 @@ img:not([src*=".svg"]){
   height:auto;
 }
 
-body.home header .container{
-  background-image: url(./static/images/sg-construct-header-home.svg);
-  background-repeat: no-repeat;
-  background-position: bottom right;
+body.home .sg-home-intro-shell {
+  margin-top: 0;
 }
-
-.header-construct {
-  position: absolute;
-  left: 3rem;
-  right: 0;
-  z-index: 1;
-  overflow: hidden;
-  max-height: 107px;
-  bottom: -16px;
-  height: 10vw;
-  min-height: 41px;
-}
-.header-construct .icon{
-  width:100%;
-  height:100%;
-}
-
-/* CSS-based SVG background for consistent display across all modes */
-.sg-construct-header {
-  background-image: url('/images/sg-construct-header.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-@include media-breakpoint-only(sm) { .header-construct {bottom:-16px} }
-@include media-breakpoint-only(md) { .header-construct {bottom:-22px} }
-@include media-breakpoint-only(lg) { .header-construct {bottom:-25px} }
-@include media-breakpoint-only(xl) { .header-construct {bottom:-23px} }
-@include media-breakpoint-only(xxl) { .header-construct {max-height: 105px;} }
 
 table{
   @extend .table;
@@ -189,6 +161,11 @@ body.terms-of-sale{
 [data-module="license-dropzone"].is-processing .dropzone__message--processing{
   display: block;
 }
+
+.purchase-form-notification-shell:empty {
+  display: none;
+}
+
 .fullscreen-dropzone {
   position: fixed;
   top: 0;
@@ -220,6 +197,7 @@ body.terms-of-sale{
 
 [data-price-tag="total"] > span:nth-child(2),
 [data-price-tag="upgrade"] > span:nth-child(2),
+[data-price-tag="coupon-code"] > span:nth-child(2),
 [data-price-tag="smart_synchronize"] > span:nth-child(2),
 [data-price-tag="distributed_reviews_addon"] > span:nth-child(2){
   padding-left: 5px;
@@ -267,7 +245,8 @@ body.terms-of-sale{
 }
 
 [data-price-tag="total"] > span:nth-child(2),
-[data-price-tag="upgrade"] > span:nth-child(2){
+[data-price-tag="upgrade"] > span:nth-child(2),
+[data-price-tag="coupon-code"] > span:nth-child(2){
   padding-left: 5px;
 }
 
@@ -305,44 +284,12 @@ body.terms-of-sale{
   color: $sg-text-primary;
 }
 
-// =============================================================================
-// TEASER COMPONENT STYLES
-// =============================================================================
-
-.teaser-container {
-  border: 1px solid $sg-subtle-border;
-  border-radius: $border-radius;
-  overflow: hidden;
+.teaser-follow-up {
+  margin-top: 0;
 }
 
-.teaser-upper {
-  background-color: $sg-surface-lightest-gray;
-  color: $sg-text-link;
-  padding: map-get($spacers, 5);
-}
-
-.teaser-upper h1,
-.teaser-upper h2,
-.teaser-upper h3,
-.teaser-upper h4,
-.teaser-upper h5,
-.teaser-upper h6 {
-  color: $sg-text-link;
-}
-
-.teaser-lower {
-  background-color: $sg-surface-light;
-  color: $sg-text-primary;
-  padding: map-get($spacers, 3) map-get($spacers, 5);
-}
-
-.teaser-lower h1,
-.teaser-lower h2,
-.teaser-lower h3,
-.teaser-lower h4,
-.teaser-lower h5,
-.teaser-lower h6 {
-  color: $sg-text-primary;
+.teaser-follow-up-soft {
+  margin-top: 0;
 }
 
 // =============================================================================
@@ -362,14 +309,6 @@ body.terms-of-sale{
   > :last-child {
     margin-bottom: 0;
   }
-}
-
-// =============================================================================
-// FEATURE IMAGE BACKGROUND
-// =============================================================================
-
-.bg-feature-image {
-  background-color: $sg-surface-lightest-gray;
 }
 
 // =============================================================================
@@ -414,4 +353,203 @@ body.terms-of-sale{
 
 .border-footer-separator {
   border-color: $sg-border-footer-separator;
+}
+
+#dnld-for-os {
+  .download-section-label {
+    background-color: $sg-surface-neutral;
+    border-color: $sg-gray-200;
+    border-bottom: 1px solid $sg-gray-200;
+    color: $sg-text-on-light-gray;
+  }
+
+  .download-os-frame {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: 0 0 0 1px $sg-gray-200;
+  }
+
+  .download-os-frame > .card {
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    height: 100%;
+  }
+
+  .download-os-frame > .card > .list-group,
+  .download-os-frame > .card > .card-body > .list-group {
+    border: 0;
+  }
+
+  .download-os-frame > .card > .list-group > .list-group-item,
+  .download-os-frame > .card > .card-body > .list-group > .list-group-item {
+    border-color: $sg-gray-200;
+  }
+
+  .download-os-frame > .card > .list-group > .list-group-item:first-child,
+  .download-os-frame > .card > .list-group > .list-group-item:last-child,
+  .download-os-frame > .card > .card-body > .list-group > .list-group-item:first-child,
+  .download-os-frame > .card > .card-body > .list-group > .list-group-item:last-child {
+    border-radius: 0;
+  }
+
+  .download-os-frame.download-highlight {
+    box-shadow: 0 0 0 5px $sg-indigo-500;
+  }
+
+  .download-artifact-item {
+    display: flex;
+    flex-direction: column;
+    padding: map-get($spacers, 4) map-get($spacers, 4) 0;
+  }
+
+  .download-artifact-copy {
+    min-width: 0;
+  }
+
+  .download-artifact-item h4 {
+    margin-bottom: map-get($spacers, 2);
+  }
+
+  .download-artifact-body {
+    flex: 1 1 auto;
+    padding-bottom: map-get($spacers, 3);
+  }
+
+  .download-artifact-details {
+    background-color: transparent;
+    margin-left: calc(-1 * #{map-get($spacers, 4)});
+    margin-top: auto;
+    margin-right: calc(-1 * #{map-get($spacers, 4)});
+    padding: 0 0 0.5rem;
+  }
+
+  .download-artifact-details[open] {
+    background-color: $sg-surface-neutral;
+  }
+
+  .download-artifact-details-toggle {
+    color: $sg-gray-300;
+    cursor: pointer;
+    display: flex;
+    font-size: 0.7rem;
+    justify-content: flex-end;
+    line-height: 1.2;
+    list-style: none;
+    padding: 0 map-get($spacers, 4);
+    text-align: right;
+    width: 100%;
+  }
+
+  .download-artifact-details-toggle::-webkit-details-marker {
+    display: none;
+  }
+
+  .download-artifact-details-toggle::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23797979' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m2 5 6 6 6-6'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 0.9rem;
+    content: "";
+    display: inline-block;
+    height: 0.9rem;
+    margin-left: 0.2rem;
+    margin-top: 0.02rem;
+    transition: transform 0.2s ease-in-out;
+    width: 0.9rem;
+  }
+
+  .download-artifact-details-toggle:hover,
+  .download-artifact-details-toggle:focus-visible {
+    color: $sg-text-link;
+  }
+
+  .download-artifact-details-toggle:hover::after,
+  .download-artifact-details-toggle:focus-visible::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%2360247e' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m2 5 6 6 6-6'/%3E%3C/svg%3E");
+  }
+
+  .download-artifact-details[open] .download-artifact-details-toggle {
+    margin-bottom: 0.35rem;
+    padding-top: 0.35rem;
+  }
+
+  .download-artifact-details[open] .download-artifact-details-toggle::after {
+    transform: rotate(-180deg);
+  }
+
+  .download-artifact-details-panel {
+    color: $sg-text-on-light-gray;
+    padding: 0 0 map-get($spacers, 3);
+  }
+
+  .download-artifact-detail-row {
+    color: $sg-text-on-light-gray;
+    column-gap: 0.65rem;
+    display: grid;
+    font-size: 0.75rem;
+    grid-template-columns: 4.5rem minmax(0, 1fr);
+    line-height: 1.35;
+    padding: 0 map-get($spacers, 4);
+  }
+
+  .download-artifact-detail-row + .download-artifact-detail-row {
+    margin-top: 0.2rem;
+  }
+
+  .download-artifact-detail-label {
+    font-weight: 600;
+    margin-right: 0.35rem;
+  }
+
+  .download-artifact-detail-value {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    min-width: 0;
+    text-align: left;
+  }
+
+  .download-artifact-detail-code {
+    color: $sg-text-on-light-gray;
+    display: block;
+    font-family: var(--bs-font-monospace);
+    font-size: 0.72rem;
+    margin: 0;
+    padding: 0;
+    white-space: normal;
+    word-break: break-all;
+  }
+
+  .download-artifact-copy-link {
+    color: $sg-text-on-light-gray;
+    font-size: 0.72rem;
+    line-height: 1.2;
+    text-decoration-line: underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.15rem;
+    width: fit-content;
+  }
+
+  .download-artifact-copy-link:hover,
+  .download-artifact-copy-link:focus-visible {
+    color: $sg-text-link;
+  }
+
+  .download-link-badge {
+    background-color: $sg-orange-500;
+    align-items: center;
+    border-radius: 999px;
+    display: inline-flex;
+    height: 2.5rem;
+    justify-content: center;
+    text-decoration: none;
+    width: 2.5rem;
+  }
+
+  .download-link-badge-icon {
+    color: $white;
+  }
 }

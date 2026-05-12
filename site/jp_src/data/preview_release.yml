@@ -1,0 +1,78 @@
+major_version: 26.1
+version: 26.1.029
+released_on: 2026-05-01
+change_log: /changelog-26.1.txt
+general_note:
+downloads_by_platform:
+  windows:
+    - name: Installer
+      file_name: /smartgit/smartgit-26_1_029-rc-win-installer.zip
+      file_size: 131645691
+      checksum: adb0c80cb5b015981a44f8a668ab66db659770f46de0fb9baf2a618126f1b116
+      special: true
+      note: Not recommended, Windows 10+ (64-bit)
+      note_details: We recommend using the Portable bundle, which can be safely used alongside an existing release installation of SmartGit.
+    - name: Installer without Git
+      file_name: /smartgit/smartgit-26_1_029-rc-no-git-win-installer.zip
+      file_size: 42501176
+      checksum: e498ea2eaa2e6fd96b1f3c371f08140ebdedbd9f179b09499e3dd122689396de
+      special: true
+      note: Not recommended. Windows 10+ (64-bit)
+      note_details: We recommend using the Portable bundle, which can be safely used alongside an existing release installation of SmartGit.
+    - name: Portable (7z)
+      file_name: /smartgit/smartgit-26_1_029-rc-win-portable.7z
+      file_size: 126209018
+      checksum: 821491ac06054cd82af77aedbfd3244b195376dcdfb1c4edadd10e59e817989e
+      note: Windows 10+ (64-bit)
+    - name: Portable without Git (7z)
+      file_name: /smartgit/smartgit-26_1_029-rc-no-git-win-portable.7z
+      file_size: 40869610
+      checksum: b789e4a52ce56556cdc52a42ab6fd54e48ecfb710f524a489e55f124443d0521
+      special: true
+      note: Only for special Git or company setups. Windows 10+ (64-bit)
+      note_details: Use the version without bundled Git only if you already have a custom Git setup. Otherwise, we recommend using SmartGit with its bundled Git.
+  mac_os:
+    - name: Apple Silicon
+      file_name: /smartgit/smartgit-26_1_029-rc-macos-arm64.dmg
+      file_size: 90663818
+      checksum: 66cf86c3d578a731c12159b422cce031ffaa45414708ecda5440df88924a8eb2
+      note: macOS 11 - 15
+    - name: Apple Silicon without Git
+      file_name: /smartgit/smartgit-26_1_029-rc-no-git-macos-arm64.dmg
+      file_size: 53940374
+      checksum: 921de75813c1cff40260c1cbb95ed0ad4680732b83e79f0c062658221588f25b
+      special: true
+      note: Only for special Git or company setups. macOS 11 - 15
+      note_details: Use the version without bundled Git only if you already have a custom Git setup. Otherwise, we recommend using SmartGit with its bundled Git.
+    - name: Intel x86_64
+      file_name: /smartgit/smartgit-26_1_029-rc-macos-x86_64.dmg
+      file_size: 91557770
+      checksum: 37e698f13adcc7de40e9f864033578ce8befde385fedd975d36b6144e22cfc60
+      note: macOS 10.14 - 15 (Intel 64-bit)
+    - name: Intel x86_64 without Git
+      file_name: /smartgit/smartgit-26_1_029-rc-no-git-macos-x86_64.dmg
+      file_size: 54767327
+      checksum: 92e06844d60b7e9b3aeeefede746050d84d3fa5fc1859fc83deb9541b7c1eaf5
+      special: true
+      note: Only for special Git or company setups. macOS 10.14 - 15 (Intel 64-bit)
+      note_details: Use the version without bundled Git only if you already have a custom Git setup. Otherwise, we recommend using SmartGit with its bundled Git.
+  linux:
+    - name: Tar Archive
+      file_name: /smartgit/smartgit-26_1_029-rc-linux-amd64.tar.gz
+      file_size: 124194109
+      checksum: 580cde2af220bc821973609358411d02f496927ed216dbe604b93ef74008e6b8
+      note: Linux (64-bit, GTK 3.24+)
+    - name: Tar Archive without Git
+      file_name: /smartgit/smartgit-26_1_029-rc-no-git-linux-amd64.tar.gz
+      file_size: 57432455
+      checksum: 027a50b07b45a105703196a7f2638b634548d3969a9aa6c5c37394644d6739a8
+      special: true
+      note: Only for special Git or company setups. Linux (64-bit, GTK 3.24+)
+      note_details: Use the version without bundled Git only if you already have a custom Git setup. Otherwise, we recommend using SmartGit with its bundled Git.
+    - name: Debian Bundle
+      file_name: /smartgit/smartgit-26_1_029-rc-linux_amd64.deb
+      file_size: 57186868
+      checksum: 9913ba185e7fe66c63d6c2e379cd6cd9c70a543e94da36530438e26e67b689f9
+      special: true
+      note: Not recommended, Linux (64-bit, GTK 3.24+)
+      note_details: We recommend using the Tar Archive bundle, which can be safely used alongside an existing release installation of SmartGit.

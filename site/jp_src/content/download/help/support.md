@@ -1,19 +1,20 @@
 ---
-title: 'サポートへのお問い合わせ：'
-icon: fa-light fa-envelopes-bulk
+title: "Contact Support:"
+
+icon: "fa-light fa-envelopes-bulk"
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: download/help/support.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: 78ce95a1adbe9df6ed2ed13e3c6a53f26921b77d
     modified_committed_at: 2025-08-14T14:50:56Z
     blob: 50be4772a43fd9e9a4f4d1bd90ecdd79057749f8
-    sha256: 24f750ce5d97cc2492444d082a33586f1c4146f1fd61a9409461746c618feb60
-    fetched_at: 2026-01-04T18:02:32Z
+    sha256: 811e84bc76400d09a146a09612b9535dd41e6d111c98932f65d6fc774a082d07
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 サポートへのお問い合わせは {{< cloakemail address="support@syntevo.com" >}} まで。

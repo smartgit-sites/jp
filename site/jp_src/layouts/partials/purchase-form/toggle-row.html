@@ -1,0 +1,12 @@
+{{ $name := .Name }}
+{{ $idPrefix := .IdPrefix }}
+{{ $checkedValue := .CheckedValue }}
+<div class="d-flex align-items-center">
+    <span class="sg-gray-500">{{ .Label }}</span>
+    <div class="form-check form-switch ms-auto p-1">
+        {{ range .Options }}
+            <input type="radio" class="btn-check" name="{{ $name }}" value="{{ .Value }}" id="{{ $idPrefix }}_{{ .Value }}" data-update-on="change" autocomplete="off"{{ if eq .Value $checkedValue }} checked{{ end }}>
+            <label class="btn btn-sm" for="{{ $idPrefix }}_{{ .Value }}">{{ .Label }}</label>
+        {{ end }}
+    </div>
+</div>

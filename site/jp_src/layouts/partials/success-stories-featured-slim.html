@@ -1,16 +1,26 @@
-{{ $resource := .Site.GetPage "company/success-stories/featured.md" }}
 {{ $files := .Site.Data.success_stories_featured.list }}
-{{ with $resource }}
-<h2 class="fs-6 fw-bold sg-indigo-500 mb-4">{{ .Title }}</h2>
-{{ end }}
-<ul class="list-group list-group-flush fw-bold">
-    {{ range  $key, $value := $files }}
-        {{ $page := site.GetPage .filename }}
-        {{ if $page }}
-            {{ $params := $page.Params }}
+{{ $colors := .Site.Data.success_stories_featured.listColors }}
 
-        <li class="list-group-item border-sg-indigo-500 sg-gray-500 hstack align-items-stretch"><div>{{ $params.title }}</div><div class="ps-4 me-n3 ms-auto"><a href="{{ $page.RelPermalink }}" class="btn bg-sg-indigo-200-rgb bg-opacity-25 stretched-link"><span class="fa-light fa-arrow-up-right-from-square sg-indigo-500 mt-n1"></span></a></div></li>
-
-        {{ end }}
+<h5 class="sg-indigo-500 fw-semibold mb-4">What Developers Say</h5>
+<div class="d-flex flex-column gap-3">
+{{ range $key, $value := $files }}
+    {{ $page := site.GetPage .filename }}
+    {{ if $page }}
+        {{ $params := $page.Params }}
+        {{ $color := index $colors $key }}
+        <div class="p-3 rounded-3 border-start border-3 border-sg-{{ $color.color }}-500 bg-sg-{{ $color.color }}-500-rgb bg-opacity-5 position-relative">
+            <i class="fa-light fa-quote-left sg-orange-500 mb-2"></i>
+            <p class="text-muted mb-2" style="font-size: 0.9rem;">{{ $params.summary }}</p>
+            <div class="d-flex align-items-center justify-content-between">
+                <div>
+                    <span class="fw-semibold sg-indigo-500" style="font-size: 0.85rem;">{{ $params.testimonial_user }}</span>
+                    <span class="text-muted" style="font-size: 0.85rem;"> · {{ $params.testimonial_company }}</span>
+                </div>
+                <a href="{{ $page.RelPermalink }}" class="btn btn-sm bg-sg-indigo-200-rgb bg-opacity-25 stretched-link" style="font-size: 0.8rem;">
+                    <i class="fa-light fa-arrow-up-right-from-square sg-indigo-500"></i>
+                </a>
+            </div>
+        </div>
     {{ end }}
-</ul>
+{{ end }}
+</div>

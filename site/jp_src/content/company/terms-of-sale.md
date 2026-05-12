@@ -1,19 +1,19 @@
 ---
-title: 販売条件
+title: "Terms of sale"
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/terms-of-sale.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: eec4cb32f64335f94dfc0973081be6a446fbff66
-    modified_committed_at: 2025-06-23T16:42:02Z
-    blob: 9c11ff2a36b156fd37c11e1c8b8cb57211692f24
-    sha256: a2dac37405aa400c8a7a84ff55165dfae293c7c2cdf1762b56a8b737958c7f84
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: c7b19ae4dff7920e50ae357c875692e538f248b8
+    modified_committed_at: 2026-03-10T09:19:58Z
+    blob: 32bd2e5d36f25af3e71f59d48e66faaa39fa4ba3
+    sha256: 41fc5d04f4b2f14c54cd5a786c2baf63c684e21cb275bf0b42544f2d61f860e6
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 These English terms of sale are a translation of the [German terms of sale](/company/terms-of-sale-de "German terms of sale"). Valid for all legal relationships are only the German terms of sale, the English version is just given for your convenience.

@@ -1,21 +1,22 @@
 ---
 headless: true
-testimonial_user: John Papa
-testimonial_company: Microsoft
+
+testimonial_user: "John Papa"
+testimonial_company: "Microsoft"
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: testimonials/john-papa.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: c59e58880dee9410df1d80bd68977bbe10445969
-    modified_committed_at: 2025-08-11T13:01:21Z
-    blob: 7c9b821e344481534a4d7656805f51d9576e2bb6
-    sha256: bb77c324e097c52c77ab0a3b5e2f72e8b17a3c874d955839f7d04f6f697e9bcb
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: c7b19ae4dff7920e50ae357c875692e538f248b8
+    modified_committed_at: 2026-03-10T09:19:58Z
+    blob: 44d7256cfb431f9c5b0b9e8a6b09ae5229fff135
+    sha256: 42f1280a3d8a579336a994a21ca8330843a9cf28f32d4cef624e921db5877bbd
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 # testimonial

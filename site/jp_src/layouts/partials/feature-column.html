@@ -1,5 +1,5 @@
-<div class="col-12 col-md-9 col-lg-10 pe-md-0">
-    <section class="container mt-md-n5">
+<div class="sg-layout-main pe-md-0">
+    <section>
         <div class="row">
             <div class="col-12 pb-4 pe-md-0">
             {{- $rawContent := .RawContent -}}
@@ -28,10 +28,10 @@
                     {{- end -}}
                 {{- end -}}
                 {{ if or (ne $title "") (ne $body "") }}
-                    <section class="container {{ if eq $level 2 }} mb-5 {{ end }}" id="{{ $title | lower | replaceRE `[^a-zA-Z0-9]+` "_"}}">
+                    <section class="{{ if eq $level 2 }}mb-5{{ end }}" id="{{ $title | lower | replaceRE `[^a-zA-Z0-9]+` "_"}}">
                         {{ if ne $title "" }}
                         <div class="row">
-                            <div class="col-12 px-0 {{ $vAdjust }}">
+                            <div class="col-12 {{ $vAdjust }}">
                                 {{ if eq $level 1 }}
                                     <h1 class="sg-indigo-500 mb-0">{{ $title | markdownify }}</h1>
                                 {{ else if eq $level 2 }}
@@ -43,10 +43,10 @@
                         {{ if ne $body "" }}
                             {{ if eq (len $boxes) 1 }}
                                 <div class="row g-4 overflow-hidden">
-                                    <div class="col-12 col-lg-10 px-0 position-relative chevron-right">
+                                    <div class="col-12 col-lg-10 position-relative chevron-right">
                                         <div class="card h-100 border-0 border-lg border-sg-indigo-100">
                                             <div class="card-body">
-                                                <div class="card-text position-relative p-lg-4">
+                                                <div class="card-text position-relative p-lg-4 sg-layout-content">
                                                     {{- index $boxes 0 | markdownify }}
                                                 </div>
                                             </div>
@@ -54,22 +54,10 @@
                                     </div>
                                 </div>
                             {{ else if eq (len $boxes) 2 }}
-                                <div class="row row-cols-1 row-cols-md-2 g-4">
-                                    <div class="col ps-md-0">
-                                        <div class="card h-100 border-0 bg-sg-gray-200-rgb bg-opacity-10 p-4">
-                                            {{- index $boxes 0 | markdownify }}
-                                        </div>
-                                    </div>
-                                    <div class="col pe-md-0">
-                                        <div class="card h-100 border-sg-indigo-100">
-                                            <div class="card-body">
-                                                <div class="card-text position-relative">
-                                                    {{- index $boxes 1 | markdownify }}
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                {{ partial "feature-detail-split.html" (dict
+                                    "left" (index $boxes 0 | markdownify)
+                                    "right" (index $boxes 1 | markdownify)
+                                ) }}
                             {{ else }}
                                 {{ errorf "Invalid number of boxes" }}
                             {{ end }}

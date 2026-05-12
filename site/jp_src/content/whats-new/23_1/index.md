@@ -1,30 +1,29 @@
 ---
-title: バージョン 23.1
-headerH2: SmartGit 23.1 の主要な改善点
-listTitle: バージョン 23.1
-imageAltText: 強化されたブランチ履歴、より安全なコミット、改善されたGitHub統合を備えたSmartGit 23.1
-linkText: SmartGit バージョン 23.1 の詳細
-category:
-- feature
-headerMessage: '**ブランチ履歴**を制御し、23.1でよりスマートな**GitHub**処理で安全に**コミット**をプレビュー。'
-description: SmartGit 23.1は、よりスムーズなブランチ履歴のカスタマイズ、より安全なコミットプレビュー、より良いGitHubメール処理、拡張された構文サポート、エンタープライズライセンスサーバー機能を提供します — より効率的なGit体験のために今すぐアップデート。
-ogTitle: 'SmartGit 23.1: より安全なコミット、より多くのブランチ制御、よりスマートなGitHubサポート'
-ogDesc: SmartGit 23.1は、よりスムーズなブランチ履歴のカスタマイズ、より安全なコミットプレビュー、より良いGitHubメール処理、拡張された構文サポート、エンタープライズライセンスサーバー機能を提供します — より効率的なGit体験のために今すぐアップデート。
+title: "Version 23.1"
+headerH2: "Major Improvements in SmartGit 23.1"
+listTitle: "Version 23.1"
+imageAltText: "SmartGit 23.1 with enhanced branch history, safer commits, and improved GitHub integration"
+linkText: "More about SmartGit Version 23.1"
+category: ["feature"]
+headerMessage: "Control **branch history** and preview **commits** safely with smarter **GitHub** handling in 23.1."
+description: "SmartGit 23.1 brings smoother branch history customization, safer commit previews, better GitHub email handling, expanded syntax support, and enterprise license server capabilities — update now for a more efficient Git experience."
+ogTitle: "SmartGit 23.1: Safer commits, more branch control, smarter GitHub support"
+ogDesc: "SmartGit 23.1 brings smoother branch history customization, safer commit previews, better GitHub email handling, expanded syntax support, and enterprise license server capabilities — update now for a more efficient Git experience."
 weight: 300
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: whats-new/23_1/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: 6a6e5a97c27e98dcf0e2a4cf169d8de80b499739
     modified_committed_at: 2025-09-02T15:04:52Z
     blob: e51993f307cfd4c7943a1d9116832a2e614be290
-    sha256: 5743b39be3ca12109f7f3f0637a58d2e19463bd4c9d5e152ac2e826bcbf8480a
-    fetched_at: 2026-01-04T18:02:33Z
+    sha256: 3499eb5aaffc8167410447612c812f74596e1a25aaf6e4d0d6f0fee37b2e0409
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:33Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 SmartGit 23.1は、日常のGit作業を効率化するための的を絞った機能強化を提供します — ブランチの視覚化、自信を持ったコミット、エンタープライズ環境での作業など：

@@ -1,30 +1,29 @@
 ---
-title: SmartGitウィンドウスタイル
-headerH2: 1つのアプリケーションに3つのGitクライアント
-listTitle: 3つのウィンドウスタイル
-imageAltText: 'SmartGitの3つのウィンドウスタイル概要：ワーキングツリー、ログ、スタンダードウィンドウでカスタマイズされたGit GUIワークフロー。'
-linkText: 3つのウィンドウスタイルについて詳しく
-category:
-- feature
-headerMessage: 'ワークフローに合わせて**ワーキングツリー**、**ログ**、または**スタンダード**ウィンドウスタイルから選択。'
-description: 'SmartGitは3つの強力なGitウィンドウスタイルを提供：ファイルベース、コミット中心、統合型。あなたのワークフローに最適なGit GUIを選択してください。今すぐSmartGitをお試しください！'
-ogTitle: SmartGitの機能 -- 開発者とチームのためのビジュアルGitツール
-ogDesc: 'SmartGitの3つの強力なGitウィンドウスタイルをご覧ください：ファイルベース、コミット中心、統合型。開発者、チーム、パワーユーザーに最適。'
+title: "SmartGit Window Styles"
+headerH2: "Three Git Clients in One Application"
+listTitle: "Three Window Styles"
+imageAltText: "SmartGit's three window styles overview: Working Tree, Log, and Standard windows for customized Git GUI workflows."
+linkText: "More about the Three Window Styles"
+category: ["feature"]
+headerMessage: "Choose between **Working Tree**, **Log**, or **Standard** window styles to match your workflow."
+description: "SmartGit offers three powerful Git Window Styles: file-based, commit-focused, and unified. Choose the Git GUI that fits your workflow best. Try SmartGit now!"
+ogTitle: "SmartGit Features -- Visual Git Tools for Developers and Teams"
+ogDesc: "Explore SmartGit's three powerful Git Window Styles: file-based, commit-focused, and unified. Perfect for developers, teams, and power users."
 weight: 1
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: features/three-window-styles/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: 6a6e5a97c27e98dcf0e2a4cf169d8de80b499739
     modified_committed_at: 2025-09-02T15:04:52Z
     blob: 7da80979d273483a4c8c3e024c594ede975fc7fa
-    sha256: 537379a155f02e712b2e3267d6f6f11e8828108dd1dab527ed81e695bdf26edb
-    fetched_at: 2026-01-04T18:02:32Z
+    sha256: 3f341465befa62f82ad652fc27c7df650dc2ce01c80ee6b9904dcb7d0a4a1dcc
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 SmartGitは3つのウィンドウスタイルを提供します

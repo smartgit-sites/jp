@@ -1,0 +1,168 @@
+{{ define "main" }}
+{{ partial "header.html" (merge (dict "Page" . "heroLayout" "with-sidebar-full") .Params) }}
+<main>
+    <script>
+    // Map legacy hash names to tab types
+    const LEGACY_HASH_MAP = {
+        'subscription': 'subscription',
+        'perpetual': 'perpetual',
+        'upgrade': 'upgrade',
+        'single-payment': 'perpetual'  // Legacy alias for perpetual
+    };
+
+    // Redirect old hash-based URLs to query parameter format
+    if (window.location.hash) {
+        const hashValue = window.location.hash.substring(1);
+        const type = LEGACY_HASH_MAP[hashValue];
+        if (type) {
+            const url = new URL(window.location);
+            url.searchParams.set('type', type);
+            url.hash = '';
+            window.location.replace(url.toString());
+        }
+    }
+
+    // Add type=upgrade if license parameter exists
+    if (location.search.indexOf('license=') !== -1 && location.search.indexOf('type=') === -1) {
+        const url = new URL(window.location);
+        url.searchParams.set('type', 'upgrade');
+        location.replace(url.toString());
+    }
+    </script>
+    <noscript>
+        <section class="container mb-5">
+            <div class="row">
+                <div class="sg-layout-sidebar d-none d-md-block ps-md-0"></div>
+                <div class="sg-layout-main-centered">
+                    <div class="alert alert-danger">
+                        <p>You need to enable JavaScript in order to configure your SmartGit purchase.</p>
+                        <p>For Mozilla Firefox it might also be necessary to force a page refresh using:</p>
+                        <ul>
+                            <li>Ctrl + F5 (Windows),</li>
+                            <li>⌘ + ⇧ + R (Mac) or</li>
+                            <li>Shift + Click on the Reload button.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sg-layout-sidebar d-none d-md-block pe-md-0"></div>
+            </div>
+        </section>
+    </noscript>
+    <div class="container">
+        <div class="row">
+            {{ partial "submenu-column" (dict "Page" . "Params" (merge .Params (dict "sideButtonText" "Non-Commercial Use?" "sideButtonLink" "https://www.syntevo.com/register-non-commercial/"))) }}
+            <div class="sg-layout-main-centered">
+                <section>
+                    <div class="row">
+                        <div class="col-12 py-4">
+                            <section id="purchase-container" class="px-0">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <ul class="nav nav-accordion-tabbed nav-underline nav-justified mb-3 d-none d-md-flex" id="accordionTabs">
+                                            <li class="nav-item position-relative">
+                                                <button class="nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#subscription" aria-expanded="true" aria-controls="subscription" data-role="tab">Subscription</button>
+                                            </li>
+                                            <li class="nav-item position-relative">
+                                                <button class="nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#perpetual" aria-expanded="false" aria-controls="perpetual" data-role="tab">Perpetual</button>
+                                            </li>
+                                            <li class="nav-item position-relative">
+                                                <button class="nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#upgrade" aria-expanded="false" aria-controls="upgrade" data-role="tab">Upgrade/Renewal</button>
+                                            </li>
+                                        </ul>
+                                        <div class="accordion accordion-flush accordion-tabbed" id="accordionPurchaseSmartGit">
+                                            <div class="accordion-item" id="accordionItem0">
+                                                <h2 class="accordion-header fs-5 d-md-none">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#subscription" aria-expanded="true" aria-controls="subscription">Subscription</button>
+                                                </h2>
+                                                <div id="subscription" class="accordion-collapse collapse show" data-bs-parent="#accordionPurchaseSmartGit" data-role="tab-content">
+                                                    <div class="accordion-body">
+                                                        {{ partial "purchase-form-subscription" . }}
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item" id="accordionItem1">
+                                                <h2 class="accordion-header fs-5 d-md-none">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#perpetual" aria-expanded="false" aria-controls="perpetual">Perpetual</button>
+                                                </h2>
+                                                <div id="perpetual" class="accordion-collapse collapse" data-bs-parent="#accordionPurchaseSmartGit" data-role="tab-content">
+                                                    <div class="accordion-body">
+                                                        {{ partial "purchase-form-perpetual" . }}
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="accordion-item" id="accordionItem2">
+                                                <h2 class="accordion-header fs-5 d-md-none">
+                                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#upgrade" aria-expanded="false" aria-controls="upgrade">Upgrade/Renewal</button>
+                                                </h2>
+                                                <div id="upgrade" class="accordion-collapse collapse" data-bs-parent="#accordionPurchaseSmartGit" data-role="tab-content">
+                                                    <div class="accordion-body">
+                                                        {{ partial "purchase-form-upgrade" . }}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="faqs" class="mt-5 px-0">
+                                <noscript>
+                                    <style>
+                                        #faqs .collapse:not(.show) {
+                                            display: block !important;
+                                        }
+                                    </style>
+                                </noscript>
+                                {{ .Content }}
+                            </section>
+                            <script>
+                                window.PURCHASE_FORM_ENV = window.PURCHASE_FORM_ENV || {};
+                                window.PURCHASE_FORM_ENV.API_HOST = '{{ site.Params.apiHost }}';
+                                window.PURCHASE_FORM_ENV.API_NAMESPACE = '/api/v1/';
+                            </script>
+                            {{ $jq := resources.Get "javascripts/jquery-3.7.1.min.js" | resources.Fingerprint }}
+                            <script src="{{ $jq.RelPermalink }}"></script>
+                            {{ $u := resources.Get "javascripts/utils.js" | resources.Fingerprint }}
+                            <script src="{{ $u.RelPermalink }}"></script>
+                            {{ $a := resources.Get "javascripts/api.js" | resources.Fingerprint }}
+                            <script src="{{ $a.RelPermalink }}"></script>
+                            {{ $pf := resources.Get "javascripts/purchase-form.js" | resources.Fingerprint }}
+                            <script src="{{ $pf.RelPermalink }}"></script>
+                            <script>
+                            // Handle FAQ links to pricing tabs
+                            document.addEventListener('click', function(e) {
+                                const link = e.target.closest('a[href^="#"]');
+                                if (!link) return;
+
+                                const hash = link.getAttribute('href');
+                                const tabId = hash.substring(1);
+                                const targetCollapse = document.querySelector('#' + tabId + '.accordion-collapse');
+
+                                if (targetCollapse) {
+                                    e.preventDefault();
+
+                                    // Use Bootstrap's Collapse API to show the tab
+                                    const bsCollapse = new bootstrap.Collapse(targetCollapse, { show: true });
+
+                                    // Scroll to tabs container after collapse is shown
+                                    targetCollapse.addEventListener('shown.bs.collapse', function onShown() {
+                                        const tabsContainer = document.getElementById('accordionTabs');
+                                        if (tabsContainer) {
+                                            const offset = tabsContainer.getBoundingClientRect().top + window.pageYOffset - 80;
+                                            window.scrollTo({ top: offset, behavior: 'smooth' });
+                                        }
+                                        targetCollapse.removeEventListener('shown.bs.collapse', onShown);
+                                    }, { once: true });
+                                }
+                            });
+                            </script>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="sg-layout-sidebar d-none d-md-block pe-md-0"></div>
+        </div>
+    </div>
+</main>
+{{ end }}

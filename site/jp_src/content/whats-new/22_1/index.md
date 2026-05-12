@@ -1,30 +1,29 @@
 ---
-title: バージョン 22.1
-headerH2: SmartGit 22.1 の主要な強化点
-listTitle: バージョン 22.1
-imageAltText: 標準ウィンドウインターフェース、強化されたパフォーマンス、効率化されたワークフローを備えたSmartGit 22.1
-linkText: SmartGit バージョン 22.1 の詳細
-category:
-- feature
-headerMessage: '22.1で効率化された**UI**、より速い**グラフ**、よりスムーズな**ワークフロー**で作業。'
-description: SmartGit 22.1は、効率化されたインターフェース、より良いグラフパフォーマンス、拡張された構文サポート、よりスムーズなコンフリクト処理で、より安全でガイド付きのGit体験を提供します—今すぐダウンロードまたはアップデートしてGitワークフローをレベルアップ。
-ogTitle: 'SmartGit 22.1: ガイド付きワークフロー、より速いパフォーマンス、より豊富なUIサポート'
-ogDesc: SmartGit 22.1は、効率化されたインターフェース、より良いグラフパフォーマンス、拡張された構文サポート、よりスムーズなコンフリクト処理で、より安全でガイド付きのGit体験を提供します—今すぐダウンロードまたはアップデートしてGitワークフローをレベルアップ。
+title: "Version 22.1"
+headerH2: "Key Enhancements in SmartGit 22.1"
+listTitle: "Version 22.1"
+imageAltText: "SmartGit 22.1 with Standard Window interface, enhanced performance, and streamlined workflows"
+linkText: "More about SmartGit Version 22.1"
+category: ["feature"]
+headerMessage: "Work with a streamlined **UI**, faster **graph**, and smoother **workflows** in 22.1."
+description: "SmartGit 22.1 brings you a safer, more guided Git experience with a streamlined interface, better graph performance, extended syntax support, and smoother conflict handling—download or update today to level up your Git workflow."
+ogTitle: "SmartGit 22.1: Guided workflows, faster performance, and richer UI support"
+ogDesc: "SmartGit 22.1 brings you a safer, more guided Git experience with a streamlined interface, better graph performance, extended syntax support, and smoother conflict handling—download or update today to level up your Git workflow."
 weight: 400
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: whats-new/22_1/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: 6a6e5a97c27e98dcf0e2a4cf169d8de80b499739
     modified_committed_at: 2025-09-02T15:04:52Z
     blob: f2e0f2100d57a5ec316152886e21d8117f75e539
-    sha256: 308caea1f91c7d88e60e613a35225dc2d8957edd0a61866bd8458b18db347208
-    fetched_at: 2026-01-04T18:02:33Z
+    sha256: b4d1ed61514e8537bc296b8bdf5bb9517120ea96bbc0358756de7a9720907809
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:33Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 SmartGit 22.1は、日常の効率性と安全性に関するユーザーの主要なリクエストに対応し、焦点を絞った新しいインターフェース、速度の向上、よりスムーズなワークフローを導入します：

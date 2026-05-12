@@ -1,27 +1,26 @@
 ---
-title: 'コマンドラインからGUIへ：Git生産性向上への開発者の旅'
-description: かつてのコマンドラインの純粋主義者が、SmartGitのパワフルなGUIがいかに効率を向上させ、Git体験を根本的に変えたかを語ります。
-summary: SmartGitが直感的なGUIでパワーユーザー向けの機能を提供し、すべてのプラットフォームでシームレスに動作することで、コマンドラインの純粋主義者を魅了した方法。
-testimonial_user: Hugo Ortega Hernández
-testimonial_company: Independent Developer
-testimonial_avatar: /images/avatars/man3.png
-layout: success-story
-categories:
-- Success story
+title: "Command-Line to GUI: A Developer's Journey to Enhanced Git Productivity"
+description: "A former command-line purist shares how SmartGit's powerful GUI improved their efficiency and changed their Git experience for good."
+summary: "How SmartGit won over command-line purists by delivering power-user features in an intuitive GUI that works seamlessly across all platforms."
+testimonial_user: "Hugo Ortega Hernández"
+testimonial_company: "Independent Developer"
+testimonial_avatar: "/images/avatars/man3.png"
+layout: "success-story"
+categories: ["Success story"]
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/enhanced-git-productivity-using-smartgit/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: fc2b579a8e8740abb82a99c53e33f832d063dfaf
-    modified_committed_at: 2025-07-21T17:04:23Z
-    blob: 4132e512535553ba4c5be397863702a41772cfb7
-    sha256: ca2479b080fe0052f3b3e5e74e49bfd2150a887cef0a70320436737f24da25e2
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: c7b19ae4dff7920e50ae357c875692e538f248b8
+    modified_committed_at: 2026-03-10T09:19:58Z
+    blob: f7572844fb7677dd19e165627608eaa72c89920d
+    sha256: fa6a482dbc8acd2ecd6d15899c57127e60981e45e9145161f7637a1ee8356c37
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 # testimonial

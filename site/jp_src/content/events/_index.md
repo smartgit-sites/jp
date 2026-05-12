@@ -1,22 +1,24 @@
 ---
-title: SmartGitイベント
-headerH1: Gitフレンド、ようこそ
-headerH2: スキャンしていただきありがとうございます。
-description: SmartGitイベントキャンペーンのランディングページ。
+title: "SmartGit Events"
+headerH1: "Welcome Git Friend"
+headerH2: "Glad you scanned in."
+description: "Landing page for SmartGit event campaigns."
+robots: "noindex, nofollow"
+sitemapExclude: true
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: events/_index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: 49f0e04d8d8766a75c879fc399528cdf40d8f960
-    modified_committed_at: 2025-09-30T09:29:59Z
-    blob: 268599a1cae29441dd3390fbb6d41c9a6209cb1e
-    sha256: beeb38421ae45544247ea23904e0d4d1fbc0c843434f0b42865e75258c82cb60
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: 17251d6bbb36b8efb3782fa211b1f0ee4eda3e75
+    modified_committed_at: 2026-04-30T23:03:12Z
+    blob: dfd0f7186c78e79bd654fa2ef358779d084e7aa6
+    sha256: 0c5f3e71a92bfabc56e113fac3ce9ef0628e730e45291de184327f287ba15f95
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 <div class="row g-4 align-items-stretch">

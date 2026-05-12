@@ -2,8 +2,8 @@
 {{ $testimonialPage := site.GetPage "home/testimonials.md" }}
 <section id="carousel" class="container my-5">
     <div class="row">
-        <div class="col-12 text-center sg-gray-400 mt-5">
-            <h2>{{ $testimonialPage.Params.title | markdownify }}</h2>
+        <div class="col-12 text-center mb-4">
+            <h2 class="sg-indigo-500">{{ $testimonialPage.Params.title | markdownify | replaceRE "</?p>" "" | safeHTML }}</h2>
         </div>
     </div>
     <div class="row">

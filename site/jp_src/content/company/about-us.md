@@ -1,24 +1,25 @@
 ---
-title: 会社概要 | Syntevoファミリーの一員
-description: SmartGitの開発チームをご紹介します -- 開発者、チーム、企業向けの直感的なGitツールを構築する専門チームです。
-headerH1: Syntevoファミリーの一員
-headerH2: 会社概要
-headerMessage: SmartGitは、Syntevoが開発する業界で使用されるツールの1つです。信頼のブランドであるSyntevoは、SmartGitを含むすべての製品が品質、信頼性、パフォーマンスの最高水準を維持することを保証します。
-layout: about-us
+title: "About us | Part of the Syntevo Family"
+description: "Meet the people behind SmartGit -- a dedicated team building intuitive Git tools for developers, teams, and enterprises."
+headerH1: "Part of the Syntevo family"
+headerH2: "About us"
+headerMessage: "SmartGit is one of several industry-used tools developed by Syntevo. As a trusted parent brand, Syntevo ensures that every product, including SmartGit, upholds the highest standards of quality, reliability, and performance."
+
+layout: "about-us"
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/about-us.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: 6728df85a89521cd4cd0c7206adbe3e096224211
-    modified_committed_at: 2025-11-20T10:43:49Z
-    blob: 1ff20c41b5ebad5ccb7971844d53f3fda55a922d
-    sha256: 37ba9694f306d2a3d3840ee548b8470ee45bb78c1b9de01187fdee816fd8e503
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: c611899f6c4b7c568c19e69d28c1ecebfbf559f2
+    modified_committed_at: 2026-03-11T08:48:17Z
+    blob: 770ed4ddf3854627d25cbdbade6121d203c23e88
+    sha256: 00a951a488d31e008034716ceced88a40e456dc24950d7cab9721cf2c080b0a2
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 # ビジョン

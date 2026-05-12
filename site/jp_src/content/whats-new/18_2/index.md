@@ -1,30 +1,29 @@
 ---
-title: バージョン 18.2
-headerH2: SmartGit 18.2 の主要な改善点
-listTitle: バージョン 18.2
-imageAltText: 'SmartGit 18.2: 統一されたログ、GitLabマージリクエストサポート & 強化されたコミットワークフロー'
-linkText: SmartGit バージョン 18.2 の詳細
-category:
-- feature
-headerMessage: '18.2で**ログ**と**ワーキングツリー**ビューを統一し、**GitLabマージリクエスト**を処理。'
-description: SmartGit 18.2は、ワーキングツリーとログビューの統一、GitLabワークフローのサポート、コミットとリベースツールの強化により生産性を向上 — Git操作を効率化するために今すぐアップデート。
-ogTitle: 'SmartGit 18.2: 統一されたログ、GitLabマージリクエストサポート & 強化されたコミットワークフロー'
-ogDesc: SmartGit 18.2は、ワーキングツリーとログビューの統一、GitLabワークフローのサポート、コミットとリベースツールの強化により生産性を向上 — Git操作を効率化するために今すぐアップデート。
+title: "Version 18.2"
+headerH2: "Major Improvements in SmartGit 18.2"
+listTitle: "Version 18.2"
+imageAltText: "SmartGit 18.2: Unified Log, GitLab merge-request support & enhanced commit workflows."
+linkText: "More about SmartGit Version 18.2"
+category: ["feature"]
+headerMessage: "Unify **Log** and **Working Tree** views and handle **GitLab merge requests** in 18.2."
+description: "SmartGit 18.2 elevates productivity by unifying Working Tree and Log views, supporting GitLab workflows, and bolstering commit and rebase Tools — update today to streamline your Git operations."
+ogTitle: "SmartGit 18.2: Unified Log, GitLab merge-request support & enhanced commit workflows"
+ogDesc: "SmartGit 18.2 elevates productivity by unifying Working Tree and Log views, supporting GitLab workflows, and bolstering commit and rebase Tools — update today to streamline your Git operations."
 weight: 900
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: whats-new/18_2/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: 8cf4b90bac10de7a2eb94538a587ba5cae122b22
-    modified_committed_at: 2025-08-05T21:34:17Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: dfda1082dde2791b31799b479c8765851dc32126
+    modified_committed_at: 2025-08-06T08:57:42Z
     blob: 9e224fbd153e00071470ee65f8c742d819001a0e
-    sha256: 1fc0c12ba24cdf4e73021266914de1955af834aa223e984fbb532546531d00b7
-    fetched_at: 2026-01-04T18:02:32Z
+    sha256: 4a2c63619d2925709baa2f9d765476b08422cf3f50def0b82f23a719a4159cb1
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 SmartGit 18.2は、GitLabおよびGit-LFSユーザー向けのよりスマートなワークフローとより良い統合を導入します：

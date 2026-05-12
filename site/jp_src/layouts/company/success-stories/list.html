@@ -1,16 +1,19 @@
 {{ define "main" }}
-{{ partial "header.html" (merge (dict "Page" .) .Params) }}
-{{ partial "success-stories-why-who-how" . }}
+{{ $contentSpanClass := partial "content-span-class.html" (dict "Page" . "Default" "full-span") }}
+{{ partial "header.html" (merge (dict "Page" . "contentSpanDefault" "full-span") .Params) }}
+{{ partial "success-stories-why-who-how" (dict "Page" . "SpanClass" $contentSpanClass) }}
 <main id="success-stories_list">
     <div id="wait-for-promise"><i class="fa-light fa-sync fa-spin fa-2xl"></i></div>
     <div id="drop_zone">DROP HERE <i class="fa-light fa-arrow-right-to-bracket fa-rotate-90"></i></div>
-    <section id="success-stories-featured-blog" class="container my-5">
+    <section id="success-stories-featured-blog" class="container mt-3 mb-5">
         <div class="row">
-            <div class="col-12 text-center sg-gray-400 pb-4">
-                {{ .Content }}
-            </div>
-        </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-4 gy-5">
+            <div class="{{ $contentSpanClass }}">
+                <div class="row">
+                    <div class="col-12 text-center sg-gray-400 pb-4">
+                        {{ .Content }}
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-4 gy-5">
             {{ range .Paginator.Pages }}
             <div class="col">
                 <div class="card h-100">
@@ -22,14 +25,37 @@
                 </div>
             </div>
             {{ end }}
+                </div>
+            </div>
         </div>
         {{ partial "pagination" . }}
     </section>
-    <section id="success-stories-form" class="mb-5">
-        <div class="container-fluid border-bottom border-top border-sg-indigo-100 bg-sg-gray-500-rgb bg-opacity-10 py-5">
-            <div class="container">
-                <div id="response"></div>
-                <form id="success-story-form" action="/worker/success-story/submit" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
+    <section class="container my-5">
+        <div class="row">
+            <div class="{{ $contentSpanClass }}">
+                <div class="bg-sg-orange-500-rgb bg-opacity-10 rounded-4 py-5 px-4 px-lg-5">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-12 col-lg-3 text-center mb-4 mb-lg-0">
+                            <img src="/images/smartgitty.png" alt="SmartGitty" style="max-width: 200px; width: 100%; height: auto;">
+                        </div>
+                        <div class="col-12 col-lg-6 ps-lg-5">
+                            <h3 class="sg-indigo-500 fw-semibold mb-3">Has SmartGit made a difference in your workflow?</h3>
+                            <p class="text-muted mb-4">Share your story — get featured alongside these developers and help others discover what SmartGit can do.</p>
+                            <a href="#success-stories-form" class="btn btn-sg-orange">Share Your Story</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="success-stories-form" class="container mb-5">
+        <div class="row">
+            <div class="{{ $contentSpanClass }}">
+                <div class="border border-sg-indigo-100 bg-sg-gray-500-rgb bg-opacity-10 rounded-4 py-5 px-4 px-lg-5">
+                    <div>
+                        <div id="response"></div>
+                        <form id="success-story-form" action="/worker/success-story/submit" method="post" enctype="multipart/form-data" class="needs-validation" novalidate>
                     <div id="page_0" class="page">
                         <div class=" row g-3">
                             <div class="col-md-4">
@@ -220,12 +246,15 @@
                     <div class="visually-hidden">
                         <div id="turnstile-container"></div>
                     </div>
-                </form>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"></script>
-    {{ $sgsf := resources.Get "javascripts/smartgit-story-form.js" | resources.Fingerprint }}
+    {{ $src := resources.Get "javascripts/smartgit-story-form.js" }}
+    {{ $sgsf := $src | resources.ExecuteAsTemplate "javascripts/smartgit-story-form.js" . | resources.Fingerprint }}
     <script src="{{ $sgsf.RelPermalink }}"></script>
 </main>
 {{ end }}

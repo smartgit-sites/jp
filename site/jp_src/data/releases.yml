@@ -7,38 +7,39 @@
   downloads_by_platform:
     windows:
       - name: Installer
-        note: Windows 10+ (64-bit)
         file_name: /smartgit/smartgit-win-24_1_6.zip
         file_size: 134577142
         checksum: 06c80c4a8d698bb196bc774630e6de308f18d839
-      - name: Portable (7z)
         note: Windows 10+ (64-bit)
+      - name: Portable (7z)
         file_name: /smartgit/smartgit-portable-24_1_6.7z
         file_size: 114716687
         checksum: 1d90c0366b3f7ebf18c74d7ff5b59c7b637f0b15
+        note: Windows 10+ (64-bit)
     mac_os:
       - name: Apple Silicon
-        note: macOS 11 - 26
         file_name: /smartgit/smartgit-aarch64-24_1_6.dmg
         file_size: 87456295
         checksum: 8d92a05c0ea4bcb90063ce8c78aa1aa13983d8fe
+        note: macOS 11 - 26
       - name: Intel x86_64
-        note: macOS 10.14 - 26 (Intel 64-bit)
         file_name: /smartgit/smartgit-x86_64-24_1_6.dmg
         file_size: 88314674
         checksum: 69b1cc9f6fd584c6fb6364be51a364e4ae942b71
+        note: macOS 10.14 - 26 (Intel 64-bit)
     linux:
       - name: Tar Archive
-        note: Linux (64-bit, GTK 3.24+)
         file_name: /smartgit/smartgit-linux-24_1_6.tar.gz
         file_size: 114331709
         checksum: 7e5989aad4c930f5554e21f9ddd39535e16f45e3
-      - name: Debian Bundle
         note: Linux (64-bit, GTK 3.24+)
+      - name: Debian Bundle
         file_name: /smartgit/smartgit-24_1_6.deb
         file_size: 57161474
         checksum: abe30d0846944353c13221fe35755500887bafd5
-        warning: "We recommend using the Tar Archive bundle, as it allows for easier updates."
+        special: true
+        note: Not recommended, Linux (64-bit, GTK 3.24+)
+        note_details: We recommend using the Tar Archive bundle, as it allows for easier updates.
 - major_version: 23.1
   version: 23.1.6
   released_on: 2025-12-17
@@ -48,38 +49,39 @@
   downloads_by_platform:
     windows:
       - name: Installer
-        note: Windows 10+ (64-bit)
         file_name: /smartgit/archive/smartgit-win-23_1_6.zip
         file_size: 126127514
         checksum: b4bcd2a7690f176b3a92c33cefa7a82931464290
+        note: Windows 10+ (64-bit)
       - name: Portable (7z)
-        note: Windows 10+ (64-bit), 7z
         file_name: /smartgit/archive/smartgit-portable-23_1_6.7z
         file_size: 106612340
         checksum: b9618e228e8a3585eed77ffc5e0412d1c16fe73f
+        note: Windows 10+ (64-bit), 7z
     mac_os:
       - name: Intel x86_64
-        note: macOS 10.14 - 15
         file_name: /smartgit/archive/smartgit-x86_64-23_1_6.dmg
         file_size: 84783061
         checksum: e0cd03770fed398fafff5abf541d3a57764380e2
+        note: macOS 10.14 - 15
       - name: Apple Silicon
-        note: macOS 11 - 15
         file_name: /smartgit/archive/smartgit-aarch64-23_1_6.dmg
         file_size: 83987909
         checksum: 94e75c291b66a97d1c410a7168d278123c639bb3
+        note: macOS 11 - 15
     linux:
       - name: Tar Archive
-        note: Linux (64-bit, GTK 3.24+)
         file_name: /smartgit/archive/smartgit-linux-23_1_6.tar.gz
         file_size: 109842270
         checksum: 7dd5c12def477979608e9e26a006836b72bdf23b
-      - name: Debian Bundle
         note: Linux (64-bit, GTK 3.24+)
+      - name: Debian Bundle
         file_name: /smartgit/archive/smartgit-23_1_6.deb
         file_size: 54151464
         checksum: 2812a5defc98ca231af41b23dc04009739314540
-        warning: "We recommend using the Tar Archive bundle, as it allows for easier updates."
+        special: true
+        note: Not recommended, Linux (64-bit, GTK 3.24+)
+        note_details: We recommend using the Tar Archive bundle, as it allows for easier updates.
 - major_version: 22.1
   version: 22.1.8
   released_on: 2023-11-30
@@ -89,38 +91,39 @@
   downloads_by_platform:
     windows:
       - name: Installer
-        note: Windows 7+ (64-bit)
         file_name: /smartgit/archive/smartgit-win-22_1_8.zip
         file_size: 101720861
         checksum: 3fc5cf30e033d94fb3f37b64ea298f6198a2151a
-      - name: Portable (7z)
         note: Windows 7+ (64-bit)
+      - name: Portable (7z)
         file_name: /smartgit/archive/smartgit-portable-22_1_8.7z
         file_size: 93559792
         checksum: e3531319b2ac684d4acf5adcd4674e5f300b5003
+        note: Windows 7+ (64-bit)
     mac_os:
       - name: Intel x86_64
-        note: macOS 10.13 - 13
         file_name: /smartgit/archive/smartgit-x86_64-22_1_8.dmg
         file_size: 80350132
         checksum: aa86e83f5e4a1590bc920e8951675ee0f4e22aef
+        note: macOS 10.13 - 13
       - name: Apple Silicon
-        note: macOS 11 - 13
         file_name: /smartgit/archive/smartgit-aarch64-22_1_8.dmg
         file_size: 79979583
         checksum: c2e90f54394c20d3d3266b4da89993ef0a2a24b8
+        note: macOS 11 - 13
     linux:
       - name: Tar Archive
-        note: Linux (64-bit, GTK 3.22+)
         file_name: /smartgit/archive/smartgit-linux-22_1_8.tar.gz
         file_size: 104577143
         checksum: 67829bbe365d1fe2a65f685b3d86b7a80df267ab
-      - name: Debian Bundle
         note: Linux (64-bit, GTK 3.22+)
+      - name: Debian Bundle
         file_name: /smartgit/archive/smartgit-22_1_8.deb
         file_size: 54997288
         checksum: 5bd5a0b7b2ae0f1720715fe3ea7909a5555d5dbd
-        warning: "We recommend using the Tar Archive bundle, as it allows for easier updates."
+        special: true
+        note: Not recommended, Linux (64-bit, GTK 3.22+)
+        note_details: We recommend using the Tar Archive bundle, as it allows for easier updates.
 - major_version: 21.2
   version: 21.2.4
   released_on: 2023-04-06
@@ -130,38 +133,39 @@
   downloads_by_platform:
     windows:
       - name: Installer
-        note: Windows 7+ (64-bit)
         file_name: /smartgit/archive/smartgit-win-21_2_4.zip
         file_size: 97078499
         checksum: 32405e83ec961bbc0e3790bb61a1d11a7a1f89e9
-      - name: Portable (7z)
         note: Windows 7+ (64-bit)
+      - name: Portable (7z)
         file_name: /smartgit/archive/smartgit-portable-21_2_4.7z
         file_size: 89304226
         checksum: fd6b121aad6f326bbee71b781604d341222509f1
+        note: Windows 7+ (64-bit)
     mac_os:
       - name: Intel x86_64
-        note: macOS 10.13 - 13, Archive (dmg)
         file_name: /smartgit/archive/smartgit-x86_64-21_2_4.dmg
         file_size: 74577385
         checksum: dd2512901d208eb89c8f19e8c852ef206fb26d5b
+        note: macOS 10.13 - 13, Archive (dmg)
       - name: Apple Silicon
-        note: macOS 11 - 13, Archive (dmg)
         file_name: /smartgit/archive/smartgit-aarch64-21_2_4.dmg
         file_size: 74082287
         checksum: b3372b4c5c4e857b40ea24d6b1bc86feac99222a
+        note: macOS 11 - 13, Archive (dmg)
     linux:
       - name: Tar Archive
-        note: Linux (64-bit, GTK 3.20+)
         file_name: /smartgit/archive/smartgit-linux-21_2_4.tar.gz
         file_size: 100757881
         checksum: 5cc20bc7fb0b8aa145528850ea0e634d37fb64f3
-      - name: Debian Bundle
         note: Linux (64-bit, GTK 3.20+)
+      - name: Debian Bundle
         file_name: /smartgit/archive/smartgit-21_2_4.deb
         file_size: 52351100
         checksum: a393ba222f200217d73c24bf8ed30bb70be84215
-        warning: "We recommend using the Tar Archive bundle, as it allows for easier updates."
+        special: true
+        note: Not recommended, Linux (64-bit, GTK 3.20+)
+        note_details: We recommend using the Tar Archive bundle, as it allows for easier updates.
 - major_version: 21.1
   version: 21.1.7
   released_on: 2023-03-30
@@ -175,33 +179,34 @@
   downloads_by_platform:
     windows:
       - name: Installer
-        note: Git, Installer
         file_name: /smartgit/archive/smartgit-win-21_1_7.zip
         file_size: 96603025
         checksum: ad66aa6bc6d2bd7f6de4cbaadc424d7a0306306b
+        note: Git, Installer
       - name: Portable (7z)
-        note: Git
         file_name: /smartgit/archive/smartgit-portable-21_1_7.7z
         file_size: 88820479
         checksum: 5c796d6b31e811e6ebf6b594124d0f6d1b4b76a0
+        note: Git
     mac_os:
       - name: Intel x86_64
-        note: Git, Archive (dmg)
         file_name: /smartgit/archive/smartgit-macosx-21_1_7.dmg
         file_size: 64889608
         checksum: 7e2124b88593078551a3fb1d0b0daaa775699234
+        note: Git, Archive (dmg)
     linux:
       - name: Tar Archive
-        note: Git
         file_name: /smartgit/archive/smartgit-linux-21_1_7.tar.gz
         file_size: 98815867
         checksum: cc4913aa14a03a4ecd0c43a7e93d2c675fa4096d
+        note: Git
       - name: Debian Bundle
-        note: Archive (deb)
         file_name: /smartgit/archive/smartgit-21_1_7.deb
         file_size: 50410594
         checksum: cc78f62229381bd79a864e8cc39ba54eceac86cc
-        warning: "We recommend using the Tar Archive bundle, as it allows for easier updates."
+        special: true
+        note: Not recommended, Archive (deb)
+        note_details: We recommend using the Tar Archive bundle, as it allows for easier updates.
 - major_version: 20.2
   version: 20.2.6
   released_on: 2021-08-16
@@ -215,33 +220,34 @@
   downloads_by_platform:
     windows:
       - name: Installer
-        note: Git, Installer
         file_name: /smartgit/archive/smartgit-win-20_2_6.zip
         file_size: 98966793
         checksum: 8fa1dec5c0209816d18f6f8a04e7da6427c13fda
+        note: Git, Installer
       - name: Portable (7z)
-        note: Git
         file_name: /smartgit/archive/smartgit-portable-20_2_6.7z
         file_size: 89999667
         checksum: eb0d8fbb9f8641469cded2a5196dbca2c542db31
+        note: Git
     mac_os:
       - name: Intel x86_64
-        note: Git, Archive (dmg)
         file_name: /smartgit/archive/smartgit-macosx-20_2_6.dmg
         file_size: 70489800
         checksum: 60621f9cd9df61abd46a21cceadc0316c5632db7
+        note: Git, Archive (dmg)
     linux:
       - name: Tar Archive
-        note: Git
         file_name: /smartgit/archive/smartgit-linux-20_2_6.tar.gz
         file_size: 124018503
         checksum: e340579f8981c3dd3114c939ca0738bafbb6550b
+        note: Git
       - name: Debian Bundle
-        note: Archive (deb)
         file_name: /smartgit/archive/smartgit-20_2_6.deb
         file_size: 50254206
         checksum: fdcf5b64a899fe86aef1aec18797baf32dcc077e
-        warning: "We recommend using the Tar Archive bundle, as it allows for easier updates."
+        special: true
+        note: Not recommended, Archive (deb)
+        note_details: We recommend using the Tar Archive bundle, as it allows for easier updates.
 - major_version: 20.1
   version: 20.1.6
   released_on: 2021-01-05
@@ -255,32 +261,32 @@
   downloads_by_platform:
     windows:
       - name: Installer
-        note: Git, Installer
         file_name: /smartgit/archive/smartgit-win-20_1_6.zip
         file_size: 93386640
         checksum: b77be76dd67f41676be1d78c9bdb0d9d92c3dd7f
+        note: Git, Installer
       - name: Portable (7z)
-        note: Git
         file_name: /smartgit/archive/smartgit-portable-20_1_6.7z
         file_size: 84989790
         checksum: 41f5e82ffd2a3d8dec23327c6f2c23224d05a0a1
+        note: Git
     mac_os:
       - name: Intel x86_64
-        note: Git, Archive (dmg)
         file_name: /smartgit/archive/smartgit-macosx-20_1_6.dmg
         file_size: 95025766
         checksum: 74c831fd131213912a45f0e39fd8b9fa129edbbe
+        note: Git, Archive (dmg)
     linux:
       - name: Tar Archive
-        note: Archive (tar.gz)
         file_name: /smartgit/archive/smartgit-linux-20_1_6.tar.gz
         file_size: 48036346
         checksum: a8cf45acd0da25e1529f4676e6ac3bc37904182b
+        note: Archive (tar.gz)
       - name: Debian Bundle
-        note: Archive (deb)
         file_name: /smartgit/archive/smartgit-20_1_6.deb
         file_size: 48032526
         checksum: de2b5b33d9b6a3e2f3f44d19de8c683378192ed8
+        note: Archive (deb)
 - major_version: 19.1
   version: 19.1.8
   released_on: 2020-03-20
@@ -294,33 +300,34 @@
   downloads_by_platform:
     windows:
       - name: Installer
-        note: Git, Installer
         file_name: /smartgit/archive/smartgit-win-19_1_8.zip
         file_size: 93156011
         checksum: f3638f884811a90f0f72d21b98793a256886eda5
+        note: Git, Installer
       - name: Portable (7z)
-        note: Git
         file_name: /smartgit/archive/smartgit-portable-19_1_8.7z
         file_size: 84639578
         checksum: 2bcf1beba1fa1e632383c5983885b7c6726ccf1c
+        note: Git
     mac_os:
       - name: Intel x86_64
-        note: Git, Archive (dmg)
         file_name: /smartgit/archive/smartgit-macosx-19_1_8.dmg
         file_size: 92893652
         checksum: 37bfc78772ddfd83f7a754d0926e3684ba9d0144
+        note: Git, Archive (dmg)
     linux:
       - name: Tar Archive
-        note: Archive (tar.gz)
         file_name: /smartgit/archive/smartgit-linux-19_1_8.tar.gz
         file_size: 50041117
         checksum: b40402095e8d930ccc6559d76f45daaef26b52e6
+        note: Archive (tar.gz)
       - name: Debian Bundle
-        note: Archive (deb)
         file_name: /smartgit/archive/smartgit-19_1_8.deb
         file_size: 50040156
         checksum: 4deaca24a81e4b3dbec448441aae50339835ac96
-        warning: "We recommend using the Tar Archive bundle, as it allows for easier updates."
+        special: true
+        note: Not recommended, Archive (deb)
+        note_details: We recommend using the Tar Archive bundle, as it allows for easier updates.
 - major_version: 18.2
   version: 18.2.9
   released_on: 2019-06-19
@@ -334,32 +341,32 @@
   downloads_by_platform:
     windows:
       - name: Installer
-        note: Git, Installer
         file_name: /smartgit/archive/smartgit-win-18_2_9.zip
         file_size: 91492258
         checksum: d0c2c10c296d69583875336b12721ac89b7d040e
+        note: Git, Installer
       - name: Portable (7z)
-        note: Git
         file_name: /smartgit/archive/smartgit-portable-18_2_9.7z
         file_size: 82919586
         checksum: a598a8375d2d1e9a397f3d21bbe61a9714659a02
+        note: Git
     mac_os:
       - name: Intel x86_64
-        note: Git, Archive (dmg)
         file_name: /smartgit/archive/smartgit-macosx-18_2_9.dmg
         file_size: 78665343
         checksum: 82422f1b85377b81ad909966c3e1bcfd6f39ae3d
+        note: Git, Archive (dmg)
     linux:
       - name: Tar Archive
-        note: Archive (tar.gz)
         file_name: /smartgit/archive/smartgit-linux-18_2_9.tar.gz
         file_size: 48054783
         checksum: 6048b0e7e00c60f5e026536c2f69bb598701daf9
+        note: Archive (tar.gz)
       - name: Debian Bundle
-        note: Archive (deb)
         file_name: /smartgit/archive/smartgit-18_2_9.deb
         file_size: 48052998
         checksum: f860a6b7fbd792ab9dcef15815031e1cbd407577
+        note: Archive (deb)
 - major_version: 18.1
   version: 18.1.5
   released_on: 2018-09-25
@@ -373,29 +380,29 @@
   downloads_by_platform:
     windows:
       - name: Installer
-        note: Installer
         file_name: /smartgit/archive/smartgit-win-18_1_5.zip
         file_size: 94961834
         checksum: 722a96d93a0a7bb29c6f25f025560652f06dd90b
+        note: Installer
       - name: Portable (7z)
-        note: Archive (7z)
         file_name: /smartgit/archive/smartgit-portable-18_1_5.7z
         file_size: 87386353
         checksum: 22bfad337fddabfef73b3a81c59745436653da78
+        note: Archive (7z)
     mac_os:
       - name: Intel x86_64
-        note: Archive (dmg)
         file_name: /smartgit/archive/smartgit-macosx-18_1_5.dmg
         file_size: 90780892
         checksum: 645f71977a6b00f71253369bdd37427b202b4c69
+        note: Archive (dmg)
     linux:
       - name: Tar Archive
-        note: Archive (tar.gz)
         file_name: /smartgit/archive/smartgit-linux-18_1_5.tar.gz
         file_size: 68046602
         checksum: 0be8b13cabefc226c959ad014841949f748cd24e
+        note: Archive (tar.gz)
       - name: Debian Bundle
-        note: Archive (deb)
         file_name: /smartgit/archive/smartgit-18_1_5.deb
         file_size: 68039898
         checksum: 83a048604041feb94ad57c6276d70977ed0876f0
+        note: Archive (deb)

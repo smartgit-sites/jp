@@ -1,34 +1,106 @@
+- major_version: 26.1
+  build_file_url: https://download.smartgit.dev/smartgit/smartgit-26_1-latest.build
+  downloads_by_platform:
+    windows:
+      - name: Installer
+        file_name: /smartgit/smartgit-26_1-latest-win-installer.zip
+        special: true
+        note: Not recommended, Windows 10+ (64-bit)
+        note_details: We recommend using the Portable bundle, which can be safely used alongside an existing release installation of SmartGit.
+      - name: Installer Without Git
+        file_name: /smartgit/smartgit-26_1-latest-no-git-win-installer.zip
+        special: true
+        note: Not recommended, Windows 10+ (64-bit, no Git required)
+        note_details: We recommend using the Portable bundle, which can be safely used alongside an existing release installation of SmartGit.
+      - name: Portable (7z)
+        file_name: /smartgit/smartgit-26_1-latest-win-portable.7z
+        note: Windows 10+ (64-bit)
+      - name: Portable without Git (7z)
+        file_name: /smartgit/smartgit-26_1-latest-no-git-win-portable.7z
+        special: true
+        note: Only for special Git or company setups. Windows 10+ (64-bit)
+        note_details: Use the version without bundled Git only if you already have a custom Git setup. Otherwise, we recommend using SmartGit with its bundled Git.
+    mac_os:
+      - name: Apple Silicon
+        file_name: /smartgit/smartgit-26_1-latest-macos-arm64.dmg
+        note: macOS 11 - 15
+      - name: Apple Silicon Without Git
+        file_name: /smartgit/smartgit-26_1-latest-no-git-macos-arm64.dmg
+        special: true
+        note: Only for special Git or company setups. macOS 11 - 15
+        note_details: Use the version without bundled Git only if you already have a custom Git setup
+      - name: Intel x86_64
+        file_name: /smartgit/smartgit-26_1-latest-macos-x86_64.dmg
+        note: macOS 10.14 - 15 (Intel 64-bit)
+      - name: Intel x86_64 Without Git
+        file_name: /smartgit/smartgit-26_1-latest-no-git-macos-x86_64.dmg
+        special: true
+        note: Only for special Git or company setups. macOS 10.14 - 15 (Intel 64-bit)
+        note_details: Use the version without bundled Git only if you already have a custom Git setup
+    linux:
+      - name: Tar Archive
+        file_name: /smartgit/smartgit-26_1-latest-linux-amd64.tar.gz
+        note: Linux (64-bit, GTK 3.24+)
+      - name: Tar Archive Without Git
+        file_name: /smartgit/smartgit-26_1-latest-no-git-linux-amd64.tar.gz
+        special: true
+        note: Only for special Git or company setups. Linux (64-bit)
+        note_details: Use the version without bundled Git only if you already have a custom Git setup
+      - name: Debian Bundle
+        file_name: /smartgit/smartgit-26_1-latest-linux_amd64.deb
+        special: true
+        note: Not recommended, Linux (64-bit, GTK 3.24+)
+        note_details: We recommend using the Tar Archive bundle, which can be safely used alongside an existing release installation of SmartGit.
 - major_version: 25.1
   build_file_url: https://download.smartgit.dev/smartgit/smartgit-25_1-latest.build
   downloads_by_platform:
     windows:
       - name: Installer
-        note: Windows 10+ (64-bit)
         file_name: /smartgit/smartgit-25_1-latest-win-installer.zip
-        file_size:
-        checksum:
-        warning: "We recommend using the Portable bundle, which can be safely used alongside an existing release installation of SmartGit."
+        special: true
+        note: Not recommended, Windows 10+ (64-bit)
+        note_details: We recommend using the Portable bundle, which can be safely used alongside an existing release installation of SmartGit.
+      - name: Installer Without Git
+        file_name: /smartgit/smartgit-25_1-latest-no-git-win-installer.zip
+        special: true
+        note: Not recommended, Windows 10+ (64-bit, no Git required)
+        note_details: We recommend using the Portable bundle, which can be safely used alongside an existing release installation of SmartGit
       - name: Portable (7z)
-        note: Windows 10+ (64-bit)
         file_name: /smartgit/smartgit-25_1-latest-win-portable.7z
-        file_size:
-        checksum:
+        note: Windows 10+ (64-bit)
+      - name: Portable without Git (7z)
+        file_name: /smartgit/smartgit-25_1-latest-no-git-win-portable.7z
+        special: true
+        note: Only for special Git or company setups. Windows 10+ (64-bit)
+        note_details: Use the version without bundled Git only if you already have a custom Git setup. Otherwise, we recommend using SmartGit with its bundled Git.
     mac_os:
       - name: Apple Silicon
-        note: macOS 11 - 15
         file_name: /smartgit/smartgit-25_1-latest-macos-arm64.dmg
+        note: macOS 11 - 15
+      - name: Apple Silicon Without Git
+        file_name: /smartgit/smartgit-25_1-latest-no-git-macos-arm64.dmg
+        special: true
+        note: Only for special Git or company setups. macOS 11 - 15
+        note_details: Use the version without bundled Git only if you already have a custom Git setup
       - name: Intel x86_64
-        note: macOS 10.14 - 15 (Intel 64-bit)
         file_name: /smartgit/smartgit-25_1-latest-macos-x86_64.dmg
-        file_size:
-        checksum:
+        note: macOS 10.14 - 15 (Intel 64-bit)
+      - name: Intel x86_64 Without Git
+        file_name: /smartgit/smartgit-25_1-latest-no-git-macos-x86_64.dmg
+        special: true
+        note: Only for special Git or company setups. macOS 10.14 - 15
+        note_details: Use the version without bundled Git only if you already have a custom Git setup
     linux:
       - name: Tar Archive
-        note: Linux (64-bit, GTK 3.24+)
         file_name: /smartgit/smartgit-25_1-latest-linux-amd64.tar.gz
-      - name: Debian Bundle
         note: Linux (64-bit, GTK 3.24+)
+      - name: Tar Archive Without Git
+        file_name: /smartgit/smartgit-25_1-latest-no-git-linux-amd64.tar.gz
+        special: true
+        note: Only for special Git or company setups. Linux (64-bit)
+        note_details: Use the version without bundled Git only if you already have a custom Git setup
+      - name: Debian Bundle
         file_name: /smartgit/smartgit-25_1-latest-linux_amd64.deb
-        file_size:
-        checksum:
-        warning: "We recommend using the Tar Archive bundle, which can be safely used alongside an existing release installation of SmartGit."
+        special: true
+        note: Not recommended, Linux (64-bit, GTK 3.24+)
+        note_details: We recommend using the Tar Archive bundle, which can be safely used alongside an existing release installation of SmartGit.

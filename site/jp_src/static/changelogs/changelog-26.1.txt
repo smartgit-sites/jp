@@ -1,0 +1,256 @@
+# SmartGit 26.1.029 RC (2026-05-01)
+
+## Improvements
+- Graph, Overlap: also shows base commits for tracked branches
+- Notifications: uses a larger but less prominent close button
+
+## Fixed Bugs
+- Graph, Overlap:
+  - more local/remote branch tracking scenarios could cause an internal error
+  - an advancing checked-out branch could cause an internal error during refresh
+  - overlap information was shown during rebases
+- GUI, Linux/WSL: tooltip background could be incorrect
+- Log, SHA-256 commits:
+  - signed commits were not indicated as such
+  - Copy Full ID did not work
+  - clicking parent commits could fail with "... is no valid SHA"
+- Refresh (core), reftable repositories: cherry-pick and revert states were not detected correctly
+- Syntax:
+  - Markdown: certain input could cause a stack overflow
+  - PowerShell: unterminated single-quoted strings could cause an internal error
+- Compare, Conflict Solver, Index Editor: line numbers could show doubled block borders on Windows
+- MacOS: tree items could be truncated on the right
+
+
+# SmartGit 26.1.024 RC (2026-04-20)
+
+## Improvements
+- Squash dialog: pre-selects all text except the last commit message
+
+## Fixed Bugs
+- Graph, Overlap: disabling and re-enabling the overlap column could cause an internal error
+- GUI, forced light/dark themes: button and slider colors could be incorrect on Linux and Windows
+
+
+# SmartGit 26.1.022 RC (2026-04-16)
+
+## Improvements
+- AI, models: updated default models to newer recommendations
+- Graph, drag-and-drop: dragging onto a differently named commit also offers Squash
+
+## Fixed Bugs
+- AI:
+  - Explain Commit could fail with "missing diff" when `.smartgit-ai-explain-commits` used `{{ ... }}` placeholders
+  - Mistral magistral could fail with an unexpected type error
+- Graph, Overlap:
+  - duplicate file entries could appear in overlap tooltips after adding commits
+  - deleted hunks could be reported as conflicting although they were equivalent
+  - switching repositories could cause an exception
+- Log window, Worktree window, Configure Toolbar: allowed the Discover button to be configured
+- Log window, Worktree window, Delete Branch: confirming removal of the corresponding worktree could cause an internal error
+
+## Other Noteworthy Changes
+- GUI, forced light theme: corrected wrong icon background for some commands
+- Notifications: text can be copied
+- Windows: notification explains how to use large icons at 150% zoom level
+
+
+# SmartGit 26.1.020 RC (2026-04-10)
+
+## Fixed Bugs
+- Graph, Overlap:
+  - specific diffs could cause an internal error and abort the calculation
+  - very large commits could cause an out-of-memory error
+- Syntax, C: `#XXX` lines were parsed incorrectly
+- Standard window, Index Editor: possible internal error when saving after the repository tab has already been closed
+- Log, Graph: custom local branch theme colors were not honored anymore
+
+
+# SmartGit 26.1.017 RC (2026-04-04)
+
+## Improvements
+- Standard window:
+  - GitLab: merge requests and CI/CD support
+  - Push: honors the "Push all tags" Preferences option
+
+## Fixed Bugs
+- Log window: possible internal error related to repository change notifications
+- Preferences, Authentication: possible internal error related to Show Password
+- Refresh (core): possible internal error for reftable-enabled repositories
+- Standard window, GitHub: conflicting pull requests were refetched on every refresh
+
+
+# SmartGit 26.1.016 (2026-04-01)
+
+## Improvements
+- AI:
+  - Ask AI: improved dialog layout and usability
+  - Ask AI, commit message generation and rewording: support `{{ branch }}` prompt parameter
+  - commit message generation and rewording: by default, only the `@ai` marker is replaced by the LLM response
+- Clone: simplify selection of last used provider/URL
+- Graph:
+  - Overlap: new optional column to compare selected commit(s) with other commits in the graph; indicates no/slight/heavy overlap, shows common files and potential conflicts in tooltips, and is available for feature branches and more branch constellations
+  - improved pull request and HEAD icons
+- GUI:
+  - Branches view: improved checkbox rendering
+  - Commit dialog, tab controls and Changes view: several visual refinements
+- Log:
+  - filter options use toolbar buttons making the selected state better readable, especially on Linux
+- Discover other SmartGit main windows
+- Push: improved wording of the forced-push confirmation dialog
+- Repository, Add: entering the exact path of a nested repository adds it directly
+- Standard window:
+  - All Branches + Tags: show messages of annotated tags
+  - Graph context menu: AI entries are grouped more compactly
+  - Push: use refs instead of commits when invoking `git push`
+  - Feature Flow: renamed "main branches" to "trunk branches"
+  - Pull: optionally keep merged branches
+- Worktrees:
+  - background fetch skips worktrees
+  - Remove Branch: optionally open or remove the corresponding worktree
+- GitLab: updated the "GitLab account settings" link for newer GitLab versions
+- Updates:
+  - Check for Latest Build: if none available, show notification instead of dialog
+
+## Fixed Bugs
+- AI:
+  - Ask AI: merge commits no longer produce an empty diff
+  - commit message generation and rewording: fixed edge cases around `@ai` marker replacement
+- Changes view:
+  - stage/unstage now honors `.gitattributes` `working-tree-encoding`
+  - forced dark theme: image compare uses the correct dark background color
+- Git: stricter validation for suspicious refs containing `.lock` in non-final path segments
+- GUI:
+  - fixed several dark theme and MacOS-specific color regressions in notifications, message dialogs, tooltips, tab panes and stash input field
+  - fixed category toolbar button movement glitches
+- Log: opening Log no longer stores or resets roots unexpectedly
+- Pull:
+  - fixed misleading "Reading submodules information" progress text while querying LFS locks
+- Syntax:
+  - ShellScript: word-wise navigation now treats variables with underscores as one word
+  - Syntax, Markdown: HtmlBlock not detected
+- Refresh: reduced redundant refreshes triggered by SmartGit's own external refreshes
+- Worktrees: deleting a local branch with an assigned worktree no longer fails silently
+
+## Other Noteworthy Changes
+- updated bundled Git to version 2.53.0
+- updated bundled SSHJ
+- updated Pebble to version 4.1.1
+- rebuilt bundled Git-LFS 3.7.1 with a newer Go toolchain
+- removed the JGit runtime dependency
+
+
+# SmartGit 26.1.011 (2026-03-02)
+
+## Improvements
+- AI:
+  - commit message generation: in marker mode (`@ai`) leading special characters are preserved
+  - rewording: re-sign commits which are originally signed
+- Git:
+  - Git 3.0 compatibility: SHA-256 support
+  - Git 3.0 compatibility: reftable support
+  - Repository validation: optimized internal checks
+- Refresh:
+  - status: performance improvements related to packed-refs
+  - commits: improved performance for repositories with many notes (100K+)
+- GUI:
+  - Graph, drop-indicator: scale triangles with DPI
+  - QTabbedBar: improved drag indicator rendering
+- Standard window:
+  - Pull: repository option to "fetch current" vs. "fetch all"
+  - Feature: improve main branch detection
+  - remember open repositories even if Log or Working Tree Window are opened
+  - Toolbar: unify position of Add Branch/Tag for "My History" and "All Branches + Tags"
+  - Toolbar, All Branches + Tags: make Add Tag optional
+- Worktrees:
+  - Remove and Prune: refresh the main repository (and existing worktrees) immediately
+- Upgrade dialog on startup: show also current version/build
+
+## Fixed Bugs
+- Changes view:
+  - background could be drawn over text
+  - change-stripe with asymmetric areas: drawing issues
+  - drag-and-drop insert-between indicator might not have been visible before the first row
+- Commit dialog: Select button was missing Log option (Working Tree/Log)
+- Discard (to Stash): warn for combinations which won't work correctly due to "git stash" limitations
+- Git:
+  - output: empty lines might have been ignored
+- GUI:
+  - Tab bars: changing shortcuts of the Changes view (e.g. Apply Left) required restart
+  - Repositories tree: dropping a directory onto the empty area below the last node did not work
+- Refresh:
+  - status: possible "Trailing checksum too short" failure for slightly invalid .git/index files which Git can still process
+- Split Off Files: did not always select the split-off commit
+- Worktrees:
+  - Remove did not work if there was no existing repository entry for the worktree
+  - Worktree window: UI might not be updated properly after Refresh
+
+
+# SmartGit 26.1.003 (2026-01-22)
+
+## Improvements
+- AI:
+  - Edit Message: added AI button to suggest a message
+  - "Ask AI" dialog for custom prompts for one or more commits
+  - commit message generation: support for templates with `@ai` marker
+  - commit annotation:
+    - improved background confirmation dialog
+    - Copy to Clipboard link
+  - Edit Config File (similar to `.gitconfig`)
+- Graph:
+  - Move & Squash: support common Git commit message prefixes "fixup!" and "squash!"
+- LFS, Lock: allow to perform on multiple files at once
+- Worktrees:
+  - Branches view, Graph: indicate "clean" and "modified" state of worktrees; autorefresh
+  - Graph: allow dragging worktree refs, if the worktrees are clean
+  - optionally skip "Do you want to switch to worktree" confirmation dialog
+- GUI:
+  - reworked toolbar icons (different ones for dark theme)
+  - Compare: use more intuitive and attractive background colors
+  - count a renamed "file" as a single entry as "git status" does
+  - dark theme: several improvements (e.g. darker)
+  - avatar images: resize if they are sized incorrectly
+  - Tab bars: use thicker colored line to indicate selected tab instead of just background color
+  - Toolbar: toggle buttons with underline (not just different background color)
+  - Graph:
+    - improved ref display
+    - Filter: use toolbar toggle buttons to better see which one is selected
+- Standard window:
+  - AI, commit annotation: show success popup after background notification had finished creating notes
+  - added Submodule commands: Add, Initialize, Synchronize, Reset, Deactivate, Deinit, Unregister
+  - toolbar configurations:
+    - allow to hide default toolbar buttons; and add "Reset to Default"
+    - optional buttons for Stashes and Reflog
+- Worktree window:
+  - Journal: allow rearranging commits of a detached HEAD (as Log does, too)
+
+## Fixed Bugs
+- Graph/Branches: possible outdated pull request state until re-opening the repository
+- GUI:
+  - forced dark theme: the could be incorrect background colors for stacked views
+  - File compare, Changes view: focusing might change background color
+  - toolbars showed tooltip only after a second mouse move
+  - Changes view (dark theme): the first expand-equal-lines-arrows used a different outline color
+- Find Object: opening repository did not select it reliably
+- Refresh: events from file monitor may not trigger refresh for repositories in symlinked directories
+- Worktrees: submodule worktrees might not have been recognized properly
+- MacOS:
+  - Dialogs: pressing Cmd+Enter quickly on two nested dialogs could cause internal error because top-most dialog's close handler was executed after the parent dialog was already closed
+- Standard window:
+  - Directories: using the keyboard to change selection focused other control
+  - GitHub:
+    - potentially excessive refreshing when multiple pull requests were fetched
+    - unnecessary pull request updates during local refresh
+  - GitLab: account settings link does not allow to right-click
+  - might not show toolbar buttons when right-clicking toolbar before the repository loading finished
+  - switching repositories could lose Graph focus
+
+## Other Noteworthy Changes
+- Changes view, Ignore Whitespace: remember previous state by default, even for local files (changed default for low-level property `changes.autoResetIgnoreWhitespace`)
+- Checkout: added low-level property `checkout.defaultBranch` to configure default branch name
+- Index Editor: was enabled for unchanged files, but not for assume-unchanged/skipped-worktree files
+- Graph: unified context menu for Standard and Log window
+- Standard window:
+  - Ignore: should work on nested roots, too
+  - Toolbar configuration: don't use images in context menu (they look bad on some platforms)
+- Linux: cursor left should select parent node

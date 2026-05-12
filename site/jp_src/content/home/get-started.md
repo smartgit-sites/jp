@@ -1,29 +1,31 @@
 ---
-title: '**3つの簡単なステップ**でSmartGitを始めよう'
+title: "Get Started with SmartGit in **Three Simple Steps**"
 headless: true
-summary: これだけです。SmartGitで強力で直感的なGit体験をお楽しみください。
+
+summary: "That's it. Enjoy a powerful, intuitive Git experience with SmartGit."
+
 steps:
-- title: ダウンロード＆インストール
-  desc: 数クリックでWindows、macOS、Linux用のSmartGitを入手できます。
-  icon: fa-light fa-circle-arrow-down fa-4x
-- title: リポジトリに接続
-  desc: ローカルGitリポジトリを開くか、GitHub、GitLab、Bitbucket、Azure DevOpsからクローンします。
-  icon: fa-light fa-chart-network fa-4x
-- title: コーディング＆コミット開始
-  desc: 変更を加え、自信を持ってコミットし、作業を簡単にプッシュできます。
-  icon: fa-light fa-diagram-project fa-rotate-90 fa-4x
+  - title: "Download & Install"
+    desc: "Get SmartGit for Windows, macOS, or Linux with just a few clicks."
+    icon: "fa-light fa-circle-arrow-down fa-4x"
+  - title: "Connect Your Repository"
+    desc: "Open a local Git repo or clone from GitHub, GitLab, Bitbucket, or Azure DevOps."
+    icon: "fa-light fa-chart-network fa-4x"
+  - title: "Start Coding & Committing"
+    desc: "Make changes, commit with confidence, and push your work effortlessly."
+    icon: "fa-light fa-diagram-project fa-rotate-90 fa-4x"
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: home/get-started.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: c59e58880dee9410df1d80bd68977bbe10445969
-    modified_committed_at: 2025-08-11T13:01:21Z
-    blob: 62db244b669be99ed2ee446a45e96c7618d9d6be
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: c7b19ae4dff7920e50ae357c875692e538f248b8
+    modified_committed_at: 2026-03-10T09:19:58Z
+    blob: 69205710dfdf58ff2e9d69a4c22b17ce70ae75c6
+    sha256: 6b89c9aef7ee8c8b50caad0ff4a5232c024ada277572e4bfac9ab21de37c7b24
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---

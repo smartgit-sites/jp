@@ -1,59 +1,135 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <updateinfo>
-	<product id="syntevo.smartgit.release-25.1" match="license-kind-non-commercial,license-kind-hobby" match-type="or">
+	<product id="syntevo.smartgit.release-26.1">
 		<version>
-			<major-version>25.1</major-version>
+			<major-version>26.1</major-version>
 			<major-date>2025-10-30</major-date>
-			<build>251102</build>
-			<name>25.1.102</name>
-			<date>2025-12-11</date>
+			<build>261031</build>
+			<name>26.1.031</name>
+			<date>2026-05-08</date>
 			<location>https://www.smartgit.dev/download/</location>
-			<changelog>https://www.smartgit.dev/changelogs/changelog-25.1.txt</changelog>
-			<update-url>https://update.syntevo.com/smartgit/control-251102</update-url>
+			<changelog>https://www.smartgit.dev/changelogs/changelog-26.1.txt</changelog>
+			<update-url>https://update.syntevo.com/smartgit/control-261031</update-url>
+			<update-density>25</update-density>
+			<update-density-salt>66E312BD</update-density-salt>
+			<update-density-manual>true</update-density-manual>
+		</version>
+		<version>
+			<major-version>26.1</major-version>
+			<major-date>2025-10-30</major-date>
+			<build>261029</build>
+			<name>26.1.029</name>
+			<date>2026-05-01</date>
+			<location>https://www.smartgit.dev/download/</location>
+			<changelog>https://www.smartgit.dev/changelogs/changelog-26.1.txt</changelog>
+			<update-url>https://update.syntevo.com/smartgit/control-261029</update-url>
 			<update-density>100</update-density>
-			<update-density-salt>EDF4CA82</update-density-salt>
+			<update-density-salt>5BBFC111</update-density-salt>
 			<update-density-manual>true</update-density-manual>
 		</version>
 	</product>
-	<product id="syntevo.smartgit.release-25.1">
+	<product id="syntevo.smartgit.release-25.1" match-type="or" match="usageStats-ai.commitMessageGeneration.invoke.github-5,usageStats-ai.commitMessageGeneration.invoke.github-10,usageStats-ai.commitMessageGeneration.invoke.github-100,usageStats-ai.commitMessageGeneration.invoke.openai-5,usageStats-ai.commitMessageGeneration.invoke.openai-10,usageStats-ai.commitMessageGeneration.invoke.openai-100,usageStats-ai.commitMessageGeneration.invoke.anthropic-5,usageStats-ai.commitMessageGeneration.invoke.anthropic-10,usageStats-ai.commitMessageGeneration.invoke.anthropic-100,usageStats-ai.commitMessageGeneration.invoke.ollama-5,usageStats-ai.commitMessageGeneration.invoke.ollama-10,usageStats-ai.commitMessageGeneration.invoke.ollama-100,usageStats-ai.commitMessageGeneration.invoke.mistral-5,usageStats-ai.commitMessageGeneration.invoke.mistral-10,usageStats-ai.commitMessageGeneration.invoke.mistral-100">
+		<info>
+			<date>2026-01-26</date>
+			<id>ai-github-discussions</id>
+			<location>https://github.com/syntevo/smartgit-community/discussions/categories/ai-integration</location>
+			<message>Shape the future of SmartGit AI</message>
+			<note>As a frequent user of AI commit messages, your input is valuable. What works well, what does not, and where else should SmartGit integrate AI?</note>
+			<update-url>https://github.com/syntevo/smartgit-community/discussions/categories/ai-integration</update-url>
+			<update-density>100</update-density>
+			<update-density-salt>0</update-density-salt>
+			<update-density-manual>true</update-density-manual>
+		</info>
+	</product>
+	<product id="syntevo.smartgit.release-25.1" match-type="or" match="usageStats-provider.configuration.bitbucket.com-1">
 		<version>
 			<major-version>25.1</major-version>
 			<major-date>2025-10-30</major-date>
-			<build>251102</build>
-			<name>25.1.102</name>
-			<date>2025-12-11</date>
+			<build>251129</build>
+			<name>25.1.129</name>
+			<date>2025-04-14</date>
 			<location>https://www.smartgit.dev/download/</location>
 			<changelog>https://www.smartgit.dev/changelogs/changelog-25.1.txt</changelog>
-			<update-url>https://update.syntevo.com/smartgit/control-251102</update-url>
-			<update-density>0</update-density>
+			<update-url>https://update.syntevo.com/smartgit/control-251129</update-url>
+			<update-density>100</update-density>
+			<update-density-salt>AC7822C2</update-density-salt>
+			<update-density-manual>true</update-density-manual>
+		</version>
+	</product>
+	<product id="syntevo.smartgit.release-25.1" match="license-kind-non-commercial,license-kind-hobby" match-type="or">
+		<info>
+			<id>smartgit-26.1-rc</id>
+			<date>2026-04-04</date>
+			<location>https://www.smartgit.dev/download/preview/</location>
+			<message>SmartGit 26.1 RC available!</message>
+			<note>26.1 brings a broader visual refresh, stronger GitLab and worktree support, smarter AI workflows, Commit Overlap, Git 3.0 compatibility, and many refinements.</note>
+			<update-url>https://www.smartgit.dev/download/preview/</update-url>
+			<update-density>100</update-density>
+			<update-density-salt>37E27B49</update-density-salt>
+			<update-density-manual>true</update-density-manual>
+		</info>
+		<info>
+			<date>2026-04-23</date>
+			<id>git-skills-quizzes</id>
+			<location>https://www.git-skills.dev/quiz/concepts-branches-head-commits/?mode=smartgit</location>
+			<message>Understand Git concepts with interactive quizzes</message>
+			<note>Commits, branches, refs, and HEAD can be hard to understand at first. These short quizzes explain the ideas behind everyday SmartGit actions in a simple, friendly way, so Git feels easier and less confusing.</note>
+			<update-url>https://www.git-skills.dev/quiz/concepts-branches-head-commits/</update-url>
+			<update-density>100</update-density>
+			<update-density-salt>0</update-density-salt>
+			<update-density-manual>true</update-density-manual>
+		</info>
+	</product>
+	<product id="syntevo.smartgit.release-25.1">
+		<info>
+			<id>smartgit-26.1-rc</id>
+			<date>2026-04-04</date>
+			<location>https://www.smartgit.dev/download/preview/</location>
+			<message>SmartGit 26.1 RC available!</message>
+			<note>26.1 brings a broader visual refresh, stronger GitLab and worktree support, smarter AI workflows, Commit Overlap, Git 3.0 compatibility, and many refinements.</note>
+			<update-url>https://www.smartgit.dev/download/preview/</update-url>
+			<update-density>100</update-density>
+			<update-density-salt>37E27B49</update-density-salt>
+			<update-density-manual>true</update-density-manual>
+		</info>
+		<info>
+			<channel>announcements</channel>
+			<date>2026-04-21</date>
+			<id>git-skills-quizzes</id>
+			<location>https://www.git-skills.dev/quiz/intro/</location>
+			<message>Understand Git concepts with interactive quizzes</message>
+			<note>Commits, branches, refs, and HEAD can be hard to understand at first. These short quizzes explain the ideas behind everyday SmartGit actions in a simple, friendly way, so Git feels easier and less confusing.</note>
+			<update-url>https://www.git-skills.dev/quiz/intro/?mode=smartgit</update-url>
+			<update-density>100</update-density>
+			<update-density-salt>0</update-density-salt>
+			<update-density-manual>true</update-density-manual>
+		</info>
+		<version>
+			<major-version>25.1</major-version>
+			<major-date>2025-10-30</major-date>
+			<build>251128</build>
+			<name>25.1.128</name>
+			<date>2025-01-18</date>
+			<location>https://www.smartgit.dev/download/</location>
+			<changelog>https://www.smartgit.dev/changelogs/changelog-25.1.txt</changelog>
+			<update-url>https://update.syntevo.com/smartgit/control-251128</update-url>
+			<update-density>25</update-density>
+			<update-density-salt>AC7822C2</update-density-salt>
+			<update-density-manual>true</update-density-manual>
+		</version>
+		<version>
+			<major-version>25.1</major-version>
+			<major-date>2025-10-30</major-date>
+			<build>251104</build>
+			<name>25.1.104</name>
+			<date>2025-12-30</date>
+			<location>https://www.smartgit.dev/download/</location>
+			<changelog>https://www.smartgit.dev/changelogs/changelog-25.1.txt</changelog>
+			<update-url>https://update.syntevo.com/smartgit/control-251104</update-url>
+			<update-density>100</update-density>
 			<update-density-salt>EDF4CA82</update-density-salt>
 			<update-density-manual>true</update-density-manual>
 		</version>
-		<version>
-			<major-version>25.1</major-version>
-			<major-date>2025-10-30</major-date>
-			<build>251093</build>
-			<name>25.1.093</name>
-			<date>2025-10-30</date>
-			<location>https://www.smartgit.dev/download/</location>
-			<changelog>https://www.smartgit.dev/changelogs/changelog-25.1.txt</changelog>
-			<update-url>https://update.syntevo.com/smartgit/control-251093</update-url>
-			<update-density>100</update-density>
-			<update-density-salt>FBFFE1AD</update-density-salt>
-			<update-density-manual>true</update-density-manual>
-		</version>
-		<info>
-			<channel>poll</channel>
-			<date>2025-11-05</date>
-			<id>smartgit-ui-look-and-feel-poll</id>
-			<location>https://eu.jotform.com/253064951362356?unique=${license-identifier-short-}</location>
-			<message>Quick Poll: Native vs cross-platform look-and-feel</message>
-			<note>Tell us how important native OS controls are vs a uniform look across Windows, macOS, and Linux.</note>
-			<update-url>https://eu.jotform.com/253064951362356</update-url>
-			<update-density>0</update-density>
-			<update-density-salt>1</update-density-salt>
-			<update-density-manual>false</update-density-manual>
-		</info>
 	</product>
 	<product id="syntevo.smartgit.release-24.1" match="evaluation,foundation" match-type="or">
 		<info>
@@ -74,7 +150,7 @@
 			<location>https://www.smartgit.dev/download/</location>
 			<message>Upgrade to SmartGit 25.1!</message>
 			<note>SmartGit 25.1 focuses on AI assistance, Git Notes, worktree improvements, and many refinements for a smoother experience.</note>
-			<update-url>https://update.syntevo.com/smartgit/control-251102</update-url>
+			<update-url>https://update.syntevo.com/smartgit/control-251128</update-url>
 			<update-delay>123</update-delay>
 			<update-density>100</update-density>
 			<update-density-max>100</update-density-max>
@@ -100,9 +176,9 @@
 			<location>https://www.smartgit.dev/download/</location>
 			<message>Upgrade to SmartGit 25.1!</message>
 			<note>SmartGit 25.1 focuses on AI assistance, Git Notes, worktree improvements, and many refinements for a smoother experience.</note>
-			<update-url>https://update.syntevo.com/smartgit/control-251101</update-url>
+			<update-url>https://update.syntevo.com/smartgit/control-251128</update-url>
 			<update-delay>123</update-delay>
-			<update-density>0</update-density>
+			<update-density>100</update-density>
 			<update-density-max>100</update-density-max>
 		</major>
 	</product>
@@ -125,7 +201,7 @@
 			<location>https://www.smartgit.dev/download/</location>
 			<message>Upgrade to SmartGit 25.1!</message>
 			<note>SmartGit 25.1 focuses on AI assistance, Git Notes, worktree improvements, and many refinements for a smoother experience.</note>
-			<update-url>https://update.syntevo.com/smartgit/control-251101</update-url>
+			<update-url>https://update.syntevo.com/smartgit/control-251128</update-url>
 			<update-delay>123</update-delay>
 			<update-density>0</update-density>
 			<update-density-max>100</update-density-max>
@@ -138,7 +214,7 @@
 			<location>https://www.smartgit.dev/download/</location>
 			<message>Upgrade to SmartGit 25.1!</message>
 			<note>SmartGit 25.1 focuses on AI assistance, Git Notes, worktree improvements, and many refinements for a smoother experience.</note>
-			<update-url>https://update.syntevo.com/smartgit/control-251101</update-url>
+			<update-url>https://update.syntevo.com/smartgit/control-251128</update-url>
 			<update-delay>123</update-delay>
 			<update-density>0</update-density>
 			<update-density-max>100</update-density-max>
@@ -163,7 +239,7 @@
 			<location>https://www.smartgit.dev/download/</location>
 			<message>Upgrade to SmartGit 25.1!</message>
 			<note>SmartGit 25.1 focuses on AI assistance, Git Notes, worktree improvements, and many refinements for a smoother experience.</note>
-			<update-url>https://update.syntevo.com/smartgit/control-251101</update-url>
+			<update-url>https://update.syntevo.com/smartgit/control-251128</update-url>
 			<update-delay>123</update-delay>
 			<update-density>0</update-density>
 			<update-density-max>100</update-density-max>
@@ -188,7 +264,7 @@
 			<location>https://www.smartgit.dev/download/</location>
 			<message>Upgrade to SmartGit 25.1!</message>
 			<note>SmartGit 25.1 focuses on AI assistance, Git Notes, worktree improvements, and many refinements for a smoother experience.</note>
-			<update-url>https://update.syntevo.com/smartgit/control-251101</update-url>
+			<update-url>https://update.syntevo.com/smartgit/control-251128</update-url>
 			<update-delay>123</update-delay>
 			<update-density>0</update-density>
 			<update-density-max>100</update-density-max>
@@ -213,7 +289,7 @@
 			<location>https://www.smartgit.dev/download/</location>
 			<message>Upgrade to SmartGit 25.1!</message>
 			<note>SmartGit 25.1 focuses on AI assistance, Git Notes, worktree improvements, and many refinements for a smoother experience.</note>
-			<update-url>https://update.syntevo.com/smartgit/control-251101</update-url>
+			<update-url>https://update.syntevo.com/smartgit/control-251128</update-url>
 			<update-delay>123</update-delay>
 			<update-density>0</update-density>
 			<update-density-max>100</update-density-max>

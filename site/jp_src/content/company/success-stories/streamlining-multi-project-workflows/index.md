@@ -1,28 +1,27 @@
 ---
-title: 'マルチプロジェクトワークフローの効率化：SmartGitがソフトウェア請負業者を強化する方法'
-description: SmartGitが統一された効率的なインターフェースとシームレスな統合で、ソフトウェア請負業者のマルチクライアントGitワークフローを簡素化する方法をご覧ください。
-summary: ソフトウェアコンサルタントがSmartGitの一貫した機能豊富なインターフェースとシームレスな統合を使用して、複数のクライアント間でGitワークフローを統一し、生産性を最大化。
-testimonial_user: Stuart Corrans
-testimonial_company: Vanestum Consulting
-testimonial_link: https://vanestum.com/
-testimonial_avatar: avatar.jpeg
-layout: success-story
-categories:
-- Success story
+title: "Streamlining Multi-Project Workflows: How SmartGit Empowers Software Contractors"
+description: "Discover how SmartGit simplifies multi-client Git workflows for software contractors with a unified, efficient interface and seamless integrations."
+summary: "Software consultant maximizes productivity by unifying Git workflows across multiple clients using SmartGit's consistent, feature-rich interface and seamless integrations."
+testimonial_user: "Stuart Corrans"
+testimonial_company: "Vanestum Consulting"
+testimonial_link: "https://vanestum.com/"
+testimonial_avatar: "avatar.jpeg"
+layout: "success-story"
+categories: ["Success story"]
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/streamlining-multi-project-workflows/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: fc2b579a8e8740abb82a99c53e33f832d063dfaf
     modified_committed_at: 2025-07-21T17:04:23Z
     blob: 6fb3c4086da9ccc9464c7e2946a5f497f1d5d520
-    sha256: b420dbc8fce7c3c4d313a4f4d87b217c0e0e32714d115a4efc1ec33bced3c308
-    fetched_at: 2026-01-04T18:02:32Z
+    sha256: 7fbe4b7e97d069d08056f2636e9fffae0fb1ce30ec81ad76c08a2d9e5cbc9266
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 # testimonial

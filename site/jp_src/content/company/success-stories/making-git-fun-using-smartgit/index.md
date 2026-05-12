@@ -1,27 +1,26 @@
 ---
-title: 'Gitを楽しくする：HarmanでのSmartGitの学習ツールとしての活用'
-description: HarmanがSmartGitを使ってGitを学習ツールに変え、バージョン管理を楽しく使いやすくした方法をご紹介します。
-summary: 'Gitへの不安からGitマスターへ：SmartGitが開発者のバージョン管理の課題を自信に満ちた日常の専門知識に変えた方法をご覧ください。'
-testimonial_user: Alex Pogostin
-testimonial_company: Harman
-testimonial_avatar: /images/avatars/man2.png
-layout: success-story
-categories:
-- Success story
+title: "Making Git Fun: SmartGit as a Learning Tool at Harman"
+description: "Learn how Harman used SmartGit to turn Git into a learning tool -- making version control fun and accessible."
+summary: "From Git anxiety to Git mastery: discover how SmartGit turned a developer's version control challenges into confident, everyday expertise."
+testimonial_user: "Alex Pogostin"
+testimonial_company: "Harman"
+testimonial_avatar: "/images/avatars/man2.png"
+layout: "success-story"
+categories: ["Success story"]
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/making-git-fun-using-smartgit/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: 85499c6d174de82a7e89200a442ab942e0eab14d
     modified_committed_at: 2025-08-04T20:57:04Z
     blob: b4d575354b3303707a5439242df482fee809b741
-    sha256: 3872ca541b72a2a0436470b2c6eab1e0143cd5c1c205ac899cf47998c53b5657
-    fetched_at: 2026-01-04T18:02:32Z
+    sha256: 09c9efd61c26914cee66c92f1ed23ab4a59e8ff9a29dc9b019eb8820eb01248c
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 # testimonial

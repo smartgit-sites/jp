@@ -1,13 +1,16 @@
 {{ define "main" }}
-{{ partial "header.html" (merge (dict "Page" .) .Params) }}
-<section id="team-members" class="container mt-n5 px-lg-5">
+{{ $contentSpanClass := partial "content-span-class.html" (dict "Page" . "Default" "full-span") }}
+{{ partial "header.html" (merge (dict "Page" . "contentSpanDefault" "full-span") .Params) }}
+<section id="team-members" class="container teaser-follow-up">
     <div class="row">
-    <div class="col-12 offset-lg-1 col-lg-10 sg-gray-400 pb-4 lead">
-        {{ .Content }}
-    </div>
-    </div>
-    <div class="row">
-        <div class="col-12 offset-lg-1 col-lg-10 my-5">
+        <div class="{{ $contentSpanClass }}">
+            <div class="row">
+                <div class="col-12 sg-gray-400 pb-4 lead">
+                    {{ .Content }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 my-5">
             <div class="row row-cols-1 row-cols-md-3 gx-4 gy-5">
 {{ range .Pages }}
 {{ $words := split .Title " " }}
@@ -39,6 +42,8 @@
 </div>
 {{ end }}
 
+            </div>
+                </div>
             </div>
         </div>
     </div>

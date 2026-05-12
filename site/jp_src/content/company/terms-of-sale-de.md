@@ -1,19 +1,19 @@
 ---
-title: Allgemeine Geschäftsbedingungen
+title: "Allgemeine Geschäftsbedingungen"
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/terms-of-sale-de.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: c25beb898ade1a5fe31edd160ba0e0a8aa4a92c0
     modified_committed_at: 2025-05-15T19:53:29Z
     blob: a0f6bf6f27072096a6732a70e3a0a513b6670d9e
-    sha256: 3612eca9d8a2090a26c7ffa96d2bb12e1ffa1ff87cf6de9ac17b182fed28c256
-    fetched_at: 2026-01-04T18:02:32Z
+    sha256: d2174df889f48b093228043a1473066125be991d2ee878ed0204793eff3dc1dd
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 1. ## Allgemeine Bestimmungen {class="fs-6 mt-4"}

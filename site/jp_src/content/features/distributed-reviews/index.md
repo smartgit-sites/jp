@@ -1,31 +1,30 @@
 ---
-title: 分散レビューアドオン
-headerH1: SmartGit分散レビューアドオン
-headerH2: サーバー不要のローカルコードレビュー。
-listTitle: 分散レビューアドオン
-imageAltText: SmartGitの分散レビューアドオン。サーバー依存なしでオフラインコードレビューとGitベースのフィードバック共有を実現。
-linkText: 分散レビューアドオンについて詳しく
-category:
-- feature
-headerMessage: '**分散レビュー**を使用して**オフライン**でコードをレビューし、サーバーなしでフィードバックを共有。'
-description: 分散レビューアドオンにより、GitHubやGitLabなしでローカルおよびオフラインでコードをレビュー可能。高速、安全、Gitワークフローに完全統合。
-ogTitle: SmartGit分散アドオン -- サーバー不要のローカルコードレビュー
-ogDesc: SmartGitの分散レビューアドオンでサーバーなしでローカルにコードをレビュー。高速、安全、オフライン対応。
+title: "Distributed Reviews Add-on"
+headerH1: "SmartGit Distributed Reviews Add-on"
+headerH2: "Local code reviews without server."
+listTitle: "Distributed Reviews Add-on"
+imageAltText: "SmartGit's Distributed Reviews add-on enabling offline code reviews and Git-based feedback sharing without server dependencies."
+linkText: "More about Distributed Reviews Add-on"
+category: ["feature"]
+headerMessage: "Review code **offline** and share feedback without a server using **Distributed Reviews**."
+description: "The Distributed Reviews add-on lets you review code locally and offline, without needing GitHub or GitLab. It's fast, secure, and fully integrated into your Git workflow."
+ogTitle: "SmartGit Distributed Add-on -- Local code reviews without server"
+ogDesc: "Review code locally, without servers - with SmartGit's Distributed Reviews Add-on. Stay fast, secure, and offline."
 weight: 8
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: features/distributed-reviews/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: dccfec861e539ddff6af9927e990c214b888c63b
-    modified_committed_at: 2025-09-19T11:36:49Z
-    blob: 5193f9cc9967731ecf26d7848484aa86b4036dbb
-    sha256: f0e53f5464a0963a0a7045890d4c7481a89fddb3dc2eb15691262ba1dc431b27
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: c7b19ae4dff7920e50ae357c875692e538f248b8
+    modified_committed_at: 2026-03-10T09:19:58Z
+    blob: d71ee20cdc8ae3d9ad44df2d57020025cc9e853a
+    sha256: d1e254c965427c2b21b451766e282cbfd7c1f909c473de83e038098aecbd1812
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 オフラインでもコードレビューを止める必要はありません。**分散レビュー**アドオンでフィードバックを継続：

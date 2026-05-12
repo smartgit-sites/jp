@@ -1,0 +1,128 @@
+.sg-layout-sidebar,
+.sg-layout-main,
+.sg-layout-main-centered,
+.sg-content-span-full,
+.sg-content-span-center,
+.sg-layout-frame {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+}
+
+.sg-layout-content > img:not([src*=".svg"]) {
+  display: block;
+}
+
+.sg-layout-content > img:not([src*=".svg"]) + img:not([src*=".svg"]) {
+  margin-top: map-get($spacers, 2) * 3;
+}
+
+.feature-detail-split {
+  --feature-detail-split-space: #{map-get($spacers, 4) * .5};
+  background-color: $white;
+  border: 1px solid $sg-indigo-100;
+  border-radius: var(--#{$prefix}border-radius-sm);
+  overflow: hidden;
+}
+
+.feature-detail-split__panel {
+  height: 100%;
+  padding: var(--feature-detail-split-space);
+
+  > :first-child:last-child {
+    > :first-child {
+      margin-top: 0;
+    }
+
+    > :last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.feature-detail-split__panel--copy {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: var(--feature-detail-split-space);
+    left: var(--feature-detail-split-space);
+    height: 0;
+    border-top: 1px solid $sg-indigo-100;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .feature-detail-split__panel--copy::before {
+    top: var(--feature-detail-split-space);
+    right: auto;
+    bottom: var(--feature-detail-split-space);
+    left: 0;
+    width: 0;
+    height: auto;
+    border-top: 0;
+    border-left: 1px solid $sg-indigo-100;
+  }
+
+  .sg-content-span-full {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .sg-layout-sidebar {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .sg-layout-main,
+  .sg-layout-main-centered,
+  .sg-content-span-center,
+  .sg-layout-frame {
+    flex: 0 0 auto;
+  }
+
+  .sg-layout-main,
+  .sg-content-span-center,
+  .sg-layout-frame {
+    width: 75%;
+  }
+
+  .sg-layout-main-centered {
+    width: 50%;
+  }
+
+  .sg-content-span-center,
+  .sg-layout-frame {
+    margin-left: 25%;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .sg-layout-sidebar {
+    width: 16.66666667%;
+  }
+
+  .sg-layout-main,
+  .sg-layout-main-centered,
+  .sg-content-span-center,
+  .sg-layout-frame {
+    width: 83.33333333%;
+  }
+
+  .sg-layout-main-centered {
+    width: 66.66666667%;
+  }
+
+  .sg-content-span-center,
+  .sg-layout-frame {
+    margin-left: 16.66666667%;
+  }
+
+  .feature-detail-split {
+    --feature-detail-split-space: #{map-get($spacers, 5) * .5};
+  }
+}

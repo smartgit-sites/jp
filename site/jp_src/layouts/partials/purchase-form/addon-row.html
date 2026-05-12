@@ -1,0 +1,13 @@
+<div class="col-12 col-sm-7">
+    <div class="form-check">
+        <input type="hidden" name="{{ .Name }}" value="0">
+        <input class="form-check-input" type="checkbox" value="1" id="{{ .Id }}" name="{{ .Name }}" data-update-on="change" checked>
+        <label class="form-check-label fw-bold" for="{{ .Id }}">
+            {{ .Title }}<br>
+            <span class="fw-normal">{{ .Subtitle }}</span>
+        </label>
+    </div>
+</div>
+<div class="col-12 col-sm-5">
+    <div class="text-end" data-price-tag="{{ .PriceTag }}"></div>
+</div>

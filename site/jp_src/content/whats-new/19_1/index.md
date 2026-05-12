@@ -1,30 +1,29 @@
 ---
-title: バージョン 19.1
-headerH2: SmartGit 19.1 の主要な改善点
-listTitle: バージョン 19.1
-imageAltText: 強化されたパフォーマンス、改善されたGit-Flow、洗練されたダークテーマサポートを備えたSmartGit 19.1
-linkText: SmartGit バージョン 19.1 の詳細
-category:
-- feature
-headerMessage: '19.1で**高速なパフォーマンス**、洗練された**Git-Flow**、スムーズな**ダークテーマ**をお楽しみください。'
-description: SmartGit 19.1は速度、可視性、Git-Flow処理を改善 — Gitでより速くスマートに作業するために今すぐアップデート。
-ogTitle: 'SmartGit 19.1: 高速なパフォーマンス、Git-Flowサポート & ダークテーマの改善'
-ogDesc: SmartGit 19.1は速度、可視性、Git-Flow処理を改善 — Gitでより速くスマートに作業するために今すぐアップデート。
+title: "Version 19.1"
+headerH2: "Major Improvements in SmartGit 19.1"
+listTitle: "Version 19.1"
+imageAltText: "SmartGit 19.1 with enhanced performance, improved Git-Flow, and refined dark theme support"
+linkText: "More about SmartGit Version 19.1"
+category: ["feature"]
+headerMessage: "Enjoy **faster performance**, refined **Git-Flow**, and smoother **dark theme** in 19.1."
+description: "SmartGit 19.1 improves speed, visibility, and Git-Flow handling—update now to work faster and smarter with Git."
+ogTitle: "SmartGit 19.1: Faster performance, Git-Flow support & dark theme improvements"
+ogDesc: "SmartGit 19.1 improves speed, visibility, and Git-Flow handling—update now to work faster and smarter with Git."
 weight: 800
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: whats-new/19_1/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: 6a6e5a97c27e98dcf0e2a4cf169d8de80b499739
     modified_committed_at: 2025-09-02T15:04:52Z
     blob: e13423cdaa14213b2a5b2c9f7ba576742fa63a29
-    sha256: e92102ddaa68eeb30e34fd762b4e6385b07f142e5bbd93d2f8e1e847c68a37e1
-    fetched_at: 2026-01-04T18:02:33Z
+    sha256: 40f15d7265c1819b494ccbccb62598fdb2f3da10d9d272ef60c3d4c9b5738d6f
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:33Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 SmartGit 19.1は、速度、明確さ、Git-Flowの使いやすさのための主要なアップグレードをもたらします：

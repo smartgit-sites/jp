@@ -1,25 +1,119 @@
 {{ define "main" }}
-{{ partial "header.html" (merge (dict "Page" .) .Params) }}
+{{ $contentSpanClass := partial "content-span-class.html" (dict "Page" . "Default" "full-span") }}
+{{ partial "header.html" (merge (dict "Page" . "contentSpanDefault" "full-span") .Params) }}
 <main>
-    <section id="vision" class="container mt-n5 px-lg-5">
+    <section class="container teaser-follow-up mb-5">
         <div class="row">
-            <div class="col-12 col-md-6 py-4">
-                <h2 class="fs-6 fw-bold sg-indigo-500 mb-4">Vision</h2>
-                {{ partial "markdown-render-section" (slice . "vision" `<p>$content</p>`) }}
+            <div class="{{ $contentSpanClass }}">
+                <div class="row g-5 py-4">
+
+            {{/* Left column: Vision + History */}}
+            <div class="col-12 col-lg-7">
+
+                {{/* Vision */}}
+                <div class="mb-5">
+                    <div class="d-flex align-items-center mb-3">
+                        <i class="fa-light fa-eye fa-2x sg-orange-500 me-3"></i>
+                        <h2 class="sg-indigo-500 mb-0">Our Vision</h2>
+                    </div>
+                    {{ partial "markdown-render-section" (slice . "vision" `<p class="text-muted">$content</p>`) }}
+                </div>
+
+                {{/* History */}}
+                <div>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fa-light fa-clock-rotate-left fa-2x sg-orange-500 me-3"></i>
+                        <h2 class="sg-indigo-500 mb-0">Our History</h2>
+                    </div>
+
+                    {{/* Timeline item 1 */}}
+                    <div class="d-flex gap-4 mb-0">
+                        <div class="d-flex flex-column align-items-center" style="min-width: 40px;">
+                            <div class="rounded-circle bg-sg-orange-500 d-flex align-items-center justify-content-center flex-shrink-0" style="width:40px;height:40px;">
+                                <i class="fa-light fa-flag fa-sm text-white"></i>
+                            </div>
+                            <div style="width:2px;flex:1;background:linear-gradient(to bottom,var(--sg-orange-500),var(--sg-indigo-200));min-height:40px;"></div>
+                        </div>
+                        <div class="pb-4">
+                            <h5 class="sg-indigo-500 fw-semibold mb-2">Early 2000s</h5>
+                            {{ partial "markdown-render-section" (slice . "history1" `<p class="text-muted">$content</p>`) }}
+                        </div>
+                    </div>
+
+                    {{/* Timeline item 2 */}}
+                    <div class="d-flex gap-4 mb-0">
+                        <div class="d-flex flex-column align-items-center" style="min-width: 40px;">
+                            <div class="rounded-circle bg-sg-indigo-300 d-flex align-items-center justify-content-center flex-shrink-0" style="width:40px;height:40px;">
+                                <i class="fa-light fa-route fa-sm text-white"></i>
+                            </div>
+                            <div style="width:2px;flex:1;background:linear-gradient(to bottom,var(--sg-indigo-200),var(--sg-indigo-400));min-height:40px;"></div>
+                        </div>
+                        <div class="pb-4">
+                            <h5 class="sg-indigo-500 fw-semibold mb-2">Two Decades</h5>
+                            {{ partial "markdown-render-section" (slice . "history2" `<p class="text-muted">$content</p>`) }}
+                        </div>
+                    </div>
+
+                    {{/* Timeline item 3 */}}
+                    <div class="d-flex gap-4">
+                        <div class="d-flex flex-column align-items-center" style="min-width: 40px;">
+                            <div class="rounded-circle bg-sg-indigo-500 d-flex align-items-center justify-content-center flex-shrink-0" style="width:40px;height:40px;">
+                                <i class="fa-light fa-location-dot fa-sm text-white"></i>
+                            </div>
+                        </div>
+                        <div class="pb-2">
+                            <h5 class="sg-indigo-500 fw-semibold mb-2">Today</h5>
+                            {{ partial "markdown-render-section" (slice . "history3" `<p class="text-muted">$content</p>`) }}
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="col-12 col-md-6 py-4">
-                {{ partial "success-stories-featured-slim" . }}
+
+            {{/* Right column: What Developers Say */}}
+            <div class="col-12 col-lg-5">
+                <h5 class="sg-indigo-500 fw-semibold mb-4">What Developers Say</h5>
+                <div class="d-flex flex-column gap-3">
+                {{ $files := .Site.Data.success_stories_featured.list }}
+                {{ $colors := .Site.Data.success_stories_featured.listColors }}
+                {{ range $key, $value := $files }}
+                    {{ $page := site.GetPage .filename }}
+                    {{ if $page }}
+                        {{ $params := $page.Params }}
+                        {{ $color := index $colors $key }}
+                        <div class="p-4 rounded-3 border-start border-3 border-sg-{{ $color.color }}-500 bg-sg-{{ $color.color }}-500-rgb bg-opacity-5 position-relative">
+                            <i class="fa-light fa-quote-left sg-orange-500 mb-2"></i>
+                            <p class="text-muted mb-3" style="font-size: 0.9rem;">{{ $params.summary }}</p>
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <span class="fw-semibold sg-indigo-500" style="font-size: 0.85rem;">{{ $params.testimonial_user }}</span>
+                                    <span class="text-muted d-block" style="font-size: 0.85rem;">{{ $params.testimonial_company }}</span>
+                                </div>
+                                <a href="{{ $page.RelPermalink }}" class="btn btn-sm bg-sg-indigo-200-rgb bg-opacity-25 stretched-link">
+                                    <i class="fa-light fa-arrow-up-right-from-square sg-indigo-500"></i>
+                                </a>
+                            </div>
+                        </div>
+                    {{ end }}
+                {{ end }}
+                </div>
+            </div>
+
+                </div>
             </div>
         </div>
+    </section>
+
+    {{/* Links */}}
+    <section class="container mb-5">
         <div class="row">
-            <div class="col-12">
-                <h2 class="fs-6 fw-bold sg-indigo-500 mb-4">History</h2>
-                {{ partial "markdown-render-section" (slice . "history" `<p>$content</p>`) }}
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                {{ partial "markdown-render-section" (slice . "links" `<p>$content</p>`) }}
+            <div class="{{ $contentSpanClass }}">
+                <div class="d-flex flex-wrap gap-2">
+                    {{ partial "linkbeautifier.html" (dict "url" "/company/team/" "display" "Meet the SmartGit Team" "class" "btn btn-sg-orange" "title" "Meet the SmartGit Team") }}
+                    {{ partial "linkbeautifier.html" (dict "url" "/company/european-git-client/" "display" "The European Git Client" "class" "btn btn-sg-orange" "title" "The European Git Client") }}
+                    {{ partial "linkbeautifier.html" (dict "url" "/company/imprint/" "display" "Imprint" "class" "btn btn-sg-gray" "title" "Imprint") }}
+                    {{ partial "linkbeautifier.html" (dict "url" "/company/privacy-policy/" "display" "Privacy policy" "class" "btn btn-sg-gray" "title" "Privacy policy") }}
+                </div>
             </div>
         </div>
     </section>

@@ -11,12 +11,12 @@
         {{ $h2 = printf "Version %s" $rel.version }}
     {{ end }}
 {{ end }}
-{{ partial "header.html" (dict "h1" $h1 "h2" $h2 "Page" .) }}
+{{ partial "header.html" (dict "h1" $h1 "h2" $h2 "Page" . "heroLayout" "with-sidebar-full") }}
 <main>
     <div class="container">
         <div class="row">
             {{ partial "submenu-column" (dict "Page" . "Params" (merge .Params (dict "menu" "meta" "overviewTitle" "Current Version"))) }}
-            <div class="col-12 col-md-9 col-lg-10 mt-md-n5">
+            <div class="sg-layout-main">
                 {{ if $partial }}
                     {{ partial (printf "download/%s" $partial) . }}
                 {{ else }}
@@ -26,3 +26,5 @@
         </div>
     </div>
 </main>
+{{ $sgd := resources.Get "javascripts/smartgit-download.js" | minify | resources.Fingerprint }}
+<script src="{{ $sgd.RelPermalink }}"></script>

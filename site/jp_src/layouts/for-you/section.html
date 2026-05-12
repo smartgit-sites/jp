@@ -1,0 +1,13 @@
+{{ define "main" }}
+{{ $contentSpanClass := partial "content-span-class.html" (dict "Page" . "Default" "full-span") }}
+{{ partial "header.html" (dict "Page" . "contentSpanDefault" "full-span") }}
+<main id="for_you_section">
+    <section class="container teaser-follow-up-soft mb-5">
+        <div class="row">
+            <div class="{{ $contentSpanClass }}">
+                {{ .Content }}
+            </div>
+        </div>
+    </section>
+</main>
+{{ end }}

@@ -1,42 +1,55 @@
 {{ $benefitPage := site.GetPage "home/benefits.md" }}
 {{ $items := $benefitPage.Params.benefit }}
+
+{{ $links := slice
+  "/features/three-window-styles/"
+  "/features/clean-commits/"
+  "/features/smart-branching/"
+  "/features/conflict-resolution/"
+  "/features/visual-history/"
+}}
+
 <section id="features" class="container my-5">
-  <div class="row">
-    <div class="col-12">
-      <div class="card border border-1 border-sg-indigo-500 rounded-2 bg-transparent">
-        <div class="card-header bg-transparent border-0 text-center sg-gray-400 pt-4 py-4">
-          <h2>{{ $benefitPage.Params.title }}</h2>
-        </div>
-        <div class="card-body p-5">
-          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5">
-            {{ range $item := $items }}
-            <div class="col">
-              <div class="card border-0">
-                <div class="card-body">
-                  <div class="ratio ratio-1x1 w-25 mb-3">
-                    <div class="rounded-circle bg-sg-indigo-100 d-flex justify-content-center align-items-center">
-                      <i class="{{ $item.icon }}" style="--fa-primary-color: var(--sg-indigo-500); --fa-secondary-color:var(--sg-orange-500);--fa-secondary-opacity: 1.0" data-sg="sg-indigo-500,sg-orange-500"></i>
-                    </div>
-                  </div>
-                  <h5 class="card-title sg-indigo-500">{{ $item.title }}</h5>
-                  <hr class="w-25 sg-indigo-400 border-2">
-                  <p class="card-text">{{ $item.desc |markdownify }}</p>
-                  {{ with $item.link }}
-                  <p class="text-end"><a href="{{ $item.link }}" title="{{ $item.linkText }}: {{ $item.title }}" class="stretched-link">{{ $item.linkText }}</a></p>
-                  {{ end }}
-                </div>
+  <div class="bg-sg-indigo-200-rgb bg-opacity-10 rounded-3 py-5 px-4">
+    <div class="row justify-content-center mb-5">
+      <div class="col-12 text-center">
+        <h2 class="sg-indigo-500 mb-2">{{ $benefitPage.Params.title }}</h2>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+      {{ range $i, $item := $items }}
+      {{ $link := index $links $i }}
+      <div class="col">
+        <a href="{{ $link }}" class="text-decoration-none">
+          <div class="bg-white rounded-3 p-4 h-100 benefit-card">
+            <div class="ratio ratio-1x1 w-25 mb-3">
+              <div class="rounded-circle bg-sg-indigo-100 d-flex justify-content-center align-items-center">
+                <i class="{{ $item.icon }}" style="--fa-primary-color: var(--sg-indigo-500); --fa-secondary-color:var(--sg-orange-500);--fa-secondary-opacity: 1.0" data-sg="sg-indigo-500,sg-orange-500"></i>
               </div>
             </div>
-            {{ end }}
+            <h5 class="sg-indigo-500 mb-2">{{ $item.title }}</h5>
+            <hr class="w-25 sg-indigo-400 border-2">
+            <p class="text-muted small mb-0">{{ $item.desc | markdownify }}</p>
           </div>
-          <div class="row">
-            <div class="col-12 px-4 text-center">
-              <!-- TODO: get content from $benefitPage -->
-              {{ .Content }}
-            </div>
-          </div>
-        </div>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+    <div class="row mt-4">
+      <div class="col-12 text-center">
+        {{ .Content }}
       </div>
     </div>
   </div>
 </section>
+
+
+<style>
+.benefit-card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.benefit-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08) !important;
+}
+</style>

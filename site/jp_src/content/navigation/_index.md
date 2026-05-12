@@ -1,18 +1,18 @@
 ---
-title: The smarter way to Git
+title: "The smarter way to Git" 
 headless: true
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: navigation/_index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: c59e58880dee9410df1d80bd68977bbe10445969
     modified_committed_at: 2025-08-11T13:01:21Z
     blob: 3c4a2ca497adea6f6ed42b8552c8639d53a654d8
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    fetched_at: 2026-01-04T18:02:32Z
+    sha256: e98bbaf4ae45e1db91c3ce6fcddccc26fe988f903868a2f6943ca95c5bcf9623
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---

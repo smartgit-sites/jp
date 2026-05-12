@@ -1,38 +1,38 @@
 ---
-title: SmartGitコミュニティイニシアチブ
-description: 開発者や企業がSmartGitからどのような恩恵を受けているかをご覧ください。現場からの実際のストーリーが、SmartGitがどのように生産性、コラボレーション、コード品質を向上させるかを示しています。
-headerH2: 共に築く
-headerH3: SmartGit成功事例
-headerMessage: SmartGitを使った実体験、技術的な成果を共有し、仲間から学び、Gitの専門知識を認められましょう。
-layout: success-stories/list
-categories:
-- Success story
-aliases:
-- /success-stories/
+title: "SmartGit Community Initiative"
+description: "Discover how developers and companies benefit from SmartGit. Real stories from the field show how SmartGit boosts productivity, collaboration, and code quality."
+headerH1: "SmartGit Success Stories"
+headerH2: "Building together"
+headerMessage: "Share your real-world experiences with SmartGit, technical achievements, learn from peers, and get recognized for your Git expertise."
+layout: "success-stories/list"
+categories: ["Success story"]
+
+aliases: ["/success-stories/"]
+
 reasons:
-- title: これは何ですか？
-  desc: SmartGitが実際の課題解決にどのように役立ったかを開発者が紹介するプラットフォーム
-  icon: fa-light fa-signs-post fa-2x
-- title: 誰が参加できますか？
-  desc: ワークフローでSmartGitを使用しているすべての開発者 - 個人開発者からチームリーダーまで
-  icon: fa-light fa-people-group fa-2x
-- title: なぜ共有するのですか？
-  desc: プロジェクトを紹介され、仲間の開発者の成功を助けましょう
-  icon: fa-light fa-brain-arrow-curved-right fa-2x
+  - title: "What is it about?"
+    desc: "A platform for developers showing how SmartGit helped to solve real challenges"
+    icon: "fa-light fa-signs-post fa-3x"
+  - title: "Who can participate?"
+    desc: "Any developer using SmartGit in their workflow - from solo developers to team leads"
+    icon: "fa-light fa-people-group fa-3x"
+  - title: "Why share?"
+    desc: "Get featured with your project, and help fellow developers succeed"
+    icon: "fa-light fa-brain-arrow-curved-right fa-3x"
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/_index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: fc2b579a8e8740abb82a99c53e33f832d063dfaf
-    modified_committed_at: 2025-07-21T17:04:23Z
-    blob: 12eec7e277254563210f28473376667e6a6a7b52
-    sha256: 58b6bfc713846df91e692978ccc11653c9ceb7b6602afaf4841a7fd0d3a2b347
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: 1e20f09e39fea2859c0e00ee8e9cf89b79840c32
+    modified_committed_at: 2026-04-07T21:37:07Z
+    blob: 9a8f5fbcc0ac246551ed3ef84ccdd7004216c3dd
+    sha256: 63ddaeaa6fa9e5ac4cc35563bb80a7fff7b4a12549f301ce66adce31814b60fb
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 ### **SmartGit注目のストーリー 2025**

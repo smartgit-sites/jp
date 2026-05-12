@@ -1,18 +1,14 @@
 <form action="" accept-charset="UTF-8" method="get" data-module="purchase-form" data-product-id="smartgit" data-checkout-type="subscription">
     <input type="hidden" name="purchase_subscription[coupon-code]" value="">
-    <div class="row">
-        <div class="col-12 px-0">
-            <div class="d-flex align-items-center mb-3">
-                <span class="visually-hidden">Currency</span>
-                <div class="form-check form-switch ms-auto p-1 bg-transparent border-0">
-                    <input type="radio" class="btn-check" name="purchase_subscription[currency]" value="EUR" id="purchase_subscription_currency_EUR" data-update-on="change" data-label="EUR" autocomplete="off">
-                    <label class="btn btn-sm" for="purchase_subscription_currency_EUR">EURO</label>
-                    <input type="radio" class="btn-check" name="purchase_subscription[currency]" value="USD" id="purchase_subscription_currency_USD" data-update-on="change" data-label="USD" autocomplete="off" checked>
-                    <label class="btn btn-sm" for="purchase_subscription_currency_USD">USD</label>
-                </div>
-            </div>
-        </div>
-    </div>
+    {{ partial "purchase-form/currency-switch.html" (dict
+        "Name" "purchase_subscription[currency]"
+        "IdPrefix" "purchase_subscription_currency"
+        "CheckedValue" "USD"
+        "Options" (slice
+            (dict "Value" "EUR" "Label" "EURO" "DataLabel" "EUR")
+            (dict "Value" "USD" "Label" "USD" "DataLabel" "USD")
+        )
+    ) }}
     <div class="row">
         <div class="col-12 px-0">
             <div class="card">
@@ -20,59 +16,41 @@
                     <div class="d-flex align-items-center">
                         <span class="fs-4 sg-gray-500">SmartGit Licenses</span>
                         <div class="form-check form-switch ms-auto p-1">
-                            <input type="radio" class="btn-check" name="purchase_subscription[billing_interval]" value="monthly" id="purchase_subscription_billing_interval_monthly" data-update-on="change" autocomplete="off">
-                            <label class="btn btn-sm" for="purchase_subscription_billing_interval_monthly">monthly</label>
-                            <input type="radio" class="btn-check" name="purchase_subscription[billing_interval]" value="yearly" id="purchase_subscription_billing_interval_yearly" data-update-on="change" autocomplete="off" checked>
-                            <label class="btn btn-sm" for="purchase_subscription_billing_interval_yearly">yearly</label>
+                            {{ range (slice
+                                (dict "Value" "monthly" "Label" "monthly")
+                                (dict "Value" "yearly" "Label" "yearly" "Checked" true)
+                            ) }}
+                                <input type="radio" class="btn-check" name="purchase_subscription[billing_interval]" value="{{ .Value }}" id="purchase_subscription_billing_interval_{{ .Value }}" data-update-on="change" autocomplete="off"{{ if .Checked }} checked{{ end }}>
+                                <label class="btn btn-sm" for="purchase_subscription_billing_interval_{{ .Value }}">{{ .Label }}</label>
+                            {{ end }}
                         </div>
                     </div>
                 </div>
-                <div class="card-body border-bottom border-sg-indigo-200 py-5">
-                    <div class="row g-3 align-items-center">
-                        <div id="purchase_subscription_price" data-price-tag="total" class="col-sm-8 fs-2 sg-indigo-500 fw-bold lh-1 order-1 text-end">...</div>
-                        <div class="col-sm-4 order-first order-sm-0">
-                            <div class="input-group mb-3">
-                                <input type="number" class="form-control" id="purchase_subscription_quantity" name="purchase_subscription[quantity]" min="1" max="10000" value="1" aria-label="Quntity" data-update-on="change" data-min="1" data-max="10000">
-                                <span class="input-group-text">QTY</span>
-                            </div>
-                        </div>
-                        <div class="col-12 text-muted fs-6 fw-normal order-1 order-sm-last mt-n1 text-end">(excl. VAT)<p></p></div>
-                        <div class="col-12 mt-3" data-notification="license-count"></div>
-                    </div>
-                    <div class="row g-3">
-                        <div class="col-12 col-sm-6 offset-sm-6">
-                            <button class="btn btn-sg-indigo w-100" type="button" data-action="request-purchase">Subscribe via Cleverbridge</button>
-                        </div>
-                    </div>
-                </div>
+                {{ partial "purchase-form/total-section.html" (dict
+                    "QuantityId" "purchase_subscription_quantity"
+                    "QuantityName" "purchase_subscription[quantity]"
+                    "PriceId" "purchase_subscription_price"
+                    "Buttons" (slice
+                        (dict "ColumnClass" "col-12 col-sm-6 offset-sm-6" "ButtonClass" "btn btn-sg-indigo" "Type" "button" "Action" "request-purchase" "Label" "Subscribe via Cleverbridge")
+                    )
+                ) }}
+                {{ partial "purchase-form/coupon-row.html" . }}
                 <div class="card-body">
                     <div class="row g-3">
-                        <div class="col-12 col-sm-7">
-                            <div class="form-check">
-                                <input type="hidden" name="purchase_subscription[distributed_reviews_addon]" value="0">
-                                <input class="form-check-input" type="checkbox" value="1" id="purchase_subscription_distributed_reviews_addon" name="purchase_subscription[distributed_reviews_addon]" data-update-on="change" checked>
-                                <label class="form-check-label fw-bold" for="purchase_subscription_distributed_reviews_addon">
-                                    Incl. Distributed Reviews Add-on<br>
-                                    <span class="fw-normal">local, offline and fast code reviewing</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-5">
-                            <div data-price-tag="distributed_reviews_addon" class="text-end"></div>
-                        </div>
-                        <div class="col-12 col-sm-7">
-                            <div class="form-check">
-                                <input type="hidden" name="purchase_subscription[smart_synchronize]" value="0">
-                                <input class="form-check-input" type="checkbox" value="1" id="purchase_subscription_smart_synchronize" name="purchase_subscription[smart_synchronize]" data-update-on="change" checked>
-                                <label class="form-check-label fw-bold" for="purchase_subscription_smart_synchronize">
-                                    Incl. SmartSynchronize licenses<br>
-                                    <span class="fw-normal">SmartGit's file (and directory) compare as standalone tool</span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-5">
-                            <div data-price-tag="smart_synchronize" class="text-end"></div>
-                        </div>
+                        {{ partial "purchase-form/addon-row.html" (dict
+                            "Name" "purchase_subscription[distributed_reviews_addon]"
+                            "Id" "purchase_subscription_distributed_reviews_addon"
+                            "Title" "Incl. Distributed Reviews Add-on"
+                            "Subtitle" "local, offline and fast code reviewing"
+                            "PriceTag" "distributed_reviews_addon"
+                        ) }}
+                        {{ partial "purchase-form/addon-row.html" (dict
+                            "Name" "purchase_subscription[smart_synchronize]"
+                            "Id" "purchase_subscription_smart_synchronize"
+                            "Title" "Incl. SmartSynchronize licenses"
+                            "Subtitle" "SmartGit's file (and directory) compare as standalone tool"
+                            "PriceTag" "smart_synchronize"
+                        ) }}
                     </div>
                 </div>
             </div>

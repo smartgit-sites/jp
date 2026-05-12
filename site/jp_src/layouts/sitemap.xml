@@ -1,11 +1,15 @@
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>\n" | safeHTML -}}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  {{- range .Site.Pages -}}
-    {{- with .Permalink }}
+  {{- $pages := slice .Site.Home -}}
+  {{- $pages = $pages | append .Site.Sections -}}
+  {{- $pages = $pages | append .Site.RegularPages -}}
+  {{- range sort $pages "Permalink" -}}
+    {{- $robots := lower (printf "%v" .Params.robots) -}}
+    {{- if and .Permalink (not .Params.sitemapExclude) (not (in $robots "noindex")) }}
   <url>
-    <loc>{{ . }}</loc>
+    <loc>{{ .Permalink }}</loc>
   </url>
-    {{- end }}
+    {{- end -}}
   {{- end }}
 </urlset>

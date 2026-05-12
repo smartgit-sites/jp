@@ -1,31 +1,30 @@
 ---
-title: GitHub連携
-headerH1: SmartGit GitHub連携
-headerH2: デスクトップでGitHub
-listTitle: GitHub連携
-imageAltText: リポジトリのクローン、プルリクエストの作成、コードレビューの管理をデスクトップから直接行えるSmartGitのGitHub連携インターフェース。
-linkText: 分散レビューアドオンについて詳しく
-category:
-- feature
-headerMessage: 'SmartGit内で直接**GitHubプルリクエスト**と**レビュー**を処理。'
-description: 'SmartGitでGitHubワークフローを効率化：GitHubからリポジトリをクローン、プルリクエストを作成、レビューとコメントを追加。'
-ogTitle: SmartGit GitHub連携をデスクトップで
-ogDesc: 'SmartGitでGitHubワークフローを効率化：GitHubからリポジトリをクローン、プルリクエストを作成、レビューとコメントを追加。'
+title: "GitHub Integration"
+headerH1: "SmartGit GitHub Integration"
+headerH2: "GitHub on your desktop"
+listTitle: "GitHub Integration"
+imageAltText: "SmartGit's GitHub integration interface for cloning repositories, creating pull requests, and managing code reviews directly from desktop."
+linkText: "More about Distributed Reviews Add-on"
+category: ["feature"]
+headerMessage: "Handle **GitHub pull requests** and **reviews** directly inside SmartGit."
+description: "SmartGit streamlines GitHub workflows: clone the repository from GitHub, create pull requests, review and add comments."
+ogTitle: "SmartGit GitHub Integration on your desktop"
+ogDesc: "SmartGit streamlines GitHub workflows: clone the repository from GitHub, create pull requests, review and add comments."
 weight: 9
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: features/github-integration/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: dccfec861e539ddff6af9927e990c214b888c63b
-    modified_committed_at: 2025-09-19T11:36:49Z
-    blob: 746a8d3fa70cdcdc21d063ab939ed56d671be246
-    sha256: 5872ab5cd44ae8fe96fc68221db0806cdd3e5c3b8d8c647424f6608485790a73
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: b84650c18d8c8ef3a7ca60f82831627113368c73
+    modified_committed_at: 2026-01-27T08:43:48Z
+    blob: 1222475911dfb1f0a557123f4b506dc326cab242
+    sha256: da998a80b7417c40c47b12fccbe89a1ab5c3b3ff5f7dbf21c04e2d6ce3248f89
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 GitHubワークフローをデスクトップで実現。SmartGitでリポジトリとプルリクエストをシームレスに管理：

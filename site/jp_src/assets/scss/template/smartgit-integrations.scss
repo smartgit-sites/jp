@@ -1,10 +1,10 @@
 $iconGeneralSize: map-get($spacers, 4);
-$generalBgColor: $sg-surface-lightest-gray;
+$generalBgColor: transparent;
 #integrations .icon-circle{
-  background-color: $sg-surface-neutral;
+  background-color: white;
   border-radius: 50%;
-  border: $iconGeneralSize solid $generalBgColor;
-  box-shadow: inset 0 0 0 $iconGeneralSize $generalBgColor;
+  border: $iconGeneralSize solid white;
+  box-shadow: inset 0 0 0 $iconGeneralSize white;
   text-align: center;
   display: flex;
   align-items: center;

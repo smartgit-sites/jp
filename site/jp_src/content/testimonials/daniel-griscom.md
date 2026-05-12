@@ -1,21 +1,22 @@
 ---
 headless: true
-testimonial_user: Daniel Griscom
-testimonial_company: Suitable Systems
+
+testimonial_user: "Daniel Griscom"
+testimonial_company: "Suitable Systems"
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: testimonials/daniel-griscom.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: c59e58880dee9410df1d80bd68977bbe10445969
     modified_committed_at: 2025-08-11T13:01:21Z
     blob: f2a3526487398a4484513507d019f5b5a7e892e7
-    sha256: 708f7ba7c4ee88352212e40719d9e06b66aceb2805314eb0df19e7bf311088a9
-    fetched_at: 2026-01-04T18:02:32Z
+    sha256: 22fd74ac03a4c99b52f5fcba7cac3624cfa7a4340425f7678bfe90d505c654d9
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 # testimonial

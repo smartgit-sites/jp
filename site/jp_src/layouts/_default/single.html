@@ -7,11 +7,16 @@
 {{ if .Params.headerH2 }}
 {{ $h2 = .Params.headerH2 }}
 {{end }}
-{{ partial "header" (dict "h1" $h1 "h2" $h2  "h3" .Params.headerH3  "message" .Params.headerMessage) . }}
+{{ $teaserFollowUpClass := "teaser-follow-up" }}
+{{ if eq .Params.teaserFollowUp "soft" }}
+{{ $teaserFollowUpClass = "teaser-follow-up-soft" }}
+{{ end }}
+{{ $contentSpanClass := partial "content-span-class.html" (dict "Page" . "Default" "center-span") }}
+{{ partial "header.html" (dict "Page" . "contentSpanDefault" "center-span" "h1" $h1 "h2" $h2 "message" .Params.headerMessage) }}
 <main id="single_default">
-    <section class="container mt-n5 px-lg-5">
+    <section class="container {{ $teaserFollowUpClass }}">
         <div class="row">
-            <div class="col-12 col-lg-10 offset-lg-1 col-lg-3 pb-4">
+            <div class="{{ $contentSpanClass }} pb-4">
                 {{ .Content }}
             </div>
         </div>

@@ -6,6 +6,7 @@ baseURL = 'https://smartgit.jp/'
 
 [params]
 apiHost = 'https://api.syntevo.com'
+turnstileSiteKey = '0x4AAAAAAA5ppOVQRpTnVn7s'
 description = 'SmartGit - プロフェッショナルとチームのためのクロスプラットフォームGitクライアント'
 keywords = ''
 ogTitle = 'SmartGit -- チームとプロのためのスマートなGitクライアント'
@@ -62,6 +63,15 @@ unsafe = true
             params.icon = ''
             params.target = '_parent'
 
+#            [[menus.main]]
+#            name = 'Intelligent Workflow'
+#            pageRef = '/features/intelligent-workflow/'
+#            url = '/features/cloud-integration/'
+#            weight = 20
+#            parent = 'feature-overview'
+#            params.icon = ''
+#            params.target = '_parent'
+
             [[menus.main]]
             name = 'Clean Commits'
             pageRef = '/features/clean-commits/'
@@ -110,13 +120,22 @@ unsafe = true
 
         [[menus.main]]
         identifier = 'whats-new'
-        name = "What's new"
+        name = "What's New"
         pageRef = '/whats-new'
         url = '/whats-new/'
         parent = 'features'
         weight = 20
         params.icon = ''
         params.target = '_parent'
+
+            [[menus.main]]
+            name = 'Version 26.1 RC'
+            pageRef = '/whats-new/26_1'
+            url = '/whats-new/26_1'
+            parent = 'whats-new'
+            weight = 5
+            params.icon = ''
+            params.target = '_parent'
 
             [[menus.main]]
             name = 'Version 25.1'
@@ -209,47 +228,56 @@ unsafe = true
             params.icon = ''
             params.target = '_parent'
 
+        [[menus.main]]
+        name = 'For You'
+        pageRef = '/for-you/'
+        url = '/for-you/'
+        parent = 'features'
+        weight = 25
+        params.icon = ''
+        params.target = '_parent'
+
     [[menus.main]]
-    identifier = 'purchase'
-    name = 'Purchase'
-    pageRef = '/purchase/'
-    url = '/purchase/'
+    identifier = 'pricing'
+    name = 'Pricing'
+    pageRef = '/pricing/'
+    url = '/pricing/'
     weight = 30
     params.icon = ''
     params.target = '_parent'
 
         [[menus.main]]
-        identifier = 'purchase-overview'
+        identifier = 'pricing-overview'
         name = 'Overview'
-        pageRef = '/purchase/'
-        url = '/purchase/'
-        parent = 'purchase'
+        pageRef = '/pricing/'
+        url = '/pricing/'
+        parent = 'pricing'
         weight = 10
         params.icon = ''
         params.target = '_parent'
 
         [[menus.main]]
         name = 'License Agreement'
-        pageRef = '/purchase/license-agreement'
-        url = '/purchase/license-agreement/'
-        parent = 'purchase'
+        pageRef = '/pricing/license-agreement'
+        url = '/pricing/license-agreement/'
+        parent = 'pricing'
         weight = 20
         params.icon = ''
         params.target = '_parent'
 
         [[menus.main]]
         name = 'Reseller Information'
-        pageRef = '/purchase/reseller-information'
-        url = '/purchase/reseller-information/'
-        parent = 'purchase'
+        pageRef = '/pricing/reseller-information'
+        url = '/pricing/reseller-information/'
+        parent = 'pricing'
         weight = 30
         params.icon = ''
         params.target = '_parent'
 
     [[menus.main]]
-    identifier = 'knowledge-hub'
-    name = 'Knowledge Hub'
-    pageRef = '/knowledge-hub/'
+    identifier = 'learn'
+    name = 'Learn'
+    pageRef = '/learn/'
     weight = 40
     params.icon = ''
     params.target = '_parent'
@@ -257,23 +285,39 @@ unsafe = true
         [[menus.main]]
         name = 'Manuals'
         url = 'https://docs.syntevo.com/SmartGit/Latest/Manual/'
-        parent = 'knowledge-hub'
+        parent = 'learn'
         weight = 10
         params.icon = ''
         params.target = '_blank'
 
         [[menus.main]]
-        name = 'How-tos'
+        name = 'SmartGit How-Tos'
         url = 'https://docs.syntevo.com/SmartGit/Latest/HowTos/'
-        parent = 'knowledge-hub'
+        parent = 'learn'
+        weight = 15
+        params.icon = ''
+        params.target = '_blank'
+
+        [[menus.main]]
+        name = 'Git How-Tos'
+        url = 'https://www.git-skills.dev/how-to/'
+        parent = 'learn'
         weight = 20
         params.icon = ''
         params.target = '_blank'
 
         [[menus.main]]
+        name = 'Git Quizzes'
+        url = 'https://www.git-skills.dev'
+        parent = 'learn'
+        weight = 27
+        params.icon = ''
+        params.target = '_blank'
+
+        [[menus.main]]
         name = 'Training'
-        pageRef = '/knowledge-hub/trainings/'
-        parent = 'knowledge-hub'
+        pageRef = '/learn/trainings/'
+        parent = 'learn'
         weight = 30
         params.icon = ''
         params.target = '_parent'
@@ -281,7 +325,7 @@ unsafe = true
         [[menus.main]]
         name = 'Community Forum'
         url = 'https://smartgit.userecho.com/'
-        parent = 'knowledge-hub'
+        parent = 'learn'
         weight = 40
         params.icon = ''
         params.target = '_blank'
@@ -329,8 +373,16 @@ unsafe = true
         params.target = '_parent'
 
         [[menus.main]]
+        name = 'European Git Client'
+        pageRef = '/company/european-git-client/'
+        parent = 'company'
+        weight = 50
+        params.icon = ''
+        params.target = '_parent'
+
+        [[menus.main]]
         name = 'Contact'
-        pageRef = '/company/contact/'
+        pageRef = '/contact/'
         parent = 'company'
         weight = 60
         params.icon = ''

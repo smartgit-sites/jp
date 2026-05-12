@@ -1,29 +1,28 @@
 ---
-title: SmartGit Branching
-headerH2: Feature Flow, Git-Flow & GitHub Flow
-listTitle: Smart Branching
-imageAltText: Screenshot of SmartGit's Smart Branching interface.
-linkText: More about Smart Branching
-category:
-- feature
-description: Use SmartGit's guided workflows for Feature Flow and Git-Flow to simplify branching and improve collaboration. Visual tools and built-in guidance help you stay focused and error-free.
-ogTitle: SmartGit Branching -- Feature Flow, Git-Flow & GitHub Flow
-ogDesc: 'Guided workflows in SmartGit: Feature Flow, Git-Flow, GitHub Flow and more. Visual tools, fewer mistakes, better Git.'
+title: "SmartGit Branching"
+headerH2: "Feature Flow, Git-Flow & GitHub Flow"
+listTitle: "Smart Branching"
+imageAltText: "Screenshot of SmartGit's Smart Branching interface."
+linkText: "More about Smart Branching"
+category: ["feature"]
+description: "Use SmartGit's guided workflows for Feature Flow and Git-Flow to simplify branching and improve collaboration. Visual tools and built-in guidance help you stay focused and error-free."
+ogTitle: "SmartGit Branching -- Feature Flow, Git-Flow & GitHub Flow"
+ogDesc: "Guided workflows in SmartGit: Feature Flow, Git-Flow, GitHub Flow and more. Visual tools, fewer mistakes, better Git."
 weight: 4
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: features/smart-branching/smart_branching_rewritten.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: 8cf4b90bac10de7a2eb94538a587ba5cae122b22
-    modified_committed_at: 2025-08-05T21:34:17Z
-    blob: 0a8fa52f7f401afde5514f39b72ab9efb4439b00
-    sha256: 9c24cceb78bb76aa10d2e13239c9b6ff9f1c27f35d7cf146f8f09bd74b81e869
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: c7b19ae4dff7920e50ae357c875692e538f248b8
+    modified_committed_at: 2026-03-10T09:19:58Z
+    blob: ac19ea7731a162dc50ad0224f5b241e30481cd5d
+    sha256: f42340ceccd6679dcedcec6d844c87fc8a46953819901b315ac8d53a3cd8f662
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 # Feature Flow -- Streamlined Feature Development

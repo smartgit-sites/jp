@@ -1,0 +1,14 @@
+{{ define "main" }}
+{{ partial "header.html" (merge (dict "Page" . "heroLayout" "with-sidebar-full") .Params) }}
+<main>
+    <div class="container">
+        <div class="row">
+            {{ partial "submenu-column" (dict "Page" . "Params" .Params) }}
+            <div class="sg-layout-main-centered">
+                {{ .Content }}
+            </div>
+            <div class="sg-layout-sidebar d-none d-md-block pe-md-0"></div>
+        </div>
+    </div>
+</main>
+{{ end }}

@@ -1,23 +1,23 @@
 ---
-title: René Windegger
-position: ソフトウェアエンジニア & テックウィスパラー
-portrait: rene.png
-weight: 8
-category:
-- team
+title: "René Windegger"
+
+position: "Software Engineer & Tech Whisperer"
+portrait: "rene.png"
+weight: 9
+category: ["team"]
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/team/windegger-rene.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: b224aca9920e11ac4218eb227b78d5d7ccdcc599
-    modified_committed_at: 2025-12-10T06:42:46Z
-    blob: dd7438b5e1c8816ca0d6b10a09ccf42ca7d6e56c
-    sha256: 01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: a05f4ffc39bb1e15818977d0b4641f4bb886debb
+    modified_committed_at: 2026-01-29T16:58:59Z
+    blob: 44679cefda69a57e6d2ca1ce78eff82b1d0a30c1
+    sha256: 17d29913224cfbb31a6ba03b867fabd60cd02a92d85c3065d35030a0633e9d9c
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 

@@ -18,20 +18,10 @@
 {{- $page := index . 0 -}}
 {{- $section := index . 1 -}}
 {{- $template := index . 2 -}}
-{{- $content := $page.RawContent -}}
-{{- $content = $content | replaceRE "\r\n" "\n" -}}
-{{- $sections := split $content "\n# " -}}
-{{- $desiredSection := "" -}}
+{{- $content := partial "page-section-content.html" (dict "Page" $page "Section" $section) -}}
 
-{{- range $sections -}}
-  {{- if hasPrefix . (printf "%s\n" $section) -}}
-    {{- $desiredSection = . -}}
-  {{- end -}}
-{{- end -}}
-
-{{- with $desiredSection -}}
-  {{- $cleaned := replaceRE (printf "^%s\n" $section) "" . -}}
-  {{- $contentHtml := markdownify $cleaned | safeHTML -}}
+{{- with $content -}}
+  {{- $contentHtml := markdownify . | safeHTML -}}
   {{- $tpl := replace $template "$content" $contentHtml -}}
   {{- $processedTpl := $tpl -}}
   {{- range $key, $value := $page.Params -}}

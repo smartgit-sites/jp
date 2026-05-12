@@ -1,28 +1,27 @@
 ---
-title: 'レガシーからモダンへ：SmartGitがある開発者のGitの旅を変えた方法'
-description: SmartGitの統合された機能セットで、ある開発者がプラットフォームを超えてGit使用を近代化した方法をご覧ください。
-summary: SmartGitが熱心なEclipse開発者にレガシーバージョン管理システムを捨てさせ、振り返ることなく進ませた方法—10年にわたる成功事例。
-testimonial_user: Phil Beauvoir
-testimonial_company: Eclipse Developer & Creator of Archi (ArchiMate Modeller)
-testimonial_avatar: /images/avatars/man3.png
-testimonial_link: https://www.archimatetool.com
-layout: success-story
-categories:
-- Success story
+title: "From Legacy to Modern: How SmartGit Transformed One Developer's Git Journey"
+description: "Explore how one developer modernized their Git usage across platforms with SmartGit's integrated feature set."
+summary: "How SmartGit convinced a dedicated Eclipse developer to abandon legacy version control systems and never look back—a decade-long success story."
+testimonial_user: "Phil Beauvoir"
+testimonial_company: "Eclipse Developer & Creator of Archi (ArchiMate Modeller)"
+testimonial_avatar: "/images/avatars/man3.png"
+testimonial_link: "https://www.archimatetool.com"
+layout: "success-story"
+categories: ["Success story"]
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/traversing-from-legacy-to-modern-cross-platform-using-smartgit/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: fc2b579a8e8740abb82a99c53e33f832d063dfaf
-    modified_committed_at: 2025-07-21T17:04:23Z
-    blob: ca0c07baa8b8655bec8696624c0280f0d0b931f2
-    sha256: 022ecacce2c509d730184e44bf5e9a52049e94965e62b75db595b3d073d5f73d
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: c7b19ae4dff7920e50ae357c875692e538f248b8
+    modified_committed_at: 2026-03-10T09:19:58Z
+    blob: f78ae00ca0033521465e06f2bf540e922f488d93
+    sha256: f04362c63f30031ae8862a6c02e9a296f9088b429c782571f46e1cb057f390fd
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 # testimonial

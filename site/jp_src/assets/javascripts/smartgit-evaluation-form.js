@@ -28,12 +28,11 @@
   // Hugo-injected config (via ExecuteAsTemplate)
   const WORKER_BASE_URL_PARAM = {{ with .Site.Params.workerBaseURL }}{{ . | jsonify }}{{ else }}null{{ end }};
   const SITE_BASE_URL = {{ .Site.BaseURL | jsonify }};
-  const TURNSTILE_SITEKEY = {{ with .Site.Params.turnstileSiteKey }}{{ . | jsonify }}{{ else }}null{{ end }};
+  const TURNSTILE_SITEKEY = {{ .Site.Params.turnstileSiteKey | jsonify }};
   const TURNSTILE_DISABLE_SECRET = {{ with .Site.Params.turnstileDisableSecret }}{{ . | jsonify }}{{ else }}null{{ end }};
 
   const disableSecret = TURNSTILE_DISABLE_SECRET || '';
-  // Determine Turnstile sitekey: allow optional override, otherwise use production key
-  const cftsKey = TURNSTILE_SITEKEY || '0x4AAAAAAA5ppOVQRpTnVn7s';
+  const cftsKey = TURNSTILE_SITEKEY;
   // Don't pre-seed with disable secret; wait for Turnstile callback
   let cftsToken = '';
   let hasSubmitted = false;

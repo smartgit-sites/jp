@@ -77,17 +77,6 @@
             </div>
         </div>
     </section>
-    <div id="below-footer" class="container-fluid bg-footer-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 py-4">
-                    <p class="mb-0 text-center text-footer-bottom">
-                        <span class="d-block d-md-inline-block">{{ $company.reg }} {{ $company.tradeAuth }}</span><span class="vr d-none d-xl-inline-block mx-lg-3"></span><span class="d-block pt-2 pt-xl-0 d-md-inline-block">{{ $company.director }}</span>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
 </footer>
 {{ partial "gittyStatic" . }}
 {{ $sgi := resources.Get "javascripts/smartgit-icons.js" | minify | resources.Fingerprint }}

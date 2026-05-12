@@ -1,30 +1,29 @@
 ---
-title: バージョン 17.1
-headerH2: SmartGit 17.1 の主要な改善点
-listTitle: バージョン 17.1
-imageAltText: 強化されたパフォーマンス、改善されたリベースワークフロー、より良いスタッシュ管理を備えたSmartGit 17.1
-linkText: SmartGit バージョン 17.1 の詳細
-category:
-- feature
-headerMessage: '17.1で**高速なリフレッシュ**、よりスマートな**コミット分割**、改善された**スタッシュ制御**を取得。'
-description: SmartGit 17.1はパフォーマンスを向上させ、コミット処理を簡素化し、スタッシュとignore管理を改善 — より速く直感的なGitワークフローのために今すぐアップデート。
-ogTitle: 'SmartGit 17.1: 高速なリフレッシュ、より良いリベース、よりスマートなスタッシュ & ignore制御'
-ogDesc: SmartGit 17.1はパフォーマンスを向上させ、コミット処理を簡素化し、スタッシュとignore管理を改善 — より速く直感的なGitワークフローのために今すぐアップデート。
+title: "Version 17.1"
+headerH2: "Major Improvements in SmartGit 17.1"
+listTitle: "Version 17.1"
+imageAltText: "SmartGit 17.1 with enhanced performance, improved rebase workflows, and better stash management"
+linkText: "More about SmartGit Version 17.1"
+category: ["feature"]
+headerMessage: "Get **faster refreshes**, smarter **commit splitting**, and improved **stash control** in 17.1."
+description: "SmartGit 17.1 boosts performance, simplifies commit handling, and improves stash and ignore management—update now for a faster, more intuitive Git workflow."
+ogTitle: "SmartGit 17.1: Faster refresh, better rebase, smarter stash & ignore control"
+ogDesc: "SmartGit 17.1 boosts performance, simplifies commit handling, and improves stash and ignore management—update now for a faster, more intuitive Git workflow."
 weight: 1100
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: whats-new/17_1/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: 6a6e5a97c27e98dcf0e2a4cf169d8de80b499739
     modified_committed_at: 2025-09-02T15:04:52Z
     blob: 86718bd9890e8def5a3ae30ee727270f86c7b2c4
-    sha256: dd2dca0bf1875257bb55d7e3692363c269fb8cc2d61ac6669034388589cfbb27
-    fetched_at: 2026-01-04T18:02:32Z
+    sha256: 73cdb4a5fb9b4fa5e625be9b99a2671c65aaede1acec80abef0af4169f9e40e3
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 SmartGit 17.1は、日常のGit作業の速度、明確さ、制御を改善します：

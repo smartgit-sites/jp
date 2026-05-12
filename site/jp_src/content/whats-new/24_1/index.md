@@ -1,30 +1,29 @@
 ---
-title: バージョン 24.1
-headerH2: SmartGit 24.1 の主要な改善点
-listTitle: バージョン 24.1
-imageAltText: 改善されたサブモジュール処理、GitHub統合、強化された差分表示を備えたSmartGit 24.1
-linkText: SmartGit バージョン 24.1 の詳細
-category:
-- feature
-headerMessage: '**サブモジュール**を簡単に管理、**クリーンな差分**を表示、24.1でワンクリックで**GitHubリンク**を開く。'
-description: SmartGit 24.1は、よりスマートなサブモジュール処理、クリーンな差分、改善されたGitHub統合でGitワークフローを効率化します — 今すぐアップデートしてより効率的に作業しましょう。
-ogTitle: 'SmartGit 24.1: より速いワークフロー、よりクリーンなコミット、よりスマートな統合'
-ogDesc: SmartGit 24.1は、よりスマートなサブモジュール処理、クリーンな差分、改善されたGitHub統合でGitワークフローを効率化します — 今すぐアップデートしてより効率的に作業しましょう。
+title: "Version 24.1"
+headerH2: "Major Improvements in SmartGit 24.1"
+listTitle: "Version 24.1"
+imageAltText: "SmartGit 24.1 with improved submodule handling, GitHub integration, and enhanced diff viewing"
+linkText: "More about SmartGit Version 24.1"
+category: ["feature"]
+headerMessage: "Manage **submodules** effortlessly, view **cleaner diffs**, and open **GitHub links** with one click in 24.1."
+description: "SmartGit 24.1 streamlines your Git workflow with smarter submodule handling, cleaner diffs, and improved GitHub integration — update now and work more efficiently."
+ogTitle: "SmartGit 24.1: Faster workflows, cleaner commits, smarter integrations"
+ogDesc: "SmartGit 24.1 streamlines your Git workflow with smarter submodule handling, cleaner diffs, and improved GitHub integration — update now and work more efficiently."
 weight: 200
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: whats-new/24_1/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: 6a6e5a97c27e98dcf0e2a4cf169d8de80b499739
     modified_committed_at: 2025-09-02T15:04:52Z
     blob: f60cb44803501a4e616e2396a9fcb5752ed5c3ae
-    sha256: 0e8e567597bc3b887024e42b24e12c0c1190dde394e759e209891f3c4328b024
-    fetched_at: 2026-01-04T18:02:33Z
+    sha256: a5df855703ee136dbba8629d3e393a43c8c3cc3788fbd9efca7042aea5ad5133
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:33Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 SmartGit 24.1は、サブモジュール、ホスティングプロバイダー、差分、コミット管理に関するワークフローの強力な使いやすさの改善をもたらします：

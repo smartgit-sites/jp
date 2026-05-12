@@ -39,7 +39,10 @@
 
 // Dropdown menu styling
 .navbar-nav .dropdown-menu{
-  background-color: $sg-nav-dropdown;
+  background-color: rgba($white, 0.98);
+  border: 1px solid $sg-indigo-100;
+  border-radius: $border-radius-sm;
+  box-shadow: 0 0.75rem 2rem rgba($sg-indigo-900, 0.12);
   display: none;
   opacity: 0;
   transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -56,12 +59,19 @@
 }
 
 .navbar-nav .dropdown-menu .nav-item .nav-link{
-  color: map-get($colors, "white");
+  color: $sg-text-secondary;
 }
 .navbar-nav .dropdown-menu .nav-item .nav-link:focus,
-.navbar-nav .dropdown-menu .nav-item .nav-link:hover,
+.navbar-nav .dropdown-menu .nav-item .nav-link:hover{
+  background-color: $sg-surface-light;
+  color: $sg-text-link;
+  text-decoration: none;
+}
+
 .navbar-nav .dropdown-menu .nav-item .nav-link.active{
-  text-decoration: underline;
+  background-color: $sg-indigo-500;
+  color: $white;
+  text-decoration: none;
 }
 
 @media (min-width: map-get($grid-breakpoints, "xs")) {

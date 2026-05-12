@@ -1,30 +1,29 @@
 ---
-title: その他の機能
-headerH2: Gitワークフローを効率化する強力な追加機能
-listTitle: その他の機能
-imageAltText: SmartGitの追加機能。コンフリクトソルバー、JIRA連携、Gitワークフロー自動化のための外部ツールを含む。
-linkText: SmartGitの追加機能について詳しく
-category:
-- feature
-headerMessage: 'あらゆるGitタスクを効率化する**強力な追加機能**と**自動化**を発見。'
-description: 生産性を向上させ、複雑なGitタスクを簡素化するSmartGitの強力な機能を発見 -- 今すぐお試しください！
-ogTitle: SmartGitの強力な追加機能でGitワークフローを効率化。
-ogDesc: 生産性を向上させ、複雑なGitタスクを簡素化するSmartGitの強力な機能を発見 -- 今すぐお試しください！
+title: "Other Features"
+headerH2: "Powerful Extras That Streamline Your Git Workflow"
+listTitle: "Other Features"
+imageAltText: "SmartGit's additional features including conflict solver, JIRA integration, and external tools for enhanced Git workflow automation."
+linkText: "More about SmartGit's Extras"
+category: ["feature"]
+headerMessage: "Discover **powerful extras** and **automation** that streamline every Git task."
+description: "Discover powerful SmartGit features that boost productivity and simplify complex Git tasks -- try them out now!"
+ogTitle: "SmartGit's Powerful Extras That Streamline Your Git Workflow."
+ogDesc: "Discover powerful SmartGit features that boost productivity and simplify complex Git tasks -- try them out now!"
 weight: 100
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: features/other-features/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: dccfec861e539ddff6af9927e990c214b888c63b
-    modified_committed_at: 2025-09-19T11:36:49Z
-    blob: fc86a2be13a0d66790685ea257e52d4bf5047db4
-    sha256: b289ab15effb0de2514179c798c96698992aadc7e959016918196b8c2d6358fc
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: c7b19ae4dff7920e50ae357c875692e538f248b8
+    modified_committed_at: 2026-03-10T09:19:58Z
+    blob: 6ee6991e61d3a7a69bc035892d8aaaab5d99bd4e
+    sha256: 290d9f4628e4746593dec338355b148cd0e284ce198b4e62fea4314397ec8029
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 SmartGitの**「その他の機能」**は、ワークフローを簡素化し、統合を改善し、日常的なGit使用を強化するツールでコア機能を拡張します：

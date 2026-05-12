@@ -1,27 +1,26 @@
 ---
-title: 'スマートデザインによる集中力の向上：ある開発者のSmartGitストーリー'
-description: SmartGitがクリーンで効率的なGitインターフェースで開発者の気が散ることを減らし、ワークフローを効率化するのにどのように役立ったかをご覧ください。
-summary: 開発者がSmartGitのインターフェースデザインへの細部へのこだわりが、生産性に焦点を当てながらバージョン管理の複雑さを抑えるのにどのように役立つかを明かします。
-testimonial_user: Arialdo Martini
-testimonial_company: JobRapido
-testimonial_avatar: /images/avatars/man1.png
-layout: success-story
-categories:
-- Success story
+title: "Enhanced Focus Through Smart Design: A Developer's SmartGit Story"
+description: "Discover how SmartGit helped a developer reduce distractions and streamline their workflow with a clean, efficient Git interface."
+summary: "A developer reveals how SmartGit's attention to detail in interface design helps tame the complexity of version control while keeping productivity in focus."
+testimonial_user: "Arialdo Martini"
+testimonial_company: "JobRapido"
+testimonial_avatar: "/images/avatars/man1.png"
+layout: "success-story"
+categories: ["Success story"]
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/enhanced-focus-through-smart-design-using-smartgit/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: fc2b579a8e8740abb82a99c53e33f832d063dfaf
     modified_committed_at: 2025-07-21T17:04:23Z
     blob: 0d27f5c7269a884a58708904260a7bada3366816
-    sha256: f51c2efee95e28977b16c1c5b9125e12c9e3a84340eaf6019ac57e3e7fa3df26
-    fetched_at: 2026-01-04T18:02:32Z
+    sha256: 78f5a2f7dd46319f6356007886d6f9abbf8f94458d6e2c14841e13992f22c295
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 # testimonial

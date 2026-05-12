@@ -1,31 +1,30 @@
 ---
-title: Gitコンフリクトリゾルバー -- 3ウェイマージツール
-headerH1: SmartGitコンフリクト解消
-headerH2: Gitマージコンフリクトをビジュアルに解消
-listTitle: コンフリクト解消
-imageAltText: SmartGitの組み込み3ウェイマージコンフリクトソルバー。ローカル、ベース、リモートのファイルバージョンを表示してビジュアルにGitマージコンフリクトを解消。
-linkText: コンフリクト解消について詳しく
-category:
-- feature
-headerMessage: '**コンフリクトソルバー**を使って難しいマージを視覚的に解消し、**クリーンなマージ**を実現。'
-description: Gitマージコンフリクトにお困りですか？SmartGitの3ウェイマージコンフリクトソルバーで視覚的に解消 -- 高速、クリーン、直感的。
-ogTitle: SmartGitコンフリクトソルバー -- Gitマージコンフリクトをビジュアルに解消
-ogDesc: 'マージコンフリクトをスマートに解決：SmartGitの強力なビジュアルマージツールで、クリーンな3ウェイインターフェースとワンクリックコマンドを使用。'
+title: "Git Conflict Resolver -- 3-Way Merge Tool"
+headerH1: "SmartGit Conflict Resolution"
+headerH2: "Resolve Git Merge Conflicts Visually"
+listTitle: "Conflict Resolution"
+imageAltText: "SmartGit's built-in 3-way merge Conflict Solver displaying local, base, and remote file versions for visual Git merge conflict resolution."
+linkText: "More about Conflict Resolution"
+category: ["feature"]
+headerMessage: "Resolve tricky merges visually using the **Conflict Solver** for **clean merges**."
+description: "Tired of Git merge conflicts? SmartGit's 3-way merge Conflict Solver lets you resolve conflicts visually -- fast, clean, and intuitive."
+ogTitle: "SmartGit Conflict Solver -- Resolve Git Merge Conflicts Visually"
+ogDesc: "Fix merge conflicts the smart way: use SmartGit's powerful visual merge tool with a clean 3-way interface and one-click commands."
 weight: 4
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: features/conflict-resolution/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: dccfec861e539ddff6af9927e990c214b888c63b
-    modified_committed_at: 2025-09-19T11:36:49Z
-    blob: 6732af3b92586940ebcdb859aceeea3988ca916e
-    sha256: 28a6f7b32b1385beb5eec1a0de0446f796cda562d12a8749290c4be65f968e5a
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: c7b19ae4dff7920e50ae357c875692e538f248b8
+    modified_committed_at: 2026-03-10T09:19:58Z
+    blob: a1b9483774389de98d098bbbe8e331c21eb8777b
+    sha256: 52d9299e4bcf2d42be6f7a04b9638266e5b88233af477d0289e57437f5203f3a
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 マージコンフリクトは日常的なGit使用の一部ですが、苦痛である必要はありません。

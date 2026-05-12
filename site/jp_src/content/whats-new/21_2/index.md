@@ -1,30 +1,29 @@
 ---
-title: バージョン 21.1 & 21.2
-headerH2: SmartGit 21.1 & 21.2 の主要な強化点
-listTitle: バージョン 21.1 & 21.2
-imageAltText: 'SmartGit 21.1 & 21.2: よりスムーズなワークフロー、よりクリーンなコミット、よりスマートなホスティング統合。'
-linkText: SmartGit バージョン 21.1 & 21.2 の詳細
-category:
-- feature
-headerMessage: '21.1 -- 21.2でモダンな**差分**、緊密な**DevOps統合**、ネイティブ**Apple M1**サポートを使用。'
-description: SmartGit 21.1はモダンなChangesビュー、DevOpsとJIRA統合、よりスマートなコンフリクト処理を提供 -- 21.2はネイティブM1サポートとセキュアなアップデートを追加。より速く、より安全なGit体験のために今すぐアップグレード。
-ogTitle: 'SmartGit 21.1 -- 21.2: モダンな差分、DevOps統合、Apple M1サポート & セキュアアップデート'
-ogDesc: SmartGit 21.1はモダンなChangesビュー、DevOpsとJIRA統合、よりスマートなコンフリクト処理を提供 -- 21.2はネイティブM1サポートとセキュアなアップデートを追加。より速く、より安全なGit体験のために今すぐアップグレード。
+title: "Version 21.1 & 21.2"
+headerH2: "Key Enhancements in SmartGit 21.1 & 21.2"
+listTitle: "Version 21.1 & 21.2"
+imageAltText: "SmartGit 21.1 & 21.2: Smoother workflows, cleaner commits, and smarter hosting integration."
+linkText: "More about SmartGit Version 21.1 & 21.2"
+category: ["feature"]
+headerMessage: "Use modern **diffs**, tight **DevOps integration**, and native **Apple M1** support in 21.1 -- 21.2."
+description: "SmartGit 21.1 brings a modern Changes view, DevOps and JIRA integration, and smarter conflict handling -- 21.2 adds native M1 support and secure updates. Upgrade now for a faster, safer Git experience."
+ogTitle: "SmartGit 21.1 -- 21.2: Modern diffs, DevOps integration, Apple M1 support & secure updates"
+ogDesc: "SmartGit 21.1 brings a modern Changes view, DevOps and JIRA integration, and smarter conflict handling -- 21.2 adds native M1 support and secure updates. Upgrade now for a faster, safer Git experience."
 weight: 500
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: whats-new/21_2/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: 8cf4b90bac10de7a2eb94538a587ba5cae122b22
     modified_committed_at: 2025-08-05T21:34:17Z
     blob: 573a727f217cc45cf08e134cc27578113e8e9fc7
-    sha256: 0ee210c83c550ef0b40b8e2bd4cf1de9439684ff6b0aefc2366913536dd5cee7
-    fetched_at: 2026-01-04T18:02:33Z
+    sha256: 6207cac14c04a2a8dc5d6beaaec757f6775ca6580ee634efbaca1bb25f74cce5
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:33Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 SmartGitバージョン21.1と21.2は、主要な使いやすさ、統合、プラットフォームの機能強化を導入し、特に最新のMacでGitワークフローをより安全で直感的にします。

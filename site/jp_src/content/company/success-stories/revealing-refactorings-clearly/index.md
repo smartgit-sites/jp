@@ -1,27 +1,26 @@
 ---
-title: 'リファクタリングを明確に可視化：SmartGitが私の定番ツールになった理由'
-description: SmartGitのリファクタリングの明確な可視化が、遅くて混乱するコードレビューを速くて集中できる体験に変えた開発者のストーリー。
-summary: SmartGitが複雑なリファクタリングを瞬時に明確にし、コードレビューを楽にする方法をご覧ください。
-testimonial_user: Magnus
-testimonial_company: Professional Developer
-testimonial_avatar: avatar.png
-layout: success-story
-categories:
-- Success story
+title: "Revealing Refactorings Clearly: Why SmartGit Became My Go-To."
+description: "A developer's story on how SmartGit's clear visualization of refactorings transformed slow, confusing code reviews into a fast and focused experience."
+summary: "Discover how SmartGit makes complex refactorings instantly clear and code reviews effortless."
+testimonial_user: "Magnus"
+testimonial_company: "Professional Developer"
+testimonial_avatar: "avatar.png"
+layout: "success-story"
+categories: ["Success story"]
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/revealing-refactorings-clearly/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: 096e7ab86f86045b86dde89f91d865de7c4da0e1
     modified_committed_at: 2025-11-05T09:39:13Z
     blob: 4ef9f251714f962d432900448ad56b3c41d25afa
-    sha256: ac2c327d6cab9319230bb2da60928e934e95807c444c53e329d29ac2555ca5dd
-    fetched_at: 2026-01-04T18:02:32Z
+    sha256: a2fb32ae31f4a57f0c845a1de0d3eeb0167cabb953269fa4a478bfa344caf898
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 # testimonial

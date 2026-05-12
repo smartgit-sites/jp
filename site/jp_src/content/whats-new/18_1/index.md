@@ -1,30 +1,29 @@
 ---
-title: バージョン 18.1
-headerH2: SmartGit 18.1 の主要な改善点
-listTitle: バージョン 18.1
-imageAltText: 強化されたログ視覚化、組み込みbisect、改善されたワークツリー管理を備えたSmartGit 18.1
-linkText: SmartGit バージョン 18.1 の詳細
-category:
-- feature
-headerMessage: '18.1でよりスマートな**ログラフ**、組み込み**bisect**、柔軟な**ワークツリー**を体験。'
-description: SmartGit 18.1は、コミット視覚化、比較ワークフロー、bisect支援、ワークツリーの使いやすさを改良 — Gitでよりスマートに速く作業するために今すぐアップデート。
-ogTitle: 'SmartGit 18.1: よりスマートなログラフ、組み込みbisect、より良いワークツリー & ignore処理'
-ogDesc: SmartGit 18.1は、コミット視覚化、比較ワークフロー、bisect支援、ワークツリーの使いやすさを改良 — Gitでよりスマートに速く作業するために今すぐアップデート。
+title: "Version 18.1"
+headerH2: "Major Improvements in SmartGit 18.1"
+listTitle: "Version 18.1"
+imageAltText: "SmartGit 18.1 with enhanced log visualization, built-in bisect, and improved worktree management"
+linkText: "More about SmartGit Version 18.1"
+category: ["feature"]
+headerMessage: "Experience a smarter **log graph**, built-in **bisect**, and flexible **worktrees** with 18.1."
+description: "SmartGit 18.1 refines commit visualization, comparison workflows, bisect assistance, and worktree usability—update now to work smarter and faster with Git."
+ogTitle: "SmartGit 18.1: Smarter log graph, built‑in bisect, better worktree & ignore handling"
+ogDesc: "SmartGit 18.1 refines commit visualization, comparison workflows, bisect assistance, and worktree usability—update now to work smarter and faster with Git."
 weight: 1000
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: whats-new/18_1/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: 6a6e5a97c27e98dcf0e2a4cf169d8de80b499739
     modified_committed_at: 2025-09-02T15:04:52Z
     blob: 8bc59b523c906b8e41d1a4ac19914b65cdea4ba2
-    sha256: 1176ad6358e74e22e28884c348b3b9be6113f6ec50ce2d4e22a99fae1695ab44
-    fetched_at: 2026-01-04T18:02:32Z
+    sha256: c4d30a9ef187785705ddf568e8b3036b74b95709287233115c8ebb77f15721b8
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 SmartGit 18.1は、より良い視覚化、よりスマートな比較、改善されたツールで日常のGitワークフローを強化します：

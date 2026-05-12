@@ -1,30 +1,29 @@
 ---
-title: バージョン 20.2
-headerH2: SmartGit 20.2 の主要な強化点
-listTitle: バージョン 20.2
-imageAltText: 'SmartGit 20.2: Big Surサポート、サブツリー操作、よりスマートなグラフ & より豊富な構文。'
-linkText: SmartGit バージョン 20.2 の詳細
-category:
-- feature
-headerMessage: '20.2で**macOS Big Sur**サポート、ビジュアル**ref管理**、パワフルな**サブツリー**ツールを取得。'
-description: SmartGit 20.2はBig Sur互換性、サブツリー操作、改善されたref処理、より豊富な構文サポート、より速いグラフナビゲーションを提供 — より洗練された効率的なGit GUI体験のために今すぐアップデート。
-ogTitle: 'SmartGit 20.2: Big Surサポート、サブツリー操作、よりスマートなグラフ & より豊富な構文。'
-ogDesc: SmartGit 20.2はBig Sur互換性、サブツリー操作、改善されたref処理、より豊富な構文サポート、より速いグラフナビゲーションを提供 — より洗練された効率的なGit GUI体験のために今すぐアップデート。
+title: "Version 20.2"
+headerH2: "Key Enhancements in SmartGit 20.2"
+listTitle: "Version 20.2"
+imageAltText: "SmartGit 20.2: Big Sur support, subtree ops, smarter graph & richer syntax."
+linkText: "More about SmartGit Version 20.2"
+category: ["feature"]
+headerMessage: "Gain **macOS Big Sur** support, visual **ref management**, and powerful **subtree** tools in 20.2."
+description: "SmartGit 20.2 brings Big Sur compatibility, subtree operations, improved ref handling, richer syntax support, and faster graph Navigation — update now to enjoy a sleeker and more efficient Git GUI experience."
+ogTitle: "SmartGit 20.2: Big Sur support, subtree ops, smarter graph & richer syntax."
+ogDesc: "SmartGit 20.2 brings Big Sur compatibility, subtree operations, improved ref handling, richer syntax support, and faster graph Navigation — update now to enjoy a sleeker and more efficient Git GUI experience."
 weight: 600
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: whats-new/20_2/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: 9e282e76978770048be135705f8b694c41c6123d
     modified_committed_at: 2025-09-02T15:04:41Z
     blob: 522bc4b7810b26a1345689fcf5de332546c9f5d7
-    sha256: dedfef6eee092c52cef981bdb39f885ac9281fbf6b473e8888e09398a815bf38
-    fetched_at: 2026-01-04T18:02:33Z
+    sha256: e9ee588e4a315a20868a65288ebd0fc007426bab8013f0286220e6e08b5558f0
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:33Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 SmartGit 20.2は、よりスムーズなGit体験のための主要な改善をもたらします：

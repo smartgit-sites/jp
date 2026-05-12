@@ -1,28 +1,27 @@
 ---
-title: 'バージョン管理のスケーリング：複数の開発プロジェクト管理におけるSmartGitの役割'
-description: SmartGitが構造化されたワークフローとスマートなブランチングツールで複数の開発チームをどのようにサポートするかをご覧ください。
-summary: 開発者がエンタープライズプロジェクトからオープンソースへの貢献まですべてを処理する単一のツールを必要としたとき、SmartGitはパワーと適応性の完璧なブレンドを提供しました。
-testimonial_user: Ram Rachum
-testimonial_company: Tufts University
-testimonial_link: https://r.rachum.com/
-testimonial_avatar: https://avatars.githubusercontent.com/u/56778?v=4
-layout: success-story
-categories:
-- Success story
+title: "Scaling Version Control: SmartGit's Role in Managing Multiple Development Projects"
+description: "Discover how SmartGit supports multiple development teams with structured workflows and smart branching tools."
+summary: "When a developer needed a single tool to handle everything from enterprise projects to open-source contributions, SmartGit delivered with the perfect blend of power and adaptability."
+testimonial_user: "Ram Rachum"
+testimonial_company: "Tufts University"
+testimonial_link: "https://r.rachum.com/"
+testimonial_avatar: "https://avatars.githubusercontent.com/u/56778?v=4"
+layout: "success-story"
+categories: ["Success story"]
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/scaling-version-control-using-smartgit/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: fc2b579a8e8740abb82a99c53e33f832d063dfaf
     modified_committed_at: 2025-07-21T17:04:23Z
     blob: 28d5556542c186cc4bb68815c4c8099aebb46776
-    sha256: 0824df4a1e1ce0fa055e734530b1ed3bc7a69e8194b714c511cd5ac539a6dcc9
-    fetched_at: 2026-01-04T18:02:32Z
+    sha256: c08cc0a1f6fa8d982f65484026f058f5078818b54e81fb3eb048d7052e5b8a4b
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 # testimonial

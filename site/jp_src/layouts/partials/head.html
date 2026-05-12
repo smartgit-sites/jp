@@ -18,8 +18,15 @@
 <!-- Canonical URL -->
   {{- $canonical := printf "https://www.smartgit.dev%s" .RelPermalink -}}
   <link rel="canonical" href="{{ $canonical }}">
-  {{- if .Site.Params.disableRobots }}
-  <meta name="robots" content="noindex, nofollow">
+  {{- $robots := "" -}}
+  {{- with .Params.robots }}
+    {{- $robots = . -}}
+  {{- end }}
+  {{- if and (eq $robots "") .Site.Params.disableRobots }}
+    {{- $robots = "noindex, nofollow" -}}
+  {{- end }}
+  {{- with $robots }}
+  <meta name="robots" content="{{ . }}">
   {{- end }}
 
 <link rel="icon" type="image/png" href="{{ .Site.Params.favicon96 }}" sizes="96x96" />

@@ -1,27 +1,27 @@
 ---
-title: SmartGitの機能 -- 開発者とチームのためのビジュアルGitツール
-headerH1: SmartGitの機能
-headerH2: 開発者とチームのための強力なツール
-headerMessage: 'SmartGitがGitワークフローをどのように強化するかをご覧ください -- **コミットの可視化**から**ブランチ管理**まで、簡単に。'
-sideButtonText: 新機能
-sideButtonLink: ../whats-new
-description: 'SmartGitの強力なGit機能をご覧ください：ビジュアルコミット履歴、クリーンなブランチ管理、直感的なコンフリクト解消など。開発者とチームのために構築されています。'
-ogTitle: SmartGitの機能 -- 開発者とチームのためのビジュアルGitツール
-ogDesc: 'SmartGitの強力なGit機能をご覧ください：ビジュアルコミット履歴、クリーンなブランチ管理、直感的なコンフリクト解消など。開発者とチームのために構築されています。'
-categories:
-- feature
+title: "SmartGit Features -- Visual Git Tools for Developers and Teams"
+headerH1: "SmartGit Features"
+headerH2: "Powerful Tools for Developers and Teams"
+headerMessage: "Discover how SmartGit enhances your Git workflows -- from **commit visualization** to **branch management** with ease."
+sideButtonText: "What's New"
+sideButtonLink: "../whats-new"
+description: "Explore SmartGit's most powerful Git features: visual commit history, clean branching, intuitive conflict resolution &amp; more. Built for developers and teams."
+ogTitle: "SmartGit Features -- Visual Git Tools for Developers and Teams"
+ogDesc: "Explore SmartGit's most powerful Git features: visual commit history, clean branching, intuitive conflict resolution &amp; more. Built for developers and teams."
+
+categories: ["feature"]
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: features/_index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: 203554711f1ab03578d719b51e1d0a2f231336be
-    modified_committed_at: 2025-08-06T09:34:02Z
-    blob: b811e676d3af4bcda8d8ff75bc97a5b758344a9a
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: c7b19ae4dff7920e50ae357c875692e538f248b8
+    modified_committed_at: 2026-03-10T09:19:58Z
+    blob: 17cc0617e58aa0bace50b916ca38e62097cd7efa
+    sha256: ae3d2237b50b144defabab91d9dcc776e8ef145e381cda31a97713b1ad168c7c
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---

@@ -1,22 +1,23 @@
 ---
-title: プライバシーポリシー
-description: SmartGitとSyntevo GmbHがお客様のデータをどのように取り扱うかをご確認ください。透明性、安全性、GDPR準拠。
-headerH1: プライバシーポリシー
-headerH2: データ保護宣言
+title: "Privacy policy"
+description: "Learn how SmartGit and Syntevo GmbH handle your data. Transparent, secure, and GDPR-compliant."
+headerH1: "Privacy policy"
+headerH2: "Data Protection Declaration"
+teaserFollowUp: "soft"
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/privacy-policy.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: 85499c6d174de82a7e89200a442ab942e0eab14d
-    modified_committed_at: 2025-08-04T20:57:04Z
-    blob: 2a7bdd8e5ddb8e581a46014258b6b72752e8f36a
-    sha256: 3db53ddaf4788c6e1755c0a4ba6606f663d7455efeee863b835370a62fe53493
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: e0b3f78c824ee4989f29050134eaae0f777b026e
+    modified_committed_at: 2026-04-21T10:35:24Z
+    blob: 879855e116223bce91ba9bc046cb3b3167f7bd15
+    sha256: 808052fc6f138d31335c7a38e779d758d5634fa2cf85ef7d638ab21119132088
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 Links to other sites are given for your convenience. syntevo GmbH is not responsible for the content and accuracy of these linked resources which may be protected by copyright laws.

@@ -1,27 +1,26 @@
 ---
-title: '卓越性の進化：SmartGitと共に歩む開発者の旅'
-description: 手動の混沌からSmartGitの直感的なUIによる効率的な成功まで、開発者のGitワークフローの進化をたどります。
-summary: ベテラン開発者が、SmartGitのユーザー主導の進化へのコミットメントがいかにGitクライアントの最前線に立ち続け、各バージョンを前のバージョンより良くしているかを明かします。
-testimonial_user: Steve Bryant
-testimonial_company: Independent Developer
-testimonial_avatar: /images/avatars/man1.png
-layout: success-story
-categories:
-- Success story
+title: "Evolution of Excellence: A Developer's Journey with SmartGit"
+description: "Follow the evolution of a developer's Git workflow from manual chaos to streamlined success with SmartGit's intuitive UI."
+summary: "A veteran developer reveals how SmartGit's commitment to user-driven evolution has kept it at the forefront of Git clients, making each version better than the last."
+testimonial_user: "Steve Bryant"
+testimonial_company: "Independent Developer"
+testimonial_avatar: "/images/avatars/man1.png"
+layout: "success-story"
+categories: ["Success story"]
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/developer-journey-with-smartgit/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: fc2b579a8e8740abb82a99c53e33f832d063dfaf
-    modified_committed_at: 2025-07-21T17:04:23Z
-    blob: c4d368f10d0738b16ad39f8d88fca539ffdd4c20
-    sha256: 11cf63ee22048058f646266459e11ad0398aa1aebf038238e9261385fd2f1e79
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: c7b19ae4dff7920e50ae357c875692e538f248b8
+    modified_committed_at: 2026-03-10T09:19:58Z
+    blob: 5c74e2d711594e0998cd29325a0bfc10c898b421
+    sha256: c359afacd1479e924c2e1c3003176020f7cda4a43b996bf81a54a3b8e1b37367
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 # testimonial

@@ -1,27 +1,26 @@
 ---
-title: 'SmartGit：経験レベルを超えてチームを結ぶ'
-description: SmartGitの直感的なデザインとスマートなGitワークフローが、分散チームにおけるジュニアとシニア開発者のシームレスなコラボレーションをどのように実現するかをご紹介します。
-summary: SmartGitが開発チーム全体のバージョン管理をどのように変革し、シニア開発者と新人の両方から絶賛されたかをご覧ください。
-testimonial_user: Daniel Neri
-testimonial_company: accesso
-testimonial_avatar: /images/avatars/man1.png
-layout: success-story
-categories:
-- Success story
+title: "SmartGit: Uniting Teams Across Experience Levels"
+description: "Learn how SmartGit's intuitive design and smart Git workflows enable seamless collaboration between junior and senior developers in distributed teams."
+summary: "SmartGit earned unanimous positive feedback from a 25-person team at accesso — bridging the gap between seasoned professionals and new recruits."
+testimonial_user: "Daniel Neri"
+testimonial_company: "accesso"
+testimonial_avatar: "/images/avatars/man1.png"
+layout: "success-story"
+categories: ["Success story"]
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/uniting-teams-using-smartgit/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: fc2b579a8e8740abb82a99c53e33f832d063dfaf
-    modified_committed_at: 2025-07-21T17:04:23Z
-    blob: d0a3a2b77f6c699c9dca651d3899ff6f6c159f03
-    sha256: 9f697f9057032a7cec9c94bc2e45e5841d02df7ce8c406b76193d3f03bc8fdbe
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: c611899f6c4b7c568c19e69d28c1ecebfbf559f2
+    modified_committed_at: 2026-03-11T08:48:17Z
+    blob: 54e37bb35132e05b50cb2cbf3d145e87a4c52134
+    sha256: 482dde0c78064934dafc47a24f32cd8a40223c1a5654d494c374db4b89cb5744
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 # testimonial

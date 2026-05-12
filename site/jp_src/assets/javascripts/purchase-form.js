@@ -73,6 +73,7 @@ jQuery(function() {
         this.primaryCheckoutType = this.checkoutType.split('.')[0];
         this.configurationId = null;
         this.latestParameters = null;
+        this.latestNotifications = [];
         this.defaultParameters = null;
         this.configurableParameters = App.Utils.extractFormFields(this.$element);
         this.persistableQueryParameters = ['cc', 'coupon-code', 'type']
@@ -171,6 +172,18 @@ jQuery(function() {
                 }
             };
 
+            var convertEmailsToLinks = function(text) {
+                // Only process if text is a string
+                if (typeof text !== 'string') {
+                    return text;
+                }
+                // Regular expression to match email addresses
+                var emailRegex = /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/gi;
+                return text.replace(emailRegex, function(email) {
+                    return '<a href="mailto:' + email + '">' + email + '</a>';
+                });
+            };
+
             this.$element.find('[data-notification]').toArray().map(function(element) {
                 var $element = $(element);
                 var id = App.Utils.dasherize($element.attr('data-notification'));
@@ -187,9 +200,24 @@ jQuery(function() {
                     notification.$element.empty();
                 } else {
                     var alertClass = mapNotificationTypeToAlertClass(notification.type);
-                    var markup = '<div class="alert ' + alertClass + '">' + notification.message + '</div>';
+                    var messageWithLinks = convertEmailsToLinks(notification.message);
+                    var markup = '<div class="alert ' + alertClass + '">' + messageWithLinks + '</div>';
                     notification.$element.html(markup);
                 }
+            });
+        }
+
+        this._updateCheckoutActions = function(notifications) {
+            notifications = notifications || [];
+
+            var hasBlockingError = notifications.some(function(notification) {
+                return notification.type === 'error';
+            });
+
+            this.$element.find('[data-action="request-purchase"], [data-action="request-quote"]').each(function() {
+                $(this)
+                    .toggleClass('is-disabled', hasBlockingError)
+                    .prop('disabled', hasBlockingError);
             });
         }
 
@@ -214,6 +242,8 @@ jQuery(function() {
             }).forEach(function(priceTag) {
                 var $priceTag = priceTag.$element;
                 var $strikedPriceTag = $priceTag.parent().find('.is-striked');
+                var $priceTagRow = this.$element.find('[data-price-tag-row="' + priceTag.id + '"]');
+                var $priceTagNote = this.$element.find('[data-price-note="' + priceTag.id + '"]');
                 var buildTagMarkup = function(price, currency, interval) {
                     var units = [currency, interval].filter(function(value) { return !!value; }).join(' / ');
 
@@ -242,7 +272,15 @@ jQuery(function() {
                 } else if ($strikedPriceTag.length !== 0) {
                     $strikedPriceTag.remove();
                 }
-            });
+
+                if ($priceTagRow.length !== 0) {
+                    $priceTagRow.toggleClass('d-none', !Boolean(priceTag.price || priceTag.regularPrice));
+                }
+
+                if ($priceTagNote.length !== 0) {
+                    $priceTagNote.toggleClass('d-none', !Boolean(priceTag.price || priceTag.regularPrice));
+                }
+            }, this);
         }
 
         this._stringifyParameterValue = function(type, value) {
@@ -391,10 +429,12 @@ jQuery(function() {
 
                 Store.persist(self.productId, self.checkoutType, model.id);
                 self.configurationId = model.id;
+                self.latestNotifications = model.notifications;
 
                 self._updateParameters(model.parameters);
                 self._updatePriceTags(model.priceTags, model.parameters['currency'], model.parameters['billingInterval']);
                 self._updateNotifications(model.notifications);
+                self._updateCheckoutActions(model.notifications);
                 self._updateQueryString(model.parameters);
                 self._invokeEventCallbacks('did-update');
             });
@@ -425,6 +465,7 @@ jQuery(function() {
                         break;
                 }
 
+                self.latestNotifications = [];
                 self._invokeEventCallbacks('did-update');
             });
 
@@ -554,6 +595,10 @@ jQuery(function() {
     var bindCouponCodeFormElements = function($form) {
         var $module = $form.find('[data-module="coupon-code"]');
 
+        if ($module.length === 0) {
+            return;
+        }
+
         $form.data('object').bindEvent('did-update', function() {
             var value = $module.find('input').val();
 
@@ -573,6 +618,19 @@ jQuery(function() {
             }
 
             $button.prop('disabled', ($.trim(value).length === 0));
+        });
+
+        $module.on('keydown', 'input', function(event) {
+            var $button;
+
+            if (event.key !== 'Enter') { return; }
+
+            event.preventDefault();
+            $button = $module.find('button[data-action="check-coupon-code"]:not([disabled])').first();
+
+            if ($button.length !== 0) {
+                $button.trigger('click');
+            }
         });
 
         $module.on('click', 'button[data-action]', function(event) {
@@ -791,6 +849,13 @@ jQuery(function() {
             $(this).closest('[data-module="purchase-form"]').data('object').update();
         };
 
+        var onFormElementEnterPressed = function(event) {
+            if (event.key !== 'Enter') { return; }
+
+            event.preventDefault();
+            onFormElementChanged.call(this, event);
+        };
+
         var onFormActionClicked = function(event) {
             event.preventDefault();
 
@@ -806,7 +871,11 @@ jQuery(function() {
             }
         };
 
+        $form.on('submit', function(event) {
+            event.preventDefault();
+        });
         $form.on('change', 'input[data-update-on="change"]', onFormElementChanged);
+        $form.on('keydown', 'input[type="number"][data-update-on="change"]', onFormElementEnterPressed);
         $form.on('click', '[data-action]', onFormActionClicked);
 
         var form = new PurchaseForm($form);
@@ -902,4 +971,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-

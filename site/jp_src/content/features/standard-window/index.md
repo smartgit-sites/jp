@@ -1,30 +1,29 @@
 ---
-title: SmartGitスタンダードウィンドウ
-headerH2: ベストプラクティスによるより安全なGitワークフロー
-listTitle: スタンダードウィンドウ
-imageAltText: SmartGitのスタンダードウィンドウ。ベストプラクティスワークフローとCI/CD統合サポートを備えた合理化されたGitインターフェースを提供。
-linkText: スタンダードウィンドウについて詳しく
-category:
-- feature
-headerMessage: '**ベストプラクティス**を実践し**より安全なワークフロー**を実現する合理化されたインターフェースで作業。'
-description: 'SmartGitは3つの強力なGitウィンドウスタイルを提供：ファイルベース、コミット中心、統合型。スタンダードウィンドウはオールインワンのシンプルさを提供。今すぐSmartGitをお試しください！'
-ogTitle: SmartGitの機能 -- 開発者とチームのためのビジュアルGitツール
-ogDesc: 'SmartGitのスタンダードウィンドウをご覧ください：最適化されたワークフロー - 開発者、チーム、初心者に最適。'
+title: "SmartGit Standard Window"
+headerH2: "Safer Git Workflows with Best Practices"
+listTitle: "Standard Window"
+imageAltText: "SmartGit's Standard Window featuring streamlined Git interface with best-practices workflow and integrated CI/CD support."
+linkText: "More about Standard Window"
+category: ["feature"]
+headerMessage: "Work in a streamlined interface that enforces **best practices** for **safer workflows**."
+description: "SmartGit offers three powerful Git Window Styles: file-based, commit-focused, and unified. Standard Window offers the All-in-One Simplicity. Try SmartGit now!"
+ogTitle: "SmartGit Features -- Visual Git Tools for Developers and Teams"
+ogDesc: "Explore SmartGit's Standard Window: optimized Workflows - perfect for developers, teams, and beginners."
 weight: 7
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: features/standard-window/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: dccfec861e539ddff6af9927e990c214b888c63b
-    modified_committed_at: 2025-09-19T11:36:49Z
-    blob: 74573193c11e3b72acb30fd3dbdaba50406a74f0
-    sha256: 679ca98834eed2998829b1340e87540d9835a24d09e2976a935c8900e146f7e7
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: c7b19ae4dff7920e50ae357c875692e538f248b8
+    modified_committed_at: 2026-03-10T09:19:58Z
+    blob: 27c2b8ca20f52f6a27219e4b9adaa1f20dfcf9f2
+    sha256: 8d66561582dd01309248fbcd42d8f86793660fb7aa537e777eec07d0ad2fc894
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 合理化されたインターフェースをお好みですか？**スタンダードウィンドウ**はベストプラクティスに焦点を当て、高度なオプションを隠します：

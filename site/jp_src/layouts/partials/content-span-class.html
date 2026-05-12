@@ -1,0 +1,15 @@
+{{- $page := .Page | default . -}}
+{{- $default := .Default | default "center-span" -}}
+{{- $span := $default -}}
+
+{{- with $page -}}
+  {{- with .Params.contentSpan -}}
+    {{- $span = . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if eq $span "full-span" -}}
+  sg-content-span-full
+{{- else -}}
+  sg-content-span-center
+{{- end -}}

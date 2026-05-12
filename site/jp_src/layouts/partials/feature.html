@@ -1,5 +1,5 @@
 {{ $page := .Page | default . }}
-{{ partial "header.html" (merge (dict "Page" $page) $page.Params) }}
+{{ partial "header.html" (merge (dict "Page" $page "heroLayout" "with-sidebar-full") $page.Params) }}
 <main id="feature-overview">
     <div class="container">
         <div class="row">
@@ -9,4 +9,3 @@
         </div>
     </div>
 </main>
-

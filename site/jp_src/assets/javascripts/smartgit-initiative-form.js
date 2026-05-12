@@ -1,11 +1,15 @@
+// Hugo-injected config (via ExecuteAsTemplate)
+const TURNSTILE_SITE_KEY = {{ .Site.Params.turnstileSiteKey | jsonify }};
+const WORKER_BASE_URL_PARAM = {{ with .Site.Params.workerBaseURL }}{{ . | jsonify }}{{ else }}null{{ end }};
+const TURNSTILE_DISABLE_SECRET = {{ with .Site.Params.turnstileDisableSecret }}{{ . | jsonify }}{{ else }}null{{ end }};
+
 const succesStoryForm = document.getElementById('success-story-form');
 if(succesStoryForm){
     let stepC = 0;
     let next = false;
-    const isLocal = location.hostname === "localhost" || location.hostname === "127.0.0.1";
     const pages = document.getElementsByClassName('page');
     const btns = document.getElementsByClassName('btn-page');
-    const cftsKey = '0x4AAAAAAA5ppOVQRpTnVn7s'
+    const cftsKey = TURNSTILE_SITE_KEY;
     let cftsToken = '';
 
     const setActive = (stepC, collections) => {
@@ -111,57 +115,37 @@ if(succesStoryForm){
             } else {
                 document.getElementById('wait-for-promise').classList.add('show');
                 form.classList.remove('was-validated');
-                /*
-                for local tests so we do not need to send emails
-                 */
-                if (isLocal) {
-                    let emailBody = '';
-                    let emailBodyHead = '';
-                    let emailFiles = '';
-                    let formData = new FormData(form);
-                    for (const [k, v] of formData) {
-                        if (typeof v === 'string')
-                            if (k.includes('testimonial_')) {
-                                emailBodyHead += `${k}: "${v}"\n`;
-                            } else {
-                                if (!k.includes('exclude_') && !k.includes('cf-turnstile'))
-                                    emailBody += `# ${k}\n\n${v}\n\n`;
-                            }
-                        if(typeof  v === 'object' && k.includes('images')){
-                            if (parseInt(stepC) > 0) {
-                                emailFiles = '';
-                                continue;
-                            } else {
-                                emailFiles = `---\n\nMaybe files attached`;
-                            }
-                        }
 
-                    }
-                    if (emailBodyHead.length > 0) {
-                        emailBody = `---\n${emailBodyHead}---\n\n${emailBody}${emailFiles}`;
-                    }
-                    resolve(new Response(emailBody, {status: 200}));
-                } else {
-                    const xhr = new XMLHttpRequest();
-                    const formData = new FormData(form);
-                    if (parseInt(stepC) > 0)
-                        formData.delete('images');
-                    xhr.open(form.method, form.getAttribute("action"));
-                    xhr.send(formData);
+                const xhr = new XMLHttpRequest();
+                const formData = new FormData(form);
+                if (parseInt(stepC) > 0)
+                    formData.delete('images');
 
-                    xhr.onreadystatechange = function(e) {
-                        if (xhr.readyState === 4) {
-                            if (xhr.status === 200) {
-                                resolve(xhr);
-                            } else {
-                                console.error(xhr);
-                                reject(xhr);
-                            }
-                        }
-                    };
-
-                    resetTurnstile(cftsToken);
+                // Use disable secret if configured, otherwise use actual Turnstile token
+                if (TURNSTILE_DISABLE_SECRET) {
+                    formData.set('cf-turnstile-response', TURNSTILE_DISABLE_SECRET);
                 }
+
+                // Use workerBaseURL if configured (for local dev), otherwise use form action
+                const actionUrl = WORKER_BASE_URL_PARAM
+                    ? new URL(form.getAttribute("action"), WORKER_BASE_URL_PARAM).href
+                    : form.getAttribute("action");
+
+                xhr.open(form.method, actionUrl);
+                xhr.send(formData);
+
+                xhr.onreadystatechange = function(e) {
+                    if (xhr.readyState === 4) {
+                        if (xhr.status === 200) {
+                            resolve(xhr);
+                        } else {
+                            console.error(xhr);
+                            reject(xhr);
+                        }
+                    }
+                };
+
+                resetTurnstile(cftsToken);
             }
         });
     }
@@ -169,9 +153,7 @@ if(succesStoryForm){
     setActive(stepC, [pages]);
     addListener(btns,[pages]);
 
-    if(!isLocal) {
-        turnstile.ready(function () {
-            renderTurnstile();
-        });
-    }
+    turnstile.ready(function () {
+        renderTurnstile();
+    });
 }

@@ -1,31 +1,30 @@
 ---
-title: Git-FlowとFeature Flowによるスマートブランチ管理
-headerH1: SmartGitブランチ管理
-headerH2: Feature Flow、Git-Flow、GitHub Flow
-listTitle: スマートブランチ管理
-imageAltText: SmartGitのスマートブランチダイアログ。Feature FlowとGit-Flowブランチ戦略をビジュアルワークフローガイダンスで表示。
-linkText: スマートブランチ管理について詳しく
-category:
-- feature
-headerMessage: 'SmartGitのブランチヘルパーでガイド付き**Feature Flow**またはクラシックな**Git-Flow**に従う。'
-description: 統合されたガイダンスでFeature FlowまたはGit Flowを使用。SmartGitはチーム環境で整理された生産的な作業を支援するビジュアルブランチ戦略をサポートします。
-ogTitle: SmartGitブランチ管理 -- Feature Flow、Git-Flow、GitHub Flow
-ogDesc: 'SmartGitでのビジュアルブランチ戦略：Feature Flow、Git-Flow、GitHub Flowなど。組み込みの自動化とガイダンスでGitを簡素化。'
+title: "Smart Branching with Git-Flow & Feature Flow"
+headerH1: "SmartGit Branching"
+headerH2: "Feature Flow, Git-Flow & GitHub Flow"
+listTitle: "Smart Branching"
+imageAltText: "SmartGit's Smart Branching dialog showing Feature Flow and Git-Flow branching strategies with visual workflow guidance"
+linkText: "More about Smart Branching"
+category: ["feature"]
+headerMessage: "Follow guided **Feature Flow** or classic **Git-Flow** with SmartGit's branching helper."
+description: "Work with Feature Flow or Git Flow using integrated guidance. SmartGit supports visual branching strategies that help you stay organized and productive in team environments."
+ogTitle: "SmartGit Branching -- Feature Flow, Git-Flow & GitHub Flow"
+ogDesc: "Visual branching strategies in SmartGit: Feature Flow, Git-Flow, GitHub Flow and more. Simplify Git with built-in automation and guidance."
 weight: 4
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: features/smart-branching/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: 9e282e76978770048be135705f8b694c41c6123d
     modified_committed_at: 2025-09-02T15:04:41Z
     blob: 59e9eb5d461258c19f619cddf3dcefac0d6d9266
-    sha256: a26b76b7cf73a7f3bc3b1c2d1c4235681a80958a34e12d23ec0ce8f62d9aefe2
-    fetched_at: 2026-01-04T18:02:32Z
+    sha256: e7d15cf2f11339c463f6393188a16398cf40452c211a7d469c4f2479e1ecf888
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 ブランチ戦略は複雑である必要はありません。SmartGitは**Feature Flow**と**Git Flow**のガイド付きワークフローを提供します：

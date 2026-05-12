@@ -1,30 +1,29 @@
 ---
-title: SmartGitビジュアル履歴
-headerH2: ニーズに合わせて履歴をカスタマイズ
-listTitle: カスタマイズ可能なビジュアル履歴
-imageAltText: SmartGitのカスタマイズ可能なグラフビュー。Gitブランチ構造、コミット履歴、ビジュアルファイル差分を表示して正確なリポジトリナビゲーションを実現。
-linkText: カスタマイズ可能なビジュアル履歴について詳しく
-category:
-- feature
-headerMessage: 'カスタマイズ可能な**グラフ**と強力な**フィルター**でリポジトリの履歴を追跡。'
-description: 'SmartGitの強力なビジュアルGit履歴をご覧ください：コミットを追跡、ビューをカスタマイズ、正確にリポジトリをナビゲート。今すぐSmartGitをお試しください。'
-ogTitle: SmartGitの機能 -- 開発者とチームのためのビジュアルGitツール
-ogDesc: SmartGitのグラフビューでGit履歴をカスタマイズ -- コミットを可視化、スマートフィルターを使用、ワークフローを視覚的に調整。
+title: "SmartGit Visual History"
+headerH2: "Tailor the History to Your Needs"
+listTitle: "Customizable Visual History"
+imageAltText: "SmartGit's customizable Graph View displaying Git branching structure, commit history, and visual file diffs for precise repository navigation."
+linkText: "More about Customizable Visual History"
+category: ["feature"]
+headerMessage: "Trace your repository's story with a customizable **graph** and powerful **filters**."
+description: "Explore SmartGit's powerful visual Git history: track commits, customize views, and navigate your repository with precision. Try SmartGit now."
+ogTitle: "SmartGit Features -- Visual Git Tools for Developers and Teams"
+ogDesc: "Customize your Git history with SmartGit's Graph View -- visualize commits, use smart filters, and tailor your Git workflow visually."
 weight: 6
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: features/visual-history/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: 6a6e5a97c27e98dcf0e2a4cf169d8de80b499739
-    modified_committed_at: 2025-09-02T15:04:52Z
-    blob: e6e75dd6a5e524a057ddf5ac38b369255827660e
-    sha256: f5f759c3e9981648c700814acbaa1ff6dfa31da27c7af12330ce77a23b34972a
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: c7b19ae4dff7920e50ae357c875692e538f248b8
+    modified_committed_at: 2026-03-10T09:19:58Z
+    blob: 80628f73d5af06f28f629c763f48ab9b871d8ce2
+    sha256: 6b0e02e74aa02f94534d93e84af37f00c9235630cd59e063cef9906199c98a42
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 

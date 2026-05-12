@@ -1,0 +1,59 @@
+{{ $item := .item }}
+{{ $downloadRef := .downloadRef }}
+{{ $osIcon := .osIcon }}
+{{ $translations := .translations }}
+{{ $formattedFileSize := "" }}
+{{ if $item.file_size }}
+  {{ $formattedFileSize = replace (lang.FormatNumber 0 $item.file_size) "," "." }}
+{{ end }}
+
+{{ if $item.name }}
+<li class="list-group-item download-artifact-item">
+    <div class="download-artifact-body d-flex align-items-start gap-3">
+        <div class="download-artifact-copy flex-grow-1">
+            <h4 class="sg-gray-400">{{ $item.name }}</h4>
+            <p class="sg-gray-300 mb-0 small">{{ $item.note }}</p>
+        </div>
+        <a
+            href="{{ $downloadRef }}{{ $item.file_name }}"
+            target="_blank"
+            title="{{ $item.name }}: {{ $translations.download }} {{ $osIcon.name }}"
+            class="download-link-badge flex-shrink-0 mt-1"
+            aria-label="{{ $item.name }}: {{ $translations.download }} {{ $osIcon.name }}">
+            <span class="download-link-badge-icon fa-light fa-arrow-down-to-bracket sg-n2x" aria-hidden="true"></span>
+        </a>
+    </div>
+    {{ if or $item.file_size $item.checksum }}
+    <details class="download-artifact-details" open data-js-collapse>
+        <summary class="download-artifact-details-toggle">Details</summary>
+        <div class="download-artifact-details-panel">
+            {{ if $item.file_size }}
+            <div class="download-artifact-detail-row">
+                <span class="download-artifact-detail-label">Size</span>
+                <div class="download-artifact-detail-value">
+                    <code class="download-artifact-detail-code">{{ $formattedFileSize }}</code>
+                </div>
+            </div>
+            {{ end }}
+            {{ if $item.checksum }}
+            <div class="download-artifact-detail-row">
+                <span class="download-artifact-detail-label">SHA-256</span>
+                <div class="download-artifact-detail-value">
+                    <code class="download-artifact-detail-code">{{ $item.checksum }}</code>
+                    <button
+                        type="button"
+                        class="download-artifact-copy-link btn btn-link p-0 border-0"
+                        data-copy-text="{{ $item.checksum }}"
+                        data-copied-label="Copied">
+                        Copy
+                    </button>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </details>
+    {{ end }}
+</li>
+{{ else }}
+    {{ errorf "download name is not set for %s" $item.file_name }}
+{{ end }}

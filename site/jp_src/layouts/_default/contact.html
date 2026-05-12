@@ -1,0 +1,85 @@
+{{ define "main" }}
+{{ $company := site.Data.company }}
+{{ $scCAB := "{{< company-address-block >}}" }}
+{{ $contentSpanClass := partial "content-span-class.html" (dict "Page" . "Default" "full-span") }}
+{{ partial "header.html" (dict "Page" . "contentSpanDefault" "full-span" "h1" .Params.headerH1 "h2" .Params.headerH2 "message" .Params.headerMessage) }}
+<main>
+  <section id="contact" class="container teaser-follow-up-soft mb-5">
+    <div class="row">
+      <div class="{{ $contentSpanClass }}">
+    {{/* Support Notice */}}
+    <div class="row mb-5 pb-4 pb-lg-5">
+      <div class="col">
+        <div class="alert alert-info border-sg-indigo-500 bg-white shadow-sm mb-0">
+          <div class="d-flex align-items-start">
+            <i class="fa-light fa-circle-info fa-2x sg-indigo-500 me-3 mt-1"></i>
+            <div class="flex-grow-1">
+              <h5 class="alert-heading mb-2">Technical/Product Support</h5>
+              <p class="mb-0">For technical issues, bug reports, feature requests, or product support, please visit our <a href="/contact/support/" class="alert-link">dedicated support page</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-4 gy-5">
+      <div class="col">
+        <div class="card h-100 border-sg-indigo-500 position-relative">
+          <div class="position-absolute top-0 start-0 translate-middle bg-white p-2 ps-1 ms-4">
+            <i class="fa-light fa-location-dot fa-2x sg-orange-500"></i>
+          </div>
+          <div class="position-absolute top-0 start-0 mt-lg-n4 pt-4 pt-lg-0 ps-3 ps-lg-0">
+            <h2 class="fs-3 sg-gray-400 mt-lg-n5">Address</h2>
+          </div>
+          <div class="card-body pt-3 mt-5 pt-lg-4 mt-lg-0">
+            <dl class="row mb-0">
+              <dt class="col-sm-6">{{ $company.details.name }}</dt>
+              <dd class="col-sm-6"><a href="https://maps.app.goo.gl/u2VcuoeQfMbe9pT18" target="_blank">{{ .Page.RenderString $scCAB }}</a></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-sg-indigo-500 position-relative">
+          <div class="position-absolute top-0 start-0 translate-middle bg-white p-2 ps-1 ms-4">
+            <i class="fa-light fa-envelopes-bulk fa-2x sg-orange-500"></i>
+          </div>
+          <div class="position-absolute top-0 start-0 mt-lg-n4 pt-4 pt-lg-0 ps-3 ps-lg-0">
+            <h2 class="fs-3 sg-gray-400 mt-lg-n5">Emails</h2>
+          </div>
+          <div class="card-body pt-3 mt-5 pt-lg-4 mt-lg-0">
+            <dl class="row mb-0">
+              <dt class="col-sm-4">Sales</dt>
+              <dd class="col-sm-8">{{ partial "cloakemail" (dict "address" $company.emails.sales) }}</dd>
+              <dt class="col-sm-4">Marketing</dt>
+              <dd class="col-sm-8">{{ partial "cloakemail" (dict "address" $company.emails.marketing) }}</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 border-sg-indigo-500 position-relative">
+          <div class="position-absolute top-0 start-0 translate-middle bg-white p-2 ps-1 ms-4">
+            <i class="fa-light fa-link fa-2x sg-orange-500"></i>
+          </div>
+          <div class="position-absolute top-0 start-0 mt-lg-n4 pt-4 pt-lg-0 ps-3 ps-lg-0">
+            <h2 class="fs-3 sg-gray-400 mt-lg-n5">Links</h2>
+          </div>
+          <div class="card-body pt-3 mt-5 pt-lg-4 mt-lg-0">
+            <dl class="row mb-0">
+              <dt class="col-sm-10"><a href="/pricing/reseller-information/" target="_blank" title="Reseller information" class="text-decoration-none text-reset d-block">Resellers information</a></dt>
+              <dd class="col-sm-2"><a href="/pricing/reseller-information/" target="_blank" title="Reseller information"><span class="sg sg-link sg-indigo-500"></span></a></dd>
+              <dt class="col-sm-10"><a href="https://smartgit.userecho.com/" target="_blank" title="Feature Requests" class="text-decoration-none text-reset d-block">Feature Requests</a></dt>
+              <dd class="col-sm-2"><a href="https://smartgit.userecho.com/" target="_blank" title="Feature Requests"><span class="sg sg-link sg-indigo-500"></span></a></dd>
+              <dt class="col-sm-10"><a href="https://groups.google.com/g/smartgit?pli=1" target="_blank" title="Community Mailing List" class="text-decoration-none text-reset d-block">Community Mailing List</a></dt>
+              <dd class="col-sm-2"><a href="https://groups.google.com/g/smartgit?pli=1" target="_blank" title="Community Mailing List"><span class="sg sg-link sg-indigo-500"></span></a></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </section>
+</main>
+{{ end }}

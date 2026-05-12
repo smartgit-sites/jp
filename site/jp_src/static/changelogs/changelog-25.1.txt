@@ -1,3 +1,70 @@
+# SmartGit 25.1.128 (2026-04-02)
+
+## Improvements
+- AI integration:
+  - Models: supports OpenAI Responses API (e.g. required for `gpt-5.3-codex`)
+  - Models: supports `responseFilter` configuration
+
+## Fixed Bugs
+- AI integration:
+  - Commit annotation: possible internal error if the repository becomes invalid during background processing
+  - Commit annotation: possible internal error if the tab is closed while processing
+  - Commit annotation: possible error if notes already exist for the annotated object
+  - Commit message generation: possible internal error when closing the repository while generation is in progress
+  - MiniMax: some tokens might be dropped
+  - Models: `parameters` entries containing `.` were interpreted literally instead of creating a nested JSON object hierarchy
+  - Ollama: very short responses (like "yes"/"no") might not be processed
+  - Ollama: possible error "Object 'content' not found"
+- Bundled Git (Windows): incorrectly used `core.longPath` instead of `core.longpaths`
+- Changes view: possible internal error related to concurrent modifications
+- Graph: dragging a commit from another branch to cherry-pick no longer works (regression since 24.1)
+- Linux: could not launch if a monitor had > 200% zoom
+- Log (File): possible internal error related to Tag Grouping `Single Patterns` configuration
+- Log window: possible internal error when reusing a disposed log window
+- Push:
+  - Push To: may not work or even crash for certain refs
+  - Tag: annotated tags were pushed as plain tags
+- Refresh:
+  - GC notifications and similar messages could be ambiguous regarding the affected repository
+  - Graph: possible internal error for specific Git Notes contents
+  - possible internal error for invalid macro definitions
+  - Status: `.gitattributes` `working-tree-encoding` was not honored consistently
+  - Working Tree: false-positive modifications were reported for files with `working-tree-encoding` in `.gitattributes`
+  - Working Tree: quoted or escaped patterns in `.gitattributes` were handled incorrectly
+  - Working Tree: invalid attributes definitions were not handled properly
+  - Working Tree: possible internal error related to corrupted `.git/index` files
+- Repository Settings, Credential Helper: misleading tooltip wording
+- Stash, Rename: possible error "unknown switch -..." in backup logic
+- Azure DevOps: possible "client secret is expired"
+
+## Other Noteworthy Changes
+- Changes view: low-level property `changes.honorWorkingTreeEncodingOnStage` to honor `.gitattributes` `working-tree-encoding` when staging
+- Linux: tooltip background now provides better link readability
+
+
+# SmartGit 25.1.110 (2025-01-19)
+
+## Improvements
+- Log, Repository view: Copy Path now also works on submodule directories
+
+## Fixed Bugs
+- GitHub: possible timeout on setup (or when acquiring user repositories)
+- Log, Repository view: possible internal error when opening submodule
+- Refresh (WT): internal error when using commit.template for a bare repository
+- Registration: possible internal error when determining path or URL
+
+## Other Noteworthy Changes
+- Contact Support: now opens the new support page on our website
+- Startup: reworked social media notification
+
+
+# SmartGit 25.1.104 (2025-12-30)
+
+## Fixed Bugs
+- AI integration:
+  - possible error when using Grammarly
+
+
 # SmartGit 25.1.103 (2025-12-18)
 
 ## Fixed Bugs

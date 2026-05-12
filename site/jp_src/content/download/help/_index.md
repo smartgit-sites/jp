@@ -1,5 +1,8 @@
 ---
-title: ヘルプをお探しですか？
+title: "Looking for help?"
+robots: "noindex, nofollow"
+sitemapExclude: true
+
 cascade:
   build:
     render: never
@@ -10,14 +13,14 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: download/help/_index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: 78ce95a1adbe9df6ed2ed13e3c6a53f26921b77d
-    modified_committed_at: 2025-08-14T14:50:56Z
-    blob: 0e4c32628170ec508213006e88f4e48fc8cee5c3
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: 17251d6bbb36b8efb3782fa211b1f0ee4eda3e75
+    modified_committed_at: 2026-04-30T23:03:12Z
+    blob: cf61aef45e7846ca496c1dfe782efd03ac2543d7
+    sha256: 35d9b975a02658d36a848fe46d53efaaa5dadf4ae1ec759536293e38ac918c41
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---

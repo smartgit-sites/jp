@@ -1,0 +1,25 @@
+{{ define "main" }}
+{{ $h1 := .Title }}
+{{ $h2 := .Params.Subline }}
+{{ if .Params.headerH1 }}
+{{ $h1 = .Params.headerH1 }}
+{{ end }}
+{{ if .Params.headerH2 }}
+{{ $h2 = .Params.headerH2 }}
+{{ end }}
+{{ $teaserFollowUpClass := "teaser-follow-up" }}
+{{ if eq .Params.teaserFollowUp "soft" }}
+{{ $teaserFollowUpClass = "teaser-follow-up-soft" }}
+{{ end }}
+{{ $contentSpanClass := partial "content-span-class.html" (dict "Page" . "Default" "full-span") }}
+{{ partial "header.html" (dict "Page" . "contentSpanDefault" "full-span" "h1" $h1 "h2" $h2 "h3" .Params.headerH3 "message" .Params.headerMessage) }}
+<main id="for_you_page">
+    <section class="container {{ $teaserFollowUpClass }}">
+        <div class="row">
+            <div class="{{ $contentSpanClass }} pb-4">
+                {{ .Content }}
+            </div>
+        </div>
+    </section>
+</main>
+{{ end }}

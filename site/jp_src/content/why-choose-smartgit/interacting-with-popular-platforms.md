@@ -1,20 +1,20 @@
 ---
-title: 人気のプラットフォームとの連携
+title: "Interacting with popular platforms"
 headless: true
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: why-choose-smartgit/interacting-with-popular-platforms.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: c59e58880dee9410df1d80bd68977bbe10445969
     modified_committed_at: 2025-08-11T13:01:21Z
     blob: b1a3778e969da04aa328ff33503bfacd45fceac6
-    sha256: d19fa59c28f354660724bce70f62c1b84ff7fb3662b225d0eb5f1659cf9579f7
-    fetched_at: 2026-01-04T18:02:33Z
+    sha256: 6177e8701dd7275f4c5ac19b4fd806bdfb21d1083f9e31e097afcfc85925819d
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:33Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 # headline

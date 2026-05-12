@@ -1,30 +1,29 @@
 ---
-title: バージョン 20.1
-headerH2: SmartGit 20.1 の主要な改善点
-listTitle: バージョン 20.1
-imageAltText: 改善されたパフォーマンス、統一されたログインターフェース、柔軟なワークツリー管理を備えたSmartGit 20.1
-linkText: SmartGit バージョン 20.1 の詳細
-category:
-- feature
-headerMessage: '20.1で**速度向上**、より明確な**ログビュー**、柔軟な**ワークツリー**処理の恩恵を受ける。'
-description: SmartGit 20.1は、より速いパフォーマンス、簡素化されたログインターフェース、より良い変更の可視性、効率化されたワークツリー管理を提供 — Git生産性を向上させるために今すぐアップデート。
-ogTitle: 'SmartGit 20.1: より速いパフォーマンス、洗練されたログビュー & より良い変更処理。'
-ogDesc: SmartGit 20.1は、より速いパフォーマンス、簡素化されたログインターフェース、より良い変更の可視性、効率化されたワークツリー管理を提供 — Git生産性を向上させるために今すぐアップデート。
+title: "Version 20.1"
+headerH2: "Major Improvements in SmartGit 20.1"
+listTitle: "Version 20.1"
+imageAltText: "SmartGit 20.1 with improved performance, unified log interface, and flexible worktree management"
+linkText: "More about SmartGit Version 20.1"
+category: ["feature"]
+headerMessage: "Benefit from **speed boosts**, clearer **log view**, and flexible **worktree** handling in 20.1."
+description: "SmartGit 20.1 delivers faster performance, a simplified log interface, better change visibility, and streamlined worktree Management — update now to enhance your Git productivity."
+ogTitle: "SmartGit 20.1: Faster performance, refined log view & better change handling."
+ogDesc: "SmartGit 20.1 delivers faster performance, a simplified log interface, better change visibility, and streamlined worktree Management — update now to enhance your Git productivity."
 weight: 700
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: whats-new/20_1/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: 6a6e5a97c27e98dcf0e2a4cf169d8de80b499739
     modified_committed_at: 2025-09-02T15:04:52Z
     blob: 60d0d86cd2c4185700e2bb5bbc057694c31d7836
-    sha256: d9363b22842553d6e108b691ba23fdc8424a7e4776aa20759056e8442c05ad7c
-    fetched_at: 2026-01-04T18:02:33Z
+    sha256: 353a90de6d0992054982580b056d3bd3db3a1c42d347e18783893ff0f1770520
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:33Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 SmartGit 20.1は、より速く、より明確で、より柔軟なGitワークフローのための貴重な改善をもたらします：

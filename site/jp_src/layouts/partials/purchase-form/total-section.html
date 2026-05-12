@@ -1,0 +1,20 @@
+<div class="card-body border-bottom border-sg-indigo-200 py-5">
+    <div class="row g-3">
+        <div class="col-12 col-sm-4 mx-sm-auto">
+            <div class="input-group mb-3">
+                <input type="number" class="form-control" id="{{ .QuantityId }}" name="{{ .QuantityName }}" min="1" max="10000" value="1" aria-label="Quntity" data-update-on="change" data-min="1" data-max="10000">
+                <span class="input-group-text">QTY</span>
+            </div>
+        </div>
+        <div id="{{ .PriceId }}" data-price-tag="total" class="col-12 fs-2 sg-indigo-500 fw-bold lh-1 text-end">...</div>
+        <div class="col-12 text-muted fs-6 fw-normal mt-n1 text-end" data-price-note="total">(excl. VAT)<p></p></div>
+        <div class="col-12 mt-3" data-notification="license-count"></div>
+    </div>
+    <div class="row g-3">
+        {{ range .Buttons }}
+            <div class="{{ .ColumnClass }}">
+                <button class="{{ .ButtonClass }} w-100"{{ with .Type }} type="{{ . }}"{{ else }} type="button"{{ end }} data-action="{{ .Action }}">{{ .Label }}</button>
+            </div>
+        {{ end }}
+    </div>
+</div>

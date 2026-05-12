@@ -1,21 +1,20 @@
 {{ $reasonsPage := site.GetPage "company/success-stories/" }}
-{{ $items := $reasonsPage.Params.reasons}}
-<section id="what-who-why" class="container py-5">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gx-4 gy-5">
-{{ range  $index, $value := $items }}
+{{ $items := $reasonsPage.Params.reasons }}
+{{ $spanClass := .SpanClass | default "sg-content-span-full" }}
+<section id="what-who-why" class="container pt-4 pb-2">
+    <div class="row">
+        <div class="{{ $spanClass }}">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+{{ range $items }}
         <div class="col">
-            <div class="card h-100 border-sg-indigo-500 position-relative">
-                <div class="position-absolute top-0 start-0 translate-middle bg-white p-2 ps-1 ms-4">
-                    <span class="{{ $value.icon }} sg-orange-500"></span>
-                </div>
-                <div class="position-absolute top-0 start-0 mt-lg-n4 pt-4 pt-lg-0 ps-3 ps-lg-0">
-                    <h2 class="fs-3 sg-gray-400 mt-lg-n5">{{ $value.title }}</h2>
-                </div>
-                <div class="card-body pt-3 mt-5 pt-lg-4 mt-lg-0">
-                    <p class="card-text">{{ $value.desc }}</p>
-                </div>
+            <div class="text-center p-4 h-100">
+                <span class="{{ .icon }} sg-orange-500 mb-3"></span>
+                <h5 class="sg-indigo-500 fw-semibold mb-2">{{ .title }}</h5>
+                <p class="text-muted mb-0">{{ .desc }}</p>
             </div>
         </div>
 {{ end }}
+    </div>
+        </div>
     </div>
 </section>

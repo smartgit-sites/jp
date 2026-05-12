@@ -1,27 +1,26 @@
 ---
-title: '技術的なギャップを埋める：GitサブモジュールへのSmartGitの直感的アプローチ'
-description: SmartGitがゲーム開発チームのGitサブモジュールの課題を克服し、クリエイティブと技術職間のより良いコラボレーションを構築するのにどのように役立ったかをご紹介します。
-summary: SmartGitのGitサブモジュールへの直感的なアプローチが、ゲーム開発における技術チームとクリエイティブチーム間の壁をどのように取り払ったかをご覧ください。
-testimonial_user: Colin Richardson
-testimonial_company: Professional Developer
-testimonial_avatar: avatar.png
-layout: success-story
-categories:
-- Success story
+title: "Bridging Technical Divides: SmartGit's Intuitive Approach to Git Submodules"
+description: "Learn how SmartGit helped a game development team overcome Git submodule challenges and build better collaboration between creative and technical roles."
+summary: "Discover how SmartGit's intuitive approach to Git submodules broke down the walls between technical and creative teams in game development."
+testimonial_user: "Colin Richardson"
+testimonial_company: "Professional Developer"
+testimonial_avatar: "avatar.png"
+layout: "success-story"
+categories: ["Success story"]
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/bridging-technical-divides-using-smartgit/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: fc2b579a8e8740abb82a99c53e33f832d063dfaf
     modified_committed_at: 2025-07-21T17:04:23Z
     blob: b4b6dc8af643e9c48adc16085fdeb777333b3478
-    sha256: b663699c9721f3b62ac193ba499cb9e35041cd94ec9625824205bf324584279b
-    fetched_at: 2026-01-04T18:02:32Z
+    sha256: 44c44ed94af3268454cb7f5b2cdbc8989ad4cd10bc5543b41b7adb9c48db0fa7
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 # testimonial

@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-{{ partial "head" . }}
-<body class="home pt-5">
-{{ partial "navbar" . }}
-{{ partial "header-home" . }}
+{{ define "main" }}
+{{ partial "header-home.html" . }}
 <main>
-    {{ partial "six-powerful-benefits" . }}
-    {{ partial "carousel-testimonials" . }}
-    {{ partial "why-choose-smartgit" . }}
+    {{ partial "feature-links" . }}
+    {{ partial "for-you-teaser" . }}
     {{ partial "how-it-works" . }}
-    {{/* partial "who-uses-smartgit" . */}}
-    {{ partial "in-numbers" . }}
-    {{ partial "integration" . }}
-    {{ partial "get-started" . }}
+    {{ partial "carousel-testimonials" . }}
     {{ partial "success-stories-featured" . }}
+    {{ partial "get-started" . }}
 </main>
-{{ partial "footer" . }}
-</body>
-</html>
+{{ end }}

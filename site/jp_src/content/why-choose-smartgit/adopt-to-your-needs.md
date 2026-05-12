@@ -1,20 +1,20 @@
 ---
-title: あなたのニーズとワークフローに適応
+title: "Adapt to Your Needs and Workflows"
 headless: true
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: why-choose-smartgit/adopt-to-your-needs.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: c59e58880dee9410df1d80bd68977bbe10445969
     modified_committed_at: 2025-08-11T13:01:21Z
     blob: 4d93f945d8865a7df56b5fce38875a3e47f0d21d
-    sha256: 155e259852d987075cdb8c2fd8e2c779d715216e45dc212bea439c47dfa8d6bc
-    fetched_at: 2026-01-04T18:02:33Z
+    sha256: d1c68877f4dd1243eb0aad3c03842de37bd3611434b4a523ee0d7d18d6671673
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:33Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 # headline

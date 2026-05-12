@@ -8,14 +8,15 @@
         <a href="/download/" title="Download Current Release" class="btn btn-sg-orange"><span>Download Current Release</span></a>
     </div>
     {{ else }}
+    <div class="info-box mb-4 position-relative">
+        <p><b>26.1 release candidate is now available.</b> Check out <a href="/whats-new/26_1/" title="Version 26.1 Release Candidate" class="stretched-link">what&apos;s new</a>.</p>
+    </div>
     <div class="info-box mb-4">
         <ul>
             <li>The preview version is generally stable and safe to use alongside the release version, but issues may occur.</li>
             <li>Please report problems to <a href="mailto:smartgit@syntevo.com">smartgit@syntevo.com</a>.</li>
             <li><b>Avoid offline use</b> &mdash; this is a rolling release.</li>
         </ul>
-
-        <a href="/whats-new/25_1/" title="What's New" class="btn btn-sg-orange"><span>What's New in 25.1</span></a>
     </div>
     {{ partial "download-os.html" (dict "release" $releases "page" . "show_install_instructions" true) }}
     {{ end }}

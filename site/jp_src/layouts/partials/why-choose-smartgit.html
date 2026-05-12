@@ -9,22 +9,22 @@
 </noscript>
 <section id="why-choose-smartgit" class="container my-5">
   <div class="row">
-    <div class="col-12 text-center sg-gray-400 pb-4">
+    <div class="col-12 text-center pb-4">
       {{ with $resource }}
-      {{ partial "markdown-render-section" (slice . "headline" `<h2>$content</h2>`) }}
+      {{ partial "markdown-render-section" (slice . "headline" `<h2 class="sg-indigo-500">$content</h2>`) }}
       {{ end }}
     </div>
   </div>
   <div class="row">
     <div class="col-12">
-      <ul class="nav nav-accordion-tabbed nav-underline nav-justified mb-3 d-none d-md-flex" id="accordionTabs">
+      <ul class="nav nav-accordion-tabbed nav-underline nav-justified mb-4 d-none d-md-flex" id="accordionTabs">
         {{ range $key, $value := $files }}
           {{ $page := site.GetPage .filename }}
           {{ if $page }}
             {{ $params := $page.Params }}
         <li class="nav-item position-relative">
-          <noscript class="position-absolute  top-0 start-0 end-0 bottom-0"><a href="#collapse{{$key}}" class="stretched-link">&nbsp;</a></noscript>
-          <button class="nav-link" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{$key}}" aria-expanded="{{if not $key}}true{{else}}false{{end}}" aria-controls="collapse{{$key}}">{{$params.title}}</button>
+          <noscript class="position-absolute top-0 start-0 end-0 bottom-0"><a href="#collapse{{$key}}" class="stretched-link">&nbsp;</a></noscript>
+          <button class="nav-link px-3 py-2 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{$key}}" aria-expanded="{{if not $key}}true{{else}}false{{end}}" aria-controls="collapse{{$key}}">{{$params.title}}</button>
         </li>
           {{ end }}
         {{ end }}
@@ -41,14 +41,14 @@
           </h2>
           <div id="collapse{{$key}}" class="accordion-collapse collapse {{if not $key}}show{{end}}" data-bs-parent="#accordionWhyChooseSmartGit">
             <div class="accordion-body py-5">
-              <div class="row">
+              <div class="row align-items-center">
                 {{ with $page }}
-                <div class="col-12 col-md-6 ps-md-5">
-                  {{ partial "markdown-render-section" (slice . "headline" `<h2 class="fs-5 sg-gray-500">$content</h2>`) }}
-                  {{ partial "markdown-render-section" (slice . "desc" `<div>$content</div>`) }}
-                  <p>{{ .Page.RenderString $scDnldSG }}</p>
+                <div class="col-12 col-md-6">
+                  {{ partial "markdown-render-section" (slice . "headline" `<h3 class="fs-4 sg-indigo-500 mb-3">$content</h3>`) }}
+                  {{ partial "markdown-render-section" (slice . "desc" `<div class="text-muted">$content</div>`) }}
+                  <p class="mt-4">{{ .Page.RenderString $scDnldSG }}</p>
                 </div>
-                <div class="col-12 col-md-6 pe-md-5">
+                <div class="col-12 col-md-6">
                   {{ partial "markdown-render-section" (slice . "image" `<div>$content</div>`) }}
                 </div>
                 {{ end }}

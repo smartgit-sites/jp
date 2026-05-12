@@ -24,30 +24,26 @@
       <div class="text-center">
         <h3 class="mb-3"><span class="visually-hidden">{{ $translations.download }} {{ $osIcon.name }}</span><span class="{{ $osIcon.icon }} {{ $osIcon.color }}"></span> <span class="fs-6">{{ $osIcon.name }}</span></h3>
       </div>
-      <div class="card h-100" data-os="{{ $os }}">
-        <div class="card-body px-0 pb-0">
-          {{ $withoutWarning := where $pageForOS "warning" "eq" nil }}
-          {{ $withWarning := where $pageForOS "warning" "ne" nil }}
-          {{ $downloadsOrdered := append $withWarning $withoutWarning }}
+      <div class="download-os-frame h-100" data-os="{{ $os }}">
+        <div class="card h-100">
+        <div class="card-body p-0">
+          {{ $regular := where $pageForOS "special" "ne" true }}
+          {{ $special := where $pageForOS "special" "eq" true }}
           <ul class="list-group list-group-flush">
-            {{ range $downloadsOrdered }}
-              {{ if .name }}
-              <li class="list-group-item position-relative border-sg-indigo-200 pb-4">
-                <h4 class="sg-gray-400">{{ .name }}</h4>
-                {{ if .warning }}
-                <p class="text-warning small mb-1">Not recommended <span class="fa-regular fa-info-circle ms-1 position-relative z-3" data-bs-toggle="tooltip" data-bs-title="{{ .warning }}"></span></p>
-                {{ end }}
-                <p class="sg-gray-300 mb-0 small position-relative ms-3 me-5">
-                  <span class="fa-regular fa-info-circle mt-1 me-1 position-absolute end-100 top-0 z-3" data-bs-toggle="tooltip" data-bs-title="{{ $translations.file_size }}: {{ .file_size}} | {{ $translations.checksum }}: {{ .checksum }}"></span> {{ .note }}
-                </p>
-                <div class="position-absolute end-0 bottom-0 px-2 py-1 bg-sg-indigo-200-rgb bg-opacity-25 rounded-circle mb-4 me-3 z-1 pe-none"><span class="fa-light fa-arrow-down-to-bracket sg-indigo-500 sg-n2x mt-n1"></span></div>
-                <a href="{{ $downloadRef }}{{ .file_name }}" target="_blank" title="{{ .name }}: {{ $translations.download }} {{ $osIcon.name }}" class="stretched-link"></a>
-              </li>
-              {{ else }}
-                {{ errorf "download name is not set for %s" .file_name }}
-              {{ end }}
+            {{ if (gt (len $regular) 0) }}
+            <li class="list-group-item download-section-label text-center fw-normal small py-2">Recommended</li>
+            {{ end }}
+            {{ range $regular }}
+              {{ partial "download/artifact.html" (dict "item" . "downloadRef" $downloadRef "osIcon" $osIcon "translations" $translations) }}
+            {{ end }}
+            {{ if and (gt (len $special) 0) (gt (len $regular) 0) }}
+            <li class="list-group-item download-section-label text-center fw-normal small py-2">Special Bundles</li>
+            {{ end }}
+            {{ range $special }}
+              {{ partial "download/artifact.html" (dict "item" . "downloadRef" $downloadRef "osIcon" $osIcon "translations" $translations) }}
             {{ end }}
           </ul>
+        </div>
         </div>
       </div>
     </div>
@@ -96,7 +92,8 @@
             <div class="text-center">
                 <h3 class="mb-3"><span class="visually-hidden">{{ $translations.download }} {{ $osIcon.name }}</span><span class="{{ $osIcon.icon }} {{ $osIcon.color }}"></span> <span class="fs-6">{{ $osIcon.name }}</span></h3>
             </div>
-            <div class="card h-100" data-os="{{ $os }}">
+            <div class="download-os-frame h-100" data-os="{{ $os }}">
+                <div class="card h-100">
                 <div class="card-body p-4">
                     {{ range $instr := $osInstructions }}
                         <h3 class="fs-6 sg-indigo-500 mt-3">{{ $instr.title }}</h3>
@@ -107,32 +104,9 @@
                         </ul>
                     {{ end }}
                 </div>
+                </div>
             </div>
         </div>
     {{ end }}
   </div>
-  <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var os;
-    var platform = navigator.platform.toLowerCase();
-    if (platform.includes('win')) {
-      os = 'windows';
-    } else if (platform.includes('mac')) {
-      os = 'mac_os';
-    } else if (platform.includes('linux')) {
-      os = 'linux';
-    }
-    if (os) {
-      var cards = document.querySelectorAll('.card[data-os="' + os + '"]');
-      cards.forEach(function(card) {
-        card.classList.add('download-highlight');
-      });
-    }
-  });
-  </script>
-  <style>
-  .download-highlight {
-    box-shadow: 0 0 0 .50rem var(--sg-indigo-500);
-  }
-  </style>
   {{ end }}

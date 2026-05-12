@@ -1,0 +1,23 @@
+{{/* page-section-content.html
+  Returns the raw markdown body for a named top-level section in a page's RawContent.
+
+  Parameters:
+  - Page: the page resource to inspect
+  - Section: section heading without the leading "# "
+*/}}
+
+{{- $page := .Page -}}
+{{- $section := .Section -}}
+{{- $content := printf "\n%s" ($page.RawContent | replaceRE "\r\n" "\n") -}}
+{{- $sections := split $content "\n# " -}}
+{{- $desiredSection := "" -}}
+
+{{- range $sections -}}
+  {{- if hasPrefix . (printf "%s\n" $section) -}}
+    {{- $desiredSection = . -}}
+  {{- end -}}
+{{- end -}}
+
+{{- with $desiredSection -}}
+  {{- replaceRE (printf "^%s\n" $section) "" . -}}
+{{- end -}}

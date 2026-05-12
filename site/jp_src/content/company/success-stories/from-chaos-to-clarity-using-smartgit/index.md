@@ -1,28 +1,26 @@
 ---
-title: '混沌から明確さへ：SmartGitが複雑なコードレビューを変える方法'
-description: SmartGitがパワフルなビジュアルツールで大規模なコードレビューに構造をもたらし、開発者が明確さと一貫性を確保するのにどのように役立つかをご覧ください。
-summary: 1つのファイルが数千行のC++コードにまたがるとき、経験豊富な開発者でも頼れる味方が必要です—SmartGitの革新的なレビュー機能の出番です。
-testimonial_user: Daniel Griscom
-testimonial_company: Suitable Systems
-testimonial_avatar: /images/avatars/man1.png
-layout: success-story
-categories:
-- Success story
-- ''
+title: "From Chaos to Clarity: How SmartGit Transforms Complex Code Reviews"
+description: "Explore how SmartGit brings structure to large-scale code reviews with powerful visual tools that help developers ensure clarity and consistency."
+summary: "When a single file spans thousands of lines of C++ code, even seasoned developers need a reliable ally—enter SmartGit's game-changing review capabilities."
+testimonial_user: "Daniel Griscom"
+testimonial_company: "Suitable Systems"
+testimonial_avatar: "/images/avatars/man1.png"
+layout: "success-story"
+categories: ["Success story", ""]
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/from-chaos-to-clarity-using-smartgit/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
     modified_commit: fc2b579a8e8740abb82a99c53e33f832d063dfaf
     modified_committed_at: 2025-07-21T17:04:23Z
     blob: 5bc04fcd8eddde2c89305fa7108f9391c61adb1d
-    sha256: 531652fe87efc8578ca6191420a33a0711e9774a80fe3655476b27650ae61dc5
-    fetched_at: 2026-01-04T18:02:32Z
+    sha256: 512933786ef7e5413a872f78228a1e5cbf13aad4915a568765bed37202835915
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 # testimonial

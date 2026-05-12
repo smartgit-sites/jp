@@ -1,30 +1,29 @@
 ---
-title: SmartGitクリーンコミット
-description: SmartGitのビジュアルツールでコミットを分割、スカッシュ、並べ替え -- レビューと保守が簡単なクリーンなGit履歴を実現。
-headerH2: クリーンなコミットを簡単に作成
-listTitle: クリーンコミット
-imageAltText: クリーンなリポジトリ履歴を維持するためのSmartGitのコミット分割、スカッシュ、並べ替えツール
-linkText: クリーンコミットについて詳しく
-category:
-- feature
-headerMessage: 'ビジュアルな**分割**、**スカッシュ**、**並べ替え**ツールで整理されたGit履歴を作成。'
-ogTitle: SmartGitの機能 -- 開発者とチームのためのクリーンコミット
-ogDesc: 開発者による、開発者のための製品。
+title: "SmartGit Clean Commits"
+description: "Split, squash, and reorder commits with SmartGit's visual tools -- for a clean Git history that's easy to review and maintain."
+headerH2: "Create Clean Commits Easily"
+listTitle: "Clean Commits"
+imageAltText: "SmartGit's tools for splitting, squashing, and reordering Git commits to maintain clean repository history"
+linkText: "More about Clean Commits"
+category: ["feature"]
+headerMessage: "Shape a tidy Git history using visual **split**, **squash**, and **reorder** tools."
+ogTitle: "SmartGit Features -- Clean Commits for Developers and Teams"
+ogDesc: "Built by developers, for developers."
 weight: 3
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: features/clean-commits/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: dccfec861e539ddff6af9927e990c214b888c63b
-    modified_committed_at: 2025-09-19T11:36:49Z
-    blob: 64df2aeae6cc48fa6d7719ccd0b684651ef90287
-    sha256: 916ac221d5e9d718a295d9c785de48aaeba630430d1ddd812c0b70f158a59c6d
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: c7b19ae4dff7920e50ae357c875692e538f248b8
+    modified_committed_at: 2026-03-10T09:19:58Z
+    blob: f31c915f1d3a02f7add866a71b560c0329c707f2
+    sha256: 0ad02f41f1c46a9a230a6ee505441699e985d72c7b7bb8d1fa00bef0cdfb22b9
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 私たちは**クリーンなコミット履歴**の利点を信じています。クリーンなコミット履歴は、コミットのレビュー、後からの変更の理解、コードのメンテナンスに役立ちます。メンテナンスはソフトウェアプロジェクトの[最もコストのかかる部分](https://en.wikipedia.org/wiki/Software_maintenance)であることが多いからです。

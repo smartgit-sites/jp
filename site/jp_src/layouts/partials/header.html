@@ -1,50 +1,84 @@
-{{- /* Decide if the caller passed a dict or a Page */ -}}
-{{- $isMap := hasPrefix (printf "%T" .) "map" -}}
+{{- /* Accept either a Page or a map/dict of overrides.
+      Hugo 0.158+ may pass merged front matter as maps.Params, so use reflect helpers
+      instead of matching the formatted Go type name. */ -}}
 {{- $over := dict -}}
-{{- $page := . -}}
-{{- if $isMap -}}
+{{- $page := false -}}
+{{- if reflect.IsPage . -}}
+  {{- $page = . -}}
+{{- else if reflect.IsMap . -}}
   {{- $over = . -}}
   {{- with index $over "Page" }}{{ $page = . }}{{ end -}}
+{{- else -}}
+  {{- $page = . -}}
 {{- end -}}
 
 {{- /* 1) Explicit overrides (from $over only) */ -}}
 {{- $h1 := or (index $over "headerH1") (index $over "h1") -}}
 {{- $h2 := or (index $over "headerH2") (index $over "h2") -}}
-{{- $h3 := or (index $over "headerH3") (index $over "h3") -}}
 {{- $message := or (index $over "message") (index $over "headerMessage") -}}
 
 {{- /* 2) Fallbacks from the page (only if still empty) */ -}}
 {{- with $page -}}
   {{- if not $h1 }}{{ $h1 = or .Params.headerH1 .Params.h1 .Title }}{{ end -}}
   {{- if not $h2 }}{{ $h2 = or .Params.headerH2 .Params.h2 }}{{ end -}}
-  {{- if not $h3 }}{{ $h3 = or .Params.headerH3 .Params.h3 }}{{ end -}}
   {{- if not $message }}{{ $message = or .Params.message .Params.headerMessage }}{{ end -}}
 {{- end -}}
 
 {{- $message := trim $message " " -}}
 {{ $hasMessage := ne (trim $message " ") "" }}
+{{ $h2Text := default "" $h2 }}
+{{ $showH2 := and (ne (trim $h2Text " ") "") (not $hasMessage) }}
+{{ $contentSpanDefault := index $over "contentSpanDefault" }}
+{{ $contentSpan := $contentSpanDefault }}
+{{ with $page }}
+  {{ with .Params.contentSpan }}
+    {{ $contentSpan = . }}
+  {{ end }}
+{{ end }}
+{{ $heroLayout := or (index $over "heroLayout") (and $page $page.Params.heroLayout) }}
+{{ if not $heroLayout }}
+  {{ if eq $contentSpan "full-span" }}
+    {{ $heroLayout = "no-sidebar-full" }}
+  {{ else if eq $contentSpan "center-span" }}
+    {{ $heroLayout = "no-sidebar-centered" }}
+  {{ end }}
+{{ end }}
+{{ $heroClass := "sg-page-hero" }}
+{{ if eq $heroLayout "with-sidebar-full" }}
+  {{ $heroClass = printf "%s %s" $heroClass "sg-page-hero-with-sidebar-full" }}
+{{ else if eq $heroLayout "with-sidebar-centered" }}
+  {{ $heroClass = printf "%s %s" $heroClass "sg-page-hero-with-sidebar-centered" }}
+{{ else if eq $heroLayout "no-sidebar-centered" }}
+  {{ $heroClass = printf "%s %s" $heroClass "sg-page-hero-no-sidebar-centered" }}
+{{ else if eq $heroLayout "no-sidebar-full" }}
+  {{ $heroClass = printf "%s %s" $heroClass "sg-page-hero-no-sidebar-full" }}
+{{ end }}
 
-<header>
-  <div class="container py-5 mb-5">
-    <div class="row teaser-container">
-      <div class="col-12 teaser-upper">
-        <div class="col-md-6">
-          <h1 class="fw-semibold lh-1 mb-0">{{ $h1 }}</h1>
-          {{ with $h2 }}<h2 class="fs-5">{{ . }}</h2>{{ end }}
-        </div>
-      </div>
-
-      <div class="col-12 position-relative">
-        <div class="header-construct">
-          <span class="sg sg-construct-header" data-sg="sg-orange-500,sg-indigo-500" data-sg-stroke="var(--bs-white)"></span>
-        </div>
-      </div>
-
-      <div class="col-12 teaser-lower">
-        <div class="row g-2">
-          {{ with index $over "partial" }}{{ . }}{{ end }}
-        </div>
-      </div>
+<header class="sg-page-hero-shell">
+  <section class="{{ $heroClass }}">
+    <div class="container sg-page-hero-inner">
+      {{ if eq $heroLayout "with-sidebar-full" }}<div class="row"><div class="sg-layout-sidebar d-none d-md-block ps-md-0"></div><div class="sg-layout-main pe-md-0"><div class="row"><div class="col-12 sg-page-hero-copy">{{ end }}
+      {{ if eq $heroLayout "with-sidebar-centered" }}<div class="row"><div class="sg-layout-sidebar d-none d-md-block ps-md-0"></div><div class="sg-layout-main-centered"><div class="row"><div class="col-12 sg-page-hero-copy">{{ end }}
+      {{ if eq $heroLayout "no-sidebar-centered" }}<div class="row"><div class="sg-content-span-center sg-page-hero-copy">{{ end }}
+      {{ if eq $heroLayout "no-sidebar-full" }}<div class="row"><div class="sg-content-span-full sg-page-hero-copy">{{ end }}
+        <h1>{{ $h1 }}</h1>
+        {{ if $showH2 }}
+          <div class="sg-page-hero-subline">{{ $h2 | markdownify }}</div>
+        {{ end }}
+        {{ with $message }}
+          <div class="sg-page-hero-message">{{ . | markdownify }}</div>
+        {{ end }}
+        {{ with index $over "partial" }}
+          <div class="sg-page-hero-extra">{{ . }}</div>
+        {{ end }}
+      {{ if eq $heroLayout "with-sidebar-full" }}</div></div></div></div>{{ end }}
+      {{ if eq $heroLayout "with-sidebar-centered" }}</div></div><div class="sg-layout-sidebar d-none d-md-block pe-md-0"></div></div>{{ end }}
+      {{ if or (eq $heroLayout "no-sidebar-centered") (eq $heroLayout "no-sidebar-full") }}</div></div>{{ end }}
     </div>
-  </div>
+    <div class="sg-page-hero-wave-shell" aria-hidden="true">
+      <svg class="sg-page-hero-wave" viewBox="0 0 1440 140" preserveAspectRatio="none">
+        <path d="M0,86 C260,96 520,104 808,88 C1034,76 1188,28 1440,72 L1440,140 L0,140 Z"></path>
+      </svg>
+    </div>
+  </section>
 </header>

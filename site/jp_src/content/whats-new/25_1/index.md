@@ -1,30 +1,29 @@
 ---
-title: バージョン 25.1
-headerH2: バージョン 25.1 の主要な改善点
-listTitle: バージョン 25.1
-imageAltText: AIによるコミット生成、Git Notes対応、強化されたワークツリー、改善されたLFS処理を備えたSmartGit 25.1
-linkText: SmartGit 25.1 の詳細
-category:
-- feature
-headerMessage: 'AIで**コミットメッセージ**を生成、コミットを説明、**スタッシュ**を自動命名。ファーストクラスの**Git Notes**、改善された**ワークツリー**、より明確な**LFS**状態など。'
-description: SmartGit 25.1は、AIによるコミット支援、ファーストクラスのGit Notes、改善されたワークツリー、より明確なLFS処理、PRフィルター、日常のGit作業を効率化するその他の改善を提供します。
-ogTitle: 'SmartGit 25.1: AIコミット支援、Git Notes、LFS改善'
-ogDesc: AIコミット支援、Git Notes、より良いワークツリー、より明確なLFS状態、PRフィルターなど -- すべてSmartGit 25.1で。
+title: "Version 25.1"
+headerH2: "Major Improvements in Version 25.1"
+listTitle: "Version 25.1"
+imageAltText: "SmartGit 25.1 with AI-powered commit generation, Git Notes support, enhanced worktrees, and improved LFS handling"
+linkText: "More about SmartGit 25.1"
+category: ["feature"]
+headerMessage: "Generate **commit messages** with AI, explain commits, and auto-name **stashes**. First-class **Git Notes**, improved **worktrees**, clearer **LFS** states, and more."
+description: "SmartGit 25.1 brings AI-powered commit help, first-class Git Notes, improved worktrees, clearer LFS handling, PR filters, and other refinements that streamline everyday Git work."
+ogTitle: "SmartGit 25.1: AI commit help, Git Notes, LFS improvements"
+ogDesc: "AI commit help, Git Notes, better worktrees, clearer LFS states, PR filters, and more -- all in SmartGit 25.1."
 weight: 199
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: whats-new/25_1/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: d507c41ce03ae01ccc182cb3d922a05d54b63ab0
-    modified_committed_at: 2025-10-30T14:07:49Z
-    blob: ac4370803cb1f3667625ce77b470ddd7915fd0fa
-    sha256: 6825bcf809fb28dc209b91a0ab35a16e787fd0c0705ec9cc7c641393858807a7
-    fetched_at: 2026-01-04T18:02:33Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: c7b19ae4dff7920e50ae357c875692e538f248b8
+    modified_committed_at: 2026-03-10T09:19:58Z
+    blob: 473c6f608ff78fe253e4799f1da1fd7809ef1268
+    sha256: 0fd45598eb7f2aba6a04f6ee2ca5b3a23ab140c4dca4eef7e2ddec8dd9c47083
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:33Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 SmartGit 25.1は、AI支援、メタデータ、ワークツリー、LFS、プルリクエスト処理に関する実用的なツール改善に焦点を当てています：

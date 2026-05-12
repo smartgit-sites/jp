@@ -1,27 +1,26 @@
 ---
-title: '理想のGit GUIを見つける：SmartGitへのユーザーの旅'
-description: 理想のGit GUIを発見するまでのある開発者の旅をたどり、SmartGitが日常のワークフローに欠かせない存在になった経緯をご紹介します。
-summary: 完璧なGitクライアントを求める開発者の徹底的な検索がSmartGitにたどり着いたとき、永久ライセンスを購入する決断は驚くほど簡単でした。
-testimonial_user: c600g
-testimonial_company: via Slant
-testimonial_avatar: /images/avatars/man3.png
-layout: success-story
-categories:
-- Success story
+title: "Finding the Perfect Git GUI: A User's Journey to SmartGit"
+description: "Follow one developer's journey to discovering the ideal Git GUI—and how SmartGit became an essential part of their daily workflow."
+summary: "When a developer's exhaustive search for the perfect Git client led to SmartGit, the decision to commit for life was surprisingly easy."
+testimonial_user: "c600g"
+testimonial_company: "via Slant"
+testimonial_avatar: "/images/avatars/man3.png"
+layout: "success-story"
+categories: ["Success story"]
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/smartgit-the-perfect-git-gui/index.md
-    commit: 6fc54a1d034d1331f61d555ee9aeb91ac672cb79
-    committed_at: 2025-12-18T16:02:11Z
-    modified_commit: fc2b579a8e8740abb82a99c53e33f832d063dfaf
-    modified_committed_at: 2025-07-21T17:04:23Z
-    blob: d57f68cc8cfe60e0394b07b2be85a56428493c10
-    sha256: 846d489b56e41042cf29c3169a9561879f392507f36a4871cb0efd5fe14b0761
-    fetched_at: 2026-01-04T18:02:32Z
+    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
+    committed_at: 2026-05-09T15:55:27Z
+    modified_commit: c7b19ae4dff7920e50ae357c875692e538f248b8
+    modified_committed_at: 2026-03-10T09:19:58Z
+    blob: 099e03fd7f3ba38014bacb7dd1cb573dd239e6b7
+    sha256: f6c242eae44f26072361df68964decaf4cd5376ae4c13afedf2d7ebcbe7c30d7
+    fetched_at: 2026-05-12T00:35:06Z
   translation:
     status: draft
-    updated_at: 2026-01-04T18:02:32Z
+    updated_at: 2026-05-12T00:35:06Z
 ---
 
 # testimonial
