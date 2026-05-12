@@ -1,5 +1,5 @@
 ---
-title: "SmartGit documentation"
+title: "SmartGit ドキュメント"
 
 
 workFlowLinks:
@@ -40,7 +40,7 @@ docsync:
 
 {{< button-orange url="https://docs.syntevo.com/SmartGit/Latest/HowTos/" display="詳細を見る" >}}
 ---
-## SmartGit UIリファレンス
+## SmartGit UI の考え方
 
 SmartGitを初めて使用する方は、SmartGitユーザーインターフェースリファレンスから始めるのがおすすめです。
 

@@ -1,5 +1,5 @@
 ---
-title: "One for all"
+title: "ワン・フォー・オール"
 headless: true
 docsync:
   source:
@@ -17,11 +17,11 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-# headline
+# 見出し
 
 誰でも使える。信頼できるクロスプラットフォームGitクライアント。
 
-# desc
+# 説明
 
 SmartGitはGit初心者をサポートするとともに、経験豊富な開発者の生産性向上を支援します。Windows、macOS、Linuxで同じ直感的なユーザーインターフェースを提供します：
 
@@ -31,6 +31,6 @@ SmartGitはGit初心者をサポートするとともに、経験豊富な開発
 
 SmartGitライセンスは、お好きなだけ多くのマシンやオペレーティングシステムでご使用いただけます。予期せぬ制限はありません -- 一貫したGitパワーをお届けします。
 
-# image
+# 画像
 
 ![SmartGitのインターフェース。ビジュアルコンフリクト解消を強調した統合ファイル差分と3ウェイマージツールを表示。](/why-choose-smartgit/one-for-all.png)

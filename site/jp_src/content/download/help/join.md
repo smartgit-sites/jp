@@ -1,5 +1,5 @@
 ---
-title: "Join the Community:"
+title: "コミュニティに参加してください:"
 
 icon: "fa-light fa-group-arrows-rotate"
 docsync:

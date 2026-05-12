@@ -4,11 +4,11 @@ headless: true
 
 list:
     - title: "143k"
-      desc: "Active users"
+      desc: "アクティブユーザー"
     - title: "17k"
-      desc: "Organizations"
+      desc: "組織"
     - title: "2.3M"
-      desc: "Git ops per day"
+      desc: "1 日あたりの Git 操作数"
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git

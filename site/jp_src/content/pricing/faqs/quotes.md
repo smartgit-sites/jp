@@ -1,5 +1,5 @@
 ---
-title: "Quotes"
+title: "引用"
 headless: true
 
 weight: 12

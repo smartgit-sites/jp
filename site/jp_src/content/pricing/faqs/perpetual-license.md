@@ -1,5 +1,5 @@
 ---
-title: "Perpetual License"
+title: "永久ライセンス"
 headless: true
 
 weight: 14

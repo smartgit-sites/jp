@@ -1,7 +1,7 @@
 ---
-title: "Evolution of Excellence: A Developer's Journey with SmartGit"
-description: "Follow the evolution of a developer's Git workflow from manual chaos to streamlined success with SmartGit's intuitive UI."
-summary: "A veteran developer reveals how SmartGit's commitment to user-driven evolution has kept it at the forefront of Git clients, making each version better than the last."
+title: "卓越性の進化: SmartGit を使用した開発者の旅"
+description: "SmartGit の直感的な UI を使用して、開発者の Git ワークフローの進化を、手動による混乱から合理化された成功まで追跡します。"
+summary: "ベテランの開発者が、ユーザー主導の進化に対する SmartGit の取り組みが、どのようにして SmartGit を Git クライアントの最前線に保ち、各バージョンを前回よりも優れたものにしてきたかを明らかにします。"
 testimonial_user: "Steve Bryant"
 testimonial_company: "Independent Developer"
 testimonial_avatar: "/images/avatars/man1.png"
@@ -23,54 +23,54 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-# testimonial
+# 証言
 
-I have been using SmartGit for quite some time and I have really liked it the whole time... It took me less than a day to get comfortable with the new structure and now I am finding all sorts of great tools that just make my life so much easier.
+私はかなり長い間 SmartGit を使用してきましたが、ずっと気に入っています... 新しい構造に慣れるのに 1 日もかかりませんでした。今では、私の生活をとても楽にしてくれるあらゆる種類の素晴らしいツールを見つけています。
 
-# summary
+# まとめ
 
-A long-term SmartGit user's experience highlights how the software has consistently evolved to meet developer needs, particularly showcasing the significant improvements in SmartGit 6. The story demonstrates how SmartGit listens to user feedback and implements sought-after features while maintaining its core strengths.
+長期にわたる SmartGit ユーザー エクスペリエンスは、開発者のニーズに合わせてソフトウェアがどのように一貫して進化してきたかを浮き彫りにし、特に SmartGit 6 の大幅な改善を示しています。このストーリーでは、SmartGit がどのようにユーザーのフィードバックに耳を傾け、その中核的な強みを維持しながら求められている機能を実装しているかを示しています。
 
-# challenge
+# チャレンジ
 
-- Need for comprehensive Git client functionality
-- Requirement for blame feature integration
-- Desire for quick terminal access within the application
-- Balancing between GUI and command-line operations
-- Adapting to new software versions efficiently
+- 包括的な Git クライアント機能の必要性
+- 非難機能統合の要件
+- アプリケーション内で端末に素早くアクセスしたい
+- GUI とコマンドライン操作のバランスをとる
+- 新しいソフトウェア バージョンに効率的に適応する
 
-# solution
+# 解決
 
-- Continuous product improvement and feature addition
-- Integration of blame functionality
-- Implementation of "Open in Terminal" feature
-- Intuitive new interface structure
-- Maintained core reliability while adding features
+- 継続的な製品の改善と機能の追加
+- 非難機能の統合
+- 「ターミナルで開く」機能の実装
+- 直感的な新しいインターフェイス構造
+- 機能を追加しながらコアの信頼性を維持
 
-# impact
+# インパクト
 
-- Smooth transition to new version within one day
-- Enhanced productivity through new tools
-- Reduced need to switch between applications
-- Improved development workflow efficiency
-- Maintained user loyalty despite previous limitations
+- 1 日以内に新しいバージョンにスムーズに移行
+- 新しいツールによる生産性の向上
+- アプリケーション間の切り替えの必要性を軽減
+- 開発ワークフローの効率の向上
+- 以前の制限にもかかわらずユーザーロイヤルティを維持
 
-# benefits
+# 利点
 
-- Quick adaptation to new interfaces
-- Comprehensive feature set
-- Integration of commonly requested features
-- Seamless combination of GUI and terminal access
-- Consistent reliability and performance
+- 新しいインターフェースへの迅速な適応
+- 包括的な機能セット
+- よくリクエストされる機能の統合
+- GUIとターミナルアクセスのシームレスな組み合わせ
+- 一貫した信頼性とパフォーマンス
 
-# features
+# 特徴
 
-- Blame
-- Integrated Git terminal
-- Intuitive user interface
-- Seamless transition to new SmartGit versions
-- Extensive Git operations support
+- 非難
+- 統合された Git ターミナル
+- 直感的なユーザーインターフェイス
+- 新しい SmartGit バージョンへのシームレスな移行
+- 広範な Git 操作のサポート
 
-# conclusion
+# 結論
 
-SmartGit's evolution demonstrates its commitment to user needs while maintaining the reliability that users have come to expect. The successful implementation of highly requested features like blame and terminal integration, combined with an intuitive interface that allows quick adaptation to new versions, showcases why SmartGit continues to be a preferred Git client even for long-term users. The fact that it inspired a satisfied user to voluntarily share positive feedback about paid software speaks volumes about its value proposition.
+SmartGit の進化は、ユーザーが期待する信頼性を維持しながら、ユーザーのニーズに応える取り組みを示しています。新しいバージョンへの迅速な適応を可能にする直感的なインターフェイスと組み合わせて、Blame やターミナルの統合などのリクエストの多かった機能の実装に成功したことは、SmartGit が長期ユーザーにとっても好まれる Git クライアントであり続ける理由を示しています。満足したユーザーが有料ソフトウェアについて肯定的なフィードバックを自発的に共有するようになったという事実は、その価値提案を雄弁に物語っています。

@@ -1,14 +1,14 @@
 ---
-title: "Other Features"
-headerH2: "Powerful Extras That Streamline Your Git Workflow"
-listTitle: "Other Features"
-imageAltText: "SmartGit's additional features including conflict solver, JIRA integration, and external tools for enhanced Git workflow automation."
-linkText: "More about SmartGit's Extras"
+title: "その他の機能"
+headerH2: "Git ワークフローを合理化する強力な追加機能"
+listTitle: "その他の機能"
+imageAltText: "SmartGit の追加機能には、競合ソルバー、JIRA 統合、強化された Git ワークフロー自動化のための外部ツールが含まれます。"
+linkText: "SmartGit の追加機能の詳細"
 category: ["feature"]
-headerMessage: "Discover **powerful extras** and **automation** that streamline every Git task."
-description: "Discover powerful SmartGit features that boost productivity and simplify complex Git tasks -- try them out now!"
-ogTitle: "SmartGit's Powerful Extras That Streamline Your Git Workflow."
-ogDesc: "Discover powerful SmartGit features that boost productivity and simplify complex Git tasks -- try them out now!"
+headerMessage: "あらゆる Git タスクを効率化する **強力な追加機能** と **自動化** をご覧ください。"
+description: "生産性を向上させ、複雑な Git タスクを簡素化する強力な SmartGit 機能を発見し、今すぐ試してみてください。"
+ogTitle: "Git ワークフローを合理化する SmartGit の強力な追加機能。"
+ogDesc: "生産性を向上させ、複雑な Git タスクを簡素化する強力な SmartGit 機能を発見し、今すぐ試してみてください。"
 weight: 100
 docsync:
   source:
@@ -37,7 +37,7 @@ SmartGitの**「その他の機能」**は、ワークフローを簡素化し�
 
 # コンフリクトソルバー
 
-{{<screenshot src="conflict-solver.png" alt="SmartGitの組み込み3ウェイマージコンフリクトソルバー。包括的なマージコンフリクト解決のためのベースファイル変更を表示">}}
+{{<screenshot alt="SmartGitの組み込み3ウェイマージコンフリクトソルバー。包括的なマージコンフリクト解決のためのベースファイル変更を表示" src="conflict-solver.png">}}
 
 ---
 
@@ -45,12 +45,12 @@ SmartGitの**「その他の機能」**は、ワークフローを簡素化し�
 
 複雑なコンフリクトで独立した変更をより良く理解するために、ベースファイルの変更も表示できます。
 
-{{< link url="https://www.smartgit.dev/features/conflict-resolution/" display="詳細を見る">}}
+{{< link url="https://www.smartgit.dev/features/conflict-resolution/" display="詳細を見る" >}}
 
 
 # ジャーナル - 気が散らないログ
 
-{{<screenshot src="journal-distraction-free-log.png" alt="SmartGitのジャーナルビュー。関連のないコミットに気を散らされることなく、現在のブランチと1つの他のブランチのGitコミット履歴を表示">}}
+{{<screenshot alt="SmartGitのジャーナルビュー。関連のないコミットに気を散らされることなく、現在のブランチと1つの他のブランチのGitコミット履歴を表示" src="journal-distraction-free-log.png">}}
 
 ---
 
@@ -63,45 +63,45 @@ SmartGitの**「その他の機能」**は、ワークフローを簡素化し�
 
 # イシューリンク
 
-{{<screenshot src="issue-linking.png" alt="SmartGitのイシュートラッカー統合。bugtraqサポートでコミットメッセージのイシューIDをイシュートラッカーリンクに変換">}}
+{{<screenshot alt="SmartGitのイシュートラッカー統合。bugtraqサポートでコミットメッセージのイシューIDをイシュートラッカーリンクに変換" src="issue-linking.png">}}
 
 ---
 
-SmartGitは、SVNのbugtraq:*プロパティと同様に設定可能なイシュートラッカーIDからURLへの変換をサポートしています。詳細は{{< link url="https://github.com/mstrap/bugtraq" display="github.com/mstrap/bugtraq" >}}で確認できます。 
+SmartGitは、SVNのbugtraq:*プロパティと同様に設定可能なイシュートラッカーIDからURLへの変換をサポートしています。詳細は{{< link url="https://github.com/mstrap/bugtraq" display="github.com/mstrap/bugtraq" >}}で確認できます。
 
 
 # JIRA統合
 
-{{<screenshot src="jira-integration.png" alt="SmartGitのAtlassian JIRA統合。オープンイシューをコミットメッセージとして選択し、自動的にイシューを解決">}}
+{{<screenshot alt="SmartGitのAtlassian JIRA統合。オープンイシューをコミットメッセージとして選択し、自動的にイシューを解決" src="jira-integration.png">}}
 
 ---
 
 ファイルをコミットする際、AtlassianのJIRAからオープンイシューを選択してコミットメッセージとして使用できます。
 
-コミットをプッシュする際、SmartGitは影響を受けるコミットを判断し、JIRAで特定のバージョンとして解決することを提案します。 
+コミットをプッシュする際、SmartGitは影響を受けるコミットを判断し、JIRAで特定のバージョンとして解決することを提案します。
 
 
 # コミットメッセージのスペルチェッカー
 
-{{<screenshot src="spell-checker-for-commit-messages.png" alt="SmartGitの組み込みGitコミットメッセージスペルチェッカー。複数言語辞書サポート">}}
+{{<screenshot alt="SmartGitの組み込みGitコミットメッセージスペルチェッカー。複数言語辞書サポート" src="spell-checker-for-commit-messages.png">}}
 
 ---
 
-SmartGitにはUS-English辞書が同梱されていますが、異なる辞書を使用するよう設定できます。SmartGitはOpenOfficeやLibreOfficeと同じ辞書ファイル形式をサポートしています。複数の辞書が設定されている場合、最も適切なものが自動的に使用されます。 
+SmartGitにはUS-English辞書が同梱されていますが、異なる辞書を使用するよう設定できます。SmartGitはOpenOfficeやLibreOfficeと同じ辞書ファイル形式をサポートしています。複数の辞書が設定されている場合、最も適切なものが自動的に使用されます。
 
 
 # Gerritへのプッシュ
 
-{{<screenshot src="push-to-gerrit.png" alt="SmartGitのGerrit統合。コードレビューワークフローのための自動ブランチ検出とプッシュ機能">}}
+{{<screenshot alt="SmartGitのGerrit統合。コードレビューワークフローのための自動ブランチ検出とプッシュ機能" src="push-to-gerrit.png">}}
 
 ---
 
-Gerritへのプッシュは、Gerritサーバー上で現在のブランチ``<branch>をrefs/for/<branch>``にプッシュする簡単な方法を提供します。この操作は、SmartGitがリモートの1つが実際にGerritに接続されていることを検出した場合にのみ利用可能になります。 
+Gerritへのプッシュは、Gerritサーバー上で現在のブランチ``<branch>を参照/for/<branch>``にプッシュする簡単な方法を提供します。この操作は、SmartGitがリモートの1つが実際にGerritに接続されていることを検出した場合にのみ利用可能になります。
 
 
 # BitBucketとAtlassian Stash
 
-{{<screenshot src="bitbucket-and-atlassian-stash.png" alt="SmartGitのBitbucketとAtlassian Stash統合。GitHubと同様のプルリクエスト管理とコメント機能">}}
+{{<screenshot alt="SmartGitのBitbucketとAtlassian Stash統合。GitHubと同様のプルリクエスト管理とコメント機能" src="bitbucket-and-atlassian-stash.png">}}
 
 ---
 
@@ -110,7 +110,7 @@ BitBucketとAtlassian Stashは、GitHubと同様にプルリクエストとコ�
 
 # GitLabホスティングプロバイダー
 
-{{<screenshot src="gitlab-hosting-provider.png" alt="SmartGitのGitLab統合。gitlab.comまたはプライベートGitLabインストールからのリポジトリクローンとアカウント管理">}}
+{{<screenshot alt="SmartGitのGitLab統合。gitlab.comまたはプライベートGitLabインストールからのリポジトリクローンとアカウント管理" src="gitlab-hosting-provider.png">}}
 
 ---
 
@@ -119,7 +119,7 @@ GitLabリポジトリを簡単にクローンできます。{{< link url="https:
 
 # Git-LFSサポート
 
-{{<screenshot src="support-for-git-lfs.png" alt="SmartGitのGit LFSサポート。リポジトリ内のラージファイルストレージ追跡ファイルのステータスと管理を表示">}}
+{{<screenshot alt="SmartGitのGit LFSサポート。リポジトリ内のラージファイルストレージ追跡ファイルのステータスと管理を表示" src="support-for-git-lfs.png">}}
 
 ---
 
@@ -128,18 +128,19 @@ GIT-LFS管理ファイルのステータスが表示されます。
 
 # 外部ツール
 
-{{<screenshot src="external-tools.png" alt="SmartGitの外部ツール設定。BranchesビューとログGraph内のカスタムコミット操作のための変数サポート">}}
+{{<screenshot alt="SmartGitの外部ツール設定。BranchesビューとログGraph内のカスタムコミット操作のための変数サポート" src="external-tools.png">}}
 
 ---
 
-外部ツールは**コミット**に対して動作するよう設定できます。そのようなツールは、**Branches**ビューとログ**Graph**の両方で利用可能になります。ファイル名やディレクトリ名を尋ねるための新しい変数が利用可能で、ツールを呼び出す前にオプションでカスタマイズ可能な確認ダイアログを表示できます。 
+外部ツールは**コミット**に対して動作するよう設定できます。そのようなツールは、**Branches**ビューとログ**Graph**の両方で利用可能になります。ファイル名やディレクトリ名を尋ねるための新しい変数が利用可能で、ツールを呼び出す前にオプションでカスタマイズ可能な確認ダイアログを表示できます。
 
 
 # オンデマンドスタッシュ
 
-{{<screenshot src="stash-on-demand.png" alt="SmartGitの自動スタッシュ機能。ローカルの変更を一時的に保存してプル/チェックアウトのコンフリクトを解決">}}
+{{<screenshot alt="SmartGitの自動スタッシュ機能。ローカルの変更を一時的に保存してプル/チェックアウトのコンフリクトを解決" src="stash-on-demand.png">}}
 
 ---
 
 ローカルの変更が原因でプルやブランチのチェックアウトが失敗した場合、変更を簡単にスタッシュして、コマンドが正常に実行された後に再度適用できます。
 
+</screenshot></screenshot></screenshot></screenshot></screenshot></branch></branch></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot>

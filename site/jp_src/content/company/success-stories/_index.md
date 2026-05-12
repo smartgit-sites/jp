@@ -1,9 +1,9 @@
 ---
-title: "SmartGit Community Initiative"
-description: "Discover how developers and companies benefit from SmartGit. Real stories from the field show how SmartGit boosts productivity, collaboration, and code quality."
-headerH1: "SmartGit Success Stories"
-headerH2: "Building together"
-headerMessage: "Share your real-world experiences with SmartGit, technical achievements, learn from peers, and get recognized for your Git expertise."
+title: "SmartGit コミュニティ イニシアチブ"
+description: "開発者や企業が SmartGit からどのような恩恵を受けるかをご覧ください。現場での実話は、SmartGit がどのように生産性、コラボレーション、コード品質を向上させるかを示しています。"
+headerH1: "SmartGit の成功事例"
+headerH2: "一緒に構築する"
+headerMessage: "SmartGit を使った実際の経験や技術的な成果を共有し、仲間から学び、Git の専門知識を認めてもらいましょう。"
 layout: "success-stories/list"
 categories: ["Success story"]
 
@@ -11,13 +11,13 @@ aliases: ["/success-stories/"]
 
 reasons:
   - title: "What is it about?"
-    desc: "A platform for developers showing how SmartGit helped to solve real challenges"
+    desc: "SmartGit が実際の課題の解決にどのように役立ったかを示す開発者向けのプラットフォーム"
     icon: "fa-light fa-signs-post fa-3x"
   - title: "Who can participate?"
-    desc: "Any developer using SmartGit in their workflow - from solo developers to team leads"
+    desc: "ワークフローで SmartGit を使用するすべての開発者 (個人開発者からチーム リーダーまで)"
     icon: "fa-light fa-people-group fa-3x"
   - title: "Why share?"
-    desc: "Get featured with your project, and help fellow developers succeed"
+    desc: "あなたのプロジェクトで紹介され、他の開発者の成功を支援します"
     icon: "fa-light fa-brain-arrow-curved-right fa-3x"
 docsync:
   source:

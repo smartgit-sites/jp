@@ -1,5 +1,5 @@
 ---
-title: "Cancel Subscription License"
+title: "サブスクリプションライセンスのキャンセル"
 headless: true
 
 weight: 3

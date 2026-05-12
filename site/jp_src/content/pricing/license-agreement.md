@@ -1,7 +1,7 @@
 ---
-title: "License Agreement for SmartGit"
-headerH1: "License Agreement"
-headerH2: "for SmartGit"
+title: "SmartGit のライセンス契約"
+headerH1: "ライセンス契約"
+headerH2: "SmartGit用"
 
 weight: 20
 docsync:
@@ -20,4 +20,4 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-The end-user license agreement can be found at {{< link url="/documents/smartgit-license.html" target="_blank" display="license agreement" >}} and is also included in each download bundle.
+エンドユーザーライセンス契約は {{< link url="/documents/smartgit-license.html" target="_blank" display="ライセンス契約" >}} で確認できます。また、各ダウンロードバンドルにも同梱されています。

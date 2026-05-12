@@ -1,5 +1,5 @@
 ---
-title: Azure DevOps Authorization
+title: Azure DevOps 認証
 robots: "noindex, nofollow"
 sitemapExclude: true
 docsync:

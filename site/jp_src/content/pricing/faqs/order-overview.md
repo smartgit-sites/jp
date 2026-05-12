@@ -1,5 +1,5 @@
 ---
-title: "Order Overview"
+title: "注文の概要"
 headless: true
 
 weight: 10

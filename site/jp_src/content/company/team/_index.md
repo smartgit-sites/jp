@@ -1,13 +1,13 @@
 ---
-title: "The SmartGit Team"
+title: "SmartGit チーム"
 
-description: "Meet the people behind SmartGit -- passionate developers building a powerful Git GUI for pros and teams."
+description: "SmartGit の背後にいる人々を紹介します。プロやチーム向けの強力な Git GUI を構築する情熱的な開発者です。"
 layout: "team/list"
 category: ["team"]
 
-headerH1: "The SmartGit Team"
-headerH2: "The People Behind Your Git Experience"
-headerMessage: "Get to know the people who build and shape SmartGit -- a diverse team united by one purpose: making Git simpler, faster, and more accessible for everyone."
+headerH1: "SmartGit チーム"
+headerH2: "Git エクスペリエンスを支える人々"
+headerMessage: "SmartGit を構築および形成する人々について知りましょう。SmartGit は、Git をよりシンプルに、より速く、誰にとってもアクセスしやすくするという 1 つの目的で団結した多様なチームです。"
 cascade:
   build:
     render: never

@@ -1,5 +1,5 @@
 ---
-title: "Multiple Machines"
+title: "複数のマシン"
 headless: true
 
 weight: 8

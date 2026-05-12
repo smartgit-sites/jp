@@ -1,5 +1,5 @@
 ---
-title: "Everything included"
+title: "すべてが含まれています"
 headless: true
 docsync:
   source:
@@ -17,11 +17,11 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-# headline
+# 見出し
 
 すべてが含まれています。
 
-# desc
+# 説明
 
 追加のツールをインストールまたは設定する必要はありません -- SmartGitには必要なものがすべて含まれています：
 
@@ -32,6 +32,6 @@ docsync:
 - バンドルされたGitクライアント
 - 統合SSHクライアント
 
-# image
+# 画像
 
 ![SmartGitのスクリーンショット。ドラッグ＆ドロップによるコミット並べ替えを含むインタラクティブリベースを表示。](/why-choose-smartgit/everything-included.png)

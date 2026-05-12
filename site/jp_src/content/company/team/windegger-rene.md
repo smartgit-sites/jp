@@ -1,5 +1,5 @@
 ---
-title: "René Windegger"
+title: "ルネ・ウィンデガー"
 
 position: "Software Engineer & Tech Whisperer"
 portrait: "rene.png"

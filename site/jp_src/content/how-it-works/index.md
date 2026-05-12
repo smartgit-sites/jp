@@ -1,19 +1,19 @@
 ---
-title: "How it works?"
+title: "仕組みは?"
 headless: true
 
 steps:
   - title: "Connect a Repository"
-    desc: "Clone an existing Git repository or initialize a new one in seconds."
+    desc: "既存の Git リポジトリのクローンを作成するか、新しいリポジトリを数秒で初期化します。"
     icon: "sg sg-connect-repository sg-indigo-500 sg-2x"
   - title: "Visual Management"
-    desc: "Manage commits, branches, and merges in a powerful, graphical Git interface."
+    desc: "強力なグラフィカル Git インターフェイスでコミット、ブランチ、マージを管理します。"
     icon: "sg sg-visual-management2 sg-indigo-500 sg-2x"
   - title: "Collaborate with Confidence"
-    desc: "Review changes, resolve merge conflicts, and keep your history clean."
+    desc: "変更を確認し、マージの競合を解決し、履歴をクリーンな状態に保ちます。"
     icon: "sg sg-collaborate sg-indigo-500 sg-2x"
   - title: "Push & Deploy"
-    desc: "Commit locally, push remotely, and deliver your work securely and reliably."
+    desc: "ローカルでコミットし、リモートでプッシュして、作業を安全かつ確実に配信します。"
     icon: "sg sg-deploy sg-indigo-500 sg-2x"
 docsync:
   source:
@@ -32,11 +32,10 @@ docsync:
 ---
 
 
-# headline
+# 見出し
 
 SmartGitがあなたのGitワークフローにどうフィットするか
 
-# desc
+# 説明
 
 SmartGitは最初のクローンから自信を持ったデプロイメントまで、Gitワークフロー全体をサポートします。SmartGitがあなたのGitワークフローの各ステップをどのようにサポートするかをご覧ください。
-   

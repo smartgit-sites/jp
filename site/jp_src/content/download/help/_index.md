@@ -1,5 +1,5 @@
 ---
-title: "Looking for help?"
+title: "助けをお探しですか?"
 robots: "noindex, nofollow"
 sitemapExclude: true
 

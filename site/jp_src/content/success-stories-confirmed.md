@@ -1,5 +1,5 @@
 ---
-title: "SmartGit Community Initiative"
+title: "SmartGit コミュニティ イニシアチブ"
 subtitle: "Building together"
 subhead: "SmartGit success stories"
 subline: "Share your real-world experiences with SmartGit, technical achievements, learn from peers, and get recognized for your Git expertise."
@@ -23,6 +23,6 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-# Thank you!
+# ありがとうございます！
 
-We will review your story and come back to you shortly.
+あなたのストーリーを確認し、すぐにご連絡いたします。

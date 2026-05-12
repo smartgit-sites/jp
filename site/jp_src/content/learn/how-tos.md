@@ -1,5 +1,5 @@
 ---
-title: "How tos"
+title: "ハウツー"
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git

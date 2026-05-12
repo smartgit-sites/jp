@@ -1,9 +1,9 @@
 ---
-title: "Older Versions"
-headerH2: "Archive"
+title: "古いバージョン"
+headerH2: "アーカイブ"
 layout: "page"
 partial: "archive"
-description: "Download older versions of SmartGit client for Windoes, MacOS and Linux."
+description: "Windows、MacOS、Linux 用の古いバージョンの SmartGit クライアントをダウンロードします。"
 keywords: ["Download SmartGit"]
 weight: 40
 docsync:

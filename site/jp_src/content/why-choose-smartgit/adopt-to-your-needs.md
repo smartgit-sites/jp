@@ -1,5 +1,5 @@
 ---
-title: "Adapt to Your Needs and Workflows"
+title: "ニーズとワークフローに適応"
 headless: true
 docsync:
   source:
@@ -17,11 +17,11 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-# headline
+# 見出し
 
 あなたのニーズとワークフローに適応。
 
-# desc
+# 説明
 
 優れたGitクライアントは、あなたの作業スタイルに適応すべきです。SmartGitでは多くの側面をカスタマイズできます：
 
@@ -34,6 +34,6 @@ docsync:
 - ツールバー設定
 - ライトテーマとダークテーマ
 
-# image
+# 画像
 
 ![SmartGitのスクリーンショット。ワーキングツリー、コミット履歴、インデックスを並べた標準レイアウトを表示。](/why-choose-smartgit/adapt-to-your-needs.png)

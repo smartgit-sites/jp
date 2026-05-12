@@ -1,5 +1,5 @@
 ---
-title: "Interacting with popular platforms"
+title: "人気のあるプラットフォームとの連携"
 headless: true
 docsync:
   source:
@@ -17,11 +17,11 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-# headline
+# 見出し
 
 人気のプラットフォームとの連携。
 
-# desc
+# 説明
 
 SmartGitはGitHub、Azure DevOps、Bitbucket（Bitbucket Server含む）、GitLabとの専用連携機能を備えています。
 
@@ -29,6 +29,6 @@ SmartGitはGitHub、Azure DevOps、Bitbucket（Bitbucket Server含む）、GitLa
 
 もちろん、他のGitクライアントと同様に、自分のリポジトリやお好みのホスティングプロバイダーでSmartGitを使用することもできます。
 
-# image
+# 画像
 
 ![SmartGitのスクリーンショット。フィルターされた履歴とブランチの可視化を含むカスタマイズ可能なコミットグラフを表示。](/why-choose-smartgit/interacting-with-popular-platforms.png)

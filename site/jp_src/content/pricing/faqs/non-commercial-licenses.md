@@ -1,5 +1,5 @@
 ---
-title: "Non-Commercial Licenses"
+title: "非営利ライセンス"
 headless: true
 
 weight: 9

@@ -1,5 +1,5 @@
 ---
-title: "Purchase Orders"
+title: "注文書"
 headless: true
 
 weight: 11

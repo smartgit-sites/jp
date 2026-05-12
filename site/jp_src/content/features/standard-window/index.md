@@ -1,14 +1,14 @@
 ---
-title: "SmartGit Standard Window"
-headerH2: "Safer Git Workflows with Best Practices"
-listTitle: "Standard Window"
-imageAltText: "SmartGit's Standard Window featuring streamlined Git interface with best-practices workflow and integrated CI/CD support."
-linkText: "More about Standard Window"
+title: "SmartGit 標準ウィンドウ"
+headerH2: "ベスト プラクティスによるより安全な Git ワークフロー"
+listTitle: "標準ウィンドウ"
+imageAltText: "SmartGit の標準ウィンドウは、ベスト プラクティスのワークフローと統合された CI/CD サポートを備えた合理化された Git インターフェイスを備えています。"
+linkText: "標準ウィンドウの詳細"
 category: ["feature"]
-headerMessage: "Work in a streamlined interface that enforces **best practices** for **safer workflows**."
-description: "SmartGit offers three powerful Git Window Styles: file-based, commit-focused, and unified. Standard Window offers the All-in-One Simplicity. Try SmartGit now!"
-ogTitle: "SmartGit Features -- Visual Git Tools for Developers and Teams"
-ogDesc: "Explore SmartGit's Standard Window: optimized Workflows - perfect for developers, teams, and beginners."
+headerMessage: "**より安全なワークフロー**のための**ベスト プラクティス**を強制する合理化されたインターフェイスで作業します。"
+description: "SmartGit は、ファイルベース、コミット中心、統合という 3 つの強力な Git ウィンドウ スタイルを提供します。標準ウィンドウは、オールインワンのシンプルさを提供します。今すぐ SmartGit を試してください!"
+ogTitle: "SmartGit の機能 -- 開発者とチームのためのビジュアル Git ツール"
+ogDesc: "SmartGit の標準ウィンドウを探索してください: 最適化されたワークフロー - 開発者、チーム、初心者に最適です。"
 weight: 7
 docsync:
   source:
@@ -28,7 +28,7 @@ docsync:
 
 合理化されたインターフェースをお好みですか？**スタンダードウィンドウ**はベストプラクティスに焦点を当て、高度なオプションを隠します：
 
-- ガイド付き**Feature Flow**
+- ガイド付き**機能の流れ**
 - 簡素化されたコミットと**プッシュ**
 - チームの**一貫性**に最適
 
@@ -50,14 +50,14 @@ docsync:
 # スタンダードウィンドウのユニークな機能
 
 スタンダードウィンドウはユニークな機能を提供します：
-- {{< link display="Feature-Flow開発プロセス" url="https://docs.syntevo.com/SmartGit/Latest/Manual/DevelopmentProcesses/Feature-Flow" >}}の組み込みサポート
-- {{< link display="GitHub Actions" url="https://docs.syntevo.com/SmartGit/Latest/Manual/Integrations/GitHub-Actions" >}}、{{< link display="Jenkins" url="https://docs.syntevo.com/SmartGit/Latest/Manual/Integrations/Jenkins" >}}、{{< link display="TeamCity" url="https://docs.syntevo.com/SmartGit/Latest/Manual/Integrations/TeamCity" >}}との統合
+- {{< link display="フィーチャーフロー開発プロセス" url="https://docs.syntevo.com/SmartGit/Latest/Manual/DevelopmentProcesses/Feature-Flow" >}}の組み込みサポート
+- {{< link display="GitHub アクション" url="https://docs.syntevo.com/SmartGit/Latest/Manual/Integrations/GitHub-Actions" >}}、{{< link display="ジェンキンス" url="https://docs.syntevo.com/SmartGit/Latest/Manual/Integrations/Jenkins" >}}、{{< link display="チームシティ" url="https://docs.syntevo.com/SmartGit/Latest/Manual/Integrations/TeamCity" >}}との統合
 - スマートプル：強制プッシュ後でも、変更されていないすべてのローカルブランチを最新に保ち、分岐を防止
- 
+
 {{< link url="https://docs.syntevo.com/SmartGit/Latest/Manual/GUI/Standard-Window" display="スタンダードウィンドウの詳細">}}
 
 
-# My Historyビュー
+# 私の履歴ビュー
 
 {{<screenshot src="my-history-view.png" alt="SmartGitのMy Historyビュー。ahead-behindステータス、プルリクエスト、CIの結果を含むローカルブランチを表示">}}
 
@@ -66,7 +66,7 @@ docsync:
 **My History**ビューは、_あなたの_（ローカル）ブランチ、それらのahead-behind状態、関連するプルリクエスト、CIの結果の焦点を絞ったリストを表示します。
 
 
-# All Branches + Tagsビュー
+# すべてのブランチ + タグビュー
 
 {{<screenshot src="all-branches-tags-view.png" alt="SmartGitの'All Branches and Tags'ビュー。ブランチ構造、タグ、高速ナビゲーションのための統合検索機能を備えた完全なGit履歴を表示">}}
 
@@ -75,7 +75,7 @@ docsync:
 **All Branches and Tags**ビューは、すべてのブランチ、タグ、リモートへのアクセスを提供します。統合された検索が高速なナビゲーションを支援します。
 
 
-# Stashesビュー
+# スタッシュビュー
 
 {{<screenshot src="stashes-view.png" alt="SmartGitのStashesビューインターフェース。詳細な変更プレビューと簡単な適用でGitスタッシュを管理">}}
 
@@ -84,7 +84,7 @@ docsync:
 **Stashes**ビューでは、すべてのスタッシュを使用・管理し、詳細な変更を表示できます。
 
 
-# Reflogビュー
+# リブログビュー
 
 {{<screenshot src="reflog-view.png" alt="SmartGitのReflogビュー。失われたコミットの復旧と参照変更の追跡のための時系列Git HEAD履歴を表示">}}
 
@@ -95,4 +95,4 @@ docsync:
 
 # スタイルを比較
 
-{{< button-orange url="https://www.smartgit.dev/features/three-window-styles/" display="3つのウィンドウスタイルを比較" >}} 
+{{< button-orange url="https://www.smartgit.dev/features/three-window-styles/" display="3つのウィンドウスタイルを比較" >}}

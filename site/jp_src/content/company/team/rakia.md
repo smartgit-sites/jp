@@ -1,5 +1,5 @@
 ---
-title: "Rakia Ben Sassi"
+title: "ラキア・ベン・サッシ"
 
 position: "Content Creator & Social Media Expert"
 portrait: "rakia.png"

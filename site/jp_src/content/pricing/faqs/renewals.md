@@ -1,5 +1,5 @@
 ---
-title: "Renewals (Upgrades)"
+title: "リニューアル（アップグレード）"
 headless: true
 
 weight: 19

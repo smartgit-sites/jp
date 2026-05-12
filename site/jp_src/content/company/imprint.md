@@ -1,8 +1,8 @@
 ---
-title: "Legal Notice"
-description: "Legal notice and company information for SmartGit, a product by Syntevo GmbH."
-headerH1: "Part of the Syntevo Family"
-headerH2: "Imprint"
+title: "法的通知"
+description: "Syntevo GmbH の製品である SmartGit に関する法的通知と会社情報。"
+headerH1: "Syntevo ファミリーの一員"
+headerH2: "インプリント"
 layout: "imprint"
 docsync:
   source:
@@ -20,7 +20,7 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-**当社は、自社の[販売条件](/company/terms-of-sale) / [ドイツ語AGB](/company/terms-of-sale-de)に基づく注文のみ受け付けています。**
+**当社は、自社の[販売条件](/company/terms-of-sale) / [ドイツ語AGB](/company/terms-of-sale-de)に基づく注文のみ受け付けております。
 
 オンライン紛争解決のための欧州連合委員会プラットフォーム：EU オンライン紛争解決プラットフォーム
 

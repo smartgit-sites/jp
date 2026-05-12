@@ -1,5 +1,5 @@
 ---
-title: "Subscription License"
+title: "サブスクリプションライセンス"
 headless: true
 
 weight: 17

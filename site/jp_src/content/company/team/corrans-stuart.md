@@ -1,5 +1,5 @@
 ---
-title: "Stuart Corrans"
+title: "スチュアート・コランズ"
 
 position: "Master of Documentation"
 portrait: "stuart.png"

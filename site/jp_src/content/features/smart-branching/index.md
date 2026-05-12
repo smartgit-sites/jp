@@ -1,15 +1,15 @@
 ---
-title: "Smart Branching with Git-Flow & Feature Flow"
-headerH1: "SmartGit Branching"
-headerH2: "Feature Flow, Git-Flow & GitHub Flow"
-listTitle: "Smart Branching"
-imageAltText: "SmartGit's Smart Branching dialog showing Feature Flow and Git-Flow branching strategies with visual workflow guidance"
-linkText: "More about Smart Branching"
+title: "Git-Flow と機能フローによるスマートな分岐"
+headerH1: "SmartGit ブランチング"
+headerH2: "機能フロー、Git-Flow、GitHub フロー"
+listTitle: "スマート分岐"
+imageAltText: "視覚的なワークフロー ガイダンスを備えたフィーチャー フローおよび Git-Flow 分岐戦略を示す SmartGit のスマート ブランチング ダイアログ"
+linkText: "スマート分岐の詳細"
 category: ["feature"]
-headerMessage: "Follow guided **Feature Flow** or classic **Git-Flow** with SmartGit's branching helper."
-description: "Work with Feature Flow or Git Flow using integrated guidance. SmartGit supports visual branching strategies that help you stay organized and productive in team environments."
-ogTitle: "SmartGit Branching -- Feature Flow, Git-Flow & GitHub Flow"
-ogDesc: "Visual branching strategies in SmartGit: Feature Flow, Git-Flow, GitHub Flow and more. Simplify Git with built-in automation and guidance."
+headerMessage: "SmartGit の分岐ヘルパーを使用して、ガイド付き **機能フロー** または従来の **Git-Flow** に従ってください。"
+description: "統合されたガイダンスを使用して、Feature Flow または Git Flow を操作します。 SmartGit は、チーム環境での組織化と生産性の維持に役立つ視覚的な分岐戦略をサポートしています。"
+ogTitle: "SmartGit ブランチング -- 機能フロー、Git-Flow、GitHub フロー"
+ogDesc: "SmartGit の視覚的な分岐戦略:Feature Flow、Git-Flow、GitHub Flow など。組み込みの自動化とガイダンスにより Git を簡素化します。"
 weight: 4
 docsync:
   source:
@@ -45,7 +45,7 @@ Feature Flowは複数のメインブランチをサポートし、ソロ開発�
 
 {{< link url="https://docs.syntevo.com/SmartGit/24.1/Manual/DevelopmentProcesses/Feature-Flow" display="詳細を見る">}}
 
-# SmartGitのFeature Flow
+# SmartGitの機能フロー
 
 Feature FlowはSmartGitに組み込まれたガイド付きGitワークフローで、以下をサポートします：
 - メインまたはリリースブランチをベースに新しいフィーチャーを開始（設定に応じて）
@@ -53,7 +53,7 @@ Feature FlowはSmartGitに組み込まれたガイド付きGitワークフロー
 - 関連するコミットを視覚的にまとめるための「サイドループ」フィニッシュマージをサポート
 - フィニッシュするまで、フィーチャーブランチとすべてのリベースコンフリクトはあなたの責任
 
-**Feature Flowを使うべき理由：**
+**機能フローを使うべき理由：**
 - スパゲッティマージを回避：リベースは履歴を線形に保ち、柔軟性のないマージコミットを避けます
 - デフォルトで安全：SmartGitは破壊的な操作をブロックし、確認とガイダンスを表示します（スクリーンショットの通り）
 - 視覚的な明確さ：SmartGitの統合された履歴とdiffビューで変更をコンテキストで確認
@@ -62,13 +62,13 @@ Feature FlowはSmartGitに組み込まれたガイド付きGitワークフロー
 {{< link url="https://docs.syntevo.com/SmartGit/24.1/Manual/DevelopmentProcesses/Feature-Flow" display="詳細を見る">}}
 
 
-# IntegrateとFinish
+# 統合して終了
 
 {{<screenshot src="feature-flow-finish.gif" alt="SmartGit Feature Flow Finishダイアログ。ブランチクリーンアップとプッシュオプションを備えたアトミックマージ完了を表示">}}
 
 ---
 
-**Integrate**と**Finish**は**Feature Flow**の中核です。
+**統合**と**仕上げ**は**機能フロー**の中核です。
 
 これらはGit-Flowを超えて、より多くの**エッジケース**を処理し、**選択的なフェッチとプッシュ**をサポートし、複雑な**分岐したシナリオ**も安全に解決します。
 
@@ -81,7 +81,7 @@ Feature FlowはSmartGitに組み込まれたガイド付きGitワークフロー
 
 # Git-Flow -- マルチリリースプロジェクトのための構造化ワークフロー
 
-{{<screenshot src="gitflow-full-config.png" alt="SmartGit Git-Flow Full設定ダイアログ。feature、release、hotfix、supportブランチのブランチ命名設定を表示">}}
+{{<screenshot src="gitflow-full-config.png" alt="SmartGit Git-Flow フル設定ダイアログ。機能、リリース、ホットフィックス、サポートブランチのブランチ命名設定を表示">}}
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Cornelia Lieber"
+title: "コーネリア・リーバー"
 
 position: "Marketing Manager & Brand Visionary"
 portrait: "lieber-cornelia.png"

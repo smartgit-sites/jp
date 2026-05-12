@@ -1,14 +1,14 @@
 ---
-title: "Version 18.2"
-headerH2: "Major Improvements in SmartGit 18.2"
-listTitle: "Version 18.2"
-imageAltText: "SmartGit 18.2: Unified Log, GitLab merge-request support & enhanced commit workflows."
-linkText: "More about SmartGit Version 18.2"
+title: "バージョン18.2"
+headerH2: "SmartGit 18.2 の主な改善点"
+listTitle: "バージョン18.2"
+imageAltText: "SmartGit 18.2: 統合ログ、GitLab マージリクエストのサポート、および強化されたコミット ワークフロー。"
+linkText: "SmartGit バージョン 18.2 の詳細"
 category: ["feature"]
-headerMessage: "Unify **Log** and **Working Tree** views and handle **GitLab merge requests** in 18.2."
-description: "SmartGit 18.2 elevates productivity by unifying Working Tree and Log views, supporting GitLab workflows, and bolstering commit and rebase Tools — update today to streamline your Git operations."
-ogTitle: "SmartGit 18.2: Unified Log, GitLab merge-request support & enhanced commit workflows"
-ogDesc: "SmartGit 18.2 elevates productivity by unifying Working Tree and Log views, supporting GitLab workflows, and bolstering commit and rebase Tools — update today to streamline your Git operations."
+headerMessage: "18.2 では **ログ** ビューと **ワーキング ツリー** ビューを統合し、**GitLab マージ リクエスト**を処理します。"
+description: "SmartGit 18.2 は、ワーキング ツリー ビューとログ ビューを統合し、GitLab ワークフローをサポートし、コミット ツールとリベース ツールを強化することで生産性を向上させます。今すぐ更新して Git 操作を合理化してください。"
+ogTitle: "SmartGit 18.2: 統合ログ、GitLab マージリクエストのサポート、および強化されたコミット ワークフロー"
+ogDesc: "SmartGit 18.2 は、ワーキング ツリー ビューとログ ビューを統合し、GitLab ワークフローをサポートし、コミット ツールとリベース ツールを強化することで生産性を向上させます。今すぐ更新して Git 操作を合理化してください。"
 weight: 900
 docsync:
   source:
@@ -43,13 +43,13 @@ SmartGit 18.2は、GitLabおよびGit-LFSユーザー向けのよりスマート
 
 ---
 
-ログウィンドウがファーストクラスのメインウィンドウになり、ワーキングツリーとインデックスを表示し、まだ利用可能な「ワーキングツリー」ウィンドウの事実上すべてのコマンドを提供します（{{< link url="https://smartgit.userecho.com" display="smartgit.userecho.com" >}}）。他のGitクライアントのユーザーは、このシングルビューアプローチをより馴染み深く感じるでしょう。
+ログウィンドウがファーストクラスのメインウィンドウになり、ワーキングツリーとインデックスを表示し、まだ利用可能な「ワーキングツリー」ウィンドウの事実上すべてのコマンドを提供します（{{< link url="https://smartgit.userecho.com" display="SmartGit.userecho.com" >}}）。他のGitクライアントのユーザーは、このシングルビューアプローチをより馴染み深く感じるでしょう。
 
-ワーキングツリーとインデックスは、オンデマンドまたは永続的にHEADコミットに添付されたノードとして表示されます（{{< link url="https://smartgit.userecho.com" display="smartgit.userecho.com" >}}）。
+ワーキングツリーとインデックスは、オンデマンドまたは永続的にHEADコミットに添付されたノードとして表示されます（{{< link url="https://smartgit.userecho.com" display="SmartGit.userecho.com" >}}）。
 
 ログをより使いやすくするために、いくつかのコマンドの動作を変更する必要がありました。例えば、Pushコマンドは現在のブランチをプッシュするようになりました（選択したコミットのrefではなく）。これはワーキングツリーウィンドウのものと同様です。
 
-環境設定のユーザーインターフェースセクションで、デフォルトでログウィンドウまたはクラシックなワーキングツリーウィンドウを使用するかどうかを設定できます。 
+環境設定のユーザーインターフェースセクションで、デフォルトでログウィンドウまたはクラシックなワーキングツリーウィンドウを使用するかどうかを設定できます。
 
 # 高度なGitLab統合
 
@@ -57,7 +57,7 @@ SmartGit 18.2は、GitLabおよびGit-LFSユーザー向けのよりスマート
 
 ---
 
-GitLabは日々人気が高まっており、特に自社サーバーで使用されています。GitLabでホストされているリポジトリの場合、SmartGitを使用してマージリクエストの作成、適用、拒否、コメントの追加、編集、表示ができます（{{< link url="https://smartgit.userecho.com" display="smartgit.userecho.com" >}}）。 
+GitLabは日々人気が高まっており、特に自社サーバーで使用されています。GitLabでホストされているリポジトリの場合、SmartGitを使用してマージリクエストの作成、適用、拒否、コメントの追加、編集、表示ができます（{{< link url="https://smartgit.userecho.com" display="SmartGit.userecho.com" >}}）。
 
 # Git-LFSコマンド
 
@@ -65,7 +65,7 @@ GitLabは日々人気が高まっており、特に自社サーバーで使用�
 
 ---
 
-SmartGitはすでにGit-LFSで管理されたリポジトリを処理できていました。今では、インストール、追跡ファイルの設定、ロックとアンロックなどの主要なGit-LFSコマンドをサポートしています（{{< link url="https://smartgit.userecho.com" display="smartgit.userecho.com" >}}）。
+SmartGitはすでにGit-LFSで管理されたリポジトリを処理できていました。今では、インストール、追跡ファイルの設定、ロックとアンロックなどの主要なGit-LFSコマンドをサポートしています（{{< link url="https://smartgit.userecho.com" display="SmartGit.userecho.com" >}}）。
 
 # インタラクティブリベース：より簡単な修正
 
@@ -84,7 +84,7 @@ SmartGitはすでにGit-LFSで管理されたリポジトリを処理できて�
 
 ---
 
-コミットメッセージテンプレート（commit.templateが設定されている場合）では、SmartGitはコメント行（commit.commentCharで始まる）を異なる表示にするため、どの行が最終的なコミットメッセージの一部になり、どの行が無視されるかが明確になります。 
+コミットメッセージテンプレート（commit.templateが設定されている場合）では、SmartGitはコメント行（commit.commentCharで始まる）を異なる表示にするため、どの行が最終的なコミットメッセージの一部になり、どの行が無視されるかが明確になります。
 
 # ブランチビュー：HEAD refを示す
 

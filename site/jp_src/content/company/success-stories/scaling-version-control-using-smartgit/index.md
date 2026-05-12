@@ -1,7 +1,7 @@
 ---
-title: "Scaling Version Control: SmartGit's Role in Managing Multiple Development Projects"
-description: "Discover how SmartGit supports multiple development teams with structured workflows and smart branching tools."
-summary: "When a developer needed a single tool to handle everything from enterprise projects to open-source contributions, SmartGit delivered with the perfect blend of power and adaptability."
+title: "バージョン管理のスケーリング: 複数の開発プロジェクトの管理における SmartGit の役割"
+description: "SmartGit が構造化されたワークフローとスマートな分岐ツールで複数の開発チームをどのようにサポートしているかをご覧ください。"
+summary: "開発者がエンタープライズ プロジェクトからオープンソースへの貢献まですべてを処理する単一のツールを必要としたとき、SmartGit はパワーと適応性の完璧な融合を実現しました。"
 testimonial_user: "Ram Rachum"
 testimonial_company: "Tufts University"
 testimonial_link: "https://r.rachum.com/"
@@ -24,60 +24,60 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-# testimonial
+# 証言
 
-Almost any Git operation that you could do with the command line interface, you can do with SmartGit. Even after working with it for years I still occasionally discover features that I haven't seen before.
+コマンド ライン インターフェイスで実行できるほとんどすべての Git 操作を、SmartGit で実行できます。何年も使った後でも、今まで見たことのない機能を発見することがあります。
 
-# summary
+# まとめ
 
-A developer's comprehensive experience with SmartGit across multiple project types demonstrates the tool's versatility in handling diverse repository needs, from professional work to personal and open-source projects. The combination of customizable interface, command-line feature parity, and responsive support has made it a reliable long-term solution for managing approximately 30 repositories of varying sizes.
+開発者の複数のプロジェクト タイプにわたる SmartGit の包括的な経験は、専門的な作業から個人およびオープンソース プロジェクトに至るまで、多様なリポジトリ ニーズに対応するこのツールの多用途性を実証しています。カスタマイズ可能なインターフェイス、コマンドライン機能の同等性、応答性の高いサポートの組み合わせにより、さまざまなサイズの約 30 のリポジトリを管理するための信頼性の高い長期ソリューションとなっています。
 
-# challenge
+# チャレンジ
 
-- Managing multiple repositories simultaneously (around 30)
-- Handling different types of projects (work, personal, open-source)
-- Needing command-line level functionality in a GUI
-- Requiring highly customizable interface
-- Maintaining consistent workflow across various project sizes
+- 複数のリポジトリを同時に管理 (約 30)
+- さまざまな種類のプロジェクト (仕事、個人、オープンソース) の処理
+- GUI にコマンドライン レベルの機能が必要
+- 高度にカスタマイズ可能なインターフェースが必要
+- さまざまな規模のプロジェクトにわたって一貫したワークフローを維持する
 
-# solution
+# 解決
 
-- Comprehensive GUI with command-line feature parity
-- Highly customizable interface options
-- Robust repository management capabilities
-- Regular updates and new feature additions
-- Responsive technical support
+- コマンドライン機能と同等の包括的な GUI
+- 高度にカスタマイズ可能なインターフェースオプション
+- 堅牢なリポジトリ管理機能
+- 定期的なアップデートと新機能の追加
+- 迅速な技術サポート
 
-# gallery
+# ギャラリー
 
-![Support for Multiple Git Backends with multiple users](./MultiHostingProviderSupport.png "Support for Multiple Git Backends with multiple users")
+![複数ユーザーによる複数の Git バックエンドのサポート](./MultiHostingProviderSupport.png "複数ユーザーによる複数の Git バックエンドのサポート")
 
-![Easy to navigate between multiple Repos in Log Window](./LogWindowRepoOverview.png "Easy to navigate between multiple Repos in Log Window")
+![ログ ウィンドウで複数のリポジトリ間を簡単に移動できます](./LogWindowRepoOverview.png "ログ ウィンドウで複数のリポジトリ間を簡単に移動できます")
 
-![Direct lookup of GitHub and Jira Issues for Commit Messages](./LogWindowGitHubIssueIntegration.png "Direct lookup of GitHub and Jira Issues for Commit Messages")
-# impact
+![コミット メッセージの GitHub および Jira 課題の直接検索](./LogWindowGitHubIssueIntegration.png "コミット メッセージの GitHub および Jira 課題の直接検索")
+# インパクト
 
-- Successfully managed approximately 30 repositories simultaneously
-- Streamlined workflow across different project types
-- Maintained efficiency in both small and large repositories
-- Continuous discovery of productivity-enhancing features
-- Sustained long-term development productivity
+- 約 30 のリポジトリの同時管理に成功
+- さまざまな種類のプロジェクトにわたる合理化されたワークフロー
+- 小規模なリポジトリと大規模なリポジトリの両方で効率を維持
+- 生産性を向上させる機能を継続的に発見
+- 長期にわたる持続的な開発生産性
 
-# benefits
+# 利点
 
-- Feature-rich GUI interface
-- High customizability
-- Command-line power with GUI convenience
-- Regular updates and improvements
-- Reliable technical support
+- 機能豊富な GUI インターフェイス
+- 高いカスタマイズ性
+- 便利な GUI を備えたコマンドライン機能
+- 定期的なアップデートと改善
+- 信頼できる技術サポート
 
-# features
+# 特徴
 
-- Full Git operation support
-- Multi-repository management
-- Preferences, Accelerator and Toolbar Customization
-- Hundreds of tweakable Low-Level Properties
+- Git 操作の完全なサポート
+- マルチリポジトリ管理
+- 環境設定、アクセラレータ、ツールバーのカスタマイズ
+- 何百もの調整可能な低レベルプロパティ
 
-# conclusion
+# 結論
 
-SmartGit has proven to be a robust solution for managing multiple repositories across different project types and scales. Its combination of comprehensive Git functionality, customizable interface, and reliable support makes it an ideal tool for developers managing diverse project portfolios. The continuous discovery of new features, even after years of use, demonstrates SmartGit's depth and ongoing evolution to meet developer needs.
+SmartGit は、さまざまなプロジェクトの種類や規模にわたって複数のリポジトリを管理するための堅牢なソリューションであることが証明されています。包括的な Git 機能、カスタマイズ可能なインターフェイス、信頼性の高いサポートの組み合わせにより、多様なプロジェクト ポートフォリオを管理する開発者にとって理想的なツールとなります。何年も使用した後でも新しい機能が継続的に発見されているということは、SmartGit の奥深さと、開発者のニーズを満たすために継続的に進化していることを示しています。

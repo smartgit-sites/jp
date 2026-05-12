@@ -1,5 +1,5 @@
 ---
-title: "SmartGit -- Git Client with Three Window Styles."
+title: "SmartGit -- 3 つのウィンドウ スタイルを備えた Git クライアント。"
 headless: true
 docsync:
   source:

@@ -1,17 +1,17 @@
 ---
-title: "What's New in SmartGit -- Features, Updates & Releases"
-description: "Explore the latest SmartGit releases, feature updates, and improvements for Git developers."
-ogTitle: "SmartGit Features -- Visual Git Tools for Developers and Teams"
-ogDesc: "Explore SmartGit's most powerful Git features: visual commit history, clean branching, intuitive conflict resolution &amp; more. Built for developers and teams."
+title: "SmartGit の新機能 -- 機能、アップデート、リリース"
+description: "Git 開発者向けの最新の SmartGit リリース、機能更新、改善点をご覧ください。"
+ogTitle: "SmartGit の機能 -- 開発者とチームのためのビジュアル Git ツール"
+ogDesc: "SmartGit の最も強力な Git 機能を探索してください: 視覚的なコミット履歴、クリーンな分岐、直感的な競合解決、およびもっと。開発者とチーム向けに構築されています。"
 category: ["whats-new"]
 
-headerH1: "What's New in SmartGit"
-headerH2: "Know all the updates and enhancements"
-headerMessage: "Explore SmartGit's **releases**, track major **features**, and discover every **improvement** across versions."
+headerH1: "SmartGit の新機能"
+headerH2: "すべてのアップデートと機能強化を知る"
+headerMessage: "SmartGit の**リリース**を調べ、主要な**機能**を追跡し、バージョン間のすべての**改善**を発見します。"
 sideButtonText: "All Features"
 sideButtonLink: "../features"
 
-linkText: "See details"
+linkText: "詳細を見る"
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git

@@ -1,13 +1,13 @@
 ---
-title: "SmartGit for Developers -- Git Made Efficient"
-ogTitle: "SmartGit for Developers -- Git Made Efficient"
-ogDescription: "A powerful Git client built for individual developers who value speed, clarity, and control. Visual workflows without sacrificing efficiency."
+title: "開発者のための SmartGit -- Git の効率化"
+ogTitle: "開発者のための SmartGit -- Git の効率化"
+ogDescription: "スピード、明確さ、制御を重視する個人の開発者向けに構築された強力な Git クライアント。効率を犠牲にすることなく視覚的なワークフローを実現します。"
 
-headerH1: "SmartGit for Developers"
-headerH2: "Visual power meets developer speed"
-headerMessage: "Built for developers who want clarity without complexity."
+headerH1: "開発者向けの SmartGit"
+headerH2: "ビジュアルパワーと開発者のスピードが融合"
+headerMessage: "複雑さのない明確さを求める開発者向けに構築されています。"
 
-description: "SmartGit for developers provides visual Git workflows, keyboard shortcuts, and powerful features designed for individual productivity."
+description: "開発者向けの SmartGit は、視覚的な Git ワークフロー、キーボード ショートカット、および個人の生産性のために設計された強力な機能を提供します。"
 
 weight: 10
 docsync:
@@ -31,8 +31,8 @@ docsync:
 <div class="col-12 col-lg-10">
 <div class="row align-items-center">
 <div class="col-12 col-md-8">
-<h2 class="sg-indigo-500 mb-3">Stop context-switching. Stay in your flow.</h2>
-<p class="text-muted fs-5 mb-0">SmartGit keeps you productive with visual clarity where you need it and keyboard shortcuts when you don't.</p>
+<h2 class="sg-indigo-500 mb-3">コンテキスト切り替えを停止します。自分の流れに留まってください。</h2>
+<p class="text-muted fs-5 mb-0">SmartGit は、必要な箇所を視覚的に明確にし、必要のない場合はキーボード ショートカットを使用して生産性を維持します。</p>
 </div>
 <div class="col-12 col-md-4 text-center">
 <i class="fa-light fa-code fa-5x sg-indigo-500"></i>
@@ -41,51 +41,46 @@ docsync:
 </div>
 </div>
 </div>
-
-
 <div class="container my-5">
 <div class="row g-4">
 <div class="col-12 col-md-6 col-lg-3">
 <div class="border border-sg-indigo-100 p-4 rounded text-center h-100">
 <i class="fa-light fa-eye fa-2x sg-indigo-500 mb-3"></i>
-<h6 class="sg-indigo-500 mb-2">Visual Clarity</h6>
-<p class="text-muted small mb-0">See your branches, commits, and changes at a glance</p>
+<h6 class="sg-indigo-500 mb-2">視覚的な鮮明さ</h6>
+<p class="text-muted small mb-0">ブランチ、コミット、変更を一目で確認</p>
 </div>
 </div>
 <div class="col-12 col-md-6 col-lg-3">
 <div class="border border-sg-indigo-100 p-4 rounded text-center h-100">
 <i class="fa-light fa-keyboard fa-2x sg-indigo-500 mb-3"></i>
-<h6 class="sg-indigo-500 mb-2">Keyboard-First</h6>
-<p class="text-muted small mb-0">Customizable shortcuts for every operation</p>
+<h6 class="sg-indigo-500 mb-2">キーボードファースト</h6>
+<p class="text-muted small mb-0">あらゆる操作のカスタマイズ可能なショートカット</p>
 </div>
 </div>
 <div class="col-12 col-md-6 col-lg-3">
 <div class="border border-sg-indigo-100 p-4 rounded text-center h-100">
 <i class="fa-light fa-bolt fa-2x sg-indigo-500 mb-3"></i>
-<h6 class="sg-indigo-500 mb-2">Fast & Responsive</h6>
-<p class="text-muted small mb-0">Handle large repositories without slowdown</p>
+<h6 class="sg-indigo-500 mb-2">高速かつ応答性が高い</h6>
+<p class="text-muted small mb-0">速度を低下させることなく大規模なリポジトリを処理する</p>
 </div>
 </div>
 <div class="col-12 col-md-6 col-lg-3">
 <div class="border border-sg-indigo-100 p-4 rounded text-center h-100">
 <i class="fa-light fa-sliders fa-2x sg-indigo-500 mb-3"></i>
-<h6 class="sg-indigo-500 mb-2">Fully Customizable</h6>
-<p class="text-muted small mb-0">Adapt SmartGit to your exact workflow</p>
+<h6 class="sg-indigo-500 mb-2">完全にカスタマイズ可能</h6>
+<p class="text-muted small mb-0">SmartGit を正確なワークフローに適応させる</p>
 </div>
 </div>
 </div>
 </div>
-
-
 <div class="container my-5">
 <div class="border border-sg-indigo-500 rounded p-5">
 <div class="row justify-content-center mb-4">
 <div class="col-12 col-lg-8 text-center">
-<h2 class="sg-indigo-500 mb-3">Works on Your Platform</h2>
-<p class="text-muted">One powerful tool across all your devices</p>
+<h2 class="sg-indigo-500 mb-3">あなたのプラットフォームで動作します</h2>
+<p class="text-muted">すべてのデバイスに対応する 1 つの強力なツール</p>
 </div>
 </div>
-
 <div class="row g-4 justify-content-center">
 <div class="col-12 col-md-4">
 <div class="text-center p-4">
@@ -106,13 +101,11 @@ docsync:
 </div>
 </div>
 </div>
-
 <div class="row justify-content-center mt-5 mb-4">
 <div class="col-12 col-lg-8 text-center">
-<h2 class="sg-indigo-500 mb-3">Integrates with Your Tools</h2>
+<h2 class="sg-indigo-500 mb-3">ツールと統合</h2>
 </div>
 </div>
-
 <div class="row g-4 justify-content-center">
 <div class="col-6 col-md-3">
 <div class="text-center p-3">
@@ -135,23 +128,20 @@ docsync:
 <div class="col-6 col-md-3">
 <div class="text-center p-3">
 <i class="fa-light fa-server fa-3x sg-orange-500 mb-3"></i>
-<h6 class="mb-0">Self-Hosted</h6>
+<h6 class="mb-0">自己ホスト型</h6>
 </div>
 </div>
 </div>
 </div>
 </div>
-
-
 <div class="container-fluid bg-sg-indigo-200-rgb bg-opacity-10 py-5 my-5">
 <div class="container">
 <div class="row justify-content-center mb-5">
 <div class="col-12 col-lg-8 text-center">
-<h2 class="sg-indigo-500 mb-3">Your workflow, optimized</h2>
-<p class="fs-5">SmartGit adapts to how you work, not the other way around</p>
+<h2 class="sg-indigo-500 mb-3">最適化されたワークフロー</h2>
+<p class="fs-5">SmartGit はユーザーの働き方に適応します。その逆ではありません。</p>
 </div>
 </div>
-
 <div class="row justify-content-center">
 <div class="col-12 col-lg-10">
 <div class="row g-4">
@@ -162,13 +152,12 @@ docsync:
 <i class="fa-light fa-code-branch fa-lg"></i>
 </div>
 <div>
-<h5 class="sg-indigo-500 mb-2">Branch Management</h5>
-<p class="text-muted mb-0">Create, switch, merge, and delete branches visually. See exactly where you are and what's ahead or behind.</p>
+<h5 class="sg-indigo-500 mb-2">支店管理</h5>
+<p class="text-muted mb-0">ブランチを視覚的に作成、切り替え、マージ、削除します。自分がどこにいるのか、前方や後方に何があるのか​​を正確に確認できます。</p>
 </div>
 </div>
 </div>
 </div>
-
 <div class="col-12 col-md-6">
 <div class="bg-white p-4 rounded shadow-sm h-100">
 <div class="d-flex align-items-start">
@@ -176,13 +165,12 @@ docsync:
 <i class="fa-light fa-file-code fa-lg"></i>
 </div>
 <div>
-<h5 class="sg-indigo-500 mb-2">Commit Crafting</h5>
-<p class="text-muted mb-0">Stage changes selectively, review diffs inline, and write meaningful commits without command-line guesswork.</p>
+<h5 class="sg-indigo-500 mb-2">クラフトをコミットする</h5>
+<p class="text-muted mb-0">コマンドラインで推測することなく、変更を選択的にステージングし、インラインで差分を確認し、意味のあるコミットを書き込みます。</p>
 </div>
 </div>
 </div>
 </div>
-
 <div class="col-12 col-md-6">
 <div class="bg-white p-4 rounded shadow-sm h-100">
 <div class="d-flex align-items-start">
@@ -190,13 +178,12 @@ docsync:
 <i class="fa-light fa-code-merge fa-lg"></i>
 </div>
 <div>
-<h5 class="sg-indigo-500 mb-2">Conflict Resolution</h5>
-<p class="text-muted mb-0">Resolve merge conflicts with a three-pane diff view. See both changes side-by-side and choose what to keep.</p>
+<h5 class="sg-indigo-500 mb-2">紛争の解決</h5>
+<p class="text-muted mb-0">3 ペインの差分ビューでマージの競合を解決します。両方の変更を並べて確認し、何を保持するかを選択します。</p>
 </div>
 </div>
 </div>
 </div>
-
 <div class="col-12 col-md-6">
 <div class="bg-white p-4 rounded shadow-sm h-100">
 <div class="d-flex align-items-start">
@@ -204,8 +191,8 @@ docsync:
 <i class="fa-light fa-clock-rotate-left fa-lg"></i>
 </div>
 <div>
-<h5 class="sg-indigo-500 mb-2">History Exploration</h5>
-<p class="text-muted mb-0">Navigate your project's history with an interactive graph. Filter, search, and understand what changed and why.</p>
+<h5 class="sg-indigo-500 mb-2">歴史探訪</h5>
+<p class="text-muted mb-0">インタラクティブなグラフを使用してプロジェクトの履歴をナビゲートします。フィルタリング、検索を行い、何が変更されたのか、なぜ変更されたのかを理解します。</p>
 </div>
 </div>
 </div>
@@ -215,117 +202,105 @@ docsync:
 </div>
 </div>
 </div>
-
-
 <div class="container my-5">
 <div class="row justify-content-center mb-5">
 <div class="col-12 col-lg-8 text-center">
-<h2 class="sg-indigo-500 mb-3">Why developers switch to SmartGit</h2>
+<h2 class="sg-indigo-500 mb-3">開発者が SmartGit に切り替える理由</h2>
 </div>
 </div>
-
 <div class="row g-4 justify-content-center">
 <div class="col-12 col-md-4">
 <div class="card border-0 bg-sg-indigo-200-rgb bg-opacity-10 h-100">
 <div class="card-body">
-<h5 class="sg-indigo-500 mb-3">"No more Git panic"</h5>
-<p class="mb-3">See exactly what you're doing before you do it. Undo mistakes easily. No more fear of breaking your repository.</p>
-<p class="text-muted small mb-0">— Solo developer</p>
+<h5 class="sg-indigo-500 mb-3">「Git パニックはもう必要ありません」</h5>
+<p class="mb-3">実行する前に、何をしているのかを正確に確認してください。間違いを簡単に元に戻せます。リポジトリを壊す心配はもうありません。</p>
+<p class="text-muted small mb-0">— ソロ開発者</p>
 </div>
 </div>
 </div>
-
 <div class="col-12 col-md-4">
 <div class="card border-0 bg-sg-orange-200-rgb bg-opacity-10 h-100">
 <div class="card-body">
-<h5 class="sg-orange-500 mb-3">"Faster than the CLI"</h5>
-<p class="mb-3">Visual operations for complex tasks, keyboard shortcuts for quick ones. Best of both worlds in one tool.</p>
-<p class="text-muted small mb-0">— Full-stack engineer</p>
+<h5 class="sg-orange-500 mb-3">「CLIより速い」</h5>
+<p class="mb-3">複雑なタスクには視覚的な操作を、簡単なタスクにはキーボード ショートカットを使用します。両方の長所を 1 つのツールで実現します。</p>
+<p class="text-muted small mb-0">— フルスタックエンジニア</p>
 </div>
 </div>
 </div>
-
 <div class="col-12 col-md-4">
 <div class="card border-0 bg-sg-indigo-200-rgb bg-opacity-10 h-100">
 <div class="card-body">
-<h5 class="sg-indigo-500 mb-3">"Finally understand Git"</h5>
-<p class="mb-3">Seeing the graph changed everything. Now I know what's happening instead of just copying commands.</p>
-<p class="text-muted small mb-0">— Frontend developer</p>
+<h5 class="sg-indigo-500 mb-3">「やっとGitを理解できた」</h5>
+<p class="mb-3">グラフを見てすべてが変わりました。コマンドをただコピーするのではなく、何が起こっているかを理解できるようになりました。</p>
+<p class="text-muted small mb-0">— フロントエンド開発者</p>
 </div>
 </div>
 </div>
 </div>
 </div>
-
-
 <div class="container-fluid bg-sg-indigo-500 text-white py-5">
 <div class="container">
 <div class="row justify-content-center">
 <div class="col-12 col-lg-8 text-center">
-<h2 class="mb-3">Try SmartGit free for 30 days</h2>
-<p class="fs-5 mb-4">No credit card required. Full features. See if SmartGit fits your workflow.</p>
+<h2 class="mb-3">SmartGit を 30 日間無料でお試しください</h2>
+<p class="fs-5 mb-4">クレジットカードは必要ありません。充実の機能。 SmartGit がワークフローに適合するかどうかを確認してください。</p>
 <div class="d-flex gap-3 justify-content-center flex-wrap">
-{{< button-orange url="/download/" display="Download SmartGit" >}}
+{{< button-orange url="/download/" display="SmartGitをダウンロード" >}}
 </div>
-<p class="mt-4 mb-0 opacity-75">Available for Windows, macOS, and Linux</p>
-</div>
-</div>
+<p class="mt-4 mb-0 opacity-75">Windows、macOS、Linux で利用可能</p>
 </div>
 </div>
-
-
+</div>
+</div>
 <div class="container my-5">
 <div class="row justify-content-center">
 <div class="col-12 col-lg-10">
 <div class="accordion" id="accordionFAQ">
 <div class="accordion-item">
 <h5 class="accordion-header">
-<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
-Do I need to know Git command line to use SmartGit?
+<button aria-controls="faq1" aria-expanded="true" class="accordion-button" data-bs-target="#faq1" data-bs-toggle="collapse" type="button">
+SmartGit を使用するには Git コマンド ラインを知る必要がありますか?
 </button>
 </h5>
-<div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+<div class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ" id="faq1">
 <div class="accordion-body">
-No. SmartGit handles Git operations visually, so you don't need to memorize commands. However, if you already know the command line, SmartGit complements your workflow by providing visual clarity for complex operations.
+いいえ、SmartGit は Git 操作を視覚的に処理するため、コマンドを覚える必要はありません。ただし、コマンド ラインをすでに知っている場合、SmartGit は複雑な操作を視覚的に明確にすることでワークフローを補完します。
 </div>
 </div>
 </div>
-
 <div class="accordion-item">
 <h5 class="accordion-header">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
-Can I customize keyboard shortcuts?
+<button aria-controls="faq2" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#faq2" data-bs-toggle="collapse" type="button">
+キーボード ショートカットをカスタマイズできますか?
 </button>
 </h5>
-<div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+<div class="accordion-collapse collapse" data-bs-parent="#accordionFAQ" id="faq2">
 <div class="accordion-body">
-Yes. SmartGit supports fully customizable keyboard shortcuts, so you can adapt it to your muscle memory and workflow preferences.
+はい。 SmartGit は完全にカスタマイズ可能なキーボード ショートカットをサポートしているため、筋肉の記憶やワークフローの好みに合わせて調整できます。
 </div>
 </div>
 </div>
-
 <div class="accordion-item">
 <h5 class="accordion-header">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
-How does SmartGit handle large repositories?
+<button aria-controls="faq3" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#faq3" data-bs-toggle="collapse" type="button">
+SmartGit は大規模なリポジトリをどのように処理しますか?
 </button>
 </h5>
-<div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+<div class="accordion-collapse collapse" data-bs-parent="#accordionFAQ" id="faq3">
 <div class="accordion-body">
-SmartGit is optimized for performance and handles large repositories efficiently. Features like lazy loading and smart caching ensure fast operation even with extensive commit histories.
+SmartGit はパフォーマンスが最適化されており、大規模なリポジトリを効率的に処理します。遅延読み込みやスマート キャッシュなどの機能により、大量のコミット履歴がある場合でも高速な操作が保証されます。
 </div>
 </div>
 </div>
-
 <div class="accordion-item">
 <h5 class="accordion-header">
-<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
-Is SmartGit free for personal use?
+<button aria-controls="faq4" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#faq4" data-bs-toggle="collapse" type="button">
+SmartGit は個人使用であれば無料ですか?
 </button>
 </h5>
-<div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+<div class="accordion-collapse collapse" data-bs-parent="#accordionFAQ" id="faq4">
 <div class="accordion-body">
-SmartGit offers a 30-day free trial. After that, you'll need a license for commercial use. Check our pricing page for current options and discounts.
+SmartGit は 30 日間の無料トライアルを提供しています。その後、商用利用のライセンスが必要になります。現在のオプションと割引については、価格ページをご確認ください。
 </div>
 </div>
 </div>

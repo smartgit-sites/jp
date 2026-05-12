@@ -1,5 +1,5 @@
 ---
-title: "Marc Strapetz"
+title: "マーク・ストラペッツ"
 
 position: "Co-Founder, Managing Director & Technical Strategist"
 portrait: "marc.png"

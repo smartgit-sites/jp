@@ -1,5 +1,5 @@
 ---
-title: "Margit Janker"
+title: "マルギット・ジャンカー"
 
 position: "Administration & Office Hero"
 portrait: "margit.png"

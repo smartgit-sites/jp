@@ -1,7 +1,7 @@
 ---
-title: "Bridging Technical Divides: SmartGit's Intuitive Approach to Git Submodules"
-description: "Learn how SmartGit helped a game development team overcome Git submodule challenges and build better collaboration between creative and technical roles."
-summary: "Discover how SmartGit's intuitive approach to Git submodules broke down the walls between technical and creative teams in game development."
+title: "技術的な溝を埋める: Git サブモジュールに対する SmartGit の直感的なアプローチ"
+description: "ゲーム開発チームが Git サブモジュールの課題を克服し、クリエイティブな役割と技術的な役割の間でより良いコラボレーションを構築するのに SmartGit がどのように役立ったかを学びましょう。"
+summary: "Git サブモジュールに対する SmartGit の直感的なアプローチが、ゲーム開発における技術チームとクリエイティブ チームの間の壁をどのように打ち破ったかをご覧ください。"
 testimonial_user: "Colin Richardson"
 testimonial_company: "Professional Developer"
 testimonial_avatar: "avatar.png"
@@ -23,57 +23,57 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-# testimonial
+# 証言
 
-If they were to swallow their 'I am a command line only nerd' pride and use SmartGit then I think they could see how good submodules can be... They are actually sharing a submodule and they don't even know it.
+もし彼らが「私はコマンドラインだけのオタクだ」というプライドを捨てて SmartGit を使えば、サブモジュールがいかに優れたものであるかを理解できると思います...彼らは実際にはサブモジュールを共有していますが、それを知りません。
 
-# summary
+# まとめ
 
-In a unique case of cross-disciplinary collaboration, SmartGit has successfully bridged the gap between sound engineers and game developers through its intuitive handling of Git submodules, making version control accessible to team members regardless of their technical expertise.
+専門分野を超えたコラボレーションのユニークなケースでは、SmartGit は Git サブモジュールの直感的な操作を通じてサウンド エンジニアとゲーム開発者の間のギャップを埋めることに成功し、技術的専門知識に関係なくチーム メンバーがバージョン管理にアクセスできるようにしました。
 
-# challenge
+# チャレンジ
 
-- Managing complex Git submodules across diverse teams
-- Enabling collaboration between technical and non-technical team members
-- Making Git workflows accessible to team members without command-line experience  
-- Maintaining efficient version control for audio assets in game development
-- Coordinating work between sound engineers unfamiliar with Git and experienced developers
+- 多様なチームにわたる複雑な Git サブモジュールの管理
+- 技術チームメンバーと非技術チームメンバー間のコラボレーションを可能にする
+- コマンドラインの経験がないチームメンバーでも Git ワークフローにアクセスできるようにする
+- ゲーム開発におけるオーディオアセットの効率的なバージョン管理を維持する
+- Gitに不慣れなサウンドエンジニアと経験豊富な開発者の間で作業を調整する
 
-# solution
+# 解決
 
-- Intuitive graphical interface for submodule management
-- Simplified workflows for basic Git operations
-- Visual representation of complex Git concepts
-- User-friendly approach to repository management
-- Seamless submodule integration without technical overhead
+- サブモジュール管理のための直観的なグラフィカルインターフェイス
+- 基本的な Git 操作の簡素化されたワークフロー
+- 複雑な Git 概念の視覚的表現
+- リポジトリ管理へのユーザーフレンドリーなアプローチ
+- 技術的なオーバーヘッドのないシームレスなサブモジュール統合
 
-# gallery
+# ギャラリー
 
-![Submodules in the Tree](./submodules.png "Submodules in the Tree")
+![ツリー内のサブモジュール](./submodules.png "ツリー内のサブモジュール")
 
-![Submodules in the files view](./files.png "Submodules in the files view")
+![ファイル ビューのサブモジュール](./files.png "ファイル ビューのサブモジュール")
 
-# impact
+# インパクト
 
-- Enabled successful collaboration between sound engineers and game developers
-- Eliminated the need for extensive Git training for non-technical team members
-- Streamlined asset management through submodules
-- Reduced technical barriers in cross-team collaboration
-- Maintained project organization without compromising on Git's powerful features
+- サウンドエンジニアとゲーム開発者のコ​​ラボレーションを成功させる
+- 技術者以外のチームメンバーに対する広範な Git トレーニングの必要性を排除
+- サブモジュールによる合理化された資産管理
+- チーム間のコラボレーションにおける技術的障壁の軽減
+- Git の強力な機能を損なうことなくプロジェクトの組織を維持
 
-# benefits
+# 利点
 
-- Accessible to both beginners and advanced users
-- Intuitive submodule management  
-- Reduced learning curve for new team members
-- Improved workflow efficiency
-- Enhanced cross-team collaboration
+- 初心者から上級ユーザーまでアクセス可能
+- 直感的なサブモジュール管理
+- 新しいチームメンバーの学習時間を短縮
+- ワークフロー効率の向上
+- チーム間のコラボレーションの強化
 
-# features
+# 特徴
 
-- Integrated display of submodule files in the working tree (Working Tree window)
-- Advanced submodule management capabilities
+- サブモジュールファイルをワーキングツリーに統合表示（ワーキングツリーウィンドウ）
+- 高度なサブモジュール管理機能
 
-# conclusion
+# 結論
 
-SmartGit has proven that complex Git features like submodules can be made accessible without sacrificing functionality. By providing an intuitive interface that caters to both beginners and experts, SmartGit has enabled effective collaboration between technical and non-technical team members in game development projects. The software's approach to submodule management has transformed what many consider a challenging Git feature into a practical tool for cross-team collaboration.
+SmartGit は、機能を犠牲にすることなく、サブモジュールなどの複雑な Git 機能にアクセスできることを証明しました。 SmartGit は、初心者と専門家の両方に対応する直感的なインターフェイスを提供することで、ゲーム開発プロジェクトにおける技術チーム メンバーと非技術チーム メンバー間の効果的なコラボレーションを可能にしました。サブモジュール管理に対するソフトウェアのアプローチにより、多くの人が困難だと考えていた Git 機能が、チーム間コラボレーションのための実用的なツールに変わりました。

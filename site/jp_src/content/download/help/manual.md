@@ -1,5 +1,5 @@
 ---
-title: "Manuals / HowTos:"
+title: "マニュアル/ハウツー:"
 
 icon: "fa-light fa-book-sparkles"
 docsync:
@@ -17,4 +17,4 @@ docsync:
     status: draft
     updated_at: 2026-05-12T00:35:06Z
 ---
-[マニュアル](https://docs.syntevo.com/SmartGit/Latest/Manual/)をご覧いただき、[ハウツー](https://docs.syntevo.com/SmartGit/Latest/HowTos/)をご参照ください。 
+[マニュアル](https://docs.syntevo.com/SmartGit/Latest/Manual/)をご覧いただき、[ハウツー](https://docs.syntevo.com/SmartGit/Latest/HowTos/)をご参照ください。

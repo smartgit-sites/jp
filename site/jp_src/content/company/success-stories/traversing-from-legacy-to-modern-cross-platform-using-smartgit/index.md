@@ -1,7 +1,7 @@
 ---
-title: "From Legacy to Modern: How SmartGit Transformed One Developer's Git Journey"
-description: "Explore how one developer modernized their Git usage across platforms with SmartGit's integrated feature set."
-summary: "How SmartGit convinced a dedicated Eclipse developer to abandon legacy version control systems and never look back—a decade-long success story."
+title: "レガシーからモダンへ: SmartGit が開発者の Git への取り組みをどのように変えたか"
+description: "ある開発者が、SmartGit の統合機能セットを使用して、プラットフォーム間での Git の使用をどのように最新化したかをご覧ください。"
+summary: "SmartGit が熱心な Eclipse 開発者に、レガシー バージョン管理システムを放棄し、決して過去を振り返らないように説得した方法 - 10 年にわたるサクセス ストーリー。"
 testimonial_user: "Phil Beauvoir"
 testimonial_company: "Eclipse Developer & Creator of Archi (ArchiMate Modeller)"
 testimonial_avatar: "/images/avatars/man3.png"
@@ -24,60 +24,60 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-# testimonial
+# 証言
 
-If it wasn't for the ease of use and cross-platform availability of SmartGit I don't think I would have made the transition from legacy SCM systems to Git.
+SmartGit の使いやすさとクロスプラットフォームでの可用性がなければ、レガシー SCM システムから Git への移行はしていなかったと思います。
 
-# summary
+# まとめ
 
-An experienced Eclipse developer's decade-long journey with SmartGit showcases how the tool's intuitive interface and cross-platform capabilities made the transition from legacy source control systems to Git not just possible, but productive. Even for developers deeply embedded in the Eclipse ecosystem, SmartGit proved to be the superior choice for Git operations.
+経験豊富な Eclipse 開発者の SmartGit との 10 年にわたる取り組みは、ツールの直観的なインターフェイスとクロスプラットフォーム機能によって、レガシー ソース コントロール システムから Git への移行が可能になっただけでなく、生産性が高くなったことを示しています。 Eclipse エコシステムに深く組み込まれている開発者にとっても、SmartGit は Git 操作に優れた選択肢であることが証明されました。
 
-# challenge
+# チャレンジ
 
-- Transitioning from legacy SCM systems to Git
-- Managing Git workflow for an open-source project
-- Finding a reliable cross-platform Git client
-- Needing a tool that outperforms native IDE Git integration
-- Maintaining consistent workflow across different operating systems
+- レガシー SCM システムから Git への移行
+- オープンソース プロジェクトの Git ワークフローの管理
+- 信頼できるクロスプラットフォームの Git クライアントを見つける
+- ネイティブ IDE Git 統合を上回るパフォーマンスのツールが必要
+- 異なるオペレーティング システム間で一貫したワークフローを維持する
 
-# solution
+# 解決
 
-- User-friendly interface for Git operations
-- Cross-platform availability ensuring consistent experience
-- Comprehensive Git workflow management
-- Seamless integration with existing development processes
-- Superior functionality compared to built-in IDE tools
+- Git 操作のためのユーザーフレンドリーなインターフェイス
+- 一貫したエクスペリエンスを保証するクロスプラットフォームの可用性
+- 包括的な Git ワークフロー管理
+- 既存の開発プロセスとのシームレスな統合
+- 組み込みの IDE ツールと比較して優れた機能
 
-# gallery
+# ギャラリー
 
-![Darkmode on MacOS](./darkmode.png "Darkmode on MacOS")
+![MacOS のダークモード](./darkmode.png "MacOS のダークモード")
 
-![Lightmode on MacOS](./lightmode.png "Lightmode on MacOS")
+![MacOS のライトモード](./lightmode.png "MacOS のライトモード")
 
-![Lightmode on Ubuntu 24.10](./ubuntu.png "Lightmode on Ubuntu 24.10")
+![Ubuntu 24.10 のライトモード](./ubuntu.png "Ubuntu 24.10 のライトモード")
 
-# impact
+# インパクト
 
-- Successfully migrated from legacy SCM to Git
-- Maintained consistent development workflow since 2011
-- Enabled effective management of open-source project
-- Improved productivity compared to alternative Git tools
-- Enhanced version control efficiency across platforms
+- 従来の SCM から Git への移行に成功しました
+- 2011 年以来一貫した開発ワークフローを維持
+- オープンソース プロジェクトの効果的な管理を可能にする
+- 代替の Git ツールと比較して生産性が向上
+- プラットフォーム全体でのバージョン管理効率の向上
 
-# benefits
+# 利点
 
-- Easy transition to Git for experienced developers
-- Cross-platform compatibility
-- Superior user experience
-- Reliable long-term solution
-- Better functionality than native IDE tools
+- 経験豊富な開発者にとって Git への簡単な移行
+- クロスプラットフォームの互換性
+- 優れたユーザーエクスペリエンス
+- 信頼性の高い長期的なソリューション
+- ネイティブ IDE ツールよりも優れた機能
 
-# features
+# 特徴
 
-- Dedicated views for Working Tree and Log
-- Cross-platform availability
-- Advanced Git operation capabilities
+- 作業ツリーとログの専用ビュー
+- クロスプラットフォームの可用性
+- 高度な Git 操作機能
 
-# conclusion
+# 結論
 
-SmartGit has proven its value over more than a decade of daily use in managing an open-source project. Its ability to provide a superior Git experience, even compared to native IDE tools, while maintaining cross-platform compatibility, makes it an invaluable tool for developers transitioning from legacy systems to modern version control. The longevity of use and preference over built-in alternatives demonstrates SmartGit's enduring value in professional development workflows.
+SmartGit は、オープンソース プロジェクトの管理における 10 年以上の日常的な使用を通じてその価値を証明してきました。クロスプラットフォーム互換性を維持しながら、ネイティブ IDE ツールと比較しても優れた Git エクスペリエンスを提供できるため、従来のシステムから最新のバージョン管理に移行する開発者にとって非常に貴重なツールになります。長期間にわたって使用され、組み込みの代替手段よりも好まれていることは、専門能力開発ワークフローにおける SmartGit の永続的な価値を示しています。

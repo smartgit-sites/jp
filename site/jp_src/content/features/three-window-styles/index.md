@@ -1,14 +1,14 @@
 ---
-title: "SmartGit Window Styles"
-headerH2: "Three Git Clients in One Application"
-listTitle: "Three Window Styles"
-imageAltText: "SmartGit's three window styles overview: Working Tree, Log, and Standard windows for customized Git GUI workflows."
-linkText: "More about the Three Window Styles"
+title: "SmartGit ウィンドウ スタイル"
+headerH2: "1 つのアプリケーションに 3 つの Git クライアントを搭載"
+listTitle: "3 つのウィンドウ スタイル"
+imageAltText: "SmartGit の 3 つのウィンドウ スタイルの概要: カスタマイズされた Git GUI ワークフロー用のワーキング ツリー、ログ、および標準ウィンドウ。"
+linkText: "3 つのウィンドウ スタイルの詳細"
 category: ["feature"]
-headerMessage: "Choose between **Working Tree**, **Log**, or **Standard** window styles to match your workflow."
-description: "SmartGit offers three powerful Git Window Styles: file-based, commit-focused, and unified. Choose the Git GUI that fits your workflow best. Try SmartGit now!"
-ogTitle: "SmartGit Features -- Visual Git Tools for Developers and Teams"
-ogDesc: "Explore SmartGit's three powerful Git Window Styles: file-based, commit-focused, and unified. Perfect for developers, teams, and power users."
+headerMessage: "ワークフローに合わせて、**作業ツリー**、**ログ**、または**標準**のウィンドウ スタイルを選択します。"
+description: "SmartGit は、ファイルベース、コミット中心、統合という 3 つの強力な Git ウィンドウ スタイルを提供します。ワークフローに最適な Git GUI を選択してください。今すぐ SmartGit を試してください!"
+ogTitle: "SmartGit の機能 -- 開発者とチームのためのビジュアル Git ツール"
+ogDesc: "SmartGit の 3 つの強力な Git ウィンドウ スタイル (ファイルベース、コミット中心、統合) を調べてください。開発者、チーム、パワー ユーザーに最適です。"
 weight: 1
 docsync:
   source:

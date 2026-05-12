@@ -1,14 +1,14 @@
 ---
-title: "Version 25.1"
-headerH2: "Major Improvements in Version 25.1"
-listTitle: "Version 25.1"
-imageAltText: "SmartGit 25.1 with AI-powered commit generation, Git Notes support, enhanced worktrees, and improved LFS handling"
-linkText: "More about SmartGit 25.1"
+title: "バージョン25.1"
+headerH2: "バージョン 25.1 の主な改善点"
+listTitle: "バージョン25.1"
+imageAltText: "AI を活用したコミット生成、Git Notes サポート、強化されたワークツリー、改善された LFS 処理を備えた SmartGit 25.1"
+linkText: "SmartGit 25.1 の詳細"
 category: ["feature"]
-headerMessage: "Generate **commit messages** with AI, explain commits, and auto-name **stashes**. First-class **Git Notes**, improved **worktrees**, clearer **LFS** states, and more."
-description: "SmartGit 25.1 brings AI-powered commit help, first-class Git Notes, improved worktrees, clearer LFS handling, PR filters, and other refinements that streamline everyday Git work."
-ogTitle: "SmartGit 25.1: AI commit help, Git Notes, LFS improvements"
-ogDesc: "AI commit help, Git Notes, better worktrees, clearer LFS states, PR filters, and more -- all in SmartGit 25.1."
+headerMessage: "AI を使用して **コミット メッセージ**を生成し、コミットを説明し、**スタッシュ**に自動名前を付けます。最高級の **Git Notes**、改善された **ワークツリー**、より明確な **LFS** 状態など。"
+description: "SmartGit 25.1 は、AI を活用したコミット ヘルプ、最上級の Git ノート、改善されたワークツリー、より明確な LFS 処理、PR フィルター、および日常の Git 作業を合理化するその他の改良点をもたらします。"
+ogTitle: "SmartGit 25.1: AI コミット ヘルプ、Git ノート、LFS の改善"
+ogDesc: "AI コミット ヘルプ、Git ノート、より優れたワークツリー、より明確な LFS 状態、PR フィルターなど、すべてが SmartGit 25.1 に含まれています。"
 weight: 199
 docsync:
   source:
@@ -39,7 +39,7 @@ SmartGit 25.1は、AI支援、メタデータ、ワークツリー、LFS、プ�
 
 # コミットメッセージの生成と言い換え
 
-{{<screenshot src="ai-rewording.png" alt="SmartGit 25.1 AIコミットメッセージ生成 - @aiプレースホルダーとバックグラウンド処理">}}
+{{<screenshot alt="SmartGit 25.1 AIコミットメッセージ生成 - @aiプレースホルダーとバックグラウンド処理" src="ai-rewording.png">}}
 
 ---
 
@@ -50,11 +50,11 @@ SmartGitに綺麗なコミットメッセージを作成させましょう。オ
 * **WIPフレンドリー** -- **WIP**（*work in progress*）プレースホルダーで素早くコミット。SmartGitが後で洗練されたサマリーに**書き換える**ので、履歴が整理されたままになります。
 * **非破壊的** -- コードはそのまま。コミットメッセージのみが更新されます。
 
-{{< link url="https://docs.syntevo.com/SmartGit/Latest/Manual/GUI/AI-Commit-Messages" display="詳細を見る">}}
+{{< link url="https://docs.syntevo.com/SmartGit/Latest/Manual/GUI/AI-Commit-Messages" display="詳細を見る" >}}
 
 # 自動スタッシュ説明
 
-{{<screenshot src="ai-stashing.png" alt="SmartGit 25.1 自動スタッシュ命名 - ブランチビューでのAI生成説明">}}
+{{<screenshot alt="SmartGit 25.1 自動スタッシュ命名 - ブランチビューでのAI生成説明" src="ai-stashing.png">}}
 
 ---
 
@@ -65,21 +65,21 @@ SmartGitに綺麗なコミットメッセージを作成させましょう。オ
 
 # コミットの説明：オンデマンドでサマリーを取得
 
-{{<screenshot src="ai-explaining.png" alt="SmartGit 25.1 AIコミット説明機能 - コミット詳細ビューでサマリーを表示">}}
+{{<screenshot alt="SmartGit 25.1 AIコミット説明機能 - コミット詳細ビューでサマリーを表示" src="ai-explaining.png">}}
 
 ---
 
 素早くキャッチアップしたいですか？SmartGitに変更内容を説明させましょう。
 
-* **右クリック > コミットを説明** -- 選択したコミットの簡潔な**サマリー**を生成します。
+* **右クリック &gt; コミットを説明** -- 選択したコミットの簡潔な**サマリー**を生成します。
 * **マルチコミット、同時処理** -- 複数のコミットを選択してExplainを実行。SmartGitがバックグラウンドですべての説明を生成し、結果を**Git Notes**に保存します。
 * **差分を考慮した説明** -- コミットメッセージと差分を使用して、意図と主要な変更点を強調します。
 
-{{< link url="https://docs.syntevo.com/SmartGit/Latest/Manual/GUI/AI-Commit-Annotations" display="詳細を見る">}}
+{{< link url="https://docs.syntevo.com/SmartGit/Latest/Manual/GUI/AI-Commit-Annotations" display="詳細を見る" >}}
 
 # プライバシーファースト、設計による
 
-{{<screenshot src="ai-consent.png" alt="SmartGit 25.1 AIプライバシー同意ダイアログ - データ送信前に明示的なユーザー承認を確保">}}
+{{<screenshot alt="SmartGit 25.1 AIプライバシー同意ダイアログ - データ送信前に明示的なユーザー承認を確保" src="ai-consent.png">}}
 
 ---
 
@@ -97,27 +97,27 @@ SmartGitは**お好みのAI**に接続します。
 **柔軟なプロンプト**でトーンを調整し、メッセージがチームから発信されたかのように読めるようにします。
 結果を**Git Notes**として保存することで、重要な場所に保持できます -- コミットに添付され、グラフに表示され、チームメイトと簡単に共有できます。
 
-{{< link url="https://docs.syntevo.com/SmartGit/Latest/Manual/Integrations/AI" display="詳細を見る">}}
+{{< link url="https://docs.syntevo.com/SmartGit/Latest/Manual/Integrations/AI" display="詳細を見る" >}}
 
 # **一般的な改善**
 
 # Git Notes：ファーストクラスで設定可能
 
-{{<screenshot src="git-notes.png" alt="SmartGit 25.1 Git Notesインターフェース - 名前空間選択とログラフでのノートインジケーター">}}
+{{<screenshot alt="SmartGit 25.1 Git Notesインターフェース - 名前空間選択とログラフでのノートインジケーター" src="git-notes.png">}}
 
 ---
 
  **Git Notes**は、コミットを変更せずに添付できるメタデータです。
- 
+
  * **名前空間を選択** -- **refs/notes/**カテゴリと、ノートが**ログラフ**でどのように表示されるかを選択します。
  * **UIで作業** -- ノートを追加、表示、編集できます。コミット詳細とグラフに表示されます。
  * **共有と自動化** -- リポジトリと一緒にノートをプッシュ/フェッチし、AIの説明をノートとして保存します。
 
-{{< link url="https://docs.syntevo.com/SmartGit/Latest/Manual/GUI/Notes" display="詳細を見る">}}
- 
+{{< link url="https://docs.syntevo.com/SmartGit/Latest/Manual/GUI/Notes" display="詳細を見る" >}}
+
 # ワークツリー：よりスムーズで安全に
 
-{{<screenshot src="worktree-switch.png" alt="SmartGit 25.1 インテリジェントなワークツリー切り替え - チェックアウト済みブランチの既存ワークツリーを自動的に開く">}}
+{{<screenshot alt="SmartGit 25.1 インテリジェントなワークツリー切り替え - チェックアウト済みブランチの既存ワークツリーを自動的に開く" src="worktree-switch.png">}}
 
 ---
 
@@ -131,7 +131,7 @@ Gitのワークツリー機能のサポートがいくつかの点で改善さ�
 
 # オクトパスマージ
 
-{{<screenshot src="octopus-merge.png" alt="SmartGit 25.1 オクトパスマージの視覚化 - 複数の親ブランチを持つコミット">}}
+{{<screenshot alt="SmartGit 25.1 オクトパスマージの視覚化 - 複数の親ブランチを持つコミット" src="octopus-merge.png">}}
 
 ---
 
@@ -141,7 +141,7 @@ Gitのワークツリー機能のサポートがいくつかの点で改善さ�
 
 # SmartGitを認証ヘルパーとして使用
 
-{{<screenshot src="smartgit-as-credential-helper.png" alt="SmartGit 25.1 認証ヘルパー設定 - Gitコマンドライン統合用の環境設定">}}
+{{<screenshot alt="SmartGit 25.1 認証ヘルパー設定 - Gitコマンドライン統合用の環境設定" src="smartgit-as-credential-helper.png">}}
 
 ---
 
@@ -152,7 +152,7 @@ SmartGitは、環境設定の**実行ファイル**ページで、SmartGitから
 
 # 強制プッシュ：適切なポリシーを選択
 
-{{<screenshot src="forced-push-options.png" alt="SmartGit 25.1 強制プッシュポリシー設定 - ブランチ固有の安全制御">}}
+{{<screenshot alt="SmartGit 25.1 強制プッシュポリシー設定 - ブランチ固有の安全制御" src="forced-push-options.png">}}
 
 ---
 
@@ -165,7 +165,7 @@ SmartGitは、環境設定の**実行ファイル**ページで、SmartGitから
 
 # 異なる作者のコミットをスカッシュ
 
-{{<screenshot src="squash-commits-co-authors.png" alt="SmartGit 25.1 コミットのスカッシュ - コントリビューターのクレジットを保持する共著者属性">}}
+{{<screenshot alt="SmartGit 25.1 コミットのスカッシュ - コントリビューターのクレジットを保持する共著者属性" src="squash-commits-co-authors.png">}}
 
 ---
 
@@ -174,12 +174,12 @@ SmartGitは、環境設定の**実行ファイル**ページで、SmartGitから
 
 共同作業が適切に帰属されるように、小さなヘルパーが連携します：
 
-* **ログ > 詳細** -- コントリビューターの`name <email>`をコピーして、必要な場所に貼り付けます。
+* **ログ &gt; 詳細** -- コントリビューターの`name <email>`をコピーして、必要な場所に貼り付けます。
 * **作者を編集** -- 著者を設定する際に`name <email>`を素早く貼り付けます。
 
 # LFS改善：より明確な状態、高速なリフレッシュ
 
-{{<screenshot src="lfs-unexpanded.png" alt="SmartGit 25.1 LFSファイルステータス表示 - 明確なバッジで未展開ポインターファイルを表示">}}
+{{<screenshot alt="SmartGit 25.1 LFSファイルステータス表示 - 明確なバッジで未展開ポインターファイルを表示" src="lfs-unexpanded.png">}}
 
 ---
 
@@ -198,7 +198,7 @@ SmartGit 25.1は問題のあるLFSステータスを明確にし、一般的な�
 
 # *すべてのブランチ + タグ*でのリモート管理
 
-{{<screenshot src="all-branches-tags-remotes.png" alt="SmartGit 25.1 すべてのブランチ + タグビューでのリモート管理 - 包括的なリモート操作">}}
+{{<screenshot alt="SmartGit 25.1 すべてのブランチ + タグビューでのリモート管理 - 包括的なリモート操作" src="all-branches-tags-remotes.png">}}
 
 ---
 
@@ -215,7 +215,7 @@ SmartGit 25.1は問題のあるLFSステータスを明確にし、一般的な�
 
 # マイヒストリー：表示するプルリクエストをカスタマイズ
 
-{{<screenshot src="std-pull-requests.png" alt="SmartGit 25.1 スタンダードウィンドウのプルリクエストフィルタリングオプション - 集中したワークフロー管理">}}
+{{<screenshot alt="SmartGit 25.1 スタンダードウィンドウのプルリクエストフィルタリングオプション - 集中したワークフロー管理" src="std-pull-requests.png">}}
 
 ---
 
@@ -224,7 +224,7 @@ SmartGit 25.1は問題のあるLFSステータスを明確にし、一般的な�
 
 # マイヒストリー：フォーカスしたリベース表示
 
-{{<screenshot src="focused-rebasing-display.png" alt="SmartGit 25.1 マイヒストリーでのフォーカスしたリベース表示 - リベース中は関連するコミットのみを表示">}}
+{{<screenshot alt="SmartGit 25.1 マイヒストリーでのフォーカスしたリベース表示 - リベース中は関連するコミットのみを表示" src="focused-rebasing-display.png">}}
 
 ---
 
@@ -237,7 +237,7 @@ SmartGit 25.1は問題のあるLFSステータスを明確にし、一般的な�
 
 # 破棄が完全な名前変更の取り消しと追跡されていないファイルの削除に対応
 
-{{<screenshot src="discard-delete-untracked-file.png" alt="SmartGit 25.1 強化された破棄機能 - 名前変更を元に戻し、追跡されていないファイルをクリーンアップ">}}
+{{<screenshot alt="SmartGit 25.1 強化された破棄機能 - 名前変更を元に戻し、追跡されていないファイルをクリーンアップ" src="discard-delete-untracked-file.png">}}
 
 ---
 
@@ -250,7 +250,7 @@ SmartGit 25.1は問題のあるLFSステータスを明確にし、一般的な�
 
 # ワークツリー、トラッキング設定、プッシュ先のコマンド追加
 
-{{<screenshot src="new-commands.png" alt="SmartGit 25.1 スタンダードウィンドウのブランチ管理コマンド - トラッキングと公開">}}
+{{<screenshot alt="SmartGit 25.1 スタンダードウィンドウのブランチ管理コマンド - トラッキングと公開" src="new-commands.png">}}
 
 ---
 
@@ -264,7 +264,7 @@ SmartGit 25.1では、**マイヒストリー**と**すべてのブランチ + �
 
 # 環境設定：APIトークンの管理と低レベルプロパティの検索
 
-{{<screenshot src="preferences-authentication.png" alt="SmartGit 25.1 認証設定 - セキュアなAPIトークン管理とパスワード表示">}}
+{{<screenshot alt="SmartGit 25.1 認証設定 - セキュアなAPIトークン管理とパスワード表示" src="preferences-authentication.png">}}
 
 ---
 
@@ -275,12 +275,13 @@ SmartGit 25.1では、**マイヒストリー**と**すべてのブランチ + �
 
 # 更新チェックチャンネル：カスタマイズされた通知
 
-{{<screenshot src="preferences-channels.png" alt="SmartGit 25.1 更新通知チャンネルとクイック投票の設定 - カスタマイズされたコミュニケーション">}}
+{{<screenshot alt="SmartGit 25.1 更新通知チャンネルとクイック投票の設定 - カスタマイズされたコミュニケーション" src="preferences-channels.png">}}
 
 ---
 
 SmartGit 25.1では**更新チェックチャンネル**が追加され、どの通知を受け取るかを決められます。
-環境設定 > **SmartGit Updates**で、基本的な新バージョンアラートに加えて、興味のあるトピックを選択します。
+環境設定 &gt; **SmartGit Updates**で、基本的な新バージョンアラートに加えて、興味のあるトピックを選択します。
 
 SmartGitの将来の方向性を形作る短いアンケートに参加するために、**クイック投票**をオプトインすることをお勧めします。
 いつでも選択を変更できます。
+</screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></email></email></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot>

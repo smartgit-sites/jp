@@ -1,5 +1,5 @@
 ---
-title: "Thomas Singer"
+title: "トーマス・シンガー"
 
 position: "Co-Founder, Managing Director & GUI Expert"
 portrait: "thomas.png"

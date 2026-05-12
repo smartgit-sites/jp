@@ -1,15 +1,15 @@
 ---
-title: "GitHub Integration"
-headerH1: "SmartGit GitHub Integration"
-headerH2: "GitHub on your desktop"
-listTitle: "GitHub Integration"
-imageAltText: "SmartGit's GitHub integration interface for cloning repositories, creating pull requests, and managing code reviews directly from desktop."
-linkText: "More about Distributed Reviews Add-on"
+title: "GitHubの統合"
+headerH1: "SmartGit GitHub の統合"
+headerH2: "デスクトップ上の GitHub"
+listTitle: "GitHubの統合"
+imageAltText: "リポジトリのクローン作成、プル リクエストの作成、コード レビューの管理をデスクトップから直接行うための SmartGit の GitHub 統合インターフェイス。"
+linkText: "分散レビュー アドオンの詳細"
 category: ["feature"]
-headerMessage: "Handle **GitHub pull requests** and **reviews** directly inside SmartGit."
-description: "SmartGit streamlines GitHub workflows: clone the repository from GitHub, create pull requests, review and add comments."
-ogTitle: "SmartGit GitHub Integration on your desktop"
-ogDesc: "SmartGit streamlines GitHub workflows: clone the repository from GitHub, create pull requests, review and add comments."
+headerMessage: "**GitHub プル リクエスト** と **レビュー** を SmartGit 内で直接処理します。"
+description: "SmartGit は、GitHub のワークフローを合理化します。GitHub からリポジトリのクローンを作成し、プル リクエストを作成し、レビューしてコメントを追加します。"
+ogTitle: "デスクトップ上の SmartGit GitHub 統合"
+ogDesc: "SmartGit は、GitHub のワークフローを合理化します。GitHub からリポジトリのクローンを作成し、プル リクエストを作成し、レビューしてコメントを追加します。"
 weight: 9
 docsync:
   source:
@@ -76,10 +76,10 @@ SmartGitはGitHub向けのGitワークフローを効率化します：GitHubか
 クローンでは、自分のリポジトリと所属している組織のリポジトリが一覧表示されます。このリストから簡単に選択できます。
 
 
-# GitHub Enterpriseサポート
+# GitHub エンタープライズサポート
 
 {{<screenshot src="github-enterprise-support.png" alt="SmartGitのGitHub Enterprise設定パネル。複数のアカウントとプライベートGitHubインスタンスをサポート">}}
 
 ---
 
-すべてのGitHub機能は、会社の{{< link url="https://github.com/enterprise" display="GitHub Enterprise" >}}インスタンスでも動作します。**github.com**用のアカウントと、接続している各**GitHub Enterprise**インスタンス用のアカウントを持つことができます。
+すべてのGitHub機能は、会社の{{< link url="https://github.com/enterprise" display="GitHub エンタープライズ" >}}インスタンスでも動作します。**github.com**用のアカウントと、接続している各**GitHub Enterprise**インスタンス用のアカウントを持つことができます。

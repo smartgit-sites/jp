@@ -1,49 +1,49 @@
 ---
-title: "Learn SmartGit -- Git Documentation & Tutorials"
-ogTitle: "Learn SmartGit -- Git Documentation & Tutorials"
-ogDescription: "Get started with SmartGit: Interface guide, Git manual, tutorials, training & more. Built for developers and teams."
+title: "SmartGit を学ぶ -- Git ドキュメントとチュートリアル"
+ogTitle: "SmartGit を学ぶ -- Git ドキュメントとチュートリアル"
+ogDescription: "SmartGit を始めましょう: インターフェイス ガイド、Git マニュアル、チュートリアル、トレーニングなど。開発者とチーム向けに構築されています。"
 
-headerH1: "Learn SmartGit"
-headerH2: "Master Git with confidence"
+headerH1: "SmartGit を学ぶ"
+headerH2: "自信を持って Git をマスターする"
 
 workFlowExplorer:
     - name: "Full Documentation"
-      desc: "The Manual is your comprehensive guide to SmartGit's full feature set. Dive into every option, menu, and workflow SmartGit offers -- perfect for power users and professionals."
+      desc: "このマニュアルは、SmartGit の全機能セットについての包括的なガイドです。 SmartGit が提供するすべてのオプション、メニュー、ワークフローを詳しく見てみましょう。パワー ユーザーや専門家に最適です。"
       icon: "fa-light fa-books fa-2x"
       link: "https://docs.syntevo.com/SmartGit/Latest/Manual/"
-      linkText: "Read Docs"
+      linkText: "ドキュメントを読む"
       target: "_blank"
     - name: "How-Tos"
-      desc: "Explore our How Tos to follow step-by-step tutorials for common Git tasks in SmartGit. Designed for clarity and actionability -- get things done, fast."
+      desc: "SmartGit での一般的な Git タスクのステップバイステップのチュートリアルに従うための How To を参照してください。明確さと実用性を重視して設計されており、作業を迅速に完了できます。"
       icon: "fa-light fa-circle-question fa-2x"
       link: "https://docs.syntevo.com/SmartGit/Latest/HowTos/"
-      linkText: "Get Tutorials"
+      linkText: "チュートリアルを入手する"
       target: "_blank"
     - name: "Technical Blog"
-      desc: "Read articles about Git best practices, workflows, and feature deep dives from our team."
+      desc: "Git のベスト プラクティス、ワークフロー、および当社チームによる機能の詳細に関する記事をお読みください。"
       icon: "fa-light fa-list fa-2x"
       link: "https://blog.syntevo.com/"
-      linkText: "Blog"
+      linkText: "ブログ"
       target: "_blank"
 
 getInvolved:
     - name: "Video Guides"
-      desc: "Learn visually with bite-sized tutorials and walkthroughs on YouTube."
+      desc: "YouTube の簡単なチュートリアルとウォークスルーで視覚的に学びましょう。"
       icon: "fa-brands fa-youtube fa-2x"
       link: "https://www.youtube.com/c/smartgit"
       linkText: "YouTube"
       target: "_blank"
     - name: "Community Forum"
-      desc: "Ask questions, share tips, and connect with other SmartGit users."
+      desc: "質問したり、ヒントを共有したり、他の SmartGit ユーザーとつながったりできます。"
       icon: "fa-light fa-list-tree fa-2x"
       link: "https://smartgit.userecho.com/"
-      linkText: "Forum"
+      linkText: "フォーラム"
       target: "_blank"
     - name: "Git-Skills"
-      desc: "Level up your Git knowledge with structured, hands-on quizzes at Git-Skills."
+      desc: "Git-Skills の構造化された実践的なクイズで Git の知識をレベルアップします。"
       icon: "fa-light fa-chalkboard-user fa-2x"
       link: "https://www.git-skills.dev"
-      linkText: "Git-Skills"
+      linkText: "Git スキル"
       target: "_blank"
 
 
@@ -67,24 +67,24 @@ workFlowLinks:
 
 integrationGuides:
   - name: ""
-    desc: "Learn how to connect SmartGit with GitHub, GitLab, Bitbucket, and more."
+    desc: "SmartGit を GitHub、GitLab、Bitbucket などに接続する方法を学びます。"
     icon: "fa-light fa-timeline-arrow fa-lg"
   - name: ""
-    desc: "Configure external tools and services for a seamless experience."
+    desc: "外部ツールとサービスを構成して、シームレスなエクスペリエンスを実現します。"
     icon: "fa-light fa-screwdriver-wrench fa-lg"
   - name: ""
-    desc: "Automate tasks with SmartGit's built-in features."
+    desc: "SmartGit の組み込み機能を使用してタスクを自動化します。"
     icon: "fa-light fa-bolt-auto fa-lg"
 
 bestPractices:
   - name: ""
-    desc: "Optimize your Git workflow with expert-recommended techniques."
+    desc: "専門家が推奨するテクニックを使用して Git ワークフローを最適化します。"
     icon: "fa-light fa-chart-line-up fa-lg"
   - name: ""
-    desc: "Learn version control strategies for small and large teams."
+    desc: "小規模および大規模なチーム向けのバージョン管理戦略を学びます。"
     icon: "fa-light fa-rectangle-vertical-history fa-lg"
   - name: ""
-    desc: "Avoid common pitfalls with curated tips from industry professionals"
+    desc: "業界の専門家が厳選したヒントでよくある落とし穴を回避"
     icon: "fa-light fa-hand-holding-magic fa-lg"
 docsync:
   source:
@@ -113,9 +113,9 @@ docsync:
 <div style="margin-bottom: 80px;"></div>
 
 {{% section-with-content sectionClasses="bg-sg-gray-100 py-5 mb-5" columnClasses="col-12 col-md-6" isSectionFluid="true" %}}
-### **連携**ガイド 
+### **連携**ガイド
 {{< definitionlist listSource="/learn/" listName="integrationGuides" dtClass="col-1 sg-indigo-500" ddClass="col-11" >}}
---- 
+---
 ### **ベスト**プラクティス
 {{< definitionlist listSource="/learn/" listName="bestPractices" dtClass="col-1 sg-indigo-500" ddClass="col-11" >}}
 {{% /section-with-content %}}

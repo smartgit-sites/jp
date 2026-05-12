@@ -1,6 +1,6 @@
 ---
-title: "Evaluate SmartGit"
-description: "Start a free 30‑day evaluation of SmartGit — anonymous and available on all your development machines, including VMs."
+title: "SmartGit を評価する"
+description: "SmartGit の 30 日間の無料評価を開始します。匿名で、VM を含むすべての開発マシンで利用できます。"
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git

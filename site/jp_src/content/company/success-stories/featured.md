@@ -1,5 +1,5 @@
 ---
-title: "Featured success-stories"
+title: "注目の成功事例"
 headless: true
 docsync:
   source:
@@ -17,10 +17,10 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-# headline
+# 見出し
 
 あなた自身のGitクライアント成功事例を体験しましょう！
 
-# subline
+# サブライン
 
 成功している開発者たちがSmartGitについて語ること

@@ -1,8 +1,8 @@
 ---
-title: "Next Version Preview"
+title: "次のバージョンのプレビュー"
 layout: "page"
 partial: "preview-version"
-description: "Download preview version of SmartGit client for Windoes, MacOS and Linux."
+description: "Windows、MacOS、Linux 用の SmartGit クライアントのプレビュー バージョンをダウンロードします。"
 keywords: ["Download SmartGit"]
 weight: 30
 docsync:

@@ -1,9 +1,9 @@
 ---
-title: "Latest Builds"
-headerH2: "Not yet released"
+title: "最新のビルド"
+headerH2: "まだリリースされていません"
 layout: "page"
 partial: "latest-builds"
-description: "Download preview version of SmartGit client for Windoes, MacOS and Linux."
+description: "Windows、MacOS、Linux 用の SmartGit クライアントのプレビュー バージョンをダウンロードします。"
 keywords: ["Download SmartGit"]
 weight: 20
 docsync:

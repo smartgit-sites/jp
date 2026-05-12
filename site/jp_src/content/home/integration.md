@@ -1,5 +1,5 @@
 ---
-title: "SmartGit Integrations with GitHub, Bitbucket & More"
+title: "SmartGit と GitHub、Bitbucket などの統合"
 headless: true
 
 icon: "fa-light fa-hexagon-nodes"

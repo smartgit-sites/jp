@@ -1,5 +1,5 @@
 ---
-title: "Company Licenses"
+title: "会社のライセンス"
 headless: true
 
 weight: 4

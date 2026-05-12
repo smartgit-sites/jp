@@ -1,5 +1,5 @@
 ---
-title: "Resellers"
+title: "再販業者"
 headless: true
 
 weight: 13

@@ -1,7 +1,7 @@
 ---
-title: "From Chaos to Clarity: How SmartGit Transforms Complex Code Reviews"
-description: "Explore how SmartGit brings structure to large-scale code reviews with powerful visual tools that help developers ensure clarity and consistency."
-summary: "When a single file spans thousands of lines of C++ code, even seasoned developers need a reliable ally—enter SmartGit's game-changing review capabilities."
+title: "混沌から明瞭さへ: SmartGit が複雑なコード レビューをどのように変革するか"
+description: "SmartGit が、開発者が明確さと一貫性を確保するのに役立つ強力なビジュアル ツールを使用して、大規模なコード レビューにどのように構造をもたらすかを調べてください。"
+summary: "1 つのファイルが数千行の C++ コードにまたがる場合、熟練した開発者でも信頼できる味方が必要になります。SmartGit の革新的なレビュー機能を利用してください。"
 testimonial_user: "Daniel Griscom"
 testimonial_company: "Suitable Systems"
 testimonial_avatar: "/images/avatars/man1.png"
@@ -23,62 +23,62 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-# testimonial
+# 証言
 
-I've been tweaking some C++ classes, and I always carefully review each batch of edits in the SmartGit Changes view ... With my changes scattered all over this 1,700-line file, I can't imagine a better way to make sure my changes are consistent and complete.
+私はいくつかの C++ クラスを微調整しており、常に SmartGit の変更ビューで編集の各バッチを注意深く確認しています...この 1,700 行のファイル全体に変更が散在しているため、変更の一貫性と完全性を確認するこれ以上の方法は考えられません。
 
-# summary
+# まとめ
 
-When dealing with extensive codebases, precision matters. Just ask one of our long-time users, a C++ developer who regularly works with files exceeding 1,700 lines of code. What could have been a challenging and error-prone review process has been transformed into a streamlined, confident workflow thanks to SmartGit.
+広範なコードベースを扱う場合、精度が重要になります。私たちの長年のユーザーの 1 人である、コード 1,700 行を超えるファイルを定期的に扱う C++ 開発者に聞いてみてください。 SmartGit のおかげで、困難でエラーが発生しやすいレビュー プロセスが、合理化された自信に満ちたワークフローに変わりました。
 
-# challenge
+# チャレンジ
 
-- Managing scattered changes across large C++ class files
-- Ensuring consistency across multiple code modifications
-- Maintaining accuracy during complex code reviews
-- Navigating through thousands of lines of code efficiently
+- 大規模な C++ クラス ファイル全体に散在する変更を管理する
+- 複数のコード変更間の一貫性を確保する
+- 複雑なコードレビュー中に精度を維持する
+- 数千行のコードを効率的にナビゲートする
 
-# solution
+# 解決
 
-Using SmartGit's Changes view, the developer can:
+SmartGit の変更ビューを使用すると、開発者は次のことができます。
 
-- Instantly visualize all modifications in context
-- Review changes systematically, regardless of their location in the file
-- Track every edit with precision
+- すべての変更をコンテキスト内で即座に視覚化
+- ファイル内の場所に関係なく、変更を系統的にレビューします。
+- すべての編集を正確に追跡する
 
-This is supported by quickly navigating the Files view and/or opening separate Compare windows, on demand
+これは、ファイル ビューにすばやく移動したり、オンデマンドで別の比較ウィンドウを開くことによってサポートされます。
 
-# gallery
+# ギャラリー
 
-![Changes View](./changes-view.png "Changes View")
+![ビューの変更](./changes-view.png "ビューの変更")
 
 ![Git Diff](./git-diff.png "Git Diff")
 
-# impact
+# インパクト
 
-- Reduced review time by providing clear, contextual visibility of changes
-- Minimized the risk of overlooking critical code changes through inline change display
-- Improved code quality through comprehensive review capabilities
-- Enhanced developer confidence in code modifications
+- 変更を状況に応じて明確に可視化することで、レビュー時間を短縮します。
+- インライン変更表示により、重要なコード変更を見落とすリスクを最小限に抑えます。
+- 包括的なレビュー機能によるコード品質の向上
+- コード変更に対する開発者の信頼性が向上
 
-# benefits
+# 利点
 
-- Enhanced visibility of code changes
-- Improved accuracy in code reviews
-- Increased confidence in code modifications
-- Streamlined review process for large files
+- コード変更の可視性の向上
+- コードレビューの精度の向上
+- コード変更に対する信頼性の向上
+- 大きなファイルのレビュープロセスを合理化
 
-# features
+# 特徴
 
-- Changes View
-- Files View
-- Compare windows
+- ビューの変更
+- ファイルビュー
+- 比較ウィンドウ
 
-# conclusion
+# 結論
 
-This real-world example demonstrates how SmartGit's intuitive Changes view transforms complex code review challenges into manageable, efficient processes, helping developers maintain high standards of code quality even when working with extensive codebases.
+この実際の例は、SmartGit の直感的な変更ビューが複雑なコード レビューの課題を管理しやすく効率的なプロセスに変換し、開発者が広範なコードベースを扱う場合でも高水準のコード品質を維持できるようにする方法を示しています。
 
-# internal notes (not rendered to HTML)
+# 内部メモ (HTML にはレンダリングされません)
 
 Screenshot:
 https://github.com/Serial-Studio/Serial-Studio.git

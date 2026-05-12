@@ -1,5 +1,5 @@
 ---
-title: "Features:"
+title: "特徴:"
 
 icon: "fa-light fa-sparkles"
 docsync:

@@ -1,5 +1,5 @@
 ---
-title: "Main Menu"
+title: "メインメニュー"
 headless: true
 
 labelToggle: "Toggle navigation"

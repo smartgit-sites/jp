@@ -1,9 +1,9 @@
 ---
-title: "About us | Part of the Syntevo Family"
-description: "Meet the people behind SmartGit -- a dedicated team building intuitive Git tools for developers, teams, and enterprises."
-headerH1: "Part of the Syntevo family"
-headerH2: "About us"
-headerMessage: "SmartGit is one of several industry-used tools developed by Syntevo. As a trusted parent brand, Syntevo ensures that every product, including SmartGit, upholds the highest standards of quality, reliability, and performance."
+title: "私たちについて | Syntevo ファミリーの一員"
+description: "SmartGit の背後にいる人々をご紹介します。開発者、チーム、企業向けの直感的な Git ツールを構築する専任チームです。"
+headerH1: "Syntevo ファミリーの一員"
+headerH2: "私たちについて"
+headerMessage: "SmartGit は、Syntevo が開発した業界で使用されているツールの 1 つです。 Syntevo は、信頼できる親ブランドとして、SmartGit を含むすべての製品が最高の品質、信頼性、パフォーマンス基準を維持していることを保証します。"
 
 layout: "about-us"
 docsync:

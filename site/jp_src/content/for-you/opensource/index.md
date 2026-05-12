@@ -1,13 +1,13 @@
 ---
-title: "SmartGit for Open Source"
-ogTitle: "SmartGit for Open Source"
-ogDescription: "SmartGit is a professional Git GUI for developers who maintain and contribute to serious open source repositories. Free licenses available for eligible projects."
+title: "オープンソース向けの SmartGit"
+ogTitle: "オープンソース向けの SmartGit"
+ogDescription: "SmartGit は、本格的なオープン ソース リポジトリを維持し、それに貢献する開発者向けのプロフェッショナルな Git GUI です。対象となるプロジェクトには無料のライセンスが利用可能です。"
 
-headerH1: "SmartGit for Open Source"
-headerH2: "Professional Git tooling for serious projects"
-headerMessage: "Professional Git tooling for serious projects"
+headerH1: "オープンソース向けの SmartGit"
+headerH2: "本格的なプロジェクト向けのプロフェッショナルな Git ツール"
+headerMessage: "本格的なプロジェクト向けのプロフェッショナルな Git ツール"
 
-description: "SmartGit is a professional Git GUI built for developers who maintain and contribute to serious open source repositories."
+description: "SmartGit は、本格的なオープン ソース リポジトリを維持し、それに貢献する開発者向けに構築されたプロフェッショナルな Git GUI です。"
 
 weight: 60
 docsync:
@@ -26,61 +26,59 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-
 <div class="container my-5">
 <div class="row g-5 align-items-center">
 <div class="col-12 col-lg-6">
-<img src="/features/visual-history/graphical-history-view.png" alt="SmartGit visual repository graph" class="img-fluid rounded shadow">
+<img alt="SmartGit ビジュアル リポジトリ グラフ" class="img-fluid rounded shadow" src="/features/visual-history/graphical-history-view.png"/>
 </div>
 <div class="col-12 col-lg-6">
 <div class="ps-lg-4">
-<h2 class="sg-indigo-500 mb-3">See the Whole Repository. Make Better Decisions.</h2>
-<ul style="list-style: none; padding-left: 0;" class="mb-4">
-<li class="mb-3"><i class="fa-light fa-check sg-orange-500 me-2"></i><span class="text-muted">Understand branch structures instantly</span></li>
-<li class="mb-3"><i class="fa-light fa-check sg-orange-500 me-2"></i><span class="text-muted">Rewrite history safely with full preview</span></li>
-<li class="mb-3"><i class="fa-light fa-check sg-orange-500 me-2"></i><span class="text-muted">Resolve conflicts and manage submodules with clarity</span></li>
+<h2 class="sg-indigo-500 mb-3">リポジトリ全体を参照してください。より良い決断を下しましょう。</h2>
+<ul class="mb-4" style="list-style: none; padding-left: 0;">
+<li class="mb-3"><i class="fa-light fa-check sg-orange-500 me-2"></i><span class="text-muted">分岐構造を瞬時に理解する</span></li>
+<li class="mb-3"><i class="fa-light fa-check sg-orange-500 me-2"></i><span class="text-muted">完全なプレビューで履歴を安全に書き換える</span></li>
+<li class="mb-3"><i class="fa-light fa-check sg-orange-500 me-2"></i><span class="text-muted">競合を解決し、サブモジュールを明確に管理します</span></li>
 </ul>
-<p class="fs-5 sg-indigo-500 fw-semibold mb-4">Reducing risk where mistakes are public.</p>
+<p class="fs-5 sg-indigo-500 fw-semibold mb-4">間違いが公になった場合のリスクを軽減します。</p>
 <div class="d-flex gap-3 flex-wrap mb-3">
-<a href="/download/" class="btn btn-sg-orange btn-lg px-4">
-<i class="fa-light fa-download me-2"></i>Download SmartGit
+<a class="btn btn-sg-orange btn-lg px-4" href="/download/">
+<i class="fa-light fa-download me-2"></i>SmartGitをダウンロード
 </a>
-<a href="/features/" class="btn btn-outline-sg-indigo btn-lg px-4">
-See it in Action <i class="fa-light fa-arrow-right ms-2"></i>
+<a class="btn btn-outline-sg-indigo btn-lg px-4" href="/features/">
+実際に見てみる <i class="fa-light fa-arrow-right ms-2"></i>
 </a>
 </div>
-<p class="text-muted small mb-0"><em>Free licenses available for eligible open source projects.</em></p>
+<p class="text-muted small mb-0"><em>対象となるオープンソース プロジェクトには無料ライセンスが利用可能です。</em></p>
 </div>
 </div>
 </div>
 </div>
-
 <div class="container-fluid bg-sg-orange-500-rgb bg-opacity-10 py-5 my-5">
 <div class="container">
 <div class="row justify-content-center align-items-center">
 <div class="col-12 col-lg-3 text-center mb-4 mb-lg-0">
-<img src="/images/smartgitty.png" alt="SmartGitty" style="max-width: 220px; width: 100%; height: auto;">
+<img alt="SmartGitty" src="/images/smartgitty.png" style="max-width: 220px; width: 100%; height: auto;"/>
 </div>
 <div class="col-12 col-lg-7 ps-lg-5">
-<h2 class="sg-indigo-500 mb-3 fw-bold">Our Commitment to Open Source</h2>
-<p class="fs-5 text-muted mb-3">Open source drives modern software development.</p>
-<p class="fs-5 text-muted mb-4">The SmartGit team has made a conscious decision to support that ecosystem:</p>
-<p class="fs-4 sg-indigo-500 fw-bold mb-4">SmartGit is available free of charge for eligible open source projects.</p>
-<p class="fs-5 text-muted mb-2">This is not a limited edition.</p>
-<p class="fs-5 text-muted mb-2">It is not a feature-restricted version.</p>
-<p class="fs-5 text-muted mb-4">It's the full professional Git GUI — provided to contributors and maintainers who invest their time in open source.</p>
-<p class="fs-5 sg-indigo-500 fw-semibold mb-0">Because open source deserves professional tools.</p>
+<h2 class="sg-indigo-500 mb-3 fw-bold">オープンソースへの取り組み</h2>
+<p class="fs-5 text-muted mb-3">オープンソースは最新のソフトウェア開発を推進します。</p>
+<p class="fs-5 text-muted mb-4">SmartGit チームは、そのエコシステムをサポートするという意識的な決定を下しました。</p>
+<p class="fs-4 sg-indigo-500 fw-bold mb-4">SmartGit は、対象となるオープンソース プロジェクトで無料で利用できます。</p>
+<p class="fs-5 text-muted mb-2">これは限定版ではありません。</p>
+<p class="fs-5 text-muted mb-2">機能制限版ではありません。</p>
+<p class="fs-5 text-muted mb-4">これは完全にプロフェッショナルな Git GUI であり、オープンソースに時間を費やしている貢献者や保守者に提供されます。</p>
+<p class="fs-5 sg-indigo-500 fw-semibold mb-0">オープンソースにはプロフェッショナルなツールが必要だからです。</p>
 </div>
 </div>
 <div class="row justify-content-center mt-5">
 <div class="col-12 col-lg-10 text-center">
-<h3 class="sg-indigo-500 mb-4 fw-bold">Get SmartGit for Your Open Source Project</h3>
+<h3 class="sg-indigo-500 mb-4 fw-bold">オープンソース プロジェクトに SmartGit を入手</h3>
 <div class="d-flex gap-3 justify-content-center mb-4">
-<a href="https://www.syntevo.com/register-non-commercial/" class="btn btn-sg-orange btn-lg px-5 py-3 d-flex justify-content-center align-items-center" style="min-width: 240px; white-space: nowrap;">
-Apply for a Free Open Source License
+<a class="btn btn-sg-orange btn-lg px-5 py-3 d-flex justify-content-center align-items-center" href="https://www.syntevo.com/register-non-commercial/" style="min-width: 240px; white-space: nowrap;">
+無料のオープンソース ライセンスを申請する
 </a>
-<a href="/download/" class="btn btn-outline-sg-indigo btn-lg px-5 py-3 d-flex justify-content-center align-items-center" style="min-width: 240px; white-space: nowrap;">
-<i class="fa-light fa-download me-2"></i>Download SmartGit
+<a class="btn btn-outline-sg-indigo btn-lg px-5 py-3 d-flex justify-content-center align-items-center" href="/download/" style="min-width: 240px; white-space: nowrap;">
+<i class="fa-light fa-download me-2"></i>SmartGitをダウンロード
 </a>
 </div>
 <div class="d-flex gap-4 justify-content-center align-items-center">
@@ -92,70 +90,65 @@ Apply for a Free Open Source License
 </div>
 </div>
 </div>
-
 <div class="container my-5">
 <div class="row justify-content-center mb-5">
 <div class="col-12 col-lg-8 text-center">
-<h2 class="sg-indigo-500 mb-3">Advanced Git Tools for Maintainers and Contributors</h2>
-<p class="fs-5 text-muted">Maintaining an open source project requires responsibility and precision. SmartGit supports professional workflows with:</p>
+<h2 class="sg-indigo-500 mb-3">メンテナとコントリビュータのための高度な Git ツール</h2>
+<p class="fs-5 text-muted">オープンソース プロジェクトを維持するには、責任と正確さが必要です。 SmartGit は、次の機能でプロフェッショナルなワークフローをサポートします。</p>
 </div>
 </div>
-
 <div class="row g-5 align-items-center mb-5">
 <div class="col-12 col-lg-6">
-<img src="/features/clean-commits/index.png" alt="SmartGit interactive rebase with full preview" class="img-fluid rounded shadow">
+<img alt="完全なプレビューを備えた SmartGit インタラクティブなリベース" class="img-fluid rounded shadow" src="/features/clean-commits/index.png"/>
 </div>
 <div class="col-12 col-lg-6">
 <div class="ps-lg-4">
 <i class="fa-light fa-list-ol fa-2x sg-indigo-500 mb-3"></i>
-<h3 class="sg-indigo-500 mb-3">Interactive Rebase with Full Preview</h3>
-<p class="mb-3">Reorder, squash, and edit commits visually — and see exactly what will change before executing.</p>
+<h3 class="sg-indigo-500 mb-3">完全なプレビューを備えたインタラクティブなリベース</h3>
+<p class="mb-3">コミットを視覚的に並べ替え、潰し、編集し、実行前に何が変更されるかを正確に確認します。</p>
 <ul class="text-muted mb-4" style="list-style: none; padding-left: 0;">
-<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>Reorder, squash, and edit commits visually</li>
-<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>See exactly what will change before executing</li>
-<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>Rewrite history with confidence</li>
+<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>コミットを視覚的に並べ替え、圧縮し、編集する</li>
+<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>実行前に何が変わるかを正確に確認する</li>
+<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>自信を持って歴史を書き換える</li>
 </ul>
-{{< button-outline-indigo url="/features/clean-commits/" display="Learn more about Clean Commits" >}}
+{{< button-outline-indigo url="/features/clean-commits/" display="クリーンコミットについて詳しく見る" >}}
 </div>
 </div>
 </div>
-
 <div class="row g-5 align-items-center mb-5">
 <div class="col-12 col-lg-6 order-lg-2">
-<img src="/features/conflict-resolution/three-pane-view-for-complete-clarity.png" alt="SmartGit merge conflict resolution" class="img-fluid rounded shadow">
+<img alt="SmartGit マージ競合の解決" class="img-fluid rounded shadow" src="/features/conflict-resolution/three-pane-view-for-complete-clarity.png"/>
 </div>
 <div class="col-12 col-lg-6 order-lg-1">
 <div class="pe-lg-4">
 <i class="fa-light fa-code-merge fa-2x sg-indigo-500 mb-3"></i>
-<h3 class="sg-indigo-500 mb-3">Powerful Merge Conflict Resolution</h3>
-<p class="mb-3">Clear side-by-side diff views with a clean staging overview for controlled conflict handling.</p>
+<h3 class="sg-indigo-500 mb-3">強力なマージ競合解決</h3>
+<p class="mb-3">制御された競合処理のための明確なステージング概要を備えた明確な並列差分ビュー。</p>
 <ul class="text-muted mb-4" style="list-style: none; padding-left: 0;">
-<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>Side-by-side diff views</li>
-<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>Clear staging overview</li>
-<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>Controlled conflict handling</li>
+<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>並べて表示する差分ビュー</li>
+<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>明確なステージングの概要</li>
+<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>制御された競合処理</li>
 </ul>
-{{< button-outline-indigo url="/features/conflict-resolution/" display="Learn more about Conflict Resolution" >}}
+{{< button-outline-indigo url="/features/conflict-resolution/" display="競合解決について詳しく見る" >}}
 </div>
 </div>
 </div>
-
 <div class="row g-5 align-items-center mb-5">
 <div class="col-12 col-lg-6">
-<img src="/features/standard-window/standard-window-elements.png" alt="SmartGit large repository and submodule support" class="img-fluid rounded shadow">
+<img alt="SmartGit の大規模リポジトリとサブモジュールのサポート" class="img-fluid rounded shadow" src="/features/standard-window/standard-window-elements.png"/>
 </div>
 <div class="col-12 col-lg-6">
 <div class="ps-lg-4">
 <i class="fa-light fa-folder-tree fa-2x sg-indigo-500 mb-3"></i>
-<h3 class="sg-indigo-500 mb-3">Large Repository & Submodule Support</h3>
-<p class="mb-3">Handle growing mono-repositories and manage submodules while keeping orientation in complex projects.</p>
+<h3 class="sg-indigo-500 mb-3">大規模なリポジトリとサブモジュールのサポート</h3>
+<p class="mb-3">複雑なプロジェクトの方向性を維持しながら、増大するモノリポジトリを処理し、サブモジュールを管理します。</p>
 <ul class="text-muted mb-4" style="list-style: none; padding-left: 0;">
-<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>Handle growing mono-repositories</li>
-<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>Manage submodules</li>
-<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>Keep orientation in complex projects</li>
+<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>増大するモノリポジトリの処理</li>
+<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>サブモジュールの管理</li>
+<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>複雑なプロジェクトでも方向性を保つ</li>
 </ul>
-{{< button-outline-indigo url="/features/three-window-styles/" display="Learn more about Window Styles" >}}
+{{< button-outline-indigo url="/features/three-window-styles/" display="ウィンドウ スタイルの詳細については、こちらをご覧ください。" >}}
 </div>
 </div>
 </div>
-
 </div>

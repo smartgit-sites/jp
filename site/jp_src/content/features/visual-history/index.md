@@ -1,14 +1,14 @@
 ---
-title: "SmartGit Visual History"
-headerH2: "Tailor the History to Your Needs"
-listTitle: "Customizable Visual History"
-imageAltText: "SmartGit's customizable Graph View displaying Git branching structure, commit history, and visual file diffs for precise repository navigation."
-linkText: "More about Customizable Visual History"
+title: "SmartGit ビジュアルヒストリー"
+headerH2: "ニーズに合わせて履歴をカスタマイズする"
+listTitle: "カスタマイズ可能なビジュアルヒストリー"
+imageAltText: "SmartGit のカスタマイズ可能なグラフ ビューには、Git の分岐構造、コミット履歴、視覚的なファイルの差分が表示され、正確なリポジトリ ナビゲーションが可能です。"
+linkText: "カスタマイズ可能なビジュアルヒストリーの詳細"
 category: ["feature"]
-headerMessage: "Trace your repository's story with a customizable **graph** and powerful **filters**."
-description: "Explore SmartGit's powerful visual Git history: track commits, customize views, and navigate your repository with precision. Try SmartGit now."
-ogTitle: "SmartGit Features -- Visual Git Tools for Developers and Teams"
-ogDesc: "Customize your Git history with SmartGit's Graph View -- visualize commits, use smart filters, and tailor your Git workflow visually."
+headerMessage: "カスタマイズ可能な**グラフ**と強力な**フィルター**を使用して、リポジトリのストーリーを追跡します。"
+description: "SmartGit の強力で視覚的な Git 履歴を探索し、コミットを追跡し、ビューをカスタマイズし、リポジトリを正確にナビゲートします。今すぐ SmartGit を試してください。"
+ogTitle: "SmartGit の機能 -- 開発者とチームのためのビジュアル Git ツール"
+ogDesc: "SmartGit のグラフ ビューを使用して Git 履歴をカスタマイズします。コミットを視覚化し、スマート フィルターを使用して、Git ワークフローを視覚的に調整します。"
 weight: 6
 docsync:
   source:
@@ -100,9 +100,9 @@ SmartGitのグラフビューはワークフローに適応します。表示す
 ---
 
 Git履歴の書き換えはドラッグアンドドロップと同じくらい簡単です - ターミナルコマンドは必要ありません！
-SmartGitの{{< link display="グラフビュー" url="https://docs.syntevo.com/SmartGit/Latest/Manual/GUI/Graph-View" >}}では、コミットを所定の位置にドラッグすることで、簡単に並べ替え、スカッシュ、またはリベースできます。{{< link display="Branchesビュー" url="https://docs.syntevo.com/SmartGit/Latest/Manual/GUI/Branches-view" >}}とグラフビューの間でコミットやrefを移動して、refを更新したり、ブランチをリベースしたり、変更を単一のアクションでマージしたりできます。最小限の労力で最大限の柔軟性を実現します。
+SmartGitの{{< link display="グラフビュー" url="https://docs.syntevo.com/SmartGit/Latest/Manual/GUI/Graph-View" >}}では、コミットを所定の位置にドラッグすることで、簡単に並べ替え、スカッシュ、またはリベースできます。{{< link display="ブランチズビュー" url="https://docs.syntevo.com/SmartGit/Latest/Manual/GUI/Branches-view" >}}とグラフビューの間でコミットやrefを移動して、refを更新したり、ブランチをリベースしたり、変更を単一のアクションでマージしたりできます。最小限の労力で最大限の柔軟性を実現します。
 
 <div class="plain-links">
     {{< link url="https://docs.syntevo.com/SmartGit/Latest/Manual/GUI/Graph-View" display="グラフビューの詳細">}}<br>
-    {{< link url="https://docs.syntevo.com/SmartGit/Latest/Manual/GUI/Branches-view" display="Branchesビューの詳細">}}
+    {{< link url="https://docs.syntevo.com/SmartGit/Latest/Manual/GUI/Branches-view" display="ブランチズビューの詳細">}}
 </div>

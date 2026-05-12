@@ -1,5 +1,5 @@
 ---
-title: "What Users Say About **SmartGit**"
+title: "**SmartGit** についてのユーザーの意見"
 headless: true
 docsync:
   source:

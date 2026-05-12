@@ -1,8 +1,8 @@
 ---
-title: "Privacy policy"
-description: "Learn how SmartGit and Syntevo GmbH handle your data. Transparent, secure, and GDPR-compliant."
-headerH1: "Privacy policy"
-headerH2: "Data Protection Declaration"
+title: "プライバシーポリシー"
+description: "SmartGit と Syntevo GmbH がデータをどのように処理するかを学びましょう。透明性があり、安全で、GDPR に準拠しています。"
+headerH1: "プライバシーポリシー"
+headerH2: "データ保護宣言"
 teaserFollowUp: "soft"
 docsync:
   source:
@@ -20,110 +20,110 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-Links to other sites are given for your convenience. syntevo GmbH is not responsible for the content and accuracy of these linked resources which may be protected by copyright laws.
+他のサイトへのリンクは、便宜のために提供されています。 syntevo GmbH は、著作権法で保護されているこれらのリンクされたリソースの内容および正確性について責任を負いません。
 
-All trademarks referenced in this website are properties of their respective owners.
+このウェブサイトで参照されているすべての商標は、それぞれの所有者の財産です。
 
-### Data Protection Declaration
+### データ保護宣言
 
-1. #### Information on the Collection of Personal Data and Contact Details of the Controller
-   1. We are pleased that you are visiting our website and thank you for your interest. On the following pages, we inform you about the handling of your personal data when using our website. Personal data is all data with which you can be personally identified.
-   2. The controller in charge of data processing on this website, within the meaning of the General Data Protection Regulation (GDPR), is syntevo GmbH, Salzburger Str. 17, 83404 Ainring, Deutschland, E-Mail: info@syntevo.com. The controller in charge of the processing of personal data is the natural or legal person who alone or jointly with others determines the purposes and means of the processing of personal data.
-   
-2. #### Data Collection When You Visit Our Website
-    1. When using our website for information only, i.e. if you do not register or otherwise provide us with information, we only collect data that your browser transmits to our server (so-called "server log files"). When you visit our website, we collect the following data that is technically necessary for us to display the website to you:
-        - Our visited website
-        - Date and time at the moment of access
-        - Amount of data sent in bytes
-        - Source/reference from which you came to the page
-        - Browser used
-        - Operating system used
-        - IP address used (if applicable: in anonymized form)
-        
-        Data processing is carried out in accordance with Art. 6 (1) point f GDPR on the basis of our legitimate interest in improving the stability and functionality of our website. The data will not be passed on or used in any other way. However, we reserve the right to check the server log files subsequently, if there are any concrete indications of illegal use.
+1. #### 個人データの収集に関する情報および管理者の連絡先詳細
+   1. 当社ウェブサイトをご覧いただき、誠にありがとうございます。ご興味をお持ちいただきありがとうございます。以下のページでは、当社ウェブサイトのご利用に際し、お客様の個人情報の取り扱いについてご案内いたします。個人データとは、お客様を個人的に特定できるすべてのデータです。
+   2. 一般データ保護規則 (GDPR) の意味において、この Web サイトでのデータ処理を担当する管理者は、ザルツブルガー通りの syntevo GmbH です。 17、83404 アインリング、ドイツ、電子メール: info@syntevo.com。個人データの処理を担当する管理者は、個人データの処理の目的と手段を単独で、または他者と共同で決定する自然人または法人です。
 
-   2. This website uses SSL or TLS encryption for security reasons and to protect the transmission of personal data and other confidential content (e.g. orders or inquiries to the controller). You can recognize an encrypted connection by the character string https:// and the lock symbol in your browser line.
-   
-3. #### Hosting & Content Delivery Network
-    ##### Cloudflare
-    We use a content delivery network offered by the following provider: Cloudflare Inc., 101 Townsend St. San Francisco, CA 94107, USA
+2. #### 当社の Web サイトにアクセスしたときのデータ収集
+    1. 当社の Web サイトを情報提供のみを目的として使用する場合、つまり、お客様が登録またはその他の方法で当社に情報を提供しない場合、当社はお客様のブラウザが当社のサーバーに送信するデータ (いわゆる「サーバー ログ ファイル」) のみを収集します。あなたが当社のウェブサイトにアクセスすると、当社はウェブサイトを表示するために技術的に必要な以下のデータを収集します。
+        - 訪問したウェブサイト
+        - アクセス時の日時
+        - 送信されるデータ量 (バイト単位)
+        - このページにアクセスしたソース/参照元
+        - 使用したブラウザ
+        - 使用されているオペレーティング システム
+        - 使用される IP アドレス (該当する場合: 匿名化された形式)
 
-    This service enables us to deliver large media files such as graphics, page content or scripts faster via a network of regionally distributed servers. The processing is carried out to protect our legitimate interest in improving the stability and functionality of our website pursuant to Art. 6 (1) point f GDPR. We have concluded an order processing agreement with the provider, ensuring the protection of our site visitors' data and prohibiting unauthorised disclosure to third parties.
+        データ処理は、Art. 6 (1) ポイント f GDPR は、当社 Web サイトの安定性と機能性を向上させるという当社の正当な利益に基づいています。データは他の方法で渡されたり、使用されたりすることはありません。ただし、違法使用の具体的な兆候がある場合、当社はその後サーバーのログ ファイルをチェックする権利を留保します。
 
-    For data transfers to the USA, the provider participates in the EU-US Data Privacy Framework, which ensures compliance with the European level of data protection on the basis of an adequacy decision by the European Commission.
+   2. このウェブサイトでは、セキュリティ上の理由から、また個人データやその他の機密コンテンツ（管理者への注文や問い合わせなど）の送信を保護するために、SSL または TLS 暗号化を使用しています。暗号化された接続は、ブラウザ行の文字列 https:// と鍵記号によって識別できます。
 
-4. #### Contacting Us
-    When you contact us (e.g. via contact form or e-mail), personal data is collected. Which data is collected in the case of a contact form can be seen from the respective contact form. This data is stored and used exclusively for the purpose of responding to your request or for establishing contact and for the associated technical administration.
+3. #### ホスティングおよびコンテンツ配信ネットワーク
+    ##### クラウドフレア
+    当社は、次のプロバイダーが提供するコンテンツ配信ネットワークを使用しています: Cloudflare Inc., 101 Townsend St. San Francisco, CA 94107, USA
 
-    The legal basis for processing data is our legitimate interest in responding to your request in accordance with Art. 6 (1) point f GDPR. If your contact is aimed at concluding a contract, the additional legal basis for the processing is Art. 6 (1) point b GDPR. Your data will be deleted after final processing of your enquiry; this is the case if it can be inferred from the circumstances that the facts in question have been finally clarified, provided there are no legal storage obligations to the contrary.
+    このサービスにより、グラフィックス、ページ コンテンツ、スクリプトなどの大きなメディア ファイルを、地域に分散されたサーバーのネットワーク経由でより高速に配信できるようになります。この処理は、Art. 6 (1) GDPR のポイント。当社はプロバイダーと注文処理契約を締結しており、サイト訪問者のデータの保護を確保し、第三者への不正な開示を禁止しています。
 
-5. #### Use of Client Data for Direct Advertising
-    Sending the newsletter to existing customers
+    米国へのデータ転送の場合、プロバイダーは EU-US データ プライバシー フレームワークに参加し、欧州委員会による適切性の決定に基づいて欧州レベルのデータ保護への準拠を保証します。
 
-    If you have provided us with your e-mail address when purchasing products, we reserve the right to regularly send you offers for products similar to those already purchased by e-mail. Pursuant to Section 7 (3) German law against unfair competition, we do not need to obtain separate consent from you. In this respect, data processing is carried out solely on the basis of our legitimate interest in personalized direct advertising pursuant to Art. 6 (1) point f GDPR. If you have initially objected to the use of your e-mail address for this purpose, we will not send you an e-mail. You are entitled to object to the future use of your e-mail address for the aforementioned advertising purpose at any time by notifying the controller named at the beginning of this document. In this regard, you only have to pay the transmission costs according to the basic tariffs. Upon receipt of your objection, the use of your e-mail address for advertising purposes will cease immediately.
+4. #### お問い合わせ
+    お客様が（お問い合わせフォームや電子メールなどを通じて）当社に連絡すると、個人データが収集されます。コンタクトフォームの場合にどのデータが収集されるかは、それぞれのコンタクトフォームから確認できます。このデータは、お客様のリクエストに応答するため、または連絡先を確立するため、および関連する技術管理のためにのみ保存および使用されます。
 
-6. #### Processing of Data for the Purpose of Order Handling
-    Insofar as necessary for the processing of the contract for delivery and payment purposes, the personal data collected by us will be passed on to the commissioned transport company and the commissioned credit institution in accordance with Art. 6 (1) lit. b GDPR.
+    データ処理の法的根拠は、第 2 条に従ってお客様の要求に応じるという当社の正当な利益です。 6 (1) GDPR のポイント。あなたの連絡が契約の締結を目的としている場合、その処理に対する追加の法的根拠は第 2 条にあります。 6 (1) ポイント b GDPR。お客様のデータは、お問い合わせの最終処理後に削除されます。これは、問題の事実が最終的に明らかになったと状況から推測できる場合に当てはまりますが、これに反する法的保管義務がない場合に限ります。
 
-    If we owe you updates for goods with digital elements or for digital products on the basis of a corresponding contract, we will process the contact data (name, address, e-mail address) provided by you when placing the order in order to inform you personally by suitable means of communication (e.g. by post or e-mail) about upcoming updates within the legally stipulated period of time within the framework of our statutory duty to inform pursuant to Art. 6 (1) lit. c GDPR. Your contact details will be used strictly for the purpose of informing you about updates owed by us and will only be processed by us for this purpose to the extent necessary for the respective information.
+5. #### 直接広告のためのクライアントデータの使用
+    既存顧客へのニュースレターの送信
 
-    In order to process your order, we also work together with the following service provider(s), who support us in whole or in part in the execution of concluded contracts. Certain personal data is transmitted to these service providers in accordance with the following information.
+    製品を購入する際に電子メール アドレスを提供していただいた場合、当社は、既に購入された製品と同様の製品のオファーを電子メールで定期的に送信する権利を留保します。ドイツの不正競争防止法第 7 条 (3) に従って、当社はお客様から別途同意を得る必要はありません。この点において、データ処理は、第 2 条に基づくパーソナライズされた直接広告に対する当社の正当な利益に基づいてのみ実行されます。 6 (1) GDPR のポイント。最初にこの目的で電子メール アドレスを使用することに反対した場合、当社から電子メールは送信されません。あなたには、この文書の冒頭に記載されている管理者に通知することにより、前述の広告目的での電子メール アドレスの今後の使用にいつでも反対する権利があります。この際、基本料金に応じた通信料金のみをお支払いいただきます。異議を受領次第、広告目的での電子メール アドレスの使用は直ちに停止されます。
 
-7. #### Site Functionalities
-    ##### YouTube Videos
+6. #### 注文処理を目的としたデータの処理
+    配送および支払い目的の契約の処理に必要な限り、当社が収集した個人データは、第 2 条に従い、委託された運送会社および委託された信用機関に渡されます。 6(1)点灯。 b GDPR。
 
-    This website uses plugins to display and play videos from the following provider: Google Ireland Limited, Gordon House, 4 Barrow St, Dublin, D04 ESW5, Ireland
+    当社が、対応する契約に基づいて、デジタル要素を含む商品またはデジタル製品のアップデートをお客様に行う義務がある場合、当社は、第 2 条に基づく当社の法定通知義務の範囲内で、法的に定められた期間内に今後のアップデートについて適切な通信手段 (郵便または電子メールなど) でお客様に個人的に通知するために、注文時にお客様から提供された連絡先データ (名前、住所、電子メール アドレス) を処理します。 6(1)点灯。 c GDPR。あなたの連絡先の詳細は、当社が負う最新情報を通知する目的にのみ使用され、この目的のために各情報に必要な範囲でのみ当社によって処理されます。
 
-    Data may also be transmitted to: Google LLC., USA.
+    お客様の注文を処理するために、当社は、締結された契約の履行の全部または一部をサポートする以下のサービスプロバイダーとも連携します。特定の個人データは、以下の情報に従ってこれらのサービスプロバイダーに送信されます。
 
-    When you call up a page of our website that contains such a plugin, your browser establishes a direct connection to the provider's servers to load the plugin. This involves certain information, including your IP address, being transmitted to the provider.
+7. #### サイトの機能
+    ##### YouTubeビデオ
 
-    If the playback of embedded videos is started via the plugin, the provider also uses cookies to collect information about user behavior, to create playback statistics and to prevent abusive behavior.
+    この Web サイトではプラグインを使用して、次のプロバイダーからのビデオを表示および再生します: Google Ireland Limited, Gordon House, 4 Barrow St, Dublin, D04 ESW5, Ireland
 
-    If you are logged into a user account maintained by the provider during your visit to the site, your data will be directly assigned to your account when you click on a video. If you do not wish to have your data assigned to your account, you must log out before clicking on the play button.
+    データは、Google LLC., USA にも送信される場合があります。
 
-    All the above-mentioned processing, in particular the setting of cookies for reading out information on the end device used, only takes place if you have given us your express consent in accordance with Art. 6 (1) point a GDPR. You can revoke your consent at any time with effect for the future by deactivating this service via the "cookie consent tool" provided on the website.
+    このようなプラグインを含む当社 Web サイトのページを呼び出すと、ブラウザはプロバイダーのサーバーへの直接接続を確立し、プラグインをロードします。これには、IP アドレスを含む特定の情報がプロバイダーに送信されることが含まれます。
 
-    For data transfers to the USA, the provider participates in the EU-US Data Privacy Framework, which ensures compliance with the European level of data protection on the basis of an adequacy decision by the European Commission.
+    埋め込みビデオの再生がプラグイン経由で開始される場合、プロバイダーは Cookie を使用してユーザーの行動に関する情報を収集し、再生統計を作成し、不正行為を防止します。
 
-8. #### Tools and Miscellaneous
+    サイトへのアクセス中にプロバイダーが管理するユーザー アカウントにログインしている場合、ビデオをクリックすると、データがアカウントに直接割り当てられます。データをアカウントに割り当てたくない場合は、再生ボタンをクリックする前にログアウトする必要があります。
+
+    上記のすべての処理、特に使用されるエンドデバイス上の情報を読み出すための Cookie の設定は、お客様が第 2 条に従って当社に明示的な同意を与えた場合にのみ行われます。 6 (1) GDPR を指摘します。ウェブサイト上で提供される「Cookie 同意ツール」を介してこのサービスを無効にすることで、いつでも同意を取り消すことができ、将来にわたって有効になります。
+
+    米国へのデータ転送の場合、プロバイダーは EU-US データ プライバシー フレームワークに参加し、欧州委員会による適切性の決定に基づいて欧州レベルのデータ保護への準拠を保証します。
+
+8. #### ツールとその他
     ##### DATEV
-    For the execution of the accounting, we use the service of the cloud-based accounting software of the following provider: DATEV eG, Paumgartnerstr. 6-14, 90429 Nuremberg, Germany
+    会計の実行には、DATEV eG、Paumgartnerstr のプロバイダーのクラウドベースの会計ソフトウェアのサービスを使用します。 6-14、90429 ニュルンベルク、ドイツ
 
-    The provider processes incoming and outgoing invoices and, if applicable, also the bank transactions of our company in order to automatically record invoices, match them to the transactions and create the financial accounting from this in a semi-automated process.
+    プロバイダーは、半自動プロセスで請求書を自動的に記録し、取引と照合し、そこから財務会計を作成するために、受信および送信の請求書、および該当する場合は当社の銀行取引も処理します。
 
-    Insofar as personal data is also processed in this context, the processing is carried out in accordance with Art. 6 (1) point f GDPR on the basis of our legitimate interest in the efficient organisation and documentation of our business transactions.
+    個人データもこの文脈で処理される限り、処理は第 2 条に従って実行されます。 6 (1) ポイント f GDPR は、ビジネス取引の効率的な組織化と文書化に対する当社の正当な利益に基づいています。
 
-9. #### Rights of the Data Subject
-   1. The applicable data protection law grants you the following comprehensive rights of data subjects (rights of information and intervention) vis-à-vis the data controller with regard to the processing of your personal data:
+9. #### データ主体の権利
+   1. 適用されるデータ保護法により、お客様の個人データの処理に関して、データ管理者に対するデータ主体の以下の包括的な権利 (情報および介入の権利) が認められます。
 
-       Right of access by the data subject pursuant to Art. 15 GDPR;
-       Right to rectification pursuant to Art. 16 GDPR;
-       Right to erasure (“right to be forgotten”) pursuant to Art. 17 GDPR;
-       Right to restriction of processing pursuant to Art. 18 GDPR;
-       Right to be informed pursuant to Art. 19 GDPR;
-       Right to data portability pursuant to Art. 20 GDPR;
-       Right to withdraw a given consent pursuant to Art. 7 (3) GDPR;
-       Right to lodge a complaint pursuant to Art. 77 GDPR.
+       Art. に基づくデータ主体によるアクセス権。 15 GDPR;
+       第 2 条に基づく是正の権利。 16 GDPR;
+       第 6 条に基づく消去する権利 (「忘れられる権利」)。 17 GDPR;
+       第 2 条に基づく処理の制限を受ける権利。 18 GDPR;
+       第条に従って通知を受ける権利。 19 GDPR;
+       Art. に基づくデータポータビリティの権利。 20 GDPR;
+       第 2 条に従って所定の同意を撤回する権利。 7 (3) GDPR。
+       第 6 条に従って苦情を申し立てる権利。 77 GDPR。
 
-   2. RIGHT TO OBJECT
-   IF, WITHIN THE FRAMEWORK OF A CONSIDERATION OF INTERESTS, WE PROCESS YOUR PERSONAL DATA ON THE BASIS OF OUR PREDOMINANT LEGITIMATE INTEREST, YOU HAVE THE RIGHT AT ANY TIME TO OBJECT TO THIS PROCESSING WITH EFFECT FOR THE FUTURE ON THE GROUNDS THAT ARISE FROM YOUR PARTICULAR SITUATION.
-   
-   IF YOU EXERCISE YOUR RIGHT TO OBJECT, WE WILL STOP PROCESSING THE DATA CONCERNED. HOWEVER, WE RESERVE THE RIGHT TO FURTHER PROCESSING IF WE CAN PROVE COMPELLING REASONS WORTHY OF PROTECTION FOR PROCESSING WHICH OUTWEIGH YOUR INTERESTS, FUNDAMENTAL RIGHTS AND FREEDOMS, OR IF THE PROCESSING SERVES TO ASSERT, EXERCISE OR DEFEND LEGAL CLAIMS.
+   2. 異議を唱える権利
+   利益考慮の枠組み内で、当社が当社の主要な正当な利益に基づいてお客様の個人データを処理する場合、お客様は、お客様の特定の理由に基づいて、いつでも将来にわたるこの処理に異議を申し立てる権利を有します。状況。
 
-   IF WE PROCESS YOUR PERSONAL DATA FOR DIRECT MARKETING PURPOSES, YOU HAVE THE RIGHT TO OBJECT AT ANY TIME TO THE PROCESSING OF YOUR PERSONAL DATA WHICH ARE USED FOR DIRECT MARKETING PURPOSES. YOU MAY EXERCISE THE OBJECTION AS DESCRIBED ABOVE.
+   あなたが異議を唱える権利を行使した場合、当社は当該データの処理を停止します。ただし、お客様の利益、基本的権利、自由よりも処理の保護に値する説得力のある理由を証明できる場合、または処理が法的請求の主張、行使、防御に役立つ場合、当社はさらに処理を行う権利を留保します。
 
-    IF YOU EXERCISE YOUR RIGHT TO OBJECT, WE WILL STOP PROCESSING THE DATA CONCERNED FOR DIRECT ADVERTISING PURPOSES.
+   当社がダイレクト マーケティングの目的でお客様の個人データを処理する場合、お客様には、ダイレクト マーケティングの目的で使用される個人データの処理に対していつでも異議を申し立てる権利があります。あなたは、上記のとおり異議を行使することができます。
 
-10. #### Duration of Storage of Personal Data
-    The duration of the storage of personal data is based on the respective legal basis, the purpose of processing and - if relevant -- on the respective legal retention period (e.g. commercial and tax retention periods).
+    あなたが異議を唱える権利を行使した場合、当社は直接的な広告目的での当該データの処理を停止します。
 
-    If personal data is processed basis on an express consent pursuant to Art. 6 (1) point a GDPR, this data is stored until the data subject revokes his consent.
+10. #### 個人データの保管期間
+    個人データの保存期間は、それぞれの法的根拠、処理の目的、および該当する場合には、それぞれの法的保存期間 (例: 商用および税務上の保存期間) に基づきます。
 
-    If there are legal storage periods for data that is processed within the framework of legal or similar obligations on the basis of Art. 6 (1) point b GDPR, this data will be routinely deleted after expiry of the storage periods if it is no longer necessary for the fulfillment of the contract or the initiation of the contract and/or if we no longer have a justified interest in further storage.
+    個人データが第 2 条に基づく明示的な同意に基づいて処理される場合。 6 (1) GDPR に準拠している場合、このデータはデータ主体が同意を取り消すまで保存されます。
 
-    When processing personal data on the basis of Art. 6 (1) point f GDPR, this data is stored until the data subject exercises his right of objection in accordance with Art. 21 (1) GDPR, unless we can provide compelling grounds for processing worthy of protection which outweigh the interests, rights and freedoms of the data subject, or the processing serves to assert, exercise or defend legal claims.
+    第 2 条に基づく法的義務または同様の義務の枠組み内で処理されるデータに法的保管期間がある場合。 GDPR 6 (1) ポイント b に基づき、このデータは、契約の履行または契約の開始に必要なくなった場合、および/または当社がさらなる保管に対する正当な利益を持たなくなった場合、保管期間の満了後に定期的に削除されます。
 
-    If personal data is processed for the purpose of direct marketing based on Art. 6 (1) point f GDPR, this data is stored until the data subject exercises his right of objection pursuant to Art. 21 (2) GDPR.
+    第2条に基づいて個人データを処理する場合。 GDPR の第 6 (1) 項に従って、このデータは、データ主体が第 6 条に従って異議を唱える権利を行使するまで保管されます。 21 (1) GDPR。ただし、データ主体の利益、権利、自由を上回る、保護に値する処理に対する説得力のある根拠を提供できる場合、または処理が法的請求の主張、行使、防御に役立つ場合を除きます。
 
-    Unless otherwise stated in the information contained in this declaration on specific processing situations, stored personal data will be deleted if it is no longer necessary for the purposes for which it was collected or otherwise processed.
+    個人データが第 2 条に基づくダイレクト マーケティングの目的で処理される場合。 GDPR の第 6 (1) 項に従って、このデータは、データ主体が第 6 条に従って異議を唱える権利を行使するまで保存されます。 21 (2) GDPR。
+
+    特定の処理状況に関してこの宣言に含まれる情報に別段の記載がない限り、保存された個人データは、収集またはその他の処理の目的で不要になった場合には削除されます。

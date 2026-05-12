@@ -1,5 +1,5 @@
 ---
-title: "Smart Gitty"
+title: "スマートギティ"
 
 position: "Mascot & Git Spirit Animal"
 portrait: "smart-gitty.png"

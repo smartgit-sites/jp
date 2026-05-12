@@ -1,14 +1,14 @@
 ---
-title: "Version 20.2"
-headerH2: "Key Enhancements in SmartGit 20.2"
-listTitle: "Version 20.2"
-imageAltText: "SmartGit 20.2: Big Sur support, subtree ops, smarter graph & richer syntax."
-linkText: "More about SmartGit Version 20.2"
+title: "バージョン20.2"
+headerH2: "SmartGit 20.2 の主な機能強化"
+listTitle: "バージョン20.2"
+imageAltText: "SmartGit 20.2: Big Sur のサポート、サブツリー操作、よりスマートなグラフ、より豊富な構文。"
+linkText: "SmartGit バージョン 20.2 の詳細"
 category: ["feature"]
-headerMessage: "Gain **macOS Big Sur** support, visual **ref management**, and powerful **subtree** tools in 20.2."
-description: "SmartGit 20.2 brings Big Sur compatibility, subtree operations, improved ref handling, richer syntax support, and faster graph Navigation — update now to enjoy a sleeker and more efficient Git GUI experience."
-ogTitle: "SmartGit 20.2: Big Sur support, subtree ops, smarter graph & richer syntax."
-ogDesc: "SmartGit 20.2 brings Big Sur compatibility, subtree operations, improved ref handling, richer syntax support, and faster graph Navigation — update now to enjoy a sleeker and more efficient Git GUI experience."
+headerMessage: "20.2 では **macOS Big Sur** サポート、視覚的な **ref 管理**、強力な **サブツリー** ツールを利用できます。"
+description: "SmartGit 20.2 は、Big Sur との互換性、サブツリー操作、ref 処理の改善、より豊富な構文サポート、およびより高速なグラフ ナビゲーションをもたらします。今すぐ更新して、より洗練された効率的な Git GUI エクスペリエンスをお楽しみください。"
+ogTitle: "SmartGit 20.2: Big Sur のサポート、サブツリー操作、よりスマートなグラフ、より豊富な構文。"
+ogDesc: "SmartGit 20.2 は、Big Sur との互換性、サブツリー操作、ref 処理の改善、より豊富な構文サポート、およびより高速なグラフ ナビゲーションをもたらします。今すぐ更新して、より洗練された効率的な Git GUI エクスペリエンスをお楽しみください。"
 weight: 600
 docsync:
   source:
@@ -40,47 +40,47 @@ SmartGit 20.2は、よりスムーズなGit体験のための主要な改善を�
 
 # macOS 11 Big Surのサポート
 
-{{<screenshot src="support-for-macos-11-big-sur.png" alt="SmartGit 20.2 更新されたインターフェース要素を備えたネイティブmacOS Big Sur互換性">}}
+{{<screenshot alt="SmartGit 20.2 更新されたインターフェース要素を備えたネイティブmacOS Big Sur互換性" src="support-for-macos-11-big-sur.png">}}
 
 ---
 
-SmartGit 20.2は、macOS 11 Big Surをサポートする最初のSmartGitバージョンです。  
+SmartGit 20.2は、macOS 11 Big Surをサポートする最初のSmartGitバージョンです。
 
 # ブランチビューとグラフビュー間のRefのドラッグアンドドロップ
 
-{{<screenshot src="drag-and-drop-between-branches-and-graph-view.gif" alt="SmartGit 20.2 ブランチビューとグラフビュー間のドラッグアンドドロップref管理">}}
+{{<screenshot alt="SmartGit 20.2 ブランチビューとグラフビュー間のドラッグアンドドロップref管理" src="drag-and-drop-between-branches-and-graph-view.gif">}}
 
 ---
 
-グラフビューでのコミットとrefのドラッグは以前から機能していました。今では、ブランチビューとグラフビュー間でもコミットやrefをドラッグして、マージ、リベース、refの更新ができます。 
+グラフビューでのコミットとrefのドラッグは以前から機能していました。今では、ブランチビューとグラフビュー間でもコミットやrefをドラッグして、マージ、リベース、refの更新ができます。
 
 # 改善された構文カラーリング
 
-{{<screenshot src="improved-syntax-coloring.png" alt="SmartGit 20.2 Swift、Dart、Nim、シェルスクリプトのサポートを備えた強化された構文ハイライト">}}
+{{<screenshot alt="SmartGit 20.2 Swift、Dart、Nim、シェルスクリプトのサポートを備えた強化された構文ハイライト" src="improved-syntax-coloring.png">}}
 
 ---
 
-多くの言語で、ファイル比較の構文カラーリングが改善されました。ANTLR、Dart、Innosetupスクリプト、Nim、シェルスクリプト、Swift、...の構文サポートが追加されました。 
+多くの言語で、ファイル比較の構文カラーリングが改善されました。ANTLR、Dart、Innosetupスクリプト、Nim、シェルスクリプト、Swift、...の構文サポートが追加されました。
 
 # サブツリーのサポート
 
-{{<screenshot src="subtree-support.png" alt="SmartGit 20.2 視覚的インジケーターとAdd/Merge/Split操作を備えたGitサブツリーサポート">}}
+{{<screenshot alt="SmartGit 20.2 視覚的インジケーターとAdd/Merge/Split操作を備えたGitサブツリーサポート" src="subtree-support.png">}}
 
 ---
 
-SmartGitはすでに（既存の）サブツリーでの作業をサポートしていました。今では、サブツリーがブランチビューとログラフに表示されます。また、Add、Merge、Splitなどのサブツリー操作が追加されました。 
+SmartGitはすでに（既存の）サブツリーでの作業をサポートしていました。今では、サブツリーがブランチビューとログラフに表示されます。また、Add、Merge、Splitなどのサブツリー操作が追加されました。
 
 # 強化されたグラフフィルタリング
 
-{{<screenshot src="enhanced-graph-filtering.png" alt="SmartGit 20.2 インスタントSHA検索とアクセスしやすいオプションを備えた改善されたグラフフィルタリング">}}
+{{<screenshot alt="SmartGit 20.2 インスタントSHA検索とアクセスしやすいオプションを備えた改善されたグラフフィルタリング" src="enhanced-graph-filtering.png">}}
 
 ---
 
-グラフビューをフィルタリングする際、フィルターオプションとアクションがより利用しやすくなりました。SHAでのフィルタリングがすぐに機能するようになりました。 
+グラフビューをフィルタリングする際、フィルターオプションとアクションがより利用しやすくなりました。SHAでのフィルタリングがすぐに機能するようになりました。
 
 # グラフ：より速いナビゲーション
 
-{{<screenshot src="graph-faster-navigation.png" alt="SmartGit 20.2 シングルクリックHEADアクセスとブラウザスタイルの履歴を備えた効率化されたグラフナビゲーション">}}
+{{<screenshot alt="SmartGit 20.2 シングルクリックHEADアクセスとブラウザスタイルの履歴を備えた効率化されたグラフナビゲーション" src="graph-faster-navigation.png">}}
 
 ---
 
@@ -90,17 +90,17 @@ SmartGitはすでに（既存の）サブツリーでの作業をサポートし
 
 # 強化されたコミットビュー
 
-{{<screenshot src="enhanced-commit-view.png" alt="SmartGit 20.2 Gravatarサポートと完全なコミットダイアログ機能を備えた強化されたコミットビュー">}}
+{{<screenshot alt="SmartGit 20.2 Gravatarサポートと完全なコミットダイアログ機能を備えた強化されたコミットビュー" src="enhanced-commit-view.png">}}
 
 ---
 
 コミットビューが以前のコミットダイアログのすべてのオプションをサポートするようになりました。
 
-また、コミットするユーザーのgravatar画像も表示されます。シングルクリックでリポジトリ設定を開いて変更できます。 
+また、コミットするユーザーのgravatar画像も表示されます。シングルクリックでリポジトリ設定を開いて変更できます。
 
 # UTF-32のサポート
 
-{{<screenshot src="support-for-utf-32.png" alt="SmartGit 20.2 コードで絵文字と拡張Unicodeを可能にするUTF-32文字サポート">}}
+{{<screenshot alt="SmartGit 20.2 コードで絵文字と拡張Unicodeを可能にするUTF-32文字サポート" src="support-for-utf-32.png">}}
 
 ---
 
@@ -108,23 +108,23 @@ SmartGitはすでに（既存の）サブツリーでの作業をサポートし
 
 # 古いブランチを選択
 
-{{<screenshot src="select-obsolete-branches.png" alt="SmartGit 20.2 削除されたリモートを持つマージ済みブランチの古いブランチ検出">}}
+{{<screenshot alt="SmartGit 20.2 削除されたリモートを持つマージ済みブランチの古いブランチ検出" src="select-obsolete-branches.png">}}
 
 ---
 
-マージされたローカルブランチを削除したい場合があります。追跡しているリモートブランチが削除されたローカルブランチを選択し、確認してから削除できるようになりました。 
+マージされたローカルブランチを削除したい場合があります。追跡しているリモートブランチが削除されたローカルブランチを選択し、確認してから削除できるようになりました。
 
 # Refの比較：入れ替え
 
-{{<screenshot src="compare-ref-swapping.png" alt="SmartGit 20.2 柔軟なブランチ差分分析のためのサイド入れ替えを備えたref比較">}}
+{{<screenshot alt="SmartGit 20.2 柔軟なブランチ差分分析のためのサイド入れ替えを備えたref比較" src="compare-ref-swapping.png">}}
 
 ---
 
-どちらも他方の履歴に含まれていないブランチを比較する場合、どちらを先に表示すべきかは明確ではありません。SmartGitの提案が合わない場合は、サイドを簡単に入れ替えることができます。 
+どちらも他方の履歴に含まれていないブランチを比較する場合、どちらを先に表示すべきかは明確ではありません。SmartGitの提案が合わない場合は、サイドを簡単に入れ替えることができます。
 
 # 見える正規表現オプション
 
-{{<screenshot src="visible-regex-option.png" alt="SmartGit 20.2 強化されたフィルター制御アクセシビリティのための見える正規表現トグルボタン">}}
+{{<screenshot alt="SmartGit 20.2 強化されたフィルター制御アクセシビリティのための見える正規表現トグルボタン" src="visible-regex-option.png">}}
 
 ---
 
@@ -132,17 +132,17 @@ SmartGitはすでに（既存の）サブツリーでの作業をサポートし
 
 # タグのグループ化
 
-{{<screenshot src="tag-grouping.png" alt="SmartGit 20.2 手動設定を備えたビルドおよびバージョンタグのインテリジェントなタググループ化">}}
+{{<screenshot alt="SmartGit 20.2 手動設定を備えたビルドおよびバージョンタグのインテリジェントなタググループ化" src="tag-grouping.png">}}
 
 ---
 
 SmartGitは大量の類似したタグ（ビルドタグやバージョンタグなど）を検出し、ファイルログでグループ化します。
 
-基礎となるタググループ化設定は手動で調整でき、コミットビューで「最も近いタグ」を表示したり、ブランチビューのタグカテゴリをグループ化したりするためにも使用されます。 
+基礎となるタググループ化設定は手動で調整でき、コミットビューで「最も近いタグ」を表示したり、ブランチビューのタグカテゴリをグループ化したりするためにも使用されます。
 
 # 環境設定：検索
 
-{{<screenshot src="preferences-search.png" alt="SmartGit 20.2 簡単な設定オプション発見のための環境設定検索機能">}}
+{{<screenshot alt="SmartGit 20.2 簡単な設定オプション発見のための環境設定検索機能" src="preferences-search.png">}}
 
 ---
 
@@ -161,3 +161,4 @@ SmartGitは高度にカスタマイズ可能で、多くの設定オプション
 
 
 
+</screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot>

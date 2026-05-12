@@ -1,5 +1,5 @@
 ---
-title: "Support"
+title: "サポート"
 headless: true
 
 weight: 18

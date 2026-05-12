@@ -1,5 +1,5 @@
 ---
-title: "Terms of sale"
+title: "販売条件"
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
@@ -16,94 +16,94 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-These English terms of sale are a translation of the [German terms of sale](/company/terms-of-sale-de "German terms of sale"). Valid for all legal relationships are only the German terms of sale, the English version is just given for your convenience.
+これらの英語の販売条件は、[ドイツ語の販売条件](/company/terms-of-sale-de "ドイツ語の販売条件") の翻訳です。すべての法的関係に対して有効なのはドイツ語の販売条件のみであり、英語版は便宜のために提供されているだけです。
 
-1. ## General Clauses
-    1. These terms of sale of the syntevo GmbH (hereinafter referred to as "SYNTEVO") apply to licensing software copyrighted by SYNTEVO (hereinafter referred to as "Software") to companies, legal entities under public law or public legal fund assets in the meaning of §310 in connection to §14 German BGB (hereinafter referred to as "Customer") and for trainings.
-    2. Hereby the inclusion of own conditions of the Customer are denied, except their applicability was explicitely agreed by SYNTEVO. These terms even apply, if SYNTEVO knows about opposed conditions or from these conditions differing conditions of the Customer and SYNTEVO delivers to the Customer without special reservation.
+1. ## 一般条項
+    1. syntevo GmbH (以下、「SYNTEVO」といいます) のこれらの販売条件は、SYNTEVO が著作権で保護するソフトウェア (以下、「ソフトウェア」といいます) を、公法に基づく企業、法人、またはドイツ BGB 第 14 条に関連する第 310 条の意味での公的法律基金資産 (以下、「顧客」といいます) およびトレーニング用にライセンス供与する場合に適用されます。
+    2. SYNTEVO がその適用に明示的に同意した場合を除き、お客様自身の条件を含めることはここに拒否されます。これらの条件は、SYNTEVO が相反する条件について知っている場合、またはこれらの条件からお客様の異なる条件を認識しており、SYNTEVO が特別な留保なしにお客様に提供する場合にも適用されます。
 
-2. ## Contract Completion
-    1. All offers and price lists of SYNTEVO, including those on the SYNTEVO website, are not binding (so-called "invitatio ad offerendum") as long as they do not become part of a contract agreement. The product presentation on the SYNTEVO website serves to issue an offer to buy. By sending a purchase order to SYNTEVO the Customer issues a binding offer to buy. A purchase contract will only be created by SYNTEVO’s order confirmation or by SYNTEVO’s delivery.
-    2. If SYNTEVO arranges special conditions, they basically do not apply to other currently existing or future contracts with the Customer.
+2. ## 契約の完了
+    1. SYNTEVO Web サイトにあるものも含め、SYN​​TEVO のすべてのオファーおよび価格リストは、契約合意の一部にならない限り、拘束力を持ちません (いわゆる「招待広告」)。 SYNTEVO Web サイト上の製品プレゼンテーションは、購入のオファーを発行するために役立ちます。 SYNTEVO に注文書を送信することにより、お客様は拘束力のある購入オファーを発行します。購入契約は、SYNTEVO の注文確認または SYNTEVO の納品によってのみ作成されます。
+    2. SYNTEVO が特別な条件を取り決めた場合、その条件は基本的に、お客様との現在または将来の他の契約には適用されません。
 
-3. ## Prices and Payment Conditions
-    1. If not specified otherwise, the given prices are net‑Euro‑prices, not including the German value‑added tax (VAT). Packing and shipping costs, insurance (especially transport insurance), customs and taxes will be charged additionally. The Customer has to pay possible bank fees for his bank.
-    2. The buying price is due with the receipt of the Software, training fees are due after registration. The payment has to be made until the forteenth calendar day after the invoice date, unless specified differently on the invoice.
-    3. A payment is valid as soon as the equivalent value has been credited to one of SYNTEVO’s bank accounts. In case of delay in payment SYNTEVO claims 12% interest of late payment. Further legal rights of SYNTEVO in case of delay in payment remain untouched. Provided that invoices are overdue, incoming payments will be first reckoned up to expenses and interests, then on the oldest demand.
-    4. Should unexpectable expense increases occur (e.g. currency fluctuations, unexpected price increases of suppliers), SYNTEVO is entitled to pass the price increase to the Customer.
+3. ## 価格と支払い条件
+    1. 特に指定のない限り、記載の価格はドイツの付加価値税 (VAT) を含まない正味ユーロ価格です。梱包費、配送費、保険（特に輸送保険）、関税、税金が追加でかかります。顧客は銀行の銀行手数料を支払う必要があります。
+    2. 購入価格はソフトウェアの受領時に支払う必要があり、トレーニング料金は登録後に支払う必要があります。請求書に別段の指定がない限り、支払いは請求日から 14 暦日までに行う必要があります。
+    3. SYNTEVO の銀行口座のいずれかに同等の金額が入金されるとすぐに、支払いが有効になります。支払いが遅延した場合、SYNTEVO は支払い遅延に対する 12% の利息を請求します。支払いが遅延した場合の SYNTEVO のその他の法的権利はそのまま残ります。請求書の支払い期限が過ぎている場合、入金はまず経費と利息に基づいて計算され、次に最も古い要求に基づいて計算されます。
+    4. 予期せぬ経費の増加（例：為替の変動、サプライヤーの予期せぬ価格上昇）が発生した場合、SYNTEVO はその値上げを顧客に転嫁する権利を有します。
 
-4. ## Provision of Software
-    1. ### Rights of Use
-       The Customer receives rights of use on the Software according to the license agreements of the Software. The license agreements can be found at SYNTEVO’s website and can be downloaded and printed.
-    2. ### Delivery and Shipping Conditions, Transfer of Risks
-        1. Unless specified otherwise the Software will be delivered with the current version at the date of delivery.
-        2. SYNTEVO delivers the Software at their own choice on a machine-readable data medium including documentation or by making the Software accessible electronically (e.g. by email, download) and informing the Customer about accessing details.
-        3. For compliance of delivery dates and transfer of risks the date of the transfer to the haulage contractor is relevant, for electronic delivery the time of making the Software available and informing the Customer about it. If the Software or documentation is damaged or destroyed after the transfer of risk, SYNTEVO delivers a replacement upon the Customer refunding the copy and shipping costs.
-        4. As long as SYNTEVO  
-           a. is waiting for the contribution or information of the Customer or  
-           b. is hampered in its service by strike or lockout in third-party companies or in the SYNTEVO company (in the latter case only if the labor dispute is legal), magisterial intervention, legal prohibitions or other circumstances through no fault of SYNTEVO ("act of God")  
-           delivery and service dates will be prolonged by the period of hampering and a reasonable time after hampering ("downtime"); for the length of the downtime SYNTEVO does not breach of duty. SYNTEVO immediately informs the Customer about such hamperings and their estimated length. If the hampering by act of God takes longer than 3 months uninterrupted, the Customer and SYNTEVO are no longer bound by their contractual duties.
-    3. ### Property Reservation
-       SYNTEVO retains the ownership of the ceded program copies and the owed rights of use of the Software until complete payment.
-    4. ### Responsibility of Deficiencies
-       SYNTEVO is liable for functional and legal deficiencies as follows:
-        1. A non-substantial deficiency does not entitle the Customer to refuse the acceptance of the service subject.
-        2. If the Software contains a deficiency of substance, this does not justify making a complaint about the whole delivery. Something different only applies if the partial delivery is of no interest to the Customer. Beyond that the Customer is only allowed to retain payments if they are in reasonable proportion to the appeared functional deficiency. If SYNTEVO cedes the Software for free, SYNTEVO can only be made liable for intent or gross negligence.
-        3. Beyond that claims of defects do not cover non-reproducible Software errors, Software which is used by the Customer on not agreed systems or changed Software without SYNTEVO’s consent, unless the Customer proves that this usage or change is not causing the deficiency.
-        4. SYNTEVO has the choice between rework or compensation delivery.
-        5. The Customer is committed to take up a new Software version, if the range of functions remains according to the contract and taking up does not cause relevant disadvantages to the Customer.
-        6. The statutory period of limitation for claims of defects for new service objects is limited to one year from the transfer of risk. The legal statutory period of limitation for claims of recourse according to §478 German BGB remains untouched as well as the legal German provisions about the stop of expiry and the restart of time limits.
-        7. Preceding limitations of liability in the sections 4.4.1 and 4.4.6 do not apply to claims of damages or expenses, for which the Customer can assert a claim according to the legal German provisions. For those claims section 6 applies.
-        8. If the Customer is a merchant in the meaning of §1 of the German HGB, the Customer is bound to the testing and complaint obligations according to §377 German HGB. If the Customer omits these complaint obligations, the service subjects are passed as approved.
-        9. If the supplementary performance is done as a Software update, the Customer has to delete the first received Software after receiving the update or to send back the data medium. The rights of use on the replaced Software expire.
-        10. If in the purpose of supplementary performance SYNTEVO delivers a Software with more features than the replaced Software, SYNTEVO may charge an additional compensation.
-        11. The Customer must not assign the claims of defects to a third party.
-        12. Product and other feature descriptions of SYNTEVO do not define quality or durability warranties in the meaning of §443 German BGB. The contractual parties agree that a warranty statement in the meaning of §443 German BGB is only defined by using the word "Garantie" and in compliance with the formal regulations in §477.
+4. ## ソフトウェアの提供
+    1. ### 使用権
+       お客様は、本ソフトウェアの使用許諾契約に従って、本ソフトウェアの使用権を受け取ります。使用許諾契約は SYNTEVO の Web サイトにあり、ダウンロードして印刷できます。
+    2. ### 配送および配送条件、リスクの移転
+        1. 特に指定がない限り、ソフトウェアは納品日の現在のバージョンで納品されます。
+        2. SYNTEVO は、独自の選択により、文書を含む機械読み取り可能なデータ媒体でソフトウェアを提供するか、電子的に (電子メール、ダウンロードなどで) ソフトウェアにアクセスできるようにして、アクセスの詳細をお客様に通知することによって、ソフトウェアを提供します。
+        3. 納期の遵守とリスクの移転については、運送請負業者への移転日が関係し、電子納品については、ソフトウェアを利用可能にして顧客に通知した日が関係します。リスクの移転後にソフトウェアまたはドキュメントが破損または破壊された場合、SYNTEVO はお客様がコピーと送料を返金した上で交換品を提供します。
+        4. SYNTEVOがある限り
+           ａ．顧客の投稿や情報を待っている、または
+           b.第三者企業またはSYNTEVO社内でのストライキやロックアウト（後者の場合は、労働争議が合法である場合のみ）、行政介入、法的禁止、またはSYNTEVOに落ち度がないその他の状況によりサービスが妨げられた場合（「天災」）
+           納品およびサービスの日程は、障害が発生している期間および障害後の合理的な時間 (「ダウンタイム」) だけ延長されます。ダウンタイムの長さについては、SYNTEVO は義務違反ではありません。 SYNTEVO は、そのような障害とその推定長さについて直ちにお客様に通知します。天災による妨害が中断されずに 3 か月を超えた場合、お客様と SYNTEVO は契約上の義務に拘束されなくなります。
+    3. ### 物件の予約
+       SYNTEVO は、支払いが完了するまで、譲渡されたプログラムのコピーの所有権とソフトウェアの使用権を保持します。
+    4. ### 欠陥の責任
+       SYNTEVO は、次のような機能的および法的欠陥に対して責任を負います。
+        1. 重大でない欠陥がある場合でも、顧客はサービス対象物の受け入れを拒否する権利を有しません。
+        2. ソフトウェアに内容の不備があったとしても、納品全体について苦情を申し立てることは正当化されません。別の内容は、部分的な配信が顧客にとって関心のない場合にのみ適用されます。それ以上に、顧客は、見かけの機能的欠陥に対して妥当な割合である場合にのみ、支払いを保留することができます。 SYNTEVO がソフトウェアを無償で譲渡した場合、SYNTEVO は故意または重過失に対してのみ責任を負うことができます。
+        3. さらに、欠陥の申し立てには、この使用または変更が欠陥の原因ではないことを顧客が証明しない限り、再現不可能なソフトウェア エラー、合意されていないシステム上で顧客が使用したソフトウェア、または SYNTEVO の同意なしに変更されたソフトウェアは含まれません。
+        4. SYNTEVO では、やり直しか補償納品のどちらかを選択できます。
+        5. お客様は、契約に従って機能の範囲が残り、それを使用することでお客様に関連する不利益が生じない場合には、新しいソフトウェア バージョンを使用することを約束します。
+        6. 新しいサービスオブジェクトに対する欠陥の請求に対する法定の時効期間は、リスクの移転から 1 年に制限されています。ドイツ BGB §478 に基づく求償権の法定時効期間は、期限切れの停止と期間制限の再開に関するドイツの法的規定と同様に、変更されません。
+        7. セクション 4.4.1 および 4.4.6 の前述の責任制限は、ドイツの法的規定に従って顧客が請求できる損害賠償または費用の請求には適用されません。これらの申し立てには第 6 条が適用されます。
+        8. 顧客がドイツ HGB 第 1 条の意味での販売者である場合、顧客はドイツ HGB 第 377 条に基づくテストおよび苦情義務に拘束されます。顧客がこれらの苦情義務を怠った場合、サービス対象は承認されたものとして渡されます。
+        9. 追加履行がソフトウェアアップデートとして行われる場合、お客様はアップデート受信後、最初に受信したソフトウェアを削除するか、データ媒体を返送する必要があります。交換されたソフトウェアの使用権は期限切れになります。
+        10. 補足的なパフォーマンスの目的で、SYNTEVO が交換されたソフトウェアよりも多くの機能を備えたソフトウェアを提供する場合、SYNTEVO は追加の補償金を請求することがあります。
+        11. 顧客は、欠陥のクレームを第三者に譲渡してはなりません。
+        12. SYNTEVO の製品およびその他の機能の説明は、ドイツ BGB §443 の意味での品質または耐久性の保証を定義するものではありません。契約当事者は、ドイツ BGB §443 の意味での保証声明は、「保証」という語を使用することによってのみ定義され、§477 の正式な規制に準拠することに同意します。
 
-5. ## Trainings
-   SYNTEVO organizes on-site and online training. The following conditions apply:
-    1. ### Registrations
-        1. Registrations must be made in writing, by fax or email. By registering, the Customer accepts these conditions of attendance. The receipt of a confirmation is considered as acceptance of the registration.
-        2. A reserved training seat for a certain attendee can be transferred free of charge to another person if SYNTEVO is informed in advance. If the event fee according to section 3.2 is not paid on time, SYNTEVO is entitled to refuse the person's attendance in the event; further claims remain unaffected.
-    2. ### Attendance Fees
-        1. To the extent that a training is not conducted online, the attendance fee includes a copy of the training materials as well as the daily meals. Travel or accommodation costs are not included. These must be booked and paid by the Customer himself, unless otherwise agreed in individual cases.
-        2. In the case of online trainings, the Customer receives the training documents in electronic form.
-    3. ### Cancellations
-        1. Cancellations of the registration are only possible in writing.
-        2. For cancellations for a training
-            - until 4 weeks before the beginning of the event (receipt by SYNTEVO) no cancellation fee will be charged
-            - until the 12th working day before the beginning of the event (receipt by SYNTEVO) a cancellation fee of 50% of the event fee will become due
-            - Less than 12 working days before the beginning of the event (receipt by SYNTEVO), the full fee of the event will become due
-        3. The above mentioned cancellation rules do not apply if a substitute attendee is named.
-    4. ### Modification and Cancellation of events by SYNTEVO
-       SYNTEVO is entitled to cancel the event up to 14 days before the scheduled start without notice, to relocate it or alternatively to offer a different date. In this case, the fees already paid will be fully refunded. Further claims are excluded. Also for important reason, for e.g. illness of speakers or too few participants, SYNTEVO can cancel events at short notice; in this case fees already paid will also be fully refunded. Further claims are excluded, unless the Customer proves that further damage has been caused by the cancellation of SYNTEVO. This exclusion does not apply to malice, promises of guaranty, intent and gross negligence, or to injury to life, body or health and not to mandatory liability such as the German ProdHaftG.
-    5. ### Rights to training materials and training software
-        1. SYNTEVO grants the attendee the non-exclusive, permanent, irrevocable and non-assignable right to use the training materials provided as part of the event. This right also includes tools such as electronic presentation files and patterns used for training. Reproduction of the training materials and use for educational purposes is expressly prohibited.
-        2. For a training that is not conducted online, SYNTEVO grants the
-            - non-exclusive,
-            - non-transferable,
-            - time-limited to the event and
-            - on-premise limited to the course room and the designated computers for that course  
-              right to use the training software, that is, to temporarily store and load it, display it, and run it. Any other use is excluded. Deviations from these terms of use require the agreement in an individual contract.
-    6. ### Liability for breach of duty
-        1. If an event is not conducted as contractually agreed for reasons for which SYNTEVO is responsible, SYNTEVO is obliged to conduct the event within a reasonable period of time at no additional cost for the Customer. The prerequisite for this is a Customer's reprimand, which must be carried out without delay, within two weeks of the Customer's knowledge at latest. If the contractual agreed fulfillment of the event for reasons for which SYNTEVO is responsible cannot materially be fulfilled, even within a reasonable extension of time set by the Customer, the Customer is entitled to terminate the contract without notice. In this case, SYNTEVO is entitled to be paid for the services rendered up to the coming into effect of the agreement on the basis of the contract.
-        2. The remuneration is canceled only for such services, for which the Customer proves within 4 weeks after the announcement of termination that they are not usable for them and without interest. The right to extraordinary cancellation due to important cause remains unaffected.
-        3. An extraordinary cancellation by the Customer presupposes an unsuccessful warning. SYNTEVO is entitled to be paid for the services provided until the termination of the agreement on the basis of the contract. Further claims of the Customer due to breach of duty are excluded. This exclusion does not apply to malice, promises of guaranty, intent and gross negligence, or to injury to life, body or health and not to mandatory liability such as the German ProdHaftG.
-    7. ### Other liability
-        1. The liability for breaches of duty in the conducting of trainings is regulated in section 5.6. In addition, SYNTEVO is liable to the Customer for damage and reimbursement of vainly expenses only for the damage caused by its legal representatives or its executing assistants, whether caused by intent or by gross negligence,
-        2. according to the German ProdHaftG and
-        3. for damages or injury of life, the body or health, which is caused by SYNTEVO, its legal representatives or its executing assistants.
-        4. SYNTEVO is only liable for plain negligence, if SYNTEVO has violated an important contractual duty. This liability is for material-damages and actual loss limited to the contract-typical and predictable damage or loss. This applies also to loss of profit and stayed away savings. The liability for further consequential loss or damage is precluded. The liability according to section 6.1.1 remains untouched by this section.
-        5. For loss of data SYNTEVO’s liability is limited to the expenses which would have been necessary for restoring the data from a proper (at least daily) done backup.
-        6. For a warranty statement SYNTEVO is only liable for damages, if this is explicitly mentioned in the warranty statement. This liability is covered by plain negligence by section 6.2.
-    8. ### Limitation of Claims
-       Claims, except those from section 4.4, expire 3 years after gaining knowledge, however at the latest after 8 years after the latest agreed date of service delivery. This does not apply for intent or if the claim is covered by the German ProdHaftG.
-    9. ### Privacy Policy
-       The privacy statement of the SYNTEVO applies, as it is available at [privacy policy](/company/privacy-policy)
-    10. ### Compensation and Withholding
-    1. The Customer is only entitled to withholding, if the demand is undisputed, having the force of law or is accepted by SYNTEVO. The Customer only is allowed to make use of his right of withholding for demands from the same contractual relationship.
-    2. Due to deficiencies payments only might be retained by the Customer, if the withholding is in a reasonable relation to the deficiency and only, if the deficiency is undoubtedly present. Section 4.4.1, sentence 1, applies accordingly.
-    11. ### Applicable Law
-    1. For all legal relationships between the contractual parties the German law is applicable with the exclusion of the laws of international sale of movable goods.
-    2. If the Customer is a merchant, legal entity under public law or public legal fund assets, the exclusive court of jurisdiction for all disputes of this contract is SYNTEVO’s principal office. The same applies if the Customer does not have a general court of jurisdiction in Germany or the Customer’s address or common whereabouts are unknown at the time of indictment. SYNTEVO’s authority to take a different court remains untouched.
-    3. SYNTEVO is neither committed nor willing to participate in a dispute settlement proceeding at a consumer arbitration board.
+5. ## トレーニング
+   SYNTEVO は、オンサイトおよびオンライン トレーニングを開催します。次の条件が適用されます。
+    1. ### 登録
+        1. 登録は書面、ファックス、または電子メールで行う必要があります。登録することにより、お客様はこれらの参加条件に同意したものとみなされます。確認の受信は登録の受諾とみなされます。
+        2. SYNTEVO に事前に通知した場合、特定の参加者のために予約されたトレーニング座席を別の人に無料で譲渡することができます。セクション 3.2 に基づくイベント料金が期日までに支払われない場合、SYNTEVO はその人のイベントへの参加を拒否する権利を有します。それ以降の請求は影響を受けません。
+    2. ### 参加費
+        1. トレーニングがオンラインで実施されない限り、参加費にはトレーニング資料のコピーと毎日の食事が含まれます。交通費や宿泊費は含まれておりません。これらは、個別のケースで別段の合意がない限り、顧客自身が予約し、支払う必要があります。
+        2. オンライン トレーニングの場合、お客様はトレーニング文書を電子形式で受け取ります。
+    3. ### キャンセル
+        1. 登録のキャンセルは書面でのみ可能です。
+        2. 研修のキャンセルについて
+            - イベント開始の4週間前（SYNTEVOが受領）まではキャンセル料はかかりません。
+            - イベント開始の 12 営業日前 (SYNTEVO が受領) までは、イベント料金の 50% のキャンセル料が発生します。
+            - イベント開始 (SYNTEVO による受領) から 12 営業日以内に、イベント料金全額の支払い期限が切れます。
+        3. 代理出席者が指定されている場合、上記のキャンセル規則は適用されません。
+    4. ### SYNTEVOによるイベントの変更・中止について
+       SYNTEVO は、予定された開始日の 14 日前までに予告なくイベントをキャンセルしたり、場所を変更したり、別の日付を提案したりする権利を有します。この場合、すでにお支払いいただいた料金は全額返金させていただきます。それ以上の請求は除外されます。また、重要な理由があります。講演者の体調不良や参加者が少なすぎる場合、SYNTEVO は急遽イベントをキャンセルすることがあります。この場合、すでに支払われた料金も全額返金されます。 SYNTEVO のキャンセルによってさらなる損害が生じたことをお客様が証明しない限り、さらなる請求は除外されます。この除外は、悪意、保証の約束、意図的および重大な過失、または生命、身体、健康への損傷には適用されず、ドイツの ProdHaftG のような強制的責任には適用されません。
+    5. ### トレーニング資料およびトレーニング ソフトウェアに対する権利
+        1. SYNTEVO は、イベントの一部として提供されるトレーニング資料を使用する非独占的、永続的、取消不能、譲渡不可能な権利を参加者に付与します。この権利には、電子プレゼンテーション ファイルやトレーニングに使用されるパターンなどのツールも含まれます。トレーニング資料の複製および教育目的での使用は明示的に禁止されています。
+        2. オンラインで実施されないトレーニングの場合、SYNTEVO は
+            - 非独占的、
+            - 譲渡不可、
+            - イベントには時間制限があり、
+            - オンプレミスはコースルームとそのコースに指定されたコンピューターに限定されます
+              トレーニング ソフトウェアを使用する権利、つまり、トレーニング ソフトウェアを一時的に保存およびロードし、表示し、実行する権利。それ以外の使用は除外されます。これらの利用規約からの逸脱には、個別の契約での同意が必要です。
+    6. ### 義務違反に対する責任
+        1. SYNTEVO が責任を負う理由により、イベントが契約上の合意どおりに実施されない場合、SYNTEVO は、お客様に追加費用を負担させることなく、合理的な期間内にイベントを実施する義務を負います。このための前提条件は顧客の叱責であり、これは顧客が知ってから遅くとも 2 週間以内に遅滞なく実行されなければなりません。 SYNTEVO が責任を負う理由により、契約上合意されたイベントの履行が実質的に履行できない場合、たとえ顧客が設定した合理的な延長期間内であっても、顧客は通知なしに契約を終了する権利を有します。この場合、SYNTEVO は、契約に基づいて、契約の発効までに提供されたサービスの対価を支払う権利を有します。
+        2. 報酬は、終了の発表後 4 週間以内に、お客様が利息なしで利用できないことを証明したサービスに対してのみキャンセルされます。重要な理由による特別キャンセルの権利は影響を受けません。
+        3. 顧客による異常なキャンセルは、警告が失敗したことを前提としています。 SYNTEVO は、契約に基づいて、契約が終了するまで提供されたサービスに対して支払いを受ける権利を有します。義務違反による顧客のさらなる請求は除外されます。この除外は、悪意、保証の約束、意図的および重大な過失、または生命、身体、健康への損傷には適用されず、ドイツの ProdHaftG のような強制的責任には適用されません。
+    7. ### その他の責任
+        1. トレーニングの実施における義務違反に対する責任は、セクション 5.6 で規定されています。さらに、SYNTEVO は、故意か重過失かを問わず、法定代理人またはその執行補助者によって生じた損害についてのみ、お客様に対して損害賠償および無駄な費用の償還の責任を負います。
+        2. ドイツの ProdHaftG によると、
+        3. SYNTEVO、その法定代理人、またはその執行補助者によって引き起こされた生命、身体、または健康に対する損害または傷害。
+        4. SYNTEVO が重要な契約上の義務に違反した場合、SYNTEVO は単純な過失に対してのみ責任を負います。この責任は、契約に典型的かつ予測可能な損害または損失に限定された物的損害および実際の損失に対して適用されます。これは、利益の損失や貯蓄の滞留にも当てはまります。さらなる結果的な損失または損害に対する責任は排除されます。セクション 6.1.1 に基づく責任は、このセクションでは影響されません。
+        5. データの損失に対する SYNTEVO の責任は、適切に (少なくとも毎日) 行われたバックアップからデータを復元するのに必要な費用に限定されます。
+        6. 保証規定に関して、SYNTEVO は、保証規定に明示的に記載されている場合に限り、損害に対して責任を負います。この責任は、第 6.2 条により単純な過失によってカバーされます。
+    8. ### 請求の制限
+       セクション 4.4 によるものを除き、請求は知識を得てから 3 年、遅くともサービス提供の最終合意日から 8 年後に期限切れになります。これは、意図があった場合、またはクレームがドイツの ProdHaftG によってカバーされている場合には適用されません。
+    9. ＃＃＃ プライバシーポリシー
+       SYNTEVO のプライバシーに関する声明が適用されます。[プライバシー ポリシー](/company/privacy-policy) でご覧いただけます。
+    10. ### 報酬と源泉徴収
+    1. お客様は、その要求に異議の余地がなく、法的強制力がある場合、または SYNTEVO が受け入れた場合にのみ、源泉徴収を行う権利を有します。顧客のみが、同じ契約関係からの要求に対して保留する権利を利用することができます。
+    2. 不足がある場合、源泉徴収が不足と合理的な関係にあり、不足が疑いなく存在する場合に限り、顧客は支払いを保留することができます。セクション 4.4.1、文 1 がそれ​​に応じて適用されます。
+    11. ### 準拠法
+    1. 契約当事者間のすべての法的関係には、動産の国際販売に関する法律を除き、ドイツの法律が適用されます。
+    2. 顧客が販売者、公法に基づく法人、または公的法律基金資産である場合、本契約に関するすべての紛争の専属管轄裁判所は SYNTEVO の主たる事務所となります。顧客がドイツに管轄裁判所を持たない場合、または起訴時に顧客の住所または共通の居所が不明な場合も同様です。 SYNTEVO が別の法廷で争う権限はそのまま残ります。
+    3. SYNTEVO は、消費者仲裁委員会での紛争解決手続きに関与することも、参加する意欲もありません。

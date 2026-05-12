@@ -1,13 +1,13 @@
 ---
-title: "SmartGit Features -- Visual Git Tools for Developers and Teams"
-headerH1: "SmartGit Features"
-headerH2: "Powerful Tools for Developers and Teams"
-headerMessage: "Discover how SmartGit enhances your Git workflows -- from **commit visualization** to **branch management** with ease."
+title: "SmartGit の機能 -- 開発者とチームのためのビジュアル Git ツール"
+headerH1: "SmartGit の機能"
+headerH2: "開発者とチームのための強力なツール"
+headerMessage: "**コミットの視覚化**から**ブランチ管理**まで、SmartGit がどのように Git ワークフローを簡単に強化するかをご覧ください。"
 sideButtonText: "What's New"
 sideButtonLink: "../whats-new"
-description: "Explore SmartGit's most powerful Git features: visual commit history, clean branching, intuitive conflict resolution &amp; more. Built for developers and teams."
-ogTitle: "SmartGit Features -- Visual Git Tools for Developers and Teams"
-ogDesc: "Explore SmartGit's most powerful Git features: visual commit history, clean branching, intuitive conflict resolution &amp; more. Built for developers and teams."
+description: "SmartGit の最も強力な Git 機能を探索してください: 視覚的なコミット履歴、クリーンな分岐、直感的な競合解決、およびもっと。開発者とチーム向けに構築されています。"
+ogTitle: "SmartGit の機能 -- 開発者とチームのためのビジュアル Git ツール"
+ogDesc: "SmartGit の最も強力な Git 機能を探索してください: 視覚的なコミット履歴、クリーンな分岐、直感的な競合解決、およびもっと。開発者とチーム向けに構築されています。"
 
 categories: ["feature"]
 docsync:

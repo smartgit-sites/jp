@@ -1,5 +1,5 @@
 ---
-title: "Subscription vs. Perpetual license"
+title: "サブスクリプションと永久ライセンス"
 headless: true
 
 weight: 1

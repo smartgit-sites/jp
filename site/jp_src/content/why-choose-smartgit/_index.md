@@ -1,5 +1,5 @@
 ---
-title: "Why choose SmartGit"
+title: "SmartGit を選ぶ理由"
 headless: true
 docsync:
   source:
@@ -17,6 +17,6 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-# headline
+# 見出し
 
 なぜ**SmartGit**を選ぶのか？

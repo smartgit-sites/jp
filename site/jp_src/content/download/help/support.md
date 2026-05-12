@@ -1,5 +1,5 @@
 ---
-title: "Contact Support:"
+title: "サポートにお問い合わせください:"
 
 icon: "fa-light fa-envelopes-bulk"
 docsync:

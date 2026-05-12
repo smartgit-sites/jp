@@ -1,15 +1,15 @@
 ---
-title: "Distributed Reviews Add-on"
-headerH1: "SmartGit Distributed Reviews Add-on"
-headerH2: "Local code reviews without server."
-listTitle: "Distributed Reviews Add-on"
-imageAltText: "SmartGit's Distributed Reviews add-on enabling offline code reviews and Git-based feedback sharing without server dependencies."
-linkText: "More about Distributed Reviews Add-on"
+title: "分散レビュー アドオン"
+headerH1: "SmartGit 分散レビュー アドオン"
+headerH2: "サーバーを使用しないローカル コード レビュー。"
+listTitle: "分散レビュー アドオン"
+imageAltText: "SmartGit の Distributed Reviews アドオンにより、サーバーに依存せずにオフライン コード レビューと Git ベースのフィードバック共有が可能になります。"
+linkText: "分散レビュー アドオンの詳細"
 category: ["feature"]
-headerMessage: "Review code **offline** and share feedback without a server using **Distributed Reviews**."
-description: "The Distributed Reviews add-on lets you review code locally and offline, without needing GitHub or GitLab. It's fast, secure, and fully integrated into your Git workflow."
-ogTitle: "SmartGit Distributed Add-on -- Local code reviews without server"
-ogDesc: "Review code locally, without servers - with SmartGit's Distributed Reviews Add-on. Stay fast, secure, and offline."
+headerMessage: "**オフライン**でコードをレビューし、**分散レビュー**を使用してサーバーなしでフィードバックを共有します。"
+description: "Distributed Reviews アドオンを使用すると、GitHub や GitLab を必要とせずに、ローカルおよびオフラインでコードをレビューできます。高速かつ安全で、Git ワークフローに完全に統合されています。"
+ogTitle: "SmartGit 分散アドオン -- サーバーを使用しないローカル コード レビュー"
+ogDesc: "SmartGit の Distributed Reviews Add-on を使用して、サーバーを使用せずにコードをローカルでレビューします。高速、安全、オフラインを維持します。"
 weight: 8
 docsync:
   source:
@@ -76,7 +76,7 @@ SmartGitはコードレビューを次のレベルへ：Gitベースの分散型
 **分散レビュー**のメタデータはGitリポジトリ自体に保存され、他のブランチと一緒にプッシュおよびプルされます：**オフライン**で作業し、コメントを適用したり破棄したりして、最終的に**整理された**、**一貫性のある**レビューをプッシュできます。
 
 
-# Markdownサポート
+# マークダウンサポート
 
 {{<screenshot src="markdown-support.png" alt="SmartGitのMarkdown対応コメントシステム。リッチなコードレビューフォーマットのためのGitHub flavored markdownに対応">}}
 

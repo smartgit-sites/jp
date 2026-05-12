@@ -1,5 +1,5 @@
 ---
-title: GitLab Authorization
+title: GitLab認証
 robots: "noindex, nofollow"
 sitemapExclude: true
 docsync:

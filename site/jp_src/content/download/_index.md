@@ -1,6 +1,6 @@
 ---
-title: "Download SmartGit"
-description: "Download SmartGit for Windows, macOS or Linux. Get started with our intuitive Git GUI that supports your full workflow -- from clone to deployment."
+title: "SmartGitをダウンロード"
+description: "Windows、macOS、または Linux 用の SmartGit をダウンロードします。クローンからデプロイまで、完全なワークフローをサポートする直感的な Git GUI を使い始めましょう。"
 keywords: ["Download SmartGit"]
 layout: "section"
 partial: "current-version"

@@ -1,11 +1,11 @@
 ---
-title: "Git Client Vendors and Their Company Locations"
-ogTitle: "Git Client Vendors and Their Company Locations"
-ogDescription: "An overview of popular Git client vendors, where they are based, and who owns them."
+title: "Git クライアント ベンダーとその会社の所在地"
+ogTitle: "Git クライアント ベンダーとその会社の所在地"
+ogDescription: "人気のある Git クライアント ベンダー、拠点、および所有者の概要。"
 
-headerH1: "Git Client Vendors and Their Company Locations"
+headerH1: "Git クライアント ベンダーとその会社の所在地"
 
-description: "An overview of popular Git client vendors, where they are based, and who owns them."
+description: "人気のある Git クライアント ベンダー、拠点、および所有者の概要。"
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
@@ -25,11 +25,10 @@ docsync:
 <div class="container my-5">
 <div class="row justify-content-center">
 <div class="col-12 col-lg-7 text-center">
-<p class="sg-indigo-500 fw-semibold mb-0">This page summarizes publicly available information about selected commercial Git GUI clients, including their legal vendor entity, headquarters location, and publicly visible ownership structure.</p>
+<p class="sg-indigo-500 fw-semibold mb-0">このページには、法的ベンダー実体、本社の所在地、公開されている所有権構造など、選択された商用 Git GUI クライアントに関する公開情報がまとめられています。</p>
 </div>
 </div>
 </div>
-
 <div class="container my-5">
 <div class="row justify-content-center">
 <div class="col-12 col-lg-10">
@@ -38,45 +37,45 @@ docsync:
 <thead class="table-light">
 <tr>
 <th scope="col"></th>
-<th scope="col" class="sg-indigo-500">SmartGit</th>
-<th scope="col" class="sg-indigo-500">GitKraken</th>
-<th scope="col" class="sg-indigo-500">Tower</th>
-<th scope="col" class="sg-indigo-500">Fork</th>
+<th class="sg-indigo-500" scope="col">SmartGit</th>
+<th class="sg-indigo-500" scope="col">GitKraken</th>
+<th class="sg-indigo-500" scope="col">タワー</th>
+<th class="sg-indigo-500" scope="col">フォーク</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th scope="row" class="table-light">Vendor / Legal Entity</th>
-<td>Syntevo GmbH</td>
-<td>GitKraken (formerly Axosoft)</td>
-<td>fournova Software GmbH</td>
-<td>Individual author named in license</td>
+<th class="table-light" scope="row">ベンダー/法人</th>
+<td>Syntevo社</td>
+<td>GitKraken (旧 Axosoft)</td>
+<td>fournova ソフトウェア GmbH</td>
+<td>ライセンスに名前が記載されている個人の著者</td>
 </tr>
 <tr>
-<th scope="row" class="table-light">State of Residence</th>
-<td>Germany</td>
+<th class="table-light" scope="row">居住地</th>
+<td>ドイツ</td>
 <td>USA</td>
-<td>Germany</td>
-<td>Czech Republic</td>
+<td>ドイツ</td>
+<td>チェコ共和国</td>
 </tr>
 <tr>
-<th scope="row" class="table-light">Purely European</th>
+<th class="table-light" scope="row">純粋なヨーロッパ人</th>
 <td class="text-center"><span style="display:inline-block;width:14px;height:14px;border-radius:50%;background-color:#198754;"></span></td>
 <td class="text-center"><span style="display:inline-block;width:14px;height:14px;border-radius:50%;background-color:#dc3545;"></span></td>
 <td class="text-center"><span style="display:inline-block;width:14px;height:14px;border-radius:50%;background-color:#dc3545;"></span></td>
 <td class="text-center"><span style="display:inline-block;width:14px;height:14px;border-radius:50%;background-color:#198754;"></span></td>
 </tr>
 <tr>
-<th scope="row" class="table-light">Corporate Structure</th>
-<td>Private company owned by european individuals</td>
-<td>Private company; majority investment by Resurgens Technology Partners</td>
-<td>Part of SaaS.group (international company)</td>
-<td>Private company owned by individual developers</td>
+<th class="table-light" scope="row">企業体制</th>
+<td>ヨーロッパの個人が所有する民間会社</td>
+<td>民間企業; Resurgens Technology Partners による過半数の投資</td>
+<td>SaaS.group の一員 (国際企業)</td>
+<td>個人開発者が所有する民間会社</td>
 </tr>
 </tbody>
 </table>
 </div>
-<p class="text-muted mt-3" style="font-size: 0.875rem;">This overview includes selected Git GUI clients. "Based in" refers to the vendor's registered legal headquarters, where publicly stated. Information is derived from publicly available sources, primarily vendor imprint pages, "About" pages, licensing terms, and official company information. Last verified: 2026-03-05.</p>
+<p class="text-muted mt-3" style="font-size: 0.875rem;">この概要には、選択された Git GUI クライアントが含まれています。 「本拠地」とは、公に記載されているベンダーの登録法的本社を指します。情報は、主にベンダーの紹介ページ、「概要」ページ、ライセンス条項、および公式の会社情報などの公的に入手可能な情報源から得られます。最終確認日: 2026-03-05。</p>
 </div>
 </div>
 </div>

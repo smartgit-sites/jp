@@ -1,14 +1,14 @@
 ---
-title: "SmartGit Clean Commits"
-description: "Split, squash, and reorder commits with SmartGit's visual tools -- for a clean Git history that's easy to review and maintain."
-headerH2: "Create Clean Commits Easily"
+title: "SmartGit クリーンコミット"
+description: "SmartGit のビジュアル ツールを使用してコミットを分割、圧縮、並べ替えることで、レビューと保守が簡単なクリーンな Git 履歴を実現します。"
+headerH2: "クリーンなコミットを簡単に作成"
 listTitle: "Clean Commits"
-imageAltText: "SmartGit's tools for splitting, squashing, and reordering Git commits to maintain clean repository history"
+imageAltText: "Git コミットを分割、潰し、並べ替えてリポジトリの履歴をクリーンに維持するための SmartGit のツール"
 linkText: "More about Clean Commits"
 category: ["feature"]
-headerMessage: "Shape a tidy Git history using visual **split**, **squash**, and **reorder** tools."
-ogTitle: "SmartGit Features -- Clean Commits for Developers and Teams"
-ogDesc: "Built by developers, for developers."
+headerMessage: "視覚的な **分割**、**スカッシュ**、**並べ替え** ツールを使用して、整然とした Git 履歴を作成します。"
+ogTitle: "SmartGit の機能 -- 開発者とチームのためのクリーンコミット"
+ogDesc: "開発者によって開発者のために構築されました。"
 weight: 3
 docsync:
   source:

@@ -1,5 +1,5 @@
 ---
-title: "Daniel Gruber"
+title: "ダニエル・グルーバー"
 
 position: "Software Engineer & Digital Craftsman"
 portrait: "daniel_g.png"

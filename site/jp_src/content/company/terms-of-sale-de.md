@@ -1,5 +1,5 @@
 ---
-title: "Allgemeine Geschäftsbedingungen"
+title: "一般取引条件"
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
@@ -16,65 +16,65 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-1. ## Allgemeine Bestimmungen {class="fs-6 mt-4"}
+1. ## 一般規定 {class="fs-6 mt-4"}
 
-   1. Diese Geschäftsbedingungen der syntevo GmbH, (nachfolgend "SYNTEVO"), gelten für die Überlassung der Software der SYNTEVO (nachfolgend "Software") an Unternehmer, juristische Personen des öffentlichen Rechts oder öffentlich-rechtliche Sondervermögen im Sinne von §310 i.V.m. §14 BGB (nachfolgend "Kunde") und für Schulungen.
-   2. Hiermit wird der Einbeziehung von eigenen Bedingungen des Kunden widersprochen, es sei denn, ihrer Geltung wurde ausdrücklich zugestimmt. Diese Bedingungen gelten auch ausschließlich, wenn SYNTEVO in Kenntnis entgegenstehender oder von diesen Bedingungen abweichender Bedingungen des Kunden die Lieferung an diesen ohne besonderen Vorbehalt ausführt.
+   1. syntevo GmbH (以下「SYNTEVO」) のこれらの利用規約は、BGB §14 と併せて §310 の意味の範囲内で起業家、公法に基づく法人、または公法に基づく特別基金 (以下「顧客」) への SYNTEVO のソフトウェア (以下「ソフトウェア」) の譲渡およびトレーニング コースに適用されます。
+   2. 有効性が明示的に同意されていない限り、顧客独自の利用規約を含めることは反対されます。これらの条件は、SYNTEVO がこれらの条件に矛盾または逸脱する顧客の条件を認識しているにもかかわらず、特別な予約なしに顧客への配送を実行する場合にものみ適用されます。
 
-2. ## Vertragsschluss {class="fs-6 mt-4"}
+2. ## 契約の締結 {class="fs-6 mt-4"}
 
-   1. Alle Angebote und Preislisten auch auf der Internetpräsenz von SYNTEVO sind unverbindlich (so genannte "invitatio ad offerendum"), solange sie nicht zum Inhalt einer vertraglichen Vereinbarung werden. Die Produktdarstellung im auf der Internetpräsenz von SYNTEVO dienen zur Abgabe eines Kaufangebotes. Mit dem Zusenden einer Bestellung gibt der Kunde ein verbindliches Kaufangebot ab. Ein Kaufvertrag kommt erst durch eine Auftragsbestätigung oder Lieferung der SYNTEVO zustande.
-   2. Hat SYNTEVO Sonderkonditionen vereinbart, gelten diese grundsätzlich nicht für gleichzeitig laufende und zukünftige Vertragsverhältnisse mit dem Kunden.
+   1. SYNTEVO の Web サイトにあるものを含むすべてのオファーおよび価格リストは、契約上の合意の一部にならない限り、拘束力を持ちません (いわゆる「招待状およびオファー」)。 SYNTEVO の Web サイト上の製品プレゼンテーションは、購入申し込みの送信に役立ちます。注文を送信することにより、顧客は拘束力のある購入オファーを出します。購入契約は、SYNTEVO からの注文確認または納品によってのみ締結されます。
+   2. SYNTEVO が特別な条件に同意した場合、これらは通常、現在および将来の顧客との契約関係には適用されません。
 
-3. ## Preise und Zahlungsbedingungen {class="fs-6 mt-4"}
+3. ## 価格と支払い条件 {class="fs-6 mt-4"}
 
-   1. Die angegebenen Preise von SYNTEVO sind als Nettoeuropreise zu verstehen, zuzüglich der gesetzlichen deutschen Mehrwertsteuer. Verpackungs- und Versandkosten, Verladung, Versicherung (insbesondere Transportversicherung), Zölle und Abgaben, Transportkosten werden gesondert berechnet. Der Kunde trägt mögliche Bankgebühren seiner Bank selbst.
-   2. Der Kaufpreis ist mit Erhalt der Software fällig, Schulungsgebühren nach Anmeldung. Fällige Vergütungen sind bis zu der auf der Rechnung bestimmten Frist, spätestens aber bis zum vierzehnten Kalendertag nach Rechnungsdatum ohne Abzug zu zahlen.
-   3. Eine Zahlung gilt als eingegangen, sobald der Gegenwert einem der Konten von SYNTEVO gutgeschrieben wurde. Im Falle des Zahlungsverzuges hat SYNTEVO Anspruch auf Verzugszinsen i.H.v. 12%.
-   4. Sollten nicht vorhersehbare Kostenerhöhungen eintreten (z.B. Währungsschwankungen, unerwartete Preiserhöhungen der Lieferanten etc.) ist SYNTEVO berechtigt, die Preiserhöhung an den Kunden weiterzugeben.
+   1. SYNTEVO が提示する価格は、純ユーロ価格にドイツの法定付加価値税を加えたものとして理解されたい。梱包および配送費用、積み込み、保険（特に輸送保険）、関税および税金、輸送費用は個別に計算されます。銀行からの銀行手数料は顧客が負担します。
+   2. 購入価格はソフトウェアの受領時に支払う必要があり、登録後のトレーニング料金も支払われます。支払うべき報酬は、請求書に指定された期限までに、請求書の日付から 14 暦日以内に、控除せずに支払わなければなりません。
+   3. SYNTEVO のいずれかのアカウントに同等の金額が入金されるとすぐに、支払いが受領されたものとみなされます。支払いが遅れた場合、SYNTEVO は 12% の延滞利息を受け取る権利があります。
+   4. 予見できないコスト上昇が発生した場合（為替変動、サプライヤーによる予期せぬ価格上昇など）、SYNTEVO はその価格上昇分を顧客に転嫁する権利を有します。
 
-4. ## Überlassung von Software {class="fs-6 mt-4"}
+4. ## ソフトウェアの提供 {class="fs-6 mt-4"}
 
-   1. ### Nutzungsrechte {class="fs-6 mt-4"}
+   1. ### 使用権 {class="fs-6 mt-4"}
 
-      * Der Kunde erhält Nutzungsrechte an der Software gemäß Vereinbarung und den Lizenzbestimmungen der SYNTEVO.
-   2. ### Liefer- und Versandbedingungen sowie Gefahrübergang {class="fs-6 mt-4"}
+      * お客様は、SYNTEVO の契約およびライセンス条項に従って、ソフトウェアの使用権を受け取ります。
+   2. ### 配送および配送条件、およびリスクの移転 {class="fs-6 mt-4"}
 
-      * Die Software wird in der bei Auslieferung aktuellen Fassung geliefert. SYNTEVO bewirkt die Lieferung der Software entweder durch eine Programmkopie oder durch elektronischen Abruf.
+      * ソフトウェアは納品時の最新バージョンで納品されます。 SYNTEVO は、プログラムのコピーまたは電子検索を通じてソフトウェアを提供します。
 
-5. ## Schulungen {class="fs-6 mt-4"}
+5. ＃＃ トレーニング {class="fs-6 mt-4"}
 
-   * Syntevo führt Schulungen vor Ort und Online durch. Es gelten hierfür die folgenden Bedingungen:
+   * Syntevo はオンサイトおよびオンライン トレーニングを実施します。次の条件が適用されます。
 
-      * **Anmeldungen:** Anmeldungen müssen schriftlich oder per Email erfolgen. Eine Anmeldung gilt als angenommen mit Erhalt einer Anmeldebestätigung.
-      * **Teilnahmegebühren:** Bei Online-Schulungen erhält der Kunde die Schulungsunterlagen in elektronischer Form.
-      * **Stornierungen:** Stornierungen müssen schriftlich erfolgen und können je nach Zeitpunkt der Stornierung kostenpflichtig sein.
+      * **登録:** 登録は書面または電子メールで行う必要があります。登録は、登録確認を受信した時点で受理されたものとみなされます。
+      * **参加費:** オンライン トレーニング コースの場合、お客様はトレーニング ドキュメントを電子形式で受け取ります。
+      * **キャンセル:** キャンセルは書面で行う必要があり、キャンセルの時期によっては手数料が発生する場合があります。
 
-6. ## Sonstige Haftung {class="fs-6 mt-4"}
+6. ## その他の責任 {class="fs-6 mt-4"}
 
-   1. SYNTEVO haftet für Pflichtverletzungen bei der Durchführung von Schulungen gemäß den Regelungen in Abschnitt 5. Im Übrigen haftet SYNTEVO auf Schadensersatz für vorsätzlich oder grob fahrlässig verursachte Schäden.
+   1. SYNTEVO は、第 5 条の規定に従ってトレーニング コースを実施する際の義務違反に対して責任を負います。それ以外の場合、SYNTEVO は故意または重大な過失によって生じた損害に対して損害賠償の責任を負います。
 
-7. ## Verjährung {class="fs-6 mt-4"}
+7. ## 時効 {class="fs-6 mt-4"}
 
-   * Ansprüche mit Ausnahme der Ansprüche gemäß Abschnitt 4.4 verjähren in 3 Jahren ab Kenntnis, spätestens jedoch in 8 Jahren nach dem vereinbarten spätesten Termin der Leistungserbringung.
+   * 第 4.4 項に基づく請求を除く請求は、知ってから 3 年、ただしサービス提供の合意された最新日から 8 年以内に時効となります。
 
-8. ## Datenschutz {class="fs-6 mt-4"}
+8. ## データ保護 {class="fs-6 mt-4"}
 
-   * Es gilt die Datenschutzerklärung der SYNTEVO unter [https://www.syntevo.com/privacy-policy/](https://www.syntevo.com/privacy-policy/).
+   * SYNTEVO データ保護宣言は、[https://www.syntevo.com/privacy-policy/](https://www.syntevo.com/privacy-policy/) で適用されます。
 
-9. ## Anwendbares Recht {class="fs-6 mt-4"}
+9. ## 準拠法 {class="fs-6 mt-4"}
 
-   1. Für sämtliche Rechtsbeziehungen der Parteien gilt das Recht der Bundesrepublik Deutschland.
-   2. Ist der Kunde Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen, ist ausschließlicher Gerichtsstand der Geschäftssitz der SYNTEVO.
+   1. ドイツ連邦共和国の法律は、当事者間のすべての法的関係に適用されます。
+   2. 顧客が販売者、公法に基づく法人、または公法に基づく特別基金である場合、専属管轄地はSYNTEVOの登録事務所となります。
 
-10. ## Aufrechnungs- und Zurückbehaltungsrecht {class="fs-6 mt-4"}
+10. ## 相殺と保持の権利 {class="fs-6 mt-4"}
 
-   1. Der Kunde ist zur Aufrechnung nur berechtigt, wenn die Gegenforderung unbestritten, rechtskräftig festgestellt oder von SYNTEVO anerkannt ist.
-   2. Wegen Mängeln können Zahlungen nur zu einem verhältnismäßigen Teil zurückgehalten werden, wenn der Mangel zweifelsfrei vorliegt.
+   1. お客様は、反訴が異議の余地がなく、法的に確立されているか、SYNTEVO によって認められている場合にのみ、相殺する権利を有します。
+   2. 欠陥があるため、欠陥に疑いの余地がない場合にのみ、支払いが保留されることがあります。
 
 
-* Es gilt die Datenschutzerklärung der SYNTEVO unter [https://www.syntevo.com/privacy-policy/](https://www.syntevo.com/privacy-policy/).
+* SYNTEVO データ保護宣言は、[https://www.syntevo.com/privacy-policy/](https://www.syntevo.com/privacy-policy/) で適用されます。
 
-11. ## Anwendbares Recht {class="fs-6 mt-4"}
-    1. Für sämtliche Rechtsbeziehungen der Parteien gilt das Recht der Bundesrepublik Deutschland unter Ausschluss der Gesetze über den internationalen Kauf beweglicher Waren.
-    2. Ist der Kunde Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen, ist ausschließlicher Gerichtsstand für alle Streitigkeiten aus diesem Vertrag der Geschäftssitz der SYNTEVO.
+11. ## 準拠法 {class="fs-6 mt-4"}
+    1. ドイツ連邦共和国法は、動産の国際購入に関する法律を除き、当事者間のすべての法的関係に適用されます。
+    2. 顧客が販売者、公法に基づく法人、または公法に基づく特別基金である場合、本契約から生じるすべての紛争の専属管轄地はSYNTEVOの登録事務所となります。

@@ -1,14 +1,14 @@
 ---
-title: "Version 20.1"
-headerH2: "Major Improvements in SmartGit 20.1"
-listTitle: "Version 20.1"
-imageAltText: "SmartGit 20.1 with improved performance, unified log interface, and flexible worktree management"
-linkText: "More about SmartGit Version 20.1"
+title: "バージョン20.1"
+headerH2: "SmartGit 20.1 の主な改善点"
+listTitle: "バージョン20.1"
+imageAltText: "パフォーマンスが向上し、統合されたログ インターフェイス、柔軟なワークツリー管理を備えた SmartGit 20.1"
+linkText: "SmartGit バージョン 20.1 の詳細"
 category: ["feature"]
-headerMessage: "Benefit from **speed boosts**, clearer **log view**, and flexible **worktree** handling in 20.1."
-description: "SmartGit 20.1 delivers faster performance, a simplified log interface, better change visibility, and streamlined worktree Management — update now to enhance your Git productivity."
-ogTitle: "SmartGit 20.1: Faster performance, refined log view & better change handling."
-ogDesc: "SmartGit 20.1 delivers faster performance, a simplified log interface, better change visibility, and streamlined worktree Management — update now to enhance your Git productivity."
+headerMessage: "20.1 では、**速度向上**、より明確な **ログ ビュー**、柔軟な **ワークツリー** 処理のメリットを享受できます。"
+description: "SmartGit 20.1 は、より高速なパフォーマンス、簡素化されたログ インターフェイス、より優れた変更の可視性、合理化されたワークツリー管理を提供します。今すぐ更新して Git の生産性を向上させてください。"
+ogTitle: "SmartGit 20.1: パフォーマンスが向上し、ログ ビューが洗練され、変更処理が改善されました。"
+ogDesc: "SmartGit 20.1 は、より高速なパフォーマンス、簡素化されたログ インターフェイス、より優れた変更の可視性、合理化されたワークツリー管理を提供します。今すぐ更新して Git の生産性を向上させてください。"
 weight: 700
 docsync:
   source:
@@ -43,7 +43,7 @@ SmartGit 20.1は、より速く、より明確で、より柔軟なGitワーク�
 
 ---
 
-ログラフでは、ワーキングツリーとインデックスノードが1つのノードに統一され、よりコンパクトになりました。ノードは常にHEADに固定されるようになり、特に古いコミットがチェックアウトされている場合でも気が散りにくくなりました。 
+ログラフでは、ワーキングツリーとインデックスノードが1つのノードに統一され、よりコンパクトになりました。ノードは常にHEADに固定されるようになり、特に古いコミットがチェックアウトされている場合でも気が散りにくくなりました。
 
 # ファイルビュー：ワーキングツリーとインデックスを分離
 
@@ -53,7 +53,7 @@ SmartGit 20.1は、より速く、より明確で、より柔軟なGitワーク�
 
 多くの新規ユーザーは、ワーキングツリーとインデックスの変更を別々のリストで見ることに慣れています。すべての変更を1つのリストで見るか、2つのリストに分けて見るかを選択できるようになりました。
 
-ファイルがステージされていないか、すべてステージされている場合、2番目の空のリストは自動的に非表示になります。 
+ファイルがステージされていないか、すべてステージされている場合、2番目の空のリストは自動的に非表示になります。
 
 # ワークツリーの削除
 
@@ -61,7 +61,7 @@ SmartGit 20.1は、より速く、より明確で、より柔軟なGitワーク�
 
 ---
 
-回避策なしでワークツリーを直接削除できるようになりました。 
+回避策なしでワークツリーを直接削除できるようになりました。
 
 # ファーストペアレント履歴の改善
 
@@ -71,7 +71,7 @@ SmartGit 20.1は、より速く、より明確で、より柔軟なGitワーク�
 
 ファーストペアレント履歴がコアGitデータから構築されるようになり、巨大なリポジトリでも適切に動作します。
 
-現在のブランチの履歴のみを表示する場合（「ファーストペアレントのみを追跡」オプションが選択されている場合）、スタッシュもコンパクトな形式で表示されます。マウスクリックで展開できます。 
+現在のブランチの履歴のみを表示する場合（「ファーストペアレントのみを追跡」オプションが選択されている場合）、スタッシュもコンパクトな形式で表示されます。マウスクリックで展開できます。
 
 # フィルタリングの改善
 
@@ -88,4 +88,4 @@ SmartGit 20.1は、より速く、より明確で、より柔軟なGitワーク�
 
 ---
 
-gravatar.comへのアクセスを望まない場合、``user@domain.com.jpg``または``email-md5-hash.jpg``の形式の画像でgravatar-cacheディレクトリを事前に設定できます。gravatar.comアクセスが無効になっていても、実際に画像が表示されます。 
+gravatar.comへのアクセスを望まない場合、``user@domain.com.jpg``または``email-md5-hash.jpg``の形式の画像でgravatar-cacheディレクトリを事前に設定できます。gravatar.comアクセスが無効になっていても、実際に画像が表示されます。

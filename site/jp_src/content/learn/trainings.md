@@ -1,5 +1,5 @@
 ---
-title: "SmartGit Training"
+title: "SmartGit トレーニング"
 teaserFollowUp: "soft"
 docsync:
   source:

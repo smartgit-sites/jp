@@ -1,5 +1,5 @@
 ---
-title: "Tax-Exempt Order"
+title: "免税命令"
 headless: true
 
 weight: 20
@@ -18,4 +18,4 @@ docsync:
     status: draft
     updated_at: 2026-05-12T00:35:06Z
 ---
-米国の免税組織として売上税なしで注文したい場合は、{{< link url="https://support.cleverbridge.com/hc/en-us/articles/360004010893-I-am-with-a-tax-exempt-organization-and-would-like-to-place-an-order-without-being-charged-sales-tax-What-steps-should-I-follow-" display="このCleverbridge FAQ" >}}をご覧ください。
+米国の免税組織として売上税なしで注文したい場合は、{{< link url="https://support.cleverbridge.com/hc/en-us/articles/360004010893-I-am-with-a-tax-exempt-organization-and-would-like-to-place-an-order-without-being-charged-sales-tax-What-steps-should-I-follow-" display="このCleverbridgeのよくある質問" >}}をご覧ください。

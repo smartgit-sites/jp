@@ -1,14 +1,14 @@
 ---
-title: "Version 21.1 & 21.2"
-headerH2: "Key Enhancements in SmartGit 21.1 & 21.2"
-listTitle: "Version 21.1 & 21.2"
-imageAltText: "SmartGit 21.1 & 21.2: Smoother workflows, cleaner commits, and smarter hosting integration."
-linkText: "More about SmartGit Version 21.1 & 21.2"
+title: "バージョン 21.1 および 21.2"
+headerH2: "SmartGit 21.1 および 21.2 の主な機能強化"
+listTitle: "バージョン 21.1 および 21.2"
+imageAltText: "SmartGit 21.1 & 21.2: よりスムーズなワークフロー、よりクリーンなコミット、よりスマートなホスティング統合。"
+linkText: "SmartGit バージョン 21.1 および 21.2 の詳細"
 category: ["feature"]
-headerMessage: "Use modern **diffs**, tight **DevOps integration**, and native **Apple M1** support in 21.1 -- 21.2."
-description: "SmartGit 21.1 brings a modern Changes view, DevOps and JIRA integration, and smarter conflict handling -- 21.2 adds native M1 support and secure updates. Upgrade now for a faster, safer Git experience."
-ogTitle: "SmartGit 21.1 -- 21.2: Modern diffs, DevOps integration, Apple M1 support & secure updates"
-ogDesc: "SmartGit 21.1 brings a modern Changes view, DevOps and JIRA integration, and smarter conflict handling -- 21.2 adds native M1 support and secure updates. Upgrade now for a faster, safer Git experience."
+headerMessage: "21.1 ～ 21.2 では、最新の **diffs**、緊密な **DevOps 統合**、およびネイティブ **Apple M1** サポートを使用します。"
+description: "SmartGit 21.1 では、最新の変更ビュー、DevOps と JIRA の統合、よりスマートな競合処理が提供されます。21.2 では、ネイティブ M1 サポートと安全な更新が追加されています。今すぐアップグレードして、より高速で安全な Git エクスペリエンスを実現してください。"
+ogTitle: "SmartGit 21.1 -- 21.2: 最新の差分、DevOps 統合、Apple M1 サポート、安全なアップデート"
+ogDesc: "SmartGit 21.1 では、最新の変更ビュー、DevOps と JIRA の統合、よりスマートな競合処理が提供されます。21.2 では、ネイティブ M1 サポートと安全な更新が追加されています。今すぐアップグレードして、より高速で安全な Git エクスペリエンスを実現してください。"
 weight: 500
 docsync:
   source:
@@ -38,12 +38,12 @@ SmartGitバージョン21.1と21.2は、主要な使いやすさ、統合、プ�
 
 # Apple Siliconのサポート
 
-バージョン21.2の最も重要な新しい変更は、MacOS 11および12でのApple Silicon M1プロセッサのサポートです。 
+バージョン21.2の最も重要な新しい変更は、MacOS 11および12でのApple Silicon M1プロセッサのサポートです。
 
 # 再構築されたChangesビュー
 
-{{<screenshot src="rebuilt-changes-view-1.png" alt="再構築されたChangesビュー - コンパクト">}}
-{{<screenshot src="rebuilt-changes-view-2.png" alt="再構築されたChangesビュー - 統合">}}
+{{<screenshot alt="再構築されたChangesビュー - コンパクト" src="rebuilt-changes-view-1.png">}}
+{{<screenshot alt="再構築されたChangesビュー - 統合" src="rebuilt-changes-view-2.png">}}
 
 ---
 
@@ -51,11 +51,11 @@ SmartGitバージョン21.1と21.2は、主要な使いやすさ、統合、プ�
 
 コンパクトモード（同じ行が非表示になる）では、**同じ行を選択的に表示**することが簡単にできます。
 
-すべてのモードで**構文カラーリング**と変更の**ステージング**または**アンステージング**がサポートされています。 
+すべてのモードで**構文カラーリング**と変更の**ステージング**または**アンステージング**がサポートされています。
 
 # 画像比較付きChangesビュー
 
-{{<screenshot src="changes-view-with-image-compare.png" alt="画像比較付きChangesビュー">}}
+{{<screenshot alt="画像比較付きChangesビュー" src="changes-view-with-image-compare.png">}}
 
 ---
 
@@ -63,7 +63,7 @@ SmartGitバージョン21.1と21.2は、主要な使いやすさ、統合、プ�
 
 # コンフリクト解決用Changesビュー
 
-{{<screenshot src="changes-view-to-solve-conflicts.png" alt="コンフリクト解決用Changesビュー">}}
+{{<screenshot alt="コンフリクト解決用Changesビュー" src="changes-view-to-solve-conflicts.png">}}
 
 ---
 
@@ -71,7 +71,7 @@ SmartGitバージョン21.1と21.2は、主要な使いやすさ、統合、プ�
 
 # Azure DevOps統合
 
-{{<screenshot src="azure-devops-integration.png" alt="Azure DevOps統合">}}
+{{<screenshot alt="Azure DevOpsの統合" src="azure-devops-integration.png">}}
 
 ---
 
@@ -80,35 +80,35 @@ SmartGitは、Azure DevOps（GitHubと同様）のGitワークフローを効率
 
 # グラフでのアバター
 
-{{<screenshot src="avatars-in-graph.png" alt="グラフでのアバター">}}
+{{<screenshot alt="グラフでのアバター" src="avatars-in-graph.png">}}
 
 ---
 
 デフォルトでは、グラフは作者のアバター（例：gravatar.comから）を表示します。これにより水平方向のスペースが節約され、プレーンテキストよりも見つけやすくなります。
 
-gravatar.comへのアクセスが無効になっている場合、作者のイニシャルからカラフルなグラバターが生成されます。 
+gravatar.comへのアクセスが無効になっている場合、作者のイニシャルからカラフルなグラバターが生成されます。
 
 # プッシュ：JIRA課題を進行中に設定
 
-{{<screenshot src="push-set-jira-issue-in-progress.png" alt="プッシュ：JIRA課題を進行中に設定">}}
+{{<screenshot alt="プッシュ：JIRA課題を進行中に設定" src="push-set-jira-issue-in-progress.png">}}
 
 ---
 
-Atlassian JIRAの統合は、課題を解決済みにマークするだけでなく、進行中にすることもできます。 
+Atlassian JIRAの統合は、課題を解決済みにマークするだけでなく、進行中にすることもできます。
 
 # 特定のファイルをチェリーピック
 
-{{<screenshot src="cherry-pick-certain-files.png" alt="特定のファイルをチェリーピック">}}
+{{<screenshot alt="特定のファイルをチェリーピック" src="cherry-pick-certain-files.png">}}
 
 ---
 
 ログのファイルビューから、コミットの特定のファイルをチェリーピックできます。
 
-これはスタッシュの選択したファイルのみを適用するためにも使用できます。 
+これはスタッシュの選択したファイルのみを適用するためにも使用できます。
 
 # ファイルを分離
 
-{{<screenshot src="split-off-files.png" alt="ファイルを分離">}}
+{{<screenshot alt="ファイルを分離" src="split-off-files.png">}}
 
 ---
 
@@ -116,8 +116,8 @@ Atlassian JIRAの統合は、課題を解決済みにマークするだけでな
 
 # すべてのコミットを変更（ステップ/続行）
 
-{{<screenshot src="modify-all-commits-step-continue-2.png" alt="すべてのコミットを変更（ステップ/続行）">}}
-{{<screenshot src="modify-all-commits-step-continue-1.png" alt="すべてのコミットを変更（ステップ/続行）">}}
+{{<screenshot alt="すべてのコミットを変更（ステップ/続行）" src="modify-all-commits-step-continue-2.png">}}
+{{<screenshot alt="すべてのコミットを変更（ステップ/続行）" src="modify-all-commits-step-continue-1.png">}}
 
 ---
 
@@ -125,8 +125,8 @@ Atlassian JIRAの統合は、課題を解決済みにマークするだけでな
 
 # 部分クローンのサポート
 
-{{<screenshot src="partial-clone-support.png" alt="部分クローンのサポート">}}
+{{<screenshot alt="部分クローンのサポート" src="partial-clone-support.png">}}
 
 ---
 
-部分的にクローンされたリポジトリ（Git 2.29以降）がサポートされるようになりました：不足しているオブジェクトはオンデマンドでフェッチされます。クローン時に、フェッチする最大ファイルサイズを制限できます。 
+部分的にクローンされたリポジトリ（Git 2.29以降）がサポートされるようになりました：不足しているオブジェクトはオンデマンドでフェッチされます。クローン時に、フェッチする最大ファイルサイズを制限できます。 </screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot>

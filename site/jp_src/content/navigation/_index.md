@@ -1,5 +1,5 @@
 ---
-title: "The smarter way to Git" 
+title: "Git へのよりスマートな方法"
 headless: true
 docsync:
   source:

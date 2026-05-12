@@ -1,13 +1,13 @@
 ---
-title: "SmartGit Branching"
-headerH2: "Feature Flow, Git-Flow & GitHub Flow"
-listTitle: "Smart Branching"
-imageAltText: "Screenshot of SmartGit's Smart Branching interface."
-linkText: "More about Smart Branching"
+title: "SmartGit ブランチング"
+headerH2: "機能フロー、Git-Flow、GitHub フロー"
+listTitle: "スマート分岐"
+imageAltText: "SmartGit のスマート ブランチング インターフェイスのスクリーンショット。"
+linkText: "スマート分岐の詳細"
 category: ["feature"]
-description: "Use SmartGit's guided workflows for Feature Flow and Git-Flow to simplify branching and improve collaboration. Visual tools and built-in guidance help you stay focused and error-free."
-ogTitle: "SmartGit Branching -- Feature Flow, Git-Flow & GitHub Flow"
-ogDesc: "Guided workflows in SmartGit: Feature Flow, Git-Flow, GitHub Flow and more. Visual tools, fewer mistakes, better Git."
+description: "SmartGit のフィーチャー フローと Git-Flow のガイド付きワークフローを使用して、分岐を簡素化し、コラボレーションを向上させます。ビジュアル ツールと組み込みのガイダンスにより、集中力を維持し、エラーを防ぐことができます。"
+ogTitle: "SmartGit ブランチング -- 機能フロー、Git-Flow、GitHub フロー"
+ogDesc: "SmartGit のガイド付きワークフロー:Feature Flow、Git-Flow、GitHub Flow など。ビジュアル ツール、間違いの減少、Git の向上。"
 weight: 4
 docsync:
   source:
@@ -25,77 +25,77 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-# Feature Flow -- Streamlined Feature Development
+# 機能フロー -- 合理化された機能開発
 
-{{<screenshot src="feature-flow-integrate.gif" alt="SmartGit 'Feature Flow' Integrate">}}
+{{<screenshot src="feature-flow-integrate.gif" alt="SmartGit の「機能フロー」統合">}}
 
-SmartGit’s **Feature Flow** provides an integrated workflow for working with feature branches. Designed for teams and individuals, it minimizes friction during the development process.
+SmartGit の **機能フロー** は、機能ブランチを操作するための統合ワークフローを提供します。チームや個人向けに設計されており、開発プロセス中の摩擦を最小限に抑えます。
 
-Key features:
-- Start new features based on main or release branches
-- Keep features up to date via simple rebasing
-- Integrate main changes visually before finishing
-- Perform a final merge, squash, or rebase with guidance
+主な特徴:
+- メインまたはリリース ブランチに基づいて新機能を開始する
+- シンプルなリベースにより機能を最新の状態に保つ
+- 終了前に主な変更を視覚的に統合する
+- ガイダンスに従って最終的なマージ、スカッシュ、またはリベースを実行する
 
-SmartGit enforces a clean, linear history and provides visual feedback throughout, reducing the chance of conflicts or accidental errors.
+SmartGit はクリーンで直線的な履歴を強制し、全体を通して視覚的なフィードバックを提供するため、競合や偶発的なエラーの可能性が軽減されます。
 
-{{< link url="https://docs.syntevo.com/SmartGit/24.1/Manual/DevelopmentProcesses/Feature-Flow" display="Learn more">}}
-
-
-# Why Feature Flow?
-
-Feature Flow guides you through the complete feature lifecycle:
-- Avoid complex merge commits through rebasing
-- Prevent data loss with built-in safeguards
-- Gain clarity with SmartGit’s integrated log and diff views
-- Only push completed, verified changes
-
-You maintain full responsibility for your branch and can clean up commits before integration.
-
-{{< link url="https://docs.syntevo.com/SmartGit/24.1/Manual/DevelopmentProcesses/Feature-Flow" display="Learn more">}}
+{{< link url="https://docs.syntevo.com/SmartGit/24.1/Manual/DevelopmentProcesses/Feature-Flow" display="もっと詳しく知る">}}
 
 
-# Integrate and Finish -- Safe and Controlled Delivery
+# なぜ機能フローなのか?
 
-{{<screenshot src="feature-flow-finish.gif" alt="SmartGit 'Feature Flow' Finish">}}
+機能フローは、完全な機能ライフサイクルをガイドします。
+- リベースにより複雑なマージコミットを回避する
+- 内蔵の安全装置でデータ損失を防止
+- SmartGit の統合されたログおよび差分ビューで明確さを得る
+- 完了し検証された変更のみをプッシュします
 
-The **Integrate** and **Finish** operations ensure safe delivery of your changes:
+ブランチに対して全責任を負い、統合前にコミットをクリーンアップできます。
 
-- **Integrate** helps rebase or merge changes from the main branch interactively
-- **Finish** ensures an atomic operation: either the full feature is applied or nothing changes
-
-Partial updates and accidental pulls of untested code are avoided. The result is a clean and reliable commit to your mainline branch.
-
-{{< link url="https://docs.syntevo.com/SmartGit/24.1/Manual/DevelopmentProcesses/Feature-Flow" display="Learn more">}}
-
-
-# Git-Flow -- Structured Workflow for Multi-Release Projects
-
-{{<screenshot src="gitflow-full-config.png" alt="Git-Flow (Full) Configuration">}}
-
-SmartGit supports the classic **Git-Flow** model for teams managing multiple active releases.
-
-It automates the process of:
-- Starting and finishing features, releases, and hotfixes
-- Merging back into `develop` and `main`
-- Keeping release cycles predictable and consistent
-
-Ideal for projects with scheduled deployments and coordinated team workflows.
-
-{{< link url="https://docs.syntevo.com/SmartGit/24.1/Manual/DevelopmentProcesses/Git-Flow" display="Learn more">}}
+{{< link url="https://docs.syntevo.com/SmartGit/24.1/Manual/DevelopmentProcesses/Feature-Flow" display="もっと詳しく知る">}}
 
 
-# Git-Flow Light -- Simplified Git-Flow for Single Releases
+# 統合して完了 -- 安全かつ制御された配信
 
-{{<screenshot src="gitflow-light-config.png" alt="Git-Flow Light Configuration">}}
+{{<screenshot src="feature-flow-finish.gif" alt="SmartGit の「機能フロー」の終了">}}
 
-**Git-Flow Light** is a streamlined variant tailored for projects with only one active release.
+**統合** および **完了** 操作により、変更が安全に配信されます。
 
-It eliminates unused steps from full Git-Flow, reducing overhead while preserving the structure:
-- Simplified branching for features and hotfixes
-- No `develop` branch required
-- Less coordination needed, more focus on delivery
+- **Integrate** は、メイン ブランチからの変更をインタラクティブにリベースまたはマージするのに役立ちます
+- **完了** はアトミックな操作を保証します。完全な機能が適用されるか、何も変更されません。
 
-Best suited for agile teams deploying continuously or working on web-based projects.
+部分的な更新や、テストされていないコードの誤ったプルが回避されます。その結果、メインライン ブランチへのクリーンで信頼性の高いコミットが得られます。
 
-{{< link url="https://docs.syntevo.com/SmartGit/24.1/Manual/DevelopmentProcesses/Git-Flow-Light" display="Learn more">}}
+{{< link url="https://docs.syntevo.com/SmartGit/24.1/Manual/DevelopmentProcesses/Feature-Flow" display="もっと詳しく知る">}}
+
+
+# Git-Flow -- マルチリリース プロジェクト向けの構造化されたワークフロー
+
+{{<screenshot src="gitflow-full-config.png" alt="Git-Flow (完全) 構成">}}
+
+SmartGit は、複数のアクティブなリリースを管理するチーム向けの従来の **Git-Flow** モデルをサポートしています。
+
+次のプロセスを自動化します。
+- 機能、リリース、ホットフィックスの開始と終了
+- `develop` と `main` にマージし直す
+- リリースサイクルを予測可能かつ一貫性のあるものに保つ
+
+スケジュールされた展開と調整されたチーム ワークフローを伴うプロジェクトに最適です。
+
+{{< link url="https://docs.syntevo.com/SmartGit/24.1/Manual/DevelopmentProcesses/Git-Flow" display="もっと詳しく知る">}}
+
+
+# Git-Flow Light -- シングル リリース向けの簡素化された Git-Flow
+
+{{<screenshot src="gitflow-light-config.png" alt="Git-Flow Light 構成">}}
+
+**Git-Flow Light** は、アクティブなリリースが 1 つだけあるプロジェクト向けに調整された合理化されたバリアントです。
+
+これにより、完全な Git-Flow から未使用のステップが削除され、構造を維持しながらオーバーヘッドが削減されます。
+- 機能とホットフィックスの分岐を簡素化
+- `develop` ブランチは必要ありません
+- 必要な調整が減り、配信に集中できるようになります
+
+継続的にデプロイする、または Web ベースのプロジェクトに取り組むアジャイル チームに最適です。
+
+{{< link url="https://docs.syntevo.com/SmartGit/24.1/Manual/DevelopmentProcesses/Git-Flow-Light" display="もっと詳しく知る">}}

@@ -1,8 +1,8 @@
 ---
-title: "Terms & Conditions – LEGO® Set Giveaway"
-headerH1: "Giveaway Terms &amp; Conditions"
+title: "利用規約 – LEGO® セットのプレゼント"
+headerH1: "プレゼント規約と条件"
 headerH2: ""
-description: "Terms and Conditions for the SmartGit LEGO® Set for Adults giveaway."
+description: "大人向け SmartGit LEGO® セットのプレゼントの利用規約。"
 robots: "noindex, nofollow"
 sitemapExclude: true
 docsync:
@@ -24,43 +24,31 @@ docsync:
 <div class="container my-5">
 <div class="row justify-content-center">
 <div class="col-12 col-lg-8">
-
-<h3 class="sg-indigo-500 fw-semibold mb-4">1. Organizer</h3>
-<p class="fs-5 text-muted">The giveaway is organized by syntevo GmbH, Germany (hereinafter referred to as "Organizer").</p>
-
-<h3 class="sg-indigo-500 fw-semibold mb-4 mt-5">2. Prize</h3>
-<p class="fs-5 text-muted">The prize is one (1) LEGO® Set for Adults. The prize is non-transferable and no cash alternative is available. The Organizer reserves the right to substitute the prize with one of equal or greater value if required.</p>
-
-<h3 class="sg-indigo-500 fw-semibold mb-4 mt-5">3. Eligibility</h3>
-<p class="fs-5 text-muted">The giveaway is open to all conference attendees who are 18 years of age or older at the time of entry. Employees and immediate family members of syntevo GmbH are not eligible to enter.</p>
-
-<h3 class="sg-indigo-500 fw-semibold mb-4 mt-5">4. How to Enter</h3>
-<p class="fs-5 text-muted">Entry is free of charge. To enter, participants must complete the entry form at <a href="/events/win/" class="sg-indigo-500">/events/win/</a> providing their first name, last name, and email address, and confirm acceptance of these Terms &amp; Conditions. Only one entry per person is permitted.</p>
-
-<h3 class="sg-indigo-500 fw-semibold mb-4 mt-5">5. Entry Period</h3>
-<p class="fs-5 text-muted">The giveaway opens at the start of the conference and closes on the last conference day at 12:25 PM (local conference time). Entries submitted after this deadline will not be considered.</p>
-
-<h3 class="sg-indigo-500 fw-semibold mb-4 mt-5">6. Winner Selection</h3>
-<p class="fs-5 text-muted">The winner will be selected at random from all valid entries at 12:30 PM on the last conference day. The draw will be conducted by the Organizer or a designated representative. The decision is final and binding.</p>
-
-<h3 class="sg-indigo-500 fw-semibold mb-4 mt-5">7. Winner Notification</h3>
-<p class="fs-5 text-muted">The winner will be notified by email using the address provided at the time of entry. The winner does not need to be present at the draw to win. If the Organizer is unable to contact the winner within 14 days of the draw, the Organizer reserves the right to select an alternative winner.</p>
-
-<h3 class="sg-indigo-500 fw-semibold mb-4 mt-5">8. Prize Delivery</h3>
-<p class="fs-5 text-muted">The prize will be shipped to the winner after the conference. The Organizer will cover standard shipping costs. Any applicable import duties or taxes are the responsibility of the winner.</p>
-
-<h3 class="sg-indigo-500 fw-semibold mb-4 mt-5">9. Data Protection</h3>
-<p class="fs-5 text-muted">Personal data collected during the entry process will be used solely for the purpose of administering the giveaway and contacting the winner. Data will be processed in accordance with our <a href="/company/privacy-policy/" class="sg-indigo-500">Privacy Policy</a>. If the participant has also opted in to receive marketing emails, data will additionally be used for that purpose until consent is withdrawn.</p>
-
-<h3 class="sg-indigo-500 fw-semibold mb-4 mt-5">10. General Conditions</h3>
-<p class="fs-5 text-muted">The Organizer reserves the right to cancel or amend the giveaway at any time if circumstances arise outside its reasonable control. Any changes to these Terms &amp; Conditions will be published on this page. This giveaway is in no way sponsored, endorsed, or administered by LEGO®. LEGO® is a trademark of the LEGO Group.</p>
-
+<h3 class="sg-indigo-500 fw-semibold mb-4">1.主催者</h3>
+<p class="fs-5 text-muted">このプレゼント企画は、ドイツの syntevo GmbH (以下、「主催者」といいます) が主催します。</p>
+<h3 class="sg-indigo-500 fw-semibold mb-4 mt-5">2.賞品</h3>
+<p class="fs-5 text-muted">賞品は大人向け LEGO® セット 1 つです。賞品は譲渡不可であり、現金による代替手段はありません。主催者は、必要に応じて賞品を同等以上の価値のあるものと交換する権利を留保します。</p>
+<h3 class="sg-indigo-500 fw-semibold mb-4 mt-5">3. 資格</h3>
+<p class="fs-5 text-muted">この特典は、エントリー時に 18 歳以上であるすべてのカンファレンス参加者が対象となります。 syntevo GmbH の従業員および近親者は応募できません。</p>
+<h3 class="sg-indigo-500 fw-semibold mb-4 mt-5">4. エントリー方法</h3>
+<p class="fs-5 text-muted">入場は無料です。参加するには、参加者は次のエントリーフォームに記入する必要があります。 <a class="sg-indigo-500" href="/events/win/">/イベント/勝利/</a> 氏名、電子メール アドレスを入力し、本利用規約への同意を確認します。エントリーはお一人様1回のみとさせていただきます。</p>
+<h3 class="sg-indigo-500 fw-semibold mb-4 mt-5">5. エントリー期間</h3>
+<p class="fs-5 text-muted">プレゼントはカンファレンスの開始時に開始され、カンファレンスの最終日の午後 12 時 25 分 (現地のカンファレンス時間) に終了します。この締め切り後に提出されたエントリーは考慮されません。</p>
+<h3 class="sg-indigo-500 fw-semibold mb-4 mt-5">6. 勝者の選択</h3>
+<p class="fs-5 text-muted">勝者は、カンファレンス最終日の午後 12 時 30 分に、すべての有効なエントリーの中からランダムに選ばれます。抽選は主催者または指定された代表者によって行われます。この決定は最終的であり、拘束力があります。</p>
+<h3 class="sg-indigo-500 fw-semibold mb-4 mt-5">7. 当選者の通知</h3>
+<p class="fs-5 text-muted">当選者にはエントリー時に入力されたアドレスにメールで通知されます。勝者は抽選に参加する必要はありません。主催者が抽選後 14 日以内に当選者に連絡できない場合、主催者は代替の当選者を選択する権利を留保します。</p>
+<h3 class="sg-indigo-500 fw-semibold mb-4 mt-5">8. 賞品の発送</h3>
+<p class="fs-5 text-muted">賞品はカンファレンス終了後に当選者に発送されます。標準的な送料は主催者が負担します。適用される輸入関税または税金は、勝者の責任となります。</p>
+<h3 class="sg-indigo-500 fw-semibold mb-4 mt-5">9. データ保護</h3>
+<p class="fs-5 text-muted">応募手続き中に収集した個人情報は、プレゼント企画の運営および当選者へのご連絡のみに使用させていただきます。データは当社の規定に従って処理されます。 <a class="sg-indigo-500" href="/company/privacy-policy/">プライバシーポリシー</a>。参加者がマーケティング電子メールの受信もオプトインしている場合、同意が取り消されるまでデータはその目的にも追加的に使用されます。</p>
+<h3 class="sg-indigo-500 fw-semibold mb-4 mt-5">10. 一般条件</h3>
+<p class="fs-5 text-muted">主催者は、合理的な制御が及ばない状況が生じた場合、いつでも特典をキャンセルまたは修正する権利を留保します。これらの利用規約に対する変更は、このページに公開されます。このプレゼントは、LEGO® によって後援、承認、管理されるものではありません。 LEGO® は LEGO Group の商標です。</p>
 <div class="mt-5 pt-4 border-top text-center" style="font-size: 0.875rem;">
-  <a href="/events/win/" class="text-muted me-3">Back to Giveaway</a>
-  <a href="/company/privacy-policy/" class="text-muted me-3">Privacy Policy</a>
-  <a href="/company/imprint/" class="text-muted">Legal Notice</a>
+<a class="text-muted me-3" href="/events/win/">プレゼントに戻る</a>
+<a class="text-muted me-3" href="/company/privacy-policy/">プライバシーポリシー</a>
+<a class="text-muted" href="/company/imprint/">法的通知</a>
 </div>
-
 </div>
 </div>
 </div>

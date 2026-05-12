@@ -1,5 +1,5 @@
 ---
-title: "Daniel Siegl"
+title: "ダニエル・シーグル"
 
 position: "Product Manager & Engineering Genius"
 portrait: "daniel.png"

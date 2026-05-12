@@ -1,5 +1,5 @@
 ---
-title: "The smarter way to Git" 
+title: "Git へのよりスマートな方法"
 headless: true
 docsync:
   source:
@@ -17,14 +17,14 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-# headline
+# 見出し
 
 スマートなGitの使い方。
 
-# subline
+# サブライン
 
 あなたのワークスタイルに合わせた、強力なクロスプラットフォームGit GUIです。
 
-# image
+# 画像
 
 ![コミット履歴、ワーキングツリー、ステージングエリアを表示するSmartGit GUIのスクリーンショット。クロスプラットフォームGitクライアント。](/home/header.png)

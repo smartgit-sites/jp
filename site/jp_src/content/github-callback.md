@@ -1,5 +1,5 @@
 ---
-title: GitHub Authorization
+title: GitHubの認証
 robots: "noindex, nofollow"
 sitemapExclude: true
 docsync:

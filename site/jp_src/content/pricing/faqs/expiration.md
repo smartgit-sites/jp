@@ -1,5 +1,5 @@
 ---
-title: "Expiration"
+title: "有効期限"
 headless: true
 
 weight: 5

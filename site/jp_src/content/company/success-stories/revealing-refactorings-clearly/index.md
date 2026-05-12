@@ -1,7 +1,7 @@
 ---
-title: "Revealing Refactorings Clearly: Why SmartGit Became My Go-To."
-description: "A developer's story on how SmartGit's clear visualization of refactorings transformed slow, confusing code reviews into a fast and focused experience."
-summary: "Discover how SmartGit makes complex refactorings instantly clear and code reviews effortless."
+title: "リファクタリングを明確に明らかにする: SmartGit が私の頼りになった理由。"
+description: "SmartGit のリファクタリングの明確な視覚化によって、時間がかかり混乱を招くコード レビューが迅速で集中的なエクスペリエンスにどのように変換されたかについての開発者のストーリー。"
+summary: "SmartGit が複雑なリファクタリングを瞬時に明確にし、コード レビューを簡単に行う方法をご覧ください。"
 testimonial_user: "Magnus"
 testimonial_company: "Professional Developer"
 testimonial_avatar: "avatar.png"
@@ -23,56 +23,56 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-# testimonial
+# 証言
 
-SmartGit finally made refactorings make sense -- I can see exactly what changed, without wasting time piecing things together.
+SmartGit により、ついにリファクタリングが意味のあるものになりました。調整に時間を費やすことなく、何が変更されたのかを正確に確認できます。
 
-# summary
+# まとめ
 
-When reviewing refactorings made by others, clarity matters. After testing nearly ten different Git UIs, Magnus finally found SmartGit that made complex file renames and moves instantly understandable. Its intuitive way of visualizing changes transformed his review process and helped him stay focused on what truly matters: code quality.
+他の人が行ったリファクタリングをレビューするときは、明確さが重要です。 10 近くの異なる Git UI をテストした後、Magnus は最終的に、複雑なファイルの名前変更と移動を即座に理解できるようにする SmartGit を見つけました。変更を視覚化するその直感的な方法は、彼のレビュー プロセスを変革し、本当に重要なこと、つまりコードの品質に集中し続けるのに役立ちました。
 
-# challenge
+# チャレンジ
 
-- Tried nearly ten different Git UIs without finding one that displayed renames clearly
-- Struggled to see from which path files were moved and where they ended up
-- Reviewing refactorings took too long and required mentally piecing together changes  
-- Needed a reliable, visual way to understand project structure after large commits
+- 10 近くの異なる Git UI を試しましたが、名前変更を明確に表示するものが見つかりませんでした
+- ファイルがどのパスから移動され、どこに移動したかを確認するのに苦労しました
+- リファクタリングのレビューに時間がかかりすぎ、変更を頭の中でつなぎ合わせる必要があった
+- 大規模なコミット後にプロジェクト構造を理解するための信頼できる視覚的な方法が必要でした
 
-# solution
+# 解決
 
-- SmartGit's rename detection immediately revealed file moves with clarity and context
-- The commit view visually connected origins and destinations of renamed files
-- Provided instant insight into refactorings, without sifting through raw diffs
-- Delivered a smooth, integrated experience for code review and daily Git operations
+- SmartGit の名前変更検出により、ファイルの移動が明確かつコンテキストとともに即座に明らかになりました
+- 名前を変更したファイルの起点と宛先を視覚的に接続したコミット ビュー
+- 生の差分を調べることなく、リファクタリングに関する瞬時の洞察を提供
+- コードレビューと日常のGit操作のためのスムーズで統合されたエクスペリエンスを提供
 
-# gallery
+# ギャラリー
 
-![Renamed Files](./renames.png "Renamed Files")
+![名前変更されたファイル](./renames.png "名前変更されたファイル")
 
-# impact
+# インパクト
 
-- Turned slow, fragmented code reviews into smooth, visual sessions
-- Allows to spot renamed modules at a glance, even in large commits
-- Improved collaboration efficiency when reviewing others' work
-- Helped maintain a cleaner codebase through more effective oversight
-- Strengthened trust in the development process
+- 時間がかかり、断片化したコードレビューをスムーズで視覚的なセッションに変えました。
+- 大規模なコミットでも、名前が変更されたモジュールを一目で見つけることができます
+- 他の人の作業をレビューする際のコラボレーション効率の向上
+- より効果的な監視を通じてよりクリーンなコードベースの維持を支援
+- 開発プロセスにおける信頼の強化
 
-# benefits
+# 利点
 
-- Immediate clarity when reviewing renamed or moved files
-- Faster code reviews for large-scale refactorings
-- Reduced cognitive load -- less guessing, more understanding
-- Greater confidence when reviewing changes made by others
-- Seamless workflow integration, without needing extra tools or diff scripts
+- 名前変更または移動されたファイルを即座に確認できる
+- 大規模なリファクタリングのためのコードレビューの高速化
+- 認知負荷の軽減 -- 推測が減り、理解が深まります
+- 他の人が加えた変更をレビューする際に自信が持てる
+- 追加のツールや差分スクリプトを必要としない、シームレスなワークフロー統合
 
-# features
+# 特徴
 
-- Advanced rename detection that accurately identifies moved and refactored files
-- Visual representation of origin and destination paths for renamed files
-- Intuitive commit view that provides structure and context instead of raw data
-- Support for complex Git operations without command-line overhead
-- A consistent, professional UI that feels right for daily use
+- 移動およびリファクタリングされたファイルを正確に識別する高度な名前変更検出
+- 名前を変更したファイルの元のパスと宛先のパスを視覚的に表現
+- 生データの代わりに構造とコンテキストを提供する直感的なコミット ビュー
+- コマンドラインのオーバーヘッドなしで複雑な Git 操作をサポート
+- 毎日の使用に適した、一貫したプロフェッショナルな UI
 
-# conclusion
+# 結論
 
-SmartGit transforms refactoring review from tedious and error-prone to clear, efficient, and reliable. It stands out as a best-in-class Git client and as a tool that consistently supports open source developers, prioritizing usability and actionable insight. The result is faster reviews, greater confidence, and stronger collaboration across teams.
+SmartGit は、リファクタリング レビューを、退屈でエラーが発生しやすいものから、明確で効率的で信頼性の高いものに変換します。これは、クラス最高の Git クライアントとして、また使いやすさと実用的な洞察を優先してオープンソース開発者を一貫してサポートするツールとして際立っています。その結果、レビューが迅速化され、信頼性が高まり、チーム間のコラボレーションが強化されます。

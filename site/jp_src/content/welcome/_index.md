@@ -1,33 +1,33 @@
 ---
-title: "Git Client SmartGit – Welcome"
-headerH1: "Thank You for Choosing SmartGit!"
-headerH2: "Now, what's next?"
+title: "Git クライアント SmartGit – ようこそ"
+headerH1: "SmartGit をお選びいただきありがとうございます。"
+headerH2: "さて、次は何でしょうか？"
 
 shortLinks1:
   - name: "Stay in Touch"
-    desc: 'Follow us on <a href="https://bsky.app/profile/smartgit.bsky.social" target="_blank" rel="noopener">Bluesky</a>, <a href="https://techhub.social/@smartgit" target="_blank" rel="noopener">Mastodon</a>, <a href="https://www.youtube.com/c/smartgit" target="_blank" rel="noopener">YouTube</a> or <a href="https://x.com/smartgithg" target="_blank" rel="noopener">X</a>.'
+    desc: '<a href="https://bsky.app/profile/smartgit.bsky.social" target="_blank" rel="noopener">Bluesky</a>、<a href="https://techhub.social/@smartgit" target="_blank" rel="noopener">Mastodon</a>、<a href="https://www.youtube.com/c/smartgit" target="_blank" rel="noopener">YouTube</a>、または <a href="https://x.com/smartgithg" target="_blank" でフォローしてください。 rel="noopener">X</a>。'
     icon: "fa-light fa-bullhorn fa-2x"
     target: ""
   - name: "Community"
-    desc: 'Help shape SmartGit! Vote for new features on <a href="https://smartgit.userecho.com/" target="_blank" rel="noopener">UserEcho</a>.'
+    desc: 'SmartGit の形成にご協力ください! <a href="https://smartgit.userecho.com/" target="_blank" rel="noopener">UserEcho</a> の新機能に投票してください。'
     icon: "fa-light fa-users fa-2x"
     target: ""
   - name: "Manual / How-Tos"
-    desc: 'Learn more about SmartGit in the <a href="https://docs.syntevo.com/SmartGit/Latest/" target="_blank" rel="noopener">Manual</a>.'
+    desc: 'SmartGit の詳細については、<a href="https://docs.syntevo.com/SmartGit/Latest/" target="_blank" rel="noopener">マニュアル</a>をご覧ください。'
     icon: "fa-light fa-book fa-2x"
     target: ""
 
 shortLinks2:
   - name: "Features"
-    desc: "See [What's New](/whats-new/) in the latest SmartGit version."
+    desc: "最新の SmartGit バージョンの [新機能](/whats-new/) を参照してください。"
     icon: "fa-light fa-star fa-2x"
     target: ""
   - name: "Try the Preview"
-    desc: "Run the [Preview version](/download/preview/) side-by-side and be the first to discover new features."
+    desc: "[プレビュー バージョン](/download/preview/) を並行して実行して、誰よりも早く新機能を発見してください。"
     icon: "fa-light fa-flask-vial fa-2x"
     target: ""
   - name: "Get Support"
-    desc: "Reach out to our support at [smartgit@syntevo.com](mailto:smartgit@syntevo.com)."
+    desc: "[smartgit@syntevo.com](mailto:smartgit@syntevo.com) までサポートにお問い合わせください。"
     icon: "fa-light fa-headset fa-2x"
     target: ""
 docsync:

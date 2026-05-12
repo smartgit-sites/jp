@@ -1,5 +1,5 @@
 ---
-title: "Wilfried Nesensohn"
+title: "ヴィルフリード・ネセンスゾーン"
 
 position: "Software Engineer & Code Maestro"
 portrait: "willi.png"

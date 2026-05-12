@@ -19,6 +19,6 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-# testimonial
+# 証言
 
 SmartGitは私が今まで使った中で最高のGitクライアントです。とにかく使いやすい！

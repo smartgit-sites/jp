@@ -1,7 +1,7 @@
 ---
-title: "Streamlining Multi-Project Workflows: How SmartGit Empowers Software Contractors"
-description: "Discover how SmartGit simplifies multi-client Git workflows for software contractors with a unified, efficient interface and seamless integrations."
-summary: "Software consultant maximizes productivity by unifying Git workflows across multiple clients using SmartGit's consistent, feature-rich interface and seamless integrations."
+title: "マルチプロジェクトのワークフローの合理化: SmartGit がソフトウェア請負業者をどのように支援するか"
+description: "SmartGit が、統一された効率的なインターフェイスとシームレスな統合により、ソフトウェア請負業者のマルチクライアント Git ワークフローをどのように簡素化するかをご覧ください。"
+summary: "ソフトウェア コンサルタントは、SmartGit の一貫した機能豊富なインターフェイスとシームレスな統合を使用して、複数のクライアント間で Git ワークフローを統合することで生産性を最大化します。"
 testimonial_user: "Stuart Corrans"
 testimonial_company: "Vanestum Consulting"
 testimonial_link: "https://vanestum.com/"
@@ -24,57 +24,57 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-# testimonial
+# 証言
 
-As a professional software contractor, I often work on concurrent projects with different customers who use different Git hosting providers and different software development branching and processes. SmartGit allows me to work across various technologies using a consistent user interface, and the per-repository feature flow configuration saves time in remembering each customer's branch naming conventions.
+私はプロのソフトウェア請負業者として、さまざまな Git ホスティング プロバイダーやさまざまなソフトウェア開発分岐とプロセスを使用するさまざまな顧客と並行してプロジェクトに取り組むことがよくあります。 SmartGit を使用すると、一貫したユーザー インターフェイスを使用してさまざまなテクノロジにまたがって作業できるようになり、リポジトリごとの機能フロー構成により、各顧客のブランチの命名規則を覚える時間を節約できます。
 
-# summary
+# まとめ
 
-Managing multiple client projects with different Git hosting providers and development processes was a significant challenge for Vanestum Consulting. SmartGit offered a unified solution, simplifying workflows and adapting to their diverse project needs.
+Vanestum Consulting にとって、異なる Git ホスティング プロバイダーと開発プロセスを使用して複数のクライアント プロジェクトを管理することは、大きな課題でした。 SmartGit は、ワークフローを簡素化し、プロジェクトの多様なニーズに適応する統合ソリューションを提供しました。
 
-# challenge
+# チャレンジ
 
-- Using different Git tooling for different customer projects.
-- Integrated Git tooling in popular IDEs is limited in functionality.
-- Using the git command line as a last resort.
-- Switching between desktop IDEs and Git Hosting sites to manage Pull Requests, perform code reviews, and update issue tracking systems.
+- さまざまな顧客プロジェクトにさまざまな Git ツールを使用します。
+- 一般的な IDE に統合された Git ツールは機能が制限されています。
+- 最後の手段として git コマンド ラインを使用します。
+- デスクトップ IDE と Git ホスティング サイトを切り替えて、プル リクエストの管理、コード レビューの実行、問題追跡システムの更新を行います。
 
-# solution
+# 解決
 
-Using SmartGit's seamless integrations into popular Git Hosting and issue-tracking services, the developer can:
-- Receive notifications about pending Pull Requests inside SmartGit.
-- Compare differences between files and commits in a consistent desktop user interface.
-- Submit comments and approve or reject Pull Requests without switching to the Git Hosting provider's website.
-- Link commits to JIRA tickets and populate commit comments from Bugtraq compatible issue-tracking systems.
+SmartGit を人気の Git ホスティングおよび問題追跡サービスにシームレスに統合することで、開発者は次のことが可能になります。
+- SmartGit 内で保留中のプル リクエストに関する通知を受け取ります。
+- 一貫したデスクトップ ユーザー インターフェイスでファイルとコミットの違いを比較します。
+- Git ホスティング プロバイダーの Web サイトに切り替えることなく、コメントを送信し、プル リクエストを承認または拒否できます。
+- コミットを JIRA チケットにリンクし、Bugtraq 互換の問題追跡システムからコミット コメントを入力します。
 
-# gallery
+# ギャラリー
 
-![Clone from multiple hosting providers](./integrations.png "Clone from multiple hosting providers")
+![複数のホスティング プロバイダーからクローン](./integrations.png "複数のホスティング プロバイダーからクローン")
 
-![Bugtraq commit message links](./bugtraq-commit-message.png "Bugtraq commit message links")
+![Bugtraq コミット メッセージ リンク](./bugtraq-commit-message.png "Bugtraq コミット メッセージ リンク")
 
 
-# impact
+# インパクト
 
-- Completing pull requests and closing tracking system issues are all done from within SmartGit, saving time when switching between desktop and Git hosting web apps.
-- A familiar SmartGit user interface means no need to learn different tooling when switching between projects in different languages and Git hosting vendors.
-- Access the full power of advanced Git features, such as interactive rebasing, commit-graph visualizations, and rich diff comparison views without switching between tools.
+- プル リクエストの完了と追跡システムの問題のクローズはすべて SmartGit 内から行われるため、デスクトップと Git ホスティング Web アプリを切り替える際の時間を節約できます。
+- 使い慣れた SmartGit ユーザー インターフェイスにより、異なる言語のプロジェクトや Git ホスティング ベンダーを切り替えるときに、別のツールを学ぶ必要がなくなります。
+- ツールを切り替えることなく、インタラクティブなリベース、コミットグラフの視覚化、豊富な差分比較ビューなどの高度な Git 機能を最大限に活用できます。
 
-# features
+# 特徴
 
-- Deep integrations with Git hosting services such as GitHub, Azure DevOps, GitLab, and Atlassian BitBucket.
-- Integration to JIRA and Bugtraq enabled issue tracking systems.
-- Enhanced Compare Views, enabling collaborative commenting on Pull Requests.
+- GitHub、Azure DevOps、GitLab、Atlassian BitBucket などの Git ホスティング サービスとの緊密な統合。
+- JIRA および Bugtraq との統合により、問題追跡システムが可能になりました。
+- 比較ビューが強化され、プル リクエストに対する共同コメントが可能になります。
 
-# conclusion
+# 結論
 
-Software contractors often work with multiple technologies, applications, and Git hosting services.
-Switching between Git tooling in IDEs and remote hosts such as GitHub, Azure DevOps, GitLab, or BitBucket can lead to a loss of focus and increase the chance of making a mistake.
-SmartGit extends the lifecycle of the typical 'desktop' software development task activity to include issuing pull requests after pushing commits, performing code reviews, and merging pull requests from within SmartGit while at the same time linking commits to JIRA tickets.
-SmartGit eases the learning curve and context switching by integrating with common on-premises and Cloud-hosted Git and Issue-tracking applications, allowing contractors to focus on the customer rather than the tooling specifics.
+ソフトウェア請負業者は、多くの場合、複数のテクノロジー、アプリケーション、Git ホスティング サービスを扱います。
+IDE の Git ツールとリモート ホスト (GitHub、Azure DevOps、GitLab、BitBucket など) を切り替えると、集中力が失われ、間違いを犯す可能性が高くなります。
+SmartGit は、一般的な「デスクトップ」ソフトウェア開発タスク アクティビティのライフサイクルを拡張し、コミットのプッシュ後のプル リクエストの発行、コード レビューの実行、SmartGit 内からのプル リクエストのマージを含むと同時に、コミットを JIRA チケットにリンクします。
+SmartGit は、一般的なオンプレミスおよびクラウドでホストされる Git および問題追跡アプリケーションと統合することで、学習曲線とコンテキストの切り替えを軽減し、請負業者がツールの詳細ではなく顧客に集中できるようにします。
 
-# pitch
+# ピッチ
 
-As any developer knows, switching between software tooling takes time to learn, slows down productivity, and increases the chances of mistakes.
-From the comfort of the desktop, SmartGit provides a consistent user interface across multiple industry-standard Git hosting and Issue tracking services.
-Now, the developer can review and comment on Pull Requests, merge, squash, and rebase the commit history without opening a browser window in GitHub, Azure DevOps, or GitLab.
+開発者なら誰でも知っているように、ソフトウェア ツールの切り替えには学習に時間がかかり、生産性が低下し、間違いが発生する可能性が高くなります。
+SmartGit は、快適なデスクトップから、複数の業界標準の Git ホスティングおよび問題追跡サービスにわたって一貫したユーザー インターフェイスを提供します。
+開発者は、GitHub、Azure DevOps、または GitLab でブラウザ ウィンドウを開くことなく、プル リクエストのレビューとコメント、コミット履歴のマージ、スカッシュ、およびリベースを行うことができるようになりました。

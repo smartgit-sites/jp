@@ -1,11 +1,11 @@
 ---
-title: "Pricing"
-headerH1: "Pricing"
-headerH2: "For commercial use"
+title: "価格設定"
+headerH1: "価格設定"
+headerH2: "商用利用の場合"
 
 weight: 10
 
-summary: "For commercial use"
+summary: "商用利用の場合"
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git

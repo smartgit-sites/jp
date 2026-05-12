@@ -1,5 +1,5 @@
 ---
-title: "Site License"
+title: "サイトライセンス"
 headless: true
 
 weight: 15

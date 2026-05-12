@@ -1,9 +1,9 @@
 ---
-title: "SmartGit Contact"
-description: "Reach out to the SmartGit team for sales, support or partnership inquiries. We're happy to hear from you."
-headerH1: "SmartGit Contact"
-headerH2: "Get in touch"
-headerMessage: "We're here to help. Whether you have a question about our products, pricing, technical support, or anything else, our team is ready to assist you."
+title: "SmartGit の連絡先"
+description: "販売、サポート、パートナーシップに関するお問い合わせについては、SmartGit チームにお問い合わせください。ぜひご連絡ください。"
+headerH1: "SmartGit の連絡先"
+headerH2: "連絡する"
+headerMessage: "私たちがお手伝いします。当社の製品、価格、テクニカル サポート、またはその他についてご質問がある場合でも、当社のチームがいつでもお手伝いいたします。"
 
 layout: "contact"
 docsync:

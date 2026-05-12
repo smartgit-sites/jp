@@ -1,5 +1,5 @@
 ---
-title: "Peter Lieber"
+title: "ピーター・リーバー"
 
 position: "Managing Director & Innovation Driver"
 portrait: "peter.png"

@@ -1,5 +1,5 @@
 ---
-title: "Matthias Krivanek"
+title: "マティアス・クリバネク"
 
 position: "Controlling & Performance Watchdog"
 portrait: "matthias.png"

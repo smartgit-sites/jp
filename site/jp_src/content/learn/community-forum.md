@@ -1,5 +1,5 @@
 ---
-title: "Community forum"
+title: "コミュニティフォーラム"
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git

@@ -1,14 +1,14 @@
 ---
-title: "Version 19.1"
-headerH2: "Major Improvements in SmartGit 19.1"
-listTitle: "Version 19.1"
-imageAltText: "SmartGit 19.1 with enhanced performance, improved Git-Flow, and refined dark theme support"
-linkText: "More about SmartGit Version 19.1"
+title: "バージョン19.1"
+headerH2: "SmartGit 19.1 の主な改善点"
+listTitle: "バージョン19.1"
+imageAltText: "パフォーマンスが強化され、Git-Flow が改善され、ダーク テーマのサポートが洗練された SmartGit 19.1"
+linkText: "SmartGit バージョン 19.1 の詳細"
 category: ["feature"]
-headerMessage: "Enjoy **faster performance**, refined **Git-Flow**, and smoother **dark theme** in 19.1."
-description: "SmartGit 19.1 improves speed, visibility, and Git-Flow handling—update now to work faster and smarter with Git."
-ogTitle: "SmartGit 19.1: Faster performance, Git-Flow support & dark theme improvements"
-ogDesc: "SmartGit 19.1 improves speed, visibility, and Git-Flow handling—update now to work faster and smarter with Git."
+headerMessage: "19.1 の **高速なパフォーマンス**、洗練された **Git-Flow**、よりスムーズな **ダーク テーマ**をお楽しみください。"
+description: "SmartGit 19.1 では、速度、可視性、Git-Flow 処理が向上しています。Git をより速く、よりスマートに使用するには、今すぐ更新してください。"
+ogTitle: "SmartGit 19.1: パフォーマンスの高速化、Git-Flow のサポート、ダーク テーマの改善"
+ogDesc: "SmartGit 19.1 では、速度、可視性、Git-Flow 処理が向上しています。Git をより速く、よりスマートに使用するには、今すぐ更新してください。"
 weight: 800
 docsync:
   source:
@@ -49,7 +49,7 @@ macOS 10.14およびLinuxでは、現在のシステムテーマに応じてSmar
 
 また、Linuxではダークテーマが微調整されました（テーブルヘッダー、選択色、キャレット）。
 
-このトピックは{{< link url="https://smartgit.userecho.com" display="smartgit.userecho.com" >}}でリクエストされました。 
+このトピックは{{< link url="https://smartgit.userecho.com" display="SmartGit.userecho.com" >}}でリクエストされました。
 
 # 改善されたコミットビュー
 
@@ -59,7 +59,7 @@ macOS 10.14およびLinuxでは、現在のシステムテーマに応じてSmar
 
 リポジトリが特別な状態（リベース、マージ、チェリーピック、バイセクト、...）の場合、バナーがそれを明確に示し、コンテキストに応じたコマンドを提供します。
 
-リベースの場合、正常に処理されたコミットとまだ処理されていないコミットを一目で確認できるようになりました。 
+リベースの場合、正常に処理されたコミットとまだ処理されていないコミットを一目で確認できるようになりました。
 
 # 統合された詳細/コミットメッセージビュー
 
@@ -69,7 +69,7 @@ macOS 10.14およびLinuxでは、現在のシステムテーマに応じてSmar
 
 ログウィンドウの詳細ビューとコミットメッセージビューが統一され、画面スペースを節約できるようになりました。このビューから直接シンプルなコミットを行うことができます。
 
-ワーキングツリーウィンドウのコミットメッセージビューでも、（まだ利用可能なより機能豊富な）ダイアログを使用せずに直接コミットできるようになりました。  
+ワーキングツリーウィンドウのコミットメッセージビューでも、（まだ利用可能なより機能豊富な）ダイアログを使用せずに直接コミットできるようになりました。
 
 # ログでのディレクトリサポート
 
@@ -79,18 +79,18 @@ macOS 10.14およびLinuxでは、現在のシステムテーマに応じてSmar
 
 ログのファイルビューがオプションでディレクトリツリーを表示するようになりました。これにより、ディレクトリベースのコマンド（これまでワーキングツリーウィンドウでのみ利用可能だった）を呼び出すことができます。
 
-ログはワーキングツリーウィンドウの基本的にすべてのワーキングツリー機能をサポートするようになりました（{{< link url="https://smartgit.userecho.com" display="smartgit.userecho.com" >}}を参照）。
+ログはワーキングツリーウィンドウの基本的にすべてのワーキングツリー機能をサポートするようになりました（{{< link url="https://smartgit.userecho.com" display="SmartGit.userecho.com" >}}を参照）。
 
 # Git-Flowの改善
 
 {{<screenshot src="git-flow-improved-integrate.png" alt="SmartGit 19.1 AVH 1.12と柔軟なベースブランチ選択を備えたGit-Flow統合">}}
-{{<screenshot src="git-flow-improved-finish.png" alt="SmartGit 19.1 分岐ブランチ処理とIntegrate Developを備えたGit-Flow終了ワークフロー">}}
+{{<screenshot src="git-flow-improved-finish.png" alt="SmartGit 19.1 分割ランチ処理と統合開発を備えたGit-Flow終了ワークフロー">}}
 
 ---
 
 Git-Flow統合がAVH edition 1.12.2をサポートするようになりました。これにより、フィーチャー（またはホットフィックスなど）のベースブランチを指定できます。これにより、フィーチャーの配置や、他のフィーチャーに基づいたフィーチャーの作業がより柔軟になります。
 
-分岐したフィーチャーブランチの場合、デフォルトコマンドがIntegrate Developに変更されました。 
+分岐したフィーチャーブランチの場合、デフォルトコマンドがIntegrate Developに変更されました。
 
 # より高度なリセットオプション
 
@@ -106,7 +106,7 @@ Git-Flow統合がAVH edition 1.12.2をサポートするようになりました
 
 ---
 
-SmartGitコマンドは非常に選択ベースです。誤って多くのファイルを破棄しないように、ファイルビューで単一のファイルのみが選択されているが、フォーカスがグラフビューにあるために破棄が複数のファイルを破棄する場合、追加の確認を追加しました。 
+SmartGitコマンドは非常に選択ベースです。誤って多くのファイルを破棄しないように、ファイルビューで単一のファイルのみが選択されているが、フォーカスがグラフビューにあるために破棄が複数のファイルを破棄する場合、追加の確認を追加しました。
 
 # 直感的なコミット分割
 
@@ -116,7 +116,7 @@ SmartGitコマンドは非常に選択ベースです。誤って多くのファ
 
 コミットの分割について、ワークフローを簡略化しました：新しいコミットを作成し、準備ができたら続行を呼び出します。
 
-新しいコミットが古いコミットと異なる場合、警告が表示されます。シンプルなクリックでSmartGitが差分を表示し、不足している可能性のある変更をコミットできます。 
+新しいコミットが古いコミットと異なる場合、警告が表示されます。シンプルなクリックでSmartGitが差分を表示し、不足している可能性のある変更をコミットできます。
 
 # フラットログ
 
@@ -124,4 +124,4 @@ SmartGitコマンドは非常に選択ベースです。誤って多くのファ
 
 ---
 
-複数のマージを持つ複雑なログラフの場合、新しいファーストペアレント履歴だけを見ると便利なことがあります。マージコミットはスタブのみを表示します。クリックするとマージされたブランチの表示が切り替わります。 
+複数のマージを持つ複雑なログラフの場合、新しいファーストペアレント履歴だけを見ると便利なことがあります。マージコミットはスタブのみを表示します。クリックするとマージされたブランチの表示が切り替わります。

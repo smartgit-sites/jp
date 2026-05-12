@@ -1,5 +1,5 @@
 ---
-title: "Additional Licenses"
+title: "追加のライセンス"
 headless: true
 
 weight: 2

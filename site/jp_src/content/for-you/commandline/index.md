@@ -1,13 +1,13 @@
 ---
-title: "SmartGit for Command-line Fans"
-ogTitle: "SmartGit for Command-line Fans"
-ogDescription: "SmartGit enhances your command-line Git workflow with a powerful visual interface — without taking away the control you love."
+title: "コマンドラインファンのための SmartGit"
+ogTitle: "コマンドラインファンのための SmartGit"
+ogDescription: "SmartGit は、お気に入りのコントロールを奪うことなく、強力なビジュアル インターフェイスを使用してコマンド ライン Git ワークフローを強化します。"
 
-headerH1: "SmartGit for Command-line Fans"
-headerH2: "The best of both worlds"
-headerMessage: "The best of both worlds"
+headerH1: "コマンドラインファンのための SmartGit"
+headerH2: "両方の長所を"
+headerMessage: "両方の長所を"
 
-description: "SmartGit enhances your command-line Git workflow with a powerful visual interface — without taking away the control you love."
+description: "SmartGit は、お気に入りのコントロールを奪うことなく、強力なビジュアル インターフェイスを使用してコマンド ライン Git ワークフローを強化します。"
 
 weight: 50
 docsync:
@@ -29,52 +29,51 @@ docsync:
 <div class="container my-5">
 <div class="row justify-content-center mb-4">
 <div class="col-12 col-lg-8 text-center">
-<h2 class="sg-indigo-500 mb-3">Still Pure Git Under the Hood</h2>
-<p class="text-muted fs-5">SmartGit executes real Git commands.</p>
+<h2 class="sg-indigo-500 mb-3">依然として純粋な Git の内部</h2>
+<p class="text-muted fs-5">SmartGit は実際の G​​it コマンドを実行します。</p>
 </div>
 </div>
 <div class="row g-4 justify-content-center mb-4">
 <div class="col-12 col-md-6 col-lg-3">
 <div class="text-center p-4">
 <i class="fa-light fa-lock-open fa-3x sg-orange-500 mb-3"></i>
-<h5 class="sg-indigo-500 mb-2">No proprietary system</h5>
-<p class="text-muted">Standard Git — nothing vendor-specific under the hood</p>
+<h5 class="sg-indigo-500 mb-2">独自のシステムはありません</h5>
+<p class="text-muted">標準 Git — 内部にはベンダー固有のものは何もありません</p>
 </div>
 </div>
 <div class="col-12 col-md-6 col-lg-3">
 <div class="text-center p-4">
 <i class="fa-light fa-link-slash fa-3x sg-orange-500 mb-3"></i>
-<h5 class="sg-indigo-500 mb-2">No workflow lock-in</h5>
-<p class="text-muted">Use SmartGit alongside any existing Git setup</p>
+<h5 class="sg-indigo-500 mb-2">ワークフローのロックインなし</h5>
+<p class="text-muted">既存の Git セットアップと一緒に SmartGit を使用する</p>
 </div>
 </div>
 <div class="col-12 col-md-6 col-lg-3">
 <div class="text-center p-4">
 <i class="fa-light fa-folder-open fa-3x sg-orange-500 mb-3"></i>
-<h5 class="sg-indigo-500 mb-2">Fully compatible</h5>
-<p class="text-muted">Works with your existing repositories out of the box</p>
+<h5 class="sg-indigo-500 mb-2">完全な互換性</h5>
+<p class="text-muted">すぐに使用できる既存のリポジトリで動作します</p>
 </div>
 </div>
 <div class="col-12 col-md-6 col-lg-3">
 <div class="text-center p-4">
 <i class="fa-light fa-display fa-3x sg-orange-500 mb-3"></i>
-<h5 class="sg-indigo-500 mb-2">Cross-platform</h5>
-<p class="text-muted">Windows, macOS, and Linux — one consistent Git client</p>
+<h5 class="sg-indigo-500 mb-2">クロスプラットフォーム</h5>
+<p class="text-muted">Windows、macOS、Linux — 1 つの一貫した Git クライアント</p>
 </div>
 </div>
 </div>
 <div class="row justify-content-center">
 <div class="col-12 text-center">
-<p class="fs-5 sg-indigo-500 fw-semibold mb-0">It's Git — with better visibility.</p>
+<p class="fs-5 sg-indigo-500 fw-semibold mb-0">それは Git です - 可視性が向上しています。</p>
 </div>
 </div>
 </div>
-
 <div class="container my-5">
 <div class="row justify-content-center mb-4">
 <div class="col-12 col-lg-8 text-center">
-<h2 class="sg-indigo-500 mb-3">Terminal Alone vs. Terminal + SmartGit</h2>
-<p class="fs-5 text-muted">SmartGit simply adds visibility where it counts.</p>
+<h2 class="sg-indigo-500 mb-3">ターミナル単独 vs ターミナル + SmartGit</h2>
+<p class="fs-5 text-muted">SmartGit は、必要な箇所に可視性を追加するだけです。</p>
 </div>
 </div>
 <div class="row justify-content-center">
@@ -83,26 +82,26 @@ docsync:
 <table class="table table-bordered border-secondary align-middle">
 <thead>
 <tr>
-<th scope="col" class="py-3 text-center sg-indigo-500" style="width: 50%;">CLI only</th>
-<th scope="col" class="py-3 text-center sg-indigo-500" style="width: 50%;">CLI + SmartGit</th>
+<th class="py-3 text-center sg-indigo-500" scope="col" style="width: 50%;">CLIのみ</th>
+<th class="py-3 text-center sg-indigo-500" scope="col" style="width: 50%;">CLI + SmartGit</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="py-3"><i class="fa-solid fa-triangle-exclamation text-warning me-2"></i>Manual syntax recall</td>
-<td class="py-3"><i class="fa-solid fa-check text-success me-2"></i>Full repository visualization</td>
+<td class="py-3"><i class="fa-solid fa-triangle-exclamation text-warning me-2"></i>手動による構文の呼び出し</td>
+<td class="py-3"><i class="fa-solid fa-check text-success me-2"></i>リポジトリの完全な視覚化</td>
 </tr>
 <tr>
-<td class="py-3"><i class="fa-solid fa-triangle-exclamation text-warning me-2"></i>Mental graph reconstruction</td>
-<td class="py-3"><i class="fa-solid fa-check text-success me-2"></i>Preview before execution</td>
+<td class="py-3"><i class="fa-solid fa-triangle-exclamation text-warning me-2"></i>メンタルグラフの再構築</td>
+<td class="py-3"><i class="fa-solid fa-check text-success me-2"></i>実行前のプレビュー</td>
 </tr>
 <tr>
-<td class="py-3"><i class="fa-solid fa-triangle-exclamation text-warning me-2"></i>Limited preview before history rewrites</td>
-<td class="py-3"><i class="fa-solid fa-check text-success me-2"></i>Faster navigation</td>
+<td class="py-3"><i class="fa-solid fa-triangle-exclamation text-warning me-2"></i>履歴書き換え前の限定プレビュー</td>
+<td class="py-3"><i class="fa-solid fa-check text-success me-2"></i>より高速なナビゲーション</td>
 </tr>
 <tr>
-<td class="py-3"><i class="fa-solid fa-triangle-exclamation text-warning me-2"></i>Context switching across commands</td>
-<td class="py-3"><i class="fa-solid fa-check text-success me-2"></i>Reduced risk in complex operations</td>
+<td class="py-3"><i class="fa-solid fa-triangle-exclamation text-warning me-2"></i>コマンド間でのコンテキストの切り替え</td>
+<td class="py-3"><i class="fa-solid fa-check text-success me-2"></i>複雑な運用におけるリスクの軽減</td>
 </tr>
 </tbody>
 </table>
@@ -110,20 +109,19 @@ docsync:
 </div>
 </div>
 </div>
-
 <div class="container my-5 py-5">
 <div class="row justify-content-center">
 <div class="col-12 col-lg-10">
 <div class="bg-white border border-2 border-sg-indigo-200 rounded-4 shadow-sm p-5">
 <div class="row justify-content-center">
 <div class="col-12 col-lg-9 text-center">
-<h2 class="sg-indigo-500 mb-3 fw-bold">The Git GUI for Developers Who Want More Visibility</h2>
+<h2 class="sg-indigo-500 mb-3 fw-bold">可視性をさらに高めたい開発者向けの Git GUI</h2>
 <div class="d-flex gap-3 justify-content-center mb-4">
-<a href="/download/" class="btn btn-sg-orange btn-lg px-5 py-3 d-flex justify-content-center align-items-center" style="min-width: 240px; white-space: nowrap;">
-<i class="fa-light fa-download me-2"></i>Download SmartGit
+<a class="btn btn-sg-orange btn-lg px-5 py-3 d-flex justify-content-center align-items-center" href="/download/" style="min-width: 240px; white-space: nowrap;">
+<i class="fa-light fa-download me-2"></i>SmartGitをダウンロード
 </a>
 </div>
-<p class="text-muted mb-4">No credit card. No account. Just visualize Git.</p>
+<p class="text-muted mb-4">クレジットカードはありません。アカウントがありません。 Git を視覚化してみましょう。</p>
 <div class="d-flex gap-4 justify-content-center align-items-center">
 <i class="fa-brands fa-windows fa-2x sg-indigo-500"></i>
 <i class="fa-brands fa-apple fa-2x sg-indigo-500"></i>
@@ -135,71 +133,65 @@ docsync:
 </div>
 </div>
 </div>
-
 <div class="container my-5">
 <div class="row justify-content-center mb-5">
 <div class="col-12 col-lg-8 text-center">
-<h2 class="sg-indigo-500 mb-3">See the Directed Acyclic Graph with a Powerful Git Visualizer</h2>
-<p class="fs-5 text-muted">SmartGit makes the structure visible.</p>
+<h2 class="sg-indigo-500 mb-3">強力な Git ビジュアライザーを使用して有向非巡回グラフを確認する</h2>
+<p class="fs-5 text-muted">SmartGit は構造を可視化します。</p>
 </div>
 </div>
-
 <div class="row g-5 align-items-center mb-5">
 <div class="col-12 col-lg-6">
-<img src="/features/visual-history/graphical-history-view.png" alt="SmartGit visual branch graph" class="img-fluid rounded shadow">
+<img alt="SmartGit ビジュアルブランチグラフ" class="img-fluid rounded shadow" src="/features/visual-history/graphical-history-view.png"/>
 </div>
 <div class="col-12 col-lg-6">
 <div class="ps-lg-4">
 <i class="fa-light fa-diagram-project fa-2x sg-indigo-500 mb-3"></i>
-<h3 class="sg-indigo-500 mb-3">Visual Branch Graph</h3>
-<p class="mb-3">See complex branch structures instantly. Understand merges and rebases at a glance — and detect risky history rewrites before pushing.</p>
+<h3 class="sg-indigo-500 mb-3">ビジュアルブランチグラフ</h3>
+<p class="mb-3">複雑な分岐構造を即座に確認できます。マージとリベースを一目で理解でき、プッシュする前に危険な履歴の書き換えを検出できます。</p>
 <ul class="text-muted mb-4" style="list-style: none; padding-left: 0;">
-<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>Understand merges and rebases at a glance</li>
-<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>Detect risky history rewrites before pushing</li>
-<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>Navigate large repositories with clarity</li>
+<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>マージとリベースを一目で理解する</li>
+<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>プッシュする前に危険な履歴の書き換えを検出する</li>
+<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>大規模なリポジトリを明確にナビゲートする</li>
 </ul>
-{{< button-outline-indigo url="/features/visual-history/" display="Learn more about Visual History" >}}
+{{< button-outline-indigo url="/features/visual-history/" display="ビジュアルヒストリーについて詳しく見る" >}}
 </div>
 </div>
 </div>
-
 <div class="row g-5 align-items-center mb-5">
 <div class="col-12 col-lg-6">
-<img src="/features/clean-commits/index.png" alt="SmartGit interactive rebase GUI" class="img-fluid rounded shadow">
+<img alt="SmartGit 対話型リベース GUI" class="img-fluid rounded shadow" src="/features/clean-commits/index.png"/>
 </div>
 <div class="col-12 col-lg-6">
 <div class="ps-lg-4">
 <i class="fa-light fa-list-ol fa-2x sg-indigo-500 mb-3"></i>
-<h3 class="sg-indigo-500 mb-3">Safe Interactive Rebase GUI</h3>
-<p class="mb-3">Reorder commits visually. Squash, edit, and drop commits with a clear preview before execution.</p>
+<h3 class="sg-indigo-500 mb-3">安全な対話型リベース GUI</h3>
+<p class="mb-3">コミットを視覚的に並べ替えます。実行前に明確なプレビューを表示して、コミットをスカッシュ、編集、削除します。</p>
 <ul class="text-muted mb-4" style="list-style: none; padding-left: 0;">
-<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>Squash, edit, and drop commits</li>
-<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>Preview changes before execution</li>
-<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>Reduce mistakes when cleaning up history</li>
+<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>コミットをスカッシュ、編集、削除する</li>
+<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>実行前に変更をプレビューする</li>
+<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>履歴をクリーンアップする際の間違いを減らす</li>
 </ul>
-{{< button-outline-indigo url="/features/clean-commits/" display="Learn more about Clean Commits" >}}
+{{< button-outline-indigo url="/features/clean-commits/" display="クリーンコミットについて詳しく見る" >}}
 </div>
 </div>
 </div>
-
 <div class="row g-5 align-items-center mb-5">
 <div class="col-12 col-lg-6">
-<img src="/features/conflict-resolution/three-pane-view-for-complete-clarity.png" alt="SmartGit merge conflict tool" class="img-fluid rounded shadow">
+<img alt="SmartGit マージ競合ツール" class="img-fluid rounded shadow" src="/features/conflict-resolution/three-pane-view-for-complete-clarity.png"/>
 </div>
 <div class="col-12 col-lg-6">
 <div class="ps-lg-4">
 <i class="fa-light fa-code-merge fa-2x sg-indigo-500 mb-3"></i>
-<h3 class="sg-indigo-500 mb-3">Better Git Merge Conflict Tool</h3>
-<p class="mb-3">Clear side-by-side diff views with a clean staging overview and direct editing capabilities.</p>
+<h3 class="sg-indigo-500 mb-3">より優れた Git マージ競合ツール</h3>
+<p class="mb-3">明確なステージング概要と直接編集機能を備えた明確な並列差分ビュー。</p>
 <ul class="text-muted mb-4" style="list-style: none; padding-left: 0;">
-<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>Clear staging overview</li>
-<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>Direct editing capabilities</li>
-<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>Visual file comparison</li>
+<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>明確なステージングの概要</li>
+<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>直接編集機能</li>
+<li class="mb-2"><i class="fa-light fa-check sg-orange-500 me-2"></i>ビジュアルファイルの比較</li>
 </ul>
-{{< button-outline-indigo url="/features/conflict-resolution/" display="Learn more about Conflict Resolution" >}}
+{{< button-outline-indigo url="/features/conflict-resolution/" display="競合解決について詳しく見る" >}}
 </div>
 </div>
 </div>
-
-
 </div>

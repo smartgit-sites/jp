@@ -1,9 +1,9 @@
 ---
-title: "SmartGit Support"
-description: "Get help with SmartGit - choose the best way to reach us based on your needs."
-headerH1: "Support"
-headerH2: "How can we help?"
-headerMessage: "Choose the contact method that best fits your needs."
+title: "SmartGit のサポート"
+description: "SmartGit に関するサポートを受ける - ニーズに基づいて当社に連絡するための最適な方法を選択してください。"
+headerH1: "サポート"
+headerH2: "どうすれば助けられるでしょうか？"
+headerMessage: "ニーズに最適な連絡方法を選択してください。"
 layout: "support"
 docsync:
   source:

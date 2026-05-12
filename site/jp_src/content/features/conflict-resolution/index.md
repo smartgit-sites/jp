@@ -1,15 +1,15 @@
 ---
-title: "Git Conflict Resolver -- 3-Way Merge Tool"
-headerH1: "SmartGit Conflict Resolution"
-headerH2: "Resolve Git Merge Conflicts Visually"
-listTitle: "Conflict Resolution"
-imageAltText: "SmartGit's built-in 3-way merge Conflict Solver displaying local, base, and remote file versions for visual Git merge conflict resolution."
-linkText: "More about Conflict Resolution"
+title: "Git 競合リゾルバー -- 3 方向マージ ツール"
+headerH1: "SmartGit の競合解決"
+headerH2: "Git マージの競合を視覚的に解決する"
+listTitle: "紛争の解決"
+imageAltText: "SmartGit に組み込まれた 3 方向マージ競合ソルバーは、ローカル、ベース、およびリモート ファイルのバージョンを表示して、Git マージ競合を視覚的に解決します。"
+linkText: "競合解決の詳細"
 category: ["feature"]
-headerMessage: "Resolve tricky merges visually using the **Conflict Solver** for **clean merges**."
-description: "Tired of Git merge conflicts? SmartGit's 3-way merge Conflict Solver lets you resolve conflicts visually -- fast, clean, and intuitive."
-ogTitle: "SmartGit Conflict Solver -- Resolve Git Merge Conflicts Visually"
-ogDesc: "Fix merge conflicts the smart way: use SmartGit's powerful visual merge tool with a clean 3-way interface and one-click commands."
+headerMessage: "**クリーンなマージ**のために**競合ソルバー**を使用して、厄介なマージを視覚的に解決します。"
+description: "Git のマージ競合にうんざりしていませんか? SmartGit の 3 方向マージ競合ソルバーを使用すると、競合を視覚的に、高速、クリーン、直感的に解決できます。"
+ogTitle: "SmartGit 競合ソルバー -- Git マージ競合を視覚的に解決する"
+ogDesc: "マージ競合をスマートな方法で修正します。クリーンな 3 ウェイ インターフェイスとワンクリック コマンドを備えた SmartGit の強力なビジュアル マージ ツールを使用します。"
 weight: 4
 docsync:
   source:
@@ -76,7 +76,7 @@ SmartGitはコンフリクトを簡単に解決するための直感的なワン
 
 ---
 
-お気に入りの外部マージツールがある場合、SmartGitで簡単に統合できます。{{< link url="https://docs.syntevo.com/" display="環境設定 | ツール" >}}に移動してセットアップを構成するだけです。	
+お気に入りの外部マージツールがある場合、SmartGitで簡単に統合できます。{{< link url="https://docs.syntevo.com/" display="環境設定 | ツール" >}}に移動してセットアップを構成するだけです。
 
 
 # 自信を持ってコンフリクトを解決

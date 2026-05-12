@@ -1,15 +1,15 @@
 ---
-title: "Version 26.1 Release Candidate"
-headerH1: "Version 26.1 (Release Candidate)"
-headerH2: "Major Improvements in Version 26.1 RC"
-listTitle: "Version 26.1 (Release Candidate)"
-imageAltText: "SmartGit 26.1 with a refreshed visual style, improved GitLab support, Commit Overlap, and Git 3.0 compatibility"
-linkText: "More about SmartGit 26.1"
+title: "バージョン 26.1 リリース候補"
+headerH1: "バージョン 26.1 (リリース候補)"
+headerH2: "バージョン 26.1 RC の主な改善点"
+listTitle: "バージョン 26.1 (リリース候補)"
+imageAltText: "SmartGit 26.1 では、ビジュアル スタイルが刷新され、GitLab サポート、コミット オーバーラップ、および Git 3.0 との互換性が向上しました。"
+linkText: "SmartGit 26.1 の詳細"
 category: ["feature"]
-headerMessage: "Enjoy a broader **visual refresh**, improved **GitLab** support, inspect **Commit Overlap**, and prepare for **Git 3.0**."
-description: "SmartGit 26.1 brings a refreshed UI, improved GitLab support, smarter worktree behavior, Commit Overlap, flexible AI prompts, and Git 3.0 compatibility."
-ogTitle: "SmartGit 26.1: UI refresh, GitLab, Commit Overlap"
-ogDesc: "A refreshed UI, improved GitLab support, Commit Overlap, smarter worktree behavior, flexible AI prompts, and Git 3.0 compatibility in SmartGit 26.1 RC."
+headerMessage: "より広範な**ビジュアルリフレッシュ**、改善された**GitLab**サポート、**コミットオーバーラップ**の検査、**Git 3.0**への準備をお楽しみください。"
+description: "SmartGit 26.1 は、更新された UI、改善された GitLab サポート、よりスマートなワークツリー動作、コミット オーバーラップ、柔軟な AI プロンプト、および Git 3.0 との互換性をもたらします。"
+ogTitle: "SmartGit 26.1: UI の更新、GitLab、コミットオーバーラップ"
+ogDesc: "SmartGit 26.1 RC の更新された UI、GitLab サポートの改善、コミット オーバーラップ、よりスマートなワークツリー動作、柔軟な AI プロンプト、および Git 3.0 互換性。"
 weight: 198
 docsync:
   source:
@@ -27,146 +27,147 @@ docsync:
     updated_at: 2026-05-12T00:35:06Z
 ---
 
-SmartGit 26.1 brings a broader UI refresh together with clearer graph and worktree workflows, including:
-- A refreshed look with reworked icons, compare colors, and dark theme refinements
-- Git 3.0 support for SHA-256 repositories and reftable refs
-- New GitLab support in the Standard window with merge requests, CI, browsing, and issue-based commit messages
-- Better worktree visibility, synchronization, and Graph interaction
-- Commit Overlap
-- Easier discovery of SmartGit's main windows
-- Custom Ask AI prompts, `{{ branch }}` templates, and AI support for merge commits
-- Reworked provider configurations in the Standard and Log windows
-- Clearer Pull behavior in multi-remote repositories
+SmartGit 26.1 は、以下を含む、より明確なグラフとワークツリーのワークフローとともに、より広範な UI の更新をもたらします。
+- 再加工されたアイコン、色の比較、ダークテーマの改良によるリフレッシュされた外観
+- Git 3.0 による SHA-256 リポジトリと reftable ref のサポート
+- マージリクエスト、CI、ブラウジング、問題ベースのコミットメッセージを備えた標準ウィンドウでの新しい GitLab サポート
+- ワークツリーの可視性、同期、グラフの相互作用の向上
+- コミットオーバーラップ
+- SmartGit のメイン ウィンドウの発見が容易になりました
+- カスタム Ask AI プロンプト、`{{ branch }}` テンプレート、マージ コミットの AI サポート
+- 標準ウィンドウとログ ウィンドウのプロバイダー構成を再加工しました
+- マルチリモート リポジトリでのプル動作の明確化
 
 ***
 
-# UI Refresh
+# UIの更新
 
-{{<screenshot src="reworked-icon-set.png" alt="SmartGit 26.1 brings a fresh new icon set with distinct colors">}}
-{{<screenshot src="dark-theme.png" alt="The dark theme has been improved">}}
-{{<screenshot src="reworked-compare-colors.png" alt="SmartGit 26.1 uses more appealing compare colors">}}
-
----
-
-SmartGit 26.1 brings a broader visual refresh.
-It looks more modern, uses a clearer visual language, and feels more coherent across light and dark themes.
-
-**Reworked Icon Set**
-
-The icon set has been completely reworked.
-It now looks more modern, uses only a few distinct colors, and comes in different variants for light and dark themes.
-
-* **Cleaner look** -- more modern shapes and a smaller, more deliberate color palette.
-* **Better contrast** -- dedicated light and dark variants improve recognition in both themes.
-
-**Improved Dark Theme**
-
-The dark theme has been refined further.
-
-* **Darker overall appearance** -- background tones are deeper and less washed out.
-* **Matched icon variants** -- the new icon set includes dedicated dark-theme versions.
-
-**Reworked Compare Colors**
-
-File Compare now uses a more familiar color language.
-
-* **Changed = yellow** -- modified blocks are easier to recognize at a glance.
-* **Added = green** -- added content is highlighted with the color users already expect.
-* **Deleted = red** -- removed content stands out more naturally than before.
-
-# Git 3.0 compatibility
-
-{{<screenshot src="git-3.0.png" alt="Git 3.0 compatibility with a SHA-256 repository using the reftable ref format">}}
+{{<screenshot alt="SmartGit 26.1 は、明確な色の新しいアイコン セットをもたらします" src="reworked-icon-set.png">}}
+{{<screenshot alt="ダークテーマが改善されました" src="dark-theme.png">}}
+{{<screenshot alt="SmartGit 26.1 はより魅力的な比較色を使用します" src="reworked-compare-colors.png">}}
 
 ---
 
-Git is evolving toward **SHA-256** object IDs and **reftable** refs.
-SmartGit 26.1 is ready for that transition.
+SmartGit 26.1 は、より広範な視覚的な刷新をもたらします。
+よりモダンに見え、より明確な視覚的言語が使用され、明るいテーマと暗いテーマにわたってより一貫性が感じられます。
 
-* **SHA-256 repositories** -- SmartGit can work with repositories using Git's newer object format.
-* **Reftable support** -- the newer ref storage backend is supported as well.
+**再加工されたアイコンセット**
 
-# GitLab in the Standard window
+アイコンセットは完全に作り直されました。
+見た目はよりモダンになり、いくつかの異なる色のみが使用され、明るいテーマと暗いテーマに応じてさまざまなバリエーションが提供されます。
 
-{{<screenshot src="gitlab.png" alt="Standard window with GitLab integration, Browse menu, and repository details">}}
+* **すっきりとした外観** -- よりモダンな形状と、より小さく、より意図的なカラーパレット。
+* **コントラストの向上** -- 専用の明暗のバリアントにより、両方のテーマでの認識が向上します。
 
----
+**改善されたダークテーマ**
 
-The Standard window now includes GitLab support on par with the existing GitHub support.
+ダークテーマはさらに洗練されました。
 
-* **GitLab merge requests** -- merge requests are integrated into the Standard window workflow.
-* **GitLab CI in My History** -- CI pipeline state is shown for merge requests, branches, and diverged remotes.
-* **Browse in GitLab** -- the active branch or repository can be opened directly in GitLab from the **Browse** button.
-* **Commit messages from GitLab issues** -- commit messages can be created from selected GitLab issues.
+* **全体的に暗くなった** -- 背景の色調がより深くなり、色褪せが少なくなります。
+* **一致するアイコンのバリエーション** -- 新しいアイコン セットには、専用のダークテーマ バージョンが含まれています。
 
-# Worktree state in Branches and Graph
+**色の比較を再調整**
 
-{{<screenshot src="worktrees.png" alt="Branches and Graph showing branches attached to worktrees and their worktree state">}}
+ファイル比較では、より使い慣れたカラー言語が使用されるようになりました。
 
----
+* **変更済み = 黄色** -- 変更されたブロックは一目で認識しやすくなります。
+* **追加 = 緑色** -- 追加されたコンテンツは、ユーザーがすでに期待している色で強調表示されます。
+* **削除済み = 赤** -- 削除されたコンテンツが以前よりも自然に目立ちます。
 
-Branches attached to worktrees are now shown in **Branches** and the **Graph** together with their current worktree state.
+# Git 3.0 との互換性
 
-* **See the current worktree state at a glance** -- refs show whether the linked worktree is clean or modified, and tooltips can show the related worktree path.
-* **Open worktree repositories stay in sync** -- related open worktree repositories are refreshed immediately, so **Branches** and the **Graph** stay up to date across them.
-* **Smoother Graph interaction** -- the "switch to worktree" dialog can be disabled, and clean worktree refs can be dragged in the Graph.
-
-# Commit Overlap
-
-{{<screenshot src="overlap.png" alt="Graph with Commit Overlap column showing overlap states">}}
+{{<screenshot alt="reftable ref 形式を使用した SHA-256 リポジトリとの Git 3.0 互換性" src="git-3.0.png">}}
 
 ---
 
-**Commit Overlap** adds a new dimension to the Graph: the **Overlap** column shows how strongly a commit overlaps with a selected or pinned comparison commit.
-This makes it easier to spot related commits, identify candidates for reordering or squashing, and notice possible upstream conflicts earlier.
+Git は **SHA-256** オブジェクト ID と **reftable** 参照に向けて進化しています。
+SmartGit 26.1 はその移行の準備ができています。
 
-* **Overlap categories** -- SmartGit distinguishes between no overlap, slight overlap, heavy overlap, subset, superset, and same modified files.
-* **Tooltip details** -- tooltips can list common files and potential conflicts.
+* **SHA-256 リポジトリ** -- SmartGit は、Git の新しいオブジェクト形式を使用してリポジトリを操作できます。
+* **Reftable のサポート** -- 新しい ref ストレージ バックエンドもサポートされています。
 
-# Discover other SmartGit windows
+# 標準ウィンドウの GitLab
 
-{{<screenshot src="discover.png" alt="SmartGit 26.1 Discover dialog for switching between the main windows">}}
-
----
-
-SmartGit's three main windows look similar enough that it is easy to open the wrong one and wonder why the UI suddenly feels so different. It was not always obvious at a glance which main window was currently open or how to get to the other ones.
-
-Each window now has its own identity through easy-to-recognize, easy-to-distinguish icons. SmartGit 26.1 also makes the current window easier to recognize and the other two easier to discover from the top-right corner, giving you **clearer orientation**, noticeably **less confusion**, and **easier switching** if you did open the wrong one.
-
-{{< link url="/window-styles-and-cat-toys/" display="Learn more" >}}
-
-# Ask AI, Prompt Templates, and Rewording
-
-{{<screenshot src="ask-ai.png" alt="Ask AI dialog with a custom prompt for a selected commit">}}
+{{<screenshot alt="GitLab 統合、[参照] メニュー、およびリポジトリの詳細を備えた標準ウィンドウ" src="gitlab.png">}}
 
 ---
 
-SmartGit 26.1 extends the AI workflow in three important ways.
+標準ウィンドウには、既存の GitHub サポートと同等の GitLab サポートが含まれるようになりました。
 
-* **Ask AI with custom prompts** -- run **Ask AI** with a user-defined prompt on multiple selected commits at once, for example as a final sanity check of a feature branch.
-* **More flexible prompt templates** -- commit message generation, rewording, and **Ask AI** support the `{{ branch }}` placeholder. Templates can use `@ai-marker`, and only that marker is replaced by the LLM response.
-* **Merge commits and signed commits** -- **Ask AI** now works for merge commits, and AI rewording preserves signatures of signed commits.
+* **GitLab マージ リクエスト** -- マージ リクエストは標準ウィンドウのワークフローに統合されています。
+* **履歴内の GitLab CI** -- マージ リクエスト、ブランチ、分岐リモートの CI パイプラインの状態が表示されます。
+* **GitLab で参照** -- アクティブなブランチまたはリポジトリは、**参照** ボタンから GitLab で直接開くことができます。
+* **GitLab 問題からのコミット メッセージ** -- 選択した GitLab 問題からコミット メッセージを作成できます。
 
-{{< link url="https://docs.syntevo.com/SmartGit/Latest/Manual/Integrations/AI" display="Learn more">}}
+# ブランチとグラフのワークツリーの状態
 
-# Provider configurations in Standard and Log
-
-{{<screenshot src="provider-rework.png" alt="Provider configuration selector for switching between multiple GitHub accounts">}}
-
----
-
-Working with multiple provider accounts is now more transparent in the **Standard** and **Log** windows.
-
-* **Switch explicitly** -- select the active provider configuration directly in the UI, so it is clear which account or site is currently in use.
-* **Per-remote selection** -- provider configurations can also be selected on remotes.
-
-# Pull vs. Pull All (Standard window)
-
-{{<screenshot src="std-pull-all.png" alt="In the Standard window you can configure the pull behavior in the Pull toolbar button popup menu">}}
+{{<screenshot alt="ワークツリーに接続されたブランチとそのワークツリーの状態を示すブランチとグラフ" src="worktrees.png">}}
 
 ---
 
-Multi-remote repositories now make Pull behavior clearer.
+ワークツリーにアタッチされたブランチが、現在のワークツリーの状態とともに **ブランチ** および **グラフ** に表示されるようになりました。
 
-* **Choose the default directly** -- set whether Pull uses the current remote or all remotes from the toolbar popup.
-* **More control after fetch** -- deleting merged branches after Pull is now optional.
+* **現在のワークツリーの状態を一目で確認** -- 参照は、リンクされたワークツリーがクリーンであるか変更されているかを示し、ツールチップは関連するワークツリーのパスを表示できます。
+* **開いているワークツリー リポジトリは同期を保ちます** -- 関連する開いているワークツリー リポジトリはすぐに更新されるため、**ブランチ** と **グラフ** はそれら全体で最新の状態に保たれます。
+* **スムーズなグラフ インタラクション** -- 「ワークツリーへの切り替え」ダイアログを無効にすることができ、クリーンなワークツリー参照をグラフ内にドラッグできます。
+
+# オーバーラップをコミット
+
+{{<screenshot alt="オーバーラップ状態を示すコミットオーバーラップ列を含むグラフ" src="overlap.png">}}
+
+---
+
+**コミット オーバーラップ** は、グラフに新しい次元を追加します。**オーバーラップ** 列は、コミットが選択された比較コミットまたは固定された比較コミットとどの程度強くオーバーラップしているかを示します。
+これにより、関連するコミットを特定し、並べ替えまたは潰す候補を特定し、上流で競合が発生する可能性を早期に発見することが容易になります。
+
+* **重複カテゴリ** -- SmartGit は、重複なし、わずかな重複、重度の重複、サブセット、スーパーセット、および同じ変更ファイルを区別します。
+* **ツールチップの詳細** -- ツールチップには、一般的なファイルと潜在的な競合をリストできます。
+
+# 他の SmartGit ウィンドウを発見する
+
+{{<screenshot alt="メイン ウィンドウ間を切り替えるための SmartGit 26.1 Discover ダイアログ" src="discover.png">}}
+
+---
+
+SmartGit の 3 つのメイン ウィンドウは非常によく似ているため、間違ったウィンドウを開いてしまい、なぜ UI が突然こんなにも違うように感じられるのか不思議に思うことがあります。どのメイン ウィンドウが現在開いているか、または他のウィンドウにアクセスする方法は、一目では必ずしも明らかではありませんでした。
+
+各ウィンドウは、認識しやすく、区別しやすいアイコンによって独自のアイデンティティを持つようになりました。また、SmartGit 26.1 では、現在のウィンドウが認識しやすくなり、他の 2 つのウィンドウが右上隅から見つけやすくなり、**方向が明確になり**、**混乱が大幅に減り**、間違ったウィンドウを開いた場合の**切り替えが簡単になります**。
+
+{{< link url="/window-styles-and-cat-toys/" display="もっと詳しく知る" >}}
+
+# AI に質問、プロンプト テンプレート、言い換え
+
+{{<screenshot alt="選択したコミットに対するカスタム プロンプトを含む AI ダイアログに質問する" src="ask-ai.png">}}
+
+---
+
+SmartGit 26.1 は、3 つの重要な方法で AI ワークフローを拡張します。
+
+* **カスタム プロンプトを使用して AI に尋ねる** -- 機能ブランチの最終健全性チェックなどとして、選択した複数のコミットに対してユーザー定義のプロンプトを使用して **Ask AI** を実行します。
+* **より柔軟なプロンプト テンプレート** -- コミット メッセージの生成、言い換え、**Ask AI** は、`{{ branch }}` プレースホルダーをサポートします。テンプレートでは `@ai-marker` を使用でき、そのマーカーのみが LLM 応答に置き換えられます。
+* **コミットと署名付きコミットのマージ** -- **Ask AI** がマージ コミットに対して機能するようになり、AI のリワードにより署名付きコミットの署名が保持されます。
+
+{{< link url="https://docs.syntevo.com/SmartGit/Latest/Manual/Integrations/AI" display="もっと詳しく知る" >}}
+
+# 標準およびログのプロバイダー構成
+
+{{<screenshot alt="複数の GitHub アカウントを切り替えるためのプロバイダー構成セレクター" src="provider-rework.png">}}
+
+---
+
+**標準**ウィンドウと**ログ**ウィンドウで、複数のプロバイダー アカウントの操作がよりわかりやすくなりました。
+
+* **明示的に切り替える** -- アクティブなプロバイダー構成を UI で直接選択するため、現在どのアカウントまたはサイトが使用されているかが明確になります。
+* **リモートごとの選択** -- プロバイダー構成はリモートでも選択できます。
+
+# プル vs. すべてプル (標準ウィンドウ)
+
+{{<screenshot alt="標準ウィンドウでは、[プル] ツールバー ボタンのポップアップ メニューでプル動作を構成できます。" src="std-pull-all.png">}}
+
+---
+
+マルチリモート リポジトリにより、プル動作がより明確になりました。
+
+* **デフォルトを直接選択** -- プルが現在のリモートを使用するか、ツールバーのポップアップからすべてのリモートを使用するかを設定します。
+* **フェッチ後の制御が強化されました** -- プル後のマージされたブランチの削除はオプションになりました。
+</screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot></screenshot>

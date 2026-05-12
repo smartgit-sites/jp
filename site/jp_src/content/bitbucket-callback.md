@@ -1,5 +1,5 @@
 ---
-title: BitBucket Authorization
+title: BitBucket 認証
 robots: "noindex, nofollow"
 sitemapExclude: true
 docsync:

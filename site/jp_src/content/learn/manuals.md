@@ -1,5 +1,5 @@
 ---
-title: "Manual"
+title: "マニュアル"
 docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
