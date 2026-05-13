@@ -15,13 +15,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: features/conflict-resolution/index.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: c7b19ae4dff7920e50ae357c875692e538f248b8
     modified_committed_at: 2026-03-10T09:19:58Z
     blob: a1b9483774389de98d098bbbe8e331c21eb8777b
     sha256: 52d9299e4bcf2d42be6f7a04b9638266e5b88233af477d0289e57437f5203f3a
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z

@@ -11,13 +11,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/developer-journey-with-smartgit/index.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: c7b19ae4dff7920e50ae357c875692e538f248b8
     modified_committed_at: 2026-03-10T09:19:58Z
     blob: 5c74e2d711594e0998cd29325a0bfc10c898b421
     sha256: c359afacd1479e924c2e1c3003176020f7cda4a43b996bf81a54a3b8e1b37367
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z

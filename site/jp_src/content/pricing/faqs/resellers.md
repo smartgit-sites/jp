@@ -7,13 +7,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: pricing/faqs/resellers.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: b84650c18d8c8ef3a7ca60f82831627113368c73
     modified_committed_at: 2026-01-27T08:43:48Z
     blob: 7bc56d5d9b7a97503bfc1057b354b31e1416df5e
     sha256: 3794cc75fbf960832acca88d5aaa72311ad48ee17fda1f5ea0ade66080347f08
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z

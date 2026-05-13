@@ -32,13 +32,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: home/benefits.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: c59e58880dee9410df1d80bd68977bbe10445969
     modified_committed_at: 2025-08-11T13:01:21Z
     blob: 5832602df0b1248752602695a91ceeecf2671666
     sha256: 8bbd33022ca9177617c3285cba6c135ad87fdcea7107323bdd146c58c6539108
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z

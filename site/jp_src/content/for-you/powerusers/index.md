@@ -14,13 +14,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: for-you/powerusers/index.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: ab767d5dd806ba23ed6728dd0a1b9f7209274ba8
     modified_committed_at: 2026-04-27T09:34:40Z
     blob: de7fb3fffd2dd77f53cfc82d0d552ae6c8e838f2
     sha256: 2ea346c1f343533cb99262af996dd1f9a7428d86c4c8b142f9d46fac326ede41
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z

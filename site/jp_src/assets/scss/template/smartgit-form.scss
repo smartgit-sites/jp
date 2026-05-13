@@ -22,11 +22,7 @@
   display:flex;
 }
 
-[required]{
-  border-right-color: $primary;
-  border-right-width: map-get($border-widths, 3);
-}
-[required] ~ label::after{
+[required]:not(.form-check-input) ~ label::after{
   content: '*';
 }
 *[id*=page_]{

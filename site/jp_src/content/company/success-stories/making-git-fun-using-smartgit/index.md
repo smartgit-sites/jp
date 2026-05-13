@@ -11,13 +11,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/making-git-fun-using-smartgit/index.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: 85499c6d174de82a7e89200a442ab942e0eab14d
     modified_committed_at: 2025-08-04T20:57:04Z
     blob: b4d575354b3303707a5439242df482fee809b741
     sha256: 09c9efd61c26914cee66c92f1ed23ab4a59e8ff9a29dc9b019eb8820eb01248c
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z

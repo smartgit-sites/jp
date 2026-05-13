@@ -7,13 +7,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: pricing/faqs/purchase-orders.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: b84650c18d8c8ef3a7ca60f82831627113368c73
     modified_committed_at: 2026-01-27T08:43:48Z
     blob: c83a82915aa69155cf89526469fad899d126f9e9
     sha256: dd552bb972bbd05a7509000a38480a031d54c174912fd814635375e12eb6312c
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z

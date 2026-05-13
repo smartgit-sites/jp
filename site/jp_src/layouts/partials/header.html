@@ -61,7 +61,7 @@
       {{ if eq $heroLayout "with-sidebar-centered" }}<div class="row"><div class="sg-layout-sidebar d-none d-md-block ps-md-0"></div><div class="sg-layout-main-centered"><div class="row"><div class="col-12 sg-page-hero-copy">{{ end }}
       {{ if eq $heroLayout "no-sidebar-centered" }}<div class="row"><div class="sg-content-span-center sg-page-hero-copy">{{ end }}
       {{ if eq $heroLayout "no-sidebar-full" }}<div class="row"><div class="sg-content-span-full sg-page-hero-copy">{{ end }}
-        <h1>{{ $h1 }}</h1>
+        <h1>{{ $h1 | safeHTML }}</h1>
         {{ if $showH2 }}
           <div class="sg-page-hero-subline">{{ $h2 | markdownify }}</div>
         {{ end }}

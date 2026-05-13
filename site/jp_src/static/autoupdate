@@ -4,6 +4,19 @@
 		<version>
 			<major-version>26.1</major-version>
 			<major-date>2025-10-30</major-date>
+			<build>261032</build>
+			<name>26.1.032</name>
+			<date>2026-05-12</date>
+			<location>https://www.smartgit.dev/download/</location>
+			<changelog>https://www.smartgit.dev/changelogs/changelog-26.1.txt</changelog>
+			<update-url>https://update.syntevo.com/smartgit/control-261032</update-url>
+			<update-density>50</update-density>
+			<update-density-salt>C630E3A7</update-density-salt>
+			<update-density-manual>true</update-density-manual>
+		</version>
+		<version>
+			<major-version>26.1</major-version>
+			<major-date>2025-10-30</major-date>
 			<build>261031</build>
 			<name>26.1.031</name>
 			<date>2026-05-08</date>

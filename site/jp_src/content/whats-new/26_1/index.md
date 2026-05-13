@@ -15,13 +15,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: whats-new/26_1/index.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: 03fa5036d2e4a97ef86cd1f5de2e778be400330b
     modified_committed_at: 2026-04-07T21:37:07Z
     blob: 6715980d5a1fb4572828a9fdcb1286a770d2be4a
     sha256: bac268e4f83ce75fdec9553fbb0fb9844a9cc3be0bdede6fdcde7986a1a571a4
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z

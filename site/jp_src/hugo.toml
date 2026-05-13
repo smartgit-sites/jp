@@ -315,14 +315,6 @@ unsafe = true
         params.target = '_blank'
 
         [[menus.main]]
-        name = 'トレーニング'
-        pageRef = '/learn/trainings/'
-        parent = 'learn'
-        weight = 30
-        params.icon = ''
-        params.target = '_parent'
-
-        [[menus.main]]
         name = 'コミュニティフォーラム'
         url = 'https://smartgit.userecho.com/'
         parent = 'learn'
@@ -338,14 +330,6 @@ unsafe = true
     weight = 50
     params.icon = ''
     params.target = '_parent'
-
-        [[menus.main]]
-        name = '会社概要'
-        pageRef = '/company/about-us/'
-        parent = 'company'
-        weight = 10
-        params.icon = ''
-        params.target = '_parent'
 
         [[menus.main]]
         name = 'Team'

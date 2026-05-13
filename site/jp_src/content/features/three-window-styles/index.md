@@ -14,13 +14,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: features/three-window-styles/index.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: 6a6e5a97c27e98dcf0e2a4cf169d8de80b499739
     modified_committed_at: 2025-09-02T15:04:52Z
     blob: 7da80979d273483a4c8c3e024c594ede975fc7fa
     sha256: 3f341465befa62f82ad652fc27c7df650dc2ce01c80ee6b9904dcb7d0a4a1dcc
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z

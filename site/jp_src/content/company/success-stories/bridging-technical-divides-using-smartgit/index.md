@@ -11,13 +11,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/bridging-technical-divides-using-smartgit/index.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: fc2b579a8e8740abb82a99c53e33f832d063dfaf
     modified_committed_at: 2025-07-21T17:04:23Z
     blob: b4b6dc8af643e9c48adc16085fdeb777333b3478
     sha256: 44c44ed94af3268454cb7f5b2cdbc8989ad4cd10bc5543b41b7adb9c48db0fa7
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z

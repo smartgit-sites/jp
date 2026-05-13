@@ -14,13 +14,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: for-you/academic/index.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: ab767d5dd806ba23ed6728dd0a1b9f7209274ba8
     modified_committed_at: 2026-04-27T09:34:40Z
     blob: 0bf1363847b50aa7847ed44d84996a0eb5e4db06
     sha256: 6a9cc3a2ca97ac29078366fa041fe47b33d9c8b172986097e04178d1da59d8a9
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z

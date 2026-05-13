@@ -8,13 +8,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/imprint.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: fc2b579a8e8740abb82a99c53e33f832d063dfaf
     modified_committed_at: 2025-07-21T17:04:23Z
     blob: 943a9eac56ac35af80722bcc60e8f1e4a82555b2
     sha256: 1fcfc78b8d3420c5946b8d14a24542ea05a0c1ebe502f08abf64219fb1cc18e1
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z

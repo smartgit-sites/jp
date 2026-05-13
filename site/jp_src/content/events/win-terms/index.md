@@ -9,13 +9,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: events/win-terms/index.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: 17251d6bbb36b8efb3782fa211b1f0ee4eda3e75
     modified_committed_at: 2026-04-30T23:03:12Z
     blob: f03197adb656f7ebb44f5c954183203ef2ef46f5
     sha256: 47e32636d0c870581b678e557d57fa606e583323eb9a2399ebbd8b126ce2363c
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z

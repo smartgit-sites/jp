@@ -90,25 +90,30 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: learn/_index.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
-    modified_commit: 0b2f965264902be9299acd420f1aa71a354880af
-    modified_committed_at: 2026-04-27T09:32:41Z
-    blob: 608a61fc087ff38e154bb3153ff588c662f33957
-    sha256: d89814b3a8bc362ecb125f740377eece708ff5ba26af177322de58d37dbb747d
-    fetched_at: 2026-05-12T00:35:06Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
+    modified_commit: 738b91a1b68ed8aae2e082081b553e43f6e3a3f3
+    modified_committed_at: 2026-05-12T08:16:58Z
+    blob: 3a324fd09a6f5912a415022bd92300e159fd1312
+    sha256: aa9a82ad273fe9b0c654d5c174ac07f1a97a93e8111f4fe31757fe97ae505752
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
-    updated_at: 2026-05-12T00:35:06Z
+    updated_at: 2026-05-13T23:14:41Z
 ---
 
 {{% section-with-content sectionClasses="pb-5 pb-7" columnClasses="col-12" %}}
 {{< cards-with-icons listSource="/learn/" listName="workFlowExplorer" >}}
 {{% /section-with-content %}}
 
-{{% section-with-content sectionClasses="pt-5 pb-10" columnClasses="col-12" %}}
+{{% section-with-content sectionClasses="pt-5 pb-5" columnClasses="col-12" %}}
 {{< cards-with-icons listSource="/learn/" listName="getInvolved" >}}
 {{% /section-with-content %}}
+
+<div class="rounded-3 border border-sg-indigo-100 px-4 py-3 mb-5 d-flex align-items-center gap-3">
+  <i class="fa-light fa-chalkboard-user fa-lg sg-indigo-400 flex-shrink-0"></i>
+  <p class="text-muted small mb-0">SmartGit では、チームの経験やニーズに合わせたトレーニングを提供しています（半日から 2 日まで）。オンライン、オンプレミス、オンサイトに対応できます。ご関心があれば <a href="mailto:sales@syntevo.com" class="sg-indigo-500">お問い合わせください</a>。</p>
+</div>
 
 <div style="margin-bottom: 80px;"></div>
 

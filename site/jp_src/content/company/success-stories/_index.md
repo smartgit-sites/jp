@@ -23,13 +23,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/_index.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: 1e20f09e39fea2859c0e00ee8e9cf89b79840c32
     modified_committed_at: 2026-04-07T21:37:07Z
     blob: 9a8f5fbcc0ac246551ed3ef84ccdd7004216c3dd
     sha256: 63ddaeaa6fa9e5ac4cc35563bb80a7fff7b4a12549f301ce66adce31814b60fb
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z

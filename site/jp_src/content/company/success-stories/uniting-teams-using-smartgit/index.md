@@ -11,13 +11,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/uniting-teams-using-smartgit/index.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: c611899f6c4b7c568c19e69d28c1ecebfbf559f2
     modified_committed_at: 2026-03-11T08:48:17Z
     blob: 54e37bb35132e05b50cb2cbf3d145e87a4c52134
     sha256: 482dde0c78064934dafc47a24f32cd8a40223c1a5654d494c374db4b89cb5744
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z

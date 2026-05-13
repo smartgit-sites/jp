@@ -11,13 +11,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: learn/documentation.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: c7b19ae4dff7920e50ae357c875692e538f248b8
     modified_committed_at: 2026-03-10T09:19:58Z
     blob: 02f370886ae8366c6bb8b521471dcc12481445d0
     sha256: e0e5cc56421e09aa807c3181e8ff7c6e617d272a77d530bd5ce186c34401c28e
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z

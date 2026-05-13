@@ -10,13 +10,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: window-styles-and-cat-toys/_index.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: 00d443a323ba15f83d3f94d8e250db647fcaa4b5
     modified_committed_at: 2026-03-19T12:44:24Z
     blob: 6a815080f748209e08120095576d976b9322c66c
     sha256: c6ff0ea448b1a72821f5d74162cb82a9f9e7e15f0920217a752fc7257b682575
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z

@@ -9,5 +9,121 @@
             </div>
         </div>
     </section>
+
+    <section class="container mb-5">
+        <div class="row">
+            <div class="{{ $contentSpanClass }}">
+                <div class="row g-5 py-4">
+
+                    {{/* Left column: Vision + History */}}
+                    <div class="col-12 col-lg-7">
+
+                        {{/* Vision */}}
+                        <div class="mb-5">
+                            <div class="d-flex align-items-center mb-3">
+                                <i class="fa-light fa-eye fa-2x sg-orange-500 me-3"></i>
+                                <h2 class="sg-indigo-500 mb-0">私たちのビジョン</h2>
+                            </div>
+                            <p class="text-muted">{{ .Params.vision }}</p>
+                        </div>
+
+                        {{/* History */}}
+                        <div>
+                            <div class="d-flex align-items-center mb-4">
+                                <i class="fa-light fa-clock-rotate-left fa-2x sg-orange-500 me-3"></i>
+                                <h2 class="sg-indigo-500 mb-0">私たちの歩み</h2>
+                            </div>
+
+                            {{/* Timeline item 1 */}}
+                            <div class="d-flex gap-4 mb-0">
+                                <div class="d-flex flex-column align-items-center" style="min-width: 40px;">
+                                    <div class="rounded-circle bg-sg-orange-500 d-flex align-items-center justify-content-center flex-shrink-0" style="width:40px;height:40px;">
+                                        <i class="fa-light fa-flag fa-sm text-white"></i>
+                                    </div>
+                                    <div style="width:2px;flex:1;background:linear-gradient(to bottom,var(--sg-orange-500),var(--sg-indigo-200));min-height:40px;"></div>
+                                </div>
+                                <div class="pb-4">
+                                    <h5 class="sg-indigo-500 fw-semibold mb-2">2000 年代初頭</h5>
+                                    <p class="text-muted">{{ .Params.history1 }}</p>
+                                </div>
+                            </div>
+
+                            {{/* Timeline item 2 */}}
+                            <div class="d-flex gap-4 mb-0">
+                                <div class="d-flex flex-column align-items-center" style="min-width: 40px;">
+                                    <div class="rounded-circle bg-sg-indigo-300 d-flex align-items-center justify-content-center flex-shrink-0" style="width:40px;height:40px;">
+                                        <i class="fa-light fa-route fa-sm text-white"></i>
+                                    </div>
+                                    <div style="width:2px;flex:1;background:linear-gradient(to bottom,var(--sg-indigo-200),var(--sg-indigo-400));min-height:40px;"></div>
+                                </div>
+                                <div class="pb-4">
+                                    <h5 class="sg-indigo-500 fw-semibold mb-2">20 年以上の歩み</h5>
+                                    <p class="text-muted">{{ .Params.history2 }}</p>
+                                </div>
+                            </div>
+
+                            {{/* Timeline item 3 */}}
+                            <div class="d-flex gap-4">
+                                <div class="d-flex flex-column align-items-center" style="min-width: 40px;">
+                                    <div class="rounded-circle bg-sg-indigo-500 d-flex align-items-center justify-content-center flex-shrink-0" style="width:40px;height:40px;">
+                                        <i class="fa-light fa-location-dot fa-sm text-white"></i>
+                                    </div>
+                                </div>
+                                <div class="pb-2">
+                                    <h5 class="sg-indigo-500 fw-semibold mb-2">現在</h5>
+                                    <p class="text-muted">{{ .Params.history3 }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    {{/* Right column: What Developers Say */}}
+                    <div class="col-12 col-lg-5">
+                        <h5 class="sg-indigo-500 fw-semibold mb-4">開発者の声</h5>
+                        <div class="d-flex flex-column gap-3">
+                        {{ $files := .Site.Data.success_stories_featured.list }}
+                        {{ $colors := .Site.Data.success_stories_featured.listColors }}
+                        {{ range $key, $value := $files }}
+                            {{ $page := site.GetPage .filename }}
+                            {{ if $page }}
+                                {{ $params := $page.Params }}
+                                {{ $color := index $colors $key }}
+                                <div class="p-4 rounded-3 border-start border-3 border-sg-{{ $color.color }}-500 bg-sg-{{ $color.color }}-500-rgb bg-opacity-5 position-relative">
+                                    <i class="fa-light fa-quote-left sg-orange-500 mb-2"></i>
+                                    <p class="text-muted mb-3" style="font-size: 0.9rem;">{{ $params.summary }}</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div>
+                                            <span class="fw-semibold sg-indigo-500" style="font-size: 0.85rem;">{{ $params.testimonial_user }}</span>
+                                            <span class="text-muted d-block" style="font-size: 0.85rem;">{{ $params.testimonial_company }}</span>
+                                        </div>
+                                        <a href="{{ $page.RelPermalink }}" class="btn btn-sm bg-sg-indigo-200-rgb bg-opacity-25 stretched-link">
+                                            <i class="fa-light fa-arrow-up-right-from-square sg-indigo-500"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            {{ end }}
+                        {{ end }}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{/* Links */}}
+    <section class="container mb-5">
+        <div class="row">
+            <div class="{{ $contentSpanClass }}">
+                <div class="d-flex flex-wrap gap-2">
+                    {{ partial "linkbeautifier.html" (dict "url" "/company/team/" "display" "SmartGit チームを見る" "class" "btn btn-sg-orange" "title" "SmartGit チームを見る") }}
+                    {{ partial "linkbeautifier.html" (dict "url" "/company/european-git-client/" "display" "ヨーロッパ発の Git クライアント" "class" "btn btn-sg-orange" "title" "ヨーロッパ発の Git クライアント") }}
+                    {{ partial "linkbeautifier.html" (dict "url" "/company/imprint/" "display" "会社情報" "class" "btn btn-sg-gray" "title" "会社情報") }}
+                    {{ partial "linkbeautifier.html" (dict "url" "/company/privacy-policy/" "display" "プライバシーポリシー" "class" "btn btn-sg-gray" "title" "プライバシーポリシー") }}
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 {{ end }}

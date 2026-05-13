@@ -11,13 +11,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/enhanced-focus-through-smart-design-using-smartgit/index.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: fc2b579a8e8740abb82a99c53e33f832d063dfaf
     modified_committed_at: 2025-07-21T17:04:23Z
     blob: 0d27f5c7269a884a58708904260a7bada3366816
     sha256: 78f5a2f7dd46319f6356007886d6f9abbf8f94458d6e2c14841e13992f22c295
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z

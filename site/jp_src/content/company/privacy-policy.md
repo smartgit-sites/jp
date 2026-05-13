@@ -8,13 +8,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/privacy-policy.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: e0b3f78c824ee4989f29050134eaae0f777b026e
     modified_committed_at: 2026-04-21T10:35:24Z
     blob: 879855e116223bce91ba9bc046cb3b3167f7bd15
     sha256: 808052fc6f138d31335c7a38e779d758d5634fa2cf85ef7d638ab21119132088
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z

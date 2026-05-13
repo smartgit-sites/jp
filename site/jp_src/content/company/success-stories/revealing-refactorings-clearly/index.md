@@ -11,13 +11,13 @@ docsync:
   source:
     repo: git@github.com:smartgit-sites/dev.git
     path: company/success-stories/revealing-refactorings-clearly/index.md
-    commit: b3118ce020dce5cceca135e9159ff4672086ca1d
-    committed_at: 2026-05-09T15:55:27Z
+    commit: e6b2b5395e838eabbd1fa131b1c28aca620b15dd
+    committed_at: 2026-05-12T12:13:21Z
     modified_commit: 096e7ab86f86045b86dde89f91d865de7c4da0e1
     modified_committed_at: 2025-11-05T09:39:13Z
     blob: 4ef9f251714f962d432900448ad56b3c41d25afa
     sha256: a2fb32ae31f4a57f0c845a1de0d3eeb0167cabb953269fa4a478bfa344caf898
-    fetched_at: 2026-05-12T00:35:06Z
+    fetched_at: 2026-05-13T23:14:41Z
   translation:
     status: draft
     updated_at: 2026-05-12T00:35:06Z
