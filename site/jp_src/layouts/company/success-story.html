@@ -7,12 +7,7 @@
             <div class="row">
                 <div class="{{ $contentSpanClass }}">
                     <div class="row">
-                {{ $testimonialContent := "" }}
-                {{ range (split .RawContent "\n# ") }}
-                    {{ if hasPrefix . "testimonial\n" }}
-                        {{ $testimonialContent = replaceRE "^testimonial\n" "" . | markdownify }}
-                    {{ end }}
-                {{ end }}
+                {{ $testimonialContent := partial "page-section-content.html" (dict "Page" . "Section" "testimonial") | markdownify }}
                 {{ with $testimonialContent }}
                 <div class="col-12 text-end py-4">
                     <blockquote class="blockquote fst-italic fs-4 text-muted" style="max-width: 75%; margin-left: auto;">

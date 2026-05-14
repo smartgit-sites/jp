@@ -11,13 +11,34 @@
 {{- $content := printf "\n%s" ($page.RawContent | replaceRE "\r\n" "\n") -}}
 {{- $sections := split $content "\n# " -}}
 {{- $desiredSection := "" -}}
+{{- $sectionAliases := dict
+  "benefits" (slice "benefits" "利点")
+  "challenge" (slice "challenge" "チャレンジ")
+  "conclusion" (slice "conclusion" "結論")
+  "desc" (slice "desc" "説明")
+  "features" (slice "features" "特徴")
+  "gallery" (slice "gallery" "ギャラリー")
+  "headline" (slice "headline" "見出し")
+  "history1" (slice "history1" "沿革1")
+  "history2" (slice "history2" "沿革2")
+  "history3" (slice "history3" "沿革3")
+  "image" (slice "image" "画像")
+  "impact" (slice "impact" "インパクト")
+  "solution" (slice "solution" "解決")
+  "subline" (slice "subline" "サブライン")
+  "summary" (slice "summary" "まとめ")
+  "testimonial" (slice "testimonial" "証言")
+  "vision" (slice "vision" "ビジョン")
+-}}
+{{- $candidateSections := index $sectionAliases $section | default (slice $section) -}}
 
 {{- range $sections -}}
-  {{- if hasPrefix . (printf "%s\n" $section) -}}
-    {{- $desiredSection = . -}}
+  {{- $rawSection := . -}}
+  {{- range $candidateSections -}}
+    {{- if hasPrefix $rawSection (printf "%s\n" .) -}}
+      {{- $desiredSection = replaceRE (printf "^%s\n" .) "" $rawSection -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}
 
-{{- with $desiredSection -}}
-  {{- replaceRE (printf "^%s\n" $section) "" . -}}
-{{- end -}}
+{{- with $desiredSection -}}{{- . -}}{{- end -}}
