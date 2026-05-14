@@ -1,24 +1,15 @@
 <form action="" accept-charset="UTF-8" method="get" data-module="purchase-form" data-product-id="smartgit" data-checkout-type="subscription">
-    <input type="hidden" name="purchase_subscription[coupon-code]" value="">
-    {{ partial "purchase-form/currency-switch.html" (dict
-        "Name" "purchase_subscription[currency]"
-        "IdPrefix" "purchase_subscription_currency"
-        "CheckedValue" "USD"
-        "Options" (slice
-            (dict "Value" "EUR" "Label" "EURO" "DataLabel" "EUR")
-            (dict "Value" "USD" "Label" "USD" "DataLabel" "USD")
-        )
-    ) }}
+    {{ partial "purchase-form/jp-sales-fields.html" (dict "NamePrefix" "purchase_subscription" "IdPrefix" "purchase_subscription") }}
     <div class="row">
         <div class="col-12 px-0">
             <div class="card">
                 <div class="card-body border-bottom border-sg-indigo-200">
                     <div class="d-flex align-items-center">
-                        <span class="fs-4 sg-gray-500">SmartGit Licenses</span>
+                        <span class="fs-4 sg-gray-500">SmartGit ライセンス</span>
                         <div class="form-check form-switch ms-auto p-1">
                             {{ range (slice
-                                (dict "Value" "monthly" "Label" "monthly")
-                                (dict "Value" "yearly" "Label" "yearly" "Checked" true)
+                                (dict "Value" "monthly" "Label" "月額")
+                                (dict "Value" "yearly" "Label" "年額" "Checked" true)
                             ) }}
                                 <input type="radio" class="btn-check" name="purchase_subscription[billing_interval]" value="{{ .Value }}" id="purchase_subscription_billing_interval_{{ .Value }}" data-update-on="change" autocomplete="off"{{ if .Checked }} checked{{ end }}>
                                 <label class="btn btn-sm" for="purchase_subscription_billing_interval_{{ .Value }}">{{ .Label }}</label>
@@ -31,24 +22,25 @@
                     "QuantityName" "purchase_subscription[quantity]"
                     "PriceId" "purchase_subscription_price"
                     "Buttons" (slice
-                        (dict "ColumnClass" "col-12 col-sm-6 offset-sm-6" "ButtonClass" "btn btn-sg-indigo" "Type" "button" "Action" "request-purchase" "Label" "Subscribe via Cleverbridge")
+                        (dict "ColumnClass" "col-12 col-sm-6 offset-sm-6" "ButtonClass" "btn btn-sg-indigo" "Type" "button" "Action" "request-purchase" "Label" "Cleverbridge経由で購読する")
                     )
                 ) }}
+                {{ partial "purchase-form/coupon-code-section.html" (dict "NamePrefix" "purchase_subscription" "IdPrefix" "purchase_subscription") }}
                 {{ partial "purchase-form/coupon-row.html" . }}
                 <div class="card-body">
                     <div class="row g-3">
                         {{ partial "purchase-form/addon-row.html" (dict
                             "Name" "purchase_subscription[distributed_reviews_addon]"
                             "Id" "purchase_subscription_distributed_reviews_addon"
-                            "Title" "Incl. Distributed Reviews Add-on"
-                            "Subtitle" "local, offline and fast code reviewing"
+                            "Title" "分散レビューアドオンを含む"
+                            "Subtitle" "ローカルでオフラインかつ高速なコードレビュー"
                             "PriceTag" "distributed_reviews_addon"
                         ) }}
                         {{ partial "purchase-form/addon-row.html" (dict
                             "Name" "purchase_subscription[smart_synchronize]"
                             "Id" "purchase_subscription_smart_synchronize"
-                            "Title" "Incl. SmartSynchronize licenses"
-                            "Subtitle" "SmartGit's file (and directory) compare as standalone tool"
+                            "Title" "SmartSynchronize ライセンスを含む"
+                            "Subtitle" "SmartGit のファイル/ディレクトリ比較を単体ツールとして利用"
                             "PriceTag" "smart_synchronize"
                         ) }}
                     </div>

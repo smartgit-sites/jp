@@ -1,19 +1,10 @@
 <form action="" accept-charset="UTF-8" method="get" data-module="purchase-form" data-product-id="smartgit" data-checkout-type="one-off.upgrade" enctype="multipart/form-data">
-    <input type="hidden" name="purchase_one_off.upgrade[coupon-code]" value="">
-    {{ partial "purchase-form/currency-switch.html" (dict
-        "Name" "purchase_one_off.upgrade[currency]"
-        "IdPrefix" "purchase_one_off.upgrade_currency"
-        "CheckedValue" "USD"
-        "Options" (slice
-            (dict "Value" "EUR" "Label" "EURO" "DataLabel" "EUR")
-            (dict "Value" "USD" "Label" "USD" "DataLabel" "USD")
-        )
-    ) }}
+    {{ partial "purchase-form/jp-sales-fields.html" (dict "NamePrefix" "purchase_one_off.upgrade" "IdPrefix" "purchase_one_off.upgrade") }}
     <div class="row">
         <div class="col-12 px-0">
             <div class="card">
                 <div class="card-body border-bottom border-sg-indigo-200">
-                        <span class="fs-4 sg-gray-500">SmartGit Licenses</span>
+                        <span class="fs-4 sg-gray-500">SmartGit ライセンス</span>
                 </div>
                 <div class="card-body border-bottom border-sg-indigo-200">
                     <div class="row g-3 align-items-center">
@@ -21,51 +12,51 @@
                             <input type="hidden" name="purchase_one_off.upgrade[license]" value="" id="purchase_one_off.upgrade_license">
                             <input type="file" name="purchase_one_off.upgrade[license_file]" id="purchase_one_off.upgrade_license_file" class="visually-hidden">
                             <label for="purchase_one_off.upgrade_license_file" class="d-flex justify-content-between btn px-0 mb-3">
-                                <span class="fs-4 sg-gray-500">1. Drag your license file here or</span> &nbsp;
+                                <span class="fs-4 sg-gray-500">1. ライセンスファイルをここにドラッグ、または</span> &nbsp;
                                 <i class="fa-regular fa-circle-plus fa-3x sg-indigo-500"></i>
                             </label>
                             <div class="dropzone__message dropzone__message--processing">
-                                <div class="alert alert-info">Your license file is being uploaded …</div>
+                                <div class="alert alert-info">ライセンスファイルをアップロードしています...</div>
                             </div>
                             <div class="dropzone__message dropzone__message--success">
-                                  <div class="alert alert-success">Your license file has been uploaded. <span class="btn btn-danger btn-sm" data-action="reset-dropzone">Reset</span></div>
+                                  <div class="alert alert-success">ライセンスファイルをアップロードしました。<span class="btn btn-danger btn-sm" data-action="reset-dropzone">リセット</span></div>
                             </div>
                             <div class="dropzone__message dropzone__message--error">
-                                  <div class="alert alert-danger">Something went wrong. <span class="btn btn-danger btn-sm" data-action="reset-dropzone">Try again</span></div>
+                                  <div class="alert alert-danger">問題が発生しました。<span class="btn btn-danger btn-sm" data-action="reset-dropzone">もう一度試す</span></div>
                             </div>
 
                             <div class="fullscreen-dropzone" data-role="fullscreen-ghost">
-                                Drop your license here
+                                ここにライセンスをドロップしてください
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="card-body border-bottom border-sg-indigo-200">
                     <div class="mb-3">
-                        <span class="fs-4 sg-gray-500">2. Refine your license configuration</span>
+                        <span class="fs-4 sg-gray-500">2. ライセンス構成を調整</span>
                     </div>
                     <div class="row g-3 align-items-center">
                         {{ partial "purchase-form/toggle-row.html" (dict
-                            "Label" "Updates"
+                            "Label" "アップデート"
                             "Name" "purchase_one_off.upgrade[updates]"
                             "IdPrefix" "purchase_one_off.upgrade_updates"
                             "CheckedValue" "1y"
                             "Options" (slice
-                                (dict "Value" "1y" "Label" "1 year")
-                                (dict "Value" "2y" "Label" "2 years")
-                                (dict "Value" "3y" "Label" "3 years")
+                                (dict "Value" "1y" "Label" "1年")
+                                (dict "Value" "2y" "Label" "2年")
+                                (dict "Value" "3y" "Label" "3年")
                             )
                         ) }}
                         {{ partial "purchase-form/toggle-row.html" (dict
-                            "Label" "Support"
+                            "Label" "サポート"
                             "Name" "purchase_one_off.upgrade[support]"
                             "IdPrefix" "purchase_one_off.upgrade_support"
                             "CheckedValue" "1y"
                             "Options" (slice
-                                (dict "Value" "90d" "Label" "90 days")
-                                (dict "Value" "1y" "Label" "1 year")
-                                (dict "Value" "2y" "Label" "2 years")
-                                (dict "Value" "3y" "Label" "3 years")
+                                (dict "Value" "90d" "Label" "90日")
+                                (dict "Value" "1y" "Label" "1年")
+                                (dict "Value" "2y" "Label" "2年")
+                                (dict "Value" "3y" "Label" "3年")
                             )
                         ) }}
                     </div>
@@ -75,32 +66,34 @@
                     "QuantityName" "purchase_one_off.upgrade[quantity]"
                     "PriceId" "purchase_one_off.upgrade_price"
                     "Buttons" (slice
-                        (dict "ColumnClass" "col-12 col-sm-6" "ButtonClass" "btn btn-sg-gray" "Action" "request-quote" "Label" "Request Quote")
-                        (dict "ColumnClass" "col-12 col-sm-6" "ButtonClass" "btn btn-sg-indigo" "Type" "button" "Action" "request-purchase" "Label" "Purchase via Cleverbridge")
+                        (dict "ColumnClass" "col-12 col-sm-6" "ButtonClass" "btn btn-sg-gray" "Action" "request-quote" "Label" "見積もりをリクエスト")
+                        (dict "ColumnClass" "col-12 col-sm-6" "ButtonClass" "btn btn-sg-indigo" "Type" "button" "Action" "request-purchase" "Label" "Cleverbridge経由で購入")
                     )
                 ) }}
                 <div class="card-body border-bottom border-sg-indigo-200">
                     <div class="row g-3 align-items-center">
-                        <div class="col-12 col-sm-6 fw-bold">Renewal Discount</div>
+                        <div class="col-12 col-sm-6 fw-bold">更新割引</div>
                         <div class="col-12 col-sm-6 text-end" data-price-tag="upgrade"></div>
                         <div class="col-12 px-3 purchase-form-notification-shell" data-notification="upgrade"></div>
                         <div class="col-12 px-3 purchase-form-notification-shell" data-notification="still-valid-until"></div>
                     </div>
                 </div>
+                {{ partial "purchase-form/coupon-code-section.html" (dict "NamePrefix" "purchase_one_off.upgrade" "IdPrefix" "purchase_one_off.upgrade") }}
+                {{ partial "purchase-form/coupon-row.html" . }}
                 <div class="card-body">
                     <div class="row g-3">
                         {{ partial "purchase-form/addon-row.html" (dict
                             "Name" "purchase_one_off.upgrade[distributed_reviews_addon]"
                             "Id" "purchase_one_off.upgrade_distributed_reviews_addon"
-                            "Title" "Incl. Distributed Reviews Add-on"
-                            "Subtitle" "local, offline and fast code reviewing"
+                            "Title" "分散レビューアドオンを含む"
+                            "Subtitle" "ローカルでオフラインかつ高速なコードレビュー"
                             "PriceTag" "distributed_reviews_addon"
                         ) }}
                         {{ partial "purchase-form/addon-row.html" (dict
                             "Name" "purchase_one_off.upgrade[smart_synchronize]"
                             "Id" "purchase_one_off.upgrade_smart_synchronize"
-                            "Title" "Incl. SmartSynchronize licenses"
-                            "Subtitle" "SmartGit's file (and directory) compare as standalone tool"
+                            "Title" "SmartSynchronize ライセンスを含む"
+                            "Subtitle" "SmartGit のファイル/ディレクトリ比較を単体ツールとして利用"
                             "PriceTag" "smart_synchronize"
                         ) }}
                     </div>

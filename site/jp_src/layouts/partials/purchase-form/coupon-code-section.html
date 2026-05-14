@@ -1,0 +1,14 @@
+<div class="card-body border-bottom border-sg-indigo-200 d-none" data-role="form-section" data-section="coupon-code">
+    <div class="row g-3 align-items-center">
+        <div class="col-12 col-sm-4 fw-bold">
+            <span data-dynamic-label="coupon-type" data-label-code="クーポンコード" data-label-reseller="リセラーID">クーポンコード</span>
+        </div>
+        <div class="col-12 col-sm-8">
+            <div class="input-group" data-module="coupon-code">
+                <input class="form-control" id="{{ .IdPrefix }}_coupon_code" name="{{ .NamePrefix }}[coupon-code]" placeholder="コードまたはリセラーIDを入力" type="text" value="">
+                <button class="btn btn-sg-gray" data-action="check-coupon-code" disabled type="button">確認</button>
+                <button class="btn btn-outline-secondary" data-action="reset-coupon-code" disabled type="button">リセット</button>
+            </div>
+        </div>
+    </div>
+</div>

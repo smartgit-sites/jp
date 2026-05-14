@@ -1,42 +1,33 @@
 <form action="" accept-charset="UTF-8" method="get" data-module="purchase-form" data-product-id="smartgit" data-checkout-type="one-off">
-    <input type="hidden" name="purchase_one_off[coupon-code]" value="">
-    {{ partial "purchase-form/currency-switch.html" (dict
-        "Name" "purchase_one_off[currency]"
-        "IdPrefix" "purchase_one_off_currency"
-        "CheckedValue" "USD"
-        "Options" (slice
-            (dict "Value" "EUR" "Label" "EURO" "DataLabel" "EUR")
-            (dict "Value" "USD" "Label" "USD" "DataLabel" "USD")
-        )
-    ) }}
+    {{ partial "purchase-form/jp-sales-fields.html" (dict "NamePrefix" "purchase_one_off" "IdPrefix" "purchase_one_off") }}
     <div class="row">
         <div class="col-12 px-0">
             <div class="card">
                 <div class="card-body border-bottom border-sg-indigo-200">
                     <div class="d-flex align-items-center">
-                        <span class="fs-4 sg-gray-500">SmartGit Licenses</span>
+                        <span class="fs-4 sg-gray-500">SmartGit ライセンス</span>
                     </div>
                     {{ partial "purchase-form/toggle-row.html" (dict
-                        "Label" "Updates"
+                        "Label" "アップデート"
                         "Name" "purchase_one_off[updates]"
                         "IdPrefix" "purchase_one_off_updates"
                         "CheckedValue" "1y"
                         "Options" (slice
-                            (dict "Value" "1y" "Label" "1 year")
-                            (dict "Value" "2y" "Label" "2 years")
-                            (dict "Value" "3y" "Label" "3 years")
+                            (dict "Value" "1y" "Label" "1年")
+                            (dict "Value" "2y" "Label" "2年")
+                            (dict "Value" "3y" "Label" "3年")
                         )
                     ) }}
                     {{ partial "purchase-form/toggle-row.html" (dict
-                        "Label" "Support"
+                        "Label" "サポート"
                         "Name" "purchase_one_off[support]"
                         "IdPrefix" "purchase_one_off_support"
                         "CheckedValue" "1y"
                         "Options" (slice
-                            (dict "Value" "90d" "Label" "90 days")
-                            (dict "Value" "1y" "Label" "1 year")
-                            (dict "Value" "2y" "Label" "2 years")
-                            (dict "Value" "3y" "Label" "3 years")
+                            (dict "Value" "90d" "Label" "90日")
+                            (dict "Value" "1y" "Label" "1年")
+                            (dict "Value" "2y" "Label" "2年")
+                            (dict "Value" "3y" "Label" "3年")
                         )
                     ) }}
                 </div>
@@ -45,25 +36,26 @@
                     "QuantityName" "purchase_one_off[quantity]"
                     "PriceId" "purchase_one_off_price"
                     "Buttons" (slice
-                        (dict "ColumnClass" "col-12 col-sm-6" "ButtonClass" "btn btn-sg-gray" "Action" "request-quote" "Label" "Request Quote")
-                        (dict "ColumnClass" "col-12 col-sm-6" "ButtonClass" "btn btn-sg-indigo" "Type" "button" "Action" "request-purchase" "Label" "Purchase via Cleverbridge")
+                        (dict "ColumnClass" "col-12 col-sm-6" "ButtonClass" "btn btn-sg-gray" "Action" "request-quote" "Label" "見積もりをリクエスト")
+                        (dict "ColumnClass" "col-12 col-sm-6" "ButtonClass" "btn btn-sg-indigo" "Type" "button" "Action" "request-purchase" "Label" "Cleverbridge経由で購入")
                     )
                 ) }}
+                {{ partial "purchase-form/coupon-code-section.html" (dict "NamePrefix" "purchase_one_off" "IdPrefix" "purchase_one_off") }}
                 {{ partial "purchase-form/coupon-row.html" . }}
                 <div class="card-body">
                     <div class="row g-3">
                         {{ partial "purchase-form/addon-row.html" (dict
                             "Name" "purchase_one_off[distributed_reviews_addon]"
                             "Id" "purchase_one_off_distributed_reviews_addon"
-                            "Title" "Incl. Distributed Reviews Add-on"
-                            "Subtitle" "local, offline and fast code reviewing"
+                            "Title" "分散レビューアドオンを含む"
+                            "Subtitle" "ローカルでオフラインかつ高速なコードレビュー"
                             "PriceTag" "distributed_reviews_addon"
                         ) }}
                         {{ partial "purchase-form/addon-row.html" (dict
                             "Name" "purchase_one_off[smart_synchronize]"
                             "Id" "purchase_one_off_smart_synchronize"
-                            "Title" "Incl. SmartSynchronize licenses"
-                            "Subtitle" "SmartGit's file (and directory) compare as standalone tool"
+                            "Title" "SmartSynchronize ライセンスを含む"
+                            "Subtitle" "SmartGit のファイル/ディレクトリ比較を単体ツールとして利用"
                             "PriceTag" "smart_synchronize"
                         ) }}
                     </div>

@@ -246,9 +246,11 @@ jQuery(function() {
                 var $priceTagNote = this.$element.find('[data-price-note="' + priceTag.id + '"]');
                 var buildTagMarkup = function(price, currency, interval) {
                     var units = [currency, interval].filter(function(value) { return !!value; }).join(' / ');
+                    var precision = currency === 'JPY' ? 0 : 2;
+                    var delimiter = currency === 'JPY' ? '' : undefined;
 
                     return [
-                        '<span>' + App.Utils.formatCurrency(price, 2) + '</span>',
+                        '<span>' + App.Utils.formatCurrency(price, precision, delimiter) + '</span>',
                         '<span>' + units + '</span>',
                     ].join('');
                 };
@@ -478,7 +480,7 @@ jQuery(function() {
 
         this._isLocked = true;
 
-        this.$element.find('input[data-update-on="change"], .button[data-action], [data-module="license-dropzone"], [data-module="coupon-code"]').each(function() {
+        this.$element.find('input[data-update-on="change"], button[data-action], [data-module="license-dropzone"], [data-module="coupon-code"]').each(function() {
             if ($(this).is('.is-disabled')) {
                 $(this).data('unlockCallback', function($element) { $element.addClass('is-disabled'); });
             }
@@ -498,7 +500,7 @@ jQuery(function() {
 
         this._isLocked = false;
 
-        this.$element.find('input[data-update-on="change"], .button[data-action], [data-module="license-dropzone"], [data-module="coupon-code"]').each(function() {
+        this.$element.find('input[data-update-on="change"], button[data-action], [data-module="license-dropzone"], [data-module="coupon-code"]').each(function() {
             $(this)
                 .removeClass('is-disabled')
                 .prop('disabled', false);
@@ -779,14 +781,16 @@ jQuery(function() {
             return;
         }
 
-        $form.data('object').bindEvent('did-update', function() {
-            var parameters = $form.data('object').latestParameters;
-            var forceCouponSection = App.Utils.parseQueryString(window.location.search)['cc'] == '1';
+        var updateCouponCodeSection = function(parameters) {
+            parameters = parameters || {};
+            var queryParameters = App.Utils.parseQueryString(window.location.search);
+            var forceCouponSection = queryParameters['cc'] == '1';
+            var couponCode = parameters['coupon-code'] || queryParameters['coupon-code'] || '';
 
-            if (forceCouponSection || (parameters['coupon-code'] || '').length !== 0) {
-                $couponCodeSection.removeClass('hidden');
+            if (forceCouponSection || couponCode.length !== 0) {
+                $couponCodeSection.removeClass('d-none');
             } else {
-                $couponCodeSection.addClass('hidden');
+                $couponCodeSection.addClass('d-none');
             }
 
             if (parameters['coupon-type']) {
@@ -801,6 +805,12 @@ jQuery(function() {
                         break;
                 }
             }
+        };
+
+        updateCouponCodeSection(App.Utils.extractFormFieldData($form));
+
+        $form.data('object').bindEvent('did-update', function() {
+            updateCouponCodeSection($form.data('object').latestParameters);
         });
     }
 

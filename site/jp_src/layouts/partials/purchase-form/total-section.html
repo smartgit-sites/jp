@@ -2,12 +2,12 @@
     <div class="row g-3">
         <div class="col-12 col-sm-4 mx-sm-auto">
             <div class="input-group mb-3">
-                <input type="number" class="form-control" id="{{ .QuantityId }}" name="{{ .QuantityName }}" min="1" max="10000" value="1" aria-label="Quntity" data-update-on="change" data-min="1" data-max="10000">
-                <span class="input-group-text">QTY</span>
+                <input type="number" class="form-control" id="{{ .QuantityId }}" name="{{ .QuantityName }}" min="1" max="10000" value="1" aria-label="数量" data-update-on="change" data-min="1" data-max="10000">
+                <span class="input-group-text">数量</span>
             </div>
         </div>
         <div id="{{ .PriceId }}" data-price-tag="total" class="col-12 fs-2 sg-indigo-500 fw-bold lh-1 text-end">...</div>
-        <div class="col-12 text-muted fs-6 fw-normal mt-n1 text-end" data-price-note="total">(excl. VAT)<p></p></div>
+        <div class="col-12 text-muted fs-6 fw-normal mt-n1 text-end" data-price-note="total">（消費税別）<p></p></div>
         <div class="col-12 mt-3" data-notification="license-count"></div>
     </div>
     <div class="row g-3">
