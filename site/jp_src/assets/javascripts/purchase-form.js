@@ -245,6 +245,10 @@ jQuery(function() {
                 var $priceTagRow = this.$element.find('[data-price-tag-row="' + priceTag.id + '"]');
                 var $priceTagNote = this.$element.find('[data-price-note="' + priceTag.id + '"]');
                 var buildTagMarkup = function(price, currency, interval) {
+                    if (currency === 'JPY' && interval === 'month') {
+                        interval = null;
+                    }
+
                     var units = [currency, interval].filter(function(value) { return !!value; }).join(' / ');
                     var precision = currency === 'JPY' ? 0 : 2;
                     var delimiter = currency === 'JPY' ? '' : undefined;

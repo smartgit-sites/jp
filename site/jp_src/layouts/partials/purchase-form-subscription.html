@@ -6,7 +6,8 @@
                 <div class="card-body border-bottom border-sg-indigo-200">
                     <div class="d-flex align-items-center">
                         <span class="fs-4 sg-gray-500">SmartGit ライセンス</span>
-                        <div class="form-check form-switch ms-auto p-1">
+                        <div class="ms-auto text-end fw-bold" data-price-tag="main"></div>
+                        <div class="form-check form-switch ms-3 p-1">
                             {{ range (slice
                                 (dict "Value" "monthly" "Label" "月額")
                                 (dict "Value" "yearly" "Label" "年額" "Checked" true)
